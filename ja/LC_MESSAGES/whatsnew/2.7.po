@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-04-12 16:26+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
+"PO-Revision-Date: 2016-10-03 09:06+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2493,7 +2494,7 @@ msgid ""
 "traceback stack.  Previously such extensions needed to call "
 ":c:func:`PyCode_New`, which had many more arguments.  (Added by Jeffrey "
 "Yasskin.)"
-msgstr "新しい関数: :cfunc:`PyCode_NewEmpty` は、空のコードオブジェクトを生成します。要求されるのは、ファイル名、関数名、そして最初の行番号だけです。これは、より便利なトレースバックスタックを構成しようとする拡張モジュールに便利です。以前は、このような拡張はより多くの引数を必要とする :c:func:`PyCode_New` を呼び出す必要がありました。(Added by Jeffrey Yasskin.)"
+msgstr "新しい関数: :c:func:`PyCode_NewEmpty` は、空のコードオブジェクトを生成します。要求されるのは、ファイル名、関数名、そして最初の行番号だけです。これは、より便利なトレースバックスタックを構成しようとする拡張モジュールに便利です。以前は、このような拡張はより多くの引数を必要とする :c:func:`PyCode_New` を呼び出す必要がありました。(Added by Jeffrey Yasskin.)"
 
 #: ../../whatsnew/2.7.rst:2109
 msgid ""
