@@ -1,0 +1,27 @@
+dist: trusty
+sudo: false
+language: python
+python: '3.6'
+install:
+- pip install sphinx==1.4.9
+- cd ..
+- pwd
+- ls -la
+- git clone https://github.com/python-doc-ja/py27.git py27
+- git clone --depth=5 -b intl-2.7 https://github.com/python-doc-ja/cpython-doc-intl.git cpython
+- cd cpython/Doc
+- ln -s ../../py27-locale locale
+- ls -lF locale
+- sphinx-build -j4 -D language=ja -D locale_dirs=locale -D gettext_compact=0 -A versionswitcher=1 -E -d build/doctrees . ../../py27
+script:
+- cd ../../py27
+- git config user.email "travis-build-bot@example.com"
+- git config user.name "Autobuild bot on Travis-CI"
+- git pull origin master
+- git add .
+- git commit -a -m "update html"
+- git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py27.git" master:master
+
+env:
+  global:
+    secure: "jDUJp2OuVyRWxuEJIxKMNouA1eh/B8xdQsfua6+C4K2nNYbT7XyVlPg3K8ZsFT9udN8/k/n8fyj1rXZJa8yuS4D0SqrU3xHp/kwbt5qx1U/G4+Ts/GPflk0SkGkK3pfic3TWjMRZIDHvVch3+Cjx29NCEe3f4qQZ5s4Pk+xy+iMnyCgVapvpranXZjZggTBkiw9t23bqGfbbxjOEvV9UKmHM4QFi7vgui04XUp8D+GZUg6dyrkMTyMu0XxazibFWfPAzXIqTZ4XpbSs+wkwZq0FohlnLgM59f7+45ByLSibTkloB10upfeGuH9UHMevm2t8XQc2Vay3IJOEJTu5sayBjGJB7lgP/s6T0/ZL7QOl4++XHX0ODOuwB7u0/hGBeXLhIN1w0JThoM25AZROOjhD4jGZdrRiqmbkUO19srMh3wU3ZViBVoPVG9GtdTL5USVjoBxR3e8gUZ1RkJogoqWjX3YIvBG2lGr/6xEV04o7t+G5pxTMaglfX49mFkVv+N57l5s6NDnEIV4ibrc6ns1aeiCmOb0Q6eUvAFbMaWS5Pben6UL8As4sFQSDrmnS5c7xc8rJYWSJihK2svdpkUvTLadDRaQ65bOzkekRQJnzqGRw9AyeQpCjLggmbFEzSeuW42gnJ1thbckLHJ8Se0ys0SocLN90QHG57nOY24u8="
