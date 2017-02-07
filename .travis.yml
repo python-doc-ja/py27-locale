@@ -20,6 +20,7 @@ script:
 - git pull origin master
 - git add .
 - git commit -a -m "update html"
+- printenv
 - git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py27.git" master:master
 
 env:
