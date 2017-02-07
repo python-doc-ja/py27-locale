@@ -20,10 +20,8 @@ script:
 - git pull origin master
 - git add .
 - git commit -a -m "update html"
-- printenv | sort
 - git push --quiet "https://${GH_TOKEN}@github.com/python-doc-ja/py27.git" master:master
 
 env:
   global:
-    - secure: "QnsnBwALpD/ZowBZ6BoWBngd8NuHOj7y6J5ydXnu/L7TmF5sxSyIRd01SV0LlTQFM5ie8UK8N5Q8o2GWJ46Y4akzcOibn1XH+GyjIvbCyJza2Ikehgxf2ADqeMzSw0FecOHANgGhDWeXYVA1q+FowOi7hWTp/+65TDrx+wemqf3r7AkI+IhT0TRIy7UY+KipYFB9KGKJksZfewXQBMtmh6TQFkr64iLl/KRX3r7vmLFY3ycr5PYK98cEIy0GVG/3jaAAEVDl1iSbldRhuP9BktClLSqeezSvRJK6ouLxlBK5iTTJzF6tHqK6HPSxhWSwJzpEZaXa9kKyMl3hRAjbz+I+T0/x3y0X1Z6oiAKtOKfyeaVC3ddLwKnDmtaf/GIf/1ur7mywz5ZDGusbl/VTh+e54ib3sguBxiJ70xms6nWLEtttgCo1t8lIn/MDrBUnTjdJm606eBY3IdI25ndmcqtJ/mI7AS+Q1t+MveA3YY9mDvVtfQYESaDd1aurc3055M1K14rypgEg4VS0R1LkTKu5r7Q3tpX1m4tNpu1ZhYXzKIAsTXvBJ1Boms367VXQ/E9oFqBRICIWzNHdGnOrOX2/bCMjoPjrS1JdA0fjlVqMaLLgFIqysSPoVC3NPyICeLKPYk51I6tzlNIEYDRK2TfJdykKuW4gMtBB6Kfbp3E="
-    - HOGE=hoge
+    secure: "QnsnBwALpD/ZowBZ6BoWBngd8NuHOj7y6J5ydXnu/L7TmF5sxSyIRd01SV0LlTQFM5ie8UK8N5Q8o2GWJ46Y4akzcOibn1XH+GyjIvbCyJza2Ikehgxf2ADqeMzSw0FecOHANgGhDWeXYVA1q+FowOi7hWTp/+65TDrx+wemqf3r7AkI+IhT0TRIy7UY+KipYFB9KGKJksZfewXQBMtmh6TQFkr64iLl/KRX3r7vmLFY3ycr5PYK98cEIy0GVG/3jaAAEVDl1iSbldRhuP9BktClLSqeezSvRJK6ouLxlBK5iTTJzF6tHqK6HPSxhWSwJzpEZaXa9kKyMl3hRAjbz+I+T0/x3y0X1Z6oiAKtOKfyeaVC3ddLwKnDmtaf/GIf/1ur7mywz5ZDGusbl/VTh+e54ib3sguBxiJ70xms6nWLEtttgCo1t8lIn/MDrBUnTjdJm606eBY3IdI25ndmcqtJ/mI7AS+Q1t+MveA3YY9mDvVtfQYESaDd1aurc3055M1K14rypgEg4VS0R1LkTKu5r7Q3tpX1m4tNpu1ZhYXzKIAsTXvBJ1Boms367VXQ/E9oFqBRICIWzNHdGnOrOX2/bCMjoPjrS1JdA0fjlVqMaLLgFIqysSPoVC3NPyICeLKPYk51I6tzlNIEYDRK2TfJdykKuW4gMtBB6Kfbp3E="
