@@ -5,14 +5,15 @@
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 # INADA Naoki <songofacandy@gmail.com>, 2015
+# tomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-06 14:56+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-08 15:05+0000\n"
+"Last-Translator: tomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -277,7 +278,7 @@ msgstr "Sphinx は執筆に使えるスタンドアロンのパッケージで�
 
 #: ../../whatsnew/2.6.rst:234
 msgid "Documenting Python"
-msgstr ""
+msgstr "Documenting Python"
 
 #: ../../whatsnew/2.6.rst:234
 msgid "Describes how to write for Python's documentation."
@@ -285,7 +286,7 @@ msgstr "Python ドキュメントの書き方について書いています。"
 
 #: ../../whatsnew/2.6.rst:237
 msgid "Sphinx"
-msgstr ""
+msgstr "Sphinx"
 
 #: ../../whatsnew/2.6.rst:237
 msgid "Documentation and code for the Sphinx toolchain."
@@ -293,7 +294,7 @@ msgstr "Sphinx ツールチェインのドキュメントとコードです。"
 
 #: ../../whatsnew/2.6.rst:239
 msgid "Docutils"
-msgstr ""
+msgstr "Docutils"
 
 #: ../../whatsnew/2.6.rst:240
 msgid "The underlying reStructuredText parser and toolset."
@@ -2901,7 +2902,7 @@ msgstr ""
 
 #: ../../whatsnew/2.6.rst:2565
 msgid "Better animation of turtle movement and rotation."
-msgstr ""
+msgstr "亀の移動と回転のアニメーションの改善。"
 
 #: ../../whatsnew/2.6.rst:2566
 msgid ""
