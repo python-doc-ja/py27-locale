@@ -81,11 +81,11 @@ msgid "Constructor arguments should be passed as keyword arguments only. *blocke
 msgstr ""
 
 #: ../../library/cookielib.rst:97
-msgid ":class:`DefaultCookiePolicy` implements the standard accept / reject rules for Netscape and RFC 2965 cookies.  By default, RFC 2109 cookies (ie. cookies received in a :mailheader:`Set-Cookie` header with a version cookie-attribute of 1) are treated according to the RFC 2965 rules.  However, if RFC 2965 handling is turned off or :attr:`rfc2109_as_netscape` is ``True``, RFC 2109 cookies are 'downgraded' by the :class:`CookieJar` instance to Netscape cookies, by setting the :attr:`version` attribute of the :class:`Cookie` instance to 0. :class:`DefaultCookiePolicy` also provides some parameters to allow some fine-tuning of policy."
+msgid ":class:`DefaultCookiePolicy` implements the standard accept / reject rules for Netscape and RFC 2965 cookies.  By default, RFC 2109 cookies (ie. cookies received in a :mailheader:`Set-Cookie` header with a version cookie-attribute of 1) are treated according to the RFC 2965 rules.  However, if RFC 2965 handling is turned off or :attr:`rfc2109_as_netscape` is ``True``, RFC 2109 cookies are 'downgraded' by the :class:`CookieJar` instance to Netscape cookies, by setting the :attr:`version` attribute of the :class:`~cookielib.Cookie` instance to 0. :class:`DefaultCookiePolicy` also provides some parameters to allow some fine-tuning of policy."
 msgstr ""
 
 #: ../../library/cookielib.rst:110
-msgid "This class represents Netscape, RFC 2109 and RFC 2965 cookies.  It is not expected that users of :mod:`cookielib` construct their own :class:`Cookie` instances.  Instead, if necessary, call :meth:`make_cookies` on a :class:`CookieJar` instance."
+msgid "This class represents Netscape, RFC 2109 and RFC 2965 cookies.  It is not expected that users of :mod:`cookielib` construct their own :class:`~cookielib.Cookie` instances.  Instead, if necessary, call :meth:`make_cookies` on a :class:`CookieJar` instance."
 msgstr ""
 
 #: ../../library/cookielib.rst:119
@@ -105,7 +105,7 @@ msgid "HTTP cookie classes, principally useful for server-side code.  The :mod:`
 msgstr ""
 
 #: ../../library/cookielib.rst:129
-msgid "http://curl.haxx.se/rfc/cookie_spec.html"
+msgid "https://curl.haxx.se/rfc/cookie_spec.html"
 msgstr ""
 
 #: ../../library/cookielib.rst:126
@@ -145,7 +145,7 @@ msgid "CookieJar and FileCookieJar Objects"
 msgstr ""
 
 #: ../../library/cookielib.rst:148
-msgid ":class:`CookieJar` objects support the :term:`iterator` protocol for iterating over contained :class:`Cookie` objects."
+msgid ":class:`CookieJar` objects support the :term:`iterator` protocol for iterating over contained :class:`~cookielib.Cookie` objects."
 msgstr ""
 
 #: ../../library/cookielib.rst:151
@@ -185,7 +185,7 @@ msgid "Set the :class:`CookiePolicy` instance to be used."
 msgstr ""
 
 #: ../../library/cookielib.rst:197
-msgid "Return sequence of :class:`Cookie` objects extracted from *response* object."
+msgid "Return sequence of :class:`~cookielib.Cookie` objects extracted from *response* object."
 msgstr ""
 
 #: ../../library/cookielib.rst:199
@@ -193,11 +193,11 @@ msgid "See the documentation for :meth:`extract_cookies` for the interfaces requ
 msgstr ""
 
 #: ../../library/cookielib.rst:205
-msgid "Set a :class:`Cookie` if policy says it's OK to do so."
+msgid "Set a :class:`~cookielib.Cookie` if policy says it's OK to do so."
 msgstr ""
 
 #: ../../library/cookielib.rst:210
-msgid "Set a :class:`Cookie`, without checking with policy to see whether or not it should be set."
+msgid "Set a :class:`~cookielib.Cookie`, without checking with policy to see whether or not it should be set."
 msgstr ""
 
 #: ../../library/cookielib.rst:216
@@ -349,7 +349,7 @@ msgid "This method is an optimization.  It removes the need for checking every c
 msgstr ""
 
 #: ../../library/cookielib.rst:382
-msgid "If :meth:`domain_return_ok` returns true for the cookie domain, :meth:`path_return_ok` is called for the cookie path.  Otherwise, :meth:`path_return_ok` and :meth:`return_ok` are never called for that cookie domain.  If :meth:`path_return_ok` returns true, :meth:`return_ok` is called with the :class:`Cookie` object itself for a full check.  Otherwise, :meth:`return_ok` is never called for that cookie path."
+msgid "If :meth:`domain_return_ok` returns true for the cookie domain, :meth:`path_return_ok` is called for the cookie path.  Otherwise, :meth:`path_return_ok` and :meth:`return_ok` are never called for that cookie domain.  If :meth:`path_return_ok` returns true, :meth:`return_ok` is called with the :class:`~cookielib.Cookie` object itself for a full check.  Otherwise, :meth:`return_ok` is never called for that cookie path."
 msgstr ""
 
 #: ../../library/cookielib.rst:389
@@ -449,7 +449,7 @@ msgid ":class:`DefaultCookiePolicy` instances have the following attributes, whi
 msgstr ""
 
 #: ../../library/cookielib.rst:516
-msgid "If true, request that the :class:`CookieJar` instance downgrade RFC 2109 cookies (ie. cookies received in a :mailheader:`Set-Cookie` header with a version cookie-attribute of 1) to Netscape cookies by setting the version attribute of the :class:`Cookie` instance to 0.  The default value is :const:`None`, in which case RFC 2109 cookies are downgraded if and only if RFC 2965 handling is turned off.  Therefore, RFC 2109 cookies are downgraded by default."
+msgid "If true, request that the :class:`CookieJar` instance downgrade RFC 2109 cookies (ie. cookies received in a :mailheader:`Set-Cookie` header with a version cookie-attribute of 1) to Netscape cookies by setting the version attribute of the :class:`~cookielib.Cookie` instance to 0.  The default value is :const:`None`, in which case RFC 2109 cookies are downgraded if and only if RFC 2965 handling is turned off.  Therefore, RFC 2109 cookies are downgraded by default."
 msgstr ""
 
 #: ../../library/cookielib.rst:525
@@ -521,7 +521,7 @@ msgid "Cookie Objects"
 msgstr ""
 
 #: ../../library/cookielib.rst:611
-msgid ":class:`Cookie` instances have Python attributes roughly corresponding to the standard cookie-attributes specified in the various cookie standards.  The correspondence is not one-to-one, because there are complicated rules for assigning default values, because the ``max-age`` and ``expires`` cookie-attributes contain equivalent information, and because RFC 2109 cookies may be 'downgraded' by :mod:`cookielib` from version 1 to version 0 (Netscape) cookies."
+msgid ":class:`~cookielib.Cookie` instances have Python attributes roughly corresponding to the standard cookie-attributes specified in the various cookie standards.  The correspondence is not one-to-one, because there are complicated rules for assigning default values, because the ``max-age`` and ``expires`` cookie-attributes contain equivalent information, and because RFC 2109 cookies may be 'downgraded' by :mod:`cookielib` from version 1 to version 0 (Netscape) cookies."
 msgstr ""
 
 #: ../../library/cookielib.rst:619
@@ -601,7 +601,7 @@ msgid "Set the value of the named cookie-attribute."
 msgstr ""
 
 #: ../../library/cookielib.rst:727
-msgid "The :class:`Cookie` class also defines the following method:"
+msgid "The :class:`~cookielib.Cookie` class also defines the following method:"
 msgstr ""
 
 #: ../../library/cookielib.rst:732

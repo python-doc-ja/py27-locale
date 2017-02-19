@@ -76,7 +76,7 @@ msgid "Your best way to get started with Python on Mac OS X is through the IDLE 
 msgstr ""
 
 #: ../../using/mac.rst:69
-msgid "If you want to run Python scripts from the Terminal window command line or from the Finder you first need an editor to create your script. Mac OS X comes with a number of standard Unix command line editors, :program:`vim` and :program:`emacs` among them. If you want a more Mac-like editor, :program:`BBEdit` or :program:`TextWrangler` from Bare Bones Software (see http://www.barebones.com/products/bbedit/index.html) are good choices, as is :program:`TextMate` (see http://macromates.com/). Other editors include :program:`Gvim` (http://macvim.org) and :program:`Aquamacs` (http://aquamacs.org/)."
+msgid "If you want to run Python scripts from the Terminal window command line or from the Finder you first need an editor to create your script. Mac OS X comes with a number of standard Unix command line editors, :program:`vim` and :program:`emacs` among them. If you want a more Mac-like editor, :program:`BBEdit` or :program:`TextWrangler` from Bare Bones Software (see http://www.barebones.com/products/bbedit/index.html) are good choices, as is :program:`TextMate` (see https://macromates.com/). Other editors include :program:`Gvim` (http://macvim.org) and :program:`Aquamacs` (http://aquamacs.org/)."
 msgstr ""
 
 #: ../../using/mac.rst:79
@@ -156,7 +156,7 @@ msgid "*PyObjC* is a Python binding to Apple's Objective-C/Cocoa framework, whic
 msgstr ""
 
 #: ../../using/mac.rst:153
-msgid "The standard Python GUI toolkit is :mod:`Tkinter`, based on the cross-platform Tk toolkit (http://www.tcl.tk). An Aqua-native version of Tk is bundled with OS X by Apple, and the latest version can be downloaded and installed from http://www.activestate.com; it can also be built from source."
+msgid "The standard Python GUI toolkit is :mod:`Tkinter`, based on the cross-platform Tk toolkit (https://www.tcl.tk). An Aqua-native version of Tk is bundled with OS X by Apple, and the latest version can be downloaded and installed from https://www.activestate.com; it can also be built from source."
 msgstr ""
 
 #: ../../using/mac.rst:158
@@ -164,7 +164,7 @@ msgid "*wxPython* is another popular cross-platform GUI toolkit that runs native
 msgstr ""
 
 #: ../../using/mac.rst:161
-msgid "*PyQt* is another popular cross-platform GUI toolkit that runs natively on Mac OS X. More information can be found at http://www.riverbankcomputing.co.uk/software/pyqt/intro."
+msgid "*PyQt* is another popular cross-platform GUI toolkit that runs natively on Mac OS X. More information can be found at https://riverbankcomputing.com/software/pyqt/intro."
 msgstr ""
 
 #: ../../using/mac.rst:167

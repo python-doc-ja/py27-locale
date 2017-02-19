@@ -224,7 +224,7 @@ msgid "Support for multiple context expressions."
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:422
-msgid ":pep:`0343` - The \"with\" statement"
+msgid ":pep:`343` - The \"with\" statement"
 msgstr ""
 
 #: ../../reference/compound_stmts.rst:422

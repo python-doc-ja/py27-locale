@@ -160,86 +160,86 @@ msgid "The input stream from which this :class:`~shlex.shlex` instance is readin
 msgstr ""
 
 #: ../../library/shlex.rst:231
-msgid "This attribute is ``None`` by default.  If you assign a string to it, that string will be recognized as a lexical-level inclusion request similar to the ``source`` keyword in various shells.  That is, the immediately following token will opened as a filename and input taken from that stream until EOF, at which point the :meth:`~io.IOBase.close` method of that stream will be called and the input source will again become the original input stream.  Source requests may be stacked any number of levels deep."
+msgid "This attribute is ``None`` by default.  If you assign a string to it, that string will be recognized as a lexical-level inclusion request similar to the ``source`` keyword in various shells.  That is, the immediately following token will be opened as a filename and input will be taken from that stream until EOF, at which point the :meth:`~io.IOBase.close` method of that stream will be called and the input source will again become the original input stream.  Source requests may be stacked any number of levels deep."
 msgstr ""
 
-#: ../../library/shlex.rst:242
+#: ../../library/shlex.rst:243
 msgid "If this attribute is numeric and ``1`` or more, a :class:`~shlex.shlex` instance will print verbose progress output on its behavior.  If you need to use this, you can read the module source code to learn the details."
 msgstr ""
 
-#: ../../library/shlex.rst:249
+#: ../../library/shlex.rst:250
 msgid "Source line number (count of newlines seen so far plus one)."
 msgstr ""
 
-#: ../../library/shlex.rst:254
+#: ../../library/shlex.rst:255
 msgid "The token buffer.  It may be useful to examine this when catching exceptions."
 msgstr ""
 
-#: ../../library/shlex.rst:259
+#: ../../library/shlex.rst:260
 msgid "Token used to determine end of file. This will be set to the empty string (``''``), in non-POSIX mode, and to ``None`` in POSIX mode."
 msgstr ""
 
-#: ../../library/shlex.rst:268
+#: ../../library/shlex.rst:269
 msgid "Parsing Rules"
 msgstr ""
 
-#: ../../library/shlex.rst:270
+#: ../../library/shlex.rst:271
 msgid "When operating in non-POSIX mode, :class:`~shlex.shlex` will try to obey to the following rules."
 msgstr ""
 
-#: ../../library/shlex.rst:273
+#: ../../library/shlex.rst:274
 msgid "Quote characters are not recognized within words (``Do\"Not\"Separate`` is parsed as the single word ``Do\"Not\"Separate``);"
 msgstr ""
 
-#: ../../library/shlex.rst:276
+#: ../../library/shlex.rst:277
 msgid "Escape characters are not recognized;"
 msgstr ""
 
-#: ../../library/shlex.rst:278
+#: ../../library/shlex.rst:279
 msgid "Enclosing characters in quotes preserve the literal value of all characters within the quotes;"
 msgstr ""
 
-#: ../../library/shlex.rst:281
+#: ../../library/shlex.rst:282
 msgid "Closing quotes separate words (``\"Do\"Separate`` is parsed as ``\"Do\"`` and ``Separate``);"
 msgstr ""
 
-#: ../../library/shlex.rst:284
+#: ../../library/shlex.rst:285
 msgid "If :attr:`~shlex.whitespace_split` is ``False``, any character not declared to be a word character, whitespace, or a quote will be returned as a single-character token. If it is ``True``, :class:`~shlex.shlex` will only split words in whitespaces;"
 msgstr ""
 
-#: ../../library/shlex.rst:289
+#: ../../library/shlex.rst:290
 msgid "EOF is signaled with an empty string (``''``);"
 msgstr ""
 
-#: ../../library/shlex.rst:291
+#: ../../library/shlex.rst:292
 msgid "It's not possible to parse empty strings, even if quoted."
 msgstr ""
 
-#: ../../library/shlex.rst:293
+#: ../../library/shlex.rst:294
 msgid "When operating in POSIX mode, :class:`~shlex.shlex` will try to obey to the following parsing rules."
 msgstr ""
 
-#: ../../library/shlex.rst:296
+#: ../../library/shlex.rst:297
 msgid "Quotes are stripped out, and do not separate words (``\"Do\"Not\"Separate\"`` is parsed as the single word ``DoNotSeparate``);"
 msgstr ""
 
-#: ../../library/shlex.rst:299
+#: ../../library/shlex.rst:300
 msgid "Non-quoted escape characters (e.g. ``'\\'``) preserve the literal value of the next character that follows;"
 msgstr ""
 
-#: ../../library/shlex.rst:302
+#: ../../library/shlex.rst:303
 msgid "Enclosing characters in quotes which are not part of :attr:`~shlex.escapedquotes` (e.g. ``\"'\"``) preserve the literal value of all characters within the quotes;"
 msgstr ""
 
-#: ../../library/shlex.rst:306
+#: ../../library/shlex.rst:307
 msgid "Enclosing characters in quotes which are part of :attr:`~shlex.escapedquotes` (e.g. ``'\"'``) preserves the literal value of all characters within the quotes, with the exception of the characters mentioned in :attr:`~shlex.escape`.  The escape characters retain its special meaning only when followed by the quote in use, or the escape character itself. Otherwise the escape character will be considered a normal character."
 msgstr ""
 
-#: ../../library/shlex.rst:314
+#: ../../library/shlex.rst:315
 msgid "EOF is signaled with a :const:`None` value;"
 msgstr ""
 
-#: ../../library/shlex.rst:316
+#: ../../library/shlex.rst:317
 msgid "Quoted empty strings (``''``) are allowed;"
 msgstr ""
 

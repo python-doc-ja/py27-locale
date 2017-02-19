@@ -72,7 +72,7 @@ msgid "``x``"
 msgstr ""
 
 #: ../../library/easydialogs.rst:93
-msgid ":option:`-x` (short option)"
+msgid ":option:`!-x` (short option)"
 msgstr ""
 
 #: ../../library/easydialogs.rst:95
@@ -80,7 +80,7 @@ msgid "``x:`` or ``x=``"
 msgstr ""
 
 #: ../../library/easydialogs.rst:95
-msgid ":option:`-x` (short option with value)"
+msgid ":option:`!-x` (short option with value)"
 msgstr ""
 
 #: ../../library/easydialogs.rst:97
@@ -88,7 +88,7 @@ msgid "``xyz``"
 msgstr ""
 
 #: ../../library/easydialogs.rst:97
-msgid ":option:`--xyz` (long option)"
+msgid ":option:`!--xyz` (long option)"
 msgstr ""
 
 #: ../../library/easydialogs.rst:99
@@ -96,7 +96,7 @@ msgid "``xyz:`` or ``xyz=``"
 msgstr ""
 
 #: ../../library/easydialogs.rst:99
-msgid ":option:`--xyz` (long option with value)"
+msgid ":option:`!--xyz` (long option with value)"
 msgstr ""
 
 #: ../../library/easydialogs.rst:102

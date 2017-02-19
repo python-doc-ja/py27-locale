@@ -191,7 +191,7 @@ msgid "On Windows, if *args* is a sequence, it will be converted to a string in 
 msgstr ""
 
 #: ../../library/subprocess.rst:323
-msgid "The *shell* argument (which defaults to *False*) specifies whether to use the shell as the program to execute.  If *shell* is *True*, it is recommended to pass *args* as a string rather than as a sequence."
+msgid "The *shell* argument (which defaults to ``False``) specifies whether to use the shell as the program to execute.  If *shell* is ``True``, it is recommended to pass *args* as a string rather than as a sequence."
 msgstr ""
 
 #: ../../library/subprocess.rst:327
@@ -375,7 +375,7 @@ msgid "The :class:`STARTUPINFO` class and following constants are only available
 msgstr ""
 
 #: ../../library/subprocess.rst:588
-msgid "Partial support of the Windows `STARTUPINFO <http://msdn.microsoft.com/en-us/library/ms686331(v=vs.85).aspx>`__ structure is used for :class:`Popen` creation."
+msgid "Partial support of the Windows `STARTUPINFO <https://msdn.microsoft.com/en-us/library/ms686331(v=vs.85).aspx>`__ structure is used for :class:`Popen` creation."
 msgstr ""
 
 #: ../../library/subprocess.rst:594
@@ -395,7 +395,7 @@ msgid "If :attr:`dwFlags` specifies :data:`STARTF_USESTDHANDLES`, this attribute
 msgstr ""
 
 #: ../../library/subprocess.rst:622
-msgid "If :attr:`dwFlags` specifies :data:`STARTF_USESHOWWINDOW`, this attribute can be any of the values that can be specified in the ``nCmdShow`` parameter for the `ShowWindow <http://msdn.microsoft.com/en-us/library/ms633548(v=vs.85).aspx>`__ function, except for ``SW_SHOWDEFAULT``. Otherwise, this attribute is ignored."
+msgid "If :attr:`dwFlags` specifies :data:`STARTF_USESHOWWINDOW`, this attribute can be any of the values that can be specified in the ``nCmdShow`` parameter for the `ShowWindow <https://msdn.microsoft.com/en-us/library/ms633548(v=vs.85).aspx>`__ function, except for ``SW_SHOWDEFAULT``. Otherwise, this attribute is ignored."
 msgstr ""
 
 #: ../../library/subprocess.rst:629
@@ -474,123 +474,129 @@ msgstr ""
 msgid "Replacing /bin/sh shell backquote"
 msgstr ""
 
-#: ../../library/subprocess.rst:717
+#: ../../library/subprocess.rst:713
+#: ../../library/subprocess.rst:724
+#: ../../library/subprocess.rst:741
+msgid "becomes::"
+msgstr ""
+
+#: ../../library/subprocess.rst:718
 msgid "Replacing shell pipeline"
 msgstr ""
 
-#: ../../library/subprocess.rst:728
+#: ../../library/subprocess.rst:731
 msgid "The p1.stdout.close() call after starting the p2 is important in order for p1 to receive a SIGPIPE if p2 exits before p1."
 msgstr ""
 
-#: ../../library/subprocess.rst:731
-msgid "Alternatively, for trusted input, the shell's own pipeline support may still be used directly::"
+#: ../../library/subprocess.rst:734
+msgid "Alternatively, for trusted input, the shell's own pipeline support may still be used directly:"
 msgstr ""
 
-#: ../../library/subprocess.rst:740
+#: ../../library/subprocess.rst:747
 msgid "Replacing :func:`os.system`"
 msgstr ""
 
-#: ../../library/subprocess.rst:748
+#: ../../library/subprocess.rst:755
 msgid "Notes:"
 msgstr ""
 
-#: ../../library/subprocess.rst:750
+#: ../../library/subprocess.rst:757
 msgid "Calling the program through the shell is usually not required."
 msgstr ""
 
-#: ../../library/subprocess.rst:752
+#: ../../library/subprocess.rst:759
 msgid "A more realistic example would look like this::"
 msgstr ""
 
-#: ../../library/subprocess.rst:765
+#: ../../library/subprocess.rst:772
 msgid "Replacing the :func:`os.spawn <os.spawnl>` family"
 msgstr ""
 
-#: ../../library/subprocess.rst:767
+#: ../../library/subprocess.rst:774
 msgid "P_NOWAIT example::"
 msgstr ""
 
-#: ../../library/subprocess.rst:773
+#: ../../library/subprocess.rst:780
 msgid "P_WAIT example::"
 msgstr ""
 
-#: ../../library/subprocess.rst:779
+#: ../../library/subprocess.rst:786
 msgid "Vector example::"
 msgstr ""
 
-#: ../../library/subprocess.rst:785
+#: ../../library/subprocess.rst:792
 msgid "Environment example::"
 msgstr ""
 
-#: ../../library/subprocess.rst:793
+#: ../../library/subprocess.rst:800
 msgid "Replacing :func:`os.popen`, :func:`os.popen2`, :func:`os.popen3`"
 msgstr ""
 
-#: ../../library/subprocess.rst:836
+#: ../../library/subprocess.rst:843
 msgid "On Unix, os.popen2, os.popen3 and os.popen4 also accept a sequence as the command to execute, in which case arguments will be passed directly to the program without shell intervention.  This usage can be replaced as follows::"
 msgstr ""
 
-#: ../../library/subprocess.rst:847
+#: ../../library/subprocess.rst:854
 msgid "Return code handling translates as follows::"
 msgstr ""
 
-#: ../../library/subprocess.rst:863
+#: ../../library/subprocess.rst:870
 msgid "Replacing functions from the :mod:`popen2` module"
 msgstr ""
 
-#: ../../library/subprocess.rst:873
+#: ../../library/subprocess.rst:880
 msgid "On Unix, popen2 also accepts a sequence as the command to execute, in which case arguments will be passed directly to the program without shell intervention.  This usage can be replaced as follows::"
 msgstr ""
 
-#: ../../library/subprocess.rst:884
+#: ../../library/subprocess.rst:891
 msgid ":class:`popen2.Popen3` and :class:`popen2.Popen4` basically work as :class:`subprocess.Popen`, except that:"
 msgstr ""
 
-#: ../../library/subprocess.rst:887
+#: ../../library/subprocess.rst:894
 msgid ":class:`Popen` raises an exception if the execution fails."
 msgstr ""
 
-#: ../../library/subprocess.rst:889
+#: ../../library/subprocess.rst:896
 msgid "the *capturestderr* argument is replaced with the *stderr* argument."
 msgstr ""
 
-#: ../../library/subprocess.rst:891
+#: ../../library/subprocess.rst:898
 msgid "``stdin=PIPE`` and ``stdout=PIPE`` must be specified."
 msgstr ""
 
-#: ../../library/subprocess.rst:893
+#: ../../library/subprocess.rst:900
 msgid "popen2 closes all file descriptors by default, but you have to specify ``close_fds=True`` with :class:`Popen`."
 msgstr ""
 
-#: ../../library/subprocess.rst:898
+#: ../../library/subprocess.rst:905
 msgid "Notes"
 msgstr ""
 
-#: ../../library/subprocess.rst:903
+#: ../../library/subprocess.rst:910
 msgid "Converting an argument sequence to a string on Windows"
 msgstr ""
 
-#: ../../library/subprocess.rst:905
+#: ../../library/subprocess.rst:912
 msgid "On Windows, an *args* sequence is converted to a string that can be parsed using the following rules (which correspond to the rules used by the MS C runtime):"
 msgstr ""
 
-#: ../../library/subprocess.rst:909
+#: ../../library/subprocess.rst:916
 msgid "Arguments are delimited by white space, which is either a space or a tab."
 msgstr ""
 
-#: ../../library/subprocess.rst:912
+#: ../../library/subprocess.rst:919
 msgid "A string surrounded by double quotation marks is interpreted as a single argument, regardless of white space contained within.  A quoted string can be embedded in an argument."
 msgstr ""
 
-#: ../../library/subprocess.rst:917
+#: ../../library/subprocess.rst:924
 msgid "A double quotation mark preceded by a backslash is interpreted as a literal double quotation mark."
 msgstr ""
 
-#: ../../library/subprocess.rst:920
+#: ../../library/subprocess.rst:927
 msgid "Backslashes are interpreted literally, unless they immediately precede a double quotation mark."
 msgstr ""
 
-#: ../../library/subprocess.rst:923
+#: ../../library/subprocess.rst:930
 msgid "If backslashes immediately precede a double quotation mark, every pair of backslashes is interpreted as a literal backslash.  If the number of backslashes is odd, the last backslash escapes the next double quotation mark as described in rule 3."
 msgstr ""
 

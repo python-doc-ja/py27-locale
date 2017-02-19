@@ -117,7 +117,7 @@ msgid "Convert a :c:type:`double` *val* to a string using supplied *format_code*
 msgstr ""
 
 #: ../../c-api/conversion.rst:127
-msgid "*format_code* must be one of ``'e'``, ``'E'``, ``'f'``, ``'F'``, ``'g'``, ``'G'`` or ``'r'``.  For ``'r'``, the supplied *precision* must be 0 and is ignored.  The ``'r'`` format code specifies the standard :func:`repr` format."
+msgid "*format_code* must be one of ``'e'``, ``'E'``, ``'f'``, ``'F'``, ``'g'``, ``'G'`` or ``'r'``.  For ``'r'``, the supplied *precision* must be ``0`` and is ignored.  The ``'r'`` format code specifies the standard :func:`repr` format."
 msgstr ""
 
 #: ../../c-api/conversion.rst:132

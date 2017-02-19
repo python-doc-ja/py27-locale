@@ -32,30 +32,26 @@ msgid "If echo free input is unavailable getpass() falls back to printing a warn
 msgstr ""
 
 #: ../../library/getpass.rst:25
-msgid "Availability: Macintosh, Unix, Windows."
-msgstr ""
-
-#: ../../library/getpass.rst:27
 msgid "The *stream* parameter was added."
 msgstr ""
 
-#: ../../library/getpass.rst:29
+#: ../../library/getpass.rst:27
 msgid "On Unix it defaults to using /dev/tty before falling back to ``sys.stdin`` and ``sys.stderr``."
 msgstr ""
 
-#: ../../library/getpass.rst:33
+#: ../../library/getpass.rst:31
 msgid "If you call getpass from within IDLE, the input may be done in the terminal you launched IDLE from rather than the idle window itself."
 msgstr ""
 
-#: ../../library/getpass.rst:39
+#: ../../library/getpass.rst:37
 msgid "A :exc:`UserWarning` subclass issued when password input may be echoed."
 msgstr ""
 
-#: ../../library/getpass.rst:44
-msgid "Return the \"login name\" of the user. Availability: Unix, Windows."
+#: ../../library/getpass.rst:42
+msgid "Return the \"login name\" of the user."
 msgstr ""
 
-#: ../../library/getpass.rst:46
+#: ../../library/getpass.rst:44
 msgid "This function checks the environment variables :envvar:`LOGNAME`, :envvar:`USER`, :envvar:`LNAME` and :envvar:`USERNAME`, in order, and returns the value of the first one which is set to a non-empty string.  If none are set, the login name from the password database is returned on systems which support the :mod:`pwd` module, otherwise, an exception is raised."
 msgstr ""
 

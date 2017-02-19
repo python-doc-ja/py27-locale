@@ -48,7 +48,7 @@ msgid "The specific resources that can be limited are system dependent. They are
 msgstr ""
 
 #: ../../library/resource.rst:47
-msgid "Constant used to represent the the limit for an unlimited resource."
+msgid "Constant used to represent the limit for an unlimited resource."
 msgstr ""
 
 #: ../../library/resource.rst:52
@@ -84,15 +84,15 @@ msgid "The maximum amount of processor time (in seconds) that a process can use.
 msgstr ""
 
 #: ../../library/resource.rst:104
-msgid "The maximum size of a file which the process may create.  This only affects the stack of the main thread in a multi-threaded process."
+msgid "The maximum size of a file which the process may create."
 msgstr ""
 
-#: ../../library/resource.rst:110
+#: ../../library/resource.rst:109
 msgid "The maximum size (in bytes) of the process's heap."
 msgstr ""
 
-#: ../../library/resource.rst:115
-msgid "The maximum size (in bytes) of the call stack for the current process."
+#: ../../library/resource.rst:114
+msgid "The maximum size (in bytes) of the call stack for the current process.  This only affects the stack of the main thread in a multi-threaded process."
 msgstr ""
 
 #: ../../library/resource.rst:120

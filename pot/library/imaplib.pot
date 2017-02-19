@@ -72,7 +72,7 @@ msgid "The following utility functions are defined:"
 msgstr ""
 
 #: ../../library/imaplib.rst:91
-msgid "Parse an IMAP4 ``INTERNALDATE`` string and return corresponding local time.  The return value is a :class:`time.struct_time` instance or None if the string has wrong format."
+msgid "Parse an IMAP4 ``INTERNALDATE`` string and return corresponding local time.  The return value is a :class:`time.struct_time` instance or ``None`` if the string has wrong format."
 msgstr ""
 
 #: ../../library/imaplib.rst:97
@@ -96,7 +96,7 @@ msgid "At the end of the module, there is a test section that contains a more ex
 msgstr ""
 
 #: ../../library/imaplib.rst:126
-msgid "Documents describing the protocol, and sources and binaries  for servers implementing it, can all be found at the University of Washington's *IMAP Information Center* (http://www.washington.edu/imap/)."
+msgid "Documents describing the protocol, and sources and binaries  for servers implementing it, can all be found at the University of Washington's *IMAP Information Center* (https://www.washington.edu/imap/)."
 msgstr ""
 
 #: ../../library/imaplib.rst:134

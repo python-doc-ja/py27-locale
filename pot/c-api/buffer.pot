@@ -60,7 +60,7 @@ msgid "A *NULL* terminated string in :mod:`struct` module style syntax giving th
 msgstr ""
 
 #: ../../c-api/buffer.rst:76
-msgid "The number of dimensions the memory represents as a multi-dimensional array.  If it is 0, :c:data:`strides` and :c:data:`suboffsets` must be *NULL*."
+msgid "The number of dimensions the memory represents as a multi-dimensional array.  If it is ``0``, :c:data:`strides` and :c:data:`suboffsets` must be *NULL*."
 msgstr ""
 
 #: ../../c-api/buffer.rst:82
@@ -96,7 +96,7 @@ msgid "Buffer related functions"
 msgstr ""
 
 #: ../../c-api/buffer.rst:146
-msgid "Return 1 if *obj* supports the buffer interface otherwise 0."
+msgid "Return ``1`` if *obj* supports the buffer interface otherwise ``0``."
 msgstr ""
 
 #: ../../c-api/buffer.rst:151
@@ -108,7 +108,7 @@ msgid "Some exporters may not be able to share memory in every possible way and 
 msgstr ""
 
 #: ../../c-api/buffer.rst:167
-msgid "0 is returned on success and -1 on error."
+msgid "``0`` is returned on success and ``-1`` on error."
 msgstr ""
 
 #: ../../c-api/buffer.rst:169
@@ -252,7 +252,7 @@ msgid "Return the implied :c:data:`~Py_buffer.itemsize` from the struct-stype :c
 msgstr ""
 
 #: ../../c-api/buffer.rst:276
-msgid "Return 1 if the memory defined by the *view* is C-style (*fortran* is ``'C'``) or Fortran-style (*fortran* is ``'F'``) contiguous or either one (*fortran* is ``'A'``).  Return 0 otherwise."
+msgid "Return ``1`` if the memory defined by the *view* is C-style (*fortran* is ``'C'``) or Fortran-style (*fortran* is ``'F'``) contiguous or either one (*fortran* is ``'A'``).  Return ``0`` otherwise."
 msgstr ""
 
 #: ../../c-api/buffer.rst:283
@@ -260,7 +260,7 @@ msgid "Fill the *strides* array with byte-strides of a contiguous (C-style if *f
 msgstr ""
 
 #: ../../c-api/buffer.rst:290
-msgid "Fill in a buffer-info structure, *view*, correctly for an exporter that can only share a contiguous chunk of memory of \"unsigned bytes\" of the given length.  Return 0 on success and -1 (with raising an error) on error."
+msgid "Fill in a buffer-info structure, *view*, correctly for an exporter that can only share a contiguous chunk of memory of \"unsigned bytes\" of the given length.  Return ``0`` on success and ``-1`` (with raising an error) on error."
 msgstr ""
 
 #: ../../c-api/buffer.rst:296

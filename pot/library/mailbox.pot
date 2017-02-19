@@ -262,7 +262,7 @@ msgid "The original specification of the format."
 msgstr ""
 
 #: ../../library/mailbox.rst:414
-msgid "`Using maildir format <http://cr.yp.to/proto/maildir.html>`_"
+msgid "`Using maildir format <https://cr.yp.to/proto/maildir.html>`_"
 msgstr ""
 
 #: ../../library/mailbox.rst:413
@@ -324,7 +324,7 @@ msgid "Another specification of the format, with details on locking."
 msgstr ""
 
 #: ../../library/mailbox.rst:475
-msgid "`Configuring Netscape Mail on Unix: Why The Content-Length Format is Bad <http://www.jwz.org/doc/content-length.html>`_"
+msgid "`Configuring Netscape Mail on Unix: Why The Content-Length Format is Bad <https://www.jwz.org/doc/content-length.html>`_"
 msgstr ""
 
 #: ../../library/mailbox.rst:475
@@ -460,7 +460,7 @@ msgid "In Babyl mailboxes, the headers of a message are not stored contiguously 
 msgstr ""
 
 #: ../../library/mailbox.rst:681
-msgid "`Format of Version 5 Babyl Files <http://quimby.gnus.org/notes/BABYL>`_"
+msgid "`Format of Version 5 Babyl Files <https://quimby.gnus.org/notes/BABYL>`_"
 msgstr ""
 
 #: ../../library/mailbox.rst:681
@@ -468,7 +468,7 @@ msgid "A specification of the Babyl format."
 msgstr ""
 
 #: ../../library/mailbox.rst:683
-msgid "`Reading Mail with Rmail <http://www.gnu.org/software/emacs/manual/html_node/emacs/Rmail.html>`_"
+msgid "`Reading Mail with Rmail <https://www.gnu.org/software/emacs/manual/html_node/emacs/Rmail.html>`_"
 msgstr ""
 
 #: ../../library/mailbox.rst:684
@@ -504,7 +504,7 @@ msgid "A specification of MMDF format from the documentation of tin, a newsreade
 msgstr ""
 
 #: ../../library/mailbox.rst:735
-msgid "`MMDF <http://en.wikipedia.org/wiki/MMDF>`_"
+msgid "`MMDF <https://en.wikipedia.org/wiki/MMDF>`_"
 msgstr ""
 
 #: ../../library/mailbox.rst:735

@@ -196,11 +196,11 @@ msgid "Parse a query in the environment or from a file (the file defaults to ``s
 msgstr ""
 
 #: ../../library/cgi.rst:297
-msgid "This function is deprecated in this module. Use :func:`urlparse.parse_qs` instead. It is maintained here only for backward compatiblity."
+msgid "This function is deprecated in this module. Use :func:`urlparse.parse_qs` instead. It is maintained here only for backward compatibility."
 msgstr ""
 
 #: ../../library/cgi.rst:302
-msgid "This function is deprecated in this module. Use :func:`urlparse.parse_qsl` instead. It is maintained here only for backward compatiblity."
+msgid "This function is deprecated in this module. Use :func:`urlparse.parse_qsl` instead. It is maintained here only for backward compatibility."
 msgstr ""
 
 #: ../../library/cgi.rst:307
@@ -308,82 +308,82 @@ msgid "Debugging CGI scripts"
 msgstr ""
 
 #: ../../library/cgi.rst:446
-msgid "First of all, check for trivial installation errors --- reading the section above on installing your CGI script carefully can save you a lot of time.  If you wonder whether you have understood the installation procedure correctly, try installing a copy of this module file (:file:`cgi.py`) as a CGI script.  When invoked as a script, the file will dump its environment and the contents of the form in HTML form. Give it the right mode etc, and send it a request.  If it's installed in the standard :file:`cgi-bin` directory, it should be possible to send it a request by entering a URL into your browser of the form::"
+msgid "First of all, check for trivial installation errors --- reading the section above on installing your CGI script carefully can save you a lot of time.  If you wonder whether you have understood the installation procedure correctly, try installing a copy of this module file (:file:`cgi.py`) as a CGI script.  When invoked as a script, the file will dump its environment and the contents of the form in HTML form. Give it the right mode etc, and send it a request.  If it's installed in the standard :file:`cgi-bin` directory, it should be possible to send it a request by entering a URL into your browser of the form:"
 msgstr ""
 
-#: ../../library/cgi.rst:457
+#: ../../library/cgi.rst:459
 msgid "If this gives an error of type 404, the server cannot find the script -- perhaps you need to install it in a different directory.  If it gives another error, there's an installation problem that you should fix before trying to go any further.  If you get a nicely formatted listing of the environment and form content (in this example, the fields should be listed as \"addr\" with value \"At Home\" and \"name\" with value \"Joe Blow\"), the :file:`cgi.py` script has been installed correctly.  If you follow the same procedure for your own script, you should now be able to debug it."
 msgstr ""
 
-#: ../../library/cgi.rst:466
+#: ../../library/cgi.rst:468
 msgid "The next step could be to call the :mod:`cgi` module's :func:`test` function from your script: replace its main code with the single statement ::"
 msgstr ""
 
-#: ../../library/cgi.rst:471
+#: ../../library/cgi.rst:473
 msgid "This should produce the same results as those gotten from installing the :file:`cgi.py` file itself."
 msgstr ""
 
-#: ../../library/cgi.rst:474
+#: ../../library/cgi.rst:476
 msgid "When an ordinary Python script raises an unhandled exception (for whatever reason: of a typo in a module name, a file that can't be opened, etc.), the Python interpreter prints a nice traceback and exits.  While the Python interpreter will still do this when your CGI script raises an exception, most likely the traceback will end up in one of the HTTP server's log files, or be discarded altogether."
 msgstr ""
 
-#: ../../library/cgi.rst:481
+#: ../../library/cgi.rst:483
 msgid "Fortunately, once you have managed to get your script to execute *some* code, you can easily send tracebacks to the Web browser using the :mod:`cgitb` module. If you haven't done so already, just add the lines::"
 msgstr ""
 
-#: ../../library/cgi.rst:488
+#: ../../library/cgi.rst:490
 msgid "to the top of your script.  Then try running it again; when a problem occurs, you should see a detailed report that will likely make apparent the cause of the crash."
 msgstr ""
 
-#: ../../library/cgi.rst:492
+#: ../../library/cgi.rst:494
 msgid "If you suspect that there may be a problem in importing the :mod:`cgitb` module, you can use an even more robust approach (which only uses built-in modules)::"
 msgstr ""
 
-#: ../../library/cgi.rst:501
+#: ../../library/cgi.rst:503
 msgid "This relies on the Python interpreter to print the traceback.  The content type of the output is set to plain text, which disables all HTML processing.  If your script works, the raw HTML will be displayed by your client.  If it raises an exception, most likely after the first two lines have been printed, a traceback will be displayed. Because no HTML interpretation is going on, the traceback will be readable."
 msgstr ""
 
-#: ../../library/cgi.rst:510
+#: ../../library/cgi.rst:512
 msgid "Common problems and solutions"
 msgstr ""
 
-#: ../../library/cgi.rst:512
+#: ../../library/cgi.rst:514
 msgid "Most HTTP servers buffer the output from CGI scripts until the script is completed.  This means that it is not possible to display a progress report on the client's display while the script is running."
 msgstr ""
 
-#: ../../library/cgi.rst:516
+#: ../../library/cgi.rst:518
 msgid "Check the installation instructions above."
 msgstr ""
 
-#: ../../library/cgi.rst:518
+#: ../../library/cgi.rst:520
 msgid "Check the HTTP server's log files.  (``tail -f logfile`` in a separate window may be useful!)"
 msgstr ""
 
-#: ../../library/cgi.rst:521
+#: ../../library/cgi.rst:523
 msgid "Always check a script for syntax errors first, by doing something like ``python script.py``."
 msgstr ""
 
-#: ../../library/cgi.rst:524
+#: ../../library/cgi.rst:526
 msgid "If your script does not have any syntax errors, try adding ``import cgitb; cgitb.enable()`` to the top of the script."
 msgstr ""
 
-#: ../../library/cgi.rst:527
+#: ../../library/cgi.rst:529
 msgid "When invoking external programs, make sure they can be found. Usually, this means using absolute path names --- :envvar:`PATH` is usually not set to a very useful value in a CGI script."
 msgstr ""
 
-#: ../../library/cgi.rst:531
+#: ../../library/cgi.rst:533
 msgid "When reading or writing external files, make sure they can be read or written by the userid under which your CGI script will be running: this is typically the userid under which the web server is running, or some explicitly specified userid for a web server's ``suexec`` feature."
 msgstr ""
 
-#: ../../library/cgi.rst:536
+#: ../../library/cgi.rst:538
 msgid "Don't try to give a CGI script a set-uid mode.  This doesn't work on most systems, and is a security liability as well."
 msgstr ""
 
-#: ../../library/cgi.rst:540
+#: ../../library/cgi.rst:542
 msgid "Footnotes"
 msgstr ""
 
-#: ../../library/cgi.rst:541
+#: ../../library/cgi.rst:543
 msgid "Note that some recent versions of the HTML specification do state what order the field values should be supplied in, but knowing whether a request was received from a conforming browser, or even from a browser at all, is tedious and error-prone."
 msgstr ""
 

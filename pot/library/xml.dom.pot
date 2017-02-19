@@ -48,7 +48,7 @@ msgid "The specification provided by the W3C defines the DOM API for Java, ECMAS
 msgstr ""
 
 #: ../../library/xml.dom.rst:77
-msgid "`Document Object Model (DOM) Level 2 Specification <http://www.w3.org/TR/DOM-Level-2-Core/>`_"
+msgid "`Document Object Model (DOM) Level 2 Specification <https://www.w3.org/TR/DOM-Level-2-Core/>`_"
 msgstr ""
 
 #: ../../library/xml.dom.rst:77
@@ -56,7 +56,7 @@ msgid "The W3C recommendation upon which the Python DOM API is based."
 msgstr ""
 
 #: ../../library/xml.dom.rst:80
-msgid "`Document Object Model (DOM) Level 1 Specification <http://www.w3.org/TR/REC-DOM-Level-1/>`_"
+msgid "`Document Object Model (DOM) Level 1 Specification <https://www.w3.org/TR/REC-DOM-Level-1/>`_"
 msgstr ""
 
 #: ../../library/xml.dom.rst:80
@@ -100,15 +100,15 @@ msgid "The value used to indicate that no namespace is associated with a node in
 msgstr ""
 
 #: ../../library/xml.dom.rst:129
-msgid "The namespace URI associated with the reserved prefix ``xml``, as defined by `Namespaces in XML <http://www.w3.org/TR/REC-xml-names/>`_ (section 4)."
+msgid "The namespace URI associated with the reserved prefix ``xml``, as defined by `Namespaces in XML <https://www.w3.org/TR/REC-xml-names/>`_ (section 4)."
 msgstr ""
 
 #: ../../library/xml.dom.rst:137
-msgid "The namespace URI for namespace declarations, as defined by `Document Object Model (DOM) Level 2 Core Specification <http://www.w3.org/TR/DOM-Level-2-Core/core.html>`_ (section 1.1.8)."
+msgid "The namespace URI for namespace declarations, as defined by `Document Object Model (DOM) Level 2 Core Specification <https://www.w3.org/TR/DOM-Level-2-Core/core.html>`_ (section 1.1.8)."
 msgstr ""
 
 #: ../../library/xml.dom.rst:146
-msgid "The URI of the XHTML namespace as defined by `XHTML 1.0: The Extensible HyperText Markup Language <http://www.w3.org/TR/xhtml1/>`_ (section 3.1.1)."
+msgid "The URI of the XHTML namespace as defined by `XHTML 1.0: The Extensible HyperText Markup Language <https://www.w3.org/TR/xhtml1/>`_ (section 3.1.1)."
 msgstr ""
 
 #: ../../library/xml.dom.rst:151
@@ -388,7 +388,7 @@ msgid "NodeList Objects"
 msgstr ""
 
 #: ../../library/xml.dom.rst:421
-msgid "A :class:`NodeList` represents a sequence of nodes.  These objects are used in two ways in the DOM Core recommendation:  the :class:`Element` objects provides one as its list of child nodes, and the :meth:`getElementsByTagName` and :meth:`getElementsByTagNameNS` methods of :class:`Node` return objects with this interface to represent query results."
+msgid "A :class:`NodeList` represents a sequence of nodes.  These objects are used in two ways in the DOM Core recommendation:  an :class:`Element` object provides one as its list of child nodes, and the :meth:`getElementsByTagName` and :meth:`getElementsByTagNameNS` methods of :class:`Node` return objects with this interface to represent query results."
 msgstr ""
 
 #: ../../library/xml.dom.rst:427
@@ -396,7 +396,7 @@ msgid "The DOM Level 2 recommendation defines one method and one attribute for t
 msgstr ""
 
 #: ../../library/xml.dom.rst:433
-msgid "Return the *i*'th item from the sequence, if there is one, or ``None``.  The index *i* is not allowed to be less then zero or greater than or equal to the length of the sequence."
+msgid "Return the *i*'th item from the sequence, if there is one, or ``None``.  The index *i* is not allowed to be less than zero or greater than or equal to the length of the sequence."
 msgstr ""
 
 #: ../../library/xml.dom.rst:440
@@ -705,7 +705,7 @@ msgid "Raised when an attempt is made to use an object that is not defined or is
 msgstr ""
 
 #: ../../library/xml.dom.rst:897
-msgid "If an attempt is made to change any object in a way that is not permitted with regard to the `Namespaces in XML <http://www.w3.org/TR/REC-xml-names/>`_ recommendation, this exception is raised."
+msgid "If an attempt is made to change any object in a way that is not permitted with regard to the `Namespaces in XML <https://www.w3.org/TR/REC-xml-names/>`_ recommendation, this exception is raised."
 msgstr ""
 
 #: ../../library/xml.dom.rst:904

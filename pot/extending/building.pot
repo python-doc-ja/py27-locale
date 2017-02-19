@@ -28,58 +28,58 @@ msgid "Building an extension module using distutils requires that distutils is i
 msgstr ""
 
 #: ../../extending/building.rst:26
-msgid "A distutils package contains a driver script, :file:`setup.py`. This is a plain Python file, which, in the most simple case, could look like this::"
+msgid "A distutils package contains a driver script, :file:`setup.py`. This is a plain Python file, which, in the most simple case, could look like this:"
 msgstr ""
 
-#: ../../extending/building.rst:40
+#: ../../extending/building.rst:42
 msgid "With this :file:`setup.py`, and a file :file:`demo.c`, running ::"
 msgstr ""
 
-#: ../../extending/building.rst:44
+#: ../../extending/building.rst:46
 msgid "will compile :file:`demo.c`, and produce an extension module named ``demo`` in the :file:`build` directory. Depending on the system, the module file will end up in a subdirectory :file:`build/lib.system`, and may have a name like :file:`demo.so` or :file:`demo.pyd`."
 msgstr ""
 
-#: ../../extending/building.rst:49
+#: ../../extending/building.rst:51
 msgid "In the :file:`setup.py`, all execution is performed by calling the ``setup`` function. This takes a variable number of keyword arguments, of which the example above uses only a subset. Specifically, the example specifies meta-information to build packages, and it specifies the contents of the package.  Normally, a package will contain of addition modules, like Python source modules, documentation, subpackages, etc. Please refer to the distutils documentation in :ref:`distutils-index` to learn more about the features of distutils; this section explains building extension modules only."
 msgstr ""
 
-#: ../../extending/building.rst:58
+#: ../../extending/building.rst:60
 msgid "It is common to pre-compute arguments to :func:`setup`, to better structure the driver script. In the example above, the ``ext_modules`` argument to :func:`setup` is a list of extension modules, each of which is an instance of the :class:`~distutils.extension.Extension`. In the example, the instance defines an extension named ``demo`` which is build by compiling a single source file, :file:`demo.c`."
 msgstr ""
 
-#: ../../extending/building.rst:65
-msgid "In many cases, building an extension is more complex, since additional preprocessor defines and libraries may be needed. This is demonstrated in the example below. ::"
+#: ../../extending/building.rst:67
+msgid "In many cases, building an extension is more complex, since additional preprocessor defines and libraries may be needed. This is demonstrated in the example below."
 msgstr ""
 
-#: ../../extending/building.rst:91
+#: ../../extending/building.rst:95
 msgid "In this example, :func:`setup` is called with additional meta-information, which is recommended when distribution packages have to be built. For the extension itself, it specifies preprocessor defines, include directories, library directories, and libraries. Depending on the compiler, distutils passes this information in different ways to the compiler. For example, on Unix, this may result in the compilation commands ::"
 msgstr ""
 
-#: ../../extending/building.rst:102
+#: ../../extending/building.rst:106
 msgid "These lines are for demonstration purposes only; distutils users should trust that distutils gets the invocations right."
 msgstr ""
 
-#: ../../extending/building.rst:109
+#: ../../extending/building.rst:113
 msgid "Distributing your extension modules"
 msgstr ""
 
-#: ../../extending/building.rst:111
+#: ../../extending/building.rst:115
 msgid "When an extension has been successfully build, there are three ways to use it."
 msgstr ""
 
-#: ../../extending/building.rst:113
+#: ../../extending/building.rst:117
 msgid "End-users will typically want to install the module, they do so by running ::"
 msgstr ""
 
-#: ../../extending/building.rst:117
+#: ../../extending/building.rst:121
 msgid "Module maintainers should produce source packages; to do so, they run ::"
 msgstr ""
 
-#: ../../extending/building.rst:121
+#: ../../extending/building.rst:125
 msgid "In some cases, additional files need to be included in a source distribution; this is done through a :file:`MANIFEST.in` file; see the distutils documentation for details."
 msgstr ""
 
-#: ../../extending/building.rst:125
+#: ../../extending/building.rst:129
 msgid "If the source distribution has been build successfully, maintainers can also create binary distributions. Depending on the platform, one of the following commands can be used to do so. ::"
 msgstr ""
 

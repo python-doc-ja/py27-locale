@@ -208,7 +208,7 @@ msgid "Each web server requires a specific module."
 msgstr ""
 
 #: ../../howto/webservers.rst:269
-msgid "Apache has both `mod_fastcgi <http://www.fastcgi.com/drupal/>`_ and `mod_fcgid <http://httpd.apache.org/mod_fcgid/>`_.  ``mod_fastcgi`` is the original one, but it has some licensing issues, which is why it is sometimes considered non-free. ``mod_fcgid`` is a smaller, compatible alternative.  One of these modules needs to be loaded by Apache."
+msgid "Apache has both `mod_fastcgi <http://www.fastcgi.com/drupal/>`_ and `mod_fcgid <https://httpd.apache.org/mod_fcgid/>`_.  ``mod_fastcgi`` is the original one, but it has some licensing issues, which is why it is sometimes considered non-free. ``mod_fcgid`` is a smaller, compatible alternative.  One of these modules needs to be loaded by Apache."
 msgstr ""
 
 #: ../../howto/webservers.rst:275
@@ -216,7 +216,7 @@ msgid "lighttpd ships its own `FastCGI module <http://redmine.lighttpd.net/proje
 msgstr ""
 
 #: ../../howto/webservers.rst:279
-msgid "`nginx <http://nginx.org/>`_ also supports `FastCGI <http://wiki.nginx.org/NginxSimplePythonFCGI>`_."
+msgid "`nginx <http://nginx.org/>`_ also supports `FastCGI <https://www.nginx.com/resources/wiki/start/topics/examples/simplepythonfcgi/>`_."
 msgstr ""
 
 #: ../../howto/webservers.rst:282
@@ -228,7 +228,7 @@ msgid "This is a simple WSGI application, but you need to install `flup <https:/
 msgstr ""
 
 #: ../../howto/webservers.rst:309
-msgid "There is some documentation on `setting up Django with FastCGI <https://docs.djangoproject.com/en/dev/howto/deployment/fastcgi/>`_, most of which can be reused for other WSGI-compliant frameworks and libraries. Only the ``manage.py`` part has to be changed, the example used here can be used instead.  Django does more or less the exact same thing."
+msgid "There is some documentation on `setting up Django with WSGI <https://docs.djangoproject.com/en/dev/howto/deployment/wsgi/>`_, most of which can be reused for other WSGI-compliant frameworks and libraries. Only the ``manage.py`` part has to be changed, the example used here can be used instead.  Django does more or less the exact same thing."
 msgstr ""
 
 #: ../../howto/webservers.rst:317
@@ -260,7 +260,7 @@ msgid "The big benefit of WSGI is the unification of the application programming
 msgstr ""
 
 #: ../../howto/webservers.rst:358
-msgid "A really great WSGI feature is middleware.  Middleware is a layer around your program which can add various functionality to it.  There is quite a bit of `middleware <http://www.wsgi.org/en/latest/libraries.html>`_ already available.  For example, instead of writing your own session management (HTTP is a stateless protocol, so to associate multiple HTTP requests with a single user your application must create and manage such state via a session), you can just download middleware which does that, plug it in, and get on with coding the unique parts of your application.  The same thing with compression -- there is existing middleware which handles compressing your HTML using gzip to save on your server's bandwidth.  Authentication is another a problem easily solved using existing middleware."
+msgid "A really great WSGI feature is middleware.  Middleware is a layer around your program which can add various functionality to it.  There is quite a bit of `middleware <https://wsgi.readthedocs.org/en/latest/libraries.html>`_ already available.  For example, instead of writing your own session management (HTTP is a stateless protocol, so to associate multiple HTTP requests with a single user your application must create and manage such state via a session), you can just download middleware which does that, plug it in, and get on with coding the unique parts of your application.  The same thing with compression -- there is existing middleware which handles compressing your HTML using gzip to save on your server's bandwidth.  Authentication is another problem that is easily solved using existing middleware."
 msgstr ""
 
 #: ../../howto/webservers.rst:370
@@ -272,7 +272,7 @@ msgid "WSGI Servers"
 msgstr ""
 
 #: ../../howto/webservers.rst:378
-msgid "The code that is used to connect to various low level gateways like CGI or mod_python is called a *WSGI server*.  One of these servers is ``flup``, which supports FastCGI and SCGI, as well as `AJP <http://en.wikipedia.org/wiki/Apache_JServ_Protocol>`_.  Some of these servers are written in Python, as ``flup`` is, but there also exist others which are written in C and can be used as drop-in replacements."
+msgid "The code that is used to connect to various low level gateways like CGI or mod_python is called a *WSGI server*.  One of these servers is ``flup``, which supports FastCGI and SCGI, as well as `AJP <https://en.wikipedia.org/wiki/Apache_JServ_Protocol>`_.  Some of these servers are written in Python, as ``flup`` is, but there also exist others which are written in C and can be used as drop-in replacements."
 msgstr ""
 
 #: ../../howto/webservers.rst:385
@@ -280,7 +280,7 @@ msgid "There are many servers already available, so a Python web application can
 msgstr ""
 
 #: ../../howto/webservers.rst:391
-msgid "A good overview of WSGI-related code can be found in the `WSGI homepage <http://www.wsgi.org/en/latest/index.html>`_, which contains an extensive list of `WSGI servers <http://www.wsgi.org/en/latest/servers.html>`_ which can be used by *any* application supporting WSGI."
+msgid "A good overview of WSGI-related code can be found in the `WSGI homepage <https://wsgi.readthedocs.org/>`_, which contains an extensive list of `WSGI servers <https://wsgi.readthedocs.org/en/latest/servers.html>`_ which can be used by *any* application supporting WSGI."
 msgstr ""
 
 #: ../../howto/webservers.rst:396
@@ -300,7 +300,7 @@ msgid "What does WSGI give the web application developer?  Let's take a look at 
 msgstr ""
 
 #: ../../howto/webservers.rst:409
-msgid "One of the most widely used wiki software packages is `MoinMoin <http://moinmo.in/>`_.  It was created in 2000, so it predates WSGI by about three years.  Older versions needed separate code to run on CGI, mod_python, FastCGI and standalone."
+msgid "One of the most widely used wiki software packages is `MoinMoin <https://moinmo.in/>`_.  It was created in 2000, so it predates WSGI by about three years.  Older versions needed separate code to run on CGI, mod_python, FastCGI and standalone."
 msgstr ""
 
 #: ../../howto/webservers.rst:414
@@ -340,7 +340,7 @@ msgid "While not all Python frameworks explicitly support MVC, it is often trivi
 msgstr ""
 
 #: ../../howto/webservers.rst:461
-msgid "The English Wikipedia has an article about the `Model-View-Controller pattern <http://en.wikipedia.org/wiki/Model-view-controller>`_.  It includes a long list of web frameworks for various programming languages."
+msgid "The English Wikipedia has an article about the `Model-View-Controller pattern <https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_.  It includes a long list of web frameworks for various programming languages."
 msgstr ""
 
 #: ../../howto/webservers.rst:467
@@ -412,7 +412,7 @@ msgid "Often, relational database engines like `MySQL <http://www.mysql.com/>`_ 
 msgstr ""
 
 #: ../../howto/webservers.rst:549
-msgid "Relational databases are *queried* using a language called `SQL <http://en.wikipedia.org/wiki/SQL>`_.  Python programmers in general do not like SQL too much, as they prefer to work with objects.  It is possible to save Python objects into a database using a technology called `ORM <http://en.wikipedia.org/wiki/Object-relational_mapping>`_ (Object Relational Mapping).  ORM translates all object-oriented access into SQL code under the hood, so the developer does not need to think about it.  Most `frameworks`_ use ORMs, and it works quite well."
+msgid "Relational databases are *queried* using a language called `SQL <https://en.wikipedia.org/wiki/SQL>`_.  Python programmers in general do not like SQL too much, as they prefer to work with objects.  It is possible to save Python objects into a database using a technology called `ORM <https://en.wikipedia.org/wiki/Object-relational_mapping>`_ (Object Relational Mapping).  ORM translates all object-oriented access into SQL code under the hood, so the developer does not need to think about it.  Most `frameworks`_ use ORMs, and it works quite well."
 msgstr ""
 
 #: ../../howto/webservers.rst:558
@@ -436,7 +436,7 @@ msgid "`Database Programming <https://wiki.python.org/moin/DatabaseProgramming>`
 msgstr ""
 
 #: ../../howto/webservers.rst:585
-msgid "`SQLAlchemy <http://www.sqlalchemy.org/>`_, the most powerful OR-Mapper for Python, and `Elixir <http://elixir.ematia.de/>`_, which makes SQLAlchemy easier to use"
+msgid "`SQLAlchemy <http://www.sqlalchemy.org/>`_, the most powerful OR-Mapper for Python, and `Elixir <https://pypi.python.org/pypi/Elixir>`_, which makes SQLAlchemy easier to use"
 msgstr ""
 
 #: ../../howto/webservers.rst:589
@@ -444,7 +444,7 @@ msgid "`SQLObject <http://www.sqlobject.org/>`_, another popular OR-Mapper"
 msgstr ""
 
 #: ../../howto/webservers.rst:591
-msgid "`ZODB <https://launchpad.net/zodb>`_ and `Durus <http://www.mems-exchange.org/software/durus/>`_, two object oriented databases"
+msgid "`ZODB <https://launchpad.net/zodb>`_ and `Durus <https://www.mems-exchange.org/software/>`_, two object oriented databases"
 msgstr ""
 
 #: ../../howto/webservers.rst:599
@@ -500,7 +500,7 @@ msgid "Another popular web framework for Python is `TurboGears <http://www.turbo
 msgstr ""
 
 #: ../../howto/webservers.rst:678
-msgid "The documentation can be found in the `TurboGears wiki <http://docs.turbogears.org/>`_, where links to screencasts can be found. TurboGears has also an active user community which can respond to most related questions.  There is also a `TurboGears book <http://turbogearsbook.com/>`_ published, which is a good starting point."
+msgid "The documentation can be found in the `TurboGears documentation <https://turbogears.readthedocs.org/>`_, where links to screencasts can be found. TurboGears has also an active user community which can respond to most related questions.  There is also a `TurboGears book <http://turbogears.org/1.0/docs/TGBooks.html>`_ published, which is a good starting point."
 msgstr ""
 
 #: ../../howto/webservers.rst:684

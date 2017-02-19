@@ -556,38 +556,38 @@ msgid "Operators"
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:718
-msgid "The following tokens are operators::"
+msgid "The following tokens are operators:"
 msgstr ""
 
-#: ../../reference/lexical_analysis.rst:724
+#: ../../reference/lexical_analysis.rst:727
 msgid "The comparison operators ``<>`` and ``!=`` are alternate spellings of the same operator.  ``!=`` is the preferred spelling; ``<>`` is obsolescent."
 msgstr ""
 
-#: ../../reference/lexical_analysis.rst:731
+#: ../../reference/lexical_analysis.rst:734
 msgid "Delimiters"
 msgstr ""
 
-#: ../../reference/lexical_analysis.rst:735
-msgid "The following tokens serve as delimiters in the grammar::"
-msgstr ""
-
-#: ../../reference/lexical_analysis.rst:742
-msgid "The period can also occur in floating-point and imaginary literals.  A sequence of three periods has a special meaning as an ellipsis in slices. The second half of the list, the augmented assignment operators, serve lexically as delimiters, but also perform an operation."
+#: ../../reference/lexical_analysis.rst:738
+msgid "The following tokens serve as delimiters in the grammar:"
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:747
-msgid "The following printing ASCII characters have special meaning as part of other tokens or are otherwise significant to the lexical analyzer::"
+msgid "The period can also occur in floating-point and imaginary literals.  A sequence of three periods has a special meaning as an ellipsis in slices. The second half of the list, the augmented assignment operators, serve lexically as delimiters, but also perform an operation."
 msgstr ""
 
-#: ../../reference/lexical_analysis.rst:754
-msgid "The following printing ASCII characters are not used in Python.  Their occurrence outside string literals and comments is an unconditional error::"
-msgstr ""
-
-#: ../../reference/lexical_analysis.rst:760
-msgid "Footnotes"
+#: ../../reference/lexical_analysis.rst:752
+msgid "The following printing ASCII characters have special meaning as part of other tokens or are otherwise significant to the lexical analyzer:"
 msgstr ""
 
 #: ../../reference/lexical_analysis.rst:761
+msgid "The following printing ASCII characters are not used in Python.  Their occurrence outside string literals and comments is an unconditional error:"
+msgstr ""
+
+#: ../../reference/lexical_analysis.rst:769
+msgid "Footnotes"
+msgstr ""
+
+#: ../../reference/lexical_analysis.rst:770
 msgid "In versions of Python prior to 2.4, octal and hexadecimal literals in the range just above the largest representable plain integer but below the largest unsigned 32-bit number (on a machine using 32-bit arithmetic), 4294967296, were taken as the negative plain integer obtained by subtracting 4294967296 from their unsigned value."
 msgstr ""
 

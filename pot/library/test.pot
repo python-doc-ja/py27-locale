@@ -120,7 +120,7 @@ msgid "The :mod:`test.regrtest` module can be run as a script to drive Python's 
 msgstr ""
 
 #: ../../library/test.rst:171
-msgid "Running :mod:`test.regrtest` directly allows what resources are available for tests to use to be set. You do this by using the ``-u`` command-line option. Specifying ``all`` as the value for the ``-u`` option enables all possible resources: :program:`python -m test -uall`. If all but one resource is desired (a more common case), a comma-separated list of resources that are not desired may be listed after ``all``. The command :program:`python -m test.regrtest -uall,-audio,-largefile` will run :mod:`test.regrtest` with all resources except the ``audio`` and ``largefile`` resources. For a list of all resources and more command-line options, run :program:`python -m test.regrtest -h`."
+msgid "Running :mod:`test.regrtest` directly allows what resources are available for tests to use to be set. You do this by using the ``-u`` command-line option. Specifying ``all`` as the value for the ``-u`` option enables all possible resources: :program:`python -m test.regrtest -uall`. If all but one resource is desired (a more common case), a comma-separated list of resources that are not desired may be listed after ``all``. The command :program:`python -m test.regrtest -uall,-audio,-largefile` will run :mod:`test.regrtest` with all resources except the ``audio`` and ``largefile`` resources. For a list of all resources and more command-line options, run :program:`python -m test.regrtest -h`."
 msgstr ""
 
 #: ../../library/test.rst:182
@@ -286,7 +286,7 @@ msgid "The named module and any modules named in the *fresh* and *blocked* param
 msgstr ""
 
 #: ../../library/test.rst:421
-msgid "This function will raise :exc:`unittest.SkipTest` is the named module cannot be imported."
+msgid "This function will raise :exc:`unittest.SkipTest` if the named module cannot be imported."
 msgstr ""
 
 #: ../../library/test.rst:436

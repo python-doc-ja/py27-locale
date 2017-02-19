@@ -20,27 +20,27 @@ msgid ":mod:`StringIO` --- Read and write strings as files"
 msgstr ""
 
 #: ../../library/stringio.rst:9
-msgid "This module implements a file-like class, :class:`StringIO`, that reads and writes a string buffer (also known as *memory files*).  See the description of file objects for operations (section :ref:`bltin-file-objects`). (For standard strings, see :class:`str` and :class:`unicode`.)"
+msgid "This module implements a file-like class, :class:`~StringIO.StringIO`, that reads and writes a string buffer (also known as *memory files*).  See the description of file objects for operations (section :ref:`bltin-file-objects`). (For standard strings, see :class:`str` and :class:`unicode`.)"
 msgstr ""
 
 #: ../../library/stringio.rst:17
-msgid "When a :class:`StringIO` object is created, it can be initialized to an existing string by passing the string to the constructor. If no string is given, the :class:`StringIO` will start empty. In both cases, the initial file position starts at zero."
+msgid "When a :class:`~StringIO.StringIO` object is created, it can be initialized to an existing string by passing the string to the constructor. If no string is given, the :class:`~StringIO.StringIO` will start empty. In both cases, the initial file position starts at zero."
 msgstr ""
 
 #: ../../library/stringio.rst:22
-msgid "The :class:`StringIO` object can accept either Unicode or 8-bit strings, but mixing the two may take some care.  If both are used, 8-bit strings that cannot be interpreted as 7-bit ASCII (that use the 8th bit) will cause a :exc:`UnicodeError` to be raised when :meth:`getvalue` is called."
+msgid "The :class:`~StringIO.StringIO` object can accept either Unicode or 8-bit strings, but mixing the two may take some care.  If both are used, 8-bit strings that cannot be interpreted as 7-bit ASCII (that use the 8th bit) will cause a :exc:`UnicodeError` to be raised when :meth:`getvalue` is called."
 msgstr ""
 
 #: ../../library/stringio.rst:27
-msgid "The following methods of :class:`StringIO` objects require special mention:"
+msgid "The following methods of :class:`~StringIO.StringIO` objects require special mention:"
 msgstr ""
 
 #: ../../library/stringio.rst:32
-msgid "Retrieve the entire contents of the \"file\" at any time before the :class:`StringIO` object's :meth:`close` method is called.  See the note above for information about mixing Unicode and 8-bit strings; such mixing can cause this method to raise :exc:`UnicodeError`."
+msgid "Retrieve the entire contents of the \"file\" at any time before the :class:`~StringIO.StringIO` object's :meth:`close` method is called.  See the note above for information about mixing Unicode and 8-bit strings; such mixing can cause this method to raise :exc:`UnicodeError`."
 msgstr ""
 
 #: ../../library/stringio.rst:40
-msgid "Free the memory buffer.  Attempting to do further operations with a closed :class:`StringIO` object will raise a :exc:`ValueError`."
+msgid "Free the memory buffer.  Attempting to do further operations with a closed :class:`~StringIO.StringIO` object will raise a :exc:`ValueError`."
 msgstr ""
 
 #: ../../library/stringio.rst:43

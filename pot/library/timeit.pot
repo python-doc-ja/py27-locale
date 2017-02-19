@@ -24,7 +24,7 @@ msgid "**Source code:** :source:`Lib/timeit.py`"
 msgstr ""
 
 #: ../../library/timeit.rst:18
-msgid "This module provides a simple way to time small bits of Python code. It has both a :ref:`command-line-interface` as well as a :ref:`callable <python-interface>` one.  It avoids a number of common traps for measuring execution times. See also Tim Peters' introduction to the \"Algorithms\" chapter in the *Python Cookbook*, published by O'Reilly."
+msgid "This module provides a simple way to time small bits of Python code. It has both a :ref:`timeit-command-line-interface` as well as a :ref:`callable <python-interface>` one.  It avoids a number of common traps for measuring execution times. See also Tim Peters' introduction to the \"Algorithms\" chapter in the *Python Cookbook*, published by O'Reilly."
 msgstr ""
 
 #: ../../library/timeit.rst:26
@@ -32,7 +32,7 @@ msgid "Basic Examples"
 msgstr ""
 
 #: ../../library/timeit.rst:28
-msgid "The following example shows how the :ref:`command-line-interface` can be used to compare three different expressions:"
+msgid "The following example shows how the :ref:`timeit-command-line-interface` can be used to compare three different expressions:"
 msgstr ""
 
 #: ../../library/timeit.rst:40
@@ -164,26 +164,26 @@ msgid ":func:`default_timer` measurations can be affected by other programs runn
 msgstr ""
 
 #: ../../library/timeit.rst:231
-msgid "There is a certain baseline overhead associated with executing a pass statement. The code here doesn't try to hide it, but you should be aware of it.  The baseline overhead can be measured by invoking the program without arguments, and it might differ between Python versions.  Also, to fairly compare older Python versions to Python 2.3, you may want to use Python's :option:`-O` option for the older versions to avoid timing ``SET_LINENO`` instructions."
+msgid "There is a certain baseline overhead associated with executing a pass statement. The code here doesn't try to hide it, but you should be aware of it.  The baseline overhead can be measured by invoking the program without arguments, and it might differ between Python versions.  Also, to fairly compare older Python versions to Python 2.3, you may want to use Python's :option:`!-O` option (see :ref:`Optimizations <using-on-optimizations>`) for the older versions to avoid timing ``SET_LINENO`` instructions."
 msgstr ""
 
-#: ../../library/timeit.rst:242
+#: ../../library/timeit.rst:243
 msgid "Examples"
 msgstr ""
 
-#: ../../library/timeit.rst:244
+#: ../../library/timeit.rst:245
 msgid "It is possible to provide a setup statement that is executed only once at the beginning:"
 msgstr ""
 
-#: ../../library/timeit.rst:261
+#: ../../library/timeit.rst:262
 msgid "The same can be done using the :class:`Timer` class and its methods::"
 msgstr ""
 
-#: ../../library/timeit.rst:271
+#: ../../library/timeit.rst:272
 msgid "The following examples show how to time expressions that contain multiple lines. Here we compare the cost of using :func:`hasattr` vs. :keyword:`try`/:keyword:`except` to test for missing and present object attributes:"
 msgstr ""
 
-#: ../../library/timeit.rst:316
+#: ../../library/timeit.rst:317
 msgid "To give the :mod:`timeit` module access to functions you define, you can pass a *setup* parameter which contains an import statement::"
 msgstr ""
 

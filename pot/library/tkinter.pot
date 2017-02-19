@@ -44,7 +44,7 @@ msgid "Extensive tutorial plus friendlier widget pages for some of the widgets."
 msgstr ""
 
 #: ../../library/tkinter.rst:30
-msgid "`Tkinter reference: a GUI for Python <http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html>`_"
+msgid "`Tkinter reference: a GUI for Python <https://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html>`_"
 msgstr ""
 
 #: ../../library/tkinter.rst:30
@@ -60,7 +60,7 @@ msgid "Online reference for tkinter supported by effbot.org."
 msgstr ""
 
 #: ../../library/tkinter.rst:36
-msgid "`Tcl/Tk manual <http://www.tcl.tk/man/tcl8.5/>`_"
+msgid "`Tcl/Tk manual <https://www.tcl.tk/man/tcl8.5/>`_"
 msgstr ""
 
 #: ../../library/tkinter.rst:36
@@ -68,7 +68,7 @@ msgid "Official manual for the latest tcl/tk version."
 msgstr ""
 
 #: ../../library/tkinter.rst:39
-msgid "`Programming Python <http://www.rmi.net/~lutz/about-pp4e.html>`_"
+msgid "`Programming Python <http://learning-python.com/books/about-pp4e.html>`_"
 msgstr ""
 
 #: ../../library/tkinter.rst:39
@@ -84,7 +84,7 @@ msgid "Book by Mark Rozerman about building attractive and modern graphical user
 msgstr ""
 
 #: ../../library/tkinter.rst:44
-msgid "`Python and Tkinter Programming <http://www.manning.com/grayson/>`_"
+msgid "`Python and Tkinter Programming <https://www.manning.com/books/python-and-tkinter-programming>`_"
 msgstr ""
 
 #: ../../library/tkinter.rst:45

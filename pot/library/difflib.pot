@@ -226,7 +226,7 @@ msgid "Compare *a* and *b* (lists of strings); return a delta (a :term:`generato
 msgstr ""
 
 #: ../../library/difflib.rst:278
-msgid "Unified diffs are a compact way of showing just the lines that have changed plus a few lines of context.  The changes are shown in a inline style (instead of separate before/after blocks).  The number of context lines is set by *n* which defaults to three."
+msgid "Unified diffs are a compact way of showing just the lines that have changed plus a few lines of context.  The changes are shown in an inline style (instead of separate before/after blocks).  The number of context lines is set by *n* which defaults to three."
 msgstr ""
 
 #: ../../library/difflib.rst:283
@@ -442,7 +442,7 @@ msgid "The :func:`get_close_matches` function in this module which shows how sim
 msgstr ""
 
 #: ../../library/difflib.rst:596
-msgid "`Simple version control recipe <http://code.activestate.com/recipes/576729/>`_ for a small application built with :class:`SequenceMatcher`."
+msgid "`Simple version control recipe <https://code.activestate.com/recipes/576729/>`_ for a small application built with :class:`SequenceMatcher`."
 msgstr ""
 
 #: ../../library/difflib.rst:604

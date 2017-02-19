@@ -347,7 +347,7 @@ msgid "Low level interface to kevent"
 msgstr ""
 
 #: ../../library/select.rst:298
-msgid "changelist must be an iterable of kevent object or None"
+msgid "changelist must be an iterable of kevent object or ``None``"
 msgstr ""
 
 #: ../../library/select.rst:299
@@ -363,7 +363,7 @@ msgid "Kevent Objects"
 msgstr ""
 
 #: ../../library/select.rst:308
-msgid "http://www.freebsd.org/cgi/man.cgi?query=kqueue&sektion=2"
+msgid "https://www.freebsd.org/cgi/man.cgi?query=kqueue&sektion=2"
 msgstr ""
 
 #: ../../library/select.rst:312

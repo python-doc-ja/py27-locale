@@ -160,82 +160,82 @@ msgid "Create an archive file (eg. zip or tar) and returns its name."
 msgstr ""
 
 #: ../../library/shutil.rst:268
-msgid "*base_name* is the name of the file to create, including the path, minus any format-specific extension. *format* is the archive format: one of \"zip\", \"tar\", \"bztar\" or \"gztar\"."
+msgid "*base_name* is the name of the file to create, including the path, minus any format-specific extension. *format* is the archive format: one of \"zip\" (if the :mod:`zlib` module or external ``zip`` executable is available), \"tar\", \"gztar\" (if the :mod:`zlib` module is available), or \"bztar\" (if the :mod:`bz2` module is available)."
 msgstr ""
 
-#: ../../library/shutil.rst:272
+#: ../../library/shutil.rst:274
 msgid "*root_dir* is a directory that will be the root directory of the archive; ie. we typically chdir into *root_dir* before creating the archive."
 msgstr ""
 
-#: ../../library/shutil.rst:276
+#: ../../library/shutil.rst:278
 msgid "*base_dir* is the directory where we start archiving from; ie. *base_dir* will be the common prefix of all files and directories in the archive."
 msgstr ""
 
-#: ../../library/shutil.rst:280
+#: ../../library/shutil.rst:282
 msgid "*root_dir* and *base_dir* both default to the current directory."
 msgstr ""
 
-#: ../../library/shutil.rst:282
+#: ../../library/shutil.rst:284
 msgid "*owner* and *group* are used when creating a tar archive. By default, uses the current owner and group."
 msgstr ""
 
-#: ../../library/shutil.rst:285
+#: ../../library/shutil.rst:287
 msgid "*logger* must be an object compatible with :pep:`282`, usually an instance of :class:`logging.Logger`."
 msgstr ""
 
-#: ../../library/shutil.rst:293
+#: ../../library/shutil.rst:295
 msgid "Return a list of supported formats for archiving. Each element of the returned sequence is a tuple ``(name, description)``."
 msgstr ""
 
-#: ../../library/shutil.rst:296
+#: ../../library/shutil.rst:298
 msgid "By default :mod:`shutil` provides these formats:"
 msgstr ""
 
-#: ../../library/shutil.rst:298
-msgid "*gztar*: gzip'ed tar-file"
-msgstr ""
-
-#: ../../library/shutil.rst:299
-msgid "*bztar*: bzip2'ed tar-file"
-msgstr ""
-
 #: ../../library/shutil.rst:300
-msgid "*tar*: uncompressed tar file"
+msgid "*zip*: ZIP file (if the :mod:`zlib` module or external ``zip`` executable is available)."
 msgstr ""
 
-#: ../../library/shutil.rst:301
-msgid "*zip*: ZIP file"
+#: ../../library/shutil.rst:302
+msgid "*tar*: uncompressed tar file."
 msgstr ""
 
 #: ../../library/shutil.rst:303
+msgid "*gztar*: gzip'ed tar-file (if the :mod:`zlib` module is available)."
+msgstr ""
+
+#: ../../library/shutil.rst:304
+msgid "*bztar*: bzip2'ed tar-file (if the :mod:`bz2` module is available)."
+msgstr ""
+
+#: ../../library/shutil.rst:306
 msgid "You can register new formats or provide your own archiver for any existing formats, by using :func:`register_archive_format`."
 msgstr ""
 
-#: ../../library/shutil.rst:311
+#: ../../library/shutil.rst:314
 msgid "Register an archiver for the format *name*. *function* is a callable that will be used to invoke the archiver."
 msgstr ""
 
-#: ../../library/shutil.rst:314
+#: ../../library/shutil.rst:317
 msgid "If given, *extra_args* is a sequence of ``(name, value)`` that will be used as extra keywords arguments when the archiver callable is used."
 msgstr ""
 
-#: ../../library/shutil.rst:317
+#: ../../library/shutil.rst:320
 msgid "*description* is used by :func:`get_archive_formats` which returns the list of archivers. Defaults to an empty list."
 msgstr ""
 
-#: ../../library/shutil.rst:325
+#: ../../library/shutil.rst:328
 msgid "Remove the archive format *name* from the list of supported formats."
 msgstr ""
 
-#: ../../library/shutil.rst:333
+#: ../../library/shutil.rst:336
 msgid "Archiving example"
 msgstr ""
 
-#: ../../library/shutil.rst:335
+#: ../../library/shutil.rst:338
 msgid "In this example, we create a gzip'ed tar-file archive containing all files found in the :file:`.ssh` directory of the user::"
 msgstr ""
 
-#: ../../library/shutil.rst:345
-msgid "The resulting archive contains::"
+#: ../../library/shutil.rst:348
+msgid "The resulting archive contains:"
 msgstr ""
 

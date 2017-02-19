@@ -321,7 +321,7 @@ msgid ":rfc:`3986` - Uniform Resource Identifiers"
 msgstr ""
 
 #: ../../library/urlparse.rst:280
-msgid "This is the current standard (STD66). Any changes to urlparse module should conform to this. Certain deviations could be observed, which are mostly due backward compatiblity purposes and for certain de-facto parsing requirements as commonly observed in major browsers."
+msgid "This is the current standard (STD66). Any changes to urlparse module should conform to this. Certain deviations could be observed, which are mostly for backward compatibility purposes and for certain de-facto parsing requirements as commonly observed in major browsers."
 msgstr ""
 
 #: ../../library/urlparse.rst:286
@@ -345,7 +345,7 @@ msgid ":rfc:`2368` - The mailto URL scheme."
 msgstr ""
 
 #: ../../library/urlparse.rst:293
-msgid "Parsing requirements for mailto url schemes."
+msgid "Parsing requirements for mailto URL schemes."
 msgstr ""
 
 #: ../../library/urlparse.rst:298
@@ -385,14 +385,10 @@ msgid "The following classes provide the implementations of the parse results:"
 msgstr ""
 
 #: ../../library/urlparse.rst:342
-msgid "Base class for the concrete result classes.  This provides most of the attribute definitions.  It does not provide a :meth:`geturl` method.  It is derived from :class:`tuple`, but does not override the :meth:`__init__` or :meth:`__new__` methods."
+msgid "Concrete class for :func:`urlparse` results."
 msgstr ""
 
-#: ../../library/urlparse.rst:350
-msgid "Concrete class for :func:`urlparse` results.  The :meth:`__new__` method is overridden to support checking that the right number of arguments are passed."
-msgstr ""
-
-#: ../../library/urlparse.rst:356
-msgid "Concrete class for :func:`urlsplit` results.  The :meth:`__new__` method is overridden to support checking that the right number of arguments are passed."
+#: ../../library/urlparse.rst:347
+msgid "Concrete class for :func:`urlsplit` results."
 msgstr ""
 

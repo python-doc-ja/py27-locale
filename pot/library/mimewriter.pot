@@ -24,11 +24,11 @@ msgid "The :mod:`email` package should be used in preference to the :mod:`MimeWr
 msgstr ""
 
 #: ../../library/mimewriter.rst:15
-msgid "This module defines the class :class:`MimeWriter`.  The :class:`MimeWriter` class implements a basic formatter for creating MIME multi-part files.  It doesn't seek around the output file nor does it use large amounts of buffer space. You must write the parts out in the order that they should occur in the final file. :class:`MimeWriter` does buffer the headers you add, allowing you to rearrange their order."
+msgid "This module defines the class :class:`~MimeWriter.MimeWriter`.  The :class:`~MimeWriter.MimeWriter` class implements a basic formatter for creating MIME multi-part files.  It doesn't seek around the output file nor does it use large amounts of buffer space. You must write the parts out in the order that they should occur in the final file. :class:`~MimeWriter.MimeWriter` does buffer the headers you add, allowing you to rearrange their order."
 msgstr ""
 
 #: ../../library/mimewriter.rst:25
-msgid "Return a new instance of the :class:`MimeWriter` class.  The only argument passed, *fp*, is a file object to be used for writing. Note that a :class:`~StringIO.StringIO` object could also be used."
+msgid "Return a new instance of the :class:`~MimeWriter.MimeWriter` class.  The only argument passed, *fp*, is a file object to be used for writing. Note that a :class:`~StringIO.StringIO` object could also be used."
 msgstr ""
 
 #: ../../library/mimewriter.rst:33
@@ -36,7 +36,7 @@ msgid "MimeWriter Objects"
 msgstr ""
 
 #: ../../library/mimewriter.rst:35
-msgid ":class:`MimeWriter` instances have the following methods:"
+msgid ":class:`~MimeWriter.MimeWriter` instances have the following methods:"
 msgstr ""
 
 #: ../../library/mimewriter.rst:40
@@ -56,7 +56,7 @@ msgid "Returns a file-like object which can be used to write to the body of the 
 msgstr ""
 
 #: ../../library/mimewriter.rst:75
-msgid "Returns a new instance of :class:`MimeWriter` which represents an individual part in a multipart message.  This may be used to write the  part as well as used for creating recursively complex multipart messages. The message must first be initialized with :meth:`startmultipartbody` before using :meth:`nextpart`."
+msgid "Returns a new instance of :class:`~MimeWriter.MimeWriter` which represents an individual part in a multipart message.  This may be used to write the  part as well as used for creating recursively complex multipart messages. The message must first be initialized with :meth:`startmultipartbody` before using :meth:`nextpart`."
 msgstr ""
 
 #: ../../library/mimewriter.rst:83

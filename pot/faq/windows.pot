@@ -256,6 +256,6 @@ msgid "Sometimes, when you download the documentation package to a Windows machi
 msgstr ""
 
 #: ../../faq/windows.rst:335
-msgid "Simply rename the downloaded file to have the .TGZ extension, and WinZip will be able to handle it.  (If your copy of WinZip doesn't, get a newer one from http://www.winzip.com.)"
+msgid "Simply rename the downloaded file to have the .TGZ extension, and WinZip will be able to handle it.  (If your copy of WinZip doesn't, get a newer one from https://www.winzip.com.)"
 msgstr ""
 

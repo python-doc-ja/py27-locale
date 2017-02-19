@@ -108,7 +108,7 @@ msgid "The type of user-defined old-style classes."
 msgstr ""
 
 #: ../../library/types.rst:150
-msgid "The type of instances of user-defined classes."
+msgid "The type of instances of user-defined old-style classes."
 msgstr ""
 
 #: ../../library/types.rst:155

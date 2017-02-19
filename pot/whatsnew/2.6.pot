@@ -96,7 +96,7 @@ msgid "For a long time, the Python developers had been growing increasingly anno
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:150
-msgid "The infrastructure committee of the Python Software Foundation therefore posted a call for issue trackers, asking volunteers to set up different products and import some of the bugs and patches from SourceForge.  Four different trackers were examined: `Jira <http://www.atlassian.com/software/jira/>`__, `Launchpad <http://www.launchpad.net>`__, `Roundup <http://roundup.sourceforge.net/>`__, and `Trac <http://trac.edgewall.org/>`__. The committee eventually settled on Jira and Roundup as the two candidates.  Jira is a commercial product that offers no-cost hosted instances to free-software projects; Roundup is an open-source project that requires volunteers to administer it and a server to host it."
+msgid "The infrastructure committee of the Python Software Foundation therefore posted a call for issue trackers, asking volunteers to set up different products and import some of the bugs and patches from SourceForge.  Four different trackers were examined: `Jira <https://www.atlassian.com/software/jira/>`__, `Launchpad <https://launchpad.net/>`__, `Roundup <http://roundup.sourceforge.net/>`__, and `Trac <https://trac.edgewall.org/>`__. The committee eventually settled on Jira and Roundup as the two candidates.  Jira is a commercial product that offers no-cost hosted instances to free-software projects; Roundup is an open-source project that requires volunteers to administer it and a server to host it."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:164
@@ -152,7 +152,7 @@ msgid "Today LaTeX is still used for writing publications destined for printing,
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:215
-msgid "During the 2.6 development cycle, Georg Brandl put a lot of effort into building a new toolchain for processing the documentation.  The resulting package is called Sphinx, and is available from http://sphinx.pocoo.org/."
+msgid "During the 2.6 development cycle, Georg Brandl put a lot of effort into building a new toolchain for processing the documentation.  The resulting package is called Sphinx, and is available from http://sphinx-doc.org/."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:220
@@ -220,7 +220,7 @@ msgid "Some standard Python objects now support the context management protocol 
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:288
-msgid "After this statement has executed, the file object in *f* will have been automatically closed, even if the :keyword:`for` loop raised an exception part- way through the block."
+msgid "After this statement has executed, the file object in *f* will have been automatically closed, even if the :keyword:`for` loop raised an exception part-way through the block."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:294
@@ -408,7 +408,7 @@ msgid "Here's a simple example where the subprocess will calculate a factorial. 
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:612
-msgid "A :class:`Queue` is used to communicate the result of the factorial. The :class:`Queue` object is stored in a global variable. The child process will use the value of the variable when the child was created; because it's a :class:`Queue`, parent and child can use the object to communicate.  (If the parent were to change the value of the global variable, the child's value would be unaffected, and vice versa.)"
+msgid "A :class:`~Queue.Queue` is used to communicate the result of the factorial. The :class:`~Queue.Queue` object is stored in a global variable. The child process will use the value of the variable when the child was created; because it's a :class:`~Queue.Queue`, parent and child can use the object to communicate.  (If the parent were to change the value of the global variable, the child's value would be unaffected, and vice versa.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:620
@@ -772,7 +772,7 @@ msgid ":class:`TextIOBase`: Provides functions for reading and writing strings (
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1077
-msgid "There are two concrete implementations.  :class:`TextIOWrapper` wraps a buffered I/O object, supporting all of the methods for text I/O and adding a :attr:`buffer` attribute for access to the underlying object.  :class:`StringIO` simply buffers everything in memory without ever writing anything to disk."
+msgid "There are two concrete implementations.  :class:`TextIOWrapper` wraps a buffered I/O object, supporting all of the methods for text I/O and adding a :attr:`buffer` attribute for access to the underlying object.  :class:`~StringIO.StringIO` simply buffers everything in memory without ever writing anything to disk."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1083
@@ -992,7 +992,7 @@ msgid "PEP written by Jeffrey Yasskin."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1430
-msgid "`Scheme's numerical tower <http://www.gnu.org/software/guile/manual/html_node/Numerical-Tower.html#Numerical-Tower>`__, from the Guile manual."
+msgid "`Scheme's numerical tower <https://www.gnu.org/software/guile/manual/html_node/Numerical-Tower.html#Numerical-Tower>`__, from the Guile manual."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1432
@@ -1210,7 +1210,7 @@ msgid "The :mod:`asyncore` and :mod:`asynchat` modules are being actively mainta
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1792
-msgid "The :mod:`bsddb` module also has a new maintainer, Jesús Cea Avion, and the package is now available as a standalone package.  The web page for the package is `www.jcea.es/programacion/pybsddb.htm <http://www.jcea.es/programacion/pybsddb.htm>`__. The plan is to remove the package from the standard library in Python 3.0, because its pace of releases is much more frequent than Python's."
+msgid "The :mod:`bsddb` module also has a new maintainer, Jesús Cea Avion, and the package is now available as a standalone package.  The web page for the package is `www.jcea.es/programacion/pybsddb.htm <https://www.jcea.es/programacion/pybsddb.htm>`__. The plan is to remove the package from the standard library in Python 3.0, because its pace of releases is much more frequent than Python's."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1800
@@ -1290,7 +1290,7 @@ msgid "The :mod:`datetime` module's :meth:`strftime` methods now support a ``%f`
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1924
-msgid "The :mod:`decimal` module was updated to version 1.66 of `the General Decimal Specification <http://www2.hursley.ibm.com/decimal/decarith.html>`__.  New features include some methods for some basic mathematical functions such as :meth:`exp` and :meth:`log10`::"
+msgid "The :mod:`decimal` module was updated to version 1.66 of `the General Decimal Specification <http://speleotrove.com/decimal/decarith.html>`__.  New features include some methods for some basic mathematical functions such as :meth:`exp` and :meth:`log10`::"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:1936
@@ -1434,7 +1434,7 @@ msgid "(Contributed by Christian Heimes and Mark Dickinson.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2130
-msgid ":class:`mmap` objects now have a :meth:`rfind` method that searches for a substring beginning at the end of the string and searching backwards.  The :meth:`find` method also gained an *end* parameter giving an index at which to stop searching. (Contributed by John Lenton.)"
+msgid ":class:`~mmap.mmap` objects now have a :meth:`rfind` method that searches for a substring beginning at the end of the string and searching backwards.  The :meth:`find` method also gained an *end* parameter giving an index at which to stop searching. (Contributed by John Lenton.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2136
@@ -1758,15 +1758,15 @@ msgid "A new function, :func:`catch_warnings`, is a context manager intended for
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2608
-msgid "The XML-RPC :class:`SimpleXMLRPCServer` and :class:`DocXMLRPCServer` classes can now be prevented from immediately opening and binding to their socket by passing True as the ``bind_and_activate`` constructor parameter.  This can be used to modify the instance's :attr:`allow_reuse_address` attribute before calling the :meth:`server_bind` and :meth:`server_activate` methods to open the socket and begin listening for connections. (Contributed by Peter Parente; :issue:`1599845`.)"
+msgid "The XML-RPC :class:`~SimpleXMLRPCServer.SimpleXMLRPCServer` and :class:`~DocXMLRPCServer.DocXMLRPCServer` classes can now be prevented from immediately opening and binding to their socket by passing True as the ``bind_and_activate`` constructor parameter.  This can be used to modify the instance's :attr:`allow_reuse_address` attribute before calling the :meth:`server_bind` and :meth:`server_activate` methods to open the socket and begin listening for connections. (Contributed by Peter Parente; :issue:`1599845`.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2617
-msgid ":class:`SimpleXMLRPCServer` also has a :attr:`_send_traceback_header` attribute; if true, the exception and formatted traceback are returned as HTTP headers \"X-Exception\" and \"X-Traceback\".  This feature is for debugging purposes only and should not be used on production servers because the tracebacks might reveal passwords or other sensitive information.  (Contributed by Alan McIntyre as part of his project for Google's Summer of Code 2007.)"
+msgid ":class:`~SimpleXMLRPCServer.SimpleXMLRPCServer` also has a :attr:`_send_traceback_header` attribute; if true, the exception and formatted traceback are returned as HTTP headers \"X-Exception\" and \"X-Traceback\".  This feature is for debugging purposes only and should not be used on production servers because the tracebacks might reveal passwords or other sensitive information.  (Contributed by Alan McIntyre as part of his project for Google's Summer of Code 2007.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2625
-msgid "The :mod:`xmlrpclib` module no longer automatically converts :class:`datetime.date` and :class:`datetime.time` to the :class:`xmlrpclib.DateTime` type; the conversion semantics were not necessarily correct for all applications.  Code using :mod:`xmlrpclib` should convert :class:`date` and :class:`time` instances. (:issue:`1330538`)  The code can also handle dates before 1900 (contributed by Ralf Schmitt; :issue:`2014`) and 64-bit integers represented by using ``<i8>`` in XML-RPC responses (contributed by Riku Lindblad; :issue:`2985`)."
+msgid "The :mod:`xmlrpclib` module no longer automatically converts :class:`datetime.date` and :class:`datetime.time` to the :class:`xmlrpclib.DateTime` type; the conversion semantics were not necessarily correct for all applications.  Code using :mod:`xmlrpclib` should convert :class:`date` and :class:`~datetime.time` instances. (:issue:`1330538`)  The code can also handle dates before 1900 (contributed by Ralf Schmitt; :issue:`2014`) and 64-bit integers represented by using ``<i8>`` in XML-RPC responses (contributed by Riku Lindblad; :issue:`2985`)."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2635
@@ -1910,7 +1910,7 @@ msgid "Improved SSL Support"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2886
-msgid "Bill Janssen made extensive improvements to Python 2.6's support for the Secure Sockets Layer by adding a new module, :mod:`ssl`, that's built atop the `OpenSSL <http://www.openssl.org/>`__ library. This new module provides more control over the protocol negotiated, the X.509 certificates used, and has better support for writing SSL servers (as opposed to clients) in Python.  The existing SSL support in the :mod:`socket` module hasn't been removed and continues to work, though it will be removed in Python 3.0."
+msgid "Bill Janssen made extensive improvements to Python 2.6's support for the Secure Sockets Layer by adding a new module, :mod:`ssl`, that's built atop the `OpenSSL <https://www.openssl.org/>`__ library. This new module provides more control over the protocol negotiated, the X.509 certificates used, and has better support for writing SSL servers (as opposed to clients) in Python.  The existing SSL support in the :mod:`socket` module hasn't been removed and continues to work, though it will be removed in Python 3.0."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2895
@@ -1991,7 +1991,7 @@ msgid "Python 2.6 can be built with Microsoft Visual Studio 2008 (version 9.0), 
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2989
-msgid "On Mac OS X, Python 2.6 can be compiled as a 4-way universal build. The :program:`configure` script can take a :option:`--with-universal-archs=[32-bit|64-bit|all]` switch, controlling whether the binaries are built for 32-bit architectures (x86, PowerPC), 64-bit (x86-64 and PPC-64), or both. (Contributed by Ronald Oussoren.)"
+msgid "On Mac OS X, Python 2.6 can be compiled as a 4-way universal build. The :program:`configure` script can take a :option:`!--with-universal-archs=[32-bit|64-bit|all]` switch, controlling whether the binaries are built for 32-bit architectures (x86, PowerPC), 64-bit (x86-64 and PPC-64), or both. (Contributed by Ronald Oussoren.)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:2996
@@ -2087,7 +2087,7 @@ msgid "Port-Specific Changes: Mac OS X"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3144
-msgid "When compiling a framework build of Python, you can now specify the framework name to be used by providing the :option:`--with-framework-name=` option to the :program:`configure` script."
+msgid "When compiling a framework build of Python, you can now specify the framework name to be used by providing the :option:`!--with-framework-name=` option to the :program:`configure` script."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3149
@@ -2095,7 +2095,7 @@ msgid "The :mod:`macfs` module has been removed.  This in turn required the :fun
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3153
-msgid "Many other Mac OS modules have been deprecated and will removed in Python 3.0: :mod:`_builtinSuites`, :mod:`aepack`, :mod:`aetools`, :mod:`aetypes`, :mod:`applesingle`, :mod:`appletrawmain`, :mod:`appletrunner`, :mod:`argvemulator`, :mod:`Audio_mac`, :mod:`autoGIL`, :mod:`Carbon`, :mod:`cfmfile`, :mod:`CodeWarrior`, :mod:`ColorPicker`, :mod:`EasyDialogs`, :mod:`Explorer`, :mod:`Finder`, :mod:`FrameWork`, :mod:`findertools`, :mod:`ic`, :mod:`icglue`, :mod:`icopen`, :mod:`macerrors`, :mod:`MacOS`, :mod:`macfs`, :mod:`macostools`, :mod:`macresource`, :mod:`MiniAEFrame`, :mod:`Nav`, :mod:`Netscape`, :mod:`OSATerminology`, :mod:`pimp`, :mod:`PixMapWrapper`, :mod:`StdSuites`, :mod:`SystemEvents`, :mod:`Terminal`, and :mod:`terminalcommand`."
+msgid "Many other Mac OS modules have been deprecated and will be removed in Python 3.0: :mod:`_builtinSuites`, :mod:`aepack`, :mod:`aetools`, :mod:`aetypes`, :mod:`applesingle`, :mod:`appletrawmain`, :mod:`appletrunner`, :mod:`argvemulator`, :mod:`Audio_mac`, :mod:`autoGIL`, :mod:`Carbon`, :mod:`cfmfile`, :mod:`CodeWarrior`, :mod:`ColorPicker`, :mod:`EasyDialogs`, :mod:`Explorer`, :mod:`Finder`, :mod:`FrameWork`, :mod:`findertools`, :mod:`ic`, :mod:`icglue`, :mod:`icopen`, :mod:`macerrors`, :mod:`MacOS`, :mod:`macfs`, :mod:`macostools`, :mod:`macresource`, :mod:`MiniAEFrame`, :mod:`Nav`, :mod:`Netscape`, :mod:`OSATerminology`, :mod:`pimp`, :mod:`PixMapWrapper`, :mod:`StdSuites`, :mod:`SystemEvents`, :mod:`Terminal`, and :mod:`terminalcommand`."
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3196
@@ -2147,7 +2147,7 @@ msgid "The :mod:`socket` module exception :exc:`socket.error` now inherits from 
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3278
-msgid "The :mod:`xmlrpclib` module no longer automatically converts :class:`datetime.date` and :class:`datetime.time` to the :class:`xmlrpclib.DateTime` type; the conversion semantics were not necessarily correct for all applications.  Code using :mod:`xmlrpclib` should convert :class:`date` and :class:`time` instances. (:issue:`1330538`)"
+msgid "The :mod:`xmlrpclib` module no longer automatically converts :class:`datetime.date` and :class:`datetime.time` to the :class:`xmlrpclib.DateTime` type; the conversion semantics were not necessarily correct for all applications.  Code using :mod:`xmlrpclib` should convert :class:`date` and :class:`~datetime.time` instances. (:issue:`1330538`)"
 msgstr ""
 
 #: ../../whatsnew/2.6.rst:3285

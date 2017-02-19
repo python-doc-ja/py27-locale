@@ -420,7 +420,7 @@ msgid "For Unix, see a Usenet post by Mitch Chapman:"
 msgstr ""
 
 #: ../../faq/library.rst:600
-msgid "http://groups.google.com/groups?selm=34A04430.CF9@ohioee.com"
+msgid "https://groups.google.com/groups?selm=34A04430.CF9@ohioee.com"
 msgstr ""
 
 #: ../../faq/library.rst:604
@@ -503,135 +503,135 @@ msgstr ""
 msgid "A Unix-only alternative uses sendmail.  The location of the sendmail program varies between systems; sometimes it is ``/usr/lib/sendmail``, sometimes ``/usr/sbin/sendmail``.  The sendmail manual page will help you out.  Here's some sample code::"
 msgstr ""
 
-#: ../../faq/library.rst:741
+#: ../../faq/library.rst:742
 msgid "How do I avoid blocking in the connect() method of a socket?"
 msgstr ""
 
-#: ../../faq/library.rst:743
+#: ../../faq/library.rst:744
 msgid "The select module is commonly used to help with asynchronous I/O on sockets."
 msgstr ""
 
-#: ../../faq/library.rst:745
+#: ../../faq/library.rst:746
 msgid "To prevent the TCP connect from blocking, you can set the socket to non-blocking mode.  Then when you do the ``connect()``, you will either connect immediately (unlikely) or get an exception that contains the error number as ``.errno``. ``errno.EINPROGRESS`` indicates that the connection is in progress, but hasn't finished yet.  Different OSes will return different values, so you're going to have to check what's returned on your system."
 msgstr ""
 
-#: ../../faq/library.rst:752
+#: ../../faq/library.rst:753
 msgid "You can use the ``connect_ex()`` method to avoid creating an exception.  It will just return the errno value.  To poll, you can call ``connect_ex()`` again later -- 0 or ``errno.EISCONN`` indicate that you're connected -- or you can pass this socket to select to check if it's writable."
 msgstr ""
 
-#: ../../faq/library.rst:759
+#: ../../faq/library.rst:760
 msgid "Databases"
 msgstr ""
 
-#: ../../faq/library.rst:762
+#: ../../faq/library.rst:763
 msgid "Are there any interfaces to database packages in Python?"
 msgstr ""
 
-#: ../../faq/library.rst:764
+#: ../../faq/library.rst:765
 msgid "Yes."
 msgstr ""
 
-#: ../../faq/library.rst:768
+#: ../../faq/library.rst:769
 msgid "Python 2.3 includes the :mod:`bsddb` package which provides an interface to the BerkeleyDB library.  Interfaces to disk-based hashes such as :mod:`DBM <dbm>` and :mod:`GDBM <gdbm>` are also included with standard Python."
 msgstr ""
 
-#: ../../faq/library.rst:772
+#: ../../faq/library.rst:773
 msgid "Support for most relational databases is available.  See the `DatabaseProgramming wiki page <https://wiki.python.org/moin/DatabaseProgramming>`_ for details."
 msgstr ""
 
-#: ../../faq/library.rst:778
+#: ../../faq/library.rst:779
 msgid "How do you implement persistent objects in Python?"
 msgstr ""
 
-#: ../../faq/library.rst:780
+#: ../../faq/library.rst:781
 msgid "The :mod:`pickle` library module solves this in a very general way (though you still can't store things like open files, sockets or windows), and the :mod:`shelve` library module uses pickle and (g)dbm to create persistent mappings containing arbitrary Python objects.  For better performance, you can use the :mod:`cPickle` module."
 msgstr ""
 
-#: ../../faq/library.rst:786
+#: ../../faq/library.rst:787
 msgid "A more awkward way of doing things is to use pickle's little sister, marshal. The :mod:`marshal` module provides very fast ways to store noncircular basic Python types to files and strings, and back again.  Although marshal does not do fancy things like store instances or handle shared references properly, it does run extremely fast.  For example, loading a half megabyte of data may take less than a third of a second.  This often beats doing something more complex and general such as using gdbm with pickle/shelve."
 msgstr ""
 
-#: ../../faq/library.rst:796
+#: ../../faq/library.rst:797
 msgid "Why is cPickle so slow?"
 msgstr ""
 
-#: ../../faq/library.rst:800
+#: ../../faq/library.rst:801
 msgid "By default :mod:`pickle` uses a relatively old and slow format for backward compatibility.  You can however specify other protocol versions that are faster::"
 msgstr ""
 
-#: ../../faq/library.rst:809
+#: ../../faq/library.rst:810
 msgid "If my program crashes with a bsddb (or anydbm) database open, it gets corrupted. How come?"
 msgstr ""
 
-#: ../../faq/library.rst:811
+#: ../../faq/library.rst:812
 msgid "Databases opened for write access with the bsddb module (and often by the anydbm module, since it will preferentially use bsddb) must explicitly be closed using the ``.close()`` method of the database.  The underlying library caches database contents which need to be converted to on-disk form and written."
 msgstr ""
 
-#: ../../faq/library.rst:816
+#: ../../faq/library.rst:817
 msgid "If you have initialized a new bsddb database but not written anything to it before the program crashes, you will often wind up with a zero-length file and encounter an exception the next time the file is opened."
 msgstr ""
 
-#: ../../faq/library.rst:822
+#: ../../faq/library.rst:823
 msgid "I tried to open Berkeley DB file, but bsddb produces bsddb.error: (22, 'Invalid argument'). Help! How can I restore my data?"
 msgstr ""
 
-#: ../../faq/library.rst:824
+#: ../../faq/library.rst:825
 msgid "Don't panic! Your data is probably intact. The most frequent cause for the error is that you tried to open an earlier Berkeley DB file with a later version of the Berkeley DB library."
 msgstr ""
 
-#: ../../faq/library.rst:828
+#: ../../faq/library.rst:829
 msgid "Many Linux systems now have all three versions of Berkeley DB available.  If you are migrating from version 1 to a newer version use db_dump185 to dump a plain text version of the database.  If you are migrating from version 2 to version 3 use db2_dump to create a plain text version of the database.  In either case, use db_load to create a new native database for the latest version installed on your computer.  If you have version 3 of Berkeley DB installed, you should be able to use db2_load to create a native version 2 database."
 msgstr ""
 
-#: ../../faq/library.rst:836
+#: ../../faq/library.rst:837
 msgid "You should move away from Berkeley DB version 1 files because the hash file code contains known bugs that can corrupt your data."
 msgstr ""
 
-#: ../../faq/library.rst:841
+#: ../../faq/library.rst:842
 msgid "Mathematics and Numerics"
 msgstr ""
 
-#: ../../faq/library.rst:844
+#: ../../faq/library.rst:845
 msgid "How do I generate random numbers in Python?"
 msgstr ""
 
-#: ../../faq/library.rst:846
+#: ../../faq/library.rst:847
 msgid "The standard module :mod:`random` implements a random number generator.  Usage is simple::"
 msgstr ""
 
-#: ../../faq/library.rst:852
+#: ../../faq/library.rst:853
 msgid "This returns a random floating point number in the range [0, 1)."
 msgstr ""
 
-#: ../../faq/library.rst:854
+#: ../../faq/library.rst:855
 msgid "There are also many other specialized generators in this module, such as:"
 msgstr ""
 
-#: ../../faq/library.rst:856
+#: ../../faq/library.rst:857
 msgid "``randrange(a, b)`` chooses an integer in the range [a, b)."
 msgstr ""
 
-#: ../../faq/library.rst:857
+#: ../../faq/library.rst:858
 msgid "``uniform(a, b)`` chooses a floating point number in the range [a, b)."
 msgstr ""
 
-#: ../../faq/library.rst:858
+#: ../../faq/library.rst:859
 msgid "``normalvariate(mean, sdev)`` samples the normal (Gaussian) distribution."
 msgstr ""
 
-#: ../../faq/library.rst:860
+#: ../../faq/library.rst:861
 msgid "Some higher-level functions operate on sequences directly, such as:"
 msgstr ""
 
-#: ../../faq/library.rst:862
+#: ../../faq/library.rst:863
 msgid "``choice(S)`` chooses random element from a given sequence"
 msgstr ""
 
-#: ../../faq/library.rst:863
+#: ../../faq/library.rst:864
 msgid "``shuffle(L)`` shuffles a list in-place, i.e. permutes it randomly"
 msgstr ""
 
-#: ../../faq/library.rst:865
+#: ../../faq/library.rst:866
 msgid "There's also a ``Random`` class you can instantiate to create independent multiple random number generators."
 msgstr ""
 

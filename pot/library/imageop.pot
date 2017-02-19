@@ -48,7 +48,7 @@ msgid "Run a vertical low-pass filter over an image.  It does so by computing ea
 msgstr ""
 
 #: ../../library/imageop.rst:52
-msgid "Convert a 8-bit deep greyscale image to a 1-bit deep image by thresholding all the pixels.  The resulting image is tightly packed and is probably only useful as an argument to :func:`mono2grey`."
+msgid "Convert an 8-bit deep greyscale image to a 1-bit deep image by thresholding all the pixels.  The resulting image is tightly packed and is probably only useful as an argument to :func:`mono2grey`."
 msgstr ""
 
 #: ../../library/imageop.rst:59

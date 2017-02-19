@@ -32,7 +32,7 @@ msgid ":mod:`wsgiref` is a reference implementation of the WSGI specification th
 msgstr ""
 
 #: ../../library/wsgiref.rst:29
-msgid "See http://www.wsgi.org for more information about WSGI, and links to tutorials and other resources."
+msgid "See https://wsgi.readthedocs.org/ for more information about WSGI, and links to tutorials and other resources."
 msgstr ""
 
 #: ../../library/wsgiref.rst:36

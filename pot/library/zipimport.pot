@@ -40,7 +40,7 @@ msgid "ZIP archives with an archive comment are currently not supported."
 msgstr ""
 
 #: ../../library/zipimport.rst:42
-msgid "`PKZIP Application Note <http://www.pkware.com/documents/casestudies/APPNOTE.TXT>`_"
+msgid "`PKZIP Application Note <https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT>`_"
 msgstr ""
 
 #: ../../library/zipimport.rst:41
@@ -132,6 +132,6 @@ msgid "Examples"
 msgstr ""
 
 #: ../../library/zipimport.rst:151
-msgid "Here is an example that imports a module from a ZIP archive - note that the :mod:`zipimport` module is not explicitly used. ::"
+msgid "Here is an example that imports a module from a ZIP archive - note that the :mod:`zipimport` module is not explicitly used."
 msgstr ""
 

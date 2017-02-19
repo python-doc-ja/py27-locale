@@ -47,7 +47,7 @@ msgid "The return value is a new reference to the imported module or top-level p
 msgstr ""
 
 #: ../../c-api/import.rst:67
-msgid "The function is an alias for :c:func:`PyImport_ImportModuleLevel` with -1 as level, meaning relative import."
+msgid "The function is an alias for :c:func:`PyImport_ImportModuleLevel` with ``-1`` as level, meaning relative import."
 msgstr ""
 
 #: ../../c-api/import.rst:78

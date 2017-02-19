@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../library/_winreg.rst:2
-msgid ":mod:`_winreg` -- Windows registry access"
+msgid ":mod:`_winreg` --- Windows registry access"
 msgstr ""
 
 #: ../../library/_winreg.rst:10
@@ -532,7 +532,7 @@ msgid "64-bit Specific"
 msgstr ""
 
 #: ../../library/_winreg.rst:580
-msgid "For more information, see `Accesing an Alternate Registry View <http://msdn.microsoft.com/en-us/library/aa384129(v=VS.85).aspx>`__."
+msgid "For more information, see `Accessing an Alternate Registry View <http://msdn.microsoft.com/en-us/library/aa384129(v=VS.85).aspx>`__."
 msgstr ""
 
 #: ../../library/_winreg.rst:585

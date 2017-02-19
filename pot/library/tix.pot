@@ -104,7 +104,7 @@ msgid "The `ButtonBox <http://tix.sourceforge.net/dist/current/man/html/TixCmd/t
 msgstr ""
 
 #: ../../library/tix.rst:127
-msgid "The `ComboBox <http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixComboBox.htm>`_ widget is similar to the combo box control in MS Windows. The user can select a choice by either typing in the entry subwdget or selecting from the listbox subwidget."
+msgid "The `ComboBox <http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixComboBox.htm>`_ widget is similar to the combo box control in MS Windows. The user can select a choice by either typing in the entry subwidget or selecting from the listbox subwidget."
 msgstr ""
 
 #: ../../library/tix.rst:139
@@ -112,7 +112,7 @@ msgid "The `Control <http://tix.sourceforge.net/dist/current/man/html/TixCmd/tix
 msgstr ""
 
 #: ../../library/tix.rst:152
-msgid "The `LabelEntry <http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixLabelEntry.htm>`_ widget packages an entry widget and a label into one mega widget. It can be used be used to simplify the creation of \"entry-form\" type of interface."
+msgid "The `LabelEntry <http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixLabelEntry.htm>`_ widget packages an entry widget and a label into one mega widget. It can be used to simplify the creation of \"entry-form\" type of interface."
 msgstr ""
 
 #: ../../library/tix.rst:163
@@ -160,7 +160,7 @@ msgid "The :class:`DirSelectBox` is similar to the standard Motif(TM) directory-
 msgstr ""
 
 #: ../../library/tix.rst:277
-msgid "The `ExFileSelectBox <http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixExFileSelectBox.htm>`_ widget is usually embedded in a tixExFileSelectDialog widget. It provides an convenient method for the user to select files. The style of the :class:`ExFileSelectBox` widget is very similar to the standard file dialog on MS Windows 3.1."
+msgid "The `ExFileSelectBox <http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixExFileSelectBox.htm>`_ widget is usually embedded in a tixExFileSelectDialog widget. It provides a convenient method for the user to select files. The style of the :class:`ExFileSelectBox` widget is very similar to the standard file dialog on MS Windows 3.1."
 msgstr ""
 
 #: ../../library/tix.rst:290

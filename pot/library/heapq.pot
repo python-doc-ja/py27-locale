@@ -109,7 +109,7 @@ msgid "Basic Examples"
 msgstr ""
 
 #: ../../library/heapq.rst:136
-msgid "A `heapsort <http://en.wikipedia.org/wiki/Heapsort>`_ can be implemented by pushing all values onto a heap and then popping off the smallest values one at a time::"
+msgid "A `heapsort <https://en.wikipedia.org/wiki/Heapsort>`_ can be implemented by pushing all values onto a heap and then popping off the smallest values one at a time::"
 msgstr ""
 
 #: ../../library/heapq.rst:149
@@ -125,7 +125,7 @@ msgid "Priority Queue Implementation Notes"
 msgstr ""
 
 #: ../../library/heapq.rst:167
-msgid "A `priority queue <http://en.wikipedia.org/wiki/Priority_queue>`_ is common use for a heap, and it presents several implementation challenges:"
+msgid "A `priority queue <https://en.wikipedia.org/wiki/Priority_queue>`_ is common use for a heap, and it presents several implementation challenges:"
 msgstr ""
 
 #: ../../library/heapq.rst:170
@@ -169,7 +169,7 @@ msgid "The strange invariant above is meant to be an efficient memory representa
 msgstr ""
 
 #: ../../library/heapq.rst:247
-msgid "In the tree above, each cell *k* is topping ``2*k+1`` and ``2*k+2``. In an usual binary tournament we see in sports, each cell is the winner over the two cells it tops, and we can trace the winner down the tree to see all opponents s/he had.  However, in many computer applications of such tournaments, we do not need to trace the history of a winner. To be more memory efficient, when a winner is promoted, we try to replace it by something else at a lower level, and the rule becomes that a cell and the two cells it tops contain three different items, but the top cell \"wins\" over the two topped cells."
+msgid "In the tree above, each cell *k* is topping ``2*k+1`` and ``2*k+2``. In a usual binary tournament we see in sports, each cell is the winner over the two cells it tops, and we can trace the winner down the tree to see all opponents s/he had.  However, in many computer applications of such tournaments, we do not need to trace the history of a winner. To be more memory efficient, when a winner is promoted, we try to replace it by something else at a lower level, and the rule becomes that a cell and the two cells it tops contain three different items, but the top cell \"wins\" over the two topped cells."
 msgstr ""
 
 #: ../../library/heapq.rst:256

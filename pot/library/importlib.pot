@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../library/importlib.rst:2
-msgid ":mod:`importlib` -- Convenience wrappers for :func:`__import__`"
+msgid ":mod:`importlib` --- Convenience wrappers for :func:`__import__`"
 msgstr ""
 
 #: ../../library/importlib.rst:12

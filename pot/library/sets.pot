@@ -60,19 +60,19 @@ msgid "Instances of :class:`Set` and :class:`ImmutableSet` both provide the foll
 msgstr ""
 
 #: ../../library/sets.rst:77
-#: ../../library/sets.rst:138
-#: ../../library/sets.rst:147
+#: ../../library/sets.rst:139
+#: ../../library/sets.rst:148
 msgid "Operation"
 msgstr ""
 
 #: ../../library/sets.rst:77
-#: ../../library/sets.rst:147
+#: ../../library/sets.rst:148
 msgid "Equivalent"
 msgstr ""
 
 #: ../../library/sets.rst:77
-#: ../../library/sets.rst:138
-#: ../../library/sets.rst:147
+#: ../../library/sets.rst:139
+#: ../../library/sets.rst:148
 msgid "Result"
 msgstr ""
 
@@ -81,307 +81,307 @@ msgid "``len(s)``"
 msgstr ""
 
 #: ../../library/sets.rst:79
-msgid "cardinality of set *s*"
+msgid "number of elements in set *s* (cardinality)"
 msgstr ""
 
-#: ../../library/sets.rst:81
+#: ../../library/sets.rst:82
 msgid "``x in s``"
 msgstr ""
 
-#: ../../library/sets.rst:81
+#: ../../library/sets.rst:82
 msgid "test *x* for membership in *s*"
 msgstr ""
 
-#: ../../library/sets.rst:83
+#: ../../library/sets.rst:84
 msgid "``x not in s``"
 msgstr ""
 
-#: ../../library/sets.rst:83
+#: ../../library/sets.rst:84
 msgid "test *x* for non-membership in *s*"
 msgstr ""
 
-#: ../../library/sets.rst:86
+#: ../../library/sets.rst:87
 msgid "``s.issubset(t)``"
 msgstr ""
 
-#: ../../library/sets.rst:86
+#: ../../library/sets.rst:87
 msgid "``s <= t``"
 msgstr ""
 
-#: ../../library/sets.rst:86
+#: ../../library/sets.rst:87
 msgid "test whether every element in *s* is in *t*"
 msgstr ""
 
-#: ../../library/sets.rst:89
+#: ../../library/sets.rst:90
 msgid "``s.issuperset(t)``"
 msgstr ""
 
-#: ../../library/sets.rst:89
+#: ../../library/sets.rst:90
 msgid "``s >= t``"
 msgstr ""
 
-#: ../../library/sets.rst:89
+#: ../../library/sets.rst:90
 msgid "test whether every element in *t* is in *s*"
 msgstr ""
 
-#: ../../library/sets.rst:92
+#: ../../library/sets.rst:93
 msgid "``s.union(t)``"
 msgstr ""
 
-#: ../../library/sets.rst:92
+#: ../../library/sets.rst:93
 msgid "``s | t``"
 msgstr ""
 
-#: ../../library/sets.rst:92
+#: ../../library/sets.rst:93
 msgid "new set with elements from both *s* and *t*"
 msgstr ""
 
-#: ../../library/sets.rst:95
+#: ../../library/sets.rst:96
 msgid "``s.intersection(t)``"
 msgstr ""
 
-#: ../../library/sets.rst:95
+#: ../../library/sets.rst:96
 msgid "``s & t``"
 msgstr ""
 
-#: ../../library/sets.rst:95
+#: ../../library/sets.rst:96
 msgid "new set with elements common to *s* and *t*"
 msgstr ""
 
-#: ../../library/sets.rst:98
+#: ../../library/sets.rst:99
 msgid "``s.difference(t)``"
 msgstr ""
 
-#: ../../library/sets.rst:98
+#: ../../library/sets.rst:99
 msgid "``s - t``"
 msgstr ""
 
-#: ../../library/sets.rst:98
+#: ../../library/sets.rst:99
 msgid "new set with elements in *s* but not in *t*"
 msgstr ""
 
-#: ../../library/sets.rst:101
+#: ../../library/sets.rst:102
 msgid "``s.symmetric_difference(t)``"
 msgstr ""
 
-#: ../../library/sets.rst:101
+#: ../../library/sets.rst:102
 msgid "``s ^ t``"
 msgstr ""
 
-#: ../../library/sets.rst:101
+#: ../../library/sets.rst:102
 msgid "new set with elements in either *s* or *t* but not both"
 msgstr ""
 
-#: ../../library/sets.rst:104
+#: ../../library/sets.rst:105
 msgid "``s.copy()``"
 msgstr ""
 
-#: ../../library/sets.rst:104
+#: ../../library/sets.rst:105
 msgid "new set with a shallow copy of *s*"
 msgstr ""
 
-#: ../../library/sets.rst:108
+#: ../../library/sets.rst:109
 msgid "Note, the non-operator versions of :meth:`union`, :meth:`intersection`, :meth:`difference`, and :meth:`symmetric_difference` will accept any iterable as an argument. In contrast, their operator based counterparts require their arguments to be sets.  This precludes error-prone constructions like ``Set('abc') & 'cbs'`` in favor of the more readable ``Set('abc').intersection('cbs')``."
 msgstr ""
 
-#: ../../library/sets.rst:115
-#: ../../library/sets.rst:181
+#: ../../library/sets.rst:116
+#: ../../library/sets.rst:182
 msgid "Formerly all arguments were required to be sets."
 msgstr ""
 
-#: ../../library/sets.rst:118
+#: ../../library/sets.rst:119
 msgid "In addition, both :class:`Set` and :class:`ImmutableSet` support set to set comparisons.  Two sets are equal if and only if every element of each set is contained in the other (each is a subset of the other). A set is less than another set if and only if the first set is a proper subset of the second set (is a subset, but is not equal). A set is greater than another set if and only if the first set is a proper superset of the second set (is a superset, but is not equal)."
 msgstr ""
 
-#: ../../library/sets.rst:126
+#: ../../library/sets.rst:127
 msgid "The subset and equality comparisons do not generalize to a complete ordering function.  For example, any two disjoint sets are not equal and are not subsets of each other, so *all* of the following return ``False``:  ``a<b``, ``a==b``, or ``a>b``. Accordingly, sets do not implement the :meth:`__cmp__` method."
 msgstr ""
 
-#: ../../library/sets.rst:131
+#: ../../library/sets.rst:132
 msgid "Since sets only define partial ordering (subset relationships), the output of the :meth:`list.sort` method is undefined for lists of sets."
 msgstr ""
 
-#: ../../library/sets.rst:134
+#: ../../library/sets.rst:135
 msgid "The following table lists operations available in :class:`ImmutableSet` but not found in :class:`Set`:"
 msgstr ""
 
-#: ../../library/sets.rst:140
+#: ../../library/sets.rst:141
 msgid "``hash(s)``"
 msgstr ""
 
-#: ../../library/sets.rst:140
+#: ../../library/sets.rst:141
 msgid "returns a hash value for *s*"
 msgstr ""
 
-#: ../../library/sets.rst:143
+#: ../../library/sets.rst:144
 msgid "The following table lists operations available in :class:`Set` but not found in :class:`ImmutableSet`:"
 msgstr ""
 
-#: ../../library/sets.rst:149
+#: ../../library/sets.rst:150
 msgid "``s.update(t)``"
 msgstr ""
 
-#: ../../library/sets.rst:149
+#: ../../library/sets.rst:150
 msgid "*s* \\|= *t*"
 msgstr ""
 
-#: ../../library/sets.rst:149
+#: ../../library/sets.rst:150
 msgid "return set *s* with elements added from *t*"
 msgstr ""
 
-#: ../../library/sets.rst:152
+#: ../../library/sets.rst:153
 msgid "``s.intersection_update(t)``"
 msgstr ""
 
-#: ../../library/sets.rst:152
+#: ../../library/sets.rst:153
 msgid "*s* &= *t*"
 msgstr ""
 
-#: ../../library/sets.rst:152
+#: ../../library/sets.rst:153
 msgid "return set *s* keeping only elements also found in *t*"
 msgstr ""
 
-#: ../../library/sets.rst:155
+#: ../../library/sets.rst:156
 msgid "``s.difference_update(t)``"
 msgstr ""
 
-#: ../../library/sets.rst:155
+#: ../../library/sets.rst:156
 msgid "*s* -= *t*"
 msgstr ""
 
-#: ../../library/sets.rst:155
+#: ../../library/sets.rst:156
 msgid "return set *s* after removing elements found in *t*"
 msgstr ""
 
-#: ../../library/sets.rst:158
+#: ../../library/sets.rst:159
 msgid "``s.symmetric_difference_update(t)``"
 msgstr ""
 
-#: ../../library/sets.rst:158
+#: ../../library/sets.rst:159
 msgid "*s* ^= *t*"
 msgstr ""
 
-#: ../../library/sets.rst:158
+#: ../../library/sets.rst:159
 msgid "return set *s* with elements from *s* or *t* but not both"
 msgstr ""
 
-#: ../../library/sets.rst:161
+#: ../../library/sets.rst:162
 msgid "``s.add(x)``"
 msgstr ""
 
-#: ../../library/sets.rst:161
+#: ../../library/sets.rst:162
 msgid "add element *x* to set *s*"
 msgstr ""
 
-#: ../../library/sets.rst:163
+#: ../../library/sets.rst:164
 msgid "``s.remove(x)``"
 msgstr ""
 
-#: ../../library/sets.rst:163
+#: ../../library/sets.rst:164
 msgid "remove *x* from set *s*; raises :exc:`KeyError` if not present"
 msgstr ""
 
-#: ../../library/sets.rst:166
+#: ../../library/sets.rst:167
 msgid "``s.discard(x)``"
 msgstr ""
 
-#: ../../library/sets.rst:166
+#: ../../library/sets.rst:167
 msgid "removes *x* from set *s* if present"
 msgstr ""
 
-#: ../../library/sets.rst:169
+#: ../../library/sets.rst:170
 msgid "``s.pop()``"
 msgstr ""
 
-#: ../../library/sets.rst:169
+#: ../../library/sets.rst:170
 msgid "remove and return an arbitrary element from *s*; raises :exc:`KeyError` if empty"
 msgstr ""
 
-#: ../../library/sets.rst:173
+#: ../../library/sets.rst:174
 msgid "``s.clear()``"
 msgstr ""
 
-#: ../../library/sets.rst:173
+#: ../../library/sets.rst:174
 msgid "remove all elements from set *s*"
 msgstr ""
 
-#: ../../library/sets.rst:177
+#: ../../library/sets.rst:178
 msgid "Note, the non-operator versions of :meth:`update`, :meth:`intersection_update`, :meth:`difference_update`, and :meth:`symmetric_difference_update` will accept any iterable as an argument."
 msgstr ""
 
-#: ../../library/sets.rst:184
+#: ../../library/sets.rst:185
 msgid "Also note, the module also includes a :meth:`union_update` method which is an alias for :meth:`update`.  The method is included for backwards compatibility. Programmers should prefer the :meth:`update` method because it is supported by the built-in :class:`set()` and :class:`frozenset()` types."
 msgstr ""
 
-#: ../../library/sets.rst:193
+#: ../../library/sets.rst:194
 msgid "Example"
 msgstr ""
 
-#: ../../library/sets.rst:223
+#: ../../library/sets.rst:224
 msgid "Protocol for automatic conversion to immutable"
 msgstr ""
 
-#: ../../library/sets.rst:225
+#: ../../library/sets.rst:226
 msgid "Sets can only contain immutable elements.  For convenience, mutable :class:`Set` objects are automatically copied to an :class:`ImmutableSet` before being added as a set element."
 msgstr ""
 
-#: ../../library/sets.rst:229
+#: ../../library/sets.rst:230
 msgid "The mechanism is to always add a :term:`hashable` element, or if it is not hashable, the element is checked to see if it has an :meth:`__as_immutable__` method which returns an immutable equivalent."
 msgstr ""
 
-#: ../../library/sets.rst:233
+#: ../../library/sets.rst:234
 msgid "Since :class:`Set` objects have a :meth:`__as_immutable__` method returning an instance of :class:`ImmutableSet`, it is possible to construct sets of sets."
 msgstr ""
 
-#: ../../library/sets.rst:236
+#: ../../library/sets.rst:237
 msgid "A similar mechanism is needed by the :meth:`__contains__` and :meth:`remove` methods which need to hash an element to check for membership in a set.  Those methods check an element for hashability and, if not, check for a :meth:`__as_temporarily_immutable__` method which returns the element wrapped by a class that provides temporary methods for :meth:`__hash__`, :meth:`__eq__`, and :meth:`__ne__`."
 msgstr ""
 
-#: ../../library/sets.rst:243
+#: ../../library/sets.rst:244
 msgid "The alternate mechanism spares the need to build a separate copy of the original mutable object."
 msgstr ""
 
-#: ../../library/sets.rst:246
+#: ../../library/sets.rst:247
 msgid ":class:`Set` objects implement the :meth:`__as_temporarily_immutable__` method which returns the :class:`Set` object wrapped by a new class :class:`_TemporarilyImmutableSet`."
 msgstr ""
 
-#: ../../library/sets.rst:250
+#: ../../library/sets.rst:251
 msgid "The two mechanisms for adding hashability are normally invisible to the user; however, a conflict can arise in a multi-threaded environment where one thread is updating a set while another has temporarily wrapped it in :class:`_TemporarilyImmutableSet`.  In other words, sets of mutable sets are not thread-safe."
 msgstr ""
 
-#: ../../library/sets.rst:260
+#: ../../library/sets.rst:261
 msgid "Comparison to the built-in :class:`set` types"
 msgstr ""
 
-#: ../../library/sets.rst:262
+#: ../../library/sets.rst:263
 msgid "The built-in :class:`set` and :class:`frozenset` types were designed based on lessons learned from the :mod:`sets` module.  The key differences are:"
 msgstr ""
 
-#: ../../library/sets.rst:265
+#: ../../library/sets.rst:266
 msgid ":class:`Set` and :class:`ImmutableSet` were renamed to :class:`set` and :class:`frozenset`."
 msgstr ""
 
-#: ../../library/sets.rst:268
+#: ../../library/sets.rst:269
 msgid "There is no equivalent to :class:`BaseSet`.  Instead, use ``isinstance(x, (set, frozenset))``."
 msgstr ""
 
-#: ../../library/sets.rst:271
+#: ../../library/sets.rst:272
 msgid "The hash algorithm for the built-ins performs significantly better (fewer collisions) for most datasets."
 msgstr ""
 
-#: ../../library/sets.rst:274
+#: ../../library/sets.rst:275
 msgid "The built-in versions have more space efficient pickles."
 msgstr ""
 
-#: ../../library/sets.rst:276
+#: ../../library/sets.rst:277
 msgid "The built-in versions do not have a :meth:`union_update` method. Instead, use the :meth:`update` method which is equivalent."
 msgstr ""
 
-#: ../../library/sets.rst:279
+#: ../../library/sets.rst:280
 msgid "The built-in versions do not have a ``_repr(sorted=True)`` method. Instead, use the built-in :func:`repr` and :func:`sorted` functions: ``repr(sorted(s))``."
 msgstr ""
 
-#: ../../library/sets.rst:283
+#: ../../library/sets.rst:284
 msgid "The built-in version does not have a protocol for automatic conversion to immutable.  Many found this feature to be confusing and no one in the community reported having found real uses for it."
 msgstr ""
 

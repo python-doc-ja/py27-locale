@@ -48,7 +48,7 @@ msgid "`Windows CE <http://pythonce.sourceforge.net/>`_ is still supported."
 msgstr ""
 
 #: ../../using/windows.rst:34
-msgid "The `Cygwin <http://cygwin.com/>`_ installer offers to install the Python interpreter as well (cf. `Cygwin package source <ftp://ftp.uni-erlangen.de/pub/pc/gnuwin32/cygwin/mirrors/cygnus/ release/python>`_, `Maintainer releases <http://www.tishler.net/jason/software/python/>`_)"
+msgid "The `Cygwin <https://cygwin.com/>`_ installer offers to install the Python interpreter as well (cf. `Cygwin package source <ftp://ftp.uni-erlangen.de/pub/pc/gnuwin32/cygwin/mirrors/cygnus/ release/python>`_, `Maintainer releases <http://www.tishler.net/jason/software/python/>`_)"
 msgstr ""
 
 #: ../../using/windows.rst:40
@@ -56,7 +56,7 @@ msgid "See `Python for Windows (and DOS) <https://www.python.org/download/window
 msgstr ""
 
 #: ../../using/windows.rst:47
-msgid "`Python on XP <http://www.richarddooling.com/index.php/2006/03/14/python-on-xp-7-minutes-to-hello-world/>`_"
+msgid "`Python on XP <http://dooling.com/index.php/2006/03/14/python-on-xp-7-minutes-to-hello-world/>`_"
 msgstr ""
 
 #: ../../using/windows.rst:46
@@ -72,11 +72,11 @@ msgid "in \"`Dive into Python: Python from novice to pro <http://www.diveintopyt
 msgstr ""
 
 #: ../../using/windows.rst:57
-msgid "`For Windows users <http://www.swaroopch.com/notes/python/#install_windows>`_"
+msgid "`For Windows users <http://python.swaroopch.com/installation.html#installation-on-windows>`_"
 msgstr ""
 
 #: ../../using/windows.rst:56
-msgid "in \"Installing Python\" in \"`A Byte of Python <http://www.swaroopch.com/notes/python/>`_\" by Swaroop C H, 2003"
+msgid "in \"Installing Python\" in \"`A Byte of Python <http://python.swaroopch.com/>`_\" by Swaroop C H, 2003"
 msgstr ""
 
 #: ../../using/windows.rst:62
@@ -88,7 +88,7 @@ msgid "Besides the standard CPython distribution, there are modified packages in
 msgstr ""
 
 #: ../../using/windows.rst:69
-msgid "`ActivePython <http://www.activestate.com/Products/activepython/>`_"
+msgid "`ActivePython <https://www.activestate.com/activepython/>`_"
 msgstr ""
 
 #: ../../using/windows.rst:69
@@ -152,7 +152,7 @@ msgid "Consult :command:`set /?` for details on this behaviour."
 msgstr ""
 
 #: ../../using/windows.rst:127
-msgid "http://support.microsoft.com/kb/100843"
+msgid "https://support.microsoft.com/kb/100843"
 msgstr ""
 
 #: ../../using/windows.rst:127
@@ -160,7 +160,7 @@ msgid "Environment variables in Windows NT"
 msgstr ""
 
 #: ../../using/windows.rst:130
-msgid "http://support.microsoft.com/kb/310519"
+msgid "https://support.microsoft.com/kb/310519"
 msgstr ""
 
 #: ../../using/windows.rst:130
@@ -168,7 +168,7 @@ msgid "How To Manage Environment Variables in Windows XP"
 msgstr ""
 
 #: ../../using/windows.rst:132
-msgid "http://www.chem.gla.ac.uk/~louis/software/faq/q1.html"
+msgid "https://www.chem.gla.ac.uk/~louis/software/faq/q1.html"
 msgstr ""
 
 #: ../../using/windows.rst:133
@@ -276,11 +276,11 @@ msgid "PyWin32"
 msgstr ""
 
 #: ../../using/windows.rst:245
-msgid "The `PyWin32 <http://python.net/crew/mhammond/win32/>`_ module by Mark Hammond is a collection of modules for advanced Windows-specific support.  This includes utilities for:"
+msgid "The `PyWin32 <https://pypi.python.org/pypi/pywin32>`_ module by Mark Hammond is a collection of modules for advanced Windows-specific support.  This includes utilities for:"
 msgstr ""
 
 #: ../../using/windows.rst:249
-msgid "`Component Object Model <http://www.microsoft.com/com/>`_ (COM)"
+msgid "`Component Object Model <https://www.microsoft.com/com/>`_ (COM)"
 msgstr ""
 
 #: ../../using/windows.rst:250
@@ -296,11 +296,11 @@ msgid "Event log"
 msgstr ""
 
 #: ../../using/windows.rst:253
-msgid "`Microsoft Foundation Classes <http://msdn.microsoft.com/en-us/library/fe1cf721%28VS.80%29.aspx>`_ (MFC) user interfaces"
+msgid "`Microsoft Foundation Classes <https://msdn.microsoft.com/en-us/library/fe1cf721%28VS.80%29.aspx>`_ (MFC) user interfaces"
 msgstr ""
 
 #: ../../using/windows.rst:256
-msgid "`PythonWin <http://web.archive.org/web/20060524042422/ https://www.python.org/windows/pythonwin/>`_ is a sample MFC application shipped with PyWin32.  It is an embeddable IDE with a built-in debugger."
+msgid "`PythonWin <https://web.archive.org/web/20060524042422/ https://www.python.org/windows/pythonwin/>`_ is a sample MFC application shipped with PyWin32.  It is an embeddable IDE with a built-in debugger."
 msgstr ""
 
 #: ../../using/windows.rst:263
@@ -344,7 +344,7 @@ msgid "Compiling Python on Windows"
 msgstr ""
 
 #: ../../using/windows.rst:293
-msgid "If you want to compile CPython yourself, first thing you should do is get the `source <https://www.python.org/download/source/>`_. You can download either the latest release's source or just grab a fresh `checkout <https://docs.python.org/devguide/setup.html#getting-the-source-code>`_."
+msgid "If you want to compile CPython yourself, first thing you should do is get the `source <https://www.python.org/downloads/source/>`_. You can download either the latest release's source or just grab a fresh `checkout <https://docs.python.org/devguide/setup.html#getting-the-source-code>`_."
 msgstr ""
 
 #: ../../using/windows.rst:298

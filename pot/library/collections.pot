@@ -156,251 +156,251 @@ msgid "The :meth:`elements` method requires integer counts.  It ignores zero and
 msgstr ""
 
 #: ../../library/collections.rst:199
-msgid "`Counter class <http://code.activestate.com/recipes/576611/>`_ adapted for Python 2.5 and an early `Bag recipe <http://code.activestate.com/recipes/259174/>`_ for Python 2.4."
+msgid "`Counter class <https://code.activestate.com/recipes/576611/>`_ adapted for Python 2.5 and an early `Bag recipe <https://code.activestate.com/recipes/259174/>`_ for Python 2.4."
 msgstr ""
 
 #: ../../library/collections.rst:203
-msgid "`Bag class <http://www.gnu.org/software/smalltalk/manual-base/html_node/Bag.html>`_ in Smalltalk."
+msgid "in Smalltalk."
 msgstr ""
 
-#: ../../library/collections.rst:206
-msgid "Wikipedia entry for `Multisets <http://en.wikipedia.org/wiki/Multiset>`_."
+#: ../../library/collections.rst:205
+msgid "Wikipedia entry for `Multisets <https://en.wikipedia.org/wiki/Multiset>`_."
 msgstr ""
 
-#: ../../library/collections.rst:208
-msgid "`C++ multisets <http://www.demo2s.com/Tutorial/Cpp/0380__set-multiset/Catalog0380__set-multiset.htm>`_ tutorial with examples."
+#: ../../library/collections.rst:207
+msgid "`C++ multisets <http://www.java2s.com/Tutorial/Cpp/0380__set-multiset/Catalog0380__set-multiset.htm>`_ tutorial with examples."
 msgstr ""
 
-#: ../../library/collections.rst:211
+#: ../../library/collections.rst:210
 msgid "For mathematical operations on multisets and their use cases, see *Knuth, Donald. The Art of Computer Programming Volume II, Section 4.6.3, Exercise 19*."
 msgstr ""
 
-#: ../../library/collections.rst:215
+#: ../../library/collections.rst:214
 msgid "To enumerate all distinct multisets of a given size over a given set of elements, see :func:`itertools.combinations_with_replacement`."
 msgstr ""
 
-#: ../../library/collections.rst:218
+#: ../../library/collections.rst:217
 msgid "map(Counter, combinations_with_replacement('ABC', 2)) --> AA AB AC BB BC CC"
 msgstr ""
 
-#: ../../library/collections.rst:222
+#: ../../library/collections.rst:221
 msgid ":class:`deque` objects"
 msgstr ""
 
-#: ../../library/collections.rst:226
+#: ../../library/collections.rst:225
 msgid "Returns a new deque object initialized left-to-right (using :meth:`append`) with data from *iterable*.  If *iterable* is not specified, the new deque is empty."
 msgstr ""
 
-#: ../../library/collections.rst:229
+#: ../../library/collections.rst:228
 msgid "Deques are a generalization of stacks and queues (the name is pronounced \"deck\" and is short for \"double-ended queue\").  Deques support thread-safe, memory efficient appends and pops from either side of the deque with approximately the same O(1) performance in either direction."
 msgstr ""
 
-#: ../../library/collections.rst:234
+#: ../../library/collections.rst:233
 msgid "Though :class:`list` objects support similar operations, they are optimized for fast fixed-length operations and incur O(n) memory movement costs for ``pop(0)`` and ``insert(0, v)`` operations which change both the size and position of the underlying data representation."
 msgstr ""
 
-#: ../../library/collections.rst:241
-msgid "If *maxlen* is not specified or is *None*, deques may grow to an arbitrary length.  Otherwise, the deque is bounded to the specified maximum length.  Once a bounded length deque is full, when new items are added, a corresponding number of items are discarded from the opposite end.  Bounded length deques provide functionality similar to the ``tail`` filter in Unix. They are also useful for tracking transactions and other pools of data where only the most recent activity is of interest."
+#: ../../library/collections.rst:240
+msgid "If *maxlen* is not specified or is ``None``, deques may grow to an arbitrary length.  Otherwise, the deque is bounded to the specified maximum length.  Once a bounded length deque is full, when new items are added, a corresponding number of items are discarded from the opposite end.  Bounded length deques provide functionality similar to the ``tail`` filter in Unix. They are also useful for tracking transactions and other pools of data where only the most recent activity is of interest."
 msgstr ""
 
-#: ../../library/collections.rst:249
+#: ../../library/collections.rst:248
 msgid "Added *maxlen* parameter."
 msgstr ""
 
-#: ../../library/collections.rst:252
+#: ../../library/collections.rst:251
 msgid "Deque objects support the following methods:"
 msgstr ""
 
-#: ../../library/collections.rst:257
+#: ../../library/collections.rst:256
 msgid "Add *x* to the right side of the deque."
 msgstr ""
 
-#: ../../library/collections.rst:262
+#: ../../library/collections.rst:261
 msgid "Add *x* to the left side of the deque."
 msgstr ""
 
-#: ../../library/collections.rst:267
+#: ../../library/collections.rst:266
 msgid "Remove all elements from the deque leaving it with length 0."
 msgstr ""
 
-#: ../../library/collections.rst:272
+#: ../../library/collections.rst:271
 msgid "Count the number of deque elements equal to *x*."
 msgstr ""
 
-#: ../../library/collections.rst:278
+#: ../../library/collections.rst:277
 msgid "Extend the right side of the deque by appending elements from the iterable argument."
 msgstr ""
 
-#: ../../library/collections.rst:284
+#: ../../library/collections.rst:283
 msgid "Extend the left side of the deque by appending elements from *iterable*. Note, the series of left appends results in reversing the order of elements in the iterable argument."
 msgstr ""
 
-#: ../../library/collections.rst:291
+#: ../../library/collections.rst:290
 msgid "Remove and return an element from the right side of the deque. If no elements are present, raises an :exc:`IndexError`."
 msgstr ""
 
-#: ../../library/collections.rst:297
+#: ../../library/collections.rst:296
 msgid "Remove and return an element from the left side of the deque. If no elements are present, raises an :exc:`IndexError`."
 msgstr ""
 
-#: ../../library/collections.rst:303
+#: ../../library/collections.rst:302
 msgid "Removed the first occurrence of *value*.  If not found, raises a :exc:`ValueError`."
 msgstr ""
 
-#: ../../library/collections.rst:310
+#: ../../library/collections.rst:309
 msgid "Reverse the elements of the deque in-place and then return ``None``."
 msgstr ""
 
-#: ../../library/collections.rst:316
+#: ../../library/collections.rst:315
 msgid "Rotate the deque *n* steps to the right.  If *n* is negative, rotate to the left.  Rotating one step to the right is equivalent to: ``d.appendleft(d.pop())``."
 msgstr ""
 
-#: ../../library/collections.rst:321
+#: ../../library/collections.rst:320
 msgid "Deque objects also provide one read-only attribute:"
 msgstr ""
 
-#: ../../library/collections.rst:325
-msgid "Maximum size of a deque or *None* if unbounded."
+#: ../../library/collections.rst:324
+msgid "Maximum size of a deque or ``None`` if unbounded."
 msgstr ""
 
-#: ../../library/collections.rst:330
+#: ../../library/collections.rst:329
 msgid "In addition to the above, deques support iteration, pickling, ``len(d)``, ``reversed(d)``, ``copy.copy(d)``, ``copy.deepcopy(d)``, membership testing with the :keyword:`in` operator, and subscript references such as ``d[-1]``.  Indexed access is O(1) at both ends but slows to O(n) in the middle.  For fast random access, use lists instead."
 msgstr ""
 
-#: ../../library/collections.rst:336
-#: ../../library/collections.rst:598
+#: ../../library/collections.rst:335
+#: ../../library/collections.rst:597
 msgid "Example:"
 msgstr ""
 
-#: ../../library/collections.rst:393
+#: ../../library/collections.rst:392
 msgid ":class:`deque` Recipes"
 msgstr ""
 
-#: ../../library/collections.rst:395
+#: ../../library/collections.rst:394
 msgid "This section shows various approaches to working with deques."
 msgstr ""
 
-#: ../../library/collections.rst:397
+#: ../../library/collections.rst:396
 msgid "Bounded length deques provide functionality similar to the ``tail`` filter in Unix::"
 msgstr ""
 
-#: ../../library/collections.rst:404
+#: ../../library/collections.rst:403
 msgid "Another approach to using deques is to maintain a sequence of recently added elements by appending to the right and popping to the left::"
 msgstr ""
 
-#: ../../library/collections.rst:419
+#: ../../library/collections.rst:418
 msgid "The :meth:`rotate` method provides a way to implement :class:`deque` slicing and deletion.  For example, a pure Python implementation of ``del d[n]`` relies on the :meth:`rotate` method to position elements to be popped::"
 msgstr ""
 
-#: ../../library/collections.rst:428
+#: ../../library/collections.rst:427
 msgid "To implement :class:`deque` slicing, use a similar approach applying :meth:`rotate` to bring a target element to the left side of the deque. Remove old entries with :meth:`popleft`, add new entries with :meth:`extend`, and then reverse the rotation. With minor variations on that approach, it is easy to implement Forth style stack manipulations such as ``dup``, ``drop``, ``swap``, ``over``, ``pick``, ``rot``, and ``roll``."
 msgstr ""
 
-#: ../../library/collections.rst:438
+#: ../../library/collections.rst:437
 msgid ":class:`defaultdict` objects"
 msgstr ""
 
-#: ../../library/collections.rst:442
+#: ../../library/collections.rst:441
 msgid "Returns a new dictionary-like object.  :class:`defaultdict` is a subclass of the built-in :class:`dict` class.  It overrides one method and adds one writable instance variable.  The remaining functionality is the same as for the :class:`dict` class and is not documented here."
 msgstr ""
 
-#: ../../library/collections.rst:447
+#: ../../library/collections.rst:446
 msgid "The first argument provides the initial value for the :attr:`default_factory` attribute; it defaults to ``None``. All remaining arguments are treated the same as if they were passed to the :class:`dict` constructor, including keyword arguments."
 msgstr ""
 
-#: ../../library/collections.rst:454
+#: ../../library/collections.rst:453
 msgid ":class:`defaultdict` objects support the following method in addition to the standard :class:`dict` operations:"
 msgstr ""
 
-#: ../../library/collections.rst:459
+#: ../../library/collections.rst:458
 msgid "If the :attr:`default_factory` attribute is ``None``, this raises a :exc:`KeyError` exception with the *key* as argument."
 msgstr ""
 
-#: ../../library/collections.rst:462
+#: ../../library/collections.rst:461
 msgid "If :attr:`default_factory` is not ``None``, it is called without arguments to provide a default value for the given *key*, this value is inserted in the dictionary for the *key*, and returned."
 msgstr ""
 
-#: ../../library/collections.rst:466
+#: ../../library/collections.rst:465
 msgid "If calling :attr:`default_factory` raises an exception this exception is propagated unchanged."
 msgstr ""
 
-#: ../../library/collections.rst:469
+#: ../../library/collections.rst:468
 msgid "This method is called by the :meth:`__getitem__` method of the :class:`dict` class when the requested key is not found; whatever it returns or raises is then returned or raised by :meth:`__getitem__`."
 msgstr ""
 
-#: ../../library/collections.rst:473
+#: ../../library/collections.rst:472
 msgid "Note that :meth:`__missing__` is *not* called for any operations besides :meth:`__getitem__`. This means that :meth:`get` will, like normal dictionaries, return ``None`` as a default rather than using :attr:`default_factory`."
 msgstr ""
 
-#: ../../library/collections.rst:479
+#: ../../library/collections.rst:478
 msgid ":class:`defaultdict` objects support the following instance variable:"
 msgstr ""
 
-#: ../../library/collections.rst:484
+#: ../../library/collections.rst:483
 msgid "This attribute is used by the :meth:`__missing__` method; it is initialized from the first argument to the constructor, if present, or to ``None``, if absent."
 msgstr ""
 
-#: ../../library/collections.rst:490
+#: ../../library/collections.rst:489
 msgid ":class:`defaultdict` Examples"
 msgstr ""
 
-#: ../../library/collections.rst:492
+#: ../../library/collections.rst:491
 msgid "Using :class:`list` as the :attr:`default_factory`, it is easy to group a sequence of key-value pairs into a dictionary of lists:"
 msgstr ""
 
-#: ../../library/collections.rst:503
+#: ../../library/collections.rst:502
 msgid "When each key is encountered for the first time, it is not already in the mapping; so an entry is automatically created using the :attr:`default_factory` function which returns an empty :class:`list`.  The :meth:`list.append` operation then attaches the value to the new list.  When keys are encountered again, the look-up proceeds normally (returning the list for that key) and the :meth:`list.append` operation adds another value to the list. This technique is simpler and faster than an equivalent technique using :meth:`dict.setdefault`:"
 msgstr ""
 
-#: ../../library/collections.rst:518
+#: ../../library/collections.rst:517
 msgid "Setting the :attr:`default_factory` to :class:`int` makes the :class:`defaultdict` useful for counting (like a bag or multiset in other languages):"
 msgstr ""
 
-#: ../../library/collections.rst:530
+#: ../../library/collections.rst:529
 msgid "When a letter is first encountered, it is missing from the mapping, so the :attr:`default_factory` function calls :func:`int` to supply a default count of zero.  The increment operation then builds up the count for each letter."
 msgstr ""
 
-#: ../../library/collections.rst:534
+#: ../../library/collections.rst:533
 msgid "The function :func:`int` which always returns zero is just a special case of constant functions.  A faster and more flexible way to create constant functions is to use :func:`itertools.repeat` which can supply any constant value (not just zero):"
 msgstr ""
 
-#: ../../library/collections.rst:546
+#: ../../library/collections.rst:545
 msgid "Setting the :attr:`default_factory` to :class:`set` makes the :class:`defaultdict` useful for building a dictionary of sets:"
 msgstr ""
 
-#: ../../library/collections.rst:559
+#: ../../library/collections.rst:558
 msgid ":func:`namedtuple` Factory Function for Tuples with Named Fields"
 msgstr ""
 
-#: ../../library/collections.rst:561
+#: ../../library/collections.rst:560
 msgid "Named tuples assign meaning to each position in a tuple and allow for more readable, self-documenting code.  They can be used wherever regular tuples are used, and they add the ability to access fields by name instead of position index."
 msgstr ""
 
-#: ../../library/collections.rst:567
+#: ../../library/collections.rst:566
 msgid "Returns a new tuple subclass named *typename*.  The new subclass is used to create tuple-like objects that have fields accessible by attribute lookup as well as being indexable and iterable.  Instances of the subclass also have a helpful docstring (with typename and field_names) and a helpful :meth:`__repr__` method which lists the tuple contents in a ``name=value`` format."
 msgstr ""
 
-#: ../../library/collections.rst:573
+#: ../../library/collections.rst:572
 msgid "The *field_names* are a sequence of strings such as ``['x', 'y']``. Alternatively, *field_names* can be a single string with each fieldname separated by whitespace and/or commas, for example ``'x y'`` or ``'x, y'``."
 msgstr ""
 
-#: ../../library/collections.rst:577
+#: ../../library/collections.rst:576
 msgid "Any valid Python identifier may be used for a fieldname except for names starting with an underscore.  Valid identifiers consist of letters, digits, and underscores but do not start with a digit or underscore and cannot be a :mod:`keyword` such as *class*, *for*, *return*, *global*, *pass*, *print*, or *raise*."
 msgstr ""
 
-#: ../../library/collections.rst:583
+#: ../../library/collections.rst:582
 msgid "If *rename* is true, invalid fieldnames are automatically replaced with positional names.  For example, ``['abc', 'def', 'ghi', 'abc']`` is converted to ``['abc', '_1', 'ghi', '_3']``, eliminating the keyword ``def`` and the duplicate fieldname ``abc``."
 msgstr ""
 
-#: ../../library/collections.rst:588
+#: ../../library/collections.rst:587
 msgid "If *verbose* is true, the class definition is printed just before being built."
 msgstr ""
 
-#: ../../library/collections.rst:590
+#: ../../library/collections.rst:589
 msgid "Named tuple instances do not have per-instance dictionaries, so they are lightweight and require no more memory than regular tuples."
 msgstr ""
 
-#: ../../library/collections.rst:595
+#: ../../library/collections.rst:594
 msgid "added support for *rename*."
 msgstr ""
 
@@ -461,7 +461,7 @@ msgid "Enumerated constants can be implemented with named tuples, but it is simp
 msgstr ""
 
 #: ../../library/collections.rst:789
-msgid "`Named tuple recipe <http://code.activestate.com/recipes/500261/>`_ adapted for Python 2.4."
+msgid "`Named tuple recipe <https://code.activestate.com/recipes/500261/>`_ adapted for Python 2.4."
 msgstr ""
 
 #: ../../library/collections.rst:794
@@ -493,7 +493,7 @@ msgid "The :class:`OrderedDict` constructor and :meth:`update` method both accep
 msgstr ""
 
 #: ../../library/collections.rst:832
-msgid "`Equivalent OrderedDict recipe <http://code.activestate.com/recipes/576693/>`_ that runs on Python 2.4 or later."
+msgid "`Equivalent OrderedDict recipe <https://code.activestate.com/recipes/576693/>`_ that runs on Python 2.4 or later."
 msgstr ""
 
 #: ../../library/collections.rst:836
@@ -501,7 +501,7 @@ msgid ":class:`OrderedDict` Examples and Recipes"
 msgstr ""
 
 #: ../../library/collections.rst:838
-msgid "Since an ordered dictionary remembers its insertion order, it can be used in conjuction with sorting to make a sorted dictionary::"
+msgid "Since an ordered dictionary remembers its insertion order, it can be used in conjunction with sorting to make a sorted dictionary::"
 msgstr ""
 
 #: ../../library/collections.rst:856
@@ -737,27 +737,27 @@ msgstr ""
 msgid "Several of the ABCs are also useful as mixins that make it easier to develop classes supporting container APIs.  For example, to write a class supporting the full :class:`Set` API, it only necessary to supply the three underlying abstract methods: :meth:`__contains__`, :meth:`__iter__`, and :meth:`__len__`. The ABC supplies the remaining methods such as :meth:`__and__` and :meth:`isdisjoint` ::"
 msgstr ""
 
-#: ../../library/collections.rst:1017
+#: ../../library/collections.rst:1020
 msgid "Notes on using :class:`Set` and :class:`MutableSet` as a mixin:"
 msgstr ""
 
-#: ../../library/collections.rst:1020
+#: ../../library/collections.rst:1023
 msgid "Since some set operations create new sets, the default mixin methods need a way to create new instances from an iterable. The class constructor is assumed to have a signature in the form ``ClassName(iterable)``. That assumption is factored-out to an internal classmethod called :meth:`_from_iterable` which calls ``cls(iterable)`` to produce a new set. If the :class:`Set` mixin is being used in a class with a different constructor signature, you will need to override :meth:`_from_iterable` with a classmethod that can construct new instances from an iterable argument."
 msgstr ""
 
-#: ../../library/collections.rst:1031
+#: ../../library/collections.rst:1034
 msgid "To override the comparisons (presumably for speed, as the semantics are fixed), redefine :meth:`__le__` and :meth:`__ge__`, then the other operations will automatically follow suit."
 msgstr ""
 
-#: ../../library/collections.rst:1036
-msgid "The :class:`Set` mixin provides a :meth:`_hash` method to compute a hash value for the set; however, :meth:`__hash__` is not defined because not all sets are hashable or immutable.  To add set hashabilty using mixins, inherit from both :meth:`Set` and :meth:`Hashable`, then define ``__hash__ = Set._hash``."
-msgstr ""
-
-#: ../../library/collections.rst:1044
-msgid "`OrderedSet recipe <http://code.activestate.com/recipes/576694/>`_ for an example built on :class:`MutableSet`."
+#: ../../library/collections.rst:1039
+msgid "The :class:`Set` mixin provides a :meth:`_hash` method to compute a hash value for the set; however, :meth:`__hash__` is not defined because not all sets are hashable or immutable.  To add set hashability using mixins, inherit from both :meth:`Set` and :meth:`Hashable`, then define ``__hash__ = Set._hash``."
 msgstr ""
 
 #: ../../library/collections.rst:1047
+msgid "`OrderedSet recipe <https://code.activestate.com/recipes/576694/>`_ for an example built on :class:`MutableSet`."
+msgstr ""
+
+#: ../../library/collections.rst:1050
 msgid "For more about ABCs, see the :mod:`abc` module and :pep:`3119`."
 msgstr ""
 

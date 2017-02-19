@@ -68,7 +68,7 @@ msgid "The *mtime* argument is an optional numeric timestamp to be written to th
 msgstr ""
 
 #: ../../library/gzip.rst:66
-msgid "Calling a :class:`GzipFile` object's :meth:`close` method does not close *fileobj*, since you might wish to append more material after the compressed data.  This also allows you to pass a :class:`~StringIO.StringIO` object opened for writing as *fileobj*, and retrieve the resulting memory buffer using the :class:`StringIO` object's :meth:`~StringIO.StringIO.getvalue` method."
+msgid "Calling a :class:`GzipFile` object's :meth:`close` method does not close *fileobj*, since you might wish to append more material after the compressed data.  This also allows you to pass a :class:`~StringIO.StringIO` object opened for writing as *fileobj*, and retrieve the resulting memory buffer using the :class:`~StringIO.StringIO` object's :meth:`~StringIO.StringIO.getvalue` method."
 msgstr ""
 
 #: ../../library/gzip.rst:72

@@ -92,18 +92,18 @@ msgid "Return the subset of the list of *names* that match *pattern*. It is the 
 msgstr ""
 
 #: ../../library/fnmatch.rst:80
-msgid "Return the shell-style *pattern* converted to a regular expression."
+msgid "Return the shell-style *pattern* converted to a regular expression for using with :func:`re.match`."
 msgstr ""
 
-#: ../../library/fnmatch.rst:82
+#: ../../library/fnmatch.rst:83
 msgid "Example:"
 msgstr ""
 
-#: ../../library/fnmatch.rst:96
+#: ../../library/fnmatch.rst:97
 msgid "Module :mod:`glob`"
 msgstr ""
 
-#: ../../library/fnmatch.rst:97
+#: ../../library/fnmatch.rst:98
 msgid "Unix shell-style path expansion."
 msgstr ""
 

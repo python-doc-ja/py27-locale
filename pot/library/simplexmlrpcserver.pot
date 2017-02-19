@@ -28,7 +28,7 @@ msgid "**Source code:** :source:`Lib/SimpleXMLRPCServer.py`"
 msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:21
-msgid "The :mod:`SimpleXMLRPCServer` module provides a basic server framework for XML-RPC servers written in Python.  Servers can either be free standing, using :class:`SimpleXMLRPCServer`, or embedded in a CGI environment, using :class:`CGIXMLRPCRequestHandler`."
+msgid "The :mod:`SimpleXMLRPCServer` module provides a basic server framework for XML-RPC servers written in Python.  Servers can either be free standing, using :class:`~SimpleXMLRPCServer.SimpleXMLRPCServer`, or embedded in a CGI environment, using :class:`CGIXMLRPCRequestHandler`."
 msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:29
@@ -49,7 +49,7 @@ msgid "Create a new instance to handle XML-RPC requests in a CGI environment.  T
 msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:63
-msgid "Create a new request handler instance.  This request handler supports ``POST`` requests and modifies logging so that the *logRequests* parameter to the :class:`SimpleXMLRPCServer` constructor parameter is honored."
+msgid "Create a new request handler instance.  This request handler supports ``POST`` requests and modifies logging so that the *logRequests* parameter to the :class:`~SimpleXMLRPCServer.SimpleXMLRPCServer` constructor parameter is honored."
 msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:71
@@ -57,7 +57,7 @@ msgid "SimpleXMLRPCServer Objects"
 msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:73
-msgid "The :class:`SimpleXMLRPCServer` class is based on :class:`SocketServer.TCPServer` and provides a means of creating simple, stand alone XML-RPC servers."
+msgid "The :class:`~SimpleXMLRPCServer.SimpleXMLRPCServer` class is based on :class:`SocketServer.TCPServer` and provides a means of creating simple, stand alone XML-RPC servers."
 msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:80
@@ -109,7 +109,7 @@ msgid "The following client code will call the methods made available by the pre
 msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:200
-msgid "The following :class:`SimpleXMLRPCServer` example is included in the module `Lib/SimpleXMLRPCServer.py`::"
+msgid "The following :class:`~SimpleXMLRPCServer.SimpleXMLRPCServer` example is included in the module `Lib/SimpleXMLRPCServer.py`::"
 msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:209
@@ -149,7 +149,7 @@ msgid "Register the XML-RPC multicall function ``system.multicall``."
 msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:276
-msgid "Handle a XML-RPC request. If *request_text* is given, it  should be the POST data provided by the HTTP server,  otherwise the contents of stdin will be used."
+msgid "Handle an XML-RPC request. If *request_text* is given, it should be the POST data provided by the HTTP server,  otherwise the contents of stdin will be used."
 msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:279

@@ -48,7 +48,7 @@ msgid "Mutex Objects"
 msgstr ""
 
 #: ../../library/mutex.rst:43
-msgid ":class:`mutex` objects have following methods:"
+msgid ":class:`~mutex.mutex` objects have following methods:"
 msgstr ""
 
 #: ../../library/mutex.rst:48

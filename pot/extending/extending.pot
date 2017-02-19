@@ -32,7 +32,7 @@ msgid "The compilation of an extension module depends on its intended use as wel
 msgstr ""
 
 #: ../../extending/extending.rst:25
-msgid "The C extension interface is specific to CPython, and extension modules do not work on other Python implementations.  In many cases, it is possible to avoid writing C extensions and preserve portability to other implementations. For example, if your use case is calling C library functions or system calls, you should consider using the :mod:`ctypes` module or the `cffi <http://cffi.readthedocs.org>`_ library rather than writing custom C code. These modules let you write Python code to interface with C code and are more portable between implementations of Python than writing and compiling a C extension module."
+msgid "The C extension interface is specific to CPython, and extension modules do not work on other Python implementations.  In many cases, it is possible to avoid writing C extensions and preserve portability to other implementations. For example, if your use case is calling C library functions or system calls, you should consider using the :mod:`ctypes` module or the `cffi <https://cffi.readthedocs.org>`_ library rather than writing custom C code. These modules let you write Python code to interface with C code and are more portable between implementations of Python than writing and compiling a C extension module."
 msgstr ""
 
 #: ../../extending/extending.rst:39
@@ -372,270 +372,270 @@ msgid "One difference with :c:func:`PyArg_ParseTuple`: while the latter requires
 msgstr ""
 
 #: ../../extending/extending.rst:766
-msgid "Examples (to the left the call, to the right the resulting Python value)::"
-msgstr ""
-
-#: ../../extending/extending.rst:788
-msgid "Reference Counts"
+msgid "Examples (to the left the call, to the right the resulting Python value):"
 msgstr ""
 
 #: ../../extending/extending.rst:790
+msgid "Reference Counts"
+msgstr ""
+
+#: ../../extending/extending.rst:792
 msgid "In languages like C or C++, the programmer is responsible for dynamic allocation and deallocation of memory on the heap.  In C, this is done using the functions :c:func:`malloc` and :c:func:`free`.  In C++, the operators ``new`` and ``delete`` are used with essentially the same meaning and we'll restrict the following discussion to the C case."
 msgstr ""
 
-#: ../../extending/extending.rst:796
+#: ../../extending/extending.rst:798
 msgid "Every block of memory allocated with :c:func:`malloc` should eventually be returned to the pool of available memory by exactly one call to :c:func:`free`. It is important to call :c:func:`free` at the right time.  If a block's address is forgotten but :c:func:`free` is not called for it, the memory it occupies cannot be reused until the program terminates.  This is called a :dfn:`memory leak`.  On the other hand, if a program calls :c:func:`free` for a block and then continues to use the block, it creates a conflict with re-use of the block through another :c:func:`malloc` call.  This is called :dfn:`using freed memory`. It has the same bad consequences as referencing uninitialized data --- core dumps, wrong results, mysterious crashes."
 msgstr ""
 
-#: ../../extending/extending.rst:807
+#: ../../extending/extending.rst:809
 msgid "Common causes of memory leaks are unusual paths through the code.  For instance, a function may allocate a block of memory, do some calculation, and then free the block again.  Now a change in the requirements for the function may add a test to the calculation that detects an error condition and can return prematurely from the function.  It's easy to forget to free the allocated memory block when taking this premature exit, especially when it is added later to the code.  Such leaks, once introduced, often go undetected for a long time: the error exit is taken only in a small fraction of all calls, and most modern machines have plenty of virtual memory, so the leak only becomes apparent in a long-running process that uses the leaking function frequently.  Therefore, it's important to prevent leaks from happening by having a coding convention or strategy that minimizes this kind of errors."
 msgstr ""
 
-#: ../../extending/extending.rst:820
+#: ../../extending/extending.rst:822
 msgid "Since Python makes heavy use of :c:func:`malloc` and :c:func:`free`, it needs a strategy to avoid memory leaks as well as the use of freed memory.  The chosen method is called :dfn:`reference counting`.  The principle is simple: every object contains a counter, which is incremented when a reference to the object is stored somewhere, and which is decremented when a reference to it is deleted. When the counter reaches zero, the last reference to the object has been deleted and the object is freed."
 msgstr ""
 
-#: ../../extending/extending.rst:828
+#: ../../extending/extending.rst:830
 msgid "An alternative strategy is called :dfn:`automatic garbage collection`. (Sometimes, reference counting is also referred to as a garbage collection strategy, hence my use of \"automatic\" to distinguish the two.)  The big advantage of automatic garbage collection is that the user doesn't need to call :c:func:`free` explicitly.  (Another claimed advantage is an improvement in speed or memory usage --- this is no hard fact however.)  The disadvantage is that for C, there is no truly portable automatic garbage collector, while reference counting can be implemented portably (as long as the functions :c:func:`malloc` and :c:func:`free` are available --- which the C Standard guarantees). Maybe some day a sufficiently portable automatic garbage collector will be available for C. Until then, we'll have to live with reference counts."
 msgstr ""
 
-#: ../../extending/extending.rst:840
+#: ../../extending/extending.rst:842
 msgid "While Python uses the traditional reference counting implementation, it also offers a cycle detector that works to detect reference cycles.  This allows applications to not worry about creating direct or indirect circular references; these are the weakness of garbage collection implemented using only reference counting.  Reference cycles consist of objects which contain (possibly indirect) references to themselves, so that each object in the cycle has a reference count which is non-zero.  Typical reference counting implementations are not able to reclaim the memory belonging to any objects in a reference cycle, or referenced from the objects in the cycle, even though there are no further references to the cycle itself."
 msgstr ""
 
-#: ../../extending/extending.rst:851
-msgid "The cycle detector is able to detect garbage cycles and can reclaim them so long as there are no finalizers implemented in Python (:meth:`__del__` methods). When there are such finalizers, the detector exposes the cycles through the :mod:`gc` module (specifically, the :attr:`~gc.garbage` variable in that module). The :mod:`gc` module also exposes a way to run the detector (the :func:`~gc.collect` function), as well as configuration interfaces and the ability to disable the detector at runtime.  The cycle detector is considered an optional component; though it is included by default, it can be disabled at build time using the :option:`--without-cycle-gc` option to the :program:`configure` script on Unix platforms (including Mac OS X) or by removing the definition of ``WITH_CYCLE_GC`` in the :file:`pyconfig.h` header on other platforms.  If the cycle detector is disabled in this way, the :mod:`gc` module will not be available."
-msgstr ""
-
-#: ../../extending/extending.rst:869
-msgid "Reference Counting in Python"
+#: ../../extending/extending.rst:853
+msgid "The cycle detector is able to detect garbage cycles and can reclaim them so long as there are no finalizers implemented in Python (:meth:`__del__` methods). When there are such finalizers, the detector exposes the cycles through the :mod:`gc` module (specifically, the :attr:`~gc.garbage` variable in that module). The :mod:`gc` module also exposes a way to run the detector (the :func:`~gc.collect` function), as well as configuration interfaces and the ability to disable the detector at runtime.  The cycle detector is considered an optional component; though it is included by default, it can be disabled at build time using the :option:`!--without-cycle-gc` option to the :program:`configure` script on Unix platforms (including Mac OS X) or by removing the definition of ``WITH_CYCLE_GC`` in the :file:`pyconfig.h` header on other platforms.  If the cycle detector is disabled in this way, the :mod:`gc` module will not be available."
 msgstr ""
 
 #: ../../extending/extending.rst:871
+msgid "Reference Counting in Python"
+msgstr ""
+
+#: ../../extending/extending.rst:873
 msgid "There are two macros, ``Py_INCREF(x)`` and ``Py_DECREF(x)``, which handle the incrementing and decrementing of the reference count. :c:func:`Py_DECREF` also frees the object when the count reaches zero. For flexibility, it doesn't call :c:func:`free` directly --- rather, it makes a call through a function pointer in the object's :dfn:`type object`.  For this purpose (and others), every object also contains a pointer to its type object."
 msgstr ""
 
-#: ../../extending/extending.rst:878
+#: ../../extending/extending.rst:880
 msgid "The big question now remains: when to use ``Py_INCREF(x)`` and ``Py_DECREF(x)``? Let's first introduce some terms.  Nobody \"owns\" an object; however, you can :dfn:`own a reference` to an object.  An object's reference count is now defined as the number of owned references to it.  The owner of a reference is responsible for calling :c:func:`Py_DECREF` when the reference is no longer needed.  Ownership of a reference can be transferred.  There are three ways to dispose of an owned reference: pass it on, store it, or call :c:func:`Py_DECREF`. Forgetting to dispose of an owned reference creates a memory leak."
 msgstr ""
 
-#: ../../extending/extending.rst:887
+#: ../../extending/extending.rst:889
 msgid "It is also possible to :dfn:`borrow` [#]_ a reference to an object.  The borrower of a reference should not call :c:func:`Py_DECREF`.  The borrower must not hold on to the object longer than the owner from which it was borrowed. Using a borrowed reference after the owner has disposed of it risks using freed memory and should be avoided completely. [#]_"
 msgstr ""
 
-#: ../../extending/extending.rst:893
+#: ../../extending/extending.rst:895
 msgid "The advantage of borrowing over owning a reference is that you don't need to take care of disposing of the reference on all possible paths through the code --- in other words, with a borrowed reference you don't run the risk of leaking when a premature exit is taken.  The disadvantage of borrowing over owning is that there are some subtle situations where in seemingly correct code a borrowed reference can be used after the owner from which it was borrowed has in fact disposed of it."
 msgstr ""
 
-#: ../../extending/extending.rst:901
+#: ../../extending/extending.rst:903
 msgid "A borrowed reference can be changed into an owned reference by calling :c:func:`Py_INCREF`.  This does not affect the status of the owner from which the reference was borrowed --- it creates a new owned reference, and gives full owner responsibilities (the new owner must dispose of the reference properly, as well as the previous owner)."
 msgstr ""
 
-#: ../../extending/extending.rst:911
+#: ../../extending/extending.rst:913
 msgid "Ownership Rules"
 msgstr ""
 
-#: ../../extending/extending.rst:913
+#: ../../extending/extending.rst:915
 msgid "Whenever an object reference is passed into or out of a function, it is part of the function's interface specification whether ownership is transferred with the reference or not."
 msgstr ""
 
-#: ../../extending/extending.rst:917
+#: ../../extending/extending.rst:919
 msgid "Most functions that return a reference to an object pass on ownership with the reference.  In particular, all functions whose function it is to create a new object, such as :c:func:`PyInt_FromLong` and :c:func:`Py_BuildValue`, pass ownership to the receiver.  Even if the object is not actually new, you still receive ownership of a new reference to that object.  For instance, :c:func:`PyInt_FromLong` maintains a cache of popular values and can return a reference to a cached item."
 msgstr ""
 
-#: ../../extending/extending.rst:925
+#: ../../extending/extending.rst:927
 msgid "Many functions that extract objects from other objects also transfer ownership with the reference, for instance :c:func:`PyObject_GetAttrString`.  The picture is less clear, here, however, since a few common routines are exceptions: :c:func:`PyTuple_GetItem`, :c:func:`PyList_GetItem`, :c:func:`PyDict_GetItem`, and :c:func:`PyDict_GetItemString` all return references that you borrow from the tuple, list or dictionary."
 msgstr ""
 
-#: ../../extending/extending.rst:932
+#: ../../extending/extending.rst:934
 msgid "The function :c:func:`PyImport_AddModule` also returns a borrowed reference, even though it may actually create the object it returns: this is possible because an owned reference to the object is stored in ``sys.modules``."
 msgstr ""
 
-#: ../../extending/extending.rst:936
+#: ../../extending/extending.rst:938
 msgid "When you pass an object reference into another function, in general, the function borrows the reference from you --- if it needs to store it, it will use :c:func:`Py_INCREF` to become an independent owner.  There are exactly two important exceptions to this rule: :c:func:`PyTuple_SetItem` and :c:func:`PyList_SetItem`.  These functions take over ownership of the item passed to them --- even if they fail!  (Note that :c:func:`PyDict_SetItem` and friends don't take over ownership --- they are \"normal.\")"
 msgstr ""
 
-#: ../../extending/extending.rst:944
+#: ../../extending/extending.rst:946
 msgid "When a C function is called from Python, it borrows references to its arguments from the caller.  The caller owns a reference to the object, so the borrowed reference's lifetime is guaranteed until the function returns.  Only when such a borrowed reference must be stored or passed on, it must be turned into an owned reference by calling :c:func:`Py_INCREF`."
 msgstr ""
 
-#: ../../extending/extending.rst:950
+#: ../../extending/extending.rst:952
 msgid "The object reference returned from a C function that is called from Python must be an owned reference --- ownership is transferred from the function to its caller."
 msgstr ""
 
-#: ../../extending/extending.rst:958
+#: ../../extending/extending.rst:960
 msgid "Thin Ice"
 msgstr ""
 
-#: ../../extending/extending.rst:960
+#: ../../extending/extending.rst:962
 msgid "There are a few situations where seemingly harmless use of a borrowed reference can lead to problems.  These all have to do with implicit invocations of the interpreter, which can cause the owner of a reference to dispose of it."
 msgstr ""
 
-#: ../../extending/extending.rst:964
+#: ../../extending/extending.rst:966
 msgid "The first and most important case to know about is using :c:func:`Py_DECREF` on an unrelated object while borrowing a reference to a list item.  For instance::"
 msgstr ""
 
-#: ../../extending/extending.rst:976
+#: ../../extending/extending.rst:978
 msgid "This function first borrows a reference to ``list[0]``, then replaces ``list[1]`` with the value ``0``, and finally prints the borrowed reference. Looks harmless, right?  But it's not!"
 msgstr ""
 
-#: ../../extending/extending.rst:980
+#: ../../extending/extending.rst:982
 msgid "Let's follow the control flow into :c:func:`PyList_SetItem`.  The list owns references to all its items, so when item 1 is replaced, it has to dispose of the original item 1.  Now let's suppose the original item 1 was an instance of a user-defined class, and let's further suppose that the class defined a :meth:`__del__` method.  If this class instance has a reference count of 1, disposing of it will call its :meth:`__del__` method."
 msgstr ""
 
-#: ../../extending/extending.rst:987
+#: ../../extending/extending.rst:989
 msgid "Since it is written in Python, the :meth:`__del__` method can execute arbitrary Python code.  Could it perhaps do something to invalidate the reference to ``item`` in :c:func:`bug`?  You bet!  Assuming that the list passed into :c:func:`bug` is accessible to the :meth:`__del__` method, it could execute a statement to the effect of ``del list[0]``, and assuming this was the last reference to that object, it would free the memory associated with it, thereby invalidating ``item``."
 msgstr ""
 
-#: ../../extending/extending.rst:995
+#: ../../extending/extending.rst:997
 msgid "The solution, once you know the source of the problem, is easy: temporarily increment the reference count.  The correct version of the function reads::"
 msgstr ""
 
-#: ../../extending/extending.rst:1009
+#: ../../extending/extending.rst:1011
 msgid "This is a true story.  An older version of Python contained variants of this bug and someone spent a considerable amount of time in a C debugger to figure out why his :meth:`__del__` methods would fail..."
 msgstr ""
 
-#: ../../extending/extending.rst:1013
+#: ../../extending/extending.rst:1015
 msgid "The second case of problems with a borrowed reference is a variant involving threads.  Normally, multiple threads in the Python interpreter can't get in each other's way, because there is a global lock protecting Python's entire object space.  However, it is possible to temporarily release this lock using the macro :c:macro:`Py_BEGIN_ALLOW_THREADS`, and to re-acquire it using :c:macro:`Py_END_ALLOW_THREADS`.  This is common around blocking I/O calls, to let other threads use the processor while waiting for the I/O to complete. Obviously, the following function has the same problem as the previous one::"
 msgstr ""
 
-#: ../../extending/extending.rst:1036
+#: ../../extending/extending.rst:1038
 msgid "NULL Pointers"
 msgstr ""
 
-#: ../../extending/extending.rst:1038
+#: ../../extending/extending.rst:1040
 msgid "In general, functions that take object references as arguments do not expect you to pass them *NULL* pointers, and will dump core (or cause later core dumps) if you do so.  Functions that return object references generally return *NULL* only to indicate that an exception occurred.  The reason for not testing for *NULL* arguments is that functions often pass the objects they receive on to other function --- if each function were to test for *NULL*, there would be a lot of redundant tests and the code would run more slowly."
 msgstr ""
 
-#: ../../extending/extending.rst:1046
+#: ../../extending/extending.rst:1048
 msgid "It is better to test for *NULL* only at the \"source:\" when a pointer that may be *NULL* is received, for example, from :c:func:`malloc` or from a function that may raise an exception."
 msgstr ""
 
-#: ../../extending/extending.rst:1050
+#: ../../extending/extending.rst:1052
 msgid "The macros :c:func:`Py_INCREF` and :c:func:`Py_DECREF` do not check for *NULL* pointers --- however, their variants :c:func:`Py_XINCREF` and :c:func:`Py_XDECREF` do."
 msgstr ""
 
-#: ../../extending/extending.rst:1054
+#: ../../extending/extending.rst:1056
 msgid "The macros for checking for a particular object type (``Pytype_Check()``) don't check for *NULL* pointers --- again, there is much code that calls several of these in a row to test an object against various different expected types, and this would generate redundant tests.  There are no variants with *NULL* checking."
 msgstr ""
 
-#: ../../extending/extending.rst:1060
+#: ../../extending/extending.rst:1062
 msgid "The C function calling mechanism guarantees that the argument list passed to C functions (``args`` in the examples) is never *NULL* --- in fact it guarantees that it is always a tuple. [#]_"
 msgstr ""
 
-#: ../../extending/extending.rst:1064
+#: ../../extending/extending.rst:1066
 msgid "It is a severe error to ever let a *NULL* pointer \"escape\" to the Python user."
 msgstr ""
 
-#: ../../extending/extending.rst:1075
+#: ../../extending/extending.rst:1077
 msgid "Writing Extensions in C++"
 msgstr ""
 
-#: ../../extending/extending.rst:1077
+#: ../../extending/extending.rst:1079
 msgid "It is possible to write extension modules in C++.  Some restrictions apply.  If the main program (the Python interpreter) is compiled and linked by the C compiler, global or static objects with constructors cannot be used.  This is not a problem if the main program is linked by the C++ compiler.  Functions that will be called by the Python interpreter (in particular, module initialization functions) have to be declared using ``extern \"C\"``. It is unnecessary to enclose the Python header files in ``extern \"C\" {...}`` --- they use this form already if the symbol ``__cplusplus`` is defined (all recent C++ compilers define this symbol)."
 msgstr ""
 
-#: ../../extending/extending.rst:1091
+#: ../../extending/extending.rst:1093
 msgid "Providing a C API for an Extension Module"
 msgstr ""
 
-#: ../../extending/extending.rst:1096
+#: ../../extending/extending.rst:1098
 msgid "Many extension modules just provide new functions and types to be used from Python, but sometimes the code in an extension module can be useful for other extension modules. For example, an extension module could implement a type \"collection\" which works like lists without order. Just like the standard Python list type has a C API which permits extension modules to create and manipulate lists, this new collection type should have a set of C functions for direct manipulation from other extension modules."
 msgstr ""
 
-#: ../../extending/extending.rst:1104
+#: ../../extending/extending.rst:1106
 msgid "At first sight this seems easy: just write the functions (without declaring them ``static``, of course), provide an appropriate header file, and document the C API. And in fact this would work if all extension modules were always linked statically with the Python interpreter. When modules are used as shared libraries, however, the symbols defined in one module may not be visible to another module. The details of visibility depend on the operating system; some systems use one global namespace for the Python interpreter and all extension modules (Windows, for example), whereas others require an explicit list of imported symbols at module link time (AIX is one example), or offer a choice of different strategies (most Unices). And even if symbols are globally visible, the module whose functions one wishes to call might not have been loaded yet!"
 msgstr ""
 
-#: ../../extending/extending.rst:1116
+#: ../../extending/extending.rst:1118
 msgid "Portability therefore requires not to make any assumptions about symbol visibility. This means that all symbols in extension modules should be declared ``static``, except for the module's initialization function, in order to avoid name clashes with other extension modules (as discussed in section :ref:`methodtable`). And it means that symbols that *should* be accessible from other extension modules must be exported in a different way."
 msgstr ""
 
-#: ../../extending/extending.rst:1123
+#: ../../extending/extending.rst:1125
 msgid "Python provides a special mechanism to pass C-level information (pointers) from one extension module to another one: Capsules. A Capsule is a Python data type which stores a pointer (:c:type:`void \\*`).  Capsules can only be created and accessed via their C API, but they can be passed around like any other Python object. In particular,  they can be assigned to a name in an extension module's namespace. Other extension modules can then import this module, retrieve the value of this name, and then retrieve the pointer from the Capsule."
 msgstr ""
 
-#: ../../extending/extending.rst:1131
+#: ../../extending/extending.rst:1133
 msgid "There are many ways in which Capsules can be used to export the C API of an extension module. Each function could get its own Capsule, or all C API pointers could be stored in an array whose address is published in a Capsule. And the various tasks of storing and retrieving the pointers can be distributed in different ways between the module providing the code and the client modules."
 msgstr ""
 
-#: ../../extending/extending.rst:1137
+#: ../../extending/extending.rst:1139
 msgid "Whichever method you choose, it's important to name your Capsules properly. The function :c:func:`PyCapsule_New` takes a name parameter (:c:type:`const char \\*`); you're permitted to pass in a *NULL* name, but we strongly encourage you to specify a name.  Properly named Capsules provide a degree of runtime type-safety; there is no feasible way to tell one unnamed Capsule from another."
 msgstr ""
 
-#: ../../extending/extending.rst:1144
+#: ../../extending/extending.rst:1146
 msgid "In particular, Capsules used to expose C APIs should be given a name following this convention::"
 msgstr ""
 
-#: ../../extending/extending.rst:1149
+#: ../../extending/extending.rst:1151
 msgid "The convenience function :c:func:`PyCapsule_Import` makes it easy to load a C API provided via a Capsule, but only if the Capsule's name matches this convention.  This behavior gives C API users a high degree of certainty that the Capsule they load contains the correct C API."
 msgstr ""
 
-#: ../../extending/extending.rst:1154
+#: ../../extending/extending.rst:1156
 msgid "The following example demonstrates an approach that puts most of the burden on the writer of the exporting module, which is appropriate for commonly used library modules. It stores all C API pointers (just one in the example!) in an array of :c:type:`void` pointers which becomes the value of a Capsule. The header file corresponding to the module provides a macro that takes care of importing the module and retrieving its C API pointers; client modules only have to call this macro before accessing the C API."
 msgstr ""
 
-#: ../../extending/extending.rst:1162
+#: ../../extending/extending.rst:1164
 msgid "The exporting module is a modification of the :mod:`spam` module from section :ref:`extending-simpleexample`. The function :func:`spam.system` does not call the C library function :c:func:`system` directly, but a function :c:func:`PySpam_System`, which would of course do something more complicated in reality (such as adding \"spam\" to every command). This function :c:func:`PySpam_System` is also exported to other extension modules."
 msgstr ""
 
-#: ../../extending/extending.rst:1169
+#: ../../extending/extending.rst:1171
 msgid "The function :c:func:`PySpam_System` is a plain C function, declared ``static`` like everything else::"
 msgstr ""
 
-#: ../../extending/extending.rst:1178
+#: ../../extending/extending.rst:1180
 msgid "The function :c:func:`spam_system` is modified in a trivial way::"
 msgstr ""
 
-#: ../../extending/extending.rst:1192
+#: ../../extending/extending.rst:1194
 msgid "In the beginning of the module, right after the line ::"
 msgstr ""
 
-#: ../../extending/extending.rst:1196
+#: ../../extending/extending.rst:1198
 msgid "two more lines must be added::"
 msgstr ""
 
-#: ../../extending/extending.rst:1201
+#: ../../extending/extending.rst:1203
 msgid "The ``#define`` is used to tell the header file that it is being included in the exporting module, not a client module. Finally, the module's initialization function must take care of initializing the C API pointer array::"
 msgstr ""
 
-#: ../../extending/extending.rst:1226
+#: ../../extending/extending.rst:1228
 msgid "Note that ``PySpam_API`` is declared ``static``; otherwise the pointer array would disappear when :func:`initspam` terminates!"
 msgstr ""
 
-#: ../../extending/extending.rst:1229
+#: ../../extending/extending.rst:1231
 msgid "The bulk of the work is in the header file :file:`spammodule.h`, which looks like this::"
 msgstr ""
 
-#: ../../extending/extending.rst:1280
+#: ../../extending/extending.rst:1282
 msgid "All that a client module must do in order to have access to the function :c:func:`PySpam_System` is to call the function (or rather macro) :c:func:`import_spam` in its initialization function::"
 msgstr ""
 
-#: ../../extending/extending.rst:1297
+#: ../../extending/extending.rst:1299
 msgid "The main disadvantage of this approach is that the file :file:`spammodule.h` is rather complicated. However, the basic structure is the same for each function that is exported, so it has to be learned only once."
 msgstr ""
 
-#: ../../extending/extending.rst:1301
+#: ../../extending/extending.rst:1303
 msgid "Finally it should be mentioned that Capsules offer additional functionality, which is especially useful for memory allocation and deallocation of the pointer stored in a Capsule. The details are described in the Python/C API Reference Manual in the section :ref:`capsules` and in the implementation of Capsules (files :file:`Include/pycapsule.h` and :file:`Objects/pycapsule.c` in the Python source code distribution)."
 msgstr ""
 
-#: ../../extending/extending.rst:1309
+#: ../../extending/extending.rst:1311
 msgid "Footnotes"
 msgstr ""
 
-#: ../../extending/extending.rst:1310
+#: ../../extending/extending.rst:1312
 msgid "An interface for this function already exists in the standard module :mod:`os` --- it was chosen as a simple and straightforward example."
 msgstr ""
 
-#: ../../extending/extending.rst:1313
+#: ../../extending/extending.rst:1315
 msgid "The metaphor of \"borrowing\" a reference is not completely correct: the owner still has a copy of the reference."
 msgstr ""
 
-#: ../../extending/extending.rst:1316
+#: ../../extending/extending.rst:1318
 msgid "Checking that the reference count is at least 1 **does not work** --- the reference count itself could be in freed memory and may thus be reused for another object!"
 msgstr ""
 
-#: ../../extending/extending.rst:1320
+#: ../../extending/extending.rst:1322
 msgid "These guarantees don't hold when you use the \"old\" style calling convention --- this is still found in much existing code."
 msgstr ""
 

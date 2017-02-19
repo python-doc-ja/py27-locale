@@ -99,7 +99,7 @@ msgid "int"
 msgstr ""
 
 #: ../../c-api/string.rst:90
-msgid "A single character, represented as an C int."
+msgid "A single character, represented as a C int."
 msgstr ""
 
 #: ../../c-api/string.rst:93

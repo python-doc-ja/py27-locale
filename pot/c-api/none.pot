@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../c-api/none.rst:6
-msgid "The None Object"
+msgid "The ``None`` Object"
 msgstr ""
 
 #: ../../c-api/none.rst:10

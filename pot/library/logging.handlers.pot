@@ -76,7 +76,7 @@ msgid "The :class:`FileHandler` class, located in the core :mod:`logging` packag
 msgstr ""
 
 #: ../../library/logging.handlers.rst:75
-msgid "Returns a new instance of the :class:`FileHandler` class. The specified file is opened and used as the stream for logging. If *mode* is not specified, :const:`'a'` is used.  If *encoding* is not *None*, it is used to open the file with that encoding.  If *delay* is true, then file opening is deferred until the first call to :meth:`emit`. By default, the file grows indefinitely."
+msgid "Returns a new instance of the :class:`FileHandler` class. The specified file is opened and used as the stream for logging. If *mode* is not specified, :const:`'a'` is used.  If *encoding* is not ``None``, it is used to open the file with that encoding.  If *delay* is true, then file opening is deferred until the first call to :meth:`emit`. By default, the file grows indefinitely."
 msgstr ""
 
 #: ../../library/logging.handlers.rst:81
@@ -134,7 +134,7 @@ msgid "This handler is not appropriate for use under Windows, because under Wind
 msgstr ""
 
 #: ../../library/logging.handlers.rst:155
-msgid "Returns a new instance of the :class:`WatchedFileHandler` class. The specified file is opened and used as the stream for logging. If *mode* is not specified, :const:`'a'` is used.  If *encoding* is not *None*, it is used to open the file with that encoding.  If *delay* is true, then file opening is deferred until the first call to :meth:`emit`.  By default, the file grows indefinitely."
+msgid "Returns a new instance of the :class:`WatchedFileHandler` class. The specified file is opened and used as the stream for logging. If *mode* is not specified, :const:`'a'` is used.  If *encoding* is not ``None``, it is used to open the file with that encoding.  If *delay* is true, then file opening is deferred until the first call to :meth:`emit`.  By default, the file grows indefinitely."
 msgstr ""
 
 #: ../../library/logging.handlers.rst:164
@@ -150,7 +150,7 @@ msgid "The :class:`RotatingFileHandler` class, located in the :mod:`logging.hand
 msgstr ""
 
 #: ../../library/logging.handlers.rst:179
-msgid "Returns a new instance of the :class:`RotatingFileHandler` class. The specified file is opened and used as the stream for logging. If *mode* is not specified, ``'a'`` is used.  If *encoding* is not *None*, it is used to open the file with that encoding.  If *delay* is true, then file opening is deferred until the first call to :meth:`emit`.  By default, the file grows indefinitely."
+msgid "Returns a new instance of the :class:`RotatingFileHandler` class. The specified file is opened and used as the stream for logging. If *mode* is not specified, ``'a'`` is used.  If *encoding* is not ``None``, it is used to open the file with that encoding.  If *delay* is true, then file opening is deferred until the first call to :meth:`emit`.  By default, the file grows indefinitely."
 msgstr ""
 
 #: ../../library/logging.handlers.rst:185
@@ -311,7 +311,7 @@ msgid "Send a pickled string *packet* to the socket. This function allows for pa
 msgstr ""
 
 #: ../../library/logging.handlers.rst:351
-msgid "Tries to create a socket; on failure, uses an exponential back-off algorithm.  On intial failure, the handler will drop the message it was trying to send.  When subsequent messages are handled by the same instance, it will not try connecting until some time has passed.  The default parameters are such that the initial delay is one second, and if after that delay the connection still can't be made, the handler will double the delay each time up to a maximum of 30 seconds."
+msgid "Tries to create a socket; on failure, uses an exponential back-off algorithm.  On initial failure, the handler will drop the message it was trying to send.  When subsequent messages are handled by the same instance, it will not try connecting until some time has passed.  The default parameters are such that the initial delay is one second, and if after that delay the connection still can't be made, the handler will double the delay each time up to a maximum of 30 seconds."
 msgstr ""
 
 #: ../../library/logging.handlers.rst:359
@@ -769,7 +769,7 @@ msgid "Provides a dictionary, based on ``record``, which is to be URL-encoded an
 msgstr ""
 
 #: ../../library/logging.handlers.rst:746
-msgid "Sends the record to the Web server as an URL-encoded dictionary. The :meth:`mapLogRecord` method is used to convert the record to the dictionary to be sent."
+msgid "Sends the record to the Web server as a URL-encoded dictionary. The :meth:`mapLogRecord` method is used to convert the record to the dictionary to be sent."
 msgstr ""
 
 #: ../../library/logging.handlers.rst:750

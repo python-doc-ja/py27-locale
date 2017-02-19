@@ -132,78 +132,78 @@ msgid "This method will parse and dispatch the request to the appropriate :meth:
 msgstr ""
 
 #: ../../library/basehttpserver.rst:197
-msgid "Sends and logs a complete error reply to the client. The numeric *code* specifies the HTTP error code, with *message* as optional, more specific text. A complete set of headers is sent, followed by text composed using the :attr:`error_message_format` class variable."
+msgid "Sends and logs a complete error reply to the client. The numeric *code* specifies the HTTP error code, with *message* as optional, more specific text. A complete set of headers is sent, followed by text composed using the :attr:`error_message_format` class variable. The body will be empty if the method is HEAD or the response code is one of the following: ``1xx``, ``204 No Content``, ``205 Reset Content``, ``304 Not Modified``."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:205
+#: ../../library/basehttpserver.rst:208
 msgid "Sends a response header and logs the accepted request. The HTTP response line is sent, followed by *Server* and *Date* headers. The values for these two headers are picked up from the :meth:`version_string` and :meth:`date_time_string` methods, respectively."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:213
+#: ../../library/basehttpserver.rst:216
 msgid "Writes a specific HTTP header to the output stream. *keyword* should specify the header keyword, with *value* specifying its value."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:219
+#: ../../library/basehttpserver.rst:222
 msgid "Sends a blank line, indicating the end of the HTTP headers in the response."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:225
+#: ../../library/basehttpserver.rst:228
 msgid "Logs an accepted (successful) request. *code* should specify the numeric HTTP code associated with the response. If a size of the response is available, then it should be passed as the *size* parameter."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:232
+#: ../../library/basehttpserver.rst:235
 msgid "Logs an error when a request cannot be fulfilled. By default, it passes the message to :meth:`log_message`, so it takes the same arguments (*format* and additional values)."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:239
+#: ../../library/basehttpserver.rst:242
 msgid "Logs an arbitrary message to ``sys.stderr``. This is typically overridden to create custom error logging mechanisms. The *format* argument is a standard printf-style format string, where the additional arguments to :meth:`log_message` are applied as inputs to the formatting. The client ip address and current date and time are prefixed to every message logged."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:248
+#: ../../library/basehttpserver.rst:251
 msgid "Returns the server software's version string. This is a combination of the :attr:`server_version` and :attr:`sys_version` class variables."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:254
+#: ../../library/basehttpserver.rst:257
 msgid "Returns the date and time given by *timestamp* (which must be in the format returned by :func:`time.time`), formatted for a message header. If *timestamp* is omitted, it uses the current date and time."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:258
+#: ../../library/basehttpserver.rst:261
 msgid "The result looks like ``'Sun, 06 Nov 1994 08:49:37 GMT'``."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:260
+#: ../../library/basehttpserver.rst:263
 msgid "The *timestamp* parameter."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:266
+#: ../../library/basehttpserver.rst:269
 msgid "Returns the current date and time, formatted for logging."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:271
+#: ../../library/basehttpserver.rst:274
 msgid "Returns the client address, formatted for logging. A name lookup is performed on the client's IP address."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:276
+#: ../../library/basehttpserver.rst:279
 msgid "More examples"
 msgstr ""
 
-#: ../../library/basehttpserver.rst:278
+#: ../../library/basehttpserver.rst:281
 msgid "To create a server that doesn't run forever, but until some condition is fulfilled::"
 msgstr ""
 
-#: ../../library/basehttpserver.rst:297
+#: ../../library/basehttpserver.rst:300
 msgid "Module :mod:`CGIHTTPServer`"
 msgstr ""
 
-#: ../../library/basehttpserver.rst:297
+#: ../../library/basehttpserver.rst:300
 msgid "Extended request handler that supports CGI scripts."
 msgstr ""
 
-#: ../../library/basehttpserver.rst:300
+#: ../../library/basehttpserver.rst:303
 msgid "Module :mod:`SimpleHTTPServer`"
 msgstr ""
 
-#: ../../library/basehttpserver.rst:300
+#: ../../library/basehttpserver.rst:303
 msgid "Basic request handler that limits response to files actually under the document root."
 msgstr ""
 

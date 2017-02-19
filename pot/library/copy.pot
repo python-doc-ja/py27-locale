@@ -60,7 +60,7 @@ msgid "Recursive objects (compound objects that, directly or indirectly, contain
 msgstr ""
 
 #: ../../library/copy.rst:46
-msgid "Because deep copy copies *everything* it may copy too much, e.g., administrative data structures that should be shared even between copies."
+msgid "Because deep copy copies *everything* it may copy too much, e.g., even administrative data structures that should be shared even between copies."
 msgstr ""
 
 #: ../../library/copy.rst:49

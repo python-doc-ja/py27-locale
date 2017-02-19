@@ -36,7 +36,7 @@ msgid "In the event that Python doesn't come preinstalled and isn't in the repos
 msgstr ""
 
 #: ../../using/unix.rst:29
-msgid "http://www.debian.org/doc/manuals/maint-guide/first.en.html"
+msgid "https://www.debian.org/doc/manuals/maint-guide/first.en.html"
 msgstr ""
 
 #: ../../using/unix.rst:30
@@ -44,7 +44,7 @@ msgid "for Debian users"
 msgstr ""
 
 #: ../../using/unix.rst:31
-msgid "http://en.opensuse.org/Portal:Packaging"
+msgid "https://en.opensuse.org/Portal:Packaging"
 msgstr ""
 
 #: ../../using/unix.rst:32
@@ -52,7 +52,7 @@ msgid "for OpenSuse users"
 msgstr ""
 
 #: ../../using/unix.rst:33
-msgid "http://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/RPM_Guide/ch-creating-rpms.html"
+msgid "https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/RPM_Guide/ch-creating-rpms.html"
 msgstr ""
 
 #: ../../using/unix.rst:34
@@ -88,7 +88,7 @@ msgid "On OpenSolaris"
 msgstr ""
 
 #: ../../using/unix.rst:58
-msgid "You can get Python from `OpenCSW <http://www.opencsw.org/>`_.  Various versions of Python are available and can be installed with e.g. ``pkgutil -i python27``."
+msgid "You can get Python from `OpenCSW <https://www.opencsw.org/>`_.  Various versions of Python are available and can be installed with e.g. ``pkgutil -i python27``."
 msgstr ""
 
 #: ../../using/unix.rst:65
@@ -96,7 +96,7 @@ msgid "Building Python"
 msgstr ""
 
 #: ../../using/unix.rst:67
-msgid "If you want to compile CPython yourself, first thing you should do is get the `source <https://www.python.org/download/source/>`_. You can download either the latest release's source or just grab a fresh `clone <https://docs.python.org/devguide/setup.html#getting-the-source-code>`_.  (If you want to contribute patches, you will need a clone.)"
+msgid "If you want to compile CPython yourself, first thing you should do is get the `source <https://www.python.org/downloads/source/>`_. You can download either the latest release's source or just grab a fresh `clone <https://docs.python.org/devguide/setup.html#getting-the-source-code>`_.  (If you want to contribute patches, you will need a clone.)"
 msgstr ""
 
 #: ../../using/unix.rst:73
@@ -184,26 +184,14 @@ msgid "To use shell commands in your Python scripts, look at the :mod:`subproces
 msgstr ""
 
 #: ../../using/unix.rst:140
-msgid "Editors"
+msgid "Editors and IDEs"
 msgstr ""
 
 #: ../../using/unix.rst:142
-msgid "Vim and Emacs are excellent editors which support Python very well.  For more information on how to code in Python in these editors, look at:"
+msgid "There are a number of IDEs that support Python programming language. Many editors and IDEs provide syntax highlighting, debugging tools, and PEP-8 checks."
 msgstr ""
 
 #: ../../using/unix.rst:145
-msgid "http://www.vim.org/scripts/script.php?script_id=790"
-msgstr ""
-
-#: ../../using/unix.rst:146
-msgid "http://sourceforge.net/projects/python-mode"
-msgstr ""
-
-#: ../../using/unix.rst:148
-msgid "Geany is an excellent IDE with support for a lot of languages. For more information, read: http://www.geany.org/"
-msgstr ""
-
-#: ../../using/unix.rst:151
-msgid "Komodo edit is another extremely good IDE.  It also has support for a lot of languages. For more information, read http://komodoide.com/."
+msgid "Please go to `Python Editors <https://wiki.python.org/moin/PythonEditors>`_ and `Integrated Development Environments <https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`_ for a comprehensive list."
 msgstr ""
 

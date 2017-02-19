@@ -28,7 +28,7 @@ msgid "The basic idea of :mod:`ttk` is to separate, to the extent possible, the 
 msgstr ""
 
 #: ../../library/ttk.rst:24
-msgid "`Tk Widget Styling Support <http://www.tcl.tk/cgi-bin/tct/tip/48>`_"
+msgid "`Tk Widget Styling Support <https://www.tcl.tk/cgi-bin/tct/tip/48>`_"
 msgstr ""
 
 #: ../../library/ttk.rst:25
@@ -431,7 +431,7 @@ msgid "The :class:`ttk.Combobox` widget combines a text field with a pop-down li
 msgstr ""
 
 #: ../../library/ttk.rst:292
-msgid "Besides the methods inherited from :class:`Widget` (:meth:`Widget.cget`, :meth:`Widget.configure`, :meth:`Widget.identify`, :meth:`Widget.instate` and :meth:`Widget.state`) and those inherited from :class:`Entry` (:meth:`Entry.bbox`, :meth:`Entry.delete`, :meth:`Entry.icursor`, :meth:`Entry.index`, :meth:`Entry.inset`, :meth:`Entry.selection`, :meth:`Entry.xview`), this class has some other methods, described at :class:`ttk.Combobox`."
+msgid "Besides the methods inherited from :class:`Widget` (:meth:`Widget.cget`, :meth:`Widget.configure`, :meth:`Widget.identify`, :meth:`Widget.instate` and :meth:`Widget.state`) and those inherited from :class:`Entry` (:meth:`Entry.bbox`, :meth:`Entry.delete`, :meth:`Entry.icursor`, :meth:`Entry.index`, :meth:`Entry.insert`, :meth:`Entry.selection`, :meth:`Entry.xview`), this class has some other methods, described at :class:`ttk.Combobox`."
 msgstr ""
 
 #: ../../library/ttk.rst:302
@@ -873,7 +873,7 @@ msgid "The order in which data values are displayed may be controlled by setting
 msgstr ""
 
 #: ../../library/ttk.rst:689
-msgid "Each item is identified by an unique name. The widget will generate item IDs if they are not supplied by the caller. There is a distinguished root item, named ``{}``. The root item itself is not displayed; its children appear at the top level of the hierarchy."
+msgid "Each item is identified by a unique name. The widget will generate item IDs if they are not supplied by the caller. There is a distinguished root item, named ``{}``. The root item itself is not displayed; its children appear at the top level of the hierarchy."
 msgstr ""
 
 #: ../../library/ttk.rst:694
@@ -1587,7 +1587,7 @@ msgid "Layouts"
 msgstr ""
 
 #: ../../library/ttk.rst:1383
-msgid "A layout can be just None, if it takes no options, or a dict of options specifying how to arrange the element. The layout mechanism uses a simplified version of the pack geometry manager: given an initial cavity, each element is allocated a parcel. Valid options/values are:"
+msgid "A layout can be just ``None``, if it takes no options, or a dict of options specifying how to arrange the element. The layout mechanism uses a simplified version of the pack geometry manager: given an initial cavity, each element is allocated a parcel. Valid options/values are:"
 msgstr ""
 
 #: ../../library/ttk.rst:1392

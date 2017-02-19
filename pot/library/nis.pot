@@ -43,7 +43,7 @@ msgstr ""
 #: ../../library/nis.rst:29
 #: ../../library/nis.rst:42
 #: ../../library/nis.rst:51
-msgid "The *domain* argument allows to override the NIS domain used for the lookup. If unspecified, lookup is in the default NIS domain."
+msgid "The *domain* argument allows overriding the NIS domain used for the lookup. If unspecified, lookup is in the default NIS domain."
 msgstr ""
 
 #: ../../library/nis.rst:36

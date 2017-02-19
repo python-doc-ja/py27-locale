@@ -44,7 +44,7 @@ msgid "A simple ascending sort is very easy: just call the :func:`sorted` functi
 msgstr ""
 
 #: ../../howto/sorting.rst:26
-msgid "You can also use the :meth:`list.sort` method of a list. It modifies the list in-place (and returns *None* to avoid confusion). Usually it's less convenient than :func:`sorted` - but if you don't need the original list, it's slightly more efficient."
+msgid "You can also use the :meth:`list.sort` method of a list. It modifies the list in-place (and returns ``None`` to avoid confusion). Usually it's less convenient than :func:`sorted` - but if you don't need the original list, it's slightly more efficient."
 msgstr ""
 
 #: ../../howto/sorting.rst:36
@@ -80,7 +80,7 @@ msgid "Operator Module Functions"
 msgstr ""
 
 #: ../../howto/sorting.rst:90
-msgid "The key-function patterns shown above are very common, so Python provides convenience functions to make accessor functions easier and faster. The operator module has :func:`operator.itemgetter`, :func:`operator.attrgetter`, and starting in Python 2.5 a :func:`operator.methodcaller` function."
+msgid "The key-function patterns shown above are very common, so Python provides convenience functions to make accessor functions easier and faster. The operator module has :func:`operator.itemgetter`, :func:`operator.attrgetter`, and starting in Python 2.5 an :func:`operator.methodcaller` function."
 msgstr ""
 
 #: ../../howto/sorting.rst:95
@@ -95,135 +95,135 @@ msgstr ""
 msgid "The :func:`operator.methodcaller` function makes method calls with fixed parameters for each object being sorted.  For example, the :meth:`str.count` method could be used to compute message priority by counting the number of exclamation marks in a message:"
 msgstr ""
 
-#: ../../howto/sorting.rst:124
+#: ../../howto/sorting.rst:125
 msgid "Ascending and Descending"
 msgstr ""
 
-#: ../../howto/sorting.rst:126
+#: ../../howto/sorting.rst:127
 msgid "Both :meth:`list.sort` and :func:`sorted` accept a *reverse* parameter with a boolean value. This is used to flag descending sorts. For example, to get the student data in reverse *age* order:"
 msgstr ""
 
-#: ../../howto/sorting.rst:137
+#: ../../howto/sorting.rst:138
 msgid "Sort Stability and Complex Sorts"
 msgstr ""
 
-#: ../../howto/sorting.rst:139
-msgid "Starting with Python 2.2, sorts are guaranteed to be `stable <http://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`_\\. That means that when multiple records have the same key, their original order is preserved."
+#: ../../howto/sorting.rst:140
+msgid "Starting with Python 2.2, sorts are guaranteed to be `stable <https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`_\\. That means that when multiple records have the same key, their original order is preserved."
 msgstr ""
 
-#: ../../howto/sorting.rst:147
+#: ../../howto/sorting.rst:148
 msgid "Notice how the two records for *blue* retain their original order so that ``('blue', 1)`` is guaranteed to precede ``('blue', 2)``."
 msgstr ""
 
-#: ../../howto/sorting.rst:150
+#: ../../howto/sorting.rst:151
 msgid "This wonderful property lets you build complex sorts in a series of sorting steps. For example, to sort the student data by descending *grade* and then ascending *age*, do the *age* sort first and then sort again using *grade*:"
 msgstr ""
 
-#: ../../howto/sorting.rst:158
-msgid "The `Timsort <http://en.wikipedia.org/wiki/Timsort>`_ algorithm used in Python does multiple sorts efficiently because it can take advantage of any ordering already present in a dataset."
+#: ../../howto/sorting.rst:159
+msgid "The `Timsort <https://en.wikipedia.org/wiki/Timsort>`_ algorithm used in Python does multiple sorts efficiently because it can take advantage of any ordering already present in a dataset."
 msgstr ""
 
-#: ../../howto/sorting.rst:163
+#: ../../howto/sorting.rst:164
 msgid "The Old Way Using Decorate-Sort-Undecorate"
 msgstr ""
 
-#: ../../howto/sorting.rst:165
+#: ../../howto/sorting.rst:166
 msgid "This idiom is called Decorate-Sort-Undecorate after its three steps:"
 msgstr ""
 
-#: ../../howto/sorting.rst:167
+#: ../../howto/sorting.rst:168
 msgid "First, the initial list is decorated with new values that control the sort order."
 msgstr ""
 
-#: ../../howto/sorting.rst:169
+#: ../../howto/sorting.rst:170
 msgid "Second, the decorated list is sorted."
 msgstr ""
 
-#: ../../howto/sorting.rst:171
+#: ../../howto/sorting.rst:172
 msgid "Finally, the decorations are removed, creating a list that contains only the initial values in the new order."
 msgstr ""
 
-#: ../../howto/sorting.rst:174
+#: ../../howto/sorting.rst:175
 msgid "For example, to sort the student data by *grade* using the DSU approach:"
 msgstr ""
 
-#: ../../howto/sorting.rst:181
+#: ../../howto/sorting.rst:182
 msgid "This idiom works because tuples are compared lexicographically; the first items are compared; if they are the same then the second items are compared, and so on."
 msgstr ""
 
-#: ../../howto/sorting.rst:185
+#: ../../howto/sorting.rst:186
 msgid "It is not strictly necessary in all cases to include the index *i* in the decorated list, but including it gives two benefits:"
 msgstr ""
 
-#: ../../howto/sorting.rst:188
+#: ../../howto/sorting.rst:189
 msgid "The sort is stable -- if two items have the same key, their order will be preserved in the sorted list."
 msgstr ""
 
-#: ../../howto/sorting.rst:191
+#: ../../howto/sorting.rst:192
 msgid "The original items do not have to be comparable because the ordering of the decorated tuples will be determined by at most the first two items. So for example the original list could contain complex numbers which cannot be sorted directly."
 msgstr ""
 
-#: ../../howto/sorting.rst:196
-msgid "Another name for this idiom is `Schwartzian transform <http://en.wikipedia.org/wiki/Schwartzian_transform>`_\\, after Randal L. Schwartz, who popularized it among Perl programmers."
+#: ../../howto/sorting.rst:197
+msgid "Another name for this idiom is `Schwartzian transform <https://en.wikipedia.org/wiki/Schwartzian_transform>`_\\, after Randal L. Schwartz, who popularized it among Perl programmers."
 msgstr ""
 
-#: ../../howto/sorting.rst:200
+#: ../../howto/sorting.rst:201
 msgid "For large lists and lists where the comparison information is expensive to calculate, and Python versions before 2.4, DSU is likely to be the fastest way to sort the list. For 2.4 and later, key functions provide the same functionality."
 msgstr ""
 
-#: ../../howto/sorting.rst:206
+#: ../../howto/sorting.rst:207
 msgid "The Old Way Using the *cmp* Parameter"
 msgstr ""
 
-#: ../../howto/sorting.rst:208
+#: ../../howto/sorting.rst:209
 msgid "Many constructs given in this HOWTO assume Python 2.4 or later. Before that, there was no :func:`sorted` builtin and :meth:`list.sort` took no keyword arguments. Instead, all of the Py2.x versions supported a *cmp* parameter to handle user specified comparison functions."
 msgstr ""
 
-#: ../../howto/sorting.rst:213
+#: ../../howto/sorting.rst:214
 msgid "In Python 3, the *cmp* parameter was removed entirely (as part of a larger effort to simplify and unify the language, eliminating the conflict between rich comparisons and the :meth:`__cmp__` magic method)."
 msgstr ""
 
-#: ../../howto/sorting.rst:217
+#: ../../howto/sorting.rst:218
 msgid "In Python 2, :meth:`~list.sort` allowed an optional function which can be called for doing the comparisons. That function should take two arguments to be compared and then return a negative value for less-than, return zero if they are equal, or return a positive value for greater-than. For example, we can do:"
 msgstr ""
 
-#: ../../howto/sorting.rst:227
+#: ../../howto/sorting.rst:228
 msgid "Or you can reverse the order of comparison with:"
 msgstr ""
 
-#: ../../howto/sorting.rst:234
+#: ../../howto/sorting.rst:235
 msgid "When porting code from Python 2.x to 3.x, the situation can arise when you have the user supplying a comparison function and you need to convert that to a key function. The following wrapper makes that easy to do::"
 msgstr ""
 
-#: ../../howto/sorting.rst:257
+#: ../../howto/sorting.rst:258
 msgid "To convert to a key function, just wrap the old comparison function:"
 msgstr ""
 
-#: ../../howto/sorting.rst:262
+#: ../../howto/sorting.rst:269
 msgid "In Python 2.7, the :func:`functools.cmp_to_key` function was added to the functools module."
 msgstr ""
 
-#: ../../howto/sorting.rst:266
+#: ../../howto/sorting.rst:273
 msgid "Odd and Ends"
 msgstr ""
 
-#: ../../howto/sorting.rst:268
+#: ../../howto/sorting.rst:275
 msgid "For locale aware sorting, use :func:`locale.strxfrm` for a key function or :func:`locale.strcoll` for a comparison function."
 msgstr ""
 
-#: ../../howto/sorting.rst:271
+#: ../../howto/sorting.rst:278
 msgid "The *reverse* parameter still maintains sort stability (so that records with equal keys retain their original order). Interestingly, that effect can be simulated without the parameter by using the builtin :func:`reversed` function twice:"
 msgstr ""
 
-#: ../../howto/sorting.rst:279
+#: ../../howto/sorting.rst:290
 msgid "To create a standard sort order for a class, just add the appropriate rich comparison methods:"
 msgstr ""
 
-#: ../../howto/sorting.rst:291
+#: ../../howto/sorting.rst:302
 msgid "For general purpose comparisons, the recommended approach is to define all six rich comparison operators.  The :func:`functools.total_ordering` class decorator makes this easy to implement."
 msgstr ""
 
-#: ../../howto/sorting.rst:295
+#: ../../howto/sorting.rst:306
 msgid "Key functions need not depend directly on the objects being sorted. A key function can also access external resources. For instance, if the student grades are stored in a dictionary, they can be used to sort a separate list of student names:"
 msgstr ""
 

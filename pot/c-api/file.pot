@@ -92,11 +92,11 @@ msgid "Available on systems with :c:func:`setvbuf` only.  This should only be ca
 msgstr ""
 
 #: ../../c-api/file.rst:139
-msgid "Set the file's encoding for Unicode output to *enc*. Return 1 on success and 0 on failure."
+msgid "Set the file's encoding for Unicode output to *enc*. Return ``1`` on success and ``0`` on failure."
 msgstr ""
 
 #: ../../c-api/file.rst:147
-msgid "Set the file's encoding for Unicode output to *enc*, and its error mode to *err*. Return 1 on success and 0 on failure."
+msgid "Set the file's encoding for Unicode output to *enc*, and its error mode to *err*. Return ``1`` on success and ``0`` on failure."
 msgstr ""
 
 #: ../../c-api/file.rst:157

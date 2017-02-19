@@ -60,7 +60,7 @@ msgid "https://pypi.python.org/pypi: The Python Package Index, previously also n
 msgstr ""
 
 #: ../../tutorial/whatnow.rst:46
-msgid "http://code.activestate.com/recipes/langs/python/: The Python Cookbook is a sizable collection of code examples, larger modules, and useful scripts. Particularly notable contributions are collected in a book also titled Python Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3.)"
+msgid "https://code.activestate.com/recipes/langs/python/: The Python Cookbook is a sizable collection of code examples, larger modules, and useful scripts. Particularly notable contributions are collected in a book also titled Python Cookbook (O'Reilly & Associates, ISBN 0-596-00797-3.)"
 msgstr ""
 
 #: ../../tutorial/whatnow.rst:51

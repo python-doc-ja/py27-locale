@@ -24,7 +24,7 @@ msgid "The :mod:`fl` module has been removed in Python 3."
 msgstr ""
 
 #: ../../library/fl.rst:19
-msgid "This module provides an interface to the FORMS Library by Mark Overmars.  The source for the library can be retrieved by anonymous ftp from host ``ftp.cs.ruu.nl``, directory :file:`SGI/FORMS`.  It was last tested with version 2.0b."
+msgid "This module provides an interface to the FORMS Library by Mark Overmars.  The source for the library can be retrieved by anonymous FTP from host ``ftp.cs.ruu.nl``, directory :file:`SGI/FORMS`.  It was last tested with version 2.0b."
 msgstr ""
 
 #: ../../library/fl.rst:24
@@ -216,7 +216,7 @@ msgid "Add a counter object to the form.  ---  Methods: :meth:`set_counter_value
 msgstr ""
 
 #: ../../library/fl.rst:313
-msgid "Add a input object to the form.  ---  Methods: :meth:`set_input`, :meth:`get_input`, :meth:`set_input_color`, :meth:`set_input_return`."
+msgid "Add an input object to the form.  ---  Methods: :meth:`set_input`, :meth:`get_input`, :meth:`set_input_color`, :meth:`set_input_return`."
 msgstr ""
 
 #: ../../library/fl.rst:319

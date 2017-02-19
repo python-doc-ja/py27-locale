@@ -473,7 +473,7 @@ msgid "Variable data to merge into the *msg* argument to obtain the event descri
 msgstr ""
 
 #: ../../library/logging.rst:590
-msgid "An exception tuple with the current exception information, or *None* if no exception information is available."
+msgid "An exception tuple with the current exception information, or ``None`` if no exception information is available."
 msgstr ""
 
 #: ../../library/logging.rst:592
@@ -553,7 +553,7 @@ msgid "exc_info"
 msgstr ""
 
 #: ../../library/logging.rst:638
-msgid "Exception tuple (à la ``sys.exc_info``) or, if no exception has occurred, *None*."
+msgid "Exception tuple (à la ``sys.exc_info``) or, if no exception has occurred, ``None``."
 msgstr ""
 
 #: ../../library/logging.rst:641
@@ -997,7 +997,7 @@ msgid "The proposal which described this feature for inclusion in the Python sta
 msgstr ""
 
 #: ../../library/logging.rst:1027
-msgid "`Original Python logging package <http://www.red-dove.com/python_logging.html>`_"
+msgid "`Original Python logging package <https://www.red-dove.com/python_logging.html>`_"
 msgstr ""
 
 #: ../../library/logging.rst:1025

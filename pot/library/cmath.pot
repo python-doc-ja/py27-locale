@@ -156,11 +156,11 @@ msgid "Classification functions"
 msgstr ""
 
 #: ../../library/cmath.rst:210
-msgid "Return *True* if the real or the imaginary part of x is positive or negative infinity."
+msgid "Return ``True`` if the real or the imaginary part of x is positive or negative infinity."
 msgstr ""
 
 #: ../../library/cmath.rst:218
-msgid "Return *True* if the real or imaginary part of x is not a number (NaN)."
+msgid "Return ``True`` if the real or imaginary part of x is not a number (NaN)."
 msgstr ""
 
 #: ../../library/cmath.rst:224
@@ -184,6 +184,6 @@ msgid "A note on branch cuts: They are curves along which the given function fai
 msgstr ""
 
 #: ../../library/cmath.rst:256
-msgid "Kahan, W:  Branch cuts for complex elementary functions; or, Much ado about nothing's sign bit.  In Iserles, A., and Powell, M. (eds.), The state of the art in numerical analysis. Clarendon Press (1987) pp165-211."
+msgid "Kahan, W:  Branch cuts for complex elementary functions; or, Much ado about nothing's sign bit.  In Iserles, A., and Powell, M. (eds.), The state of the art in numerical analysis. Clarendon Press (1987) pp165--211."
 msgstr ""
 

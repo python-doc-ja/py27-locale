@@ -128,7 +128,7 @@ msgid "Note that it does not allow read/write files."
 msgstr ""
 
 #: ../../library/sunau.rst:57
-msgid "A *mode* of ``'r'`` returns a :class:`AU_read` object, while a *mode* of ``'w'`` or ``'wb'`` returns a :class:`AU_write` object."
+msgid "A *mode* of ``'r'`` returns an :class:`AU_read` object, while a *mode* of ``'w'`` or ``'wb'`` returns an :class:`AU_write` object."
 msgstr ""
 
 #: ../../library/sunau.rst:63

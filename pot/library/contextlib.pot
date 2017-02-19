@@ -92,7 +92,7 @@ msgid "without needing to explicitly close ``page``.  Even if an error occurs, `
 msgstr ""
 
 #: ../../library/contextlib.rst:139
-msgid ":pep:`0343` - The \"with\" statement"
+msgid ":pep:`343` - The \"with\" statement"
 msgstr ""
 
 #: ../../library/contextlib.rst:139

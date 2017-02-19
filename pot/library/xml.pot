@@ -118,7 +118,7 @@ msgstr ""
 #: ../../library/xml.rst:65
 #: ../../library/xml.rst:65
 #: ../../library/xml.rst:66
-msgid "**Yes**"
+msgid "**Vulnerable**"
 msgstr ""
 
 #: ../../library/xml.rst:63
@@ -131,20 +131,20 @@ msgid "external entity expansion"
 msgstr ""
 
 #: ../../library/xml.rst:64
-msgid "No    (1)"
+msgid "Safe    (1)"
 msgstr ""
 
 #: ../../library/xml.rst:64
-msgid "No    (2)"
+msgid "Safe    (2)"
 msgstr ""
 
 #: ../../library/xml.rst:64
-msgid "No    (3)"
+msgid "Safe    (3)"
 msgstr ""
 
 #: ../../library/xml.rst:65
 #: ../../library/xml.rst:100
-msgid "DTD retrieval"
+msgid "`DTD`_ retrieval"
 msgstr ""
 
 #: ../../library/xml.rst:65
@@ -154,7 +154,7 @@ msgstr ""
 #: ../../library/xml.rst:66
 #: ../../library/xml.rst:66
 #: ../../library/xml.rst:66
-msgid "No"
+msgid "Safe"
 msgstr ""
 
 #: ../../library/xml.rst:66

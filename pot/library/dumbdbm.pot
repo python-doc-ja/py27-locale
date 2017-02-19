@@ -108,7 +108,7 @@ msgid "Dumbdbm Objects"
 msgstr ""
 
 #: ../../library/dumbdbm.rst:84
-msgid "In addition to the methods provided by the :class:`UserDict.DictMixin` class, :class:`dumbdbm` objects provide the following methods."
+msgid "In addition to the methods provided by the :class:`UserDict.DictMixin` class, :class:`~dumbdbm.dumbdbm` objects provide the following methods."
 msgstr ""
 
 #: ../../library/dumbdbm.rst:90

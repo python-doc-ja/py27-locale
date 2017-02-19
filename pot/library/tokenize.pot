@@ -36,7 +36,7 @@ msgid "The primary entry point is a :term:`generator`:"
 msgstr ""
 
 #: ../../library/tokenize.rst:29
-msgid "The :func:`generate_tokens` generator requires one argument, *readline*, which must be a callable object which provides the same interface as the :meth:`readline` method of built-in file objects (see section :ref:`bltin-file-objects`).  Each call to the function should return one line of input as a string. Alternately, *readline* may be a callable object that signals completion by raising :exc:`StopIteration`."
+msgid "The :func:`generate_tokens` generator requires one argument, *readline*, which must be a callable object which provides the same interface as the :meth:`~file.readline` method of built-in file objects (see section :ref:`bltin-file-objects`).  Each call to the function should return one line of input as a string. Alternately, *readline* may be a callable object that signals completion by raising :exc:`StopIteration`."
 msgstr ""
 
 #: ../../library/tokenize.rst:36
@@ -48,11 +48,11 @@ msgid "An older entry point is retained for backward compatibility:"
 msgstr ""
 
 #: ../../library/tokenize.rst:50
-msgid "The :func:`tokenize` function accepts two parameters: one representing the input stream, and one providing an output mechanism for :func:`tokenize`."
+msgid "The :func:`.tokenize` function accepts two parameters: one representing the input stream, and one providing an output mechanism for :func:`.tokenize`."
 msgstr ""
 
 #: ../../library/tokenize.rst:53
-msgid "The first parameter, *readline*, must be a callable object which provides the same interface as the :meth:`readline` method of built-in file objects (see section :ref:`bltin-file-objects`).  Each call to the function should return one line of input as a string. Alternately, *readline* may be a callable object that signals completion by raising :exc:`StopIteration`."
+msgid "The first parameter, *readline*, must be a callable object which provides the same interface as the :meth:`~file.readline` method of built-in file objects (see section :ref:`bltin-file-objects`).  Each call to the function should return one line of input as a string. Alternately, *readline* may be a callable object that signals completion by raising :exc:`StopIteration`."
 msgstr ""
 
 #: ../../library/tokenize.rst:59
@@ -64,7 +64,7 @@ msgid "The second parameter, *tokeneater*, must also be a callable object.  It i
 msgstr ""
 
 #: ../../library/tokenize.rst:66
-msgid "All constants from the :mod:`token` module are also exported from :mod:`tokenize`, as are two additional token type values that might be passed to the *tokeneater* function by :func:`tokenize`:"
+msgid "All constants from the :mod:`token` module are also exported from :mod:`tokenize`, as are two additional token type values that might be passed to the *tokeneater* function by :func:`.tokenize`:"
 msgstr ""
 
 #: ../../library/tokenize.rst:73

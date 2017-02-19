@@ -60,7 +60,7 @@ msgid "Some key consequences of the long-term significance of 2.7 are:"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:103
-msgid "As noted above, the 2.7 release has a much longer period of maintenance when compared to earlier 2.x versions. Python 2.7 is currently expected to remain supported by the core development team (receiving security updates and other bug fixes) until at least 2020 (10 years after its initial release, compared to the more typical support period of 18-24 months)."
+msgid "As noted above, the 2.7 release has a much longer period of maintenance when compared to earlier 2.x versions. Python 2.7 is currently expected to remain supported by the core development team (receiving security updates and other bug fixes) until at least 2020 (10 years after its initial release, compared to the more typical support period of 18--24 months)."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:109
@@ -192,7 +192,7 @@ msgid "Deleting an entry and reinserting it will move it to the end::"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:247
-msgid "The :meth:`~collections.OrderedDict.popitem` method has an optional *last* argument that defaults to True.  If *last* is True, the most recently added key is returned and removed; if it's False, the oldest key is selected::"
+msgid "The :meth:`~collections.OrderedDict.popitem` method has an optional *last* argument that defaults to ``True``.  If *last* is true, the most recently added key is returned and removed; if it's false, the oldest key is selected::"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:262
@@ -284,7 +284,7 @@ msgid "Here's an example::"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:393
-msgid "Unless you override it, :option:`-h` and :option:`--help` switches are automatically added, and produce neatly formatted output::"
+msgid "Unless you override it, :option:`!-h` and :option:`!--help` switches are automatically added, and produce neatly formatted output::"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:410
@@ -352,7 +352,7 @@ msgid ":class:`~logging.Logger` instances gained a :meth:`~logging.Logger.getChi
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:535
-msgid "The :class:`~logging.LoggerAdapter` class gained a :meth:`~logging.LoggerAdapter.isEnabledFor` method that takes a *level* and returns whether the underlying logger would process a message of that level of importance."
+msgid "The :class:`~logging.LoggerAdapter` class gained an :meth:`~logging.LoggerAdapter.isEnabledFor` method that takes a *level* and returns whether the underlying logger would process a message of that level of importance."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:544
@@ -544,7 +544,7 @@ msgid "When using ``@classmethod`` and ``@staticmethod`` to wrap methods as clas
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:852
-#: ../../whatsnew/2.7.rst:2424
+#: ../../whatsnew/2.7.rst:2438
 msgid "When a restricted set of attributes were set using ``__slots__``, deleting an unset attribute would not raise :exc:`AttributeError` as you would expect.  Fixed by Benjamin Peterson; :issue:`7604`.)"
 msgstr ""
 
@@ -605,7 +605,7 @@ msgid "The garbage collector tries to avoid tracking simple containers which can
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:941
-msgid "Long integers are now stored internally either in base 2**15 or in base 2**30, the base being determined at build time.  Previously, they were always stored in base 2**15.  Using base 2**30 gives significant performance improvements on 64-bit machines, but benchmark results on 32-bit machines have been mixed.  Therefore, the default is to use base 2**30 on 64-bit machines and base 2**15 on 32-bit machines; on Unix, there's a new configure option :option:`--enable-big-digits` that can be used to override this default."
+msgid "Long integers are now stored internally either in base 2**15 or in base 2**30, the base being determined at build time.  Previously, they were always stored in base 2**15.  Using base 2**30 gives significant performance improvements on 64-bit machines, but benchmark results on 32-bit machines have been mixed.  Therefore, the default is to use base 2**30 on 64-bit machines and base 2**15 on 32-bit machines; on Unix, there's a new configure option :option:`!--enable-big-digits` that can be used to override this default."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:950
@@ -625,7 +625,7 @@ msgid "The division algorithm for long integers has been made faster by tighteni
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:976
-msgid "The implementation of ``%`` checks for the left-side operand being a Python string and special-cases it; this results in a 1-3% performance increase for applications that frequently use ``%`` with strings, such as templating libraries. (Implemented by Collin Winter; :issue:`5176`.)"
+msgid "The implementation of ``%`` checks for the left-side operand being a Python string and special-cases it; this results in a 1--3% performance increase for applications that frequently use ``%`` with strings, such as templating libraries. (Implemented by Collin Winter; :issue:`5176`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:982
@@ -665,7 +665,7 @@ msgid "The :mod:`binascii` module now supports the buffer API, so it can be used
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1030
-msgid "Updated module: the :mod:`bsddb` module has been updated from 4.7.2devel9 to version 4.8.4 of `the pybsddb package <http://www.jcea.es/programacion/pybsddb.htm>`__. The new version features better Python 3.x compatibility, various bug fixes, and adds several new BerkeleyDB flags and methods. (Updated by Jesús Cea Avión; :issue:`8156`.  The pybsddb changelog can be read at http://hg.jcea.es/pybsddb/file/tip/ChangeLog.)"
+msgid "Updated module: the :mod:`bsddb` module has been updated from 4.7.2devel9 to version 4.8.4 of `the pybsddb package <https://www.jcea.es/programacion/pybsddb.htm>`__. The new version features better Python 3.x compatibility, various bug fixes, and adds several new BerkeleyDB flags and methods. (Updated by Jesús Cea Avión; :issue:`8156`.  The pybsddb changelog can be read at http://hg.jcea.es/pybsddb/file/tip/ChangeLog.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1038
@@ -725,7 +725,7 @@ msgid "The :mod:`copy` module's :func:`~copy.deepcopy` function will now correct
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1157
-msgid "The :mod:`ctypes` module now always converts ``None`` to a C NULL pointer for arguments declared as pointers.  (Changed by Thomas Heller; :issue:`4606`.)  The underlying `libffi library <http://sourceware.org/libffi/>`__ has been updated to version 3.0.9, containing various fixes for different platforms.  (Updated by Matthias Klose; :issue:`8142`.)"
+msgid "The :mod:`ctypes` module now always converts ``None`` to a C NULL pointer for arguments declared as pointers.  (Changed by Thomas Heller; :issue:`4606`.)  The underlying `libffi library <https://sourceware.org/libffi/>`__ has been updated to version 3.0.9, containing various fixes for different platforms.  (Updated by Matthias Klose; :issue:`8142`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1164
@@ -949,11 +949,11 @@ msgid "The :meth:`~socket.socket.recv_into` and :meth:`~socket.socket.recvfrom_i
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1503
-msgid "The :mod:`SocketServer` module's :class:`~SocketServer.TCPServer` class now supports socket timeouts and disabling the Nagle algorithm. The :attr:`~SocketServer.TCPServer.disable_nagle_algorithm` class attribute defaults to False; if overridden to be True, new request connections will have the TCP_NODELAY option set to prevent buffering many small sends into a single TCP packet. The :attr:`~SocketServer.BaseServer.timeout` class attribute can hold a timeout in seconds that will be applied to the request socket; if no request is received within that time, :meth:`~SocketServer.BaseServer.handle_timeout` will be called and :meth:`~SocketServer.BaseServer.handle_request` will return. (Contributed by Kristján Valur Jónsson; :issue:`6192` and :issue:`6267`.)"
+msgid "The :mod:`SocketServer` module's :class:`~SocketServer.TCPServer` class now supports socket timeouts and disabling the Nagle algorithm. The :attr:`~SocketServer.TCPServer.disable_nagle_algorithm` class attribute defaults to ``False``; if overridden to be true, new request connections will have the TCP_NODELAY option set to prevent buffering many small sends into a single TCP packet. The :attr:`~SocketServer.BaseServer.timeout` class attribute can hold a timeout in seconds that will be applied to the request socket; if no request is received within that time, :meth:`~SocketServer.BaseServer.handle_timeout` will be called and :meth:`~SocketServer.BaseServer.handle_request` will return. (Contributed by Kristján Valur Jónsson; :issue:`6192` and :issue:`6267`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1515
-msgid "Updated module: the :mod:`sqlite3` module has been updated to version 2.6.0 of the `pysqlite package <http://code.google.com/p/pysqlite/>`__. Version 2.6.0 includes a number of bugfixes, and adds the ability to load SQLite extensions from shared libraries. Call the ``enable_load_extension(True)`` method to enable extensions, and then call :meth:`~sqlite3.Connection.load_extension` to load a particular shared library. (Updated by Gerhard Häring.)"
+msgid "Updated module: the :mod:`sqlite3` module has been updated to version 2.6.0 of the `pysqlite package <https://github.com/ghaering/pysqlite>`__. Version 2.6.0 includes a number of bugfixes, and adds the ability to load SQLite extensions from shared libraries. Call the ``enable_load_extension(True)`` method to enable extensions, and then call :meth:`~sqlite3.Connection.load_extension` to load a particular shared library. (Updated by Gerhard Häring.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1522
@@ -961,7 +961,7 @@ msgid "The :mod:`ssl` module's :class:`~ssl.SSLSocket` objects now support the b
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1529
-msgid "The :func:`ssl.wrap_socket` constructor function now takes a *ciphers* argument that's a string listing the encryption algorithms to be allowed; the format of the string is described `in the OpenSSL documentation <http://www.openssl.org/docs/apps/ciphers.html#CIPHER_LIST_FORMAT>`__. (Added by Antoine Pitrou; :issue:`8322`.)"
+msgid "The :func:`ssl.wrap_socket` constructor function now takes a *ciphers* argument that's a string listing the encryption algorithms to be allowed; the format of the string is described `in the OpenSSL documentation <https://www.openssl.org/docs/apps/ciphers.html#CIPHER-LIST-FORMAT>`__. (Added by Antoine Pitrou; :issue:`8322`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1536
@@ -993,7 +993,7 @@ msgid "New function: :func:`~symtable.Symbol.is_declared_global` in the :mod:`sy
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1583
-#: ../../whatsnew/2.7.rst:2458
+#: ../../whatsnew/2.7.rst:2472
 msgid "The :mod:`syslog` module will now use the value of ``sys.argv[0]`` as the identifier instead of the previous default value of ``'python'``. (Changed by Sean Reifschneider; :issue:`8451`.)"
 msgstr ""
 
@@ -1006,7 +1006,7 @@ msgid ":func:`sys.getwindowsversion` also returns a named tuple, with attributes
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1598
-#: ../../whatsnew/2.7.rst:2462
+#: ../../whatsnew/2.7.rst:2476
 msgid "The :mod:`tarfile` module's default error handling has changed, to no longer suppress fatal errors.  The default error level was previously 0, which meant that errors would only result in a message being written to the debug log, but because the debug log is not activated by default, these errors go unnoticed.  The default error level is now 1, which raises an exception if there's an error. (Changed by Lars Gustäbel; :issue:`7357`.)"
 msgstr ""
 
@@ -1023,17 +1023,17 @@ msgid "The Unicode database provided by the :mod:`unicodedata` module is now use
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1633
-#: ../../whatsnew/2.7.rst:2470
+#: ../../whatsnew/2.7.rst:2484
 msgid "The :mod:`urlparse` module's :func:`~urlparse.urlsplit` now handles unknown URL schemes in a fashion compliant with :rfc:`3986`: if the URL is of the form ``\"<something>://...\"``, the text before the ``://`` is treated as the scheme, even if it's a made-up scheme that the module doesn't know about.  This change may break code that worked around the old behaviour.  For example, Python 2.6.4 or 2.5 will return the following:"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1645
-#: ../../whatsnew/2.7.rst:2482
+#: ../../whatsnew/2.7.rst:2496
 msgid "Python 2.7 (and Python 2.6.5) will return:"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1651
-#: ../../whatsnew/2.7.rst:2488
+#: ../../whatsnew/2.7.rst:2502
 msgid "(Python 2.7 actually produces slightly different output, since it returns a named tuple instead of a standard tuple.)"
 msgstr ""
 
@@ -1134,7 +1134,7 @@ msgid "Tcl/Tk 8.5 includes a set of themed widgets that re-implement basic Tk wi
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1783
-msgid "To learn more, read the :mod:`ttk` module documentation.  You may also wish to read the Tcl/Tk manual page describing the Ttk theme engine, available at http://www.tcl.tk/man/tcl8.5/TkCmd/ttk_intro.htm. Some screenshots of the Python/Ttk code in use are at http://code.google.com/p/python-ttk/wiki/Screenshots."
+msgid "To learn more, read the :mod:`ttk` module documentation.  You may also wish to read the Tcl/Tk manual page describing the Ttk theme engine, available at https://www.tcl.tk/man/tcl8.5/TkCmd/ttk_intro.htm. Some screenshots of the Python/Ttk code in use are at http://code.google.com/p/python-ttk/wiki/Screenshots."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1790
@@ -1162,11 +1162,11 @@ msgid "The :func:`~unittest.main` function supports some other new options:"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1823
-msgid ":option:`-b` or :option:`--buffer` will buffer the standard output and standard error streams during each test.  If the test passes, any resulting output will be discarded; on failure, the buffered output will be displayed."
+msgid ":option:`-b <unittest -b>` or :option:`!--buffer` will buffer the standard output and standard error streams during each test.  If the test passes, any resulting output will be discarded; on failure, the buffered output will be displayed."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1828
-msgid ":option:`-c` or :option:`--catch` will cause the control-C interrupt to be handled more gracefully.  Instead of interrupting the test process immediately, the currently running test will be completed and then the partial results up to the interruption will be reported. If you're impatient, a second press of control-C will cause an immediate interruption."
+msgid ":option:`-c <unittest -c>` or :option:`!--catch` will cause the control-C interrupt to be handled more gracefully.  Instead of interrupting the test process immediately, the currently running test will be completed and then the partial results up to the interruption will be reported. If you're impatient, a second press of control-C will cause an immediate interruption."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1835
@@ -1174,7 +1174,7 @@ msgid "This control-C handler tries to avoid causing problems when the code bein
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1842
-msgid ":option:`-f` or :option:`--failfast` makes test execution stop immediately when a test fails instead of continuing to execute further tests.  (Suggested by Cliff Dyer and implemented by Michael Foord; :issue:`8074`.)"
+msgid ":option:`-f <unittest -f>` or :option:`!--failfast` makes test execution stop immediately when a test fails instead of continuing to execute further tests.  (Suggested by Cliff Dyer and implemented by Michael Foord; :issue:`8074`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1847
@@ -1186,7 +1186,7 @@ msgid "Test cases can raise the :exc:`~unittest.SkipTest` exception to skip a te
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1854
-msgid "The error messages for :meth:`~unittest.TestCase.assertEqual`, :meth:`~unittest.TestCase.assertTrue`, and :meth:`~unittest.TestCase.assertFalse` failures now provide more information.  If you set the :attr:`~unittest.TestCase.longMessage` attribute of your :class:`~unittest.TestCase` classes to True, both the standard error message and any additional message you provide will be printed for failures.  (Added by Michael Foord; :issue:`5663`.)"
+msgid "The error messages for :meth:`~unittest.TestCase.assertEqual`, :meth:`~unittest.TestCase.assertTrue`, and :meth:`~unittest.TestCase.assertFalse` failures now provide more information.  If you set the :attr:`~unittest.TestCase.longMessage` attribute of your :class:`~unittest.TestCase` classes to true, both the standard error message and any additional message you provide will be printed for failures.  (Added by Michael Foord; :issue:`5663`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1861
@@ -1270,7 +1270,7 @@ msgid "A new hook lets you extend the :meth:`~unittest.TestCase.assertEqual` met
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1964
-msgid ":func:`unittest.main` now takes an optional ``exit`` argument.  If False, :func:`~unittest.main` doesn't call :func:`sys.exit`, allowing :func:`~unittest.main` to be used from the interactive interpreter. (Contributed by J. Pablo Fernández; :issue:`3379`.)"
+msgid ":func:`unittest.main` now takes an optional ``exit`` argument.  If false, :func:`~unittest.main` doesn't call :func:`sys.exit`, allowing :func:`~unittest.main` to be used from the interactive interpreter. (Contributed by J. Pablo Fernández; :issue:`3379`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:1969
@@ -1342,7 +1342,7 @@ msgid "Changes to Python's build process and to the C API include:"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2080
-msgid "The latest release of the GNU Debugger, GDB 7, can be `scripted using Python <http://sourceware.org/gdb/current/onlinedocs/gdb/Python.html>`__. When you begin debugging an executable program P, GDB will look for a file named ``P-gdb.py`` and automatically read it.  Dave Malcolm contributed a :file:`python-gdb.py` that adds a number of commands useful when debugging Python itself.  For example, ``py-up`` and ``py-down`` go up or down one Python stack frame, which usually corresponds to several C stack frames.  ``py-print`` prints the value of a Python variable, and ``py-bt`` prints the Python stack trace.  (Added as a result of :issue:`8032`.)"
+msgid "The latest release of the GNU Debugger, GDB 7, can be `scripted using Python <https://sourceware.org/gdb/current/onlinedocs/gdb/Python.html>`__. When you begin debugging an executable program P, GDB will look for a file named ``P-gdb.py`` and automatically read it.  Dave Malcolm contributed a :file:`python-gdb.py` that adds a number of commands useful when debugging Python itself.  For example, ``py-up`` and ``py-down`` go up or down one Python stack frame, which usually corresponds to several C stack frames.  ``py-print`` prints the value of a Python variable, and ``py-bt`` prints the Python stack trace.  (Added as a result of :issue:`8032`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2092
@@ -1386,7 +1386,7 @@ msgid "If you maintain a C/C++ application that embeds Python, check whether you
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2151
-msgid "Security issue reported as `CVE-2008-5983 <http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5983>`_; discussed in :issue:`5753`, and fixed by Antoine Pitrou."
+msgid "Security issue reported as `CVE-2008-5983 <https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5983>`_; discussed in :issue:`5753`, and fixed by Antoine Pitrou."
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2155
@@ -1426,15 +1426,15 @@ msgid "Global symbols defined by the :mod:`ctypes` module are now prefixed with 
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2217
-msgid "New configure option: the :option:`--with-system-expat` switch allows building the :mod:`pyexpat` module to use the system Expat library. (Contributed by Arfrever Frehtes Taifersar Arahesis; :issue:`7609`.)"
+msgid "New configure option: the :option:`!--with-system-expat` switch allows building the :mod:`pyexpat` module to use the system Expat library. (Contributed by Arfrever Frehtes Taifersar Arahesis; :issue:`7609`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2221
-msgid "New configure option: the :option:`--with-valgrind` option will now disable the pymalloc allocator, which is difficult for the Valgrind memory-error detector to analyze correctly. Valgrind will therefore be better at detecting memory leaks and overruns. (Contributed by James Henstridge; :issue:`2422`.)"
+msgid "New configure option: the :option:`!--with-valgrind` option will now disable the pymalloc allocator, which is difficult for the Valgrind memory-error detector to analyze correctly. Valgrind will therefore be better at detecting memory leaks and overruns. (Contributed by James Henstridge; :issue:`2422`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2228
-msgid "New configure option: you can now supply an empty string to :option:`--with-dbmliborder=` in order to disable all of the various DBM modules.  (Added by Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
+msgid "New configure option: you can now supply an empty string to :option:`!--with-dbmliborder=` in order to disable all of the various DBM modules.  (Added by Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2233
@@ -1462,306 +1462,330 @@ msgid "Python 3.1 adds a new C datatype, :c:type:`PyCapsule`, for providing a C 
 msgstr ""
 
 #: ../../whatsnew/2.7.rst:2264
-msgid "There is an existing data type already used for this, :c:type:`PyCObject`, but it doesn't provide type safety.  Evil code written in pure Python could cause a segmentation fault by taking a :c:type:`PyCObject` from module A and somehow substituting it for the :c:type:`PyCObject` in module B.   Capsules know their own name, and getting the pointer requires providing the name::"
+msgid "There is an existing data type already used for this, :c:type:`PyCObject`, but it doesn't provide type safety.  Evil code written in pure Python could cause a segmentation fault by taking a :c:type:`PyCObject` from module A and somehow substituting it for the :c:type:`PyCObject` in module B.   Capsules know their own name, and getting the pointer requires providing the name:"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2280
+#: ../../whatsnew/2.7.rst:2282
 msgid "You are assured that ``vtable`` points to whatever you're expecting. If a different capsule was passed in, :c:func:`PyCapsule_IsValid` would detect the mismatched name and return false.  Refer to :ref:`using-capsules` for more information on using these objects."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2285
+#: ../../whatsnew/2.7.rst:2287
 msgid "Python 2.7 now uses capsules internally to provide various extension-module APIs, but the :c:func:`PyCObject_AsVoidPtr` was modified to handle capsules, preserving compile-time compatibility with the :c:type:`CObject` interface.  Use of :c:func:`PyCObject_AsVoidPtr` will signal a :exc:`PendingDeprecationWarning`, which is silent by default."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2292
+#: ../../whatsnew/2.7.rst:2294
 msgid "Implemented in Python 3.1 and backported to 2.7 by Larry Hastings; discussed in :issue:`5630`."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2299
+#: ../../whatsnew/2.7.rst:2301
 msgid "Port-Specific Changes: Windows"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2301
+#: ../../whatsnew/2.7.rst:2303
 msgid "The :mod:`msvcrt` module now contains some constants from the :file:`crtassem.h` header file: :data:`CRT_ASSEMBLY_VERSION`, :data:`VC_ASSEMBLY_PUBLICKEYTOKEN`, and :data:`LIBRARIES_ASSEMBLY_NAME_PREFIX`. (Contributed by David Cournapeau; :issue:`4365`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2308
+#: ../../whatsnew/2.7.rst:2310
 msgid "The :mod:`_winreg` module for accessing the registry now implements the :func:`~_winreg.CreateKeyEx` and :func:`~_winreg.DeleteKeyEx` functions, extended versions of previously-supported functions that take several extra arguments.  The :func:`~_winreg.DisableReflectionKey`, :func:`~_winreg.EnableReflectionKey`, and :func:`~_winreg.QueryReflectionKey` were also tested and documented. (Implemented by Brian Curtin: :issue:`7347`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2316
+#: ../../whatsnew/2.7.rst:2318
 msgid "The new :c:func:`_beginthreadex` API is used to start threads, and the native thread-local storage functions are now used. (Contributed by Kristján Valur Jónsson; :issue:`3582`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2320
+#: ../../whatsnew/2.7.rst:2322
 msgid "The :func:`os.kill` function now works on Windows.  The signal value can be the constants :const:`CTRL_C_EVENT`, :const:`CTRL_BREAK_EVENT`, or any integer.  The first two constants will send :kbd:`Control-C` and :kbd:`Control-Break` keystroke events to subprocesses; any other value will use the :c:func:`TerminateProcess` API.  (Contributed by Miki Tebeka; :issue:`1220212`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2327
+#: ../../whatsnew/2.7.rst:2329
 msgid "The :func:`os.listdir` function now correctly fails for an empty path.  (Fixed by Hirokazu Yamamoto; :issue:`5913`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2330
+#: ../../whatsnew/2.7.rst:2332
 msgid "The :mod:`mimelib` module will now read the MIME database from the Windows registry when initializing. (Patch by Gabriel Genellina; :issue:`4969`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2337
+#: ../../whatsnew/2.7.rst:2339
 msgid "Port-Specific Changes: Mac OS X"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2339
+#: ../../whatsnew/2.7.rst:2341
 msgid "The path ``/Library/Python/2.7/site-packages`` is now appended to ``sys.path``, in order to share added packages between the system installation and a user-installed copy of the same version. (Changed by Ronald Oussoren; :issue:`4865`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2345
+#: ../../whatsnew/2.7.rst:2348
+msgid "As of 2.7.13, this change was removed. ``/Library/Python/2.7/site-packages``, the site-packages directory used by the Apple-supplied system Python 2.7 is no longer appended to ``sys.path`` for user-installed Pythons such as from the python.org installers.  As of macOS 10.12, Apple changed how the system site-packages directory is configured, which could cause installation of pip components, like setuptools, to fail.  Packages installed for the system Python will no longer be shared with user-installed Pythons. (:issue:`28440`)"
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2359
 msgid "Port-Specific Changes: FreeBSD"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2347
+#: ../../whatsnew/2.7.rst:2361
 msgid "FreeBSD 7.1's :const:`SO_SETFIB` constant, used with :func:`~socket.getsockopt`/:func:`~socket.setsockopt` to select an alternate routing table, is now available in the :mod:`socket` module.  (Added by Kyle VanderBeek; :issue:`8235`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2353
+#: ../../whatsnew/2.7.rst:2367
 msgid "Other Changes and Fixes"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2355
+#: ../../whatsnew/2.7.rst:2369
 msgid "Two benchmark scripts, :file:`iobench` and :file:`ccbench`, were added to the :file:`Tools` directory.  :file:`iobench` measures the speed of the built-in file I/O objects returned by :func:`open` while performing various operations, and :file:`ccbench` is a concurrency benchmark that tries to measure computing throughput, thread switching latency, and IO processing bandwidth when performing several tasks using a varying number of threads."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2363
+#: ../../whatsnew/2.7.rst:2377
 msgid "The :file:`Tools/i18n/msgfmt.py` script now understands plural forms in :file:`.po` files.  (Fixed by Martin von Löwis; :issue:`5464`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2367
+#: ../../whatsnew/2.7.rst:2381
 msgid "When importing a module from a :file:`.pyc` or :file:`.pyo` file with an existing :file:`.py` counterpart, the :attr:`co_filename` attributes of the resulting code objects are overwritten when the original filename is obsolete.  This can happen if the file has been renamed, moved, or is accessed through different paths.  (Patch by Ziga Seilnacht and Jean-Paul Calderone; :issue:`1180193`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2374
-msgid "The :file:`regrtest.py` script now takes a :option:`--randseed=` switch that takes an integer that will be used as the random seed for the :option:`-r` option that executes tests in random order. The :option:`-r` option also reports the seed that was used (Added by Collin Winter.)"
+#: ../../whatsnew/2.7.rst:2388
+msgid "The :file:`regrtest.py` script now takes a :option:`!--randseed=` switch that takes an integer that will be used as the random seed for the :option:`!-r` option that executes tests in random order. The :option:`!-r` option also reports the seed that was used (Added by Collin Winter.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2380
-msgid "Another :file:`regrtest.py` switch is :option:`-j`, which takes an integer specifying how many tests run in parallel. This allows reducing the total runtime on multi-core machines. This option is compatible with several other options, including the :option:`-R` switch which is known to produce long runtimes. (Added by Antoine Pitrou, :issue:`6152`.)  This can also be used with a new :option:`-F` switch that runs selected tests in a loop until they fail.  (Added by Antoine Pitrou; :issue:`7312`.)"
+#: ../../whatsnew/2.7.rst:2394
+msgid "Another :file:`regrtest.py` switch is :option:`!-j`, which takes an integer specifying how many tests run in parallel. This allows reducing the total runtime on multi-core machines. This option is compatible with several other options, including the :option:`!-R` switch which is known to produce long runtimes. (Added by Antoine Pitrou, :issue:`6152`.)  This can also be used with a new :option:`!-F` switch that runs selected tests in a loop until they fail.  (Added by Antoine Pitrou; :issue:`7312`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2389
+#: ../../whatsnew/2.7.rst:2403
 msgid "When executed as a script, the :file:`py_compile.py` module now accepts ``'-'`` as an argument, which will read standard input for the list of filenames to be compiled.  (Contributed by Piotr Ożarowski; :issue:`8233`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2397
+#: ../../whatsnew/2.7.rst:2411
 msgid "Porting to Python 2.7"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2399
+#: ../../whatsnew/2.7.rst:2413
 msgid "This section lists previously described changes and other bugfixes that may require changes to your code:"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2402
+#: ../../whatsnew/2.7.rst:2416
 msgid "The :func:`range` function processes its arguments more consistently; it will now call :meth:`__int__` on non-float, non-integer arguments that are supplied to it.  (Fixed by Alexander Belopolsky; :issue:`1533`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2407
+#: ../../whatsnew/2.7.rst:2421
 msgid "The string :meth:`format` method changed the default precision used for floating-point and complex numbers from 6 decimal places to 12, which matches the precision used by :func:`str`. (Changed by Eric Smith; :issue:`5920`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2412
+#: ../../whatsnew/2.7.rst:2426
 msgid "Because of an optimization for the :keyword:`with` statement, the special methods :meth:`__enter__` and :meth:`__exit__` must belong to the object's type, and cannot be directly attached to the object's instance.  This affects new-style classes (derived from :class:`object`) and C extension types.  (:issue:`6101`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2418
+#: ../../whatsnew/2.7.rst:2432
 msgid "Due to a bug in Python 2.6, the *exc_value* parameter to :meth:`__exit__` methods was often the string representation of the exception, not an instance.  This was fixed in 2.7, so *exc_value* will be an instance as expected.  (Fixed by Florent Xicluna; :issue:`7853`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2428
+#: ../../whatsnew/2.7.rst:2442
 msgid "In the standard library:"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2430
+#: ../../whatsnew/2.7.rst:2444
 msgid "Operations with :class:`~datetime.datetime` instances that resulted in a year falling outside the supported range didn't always raise :exc:`OverflowError`.  Such errors are now checked more carefully and will now raise the exception. (Reported by Mark Leander, patch by Anand B. Pillai and Alexander Belopolsky; :issue:`7150`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2436
+#: ../../whatsnew/2.7.rst:2450
 msgid "When using :class:`~decimal.Decimal` instances with a string's :meth:`format` method, the default alignment was previously left-alignment.  This has been changed to right-alignment, which might change the output of your programs. (Changed by Mark Dickinson; :issue:`6857`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2442
+#: ../../whatsnew/2.7.rst:2456
 msgid "Comparisons involving a signaling NaN value (or ``sNAN``) now signal :const:`~decimal.InvalidOperation` instead of silently returning a true or false value depending on the comparison operator.  Quiet NaN values (or ``NaN``) are now hashable.  (Fixed by Mark Dickinson; :issue:`7279`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2448
+#: ../../whatsnew/2.7.rst:2462
 msgid "The ElementTree library, :mod:`xml.etree`, no longer escapes ampersands and angle brackets when outputting an XML processing instruction (which looks like `<?xml-stylesheet href=\"#style1\"?>`) or comment (which looks like `<!-- comment -->`). (Patch by Neil Muller; :issue:`2746`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2454
+#: ../../whatsnew/2.7.rst:2468
 msgid "The :meth:`~StringIO.StringIO.readline` method of :class:`~StringIO.StringIO` objects now does nothing when a negative length is requested, as other file-like objects do.  (:issue:`7348`)."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2491
+#: ../../whatsnew/2.7.rst:2505
 msgid "For C extensions:"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2493
+#: ../../whatsnew/2.7.rst:2507
 msgid "C extensions that use integer format codes with the ``PyArg_Parse*`` family of functions will now raise a :exc:`TypeError` exception instead of triggering a :exc:`DeprecationWarning` (:issue:`5080`)."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2497
+#: ../../whatsnew/2.7.rst:2511
 msgid "Use the new :c:func:`PyOS_string_to_double` function instead of the old :c:func:`PyOS_ascii_strtod` and :c:func:`PyOS_ascii_atof` functions, which are now deprecated."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2501
+#: ../../whatsnew/2.7.rst:2515
 msgid "For applications that embed Python:"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2503
+#: ../../whatsnew/2.7.rst:2517
 msgid "The :c:func:`PySys_SetArgvEx` function was added, letting applications close a security hole when the existing :c:func:`PySys_SetArgv` function was used.  Check whether you're calling :c:func:`PySys_SetArgv` and carefully consider whether the application should be using :c:func:`PySys_SetArgvEx` with *updatepath* set to false."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2516
+#: ../../whatsnew/2.7.rst:2530
 msgid "New Features Added to Python 2.7 Maintenance Releases"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2518
+#: ../../whatsnew/2.7.rst:2532
 msgid "New features may be added to Python 2.7 maintenance releases when the situation genuinely calls for it. Any such additions must go through the Python Enhancement Proposal process, and make a compelling case for why they can't be adequately addressed by either adding the new feature solely to Python 3, or else by publishing it on the Python Package Index."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2524
+#: ../../whatsnew/2.7.rst:2538
 msgid "In addition to the specific proposals listed below, there is a general exemption allowing new ``-3`` warnings to be added in any Python 2.7 maintenance release."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2530
+#: ../../whatsnew/2.7.rst:2544
 msgid "PEP 434: IDLE Enhancement Exception for All Branches"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2532
+#: ../../whatsnew/2.7.rst:2546
 msgid ":pep:`434` describes a general exemption for changes made to the IDLE development environment shipped along with Python. This exemption makes it possible for the IDLE developers to provide a more consistent user experience across all supported versions of Python 2 and 3."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2537
+#: ../../whatsnew/2.7.rst:2551
 msgid "For details of any IDLE changes, refer to the NEWS file for the specific release."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2542
+#: ../../whatsnew/2.7.rst:2556
 msgid "PEP 466: Network Security Enhancements for Python 2.7"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2544
+#: ../../whatsnew/2.7.rst:2558
 msgid ":pep:`466` describes a number of network security enhancement proposals that have been approved for inclusion in Python 2.7 maintenance releases, with the first of those changes appearing in the Python 2.7.7 release."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2548
+#: ../../whatsnew/2.7.rst:2562
 msgid ":pep:`466` related features added in Python 2.7.7:"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2550
+#: ../../whatsnew/2.7.rst:2564
 msgid ":func:`hmac.compare_digest` was backported from Python 3 to make a timing attack resistant comparison operation available to Python 2 applications. (Contributed by Alex Gaynor; :issue:`21306`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2554
+#: ../../whatsnew/2.7.rst:2568
 msgid "OpenSSL 1.0.1g was upgraded in the official Windows installers published on python.org. (Contributed by Zachary Ware; :issue:`21462`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2557
+#: ../../whatsnew/2.7.rst:2571
 msgid ":pep:`466` related features added in Python 2.7.8:"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2559
+#: ../../whatsnew/2.7.rst:2573
 msgid ":func:`hashlib.pbkdf2_hmac` was backported from Python 3 to make a hashing algorithm suitable for secure password storage broadly available to Python 2 applications. (Contributed by Alex Gaynor; :issue:`21304`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2563
+#: ../../whatsnew/2.7.rst:2577
 msgid "OpenSSL 1.0.1h was upgraded for the official Windows installers published on python.org. (contributed by Zachary Ware in :issue:`21671` for CVE-2014-0224)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2566
+#: ../../whatsnew/2.7.rst:2580
 msgid ":pep:`466` related features added in Python 2.7.9:"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2568
+#: ../../whatsnew/2.7.rst:2582
 msgid "Most of Python 3.4's :mod:`ssl` module was backported. This means :mod:`ssl` now supports Server Name Indication, TLS1.x settings, access to the platform certificate store, the :class:`~ssl.SSLContext` class, and other features. (Contributed by Alex Gaynor and David Reid; :issue:`21308`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2573
+#: ../../whatsnew/2.7.rst:2587
 msgid "Refer to the \"Version added: 2.7.9\" notes in the module documentation for specific details."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2576
+#: ../../whatsnew/2.7.rst:2590
 msgid ":func:`os.urandom` was changed to cache a file descriptor to ``/dev/urandom`` instead of reopening ``/dev/urandom`` on every call. (Contributed by Alex Gaynor; :issue:`21305`.)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2580
+#: ../../whatsnew/2.7.rst:2594
 msgid ":data:`hashlib.algorithms_guaranteed` and :data:`hashlib.algorithms_available` were backported from Python 3 to make it easier for Python 2 applications to select the strongest available hash algorithm. (Contributed by Alex Gaynor in :issue:`21307`)"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2587
+#: ../../whatsnew/2.7.rst:2601
 msgid "PEP 477: Backport ensurepip (PEP 453) to Python 2.7"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2589
-msgid ":pep:`477` approves the inclusion of the :pep:`453` ensurepip module and the improved documentation that was enabled by it in the Python 2.7 maintenance releases, appearing first in the the Python 2.7.9 release."
+#: ../../whatsnew/2.7.rst:2603
+msgid ":pep:`477` approves the inclusion of the :pep:`453` ensurepip module and the improved documentation that was enabled by it in the Python 2.7 maintenance releases, appearing first in the Python 2.7.9 release."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2595
+#: ../../whatsnew/2.7.rst:2609
 msgid "Bootstrapping pip By Default"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2597
+#: ../../whatsnew/2.7.rst:2611
 msgid "The new :mod:`ensurepip` module (defined in :pep:`453`) provides a standard cross-platform mechanism to bootstrap the pip installer into Python installations. The version of ``pip`` included with Python 2.7.9 is ``pip`` 1.5.6, and future 2.7.x maintenance releases will update the bundled version to the latest version of ``pip`` that is available at the time of creating the release candidate."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2604
+#: ../../whatsnew/2.7.rst:2618
 msgid "By default, the commands ``pip``, ``pipX`` and ``pipX.Y`` will be installed on all platforms (where X.Y stands for the version of the Python installation), along with the ``pip`` Python package and its dependencies."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2608
+#: ../../whatsnew/2.7.rst:2622
 msgid "For CPython :ref:`source builds on POSIX systems <building-python-on-unix>`, the ``make install`` and ``make altinstall`` commands do not bootstrap ``pip`` by default.  This behaviour can be controlled through configure options, and overridden through Makefile options."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2613
+#: ../../whatsnew/2.7.rst:2627
 msgid "On Windows and Mac OS X, the CPython installers now default to installing ``pip`` along with CPython itself (users may opt out of installing it during the installation process). Window users will need to opt in to the automatic ``PATH`` modifications to have ``pip`` available from the command line by default, otherwise it can still be accessed through the Python launcher for Windows as ``py -m pip``."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2620
+#: ../../whatsnew/2.7.rst:2634
 msgid "As `discussed in the PEP`__, platform packagers may choose not to install these commands by default, as long as, when invoked, they provide clear and simple directions on how to install them on that platform (usually using the system package manager)."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2629
+#: ../../whatsnew/2.7.rst:2643
 msgid "Documentation Changes"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2631
+#: ../../whatsnew/2.7.rst:2645
 msgid "As part of this change, the :ref:`installing-index` and :ref:`distributing-index` sections of the documentation have been completely redesigned as short getting started and FAQ documents. Most packaging documentation has now been moved out to the Python Packaging Authority maintained `Python Packaging User Guide <http://packaging.python.org>`__ and the documentation of the individual projects."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2639
+#: ../../whatsnew/2.7.rst:2653
 msgid "However, as this migration is currently still incomplete, the legacy versions of those guides remaining available as :ref:`install-index` and :ref:`distutils-index`."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2646
+#: ../../whatsnew/2.7.rst:2660
 msgid ":pep:`453` -- Explicit bootstrapping of pip in Python installations"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2646
+#: ../../whatsnew/2.7.rst:2660
 msgid "PEP written by Donald Stufft and Nick Coghlan, implemented by Donald Stufft, Nick Coghlan, Martin von Löwis and Ned Deily."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2650
+#: ../../whatsnew/2.7.rst:2664
 msgid "PEP 476: Enabling certificate verification by default for stdlib http clients"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2652
-msgid ":mod:`httplib` and modules which use it, such as :mod:`urllib2` and :mod:`xmlrpclib`, will now verify that the server presents a certificate which is signed by a CA in the platform trust store and whose hostname matches the hostname being requested by default, significantly improving security for many applications."
+#: ../../whatsnew/2.7.rst:2666
+msgid ":pep:`476` updated :mod:`httplib` and modules which use it, such as :mod:`urllib2` and :mod:`xmlrpclib`, to now verify that the server presents a certificate which is signed by a Certificate Authority in the platform trust store and whose hostname matches the hostname being requested by default, significantly improving security for many applications. This change was made in the Python 2.7.9 release."
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2658
+#: ../../whatsnew/2.7.rst:2673
 msgid "For applications which require the old previous behavior, they can pass an alternate context::"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2678
+#: ../../whatsnew/2.7.rst:2690
+msgid "PEP 493: HTTPS verification migration tools for Python 2.7"
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2692
+msgid ":pep:`493` provides additional migration tools to support a more incremental infrastructure upgrade process for environments containing applications and services relying on the historically permissive processing of server certificates when establishing client HTTPS connections.  These additions were made in the Python 2.7.12 release."
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2698
+msgid "These tools are intended for use in cases where affected applications and services can't be modified to explicitly pass a more permissive SSL context when establishing the connection."
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2702
+msgid "For applications and services which can't be modified at all, the new ``PYTHONHTTPSVERIFY`` environment variable may be set to ``0`` to revert an entire Python process back to the default permissive behaviour of Python 2.7.8 and earlier."
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2707
+msgid "For cases where the connection establishment code can't be modified, but the overall application can be, the new :func:`ssl._https_verify_certificates` function can be used to adjust the default behaviour at runtime."
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2716
 msgid "Acknowledgements"
 msgstr ""
 
-#: ../../whatsnew/2.7.rst:2680
+#: ../../whatsnew/2.7.rst:2718
 msgid "The author would like to thank the following people for offering suggestions, corrections and assistance with various drafts of this article: Nick Coghlan, Philip Jenvey, Ryan Lovett, R. David Murray, Hugh Secker-Walker."
 msgstr ""
 

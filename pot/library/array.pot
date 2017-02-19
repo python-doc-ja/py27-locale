@@ -211,7 +211,7 @@ msgid "If given a list or string, the initializer is passed to the new array's :
 msgstr ""
 
 #: ../../library/array.rst:78
-msgid "Obsolete alias for :class:`array`."
+msgid "Obsolete alias for :class:`~array.array`."
 msgstr ""
 
 #: ../../library/array.rst:80
@@ -321,7 +321,7 @@ msgid "Use the :meth:`tofile` method."
 msgstr ""
 
 #: ../../library/array.rst:247
-msgid "When an array object is printed or converted to a string, it is represented as ``array(typecode, initializer)``.  The *initializer* is omitted if the array is empty, otherwise it is a string if the *typecode* is ``'c'``, otherwise it is a list of numbers.  The string is guaranteed to be able to be converted back to an array with the same type and value using :func:`eval`, so long as the :func:`array` function has been imported using ``from array import array``. Examples::"
+msgid "When an array object is printed or converted to a string, it is represented as ``array(typecode, initializer)``.  The *initializer* is omitted if the array is empty, otherwise it is a string if the *typecode* is ``'c'``, otherwise it is a list of numbers.  The string is guaranteed to be able to be converted back to an array with the same type and value using :func:`eval`, so long as the :class:`~array.array` class has been imported using ``from array import array``. Examples::"
 msgstr ""
 
 #: ../../library/array.rst:265
@@ -341,7 +341,7 @@ msgid "Packing and unpacking of External Data Representation (XDR) data as used 
 msgstr ""
 
 #: ../../library/array.rst:272
-msgid "`The Numerical Python Documentation <http://docs.scipy.org/doc/>`_"
+msgid "`The Numerical Python Documentation <https://docs.scipy.org/doc/>`_"
 msgstr ""
 
 #: ../../library/array.rst:272

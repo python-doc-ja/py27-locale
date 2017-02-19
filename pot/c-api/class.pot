@@ -56,6 +56,6 @@ msgid "Create a new instance of a specific class.  The parameters *arg* and *kw*
 msgstr ""
 
 #: ../../c-api/class.rst:62
-msgid "Create a new instance of a specific class without calling its constructor. *class* is the class of new object.  The *dict* parameter will be used as the object's :attr:`__dict__`; if *NULL*, a new dictionary will be created for the instance."
+msgid "Create a new instance of a specific class without calling its constructor. *class* is the class of new object.  The *dict* parameter will be used as the object's :attr:`~object.__dict__`; if *NULL*, a new dictionary will be created for the instance."
 msgstr ""
 

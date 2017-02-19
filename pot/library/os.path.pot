@@ -133,7 +133,7 @@ msgid "Return ``True`` if *path* is an existing directory.  This follows symboli
 msgstr ""
 
 #: ../../library/os.path.rst:187
-msgid "Return ``True`` if *path* refers to a directory entry that is a symbolic link. Always ``False`` if symbolic links are not supported by the python runtime."
+msgid "Return ``True`` if *path* refers to a directory entry that is a symbolic link. Always ``False`` if symbolic links are not supported by the Python runtime."
 msgstr ""
 
 #: ../../library/os.path.rst:193
@@ -173,7 +173,7 @@ msgid "Availability:  Windows, Unix."
 msgstr ""
 
 #: ../../library/os.path.rst:258
-msgid "Return ``True`` if both pathname arguments refer to the same file or directory (as indicated by device number and i-node number). Raise an exception if a :func:`os.stat` call on either pathname fails."
+msgid "Return ``True`` if both pathname arguments refer to the same file or directory (as indicated by device number and i-node number). Raise an exception if an :func:`os.stat` call on either pathname fails."
 msgstr ""
 
 #: ../../library/os.path.rst:262

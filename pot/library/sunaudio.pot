@@ -88,7 +88,7 @@ msgid "This method reads *size* samples from the audio input and returns them as
 msgstr ""
 
 #: ../../library/sunaudio.rst:125
-msgid "This method sets the audio device status parameters. The *status* parameter is an device status object as returned by :func:`getinfo` and possibly modified by the program."
+msgid "This method sets the audio device status parameters. The *status* parameter is a device status object as returned by :func:`getinfo` and possibly modified by the program."
 msgstr ""
 
 #: ../../library/sunaudio.rst:132

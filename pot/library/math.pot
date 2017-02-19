@@ -72,7 +72,7 @@ msgid "The algorithm's accuracy depends on IEEE-754 arithmetic guarantees and th
 msgstr ""
 
 #: ../../library/math.rst:103
-msgid "For further discussion and two alternative approaches, see the `ASPN cookbook recipes for accurate floating point summation <http://code.activestate.com/recipes/393090/>`_\\."
+msgid "For further discussion and two alternative approaches, see the `ASPN cookbook recipes for accurate floating point summation <https://code.activestate.com/recipes/393090/>`_\\."
 msgstr ""
 
 #: ../../library/math.rst:112

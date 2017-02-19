@@ -336,11 +336,11 @@ msgid "Checks for a character value that fits in the 7-bit ASCII set."
 msgstr ""
 
 #: ../../library/curses.ascii.rst:119
-msgid "Checks for an ASCII whitespace character."
+msgid "Checks for an ASCII whitespace character; space or horizontal tab."
 msgstr ""
 
 #: ../../library/curses.ascii.rst:124
-msgid "Checks for an ASCII control character (in the range 0x00 to 0x1f)."
+msgid "Checks for an ASCII control character (in the range 0x00 to 0x1f or 0x7f)."
 msgstr ""
 
 #: ../../library/curses.ascii.rst:129
@@ -412,7 +412,7 @@ msgid "The following function takes either a single-character string or integer 
 msgstr ""
 
 #: ../../library/curses.ascii.rst:215
-msgid "Return a string representation of the ASCII character *c*.  If *c* is printable, this string is the character itself.  If the character is a control character (0x00-0x1f) the string consists of a caret (``'^'``) followed by the corresponding uppercase letter. If the character is an ASCII delete (0x7f) the string is ``'^?'``.  If the character has its meta bit (0x80) set, the meta bit is stripped, the preceding rules applied, and ``'!'`` prepended to the result."
+msgid "Return a string representation of the ASCII character *c*.  If *c* is printable, this string is the character itself.  If the character is a control character (0x00--0x1f) the string consists of a caret (``'^'``) followed by the corresponding uppercase letter. If the character is an ASCII delete (0x7f) the string is ``'^?'``.  If the character has its meta bit (0x80) set, the meta bit is stripped, the preceding rules applied, and ``'!'`` prepended to the result."
 msgstr ""
 
 #: ../../library/curses.ascii.rst:225

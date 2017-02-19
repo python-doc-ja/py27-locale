@@ -116,7 +116,7 @@ msgid "Use :meth:`convert_charref` instead of hard-coding the conversion."
 msgstr ""
 
 #: ../../library/sgmllib.rst:144
-msgid "Convert a character reference to a string, or ``None``.  *ref* is the reference passed in as a string.  In the base implementation, *ref* must be a decimal number in the range 0-255.  It converts the code point found using the :meth:`convert_codepoint` method. If *ref* is invalid or out of range, this method returns ``None``.  This method is called by the default :meth:`handle_charref` implementation and by the attribute value parser."
+msgid "Convert a character reference to a string, or ``None``.  *ref* is the reference passed in as a string.  In the base implementation, *ref* must be a decimal number in the range 0--255.  It converts the code point found using the :meth:`convert_codepoint` method. If *ref* is invalid or out of range, this method returns ``None``.  This method is called by the default :meth:`handle_charref` implementation and by the attribute value parser."
 msgstr ""
 
 #: ../../library/sgmllib.rst:156
@@ -124,7 +124,7 @@ msgid "Convert a code point to a :class:`str` value.  Encodings can be handled h
 msgstr ""
 
 #: ../../library/sgmllib.rst:164
-msgid "This method is called to process a general entity reference of the form ``&ref;`` where *ref* is an general entity reference.  It converts *ref* by passing it to :meth:`convert_entityref`.  If a translation is returned, it calls the method :meth:`handle_data` with the translation; otherwise, it calls the method ``unknown_entityref(ref)``. The default :attr:`entitydefs` defines translations for ``&amp;``, ``&apos``, ``&gt;``, ``&lt;``, and ``&quot;``."
+msgid "This method is called to process a general entity reference of the form ``&ref;`` where *ref* is a general entity reference.  It converts *ref* by passing it to :meth:`convert_entityref`.  If a translation is returned, it calls the method :meth:`handle_data` with the translation; otherwise, it calls the method ``unknown_entityref(ref)``. The default :attr:`entitydefs` defines translations for ``&amp;``, ``&apos``, ``&gt;``, ``&lt;``, and ``&quot;``."
 msgstr ""
 
 #: ../../library/sgmllib.rst:171

@@ -98,43 +98,43 @@ msgid "Unicode provides many different character properties. The most often need
 msgstr ""
 
 #: ../../c-api/unicode.rst:119
-msgid "Return 1 or 0 depending on whether *ch* is a whitespace character."
+msgid "Return ``1`` or ``0`` depending on whether *ch* is a whitespace character."
 msgstr ""
 
 #: ../../c-api/unicode.rst:124
-msgid "Return 1 or 0 depending on whether *ch* is a lowercase character."
+msgid "Return ``1`` or ``0`` depending on whether *ch* is a lowercase character."
 msgstr ""
 
 #: ../../c-api/unicode.rst:129
-msgid "Return 1 or 0 depending on whether *ch* is an uppercase character."
+msgid "Return ``1`` or ``0`` depending on whether *ch* is an uppercase character."
 msgstr ""
 
 #: ../../c-api/unicode.rst:134
-msgid "Return 1 or 0 depending on whether *ch* is a titlecase character."
+msgid "Return ``1`` or ``0`` depending on whether *ch* is a titlecase character."
 msgstr ""
 
 #: ../../c-api/unicode.rst:139
-msgid "Return 1 or 0 depending on whether *ch* is a linebreak character."
+msgid "Return ``1`` or ``0`` depending on whether *ch* is a linebreak character."
 msgstr ""
 
 #: ../../c-api/unicode.rst:144
-msgid "Return 1 or 0 depending on whether *ch* is a decimal character."
+msgid "Return ``1`` or ``0`` depending on whether *ch* is a decimal character."
 msgstr ""
 
 #: ../../c-api/unicode.rst:149
-msgid "Return 1 or 0 depending on whether *ch* is a digit character."
+msgid "Return ``1`` or ``0`` depending on whether *ch* is a digit character."
 msgstr ""
 
 #: ../../c-api/unicode.rst:154
-msgid "Return 1 or 0 depending on whether *ch* is a numeric character."
+msgid "Return ``1`` or ``0`` depending on whether *ch* is a numeric character."
 msgstr ""
 
 #: ../../c-api/unicode.rst:159
-msgid "Return 1 or 0 depending on whether *ch* is an alphabetic character."
+msgid "Return ``1`` or ``0`` depending on whether *ch* is an alphabetic character."
 msgstr ""
 
 #: ../../c-api/unicode.rst:164
-msgid "Return 1 or 0 depending on whether *ch* is an alphanumeric character."
+msgid "Return ``1`` or ``0`` depending on whether *ch* is an alphanumeric character."
 msgstr ""
 
 #: ../../c-api/unicode.rst:166
@@ -207,7 +207,7 @@ msgid "Create a Unicode object from the char buffer *u*.  The bytes will be inte
 msgstr ""
 
 #: ../../c-api/unicode.rst:237
-msgid "Create a Unicode object from an UTF-8 encoded null-terminated char buffer *u*."
+msgid "Create a Unicode object from a UTF-8 encoded null-terminated char buffer *u*."
 msgstr ""
 
 #: ../../c-api/unicode.rst:245
@@ -250,7 +250,7 @@ msgid "int"
 msgstr ""
 
 #: ../../c-api/unicode.rst:262
-msgid "A single character, represented as an C int."
+msgid "A single character, represented as a C int."
 msgstr ""
 
 #: ../../c-api/unicode.rst:265
@@ -420,7 +420,7 @@ msgid "Return the length of the Unicode object."
 msgstr ""
 
 #: ../../c-api/unicode.rst:350
-msgid "Coerce an encoded object *obj* to an Unicode object and return a reference with incremented refcount."
+msgid "Coerce an encoded object *obj* to a Unicode object and return a reference with incremented refcount."
 msgstr ""
 
 #: ../../c-api/unicode.rst:353
@@ -456,7 +456,7 @@ msgid "Create a Unicode object from the :c:type:`wchar_t` buffer *w* of the give
 msgstr ""
 
 #: ../../c-api/unicode.rst:393
-msgid "Copy the Unicode object contents into the :c:type:`wchar_t` buffer *w*.  At most *size* :c:type:`wchar_t` characters are copied (excluding a possibly trailing 0-termination character).  Return the number of :c:type:`wchar_t` characters copied or -1 in case of an error.  Note that the resulting :c:type:`wchar_t` string may or may not be 0-terminated.  It is the responsibility of the caller to make sure that the :c:type:`wchar_t` string is 0-terminated in case this is required by the application. Also, note that the :c:type:`wchar_t*` string might contain null characters, which would cause the string to be truncated when used with most C functions."
+msgid "Copy the Unicode object contents into the :c:type:`wchar_t` buffer *w*.  At most *size* :c:type:`wchar_t` characters are copied (excluding a possibly trailing 0-termination character).  Return the number of :c:type:`wchar_t` characters copied or ``-1`` in case of an error.  Note that the resulting :c:type:`wchar_t` string may or may not be 0-terminated.  It is the responsibility of the caller to make sure that the :c:type:`wchar_t` string is 0-terminated in case this is required by the application. Also, note that the :c:type:`wchar_t*` string might contain null characters, which would cause the string to be truncated when used with most C functions."
 msgstr ""
 
 #: ../../c-api/unicode.rst:403
@@ -623,7 +623,7 @@ msgid "Return a Python string object holding the UTF-16 encoded value of the Uni
 msgstr ""
 
 #: ../../c-api/unicode.rst:664
-msgid "If *Py_UNICODE_WIDE* is defined, a single :c:type:`Py_UNICODE` value may get represented as a surrogate pair. If it is not defined, each :c:type:`Py_UNICODE` values is interpreted as an UCS-2 character."
+msgid "If *Py_UNICODE_WIDE* is defined, a single :c:type:`Py_UNICODE` value may get represented as a surrogate pair. If it is not defined, each :c:type:`Py_UNICODE` values is interpreted as a UCS-2 character."
 msgstr ""
 
 #: ../../c-api/unicode.rst:677
@@ -743,11 +743,11 @@ msgid "This codec is special in that it can be used to implement many different 
 msgstr ""
 
 #: ../../c-api/unicode.rst:858
-msgid "Decoding mappings must map single string characters to single Unicode characters, integers (which are then interpreted as Unicode ordinals) or None (meaning \"undefined mapping\" and causing an error)."
+msgid "Decoding mappings must map single string characters to single Unicode characters, integers (which are then interpreted as Unicode ordinals) or ``None`` (meaning \"undefined mapping\" and causing an error)."
 msgstr ""
 
 #: ../../c-api/unicode.rst:862
-msgid "Encoding mappings must map single Unicode characters to single string characters, integers (which are then interpreted as Latin-1 ordinals) or None (meaning \"undefined mapping\" and causing an error)."
+msgid "Encoding mappings must map single Unicode characters to single string characters, integers (which are then interpreted as Latin-1 ordinals) or ``None`` (meaning \"undefined mapping\" and causing an error)."
 msgstr ""
 
 #: ../../c-api/unicode.rst:866
@@ -787,7 +787,7 @@ msgid "Translate a :c:type:`Py_UNICODE` buffer of the given *size* by applying a
 msgstr ""
 
 #: ../../c-api/unicode.rst:919
-msgid "The *mapping* table must map Unicode ordinal integers to Unicode ordinal integers or None (causing deletion of the character)."
+msgid "The *mapping* table must map Unicode ordinal integers to Unicode ordinal integers or ``None`` (causing deletion of the character)."
 msgstr ""
 
 #: ../../c-api/unicode.rst:922
@@ -848,7 +848,7 @@ msgid "This function used an :c:type:`int` type for *maxsplit*. This might requi
 msgstr ""
 
 #: ../../c-api/unicode.rst:1011
-msgid "Split a Unicode string at line breaks, returning a list of Unicode strings. CRLF is considered to be one line break.  If *keepend* is 0, the Line break characters are not included in the resulting strings."
+msgid "Split a Unicode string at line breaks, returning a list of Unicode strings. CRLF is considered to be one line break.  If *keepend* is ``0``, the Line break characters are not included in the resulting strings."
 msgstr ""
 
 #: ../../c-api/unicode.rst:1018
@@ -856,7 +856,7 @@ msgid "Translate a string by applying a character mapping table to it and return
 msgstr ""
 
 #: ../../c-api/unicode.rst:1021
-msgid "The mapping table must map Unicode ordinal integers to Unicode ordinal integers or None (causing deletion of the character)."
+msgid "The mapping table must map Unicode ordinal integers to Unicode ordinal integers or ``None`` (causing deletion of the character)."
 msgstr ""
 
 #: ../../c-api/unicode.rst:1028
@@ -868,7 +868,7 @@ msgid "Join a sequence of strings using the given *separator* and return the res
 msgstr ""
 
 #: ../../c-api/unicode.rst:1040
-msgid "Return 1 if *substr* matches ``str[start:end]`` at the given tail end (*direction* == -1 means to do a prefix match, *direction* == 1 a suffix match), 0 otherwise. Return ``-1`` if an error occurred."
+msgid "Return ``1`` if *substr* matches ``str[start:end]`` at the given tail end (*direction* == ``-1`` means to do a prefix match, *direction* == ``1`` a suffix match), ``0`` otherwise. Return ``-1`` if an error occurred."
 msgstr ""
 
 #: ../../c-api/unicode.rst:1044
@@ -877,7 +877,7 @@ msgid "This function used an :c:type:`int` type for *start* and *end*. This migh
 msgstr ""
 
 #: ../../c-api/unicode.rst:1052
-msgid "Return the first position of *substr* in ``str[start:end]`` using the given *direction* (*direction* == 1 means to do a forward search, *direction* == -1 a backward search).  The return value is the index of the first match; a value of ``-1`` indicates that no match was found, and ``-2`` indicates that an error occurred and an exception has been set."
+msgid "Return the first position of *substr* in ``str[start:end]`` using the given *direction* (*direction* == ``1`` means to do a forward search, *direction* == ``-1`` a backward search).  The return value is the index of the first match; a value of ``-1`` indicates that no match was found, and ``-2`` indicates that an error occurred and an exception has been set."
 msgstr ""
 
 #: ../../c-api/unicode.rst:1066
@@ -889,7 +889,7 @@ msgid "This function returned an :c:type:`int` type and used an :c:type:`int` ty
 msgstr ""
 
 #: ../../c-api/unicode.rst:1077
-msgid "Replace at most *maxcount* occurrences of *substr* in *str* with *replstr* and return the resulting Unicode object. *maxcount* == -1 means replace all occurrences."
+msgid "Replace at most *maxcount* occurrences of *substr* in *str* with *replstr* and return the resulting Unicode object. *maxcount* == ``-1`` means replace all occurrences."
 msgstr ""
 
 #: ../../c-api/unicode.rst:1081
@@ -897,7 +897,7 @@ msgid "This function used an :c:type:`int` type for *maxcount*. This might requi
 msgstr ""
 
 #: ../../c-api/unicode.rst:1088
-msgid "Compare two strings and return -1, 0, 1 for less than, equal, and greater than, respectively."
+msgid "Compare two strings and return ``-1``, ``0``, ``1`` for less than, equal, and greater than, respectively."
 msgstr ""
 
 #: ../../c-api/unicode.rst:1094

@@ -24,7 +24,7 @@ msgid "The :mod:`whichdb` module's only function has been put into the :mod:`dbm
 msgstr ""
 
 #: ../../library/whichdb.rst:13
-msgid "The single function in this module attempts to guess which of the several simple database modules available--\\ :mod:`dbm`, :mod:`gdbm`, or :mod:`dbhash`\\ --should be used to open a given file."
+msgid "The single function in this module attempts to guess which of the several simple database modules available—:mod:`dbm`, :mod:`gdbm`, or :mod:`dbhash`\\ —should be used to open a given file."
 msgstr ""
 
 #: ../../library/whichdb.rst:20

@@ -690,7 +690,7 @@ msgid "Delete stamp with given *stampid*."
 msgstr ""
 
 #: ../../library/turtle.rst:532
-msgid "Delete all or first/last *n* of turtle's stamps.  If *n* is None, delete all stamps, if *n* > 0 delete first *n* stamps, else if *n* < 0 delete last *n* stamps."
+msgid "Delete all or first/last *n* of turtle's stamps.  If *n* is ``None``, delete all stamps, if *n* > 0 delete first *n* stamps, else if *n* < 0 delete last *n* stamps."
 msgstr ""
 
 #: ../../library/turtle.rst:555
@@ -1493,11 +1493,11 @@ msgid "if an integer, the height in pixels, if a float, a fraction of the screen
 msgstr ""
 
 #: ../../library/turtle.rst:1859
-msgid "if positive, starting position in pixels from the left edge of the screen, if negative from the right edge, if None, center window horizontally"
+msgid "if positive, starting position in pixels from the left edge of the screen, if negative from the right edge, if ``None``, center window horizontally"
 msgstr ""
 
 #: ../../library/turtle.rst:1862
-msgid "if positive, starting position in pixels from the top edge of the screen, if negative from the bottom edge, if None, center window vertically"
+msgid "if positive, starting position in pixels from the top edge of the screen, if negative from the bottom edge, if ``None``, center window vertically"
 msgstr ""
 
 #: ../../library/turtle.rst:1876

@@ -208,7 +208,7 @@ msgid "This utility function prints a warning message to ``sys.stderr`` when an 
 msgstr ""
 
 #: ../../c-api/exceptions.rst:406
-msgid "The function is called with a single argument *obj* that identifies the context in which the unraisable exception occurred. The repr of *obj* will be printed in the warning message."
+msgid "The function is called with a single argument *obj* that identifies the context in which the unraisable exception occurred. If possible, the repr of *obj* will be printed in the warning message."
 msgstr ""
 
 #: ../../c-api/exceptions.rst:414

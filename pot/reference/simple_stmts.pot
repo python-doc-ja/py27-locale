@@ -289,7 +289,7 @@ msgid "In Python 2.2, the :keyword:`yield` statement was only allowed when the `
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:542
-msgid ":pep:`0255` - Simple Generators"
+msgid ":pep:`255` - Simple Generators"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:542
@@ -297,7 +297,7 @@ msgid "The proposal for adding generators and the :keyword:`yield` statement to 
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:545
-msgid ":pep:`0342` - Coroutines via Enhanced Generators"
+msgid ":pep:`342` - Coroutines via Enhanced Generators"
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:545
