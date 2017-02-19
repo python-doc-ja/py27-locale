@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-06-21 04:14+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:03+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -265,102 +264,106 @@ msgstr "アーカイブファイル (zip や tar など) を作成し、その�
 #: ../../library/shutil.rst:268
 msgid ""
 "*base_name* is the name of the file to create, including the path, minus any"
-" format-specific extension. *format* is the archive format: one of \"zip\", "
-"\"tar\", \"bztar\" or \"gztar\"."
-msgstr "*base_name* は作成するファイルの名前で、パスを含み、フォーマット特有の拡張子はすべて除きます。 *format* はアーカイブフォーマットで、 \"zip\", \"tar\", \"bztar\" または \"gztar\" のいずれかです。"
+" format-specific extension. *format* is the archive format: one of \"zip\" "
+"(if the :mod:`zlib` module or external ``zip`` executable is available), "
+"\"tar\", \"gztar\" (if the :mod:`zlib` module is available), or \"bztar\" "
+"(if the :mod:`bz2` module is available)."
+msgstr ""
 
-#: ../../library/shutil.rst:272
+#: ../../library/shutil.rst:274
 msgid ""
 "*root_dir* is a directory that will be the root directory of the archive; "
 "ie. we typically chdir into *root_dir* before creating the archive."
 msgstr "*root_dir* は、アーカイブのルートディレクトリとなるディレクトリです。すなわち、一般的には、アーカイブを作成する前に *root_dir* をカレントディレクトリにします。"
 
-#: ../../library/shutil.rst:276
+#: ../../library/shutil.rst:278
 msgid ""
 "*base_dir* is the directory where we start archiving from; ie. *base_dir* "
 "will be the common prefix of all files and directories in the archive."
 msgstr "*base_dir* は、アーカイブを開始するディレクトリです。すなわち、 *base_dir* は、アーカイブのすべてのファイルとディレクトリに共通する接頭辞になります。"
 
-#: ../../library/shutil.rst:280
+#: ../../library/shutil.rst:282
 msgid "*root_dir* and *base_dir* both default to the current directory."
 msgstr "*root_dir* と *base_dir* のどちらも、デフォルトはカレントディレクトリです。"
 
-#: ../../library/shutil.rst:282
+#: ../../library/shutil.rst:284
 msgid ""
 "*owner* and *group* are used when creating a tar archive. By default, uses "
 "the current owner and group."
 msgstr "*owner* と *group* は、tar アーカイブを作成するときに使われます。デフォルトでは、カレントのオーナとグループを使います。"
 
-#: ../../library/shutil.rst:285
+#: ../../library/shutil.rst:287
 msgid ""
 "*logger* must be an object compatible with :pep:`282`, usually an instance "
 "of :class:`logging.Logger`."
 msgstr "*logger* は :pep:`282` に互換なオブジェクトでなければなりません。これは普通は :class:`logging.Logger` のインスタンスです。"
 
-#: ../../library/shutil.rst:293
+#: ../../library/shutil.rst:295
 msgid ""
 "Return a list of supported formats for archiving. Each element of the "
 "returned sequence is a tuple ``(name, description)``."
 msgstr "アーカイブ化をサポートしているフォーマットのリストを返します。返されるシーケンスのそれぞれの要素は、タプル ``(name, description)`` です。"
 
-#: ../../library/shutil.rst:296
+#: ../../library/shutil.rst:298
 msgid "By default :mod:`shutil` provides these formats:"
 msgstr "デフォルトでは、 :mod:`shutil` はこれらのフォーマットを提供しています:"
 
-#: ../../library/shutil.rst:298
-msgid "*gztar*: gzip'ed tar-file"
-msgstr "*gztar*: gzip で圧縮された tar ファイル"
-
-#: ../../library/shutil.rst:299
-msgid "*bztar*: bzip2'ed tar-file"
-msgstr "*bztar*: bzip2 で圧縮された tar ファイル"
-
 #: ../../library/shutil.rst:300
-msgid "*tar*: uncompressed tar file"
-msgstr "*tar*: 圧縮されていない tar ファイル"
+msgid ""
+"*zip*: ZIP file (if the :mod:`zlib` module or external ``zip`` executable is"
+" available)."
+msgstr ""
 
-#: ../../library/shutil.rst:301
-msgid "*zip*: ZIP file"
-msgstr "*zip*: ZIP ファイル"
+#: ../../library/shutil.rst:302
+msgid "*tar*: uncompressed tar file."
+msgstr "*tar*: 圧縮されていない tar ファイル。"
 
 #: ../../library/shutil.rst:303
+msgid "*gztar*: gzip'ed tar-file (if the :mod:`zlib` module is available)."
+msgstr "*gztar*: gzip で圧縮された tar ファイル (:mod:`zlib` モジュールが利用可能な場合)。"
+
+#: ../../library/shutil.rst:304
+msgid "*bztar*: bzip2'ed tar-file (if the :mod:`bz2` module is available)."
+msgstr "*bztar*: bzip2 で圧縮された tar ファイル (:mod:`bz2` モジュールが利用可能な場合)。"
+
+#: ../../library/shutil.rst:306
 msgid ""
 "You can register new formats or provide your own archiver for any existing "
 "formats, by using :func:`register_archive_format`."
 msgstr ":func:`register_archive_format` を使って、新しいフォーマットを登録したり、既存のフォーマットに独自のアーカイバを提供したりできます。"
 
-#: ../../library/shutil.rst:311
+#: ../../library/shutil.rst:314
 msgid ""
 "Register an archiver for the format *name*. *function* is a callable that "
 "will be used to invoke the archiver."
 msgstr "フォーマット *name* のアーカイバを登録します。 *function* は、アーカイバを呼び出すのに使われる呼び出し可能オブジェクトです。"
 
-#: ../../library/shutil.rst:314
+#: ../../library/shutil.rst:317
 msgid ""
 "If given, *extra_args* is a sequence of ``(name, value)`` that will be used "
 "as extra keywords arguments when the archiver callable is used."
 msgstr "*extra_args* は、与えられるなら ``(name, value)`` のシーケンスで、アーカイバ呼び出し可能オブジェクトが使われるときの追加キーワード引数に使われます。"
 
-#: ../../library/shutil.rst:317
+#: ../../library/shutil.rst:320
 msgid ""
 "*description* is used by :func:`get_archive_formats` which returns the list "
 "of archivers. Defaults to an empty list."
 msgstr "*description* は、アーカイバのリストを返す :func:`get_archive_formats` で使われます。デフォルトでは、空のリストです。"
 
-#: ../../library/shutil.rst:325
+#: ../../library/shutil.rst:328
 msgid "Remove the archive format *name* from the list of supported formats."
 msgstr "アーカイブフォーマット *name* を、サポートされているフォーマットのリストから取り除きます。"
 
-#: ../../library/shutil.rst:333
+#: ../../library/shutil.rst:336
 msgid "Archiving example"
 msgstr "アーカイブ化の例"
 
-#: ../../library/shutil.rst:335
+#: ../../library/shutil.rst:338
 msgid ""
 "In this example, we create a gzip'ed tar-file archive containing all files "
 "found in the :file:`.ssh` directory of the user::"
 msgstr "この例では、ユーザの :file:`.ssh` ディレクトリにあるすべてのファイルを含む、 gzip された tar ファイルアーカイブを作成します::"
 
-#: ../../library/shutil.rst:345
-msgid "The resulting archive contains::"
-msgstr "結果のアーカイブは、以下のものを含みます::"
+#: ../../library/shutil.rst:348
+msgid "The resulting archive contains:"
+msgstr "結果のアーカイブは、以下のものを含みます:"

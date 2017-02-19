@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-05-08 08:57+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:13+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -126,10 +125,10 @@ msgid ""
 "and :program:`emacs` among them. If you want a more Mac-like editor, "
 ":program:`BBEdit` or :program:`TextWrangler` from Bare Bones Software (see "
 "http://www.barebones.com/products/bbedit/index.html) are good choices, as is"
-" :program:`TextMate` (see http://macromates.com/). Other editors include "
+" :program:`TextMate` (see https://macromates.com/). Other editors include "
 ":program:`Gvim` (http://macvim.org) and :program:`Aquamacs` "
 "(http://aquamacs.org/)."
-msgstr "もし Python スクリプトをターミナルのコマンドラインや Finder から実行したい場合は最初にエディタでスクリプトを作る必要があります。 Mac OS X には :program:`vim` や :program:`emacs` などの Unix の標準のラインエディタが備わっています。もしもっと Mac らしいエディタが欲しい場合には、Bare Bones Software (http://www.barebones.com/products/bbedit/index.html を参照) の :program:`BBEdit` や :program:`TextWrangler` もしくは :program:`TextMate` (see http://macromates.com/) は良い選択候補です。他には :program:`Gvim` (http://macvim.org) や :program:`Aquamacs` (http://aquamacs.org/) などがあります。"
+msgstr "もし Python スクリプトをターミナルのコマンドラインや Finder から実行したい場合は最初にエディタでスクリプトを作る必要があります。 Mac OS X には :program:`vim` や :program:`emacs` などの Unix の標準のラインエディタが備わっています。もしもっと Mac らしいエディタが欲しい場合には、Bare Bones Software (http://www.barebones.com/products/bbedit/index.html を参照) の :program:`BBEdit` や :program:`TextWrangler` もしくは :program:`TextMate` (https://macromates.com/) は良い選択候補です。他には :program:`Gvim` (http://macvim.org) や :program:`Aquamacs` (http://aquamacs.org/) などがあります。"
 
 #: ../../using/mac.rst:79
 msgid ""
@@ -242,10 +241,11 @@ msgstr "*PyObjC* は Mac の最新の開発基盤である Apple の Objective-C
 #: ../../using/mac.rst:153
 msgid ""
 "The standard Python GUI toolkit is :mod:`Tkinter`, based on the cross-"
-"platform Tk toolkit (http://www.tcl.tk). An Aqua-native version of Tk is "
+"platform Tk toolkit (https://www.tcl.tk). An Aqua-native version of Tk is "
 "bundled with OS X by Apple, and the latest version can be downloaded and "
-"installed from http://www.activestate.com; it can also be built from source."
-msgstr "標準の Python の GUI ツールキットは :mod:`Tkinter` で、クロスプラットフォームの Tk ツールキット (http://www.tcl.tk) をベースにしています。 Aqua ネイティブ版の Tk は OS X に入っており、最新バージョンが http://www.activestate.com からダウンロードおよびインストールできます; またソースからビルドすることもできます。"
+"installed from https://www.activestate.com; it can also be built from "
+"source."
+msgstr ""
 
 #: ../../using/mac.rst:158
 msgid ""
@@ -258,8 +258,8 @@ msgstr "*wxPython* は別の人気のあるクロスプラットフォームの 
 msgid ""
 "*PyQt* is another popular cross-platform GUI toolkit that runs natively on "
 "Mac OS X. More information can be found at "
-"http://www.riverbankcomputing.co.uk/software/pyqt/intro."
-msgstr "*PyQt* は別の人気のあるクロスプラットフォームの GUI ツールキットで Mac OS X 上でネイティブに動作します。さらなる情報は http://www.riverbankcomputing.co.uk/software/pyqt/intro にあります。"
+"https://riverbankcomputing.com/software/pyqt/intro."
+msgstr "*PyQt* は別の人気のあるクロスプラットフォームの GUI ツールキットで Mac OS X 上でネイティブに動作します。詳しい情報は https://riverbankcomputing.com/software/pyqt/intro にあります。"
 
 #: ../../using/mac.rst:167
 msgid "Distributing Python Applications on the Mac"

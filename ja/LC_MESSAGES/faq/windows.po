@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2015-12-03 19:04+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:42+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -444,5 +443,5 @@ msgstr "たまに、web ブラウザで Windows マシンにドキュメント�
 msgid ""
 "Simply rename the downloaded file to have the .TGZ extension, and WinZip "
 "will be able to handle it.  (If your copy of WinZip doesn't, get a newer one"
-" from http://www.winzip.com.)"
-msgstr "単純に、ダウンロードしたファイルを名付け直して拡張子を .TGZ にしてください。そうすれば WinZip で扱えます。(手元の WinZip でできなかったら、http://www.winzip.com から新しいのをもらいましょう)"
+" from https://www.winzip.com.)"
+msgstr "単純に、ダウンロードしたファイルを名付け直して拡張子を .TGZ にしてください。そうすれば WinZip で扱えます。(手元の WinZip でできなかったら、https://www.winzip.com から新しいのをもらいましょう)"

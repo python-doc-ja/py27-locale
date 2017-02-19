@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-05 13:00+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:57+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,7 +32,7 @@ msgid ""
 msgstr "このモジュールでは二つのクラス :class:`Mailbox` および :class:`Message` をディスク上のメールボックスとそこに収められたメッセージへのアクセスと操作のために定義しています。 :class:`Mailbox` は辞書のようなキーからメッセージへの対応付けを提供しています。 :class:`Message` は :mod:`email.message` モジュールの :class:`~email.message.Message` を拡張して形式ごとの状態と振る舞いを追加しています。サポートされるメールボックスの形式は Maildir, mbox, MH, Babyl, MMDF です。"
 
 #: ../../library/mailbox.rst:22
-msgid "Module email"
+msgid "Module :mod:`email`"
 msgstr ":mod:`email` モジュール"
 
 #: ../../library/mailbox.rst:23
@@ -447,16 +446,17 @@ msgid ""
 msgstr "ホストのプラットフォームによっては、返されたファイルが開いている間、元になったメッセージを変更したり削除したりできない場合があります。"
 
 #: ../../library/mailbox.rst:410
-msgid "maildir man page from qmail"
-msgstr "`qmail の maildir man ページ <http://www.qmail.org/man/man5/maildir.html>`_"
+msgid ""
+"`maildir man page from qmail <http://www.qmail.org/man/man5/maildir.html>`_"
+msgstr "`qmail の maildir マニュアルページ <http://www.qmail.org/man/man5/maildir.html>`_"
 
 #: ../../library/mailbox.rst:410
 msgid "The original specification of the format."
 msgstr "Maildir 形式のオリジナルの仕様。"
 
 #: ../../library/mailbox.rst:414
-msgid "Using maildir format"
-msgstr "`Using maildir format <http://cr.yp.to/proto/maildir.html>`_"
+msgid "`Using maildir format <https://cr.yp.to/proto/maildir.html>`_"
+msgstr "`Using maildir format <https://cr.yp.to/proto/maildir.html>`_"
 
 #: ../../library/mailbox.rst:413
 msgid ""
@@ -465,8 +465,9 @@ msgid ""
 msgstr "Maildir 形式の発明者による注意書き。更新された名前生成規則と \"info\" の解釈についても含まれます。"
 
 #: ../../library/mailbox.rst:417
-msgid "maildir man page from Courier"
-msgstr "`Courier の maildir man ページ <http://www.courier-mta.org/maildir.html>`_"
+msgid ""
+"`maildir man page from Courier <http://www.courier-mta.org/maildir.html>`_"
+msgstr "`Courier の maildir マニュアルページ <http://www.courier-mta.org/maildir.html>`_"
 
 #: ../../library/mailbox.rst:417
 msgid ""
@@ -529,16 +530,18 @@ msgid ""
 msgstr "3種類のロック機構が使われます --- ドットロッキングと、もし使用可能ならば :c:func:`flock` と :c:func:`lockf` システムコールです。"
 
 #: ../../library/mailbox.rst:469
-msgid "mbox man page from qmail"
-msgstr "`qmail の mbox man ページ <http://www.qmail.org/man/man5/mbox.html>`_"
+msgid "`mbox man page from qmail <http://www.qmail.org/man/man5/mbox.html>`_"
+msgstr "`qmail の mbox マニュアルページ  <http://www.qmail.org/man/man5/mbox.html>`_"
 
 #: ../../library/mailbox.rst:469
 msgid "A specification of the format and its variations."
 msgstr "mbox 形式の仕様および種々のバリエーション。"
 
 #: ../../library/mailbox.rst:472
-msgid "mbox man page from tin"
-msgstr "`tin の mbox man ページ <http://www.tin.org/bin/man.cgi?section=5&topic=mbox>`_"
+msgid ""
+"`mbox man page from tin "
+"<http://www.tin.org/bin/man.cgi?section=5&topic=mbox>`_"
+msgstr "`tin の mbox マニュアルページ <http://www.tin.org/bin/man.cgi?section=5&topic=mbox>`_"
 
 #: ../../library/mailbox.rst:472
 msgid "Another specification of the format, with details on locking."
@@ -546,8 +549,9 @@ msgstr "もう一つの mbox 形式の仕様でロックについての詳細を
 
 #: ../../library/mailbox.rst:475
 msgid ""
-"Configuring Netscape Mail on Unix: Why The Content-Length Format is Bad"
-msgstr "`Configuring Netscape Mail on Unix: Why The Content-Length Format is Bad <http://www.jwz.org/doc/content-length.html>`_"
+"`Configuring Netscape Mail on Unix: Why The Content-Length Format is Bad "
+"<https://www.jwz.org/doc/content-length.html>`_"
+msgstr "`Configuring Netscape Mail on Unix: Why The Content-Length Format is Bad <https://www.jwz.org/doc/content-length.html>`_"
 
 #: ../../library/mailbox.rst:475
 msgid ""
@@ -555,7 +559,10 @@ msgid ""
 msgstr "バリエーションの一つではなくオリジナルの mbox を使う理由。"
 
 #: ../../library/mailbox.rst:477
-msgid "\"mbox\" is a family of several mutually incompatible mailbox formats"
+msgid ""
+"`\"mbox\" is a family of several mutually incompatible mailbox formats "
+"<http://homepage.ntlworld.com/jonathan.deboynepollard/FGA/mail-mbox-"
+"formats.html>`_"
 msgstr "`\"mbox\" is a family of several mutually incompatible mailbox formats <http://homepage.ntlworld.com/jonathan.deboynepollard/FGA/mail-mbox-formats.html>`_"
 
 #: ../../library/mailbox.rst:478
@@ -679,7 +686,7 @@ msgid ""
 msgstr ":class:`MH` インスタンスは開いたファイルを保持しませんのでこのメソッドは :meth:`unlock` と同じです。"
 
 #: ../../library/mailbox.rst:604
-msgid "nmh - Message Handling System"
+msgid "`nmh - Message Handling System <http://www.nongnu.org/nmh/>`_"
 msgstr "`nmh - Message Handling System <http://www.nongnu.org/nmh/>`_"
 
 #: ../../library/mailbox.rst:604
@@ -689,7 +696,9 @@ msgid ""
 msgstr ":program:`mh` の改良版である :program:`nmh` のホームページ。"
 
 #: ../../library/mailbox.rst:607
-msgid "MH & nmh: Email for Users & Programmers"
+msgid ""
+"`MH & nmh: Email for Users & Programmers <http://rand-"
+"mh.sourceforge.net/book/>`_"
 msgstr "`MH & nmh: Email for Users & Programmers <http://rand-mh.sourceforge.net/book/>`_"
 
 #: ../../library/mailbox.rst:607
@@ -769,16 +778,19 @@ msgid ""
 msgstr "Babyl メールボックスにおいて、メッセージのヘッダはボディと繋がって格納されていません。ファイル風の表現を生成するために、ヘッダとボディが (:mod:`StringIO` モジュールの) ファイルと同じ API を持つ :class:`~StringIO.StringIO` インスタンスに一緒にコピーされます。その結果、ファイル風オブジェクトは本当に元にしているメールボックスとは独立していますが、文字列表現と比べてメモリーを節約することにもなりません。"
 
 #: ../../library/mailbox.rst:681
-msgid "Format of Version 5 Babyl Files"
-msgstr "`Format of Version 5 Babyl Files <http://quimby.gnus.org/notes/BABYL>`_"
+msgid ""
+"`Format of Version 5 Babyl Files <https://quimby.gnus.org/notes/BABYL>`_"
+msgstr "`Format of Version 5 Babyl Files <https://quimby.gnus.org/notes/BABYL>`_"
 
 #: ../../library/mailbox.rst:681
 msgid "A specification of the Babyl format."
 msgstr "Babyl 形式の仕様。"
 
 #: ../../library/mailbox.rst:683
-msgid "Reading Mail with Rmail"
-msgstr "`Reading Mail with Rmail <http://www.gnu.org/software/emacs/manual/html_node/emacs/Rmail.html>`_"
+msgid ""
+"`Reading Mail with Rmail "
+"<https://www.gnu.org/software/emacs/manual/html_node/emacs/Rmail.html>`_"
+msgstr "`Reading Mail with Rmail <https://www.gnu.org/software/emacs/manual/html_node/emacs/Rmail.html>`_"
 
 #: ../../library/mailbox.rst:684
 msgid "The Rmail manual, with some information on Babyl semantics."
@@ -825,8 +837,10 @@ msgid ""
 msgstr ":class:`MMDF` インスタンスに対し :meth:`flush` や :meth:`close` を呼び出した後でファイルを使用すると予期しない結果を引き起こしたり例外が送出されたりすることがあります。"
 
 #: ../../library/mailbox.rst:732
-msgid "mmdf man page from tin"
-msgstr "`tin の mmdf man page <http://www.tin.org/bin/man.cgi?section=5&topic=mmdf>`_"
+msgid ""
+"`mmdf man page from tin "
+"<http://www.tin.org/bin/man.cgi?section=5&topic=mmdf>`_"
+msgstr "`mmdf man page from tin <http://www.tin.org/bin/man.cgi?section=5&topic=mmdf>`_"
 
 #: ../../library/mailbox.rst:732
 msgid ""
@@ -834,8 +848,8 @@ msgid ""
 msgstr "ニュースリーダ tin のドキュメント中の MMDF 形式仕様。"
 
 #: ../../library/mailbox.rst:735
-msgid "MMDF"
-msgstr "`MMDF <http://en.wikipedia.org/wiki/MMDF>`_"
+msgid "`MMDF <https://en.wikipedia.org/wiki/MMDF>`_"
+msgstr "`MMDF <https://en.wikipedia.org/wiki/MMDF>`_"
 
 #: ../../library/mailbox.rst:735
 msgid ""

@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-29 06:44+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:55+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,15 +34,16 @@ msgid ""
 " formatted in the HyperText Mark-up Language (HTML).  The class is not "
 "directly concerned with I/O --- it must be provided with input in string "
 "form via a method, and makes calls to methods of a \"formatter\" object in "
-"order to produce output.  The :class:`HTMLParser` class is designed to be "
-"used as a base class for other classes in order to add functionality, and "
-"allows most of its methods to be extended or overridden.  In turn, this "
-"class is derived from and extends the :class:`SGMLParser` class defined in "
-"module :mod:`sgmllib`.  The :class:`HTMLParser` implementation supports the "
-"HTML 2.0 language as described in :rfc:`1866`.  Two implementations of "
-"formatter objects are provided in the :mod:`formatter` module; refer to the "
-"documentation for that module for information on the formatter interface."
-msgstr "このモジュールでは、ハイパーテキスト記述言語 (HTML, HyperText Mark-up Language) 形式で書式化されたテキストファイルを解析するための基盤として役立つクラスを定義しています。このクラスは I/O と直接的には接続されません --- このクラスにはメソッドを介して文字列形式の入力を提供する必要があり、出力を生成するには \"フォーマッタ (formatter)\" オブジェクトのメソッドを何度か呼び出さなくてはなりません。:class:`HTMLParser` クラスは、機能を追加するために他のクラスの基底クラスとして利用するように設計されており、ほとんどのメソッドが拡張したり上書きしたりできるようになっています。さらにこのクラスは :mod:`sgmllib` モジュールで定義されている :class:`SGMLParser` クラスから派生しており、その機能を拡張しています。 :class:`HTMLParser` の実装は、 :rfc:`1866` で解説されている HTML 2.0 記述言語をサポートします。 :mod:`formatter` では 2 つのフォーマッタオブジェクト実装が提供されています; フォーマッタのインタフェースについての情報は :mod:`formatter` モジュールのドキュメントを参照してください。"
+"order to produce output.  The :class:`~HTMLParser.HTMLParser` class is "
+"designed to be used as a base class for other classes in order to add "
+"functionality, and allows most of its methods to be extended or overridden."
+"  In turn, this class is derived from and extends the :class:`SGMLParser` "
+"class defined in module :mod:`sgmllib`.  The :class:`~HTMLParser.HTMLParser`"
+" implementation supports the HTML 2.0 language as described in :rfc:`1866`."
+"  Two implementations of formatter objects are provided in the "
+":mod:`formatter` module; refer to the documentation for that module for "
+"information on the formatter interface."
+msgstr ""
 
 #: ../../library/htmllib.rst:36
 msgid ""
@@ -86,19 +86,19 @@ msgstr "このモジュールではパーザクラスと例外を一つづつ定
 #: ../../library/htmllib.rst:66
 msgid ""
 "This is the basic HTML parser class.  It supports all entity names required "
-"by the XHTML 1.0 Recommendation (http://www.w3.org/TR/xhtml1).   It also "
+"by the XHTML 1.0 Recommendation (https://www.w3.org/TR/xhtml1).   It also "
 "defines handlers for all HTML 2.0 and many HTML 3.0 and 3.2 elements."
-msgstr "基底となる HTML パーザクラスです。XHTML 1.0 仕様 (http://www.w3.org/TR/xhtml1) 勧告で要求されている全てのエンティティ名をサポートしています。また、全ての HTML 2.0 の要素および HTML 3.0、3.2 の多くの要素のハンドラを定義しています。"
+msgstr ""
 
 #: ../../library/htmllib.rst:73
 msgid ""
-"Exception raised by the :class:`HTMLParser` class when it encounters an "
-"error while parsing."
-msgstr ":class:`HTMLParser` クラスがパーズ処理中にエラーに遭遇した場合に送出する例外です。"
+"Exception raised by the :class:`~HTMLParser.HTMLParser` class when it "
+"encounters an error while parsing."
+msgstr ""
 
 #: ../../library/htmllib.rst:83
-msgid "Module formatter"
-msgstr ":mod:`formatter` モジュール"
+msgid "Module :mod:`formatter`"
+msgstr ""
 
 #: ../../library/htmllib.rst:82
 msgid ""
@@ -107,8 +107,8 @@ msgid ""
 msgstr "抽象化された書式イベントの流れを writer オブジェクト上の特定の出力イベントに変換するためのインターフェース。"
 
 #: ../../library/htmllib.rst:88
-msgid "Module HTMLParser"
-msgstr ":mod:`HTMLParser` モジュール"
+msgid "Module :mod:`HTMLParser`"
+msgstr ""
 
 #: ../../library/htmllib.rst:86
 msgid ""
@@ -118,20 +118,20 @@ msgid ""
 msgstr "HTML パーザのひとつです。やや低いレベルでしか入力を扱えませんが、XHTML を扱うことができるように設計されています。\"広く知られている HTML (HTML as deployed)\" では使われておらずかつ XHTML では正しくないとされる SGML 構文のいくつかは実装されていません。"
 
 #: ../../library/htmllib.rst:91
-msgid "Module htmlentitydefs"
-msgstr ":mod:`htmlentitydefs` モジュール"
+msgid "Module :mod:`htmlentitydefs`"
+msgstr ""
 
 #: ../../library/htmllib.rst:91
 msgid "Definition of replacement text for XHTML 1.0  entities."
 msgstr "XHTML 1.0 エンティティに対する置換テキストの定義。"
 
 #: ../../library/htmllib.rst:93
-msgid "Module sgmllib"
-msgstr ":mod:`sgmllib` モジュール"
+msgid "Module :mod:`sgmllib`"
+msgstr ""
 
 #: ../../library/htmllib.rst:94
-msgid "Base class for :class:`HTMLParser`."
-msgstr ":class:`HTMLParser` の基底クラス。"
+msgid "Base class for :class:`~HTMLParser.HTMLParser`."
+msgstr ""
 
 #: ../../library/htmllib.rst:100
 msgid "HTMLParser Objects"
@@ -139,9 +139,10 @@ msgstr "HTMLParser オブジェクト"
 
 #: ../../library/htmllib.rst:102
 msgid ""
-"In addition to tag methods, the :class:`HTMLParser` class provides some "
-"additional methods and instance variables for use within tag methods."
-msgstr "タグメソッドに加えて、 :class:`HTMLParser` クラスではタグメソッドで利用するためのいくつかのメソッドとインスタンス変数を提供しています。"
+"In addition to tag methods, the :class:`~HTMLParser.HTMLParser` class "
+"provides some additional methods and instance variables for use within tag "
+"methods."
+msgstr ""
 
 #: ../../library/htmllib.rst:108
 msgid "This is the formatter instance associated with the parser."
@@ -213,10 +214,10 @@ msgid ""
 "This module defines three dictionaries, ``name2codepoint``, "
 "``codepoint2name``, and ``entitydefs``. ``entitydefs`` is used by the "
 ":mod:`htmllib` module to provide the :attr:`entitydefs` attribute of the "
-":class:`HTMLParser` class.  The definition provided here contains all the "
-"entities defined by XHTML 1.0  that can be handled using simple textual "
-"substitution in the Latin-1 character set (ISO-8859-1)."
-msgstr "このモジュールでは ``name2codepoint`` 、 ``codepoint2name`` 、 ``entitydefs`` の三つの辞書を定義しています。 ``entitydefs`` は :mod:`htmllib` モジュールで :class:`HTMLParser` クラスの :attr:`entitydefs` メンバを定義するために使われます。このモジュールでは XHTML 1.0 で定義された全てのエンティティを提供しており、 Latin-1 キャラクタセット (ISO-8859-1)の簡単なテキスト置換を行う事ができます。"
+":class:`~HTMLParser.HTMLParser` class.  The definition provided here "
+"contains all the entities defined by XHTML 1.0  that can be handled using "
+"simple textual substitution in the Latin-1 character set (ISO-8859-1)."
+msgstr ""
 
 #: ../../library/htmllib.rst:184
 msgid ""

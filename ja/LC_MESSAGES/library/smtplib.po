@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-04-15 18:31+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:04+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,7 +35,7 @@ msgstr ":mod:`smtplib` モジュールは、SMTPまたはESMTPのリスナーデ
 
 #: ../../library/smtplib.rst:25
 msgid ""
-"A :class:`SMTP` instance encapsulates an SMTP connection.  It has methods "
+"An :class:`SMTP` instance encapsulates an SMTP connection.  It has methods "
 "that support a full repertoire of SMTP and ESMTP operations. If the optional"
 " host and port parameters are given, the SMTP :meth:`connect` method is "
 "called with those parameters during initialization.  If specified, "
@@ -48,7 +47,7 @@ msgid ""
 "like the connection attempt (if not specified, the global default timeout "
 "setting will be used).  If the timeout expires, :exc:`socket.timeout` is "
 "raised."
-msgstr ":class:`SMTP` インスタンスはSMTPコネクションをカプセル化し、 SMTPとESMTPの命令をサポートをします。オプションであるhostとportを与えた場合は、 SMTPクラスのインスタンスが作成されると同時に、 :meth:`connect` メソッドを呼び出し初期化されます。:meth:`connect` 呼び出しが成功コード以外を返した場合、 :exc:`SMTPConnectError` 例外が送出されます。*local_hostname* を指定する場合、これは HELO/EHLO コマンドでのローカルホストの FQDN として使われます。指定しない場合はローカルホスト名は :func:`socket.getfqdn` が使われます。オプションの *timeout* 引数を与える場合、コネクションの接続時などのブロックする操作におけるタイムアウト時間を秒数で設定します。(指定されなかった場合は、グローバルのデフォルトタイムアウト設定が利用されます)。タイムアウトに達すると :exc:`socket.timeout` 例外が送出されます。"
+msgstr ""
 
 #: ../../library/smtplib.rst:38
 msgid ""
@@ -63,7 +62,7 @@ msgstr "*timeout* が追加されました"
 
 #: ../../library/smtplib.rst:48
 msgid ""
-"A :class:`SMTP_SSL` instance behaves exactly the same as instances of "
+"An :class:`SMTP_SSL` instance behaves exactly the same as instances of "
 ":class:`SMTP`. :class:`SMTP_SSL` should be used for situations where SSL is "
 "required from the beginning of the connection and using :meth:`starttls` is "
 "not appropriate. If *host* is not specified, the local host is used. If "
@@ -75,7 +74,7 @@ msgid ""
 "operations like the connection attempt (if not specified, the global default"
 " timeout setting will be used).  If the timeout expires, "
 ":exc:`socket.timeout` is raised."
-msgstr ":class:`SMTP_SSL` のインスタンスは :class:`SMTP` のインスタンスと全く同じように動作します。 :class:`SMTP_SSL` は、接続の最初の段階からSSLが要求され、 :meth:`starttls` では対応できない場合にのみ利用されるべきです。 *host* が指定されなかった場合は、localhostが利用されます。 *port* が指定されなかった場合は、標準の SMTP-over-SSL ポート(465) が利用されます。 *local_hostname* は :class:`SMTP` クラスのものと同じです。 *keyfile* と *certfile* もオプションで、SSL接続のための、PEMフォーマットのプライベートキーと、証明パス(certificate chain)ファイルを指定することができます。オプションの *timeout* 引数を与える場合、コネクションの接続時などのブロックする操作におけるタイムアウト時間を秒数で設定します。(指定されなかった場合は、グローバルのデフォルトタイムアウト設定が利用されます)。タイムアウトに達すると :exc:`socket.timeout` 例外が送出されます。"
+msgstr ""
 
 #: ../../library/smtplib.rst:66
 msgid ""
@@ -152,7 +151,7 @@ msgid ""
 msgstr "SMTP 認証が失敗しました。最もあり得る可能性は、サーバーがユーザ名/パスワードのペアを受付なかった事です。"
 
 #: ../../library/smtplib.rst:142
-msgid "RFC 821 - Simple Mail Transfer Protocol"
+msgid ":rfc:`821` - Simple Mail Transfer Protocol"
 msgstr ":rfc:`821` - Simple Mail Transfer Protocol"
 
 #: ../../library/smtplib.rst:141
@@ -162,7 +161,7 @@ msgid ""
 msgstr "SMTP のプロトコル定義です。このドキュメントでは SMTP のモデル、操作手順、プロトコルの詳細についてカバーしています。"
 
 #: ../../library/smtplib.rst:146
-msgid "RFC 1869 - SMTP Service Extensions"
+msgid ":rfc:`1869` - SMTP Service Extensions"
 msgstr ":rfc:`1869` - SMTP Service Extensions"
 
 #: ../../library/smtplib.rst:145
@@ -266,7 +265,7 @@ msgstr "このメソッドは、現在のセッションでまだ ``EHLO`` か `
 
 #: ../../library/smtplib.rst:225 ../../library/smtplib.rst:256
 #: ../../library/smtplib.rst:280 ../../library/smtplib.rst:330
-msgid "SMTPHeloError"
+msgid ":exc:`SMTPHeloError`"
 msgstr ":exc:`SMTPHeloError`"
 
 #: ../../library/smtplib.rst:225 ../../library/smtplib.rst:256
@@ -302,7 +301,7 @@ msgid ""
 msgstr "認証が必要なSMTPサーバにログインします。認証に使用する引数はユーザ名とパスワードです。まだセッションが無い場合は、 ``EHLO`` または ``HELO`` コマンドでセッションを作ります。ESMTPの場合は ``EHLO`` が先に試されます。認証が成功した場合は通常このメソッドは戻りますが、例外が起こった場合は以下の例外が上がります:"
 
 #: ../../library/smtplib.rst:259
-msgid "SMTPAuthenticationError"
+msgid ":exc:`SMTPAuthenticationError`"
 msgstr ":exc:`SMTPAuthenticationError`"
 
 #: ../../library/smtplib.rst:259
@@ -310,7 +309,7 @@ msgid "The server didn't accept the username/password combination."
 msgstr "サーバがユーザ名/パスワードでの認証に失敗した。"
 
 #: ../../library/smtplib.rst:261 ../../library/smtplib.rst:283
-msgid "SMTPException"
+msgid ":exc:`SMTPException`"
 msgstr ":exc:`SMTPException`"
 
 #: ../../library/smtplib.rst:262
@@ -341,7 +340,7 @@ msgid "The server does not support the STARTTLS extension."
 msgstr "サーバーが STARTTLS 拡張に対応していない。"
 
 #: ../../library/smtplib.rst:287
-msgid "RuntimeError"
+msgid ":exc:`RuntimeError`"
 msgstr ":exc:`RuntimeError`"
 
 #: ../../library/smtplib.rst:288
@@ -392,7 +391,7 @@ msgid "This method may raise the following exceptions:"
 msgstr "このメソッドは次の例外を上げることがあります:"
 
 #: ../../library/smtplib.rst:327
-msgid "SMTPRecipientsRefused"
+msgid ":exc:`SMTPRecipientsRefused`"
 msgstr ":exc:`SMTPRecipientsRefused`"
 
 #: ../../library/smtplib.rst:324
@@ -404,7 +403,7 @@ msgid ""
 msgstr "全ての受信を拒否され、誰にもメールが届けられませんでした。例外オブジェクトの :attr:`recipients` 属性は、受信拒否についての情報の入った辞書オブジェクトです。 (辞書は少なくとも一つは受信されたときに似ています)。"
 
 #: ../../library/smtplib.rst:333
-msgid "SMTPSenderRefused"
+msgid ":exc:`SMTPSenderRefused`"
 msgstr ":exc:`SMTPSenderRefused`"
 
 #: ../../library/smtplib.rst:333
@@ -412,7 +411,7 @@ msgid "The server didn't accept the *from_addr*."
 msgstr "サーバが *from_addr* を受理しませんでした。"
 
 #: ../../library/smtplib.rst:337
-msgid "SMTPDataError"
+msgid ":exc:`SMTPDataError`"
 msgstr ":exc:`SMTPDataError`"
 
 #: ../../library/smtplib.rst:336

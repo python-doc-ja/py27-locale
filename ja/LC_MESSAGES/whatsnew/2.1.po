@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-13 08:46+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:14+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -156,8 +155,8 @@ msgid ""
 msgstr "互換性の問題が考慮されて、入れ子のスコープは段階的導入につながりました; Python 2.1 ではそれらはデフォルトで有効になっていませんが、PEP 236 に記載されているように、future 文を使用してモジュール内でオンにすることができます。(PEP 236 の更なる議論について、続くセクションを参照してください。) Python 2.2では入れ子になったスコープがデフォルトになり、それをオフにする方法はありませんが、ユーザは 2.1 の全ライフタイムを通して、導入の結果起きるあらゆる破損を修正し続けるでしょう。"
 
 #: ../../whatsnew/2.1.rst:123
-msgid "PEP 227 - Statically Nested Scopes"
-msgstr "PEP 227 - 静的に入れ子になったスコープ"
+msgid ":pep:`227` - Statically Nested Scopes"
+msgstr ":pep:`227` - 静的に入れ子になったスコープ"
 
 #: ../../whatsnew/2.1.rst:124
 msgid "Written and implemented by Jeremy Hylton."
@@ -194,8 +193,8 @@ msgid ""
 msgstr "普通 の :keyword:`import` ステートメントに見えますが、実は違います; このような未来のステートメントが置かれる場所には厳格なルールがあります。これらはモジュールの冒頭にしか置けませんし、必ず何らかのPythonコードや正規の :keyword:`import` ステートメントの前になければなりません。それと言うのもこのようなステートメントは、Pythonのバイトコードコンパイラがコードを解析し、バイトコードを生成する方法に影響しますので、生成されるバイトコードとなるステートメントの前になくてはならないのです。"
 
 #: ../../whatsnew/2.1.rst:153
-msgid "PEP 236 - Back to the __future__"
-msgstr "PEP 236 - バック・トゥ・ザ・ :mod:`__future__` "
+msgid ":pep:`236` - Back to the :mod:`__future__`"
+msgstr ":pep:`236` - バック・トゥ・ザ・ :mod:`__future__` "
 
 #: ../../whatsnew/2.1.rst:154
 msgid "Written by Tim Peters, and primarily implemented by Jeremy Hylton."
@@ -207,7 +206,7 @@ msgstr "PEP 207: 拡張比較"
 
 #: ../../whatsnew/2.1.rst:162
 msgid ""
-"In earlier versions, Python's support for implementing comparisons on user- "
+"In earlier versions, Python's support for implementing comparisons on user-"
 "defined classes and extension types was quite simple. Classes could "
 "implement a :meth:`__cmp__` method that was given two instances of a class, "
 "and could only return 0 if they were equal or +1 or -1 if they weren't; the "
@@ -219,7 +218,7 @@ msgid ""
 "given comparison for each element.  If the two matrices are of different "
 "sizes, then the compare has to be able to raise an exception to signal the "
 "error."
-msgstr "以前のバージョンでは、ユーザ定義クラスや拡張型の比較を実装するための Python のサポートはとても単純なものでした。クラスは 2 つのインスタンスを与えられる :meth:`__cmp__` メソッドを実装でき、実際の値がどうあれ、同値の場合には 0 、そうでないなら +1 か -1 を返せるだけでした; メソッドは例外を上げることも、ブール値以外のものを返すこともできませんでした。Numeric Python が使われるような複雑な計算プログラムでは、要素ごとに与えられた比較結果を含む行列を返し、2 つの行列を要素単位で比較できることがより便利なので、Numeric Python のユーザはこのモデルがとても脆弱で限定的であることにしばしば気付きました。もし 2 つの行列サイズが異なる場合、この比較はエラー通知の例外を上げられなければなりません。"
+msgstr ""
 
 #: ../../whatsnew/2.1.rst:174
 msgid ""
@@ -310,10 +309,10 @@ msgstr "これらの特殊メソッドは何でも、つまり真偽値や行列
 
 #: ../../whatsnew/2.1.rst:207
 msgid ""
-"The built-in :func:`cmp(A,B)` function can use the rich comparison "
-"machinery, and now accepts an optional argument specifying which comparison "
-"operation to use; this is given as one of the strings ``\"<\"``, ``\"<=\"``,"
-" ``\">\"``, ``\">=\"``, ``\"==\"``, or ``\"!=\"``.  If called without the "
+"The built-in ``cmp(A,B)`` function can use the rich comparison machinery, "
+"and now accepts an optional argument specifying which comparison operation "
+"to use; this is given as one of the strings ``\"<\"``, ``\"<=\"``, "
+"``\">\"``, ``\">=\"``, ``\"==\"``, or ``\"!=\"``.  If called without the "
 "optional third argument, :func:`cmp` will only return -1, 0, or +1 as in "
 "previous versions of Python; otherwise it will call the appropriate method "
 "and can return any Python object."
@@ -329,8 +328,8 @@ msgid ""
 msgstr "C プログラマにとって興味深い関連する変更があります。型オブジェクトに新しい ``tp_richcmp`` スロットと、この拡張された比較を行うAPIが追加されました。ここではC APIについて言及しませんが、あながた関連する関数のリストを見たければ、PEP 207かバージョン2.1のC APIドキュメントを参照してください。"
 
 #: ../../whatsnew/2.1.rst:223
-msgid "PEP 207 - Rich Comparisions"
-msgstr ""
+msgid ":pep:`207` - Rich Comparisons"
+msgstr ":pep:`207`: 拡張比較"
 
 #: ../../whatsnew/2.1.rst:223
 msgid ""
@@ -408,8 +407,8 @@ msgid ""
 msgstr "関数は、警告を発行するための Python の C API にも追加されました。詳細については PEP 230 または Python の API ドキュメントを参照してください。"
 
 #: ../../whatsnew/2.1.rst:293
-msgid "PEP 5 - Guidelines for Language Evolution"
-msgstr "PEP 5 - 言語の進化のためのガイドライン"
+msgid ":pep:`5` - Guidelines for Language Evolution"
+msgstr ":pep:`5` - 言語の進化のためのガイドライン"
 
 #: ../../whatsnew/2.1.rst:290
 msgid ""
@@ -420,8 +419,8 @@ msgid ""
 msgstr "Python から古い機能を削除する時に従うべき手順を示すため、 Paul Prescod により書かれました。当 PEP に記載された方針は正式に採用されていませんが、最終的な方針も Prescod の提案とおそらくさほど違いはないでしょう。"
 
 #: ../../whatsnew/2.1.rst:295
-msgid "PEP 230 - Warning Framework"
-msgstr "PEP 230 - 警告フレームワーク"
+msgid ":pep:`230` - Warning Framework"
+msgstr ":pep:`230` - 警告フレームワーク"
 
 #: ../../whatsnew/2.1.rst:296
 msgid "Written and implemented by Guido van Rossum."
@@ -474,8 +473,8 @@ msgid ""
 msgstr "もう一つの大きなビルド機構の変更点は Neil Schemenauer による再構成で、今や Python は、トップディレクトリと :file:`Python/`, :file:`Parser/`, :file:`Objects/`, :file:`Modules/` サブディレクトリにあった別々の Makefile が再帰的にビルドする代わりに、再帰をしないトップレベルの単一 makefile を使うようになっています。このことで Python のビルドは速くなり、 Makefile をもてあそぶのが単純明快になっています。"
 
 #: ../../whatsnew/2.1.rst:335
-msgid "PEP 229 - Using Distutils to Build Python"
-msgstr "PEP 229 - Distutils を使った Python のビルド"
+msgid ":pep:`229` - Using Distutils to Build Python"
+msgstr ":pep:`229` - Distutils を使った Python のビルド"
 
 #: ../../whatsnew/2.1.rst:336 ../../whatsnew/2.1.rst:571
 msgid "Written and implemented by A.M. Kuchling."
@@ -503,9 +502,9 @@ msgstr "オブジェクトへの参照(辞書内やリスト内を思い浮か�
 #: ../../whatsnew/2.1.rst:352
 msgid ""
 "For example, consider a memoizing function that caches the results of "
-"another function :func:`f(x)` by storing the function's argument and its "
-"result in a dictionary::"
-msgstr "例えば、 ひとさまの関数 :func:`f(x)` の結果をキャッシュしておくメモ化関数を考えてみましょう。関数 :func:`f(x)` の引数ごとに辞書に記憶します::"
+"another function ``f(x)`` by storing the function's argument and its result "
+"in a dictionary::"
+msgstr "例えば、 ひとさまの関数 ``f(x)`` の結果をキャッシュしておくメモ化関数を考えてみましょう。関数 ``f(x)`` の引数ごとに辞書に記憶します::"
 
 #: ../../whatsnew/2.1.rst:368
 msgid ""
@@ -546,8 +545,8 @@ msgid ""
 msgstr ":mod:`weakref` モジュールでは、弱参照のように振舞うプロキシオブジェクトも作れます --- プロキシオブジェクトによってのみ参照されるオブジェクトが解放されます -- オブジェクトを取り出すために明示的に「呼び出す」必要をなくすためにプロキシは、全てのオブジェクトへの操作を、オブジェクトが生きている限り透過的に転送します。オブジェクトが解放された場合、プロキシを使おうとすると :exc:`weakref.ReferenceError` 例外が起こります::"
 
 #: ../../whatsnew/2.1.rst:416
-msgid "PEP 205 - Weak References"
-msgstr "PEP 205 - 弱参照"
+msgid ":pep:`205` - Weak References"
+msgstr ":pep:`205` - 弱参照"
 
 #: ../../whatsnew/2.1.rst:417
 msgid "Written and implemented by Fred L. Drake, Jr."
@@ -580,16 +579,17 @@ msgstr "ついに関数に、任意の属性をセットし、取り出すこと
 #: ../../whatsnew/2.1.rst:444
 msgid ""
 "The dictionary containing attributes can be accessed as the function's "
-":attr:`__dict__`. Unlike the :attr:`__dict__` attribute of class instances, "
-"in functions you can actually assign a new dictionary to :attr:`__dict__`, "
-"though the new value is restricted to a regular Python dictionary; you "
-"*can't* be tricky and set it to a :class:`UserDict` instance, or any other "
-"random object that behaves like a mapping."
-msgstr "属性を含んだ辞書に、関数の属性 :attr:`__dict__` としてアクセス出来ます。クラスインスタンスの :attr:`__dict__` 属性とは違って、関数では実際には、 :attr:`__dict__` に別の辞書を代入出来ます。ですが、新しい値は普通の Python 辞書に制限されています; ズルは *出来ません* し、 :class:`UserDict` インスタンスやなにかほかのマッピングのように振舞うデタラメなオブジェクトはセット出来ません。"
+":attr:`~object.__dict__`. Unlike the :attr:`~object.__dict__` attribute of "
+"class instances, in functions you can actually assign a new dictionary to "
+":attr:`~object.__dict__`, though the new value is restricted to a regular "
+"Python dictionary; you *can't* be tricky and set it to a "
+":class:`~UserDict.UserDict` instance, or any other random object that "
+"behaves like a mapping."
+msgstr ""
 
 #: ../../whatsnew/2.1.rst:454
-msgid "PEP 232 - Function Attributes"
-msgstr "PEP 232 - 関数の属性"
+msgid ":pep:`232` - Function Attributes"
+msgstr ":pep:`232` - 関数の属性"
 
 #: ../../whatsnew/2.1.rst:455
 msgid "Written and implemented by Barry Warsaw."
@@ -609,14 +609,14 @@ msgstr "いくつかのオペレーティングシステムは、大小文字区
 
 #: ../../whatsnew/2.1.rst:468
 msgid ""
-"In Python 2.1, the :keyword:`import` statement will work to simulate case- "
+"In Python 2.1, the :keyword:`import` statement will work to simulate case-"
 "sensitivity on case-insensitive platforms.  Python will now search for the "
 "first case-sensitive match by default, raising an :exc:`ImportError` if no "
 "such file is found, so ``import file`` will not import a module named "
-"``FILE.PY``.  Case- insensitive matching can be requested by setting the "
+"``FILE.PY``. Case-insensitive matching can be requested by setting the "
 ":envvar:`PYTHONCASEOK` environment variable before starting the Python "
 "interpreter."
-msgstr "Python 2.1 では :keyword:`import` 文が、case-insensitive (大小文字に無関心)なプラットフォームで case-sensitivity (大小文字への繊細さ)をシミュレートして動作します。Python は今や、まずはデフォルトで case-sensitive なマッチによる検索をし、それで見つからなければ :exc:`ImportError` を投げます。ですから ``import file`` は ``FILE.PY`` をインポートしません。case-insensitive マッチングは Python インタプリタ開始前に環境変数 :envvar:`PYTHONCASEOK` をセットすることで要求出来ます。"
+msgstr ""
 
 #: ../../whatsnew/2.1.rst:479
 msgid "PEP 217: Interactive Display Hook"
@@ -628,12 +628,12 @@ msgid ""
 "displayed using the built-in :func:`repr` function. In Python 2.1, the "
 "variable :func:`sys.displayhook` can be set to a callable object which will "
 "be called instead of :func:`repr`. For example, you can set it to a special "
-"pretty- printing function::"
-msgstr "Python インタプリタを対話的に使う際には、コマンドの出力結果表示にはビルトインの :func:`repr` 関数が使われます。Python 2.1 ではこの :func:`repr` の代わりに呼び出される呼び出し可能オブジェクトを、 :func:`sys.displayhook` 変数にセット出来ます。たとえば特別な pretty- printing 関数をセット出来ます::"
+"pretty-printing function::"
+msgstr ""
 
 #: ../../whatsnew/2.1.rst:502
-msgid "PEP 217 - Display Hook for Interactive Use"
-msgstr "PEP 217 - Display Hook の対話的な使用"
+msgid ":pep:`217` - Display Hook for Interactive Use"
+msgstr ":pep:`217` - Display Hook の対話的な使用"
 
 #: ../../whatsnew/2.1.rst:503
 msgid "Written and implemented by Moshe Zadka."
@@ -669,7 +669,7 @@ msgid ""
 msgstr "拡張型はその ``PyTypeObject`` 構造体に、新しい型強制モデルをサポートすることを示すために ``Py_TPFLAGS_CHECKTYPES`` フラグをセット出来るようになりました。そのような拡張型内では、数値的スロット関数は 2 つの引数が同じ型であることを仮定しなくなります。代わりに、2 つの引数が異なる型を渡せて、内部的に型変換を実行出来ます。スロット関数にそれが処理出来ない型が渡された場合は、それが失敗であることを表すために ``Py_NotImplemented`` シングルトン値への参照を返せます。この場合他の数値関数が試されて、おそらく操作を実行出来ます。それでも ``Py_NotImplemented`` を返すなら :exc:`TypeError` が送出されます。Python で書かれた数値メソッドも ``Py_NotImplemented`` を返せます。この場合インタプリタはメソッドが存在しないものとして振舞います。 (おそらく :exc:`TypeError` が投げられたり、オブジェクトのほかの数値メソッドが試されます。)"
 
 #: ../../whatsnew/2.1.rst:534
-msgid "PEP 208 - Reworking the Coercion Model"
+msgid ":pep:`208` - Reworking the Coercion Model"
 msgstr ":pep:`208` - 型強制モデルの手直し"
 
 #: ../../whatsnew/2.1.rst:533
@@ -704,7 +704,7 @@ msgid ""
 "cataloguing systems and experiment with them.  With the result experience, "
 "perhaps it'll be possible to design a really good catalog and then build "
 "support for it into Python 2.2. For example, the Distutils :command:`sdist` "
-"and :command:`bdist_\\*` commands could support a ``upload`` option that "
+"and :command:`bdist_\\*` commands could support an ``upload`` option that "
 "would automatically upload your package to a catalog server."
 msgstr "この問題をどうにかするための最初の小さな一歩として、Distutils の :command:`sdist` コマンドを使ってパッケージ化する Python ソフトウェアに :file:`PKG-INFO` と名付けられたファイルを含むようにしました。これには名前、バージョン、著者 (カタログ化の用語ではメタデータ) のような情報を含んでいます。PEP 241 が :file:`PKG-INFO` ファイルに持てるフィールドの完全なリストを記述しています。Python 2.1 を使ったソフトウェアをパッケージ化し始めた人々によってパッケージがどんどんメタデータを含み、自動的なカタログ化システムを構築し、それを実験することが出来るようになります。その結果の経験により、おそらく本当に良いカタログを設計出来、Python 2.2 でそのサポートを構築出来るでしょう。例えば Distutils の :command:`sdist` コマンドと :command:`bdist_\\*` コマンド群はあなたのパッケージをカタログサーバに自動的にアップロードする ``upload`` オプションをサポート出来るでしょう。"
 
@@ -714,17 +714,17 @@ msgid ""
 "not using Python 2.1, since a new release of the Distutils will be made for "
 "users of earlier Python versions.  Version 1.0.2 of the Distutils includes "
 "the changes described in PEP 241, as well as various bugfixes and "
-"enhancements.  It will be available from  the Distutils SIG at "
-"https://www.python.org/sigs/distutils-sig/."
-msgstr ":file:`PKG-INFO` を含んだパッケージの作成は Python 2.1 を使っていなくても開始することが出来ます。Distutils の新しいリリースが以前のバージョンの Python ユーザ向けにも作られているからです。Distutils のバージョン 1.0.2 が、多数のバグフィックスや拡張とともに、 PEP 241 の変更を含んでいます。これは https://www.python.org/sigs/distutils-sig/ にある Distutils SIG から入手可能です。"
+"enhancements.  It will be available from the Distutils SIG at "
+"https://www.python.org/community/sigs/current/distutils-sig/."
+msgstr ":file:`PKG-INFO` を含んだパッケージの作成は Python 2.1 を使っていなくても開始することが出来ます。Distutils の新しいリリースが以前のバージョンの Python ユーザ向けにも作られているからです。Distutils のバージョン 1.0.2 が、多数のバグフィックスや拡張とともに、 PEP 241 の変更を含んでいます。これは https://www.python.org/community/sigs/current/distutils-sig/ にある Distutils SIG から入手可能です。"
 
 #: ../../whatsnew/2.1.rst:571
-msgid "PEP 241 - Metadata for Python Software Packages"
+msgid ":pep:`241` - Metadata for Python Software Packages"
 msgstr ":pep:`241` - Pythonソフトウェアパッケージのためのメタデータ"
 
 #: ../../whatsnew/2.1.rst:574
-msgid "PEP 243 - Module Repository Upload Mechanism"
-msgstr "PEP 243 - レポジトリアップロードモジュールのメカニズム"
+msgid ":pep:`243` - Module Repository Upload Mechanism"
+msgstr ":pep:`243` - レポジトリアップロードモジュールのメカニズム"
 
 #: ../../whatsnew/2.1.rst:574
 msgid ""
@@ -828,7 +828,7 @@ msgid ""
 " a firewall. It's deemed unlikely that this will cause problems for anyone, "
 "because Netscape defaults to passive mode and few people complain, but if "
 "passive mode is unsuitable for your application or network setup, call "
-":meth:`set_pasv(0)` on FTP objects to disable passive mode."
+"``set_pasv(0)`` on FTP objects to disable passive mode."
 msgstr ":mod:`ftplib` モジュールがデフォルトでパッシブモードでファイルを取得するようになりました。これはパッシブモードがファイアウォール配下ではより良く動作するようだからです。この要望は Debian のバグトラッキングシステムから起こりました。ほかの Debian パッケージがファイル取得に :mod:`ftplib` を使い、ファイアウォールの元で動作しなかったのです。このことが誰かの問題になるとは思えません。Netscape のデフォルトがパッシブモードですし、苦情を言う人々も稀でした。ですがもしもパッシブモードがあなたのアプリケーションやネットワーク構成にとって不適切である場合には、FTP オブジェクトの ``set_pasv(0)`` を呼び出して、パッシブモードを無効にしてください。"
 
 #: ../../whatsnew/2.1.rst:662
@@ -846,8 +846,8 @@ msgstr ":mod:`pstats` モジュールに、Python プログラムの時間計測
 
 #: ../../whatsnew/2.1.rst:669
 msgid ""
-"A new implementation-dependent function, :func:`sys._getframe([depth])`, has"
-" been added to return a given frame object from the current call stack. "
+"A new implementation-dependent function, ``sys._getframe([depth])``, has "
+"been added to return a given frame object from the current call stack. "
 ":func:`sys._getframe` returns the frame at the top of the call stack;  if "
 "the optional integer argument *depth* is supplied, the function returns the "
 "frame that is *depth* calls below the top of the stack.  For example, "
@@ -879,10 +879,10 @@ msgid ""
 "faster than the system :func:`malloc` and have less memory overhead.  The "
 "allocator uses C's :func:`malloc` function to get large pools of memory, and"
 " then fulfills smaller memory requests from these pools.  It can be enabled "
-"by providing the :option:`--with-pymalloc` option to the "
+"by providing the :option:`!--with-pymalloc` option to the "
 ":program:`configure` script; see :file:`Objects/obmalloc.c` for the "
 "implementation details."
-msgstr "特殊化されたオブジェクトアロケータがオプショナルで利用可能になっています。これはシステムの :func:`malloc` よりも速くて省メモリであるはずです。このアロケータは C の :func:`malloc` 関数を大きなメモリプールを得るのに使い、それより小さなメモリ要求はこれらプールで実現しています。この機能は :program:`configure` スクリプトに :option:`--with-pymalloc` オプションを与えることで有効化出来ます。実装の詳細については :file:`Objects/obmalloc.c` をみてください。"
+msgstr "特殊化されたオブジェクトアロケータがオプショナルで利用可能になっています。これはシステムの :func:`malloc` よりも速くて省メモリであるはずです。このアロケータは C の :func:`malloc` 関数を大きなメモリプールを得るのに使い、それより小さなメモリ要求はこれらプールで実現しています。この機能は :program:`configure` スクリプトに :option:`!--with-pymalloc` オプションを与えることで有効化出来ます。実装の詳細については :file:`Objects/obmalloc.c` をみてください。"
 
 #: ../../whatsnew/2.1.rst:698
 msgid ""
@@ -930,7 +930,8 @@ msgstr ""
 #: ../../whatsnew/2.1.rst:733
 msgid ""
 "For a fuller discussion of the line I/O changes, see the python-dev summary "
-"for January 1-15, 2001 at https://www.python.org/dev/summary/2001-01-1/."
+"for January 1--15, 2001 at https://mail.python.org/pipermail/python-"
+"dev/2001-January/."
 msgstr ""
 
 #: ../../whatsnew/2.1.rst:736

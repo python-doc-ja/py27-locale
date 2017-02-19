@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-05-08 13:42+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:14+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -91,8 +90,8 @@ msgid ""
 "bug reports, and managing the queue of patch submissions.  To report bugs or"
 " submit patches for Python 2.0, use the bug tracking and patch manager tools"
 " available from Python's project page, located at "
-"http://sourceforge.net/projects/python/."
-msgstr "Python 2.0 における最も重要な変化はコードに対するものではまったくなくて、Python がどのように開発されるのかについてでしょう: 2000 年 5 月に Python 開発者たちは、ソースコード格納、バグ報告の追跡、パッチ提出の待ち行列管理のための SourceForge によって利用出来るようになったツールの使用を始めました。Python 2.0 ではバグ報告やパッチの提出には、Python プロジェクトページで利用可能なバグトラッキングとパッチ管理ツールを使ってください。 http://sourceforge.net/projects/python/ にあります(訳注: 2015 年現在の状況は What's New in Python 2.6 参照)。"
+"https://sourceforge.net/projects/python/."
+msgstr "Python 2.0 における最も重要な変化はコードに対するものではまったくなくて、Python がどのように開発されるのかについてでしょう: 2000 年 5 月に Python 開発者たちは、ソースコード格納、バグ報告の追跡、パッチ提出の待ち行列管理のための SourceForge によって利用出来るようになったツールの使用を始めました。Python 2.0 ではバグ報告やパッチの提出には、Python プロジェクトページで利用可能なバグトラッキングとパッチ管理ツールを使ってください。 https://sourceforge.net/projects/python/ にあります(訳注: 2015 年現在の状況は What's New in Python 2.6 参照)。"
 
 #: ../../whatsnew/2.0.rst:66
 msgid ""
@@ -179,10 +178,10 @@ msgid ""
 "Read the rest of PEP 1 for the details of the PEP editorial process, style, "
 "and format.  PEPs are kept in the Python CVS tree on SourceForge, though "
 "they're not part of the Python 2.0 distribution, and are also available in "
-"HTML form from https://www.python.org/peps/.  As of September 2000, there "
-"are 25 PEPS, ranging from PEP 201, \"Lockstep Iteration\", to PEP 225, "
-"\"Elementwise/Objectwise Operators\"."
-msgstr "PEP の編集に関するプロセス、様式、体裁についての詳細が PEP 1 の残りの部分に書かれています。PEPs は SourceForge 上の Python CVS ツリーで営まれますが Python 2.0 配布物の一部ではなく、 https://www.python.org/peps/ で HTML 形式で利用可能です。2000 年 9 月時点で PEP 201 の \"Lockstep Iteration\" から PEP 225 の \"Elementwise/Objectwise Operators\" までの 25 の PEP があります。"
+"HTML form from https://www.python.org/dev/peps/.  As of September 2000, "
+"there are 25 PEPS, ranging from PEP 201, \"Lockstep Iteration\", to PEP 225,"
+" \"Elementwise/Objectwise Operators\"."
+msgstr "PEP の編集に関するプロセス、様式、体裁についての詳細が PEP 1 の残りの部分に書かれています。PEPs は SourceForge 上の Python CVS ツリーで営まれますが Python 2.0 配布物の一部ではなく、 https://www.python.org/dev/peps/ で HTML 形式で利用可能です。2000 年 9 月時点で PEP 201 の \"Lockstep Iteration\" から PEP 225 の \"Elementwise/Objectwise Operators\" までの 25 の PEP があります。"
 
 #: ../../whatsnew/2.0.rst:141
 msgid "Unicode"
@@ -199,12 +198,12 @@ msgstr "Python 2.0 での最大の新機能は新しい基礎データ型、Unic
 #: ../../whatsnew/2.0.rst:148
 msgid ""
 "The final interface for Unicode support was arrived at through countless "
-"often- stormy discussions on the python-dev mailing list, and mostly "
+"often-stormy discussions on the python-dev mailing list, and mostly "
 "implemented by Marc-André Lemburg, based on a Unicode string type "
 "implementation by Fredrik Lundh.  A detailed explanation of the interface "
 "was written up as :pep:`100`, \"Python Unicode Integration\". This article "
 "will simply cover the most significant points about the Unicode interfaces."
-msgstr "最終的な Unicode サポートに関するインターフェイスは、python-dev メーリングリストにおける数え切れない、時として嵐のような議論を経て、Fredrik Lundh によって実装された Unicode 文字列型に基づいて、ほとんどが Marc-André Lemburg によって実装されました。インターフェイスについての詳細な説明は :pep:`100` 「Python Unicode の統合」に記述されました。今ここでは、Unicode インターフェイスについて、一番重要な点を単純にカバーするだけにしましょう。"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:155
 msgid ""
@@ -226,8 +225,8 @@ msgid ""
 "implementing and registering new encodings that are then available "
 "throughout a Python program. If an encoding isn't specified, the default "
 "encoding is usually 7-bit ASCII, though it can be changed for your Python "
-"installation by calling the :func:`sys.setdefaultencoding(encoding)` "
-"function in a customised version of :file:`site.py`."
+"installation by calling the ``sys.setdefaultencoding(encoding)`` function in"
+" a customised version of :file:`site.py`."
 msgstr "Unicode 文字列は普通の文字列と全く似ていて、 :term:`immutable` なシーケンス型です。添え字でアクセス出来、スライス出来ますが、インプレイスに変更することは出来ません。Unicode 文字列は ``encode( [encoding] )`` メソッドを持っていて、これは望みのエンコーディングでエンコードした 8 ビット文字列を返します。エンコーディングは文字列で名前付けられていて、例えば ``'ascii'``, ``'utf-8'``, ``'iso-8859-1'`` のようなものです。コーデック API は、新しいエンコーディングを実装し、Python プログラム全体を通して利用可能となるよう登録するために定義されています。エンコーディングが指定されない場合はデフォルトのエンコーディングは普通 7 ビット ASCII ですが、Python インストレーションにおいて、 :file:`site.py` のカスタマイズ版内で ``sys.setdefaultencoding(encoding)`` を呼び出すことで変更出来ます。"
 
 #: ../../whatsnew/2.0.rst:172
@@ -287,8 +286,8 @@ msgstr "新規モジュール :mod:`unicodedata` は、Unicode 文字の特性�
 msgid ""
 "The :mod:`codecs` module contains functions to look up existing encodings "
 "and register new ones.  Unless you want to implement a new encoding, you'll "
-"most often use the :func:`codecs.lookup(encoding)` function, which returns a"
-" 4-element tuple: ``(encode_func, decode_func, stream_reader, "
+"most often use the ``codecs.lookup(encoding)`` function, which returns a "
+"4-element tuple: ``(encode_func, decode_func, stream_reader, "
 "stream_writer)``."
 msgstr ":mod:`codecs` モジュールには、既存のエンコーディングをルックアップする関数、新しいエンコーディングを登録する関数が含まれます。新しいエンコーディングを実装したいと思うのでない限りは、一番使うことになるのは ``codecs.lookup(encoding)`` でしょう。これは 4 要素のタプルを返します: ``(encode_func, decode_func, stream_reader, stream_writer)`` 。"
 
@@ -423,11 +422,11 @@ msgstr "Python の文法に曖昧さを紛れ込ませないように、*express
 #: ../../whatsnew/2.0.rst:339
 msgid ""
 "The idea of list comprehensions originally comes from the functional "
-"programming language Haskell (http://www.haskell.org).  Greg Ewing argued "
+"programming language Haskell (https://www.haskell.org).  Greg Ewing argued "
 "most effectively for adding them to Python and wrote the initial list "
 "comprehension patch, which was then discussed for a seemingly endless time "
 "on the python-dev mailing list and kept up-to-date by Skip Montanaro."
-msgstr "リスト内包表記のアイディアは、もともとは関数型プログラミング言語 Haskell (http://www.haskell.org) に由来しています。Greg Ewing が Python にこれを追加することを最も実際的に主張し、彼が最初のリスト内包のパッチを書きました。それは傍目には終わりのない議論が python-dev メーリングリストにて続き、Skip Montanaro によって最新に保たれました。"
+msgstr "リスト内包表記のアイディアは、もともとは関数型プログラミング言語 Haskell (https://www.haskell.org) に由来しています。Greg Ewing が Python にこれを追加することを最も実際的に主張し、彼が最初のリスト内包のパッチを書きました。それは傍目には終わりのない議論が python-dev メーリングリストにて続き、Skip Montanaro によって最新に保たれました。"
 
 #: ../../whatsnew/2.0.rst:349
 msgid "Augmented Assignment"
@@ -587,9 +586,9 @@ msgid ""
 "crucially on how often the program creates and destroys objects.  The "
 "detection of cycles can be disabled when Python is compiled, if you can't "
 "afford even a tiny speed penalty or suspect that the cycle collection is "
-"buggy, by specifying the :option:`--without-cycle-gc` switch when running "
+"buggy, by specifying the :option:`!--without-cycle-gc` switch when running "
 "the :program:`configure` script."
-msgstr "循環検出アルゴリズムの実行はいくらかの時間がかかるので、結果として多少の追加的なオーバヘッドがかかるでしょう。2.0 を使って循環のコレクションの経験を積んだのちに、 Python 2.1 では注意深い調整によりオーバヘッドを最小に出来ることが望まれています。今のところパフォーマンスの損失がいかほどなのかは明らかではありません。これはこれのベンチマークがトリッキーであり、プログラムがどれだけの頻度でオブジェクトを構築・破棄するのかに大きく依存するからです。循環の検出は Python コンパイル時に無効に出来ます。もしもあなたが小さな速度のペナルティでさえも許容出来ないであるとか、あるいは循環のコレクションがバギーであることを疑うのであれば、 :program:`configure` スクリプト実行時に :option:`--without-cycle-gc` スイッチを与えることでそうすることが出来ます。 (---訳注: Python 2.3 でこの循環参照の GC は必須となり、 :option:`--without-cycle-gc` 、 :option:`--with-cycle-gc` での有無効化は撤廃されました。---)"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:482
 msgid ""
@@ -626,7 +625,7 @@ msgid ""
 "earlier, you'd use the :func:`apply` built-in function: ``apply(f, args, "
 "kw)`` calls the function :func:`f` with the argument tuple *args* and the "
 "keyword arguments in the dictionary *kw*.  :func:`apply`  is the same in "
-"2.0, but thanks to a patch from Greg Ewing, ``f(*args, **kw)`` as a shorter "
+"2.0, but thanks to a patch from Greg Ewing, ``f(*args, **kw)`` is a shorter "
 "and clearer way to achieve the same effect.  This syntax is symmetrical with"
 " the syntax for defining functions::"
 msgstr "引数のタプルとキーワード引数の辞書の一方あるいは両方で関数を呼び出すのに、より便利な構文が追加されました。Python 1.5 とそれ以前ではビルトイン関数 :func:`apply` を使っていました: ``apply(f, args, kw)`` は引数タプル *args* と辞書 *kw* に入れたキーワード引数で関数 :func:`f` を呼び出します。 :func:`apply` は 2.0 でも同じですが、Greg Ewing によるパッチのおかげで、同じ効果を得るのにより短くてわかりやすい ``f(*args, **kw)`` が使えます。この構文は以下のような関数定義に呼応するものです::"
@@ -736,7 +735,7 @@ msgstr "ビルトイン関数の変更"
 
 #: ../../whatsnew/2.0.rst:603
 msgid ""
-"A new built-in, :func:`zip(seq1, seq2, ...)`, has been added.  :func:`zip` "
+"A new built-in, ``zip(seq1, seq2, ...)``, has been added.  :func:`zip` "
 "returns a list of tuples where each tuple contains the i-th element from "
 "each of the argument sequences.  The difference between :func:`zip` and "
 "``map(None, seq1, seq2)`` is that :func:`map` pads the sequences with "
@@ -764,8 +763,8 @@ msgstr ":mod:`sys` モジュールに、これまでより詳細なバージョ�
 
 #: ../../whatsnew/2.0.rst:622
 msgid ""
-"Dictionaries have an odd new method, :meth:`setdefault(key, default)`, which"
-" behaves similarly to the existing :meth:`get` method.  However, if the key "
+"Dictionaries have an odd new method, ``setdefault(key, default)``, which "
+"behaves similarly to the existing :meth:`get` method.  However, if the key "
 "is missing, :meth:`setdefault` both returns the value of *default* as "
 ":meth:`get` would do, and also inserts it into the dictionary as the value "
 "for *key*.  Thus, the following lines of code::"
@@ -1090,11 +1089,11 @@ msgid ""
 "similarities to :mod:`xmllib`, and the DOM (Document Object Model) provides "
 "a tree-based interface, transforming an XML document into a tree of nodes "
 "that can be traversed and modified.  Python 2.0 includes a SAX2 interface "
-"and a stripped- down DOM interface as part of the :mod:`xml` package. Here "
-"we will give a brief overview of these new interfaces; consult the Python "
+"and a stripped-down DOM interface as part of the :mod:`xml` package. Here we"
+" will give a brief overview of these new interfaces; consult the Python "
 "documentation or the source code for complete details. The Python XML SIG is"
 " also working on improved documentation."
-msgstr "Python 1.5.2 では、 Sjoerd Mullender の手による単純な XML パーサが、 :mod:`xmllib` モジュールの形で追加されました。1.5.2 でのリリース以降で、2 つの異なった XML 処理のインターフェイスが一般的になりました。SAX2 (「Simple API for XML」のバージョン 2) はいくらか :mod:`xmllib` に似た、イベントドリブンのインターフェイスを提供し、DOM (「Document Object Model］) は XML ドキュメントを、横断したり修正できるノードのツリーに変換する、木構造ベースのインターフェイスを提供します。Python 2.0 では SAX2 インターフェイスと必要最小限の DOM インターフェイスが、 :mod:`xml` パッケージの一部として追加されました。ここではそれら新規インターフェイスについての簡単な概要について書きます。完全な詳細については Python ドキュメントかソースコードを参照してください。Python XML SIG ではドキュメントの改善についても作業中です。"
+msgstr ""
 
 #: ../../whatsnew/2.0.rst:896
 msgid "SAX2 Support"
@@ -1255,8 +1254,8 @@ msgid ""
 "OpenSSL is an implementation of the Secure Socket Layer, which encrypts the "
 "data being sent over a socket.  When compiling Python, you can edit "
 ":file:`Modules/Setup` to include SSL support, which adds an additional "
-"function to the :mod:`socket` module: :func:`socket.ssl(socket, keyfile, "
-"certfile)`, which takes a socket object and returns an SSL socket.  The "
+"function to the :mod:`socket` module: ``socket.ssl(socket, keyfile, "
+"certfile)``, which takes a socket object and returns an SSL socket.  The "
 ":mod:`httplib` and :mod:`urllib` modules were also changed to support "
 "``https://`` URLs, though no one has implemented FTP or SMTP over SSL."
 msgstr "Brian Gallew が :mod:`socket` モジュールについての OpenSSL サポートを寄稿しました。OpenSSL はセキュアソケットレイヤーの実装の一つで、ソケットを通じて送信されるデータの暗号化を行います。Python コンパイル時に :file:`Modules/Setup` を SSL サポートを含むように編集することで :mod:`socket` モジュールに追加機能を有効に出来ます: ``socket.ssl(socket, keyfile, certfile)`` はソケットオブジェクトを取り、SSL ソケットを返します。モジュール :mod:`httplib` と :mod:`urllib` も ``https://`` をサポートするように変更されましたが、SSL 経由の FTP と SMTP は実装されていません。 (---訳注: Python 2.1 (:pep:`229`) 以降から :file:`Modules/Setup` を編集する必要はなくなっています。ソケットを SSL でラップするインターフェイスは今では(特に 2.7 のメンテナンスリリースで)もっと進化しています。ドキュメントを参照して下さい。SMTP over SSL は Python 2.2 でサポートされました。FTP については Python 2.7 で FTP_TLS がサポートされました。 ---)"

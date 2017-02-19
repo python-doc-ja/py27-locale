@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-03-26 03:19+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:56+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -402,8 +401,8 @@ msgid ""
 "Make an iterator that returns elements from the first iterable until it is "
 "exhausted, then proceeds to the next iterable, until all of the iterables "
 "are exhausted.  Used for treating consecutive sequences as a single "
-"sequence. Equivalent to::"
-msgstr "先頭の iterable の全要素を返し、次に2番目の iterable の全要素…と全 iterable の要素を返すイテレータを作成します。連続したシーケンスを、一つのシーケンスとして扱う場合に使用します。この関数は以下のスクリプトと同等です::"
+"sequence. Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:108
 msgid ""
@@ -431,8 +430,8 @@ msgstr "各要素は場所に基づいて一意に取り扱われ、値には依
 
 #: ../../library/itertools.rst:132 ../../library/itertools.rst:183
 #: ../../library/itertools.rst:502
-msgid "Equivalent to::"
-msgstr "次と等価です::"
+msgid "Roughly equivalent to::"
+msgstr "およそ次と等価です::"
 
 #: ../../library/itertools.rst:154
 msgid ""
@@ -477,8 +476,8 @@ msgid ""
 "Make an iterator that filters elements from *data* returning only those that"
 " have a corresponding element in *selectors* that evaluates to ``True``. "
 "Stops when either the *data* or *selectors* iterables has been exhausted. "
-"Equivalent to::"
-msgstr "*data* の要素から、*selectors* の対応する要素が ``True`` と評価されるものだけを返す、フィルタリングしたイテレータを作ります。*data* と *selectors* のどちらかが尽きたときに止まります。以下と等価です::"
+"Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:233
 msgid ""
@@ -502,8 +501,8 @@ msgstr "*step* 引数が追加され、非整数の引数が可能になりま�
 msgid ""
 "Make an iterator returning elements from the iterable and saving a copy of "
 "each. When the iterable is exhausted, return elements from the saved copy.  "
-"Repeats indefinitely.  Equivalent to::"
-msgstr "iterable から要素を取得し、同時にそのコピーを保存するイテレータを作成します。iterable の全要素を返すと、セーブされたコピーから要素を返し、これを無限に繰り返します。この関数は以下のスクリプトと同等です::"
+"Repeats indefinitely.  Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:268
 msgid ""
@@ -516,8 +515,8 @@ msgid ""
 "Make an iterator that drops elements from the iterable as long as the "
 "predicate is true; afterwards, returns every element.  Note, the iterator "
 "does not produce *any* output until the predicate first becomes false, so it"
-" may have a lengthy start-up time.  Equivalent to::"
-msgstr "predicate が真である限りは要素を無視し、その後は全ての要素を返すイテレータを作成します。このイテレータは、predicate が最初に偽になるまで *全く* 要素を返さないため、要素を返し始めるまでに長い時間がかかる場合があります。この関数は以下のスクリプトと同等です::"
+" may have a lengthy start-up time.  Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:292
 msgid ""
@@ -546,22 +545,22 @@ msgid ""
 msgstr "返されるグループはそれ自体がイテレータで、 :func:`groupby` と *iterable* を共有しています。もととなる *iterable* を共有しているため、 :func:`groupby` オブジェクトの要素取り出しを先に進めると、それ以前の要素であるグループは見えなくなってしまいます。従って、データが後で必要な場合にはリストの形で保存しておく必要があります::"
 
 #: ../../library/itertools.rst:316
-msgid ":func:`groupby` is equivalent to::"
-msgstr ":func:`groupby` は以下のコードと等価です::"
+msgid ":func:`groupby` is roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:346
 msgid ""
 "Make an iterator that filters elements from iterable returning only those "
 "for which the predicate is ``True``. If *predicate* is ``None``, return the "
-"items that are true. Equivalent to::"
-msgstr "predicateが ``True`` となる要素だけを返すイテレータを作成します。*predicate* が ``None`` の場合、値が真であるアイテムだけを返します。この関数は以下のスクリプトと同等です::"
+"items that are true. Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:361
 msgid ""
 "Make an iterator that filters elements from iterable returning only those "
 "for which the predicate is ``False``. If *predicate* is ``None``, return the"
-" items that are false. Equivalent to::"
-msgstr "predicateが ``False`` となる要素だけを返すイテレータを作成します。*predicate* が ``None`` の場合、値が偽であるアイテムだけを返します。この関数は以下のスクリプトと同等です::"
+" items that are false. Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:376
 msgid ""
@@ -572,8 +571,8 @@ msgid ""
 "  The reason for the difference is that infinite iterator arguments are "
 "typically an error for :func:`map` (because the output is fully evaluated) "
 "but represent a common and useful way of supplying arguments to "
-":func:`imap`. Equivalent to::"
-msgstr "iterables の要素を引数として funtion を呼び出すイテレータを作成します。 *function* が ``None`` の場合、  :func:`imap` は引数のタプルを返します。 :func:`map` と似ていますが、最短の iterable の末尾まで到達した後は ``None`` を補って処理を続行するのではなく、終了します。これは、 :func:`map` に無限長のイテレータを指定するのは多くの場合誤りですが (全出力が評価されてしまうため)、 :func:`imap` の場合には一般的で役に立つ方法であるためです。この関数は以下のスクリプトと同等です： ::"
+":func:`imap`. Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:398
 msgid ""
@@ -586,8 +585,8 @@ msgid ""
 " :func:`islice` does not support negative values for *start*, *stop*, or "
 "*step*.  Can be used to extract related fields from data where the internal "
 "structure has been flattened (for example, a multi-line report may list a "
-"name field on every third line).  Equivalent to::"
-msgstr "iterable から要素を選択して返すイテレータを作成します。 *start* が0以外であれば、iterable の先頭要素は start に達するまでスキップします。以降、 *step* が1以下なら連続した要素を返し、 1以上なら指定された値分の要素をスキップします。 *stop* が ``None`` であれば、無限に、もしくは iterable の全要素を返すまで値を返します。 ``None`` 以外ならイテレータは指定された要素位置で停止します。通常のスライスと異なり、 :func:`islice` は *start* 、 *stop* 、 *step* に負の値を指定する事はできません。シーケンス化されたデータから関連するデータを取得する場合（複数行からなるレポートで、三行ごとに名前が指定されている場合など）に使用します。この関数は以下のスクリプトと同等です::"
+"name field on every third line).  Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:421
 msgid ""
@@ -603,8 +602,9 @@ msgstr "*start* と *step* のデフォルト値として ``None`` を受け付�
 msgid ""
 "Make an iterator that aggregates elements from each of the iterables. Like "
 ":func:`zip` except that it returns an iterator instead of a list.  Used for "
-"lock-step iteration over several iterables at a time.  Equivalent to::"
-msgstr "各 iterable の要素をまとめるイテレータを作成します。 :func:`zip` に似ていますが、リストではなくイテレータを返します。複数のイテレート可能オブジェクトに対して、一度に lock-step (横並び) イテレーションを行う場合に使用します。この関数は以下のスクリプトと同等です： ::"
+"lock-step iteration over several iterables at a time.  Roughly equivalent "
+"to::"
+msgstr ""
 
 #: ../../library/itertools.rst:440
 msgid ""
@@ -631,8 +631,8 @@ msgid ""
 "Make an iterator that aggregates elements from each of the iterables. If the"
 " iterables are of uneven length, missing values are filled-in with "
 "*fillvalue*. Iteration continues until the longest iterable is exhausted.  "
-"Equivalent to::"
-msgstr "各 iterable の要素をまとめるイテレータを作成します。イテレート可能オブジェクトの長さが不揃いならば、足りない値は *fillvalue* で埋められます。最も長いイテレート可能オブジェクトが尽きるまで繰り返されます。この関数は以下のコードと等価です::"
+"Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:479
 msgid ""
@@ -686,9 +686,10 @@ msgstr "入力イテラブルの直積(Cartesian product)です。"
 
 #: ../../library/itertools.rst:550
 msgid ""
-"Equivalent to nested for-loops in a generator expression. For example, "
-"``product(A, B)`` returns the same as ``((x,y) for x in A for y in B)``."
-msgstr "ジェネレータ式の入れ子 for ループと等価になります。たとえば ``product(A, B)`` は ``((x,y) for x in A for y in B)`` と同じものを返します。"
+"Roughly equivalent to nested for-loops in a generator expression. For "
+"example, ``product(A, B)`` returns the same as ``((x,y) for x in A for y in "
+"B)``."
+msgstr ""
 
 #: ../../library/itertools.rst:553
 msgid ""
@@ -707,17 +708,17 @@ msgstr "イテラブル自身との直積を計算するためには、オプシ
 
 #: ../../library/itertools.rst:562
 msgid ""
-"This function is equivalent to the following code, except that the actual "
-"implementation does not build up intermediate results in memory::"
-msgstr "この関数は以下のコードと等価ですが、実際の実装ではメモリ中に中間結果を作りません::"
+"This function is roughly equivalent to the following code, except that the "
+"actual implementation does not build up intermediate results in memory::"
+msgstr ""
 
 #: ../../library/itertools.rst:579
 msgid ""
 "Make an iterator that returns *object* over and over again. Runs "
 "indefinitely unless the *times* argument is specified. Used as argument to "
 ":func:`imap` for invariant function parameters.  Also used with :func:`izip`"
-" to create constant fields in a tuple record.  Equivalent to::"
-msgstr "繰り返し *object* を返すイテレータを作成します。 *times* を指定しない場合、無限に値を返し続けます。 :func:`imap` で常に同じオブジェクトを関数の引数として指定する場合に使用します。また、 :func:`izip` で作成するタプルの定数部分を指定する場合にも使用することもできます。この関数は以下のスクリプトと同等です： ::"
+" to create constant fields in a tuple record.  Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:593
 msgid ""
@@ -732,8 +733,8 @@ msgid ""
 "already grouped in tuples from a single iterable (the data has been \"pre-"
 "zipped\").  The difference between :func:`imap` and :func:`starmap` "
 "parallels the distinction between ``function(a,b)`` and ``function(*c)``. "
-"Equivalent to::"
-msgstr "iterables の要素を引数として funtion を呼び出すイテレータを作成します。 function の引数が単一の iterable にタプルとして格納されている場合(\"zip済み\")、 :func:`imap` の代わりに使用します。 :func:`imap` と :func:`starmap` ではfunctionの呼び出し方法が異なり、 :func:`imap` は ``function(a, b)`` 、 :func:`starmap` では ``function(*c)`` のように呼び出します。この関数は以下のスクリプトと同等です::"
+"Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:612
 msgid ""
@@ -744,13 +745,14 @@ msgstr "以前のバージョンでは、 :func:`starmap` は関数の引数が�
 #: ../../library/itertools.rst:618
 msgid ""
 "Make an iterator that returns elements from the iterable as long as the "
-"predicate is true.  Equivalent to::"
-msgstr "predicate が真である限り iterable から要素を返すイテレータを作成します。この関数は以下のスクリプトと同等です::"
+"predicate is true.  Roughly equivalent to::"
+msgstr ""
 
 #: ../../library/itertools.rst:632
 msgid ""
-"Return *n* independent iterators from a single iterable.  Equivalent to::"
-msgstr "一つの *iterable* から *n* 個の独立したイテレータを生成して返します。以下のコードと等価になります::"
+"Return *n* independent iterators from a single iterable.  Roughly equivalent"
+" to::"
+msgstr ""
 
 #: ../../library/itertools.rst:646
 msgid ""
@@ -788,7 +790,7 @@ msgid ""
 ":term:`generator`\\s which incur interpreter overhead."
 msgstr "iterable 全体を一度にメモリ上に置くよりも、要素を一つづつ処理する方がメモリ効率上の有利さを保てます。関数形式のままツールをリンクしてゆくと、コードのサイズを減らし、一時変数を減らす助けになります。インタプリタのオーバヘッドをもたらす for ループやジェネレータ(:term:`generator`) を使わずに、 \"ベクトル化された\" ビルディングブロックを使うと、高速な処理を実現できます。"
 
-#: ../../library/itertools.rst:843
+#: ../../library/itertools.rst:848
 msgid ""
 "Note, many of the above recipes can be optimized by replacing global lookups"
 " with local variables defined as default values.  For example, the "

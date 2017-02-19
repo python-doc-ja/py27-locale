@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -7,10 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2015-12-21 10:57+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:43+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -79,18 +78,18 @@ msgid ""
 "so some machines assigned values between 128 and 255 to accented characters."
 "  Different machines had different codes, however, which led to problems "
 "exchanging files. Eventually various commonly used sets of values for the "
-"128-255 range emerged. Some were true standards, defined by the "
+"128--255 range emerged. Some were true standards, defined by the "
 "International Standards Organization, and some were **de facto** conventions"
 " that were invented by one company or another and managed to catch on."
-msgstr "1980年代には、多くのパーソナルコンピューターは 8-bit で、つまり 8-bit で 0-255 までの値を確保することができました。 ASCII コードは 127 までだったので、いくつかのマシンは 128 から 255 の値をアクセント付きの文字に割り当てました。マシン毎に異なる文字コードがあり、そのためにファイル交換の問題が起きることとなりました。結局、128-255 の間の値は多くのよく使われる集合が現われることになりました。そのうちいくつかは International Standards Organzation の定める本当の標準になり、またいくつかは一社で開発され、別の会社へと流行することで **事実上の** 慣習となりました。"
+msgstr ""
 
 #: ../../howto/unicode.rst:50
 msgid ""
 "255 characters aren't very many.  For example, you can't fit both the "
 "accented characters used in Western Europe and the Cyrillic alphabet used "
-"for Russian into the 128-255 range because there are more than 128 such "
+"for Russian into the 128--255 range because there are more than 128 such "
 "characters."
-msgstr "255文字というのは十分多い数ではありません。例えば、西ヨーロッパで使われるアクセント付き文字とロシアで使われるキリルアルファベットの両方は 128文字以上あるので、128-255の間におさめることはできません。"
+msgstr "255文字というのは十分多い数ではありません。例えば、西ヨーロッパで使われるアクセント付き文字とロシアで使われるキリルアルファベットの両方は 128文字以上あるので、128--255の間におさめることはできません。"
 
 #: ../../howto/unicode.rst:54
 msgid ""
@@ -109,8 +108,8 @@ msgid ""
 "alphabets; an initial goal was to have Unicode contain the alphabets for "
 "every single human language. It turns out that even 16 bits isn't enough to "
 "meet that goal, and the modern Unicode specification uses a wider range of "
-"codes, 0-1,114,111 (0x10ffff in base-16)."
-msgstr "Unicode は 8-bit の文字の代わりに 16-bit の文字を使うことにとりかかりました。 16bit 使うということは 2^16 = 65,536 の異なる値が利用可能だということを意味します、これによって多くの異なるアルファベット上の多くの異なる文字を表現することができます; 最初の目標は Unicode が人間が使う個々の言語のアルファベットを含むことでした。あとになってこの目標を達成するには 16bit でさえも不十分であることがわかりました、そして最新の Unicode 規格は 0-1,114,111 (16進表記で 0x10ffff) までのより広い文字コードの幅を使っています。"
+"codes, 0--1,114,111 (0x10ffff in base-16)."
+msgstr ""
 
 #: ../../howto/unicode.rst:68
 msgid ""
@@ -178,10 +177,10 @@ msgstr "エンコーディング"
 msgid ""
 "To summarize the previous section: a Unicode string is a sequence of code "
 "points, which are numbers from 0 to 0x10ffff.  This sequence needs to be "
-"represented as a set of bytes (meaning, values from 0-255) in memory.  The "
+"represented as a set of bytes (meaning, values from 0--255) in memory.  The "
 "rules for translating a Unicode string into a sequence of bytes are called "
 "an **encoding**."
-msgstr "前の節をまとめると: Unicode 文字列は 0 から 0x10ffff までの数値であるコードポイントのシーケンスで、シーケンスはメモリ上でバイト (0 から 255 までの値) の組として表現される必要があります。バイト列を Unicode 文字列に変換する規則を **エンコーディング (encoding)** と呼びます。"
+msgstr ""
 
 #: ../../howto/unicode.rst:123
 msgid ""
@@ -253,11 +252,11 @@ msgstr "コードポイントが128以上の場合、Unicode 文字列はエン�
 #: ../../howto/unicode.rst:165
 msgid ""
 "Latin-1, also known as ISO-8859-1, is a similar encoding.  Unicode code "
-"points 0-255 are identical to the Latin-1 values, so converting to this "
+"points 0--255 are identical to the Latin-1 values, so converting to this "
 "encoding simply requires converting code points to byte values; if a code "
 "point larger than 255 is encountered, the string can't be encoded into "
 "Latin-1."
-msgstr "Latin-1, ISO-8859-1 として知られるエンコーディングも同様のエンコーディングです。 Unicode コードポイントの 0-255 は Latin-1 の値と等価なので、このエンコーディングの変換するには、単純にコードポイントをバイト値に変換する必要があります; もしコードポイントが255より大きい場合に遭遇した場合、文字列は Latin-1 にエンコードできません。"
+msgstr "Latin-1, ISO-8859-1 として知られるエンコーディングも同様のエンコーディングです。Unicode コードポイントの 0--255 は Latin-1 の値と等価なので、このエンコーディングの変換するには、単純にコードポイントをバイト値に変換する必要があります; もしコードポイントが255より大きい場合に遭遇した場合、文字列は Latin-1 にエンコードできません。"
 
 #: ../../howto/unicode.rst:170
 msgid ""
@@ -328,7 +327,7 @@ msgid ""
 msgstr "バイトが欠落したり、失われた場合、次の UTF-8 でエンコードされたコードポイントの開始を決定し、再同期することができる可能性があります。同様の理由でランダムな 8-bit データは正当な UTF-8 とみなされにくくなっています。"
 
 #: ../../howto/unicode.rst:205 ../../howto/unicode.rst:492
-#: ../../howto/unicode.rst:686
+#: ../../howto/unicode.rst:688
 msgid "References"
 msgstr "参考資料"
 
@@ -344,8 +343,8 @@ msgstr "Unicode コンソーシアムのサイト <http://www.unicode.org> に�
 msgid ""
 "To help understand the standard, Jukka Korpela has written an introductory "
 "guide to reading the Unicode character tables, available at "
-"<http://www.cs.tut.fi/~jkorpela/unicode/guide.html>."
-msgstr "標準についての理解を助けるために Jukka Korpela が Unicode の文字表を読むための導入ガイドを書いています、 <http://www.cs.tut.fi/~jkorpela/unicode/guide.html> から入手可能です。"
+"<https://www.cs.tut.fi/~jkorpela/unicode/guide.html>."
+msgstr ""
 
 #: ../../howto/unicode.rst:216
 msgid ""
@@ -746,36 +745,36 @@ msgid ""
 msgstr "ファイル名を返す :func:`os.listdir` は問題を引き起こします: この関数はファイル名を返すべきでしょうか、それともエンコードされた内容の 8-bit 文字列を返すべきでしょうか? :func:`os.listdir` は与えられたデイレクトリへのパスが 8-bit 文字列か Unicode 文字列で与えたかに応じてその両方を返します。パスを Unicode 文字列で与えた場合、ファイル名はファイルシステムのエンコーディングを利用してデコードされ、 Unicode 文字列のリストが返されます、8-bit パスを与えるとファイル名は 8-bit 文字列で返されます。例えば、デフォルトのファイルシステムエンコーディングが UTF-8 と仮定される場合、以下のプログラムを実行すると::"
 
 #: ../../howto/unicode.rst:622
-msgid "will produce the following output::"
-msgstr "以下の出力結果が生成されます::"
+msgid "will produce the following output:"
+msgstr ""
 
-#: ../../howto/unicode.rst:628
+#: ../../howto/unicode.rst:630
 msgid ""
 "The first list contains UTF-8-encoded filenames, and the second list "
 "contains the Unicode versions."
 msgstr "最初のリストは UTF-8 でエンコーディングされたファイル名を含み、第二のリストは Unicode 版を含んでいます。"
 
-#: ../../howto/unicode.rst:634
+#: ../../howto/unicode.rst:636
 msgid "Tips for Writing Unicode-aware Programs"
 msgstr "Unicode 対応のプログラムを書くための Tips"
 
-#: ../../howto/unicode.rst:636
+#: ../../howto/unicode.rst:638
 msgid ""
 "This section provides some suggestions on writing software that deals with "
 "Unicode."
 msgstr "この章では Unicode を扱うプログラムを書くためのいくつかの提案を紹介します。"
 
-#: ../../howto/unicode.rst:639
+#: ../../howto/unicode.rst:641
 msgid "The most important tip is:"
 msgstr "最も重要な助言としては:"
 
-#: ../../howto/unicode.rst:641
+#: ../../howto/unicode.rst:643
 msgid ""
 "Software should only work with Unicode strings internally, converting to a "
 "particular encoding on output."
 msgstr "ソフトウェア内部の動作には Unicode 文字列のみを利用し、出力時に特定のエンコーディングに変換する。"
 
-#: ../../howto/unicode.rst:644
+#: ../../howto/unicode.rst:646
 msgid ""
 "If you attempt to write processing functions that accept both Unicode and "
 "8-bit strings, you will find your program vulnerable to bugs wherever you "
@@ -785,7 +784,7 @@ msgid ""
 " handled by the ASCII encoding."
 msgstr "UTF-8 と 8-bit 文字列の両方を処理する関数を書こうとすると、異なる種類の文字列を結合する際にバグが生じやすいことに気づくでしょう。 Python のデフォルトエンコーディングは ASCII なので、 ASCII の値 127 より大きい文字が入力データにあった場合、これは ASCII エンコーディングで扱えないために、 :exc:`UnicodeDecodeError` が発生します。"
 
-#: ../../howto/unicode.rst:651
+#: ../../howto/unicode.rst:653
 msgid ""
 "It's easy to miss such problems if you only test your software with data "
 "that doesn't contain any accents; everything will seem to work, but there's "
@@ -793,13 +792,13 @@ msgid ""
 "use characters > 127.  A second tip, therefore, is:"
 msgstr "この問題を見逃がすのは簡単です、ソフトウェアに対してアクセントを含まないデータのみでテストを行なえばよいのです; 全てはうまく動作しているように見えます、しかし実際には最初に 127 より大きい文字を試みたユーザにバグが待ち構えていることになります。第二の助言は:"
 
-#: ../../howto/unicode.rst:656
+#: ../../howto/unicode.rst:658
 msgid ""
 "Include characters > 127 and, even better, characters > 255 in your test "
 "data."
 msgstr "テストデータには 127 より大きい文字を含み、さらに 255 より大きい文字を含むことが望ましい。"
 
-#: ../../howto/unicode.rst:659
+#: ../../howto/unicode.rst:661
 msgid ""
 "When using data coming from a web browser or some other untrusted source, a "
 "common technique is to check for illegal characters in a string before using"
@@ -812,14 +811,14 @@ msgid ""
 "single character."
 msgstr "Web ブラウザからのデータやその他の信用できないところからのデータを使う場合には、コマンド行の生成やデータベースへの記録の前に不正な文字に対するチェックを行なうことが一般的です。もしコマンド行生成やデータベース記録を行なう場合には、文字列が利用または保存できる形式になっているかを一度は注意深く確かめる必要があります; 文字を偽装するためにエンコーディングを利用することは可能です。このことは入力データのエンコーディングが指定されている場合にも可能です; 多くのエンコーディングはチェック用の文字単独をそのままにしておきますが、 Python は ``'base64'`` のような単独の文字を変更するエンコーディングも含んでいます。"
 
-#: ../../howto/unicode.rst:668
+#: ../../howto/unicode.rst:670
 msgid ""
 "For example, let's say you have a content management system that takes a "
 "Unicode filename, and you want to disallow paths with a '/' character.  You "
 "might write this code::"
 msgstr "例えば、Unicode のファイル名を取るコンテキストマネージメントシステムがあるとします、そして '/' 文字を含むパスを拒否したいとします。するとこのコードのように書くでしょう::"
 
-#: ../../howto/unicode.rst:679
+#: ../../howto/unicode.rst:681
 msgid ""
 "However, if an attacker could specify the ``'base64'`` encoding, they could "
 "pass ``'L2V0Yy9wYXNzd2Q='``, which is the base-64 encoded form of the string"
@@ -828,7 +827,7 @@ msgid ""
 "resulting decoded form."
 msgstr "しかし、攻撃者が ``'base64'`` エンコーディングを指定できる場合、攻撃者はシステムファイルを読むために ``'/etc/passwd'`` の文字列を base-64 でエンコードした ``'L2V0Yy9wYXNzd2Q='`` を渡すことができます。上のコードは文字 ``'/'`` をエンコードした形式で探し、デコードした結果が危険な文字となる場合を見逃してしまいます。"
 
-#: ../../howto/unicode.rst:688
+#: ../../howto/unicode.rst:690
 msgid ""
 "The PDF slides for Marc-André Lemburg's presentation \"Writing Unicode-aware"
 " Applications in Python\" are available at "
@@ -837,32 +836,32 @@ msgid ""
 "well as how to internationalize and localize an application."
 msgstr "Marc-André Lemburg のプレゼンテーション \"Writing Unicode-aware Applications in Python\" の PDF スライドが <https://downloads.egenix.com/python/LSM2005-Developing-Unicode-aware-applications-in-Python.pdf> から入手可能です、そして文字エンコーディングの問題と同様にアプリケーションの国際化やローカライズについても議論されています。"
 
-#: ../../howto/unicode.rst:696
+#: ../../howto/unicode.rst:698
 msgid "Revision History and Acknowledgements"
 msgstr "更新履歴と謝辞"
 
-#: ../../howto/unicode.rst:698
+#: ../../howto/unicode.rst:700
 msgid ""
 "Thanks to the following people who have noted errors or offered suggestions "
 "on this article: Nicholas Bastin, Marius Gedminas, Kent Johnson, Ken "
 "Krugler, Marc-André Lemburg, Martin von Löwis, Chad Whitacre."
 msgstr "この記事中の誤りの指摘や提案を申し出てくれた以下の人々に感謝します: Nicholas Bastin, Marius Gedminas, Kent Johnson, Ken Krugler, Marc-André Lemburg, Martin von Löwis, Chad Whitacre."
 
-#: ../../howto/unicode.rst:702
+#: ../../howto/unicode.rst:704
 msgid "Version 1.0: posted August 5 2005."
 msgstr "Version 1.0: posted August 5 2005."
 
-#: ../../howto/unicode.rst:704
+#: ../../howto/unicode.rst:706
 msgid ""
 "Version 1.01: posted August 7 2005.  Corrects factual and markup errors; "
 "adds several links."
 msgstr "Version 1.01: posted August 7 2005.  Corrects factual and markup errors; adds several links."
 
-#: ../../howto/unicode.rst:707
+#: ../../howto/unicode.rst:709
 msgid "Version 1.02: posted August 16 2005.  Corrects factual errors."
 msgstr "Version 1.02: posted August 16 2005.  Corrects factual errors."
 
-#: ../../howto/unicode.rst:709
+#: ../../howto/unicode.rst:711
 msgid ""
 "Version 1.03: posted June 20 2010.  Notes that Python 3.x is not covered, "
 "and that the HOWTO only covers 2.x."

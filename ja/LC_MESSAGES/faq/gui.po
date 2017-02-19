@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2015-12-03 19:15+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:41+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -39,9 +38,9 @@ msgid ""
 "Standard builds of Python include an object-oriented interface to the Tcl/Tk"
 " widget set, called Tkinter.  This is probably the easiest to install and "
 "use. For more info about Tk, including pointers to the source, see the "
-"Tcl/Tk home page at http://www.tcl.tk.  Tcl/Tk is fully portable to the Mac "
-"OS X, Windows, and Unix platforms."
-msgstr "Python の標準的なビルドには、 :ref:`tkinter <Tkinter>` という Tcl/Tk ウィジェットセットのオブジェクト指向インタフェースが含まれています。これは最も簡単にインストールして使えるでしょう (なぜなら、これは Python のほとんどの `binary distributions <http://www.python.org/download/>`_ に同梱されているからです)。ソースへのポインタなど、 Tk に関する詳しい情報は、 `Tcl/Tk ホームページ <http://www.tcl.tk>` を参照してください。Tcl/Tk は、Mac OS X、Windows、Unix プラットフォームに完全にポータブルです。"
+"Tcl/Tk home page at https://www.tcl.tk.  Tcl/Tk is fully portable to the Mac"
+" OS X, Windows, and Unix platforms."
+msgstr ""
 
 #: ../../faq/gui.rst:28
 msgid "wxWidgets"
@@ -49,12 +48,12 @@ msgstr "wxWidgets"
 
 #: ../../faq/gui.rst:30
 msgid ""
-"wxWidgets (http://www.wxwidgets.org) is a free, portable GUI class library "
+"wxWidgets (https://www.wxwidgets.org) is a free, portable GUI class library "
 "written in C++ that provides a native look and feel on a number of "
 "platforms, with Windows, Mac OS X, GTK, X11, all listed as current stable "
 "targets.  Language bindings are available for a number of languages "
 "including Python, Perl, Ruby, etc."
-msgstr "wxWidgets (http://www.wxwidgets.org) は、C++ で書かれたフリーでポータブルな GUI クラスライブラリで、各プラットフォームのネイティブなルックアンドフィールを提供します。現在、Windows、Mac OS X、GTK、X11 はすべて安定した対象です。言語バインディングは Python、Perl、Ruby などの言語で利用できます。"
+msgstr "wxWidgets (https://www.wxwidgets.org) は、C++ で書かれたフリーでポータブルな GUI クラスライブラリで、各プラットフォームのネイティブなルックアンドフィールを提供します。現在、Windows、Mac OS X、GTK、X11 はすべて安定した対象です。言語バインディングは Python、Perl、Ruby などの言語で利用できます。"
 
 #: ../../faq/gui.rst:36
 msgid ""
@@ -79,20 +78,20 @@ msgstr "Qt"
 #: ../../faq/gui.rst:50
 msgid ""
 "There are bindings available for the Qt toolkit (using either `PyQt "
-"<http://www.riverbankcomputing.co.uk/software/pyqt/intro>`_ or `PySide "
-"<http://www.pyside.org/>`_) and for KDE (`PyKDE "
-"<https://techbase.kde.org/Development/Languages/Python>`__). PyQt is "
+"<https://riverbankcomputing.com/software/pyqt/intro>`_ or `PySide "
+"<https://wiki.qt.io/PySide>`_) and for KDE (`PyKDE4 "
+"<https://techbase.kde.org/Languages/Python/Using_PyKDE_4>`__). PyQt is "
 "currently more mature than PySide, but you must buy a PyQt license from "
-"`Riverbank Computing "
-"<http://www.riverbankcomputing.co.uk/software/pyqt/license>`_ if you want to"
-" write proprietary applications.  PySide is free for all applications."
-msgstr "Qt ツールキットへのバインディング (`PyQt <http://www.riverbankcomputing.co.uk/software/pyqt/intro>`_ または `PySide <http://www.pyside.org/>`_) や KDE へのバインディング (`PyKDE <https://techbase.kde.org/Development/Languages/Python>`_) があります。PyQt は現在 PySide よりも発達していますが、プロプライエタリなアプリケーションを書くには  `Riverbank Computing <http://www.riverbankcomputing.co.uk/software/pyqt/license>`_ から PyQt ライセンスを購入しなければなりません。PySide は全てのアプリケーションに対してフリーです。"
+"`Riverbank Computing <https://www.riverbankcomputing.com/commercial/license-"
+"faq>`_ if you want to write proprietary applications.  PySide is free for "
+"all applications."
+msgstr "Qt ツールキットへのバインディング (`PyQt <https://riverbankcomputing.com/software/pyqt/intro>`_ または `PySide <https://wiki.qt.io/PySide>`_) や KDE へのバインディング (`PyKDE4 <https://techbase.kde.org/Languages/Python/Using_PyKDE_4>`_) があります。PyQt は現在 PySide よりも発達していますが、プロプライエタリなアプリケーションを書くには  `Riverbank Computing <https://www.riverbankcomputing.com/commercial/license-faq>`_ から PyQt ライセンスを購入しなければなりません。PySide は全てのアプリケーションに対してフリーです。"
 
 #: ../../faq/gui.rst:57
 msgid ""
 "Qt 4.5 upwards is licensed under the LGPL license; also, commercial licenses"
-" are available from `The Qt Company <http://www.qt.io/licensing/>`_."
-msgstr "Qt 4.5 以降は LGPL ライセンスでライセンスされています。また、商用ライセンスも `The Qt Company <http://www.qt.io/licensing/>`_ から利用できます。"
+" are available from `The Qt Company <https://www.qt.io/licensing/>`_."
+msgstr "Qt 4.5 以降は LGPL ライセンスでライセンスされています。また、商用ライセンスも `The Qt Company <https://www.qt.io/licensing/>`_ から利用できます。"
 
 #: ../../faq/gui.rst:61
 msgid "Gtk+"

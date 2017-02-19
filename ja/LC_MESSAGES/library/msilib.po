@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-06-23 12:22+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:58+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -165,13 +164,13 @@ msgstr "新しい UUID を、MSI が通常要求する形式(つまり、中括�
 
 #: ../../library/msilib.rst:126
 msgid ""
-"`FCICreateFile <http://msdn.microsoft.com/library?url=/library/en-"
+"`FCICreateFile <https://msdn.microsoft.com/library?url=/library/en-"
 "us/devnotes/winprog/fcicreate.asp>`_ `UuidCreate "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/rpc/rpc/uuidcreate.asp>`_ `UuidToString "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/rpc/rpc/uuidtostring.asp>`_"
-msgstr "`FCICreateFile <http://msdn.microsoft.com/library?url=/library/en-us/devnotes/winprog/fcicreate.asp>`_ `UuidCreate <http://msdn.microsoft.com/library?url=/library/en-us/rpc/rpc/uuidcreate.asp>`_ `UuidToString <http://msdn.microsoft.com/library?url=/library/en-us/rpc/rpc/uuidtostring.asp>`_"
+msgstr "`FCICreateFile <https://msdn.microsoft.com/library?url=/library/en-us/devnotes/winprog/fcicreate.asp>`_ `UuidCreate <https://msdn.microsoft.com/library?url=/library/en-us/rpc/rpc/uuidcreate.asp>`_ `UuidToString <https://msdn.microsoft.com/library?url=/library/en-us/rpc/rpc/uuidtostring.asp>`_"
 
 #: ../../library/msilib.rst:133
 msgid "Database Objects"
@@ -198,13 +197,13 @@ msgstr ":c:func:`MsiGetSummaryInformation` を呼び出して新しいサマリ�
 
 #: ../../library/msilib.rst:157
 msgid ""
-"`MSIDatabaseOpenView <http://msdn.microsoft.com/library?url=/library/en-"
+"`MSIDatabaseOpenView <https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msidatabaseopenview.asp>`_ `MSIDatabaseCommit "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msidatabasecommit.asp>`_ `MSIGetSummaryInformation "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msigetsummaryinformation.asp>`_"
-msgstr "`MSIDatabaseOpenView <http://msdn.microsoft.com/library?url=/library/en--us/msi/setup/msidatabaseopenview.asp>`_ `MSIDatabaseCommit <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msidatabasecommit.asp>`_ `MSIGetSummaryInformation <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msigetsummaryinformation.asp>`_"
+msgstr "`MSIDatabaseOpenView <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msidatabaseopenview.asp>`_ `MSIDatabaseCommit <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msidatabasecommit.asp>`_ `MSIGetSummaryInformation <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msigetsummaryinformation.asp>`_"
 
 #: ../../library/msilib.rst:164
 msgid "View Objects"
@@ -249,17 +248,17 @@ msgstr ":c:func:`MsiViewClose` を通してビューを閉じます。"
 
 #: ../../library/msilib.rst:205
 msgid ""
-"`MsiViewExecute <http://msdn.microsoft.com/library?url=/library/en-"
+"`MsiViewExecute <https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msiviewexecute.asp>`_ `MSIViewGetColumnInfo "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msiviewgetcolumninfo.asp>`_ `MsiViewFetch "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msiviewfetch.asp>`_ `MsiViewModify "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msiviewmodify.asp>`_ `MsiViewClose "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msiviewclose.asp>`_"
-msgstr "`MsiViewExecute <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msiviewexecute.asp>`_ `MSIViewGetColumnInfo <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msiviewgetcolumninfo.asp>`_ `MsiViewFetch <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msiviewfetch.asp>`_ `MsiViewModify <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msiviewmodify.asp>`_ `MsiViewClose <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msiviewclose.asp>`_"
+msgstr "`MsiViewExecute <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msiviewexecute.asp>`_ `MSIViewGetColumnInfo <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msiviewgetcolumninfo.asp>`_ `MsiViewFetch <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msiviewfetch.asp>`_ `MsiViewModify <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msiviewmodify.asp>`_ `MsiViewClose <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msiviewclose.asp>`_"
 
 #: ../../library/msilib.rst:214
 msgid "Summary Information Objects"
@@ -298,16 +297,16 @@ msgstr ":c:func:`MsiSummaryInfoPersist` を使って変更されたプロパテ�
 
 #: ../../library/msilib.rst:249
 msgid ""
-"`MsiSummaryInfoGetProperty <http://msdn.microsoft.com/library?url=/library"
+"`MsiSummaryInfoGetProperty <https://msdn.microsoft.com/library?url=/library"
 "/en-us/msi/setup/msisummaryinfogetproperty.asp>`_ "
 "`MsiSummaryInfoGetPropertyCount "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msisummaryinfogetpropertycount.asp>`_ "
-"`MsiSummaryInfoSetProperty <http://msdn.microsoft.com/library?url=/library"
+"`MsiSummaryInfoSetProperty <https://msdn.microsoft.com/library?url=/library"
 "/en-us/msi/setup/msisummaryinfosetproperty.asp>`_ `MsiSummaryInfoPersist "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msisummaryinfopersist.asp>`_"
-msgstr "`MsiSummaryInfoGetProperty <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msisummaryinfogetproperty.asp>`_ `MsiSummaryInfoGetPropertyCount <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msisummaryinfogetpropertycount.asp>`_ `MsiSummaryInfoSetProperty <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msisummaryinfosetproperty.asp>`_ `MsiSummaryInfoPersist <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msisummaryinfopersist.asp>`_"
+msgstr "`MsiSummaryInfoGetProperty <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msisummaryinfogetproperty.asp>`_ `MsiSummaryInfoGetPropertyCount <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msisummaryinfogetpropertycount.asp>`_ `MsiSummaryInfoSetProperty <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msisummaryinfosetproperty.asp>`_ `MsiSummaryInfoPersist <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msisummaryinfopersist.asp>`_"
 
 #: ../../library/msilib.rst:257
 msgid "Record Objects"
@@ -356,17 +355,17 @@ msgstr ":c:func:`MsiRecordClearData` を通してレコードの全てのフィ�
 
 #: ../../library/msilib.rst:303
 msgid ""
-"`MsiRecordGetFieldCount <http://msdn.microsoft.com/library?url=/library/en-"
+"`MsiRecordGetFieldCount <https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msirecordgetfieldcount.asp>`_ `MsiRecordSetString "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msirecordsetstring.asp>`_ `MsiRecordSetStream "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msirecordsetstream.asp>`_ `MsiRecordSetInteger "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msirecordsetinteger.asp>`_ `MsiRecordClear "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/msirecordclear.asp>`_"
-msgstr "`MsiRecordGetFieldCount <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msirecordgetfieldcount.asp>`_ `MsiRecordSetString <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msirecordsetstring.asp>`_ `MsiRecordSetStream <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msirecordsetstream.asp>`_ `MsiRecordSetInteger <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msirecordsetinteger.asp>`_ `MsiRecordClear <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msirecordclear.asp>`_"
+msgstr "`MsiRecordGetFieldCount <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msirecordgetfieldcount.asp>`_ `MsiRecordSetString <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msirecordsetstring.asp>`_ `MsiRecordSetStream <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msirecordsetstream.asp>`_ `MsiRecordSetInteger <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msirecordsetinteger.asp>`_ `MsiRecordClear <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/msirecordclear.asp>`_"
 
 #: ../../library/msilib.rst:312
 msgid "Errors"
@@ -459,15 +458,15 @@ msgstr "アンインストールの際に ``.pyc`` / ``.pyo`` を削除します
 
 #: ../../library/msilib.rst:399
 msgid ""
-"`Directory Table <http://msdn.microsoft.com/library?url=/library/en-"
+"`Directory Table <https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/directory_table.asp>`_ `File Table "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/file_table.asp>`_ `Component Table "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/component_table.asp>`_ `FeatureComponents Table "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/featurecomponents_table.asp>`_"
-msgstr "`Directory Table <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/directory_table.asp>`_ `File Table <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/file_table.asp>`_ `Component Table <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/component_table.asp>`_ `FeatureComponents Table <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/featurecomponents_table.asp>`_"
+msgstr "`Directory Table <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/directory_table.asp>`_ `File Table <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/file_table.asp>`_ `Component Table <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/component_table.asp>`_ `FeatureComponents Table <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/featurecomponents_table.asp>`_"
 
 #: ../../library/msilib.rst:407
 msgid "Features"
@@ -490,9 +489,9 @@ msgstr "このフィーチャーを :mod:`msilib` の現在のフィーチャー
 
 #: ../../library/msilib.rst:427
 msgid ""
-"`Feature Table <http://msdn.microsoft.com/library?url=/library/en-"
+"`Feature Table <https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/feature_table.asp>`_"
-msgstr "`Feature Table <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/feature_table.asp>`_"
+msgstr "`Feature Table <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/feature_table.asp>`_"
 
 #: ../../library/msilib.rst:432
 msgid "GUI classes"
@@ -582,21 +581,21 @@ msgstr "``CheckBox`` コントロールを追加して返します。"
 
 #: ../../library/msilib.rst:522
 msgid ""
-"`Dialog Table <http://msdn.microsoft.com/library?url=/library/en-"
+"`Dialog Table <https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/dialog_table.asp>`_ `Control Table "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/control_table.asp>`_ `Control Types "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/controls.asp>`_ `ControlCondition Table "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/controlcondition_table.asp>`_ `ControlEvent Table "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/controlevent_table.asp>`_ `EventMapping Table "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/eventmapping_table.asp>`_ `RadioButton Table "
-"<http://msdn.microsoft.com/library?url=/library/en-"
+"<https://msdn.microsoft.com/library?url=/library/en-"
 "us/msi/setup/radiobutton_table.asp>`_"
-msgstr "`Dialog Table <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/dialog_table.asp>`_ `Control Table <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/control_table.asp>`_ `Control Types <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/controls.asp>`_ `ControlCondition Table <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/controlcondition_table.asp>`_ `ControlEvent Table <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/controlevent_table.asp>`_ `EventMapping Table <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/eventmapping_table.asp>`_ `RadioButton Table <http://msdn.microsoft.com/library?url=/library/en-us/msi/setup/radiobutton_table.asp>`_"
+msgstr "`Dialog Table <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/dialog_table.asp>`_ `Control Table <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/control_table.asp>`_ `Control Types <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/controls.asp>`_ `ControlCondition Table <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/controlcondition_table.asp>`_ `ControlEvent Table <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/controlevent_table.asp>`_ `EventMapping Table <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/eventmapping_table.asp>`_ `RadioButton Table <https://msdn.microsoft.com/library?url=/library/en-us/msi/setup/radiobutton_table.asp>`_"
 
 #: ../../library/msilib.rst:533
 msgid "Precomputed tables"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -7,10 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-06 04:58+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:41+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -653,8 +652,8 @@ msgid "For Unix, see a Usenet post by Mitch Chapman:"
 msgstr "Unix では、Mitch Chapman による Usenet の投稿を参照してください:"
 
 #: ../../faq/library.rst:600
-msgid "http://groups.google.com/groups?selm=34A04430.CF9@ohioee.com"
-msgstr "http://groups.google.com/groups?selm=34A04430.CF9@ohioee.com"
+msgid "https://groups.google.com/groups?selm=34A04430.CF9@ohioee.com"
+msgstr "https://groups.google.com/groups?selm=34A04430.CF9@ohioee.com"
 
 #: ../../faq/library.rst:604
 msgid "Why doesn't closing sys.stdout (stdin, stderr) really close it?"
@@ -771,16 +770,16 @@ msgid ""
 " some sample code::"
 msgstr "Unix 限定の代わりの選択肢は sendmail を使うことです。sendmail プログラムの場所はシステムによって様々です; あるときは ``/usr/lib/sendmail`` だったり、あるときは ``/usr/sbin/sendmail`` だったり。sendmail のマニュアルページが助けになるでしょう。サンプルコードはこのようになります::"
 
-#: ../../faq/library.rst:741
+#: ../../faq/library.rst:742
 msgid "How do I avoid blocking in the connect() method of a socket?"
 msgstr "ソケットの connect() メソッドでブロッキングされなくするにはどうしますか？"
 
-#: ../../faq/library.rst:743
+#: ../../faq/library.rst:744
 msgid ""
 "The select module is commonly used to help with asynchronous I/O on sockets."
 msgstr "主に select モジュールがソケットの非同期の I/O を扱うのに使われます。"
 
-#: ../../faq/library.rst:745
+#: ../../faq/library.rst:746
 msgid ""
 "To prevent the TCP connect from blocking, you can set the socket to non-"
 "blocking mode.  Then when you do the ``connect()``, you will either connect "
@@ -790,7 +789,7 @@ msgid ""
 "values, so you're going to have to check what's returned on your system."
 msgstr "TCP 接続がブロッキングされないようにするために、ソケットをノンブロッキングモードに設定することが出来ます。そして ``connect()`` したときに、即座に接続できるか、エラー番号を ``.errno`` として含む例外を受け取るかのどちらかになります。``errno.EINPROGRESS`` は、接続が進行中であるが、まだ完了していないということを示します。異なる OS では異なる値が返されるので、あなたのシステムで何が返されるかを確かめておく必要があります。"
 
-#: ../../faq/library.rst:752
+#: ../../faq/library.rst:753
 msgid ""
 "You can use the ``connect_ex()`` method to avoid creating an exception.  It "
 "will just return the errno value.  To poll, you can call ``connect_ex()`` "
@@ -798,37 +797,37 @@ msgid ""
 "you can pass this socket to select to check if it's writable."
 msgstr "``connect_ex()`` メソッドを使えば例外を生成しなくて済みます。これは単に errno の値を返すでしょう。ポーリングのためには、後でまた ``connect_ex()`` を呼び出すことができます -- 0 または ``errno.EISCONN`` は接続されたことを表します -- または、選択するソケットにこれを渡して書き込み可能か調べることができます。"
 
-#: ../../faq/library.rst:759
+#: ../../faq/library.rst:760
 msgid "Databases"
 msgstr "データベース"
 
-#: ../../faq/library.rst:762
+#: ../../faq/library.rst:763
 msgid "Are there any interfaces to database packages in Python?"
 msgstr "Python にはデータベースパッケージへのインタフェースはありますか？"
 
-#: ../../faq/library.rst:764
+#: ../../faq/library.rst:765
 msgid "Yes."
 msgstr "はい。"
 
-#: ../../faq/library.rst:768
+#: ../../faq/library.rst:769
 msgid ""
 "Python 2.3 includes the :mod:`bsddb` package which provides an interface to "
 "the BerkeleyDB library.  Interfaces to disk-based hashes such as :mod:`DBM "
 "<dbm>` and :mod:`GDBM <gdbm>` are also included with standard Python."
 msgstr ":mod:`DBM <dbm.ndbm>` や :mod:`GDBM <dbm.gnu>` のような、ディスクに基づくハッシュへのインタフェースも標準の Python に含まれています。ディスクに基づく軽量なリレーショナルデータベースを提供する :mod:`sqlite3` モジュールもあります。"
 
-#: ../../faq/library.rst:772
+#: ../../faq/library.rst:773
 msgid ""
 "Support for most relational databases is available.  See the "
 "`DatabaseProgramming wiki page "
 "<https://wiki.python.org/moin/DatabaseProgramming>`_ for details."
 msgstr "ほとんどの相対データベースがサポートされています。詳細は `DatabaseProgramming wiki page <https://wiki.python.org/moin/DatabaseProgramming>`_ を参照してください。"
 
-#: ../../faq/library.rst:778
+#: ../../faq/library.rst:779
 msgid "How do you implement persistent objects in Python?"
 msgstr "Python で永続的なオブジェクトを実装するにはどうしますか？"
 
-#: ../../faq/library.rst:780
+#: ../../faq/library.rst:781
 msgid ""
 "The :mod:`pickle` library module solves this in a very general way (though "
 "you still can't store things like open files, sockets or windows), and the "
@@ -837,7 +836,7 @@ msgid ""
 "can use the :mod:`cPickle` module."
 msgstr ":mod:`pickle` ライブラリモジュールで、ごく一般的な方法でこれを解決できます (開かれたファイル、ソケット、ウィンドウのようなものを保管することはできませんが)。:mod:`shelve` ライブラリモジュールは pickle と (g)dbm を使い、任意の Python オブジェクトを含む永続的なマッピングを生成します。パフォーマンスを良くするために、:mod:`cPickle` モジュールを使うこともできます。"
 
-#: ../../faq/library.rst:786
+#: ../../faq/library.rst:787
 msgid ""
 "A more awkward way of doing things is to use pickle's little sister, "
 "marshal. The :mod:`marshal` module provides very fast ways to store "
@@ -849,24 +848,24 @@ msgid ""
 " with pickle/shelve."
 msgstr "もっと不器用な方法は、pickle の妹分である marshal を使うことです。 :mod:`marshal` モジュールは、再帰的でない標準の Python 型を、ファイルや文字列にとても高速に保存したり、元に戻したりする方法を提供します。 marshal では、インスタンスの保存や共有される参照の適切な処理などの派手なことはできませんが、極端に速く動作します。例えば、半メガバイトのデータに 3 分の 1 秒も掛からないでしょう。これは多くの場合、 pickle/shelve で gdbm を使うというような、複雑な一般の方法に勝ります。"
 
-#: ../../faq/library.rst:796
+#: ../../faq/library.rst:797
 msgid "Why is cPickle so slow?"
 msgstr "なぜ cPickle はこんなに遅いのですか？"
 
-#: ../../faq/library.rst:800
+#: ../../faq/library.rst:801
 msgid ""
 "By default :mod:`pickle` uses a relatively old and slow format for backward "
 "compatibility.  You can however specify other protocol versions that are "
 "faster::"
 msgstr ":mod:`pickle` モジュールは後方互換性のために、ちょっと古くて遅いフォーマットをデフォルトで使います。ですが速いほかのプロトコルバージョンを指定出来ます::"
 
-#: ../../faq/library.rst:809
+#: ../../faq/library.rst:810
 msgid ""
 "If my program crashes with a bsddb (or anydbm) database open, it gets "
 "corrupted. How come?"
 msgstr "bsddb (or anydbm) データベースが開かれたままプログラムがクラッシュすると、だめになってしまいます。なぜですか？"
 
-#: ../../faq/library.rst:811
+#: ../../faq/library.rst:812
 msgid ""
 "Databases opened for write access with the bsddb module (and often by the "
 "anydbm module, since it will preferentially use bsddb) must explicitly be "
@@ -875,27 +874,27 @@ msgid ""
 "and written."
 msgstr "bsddb モジュール (やしばしば anydbm モジュール。優先的に bsddb を使うでしょうから) で書き込みのために開かれたデータベースは、データベースの ``.close()`` メソッドで明示的に閉じられなければなりません。その基礎にあるライブラリは、ディスク上の形式に変換されて書き込まれるべきデータベースの中身を、キャッシュします。"
 
-#: ../../faq/library.rst:816
+#: ../../faq/library.rst:817
 msgid ""
 "If you have initialized a new bsddb database but not written anything to it "
 "before the program crashes, you will often wind up with a zero-length file "
 "and encounter an exception the next time the file is opened."
 msgstr "新しい bsddb データベースを初期化したけれどプログラムのクラッシュ時までに何も書き込まれていないとき、長さ 0 のファイルで終わることになり、次にそのファイルが開かれたときに例外に出くわすでしょう。"
 
-#: ../../faq/library.rst:822
+#: ../../faq/library.rst:823
 msgid ""
 "I tried to open Berkeley DB file, but bsddb produces bsddb.error: (22, "
 "'Invalid argument'). Help! How can I restore my data?"
 msgstr "Berkeley DB ファイルを開こうとしましたが、bsddb が bsddb.error: (22, 'Invalid argument') を生じます。助けてください！データを復元するにはどうしたら良いですか？"
 
-#: ../../faq/library.rst:824
+#: ../../faq/library.rst:825
 msgid ""
 "Don't panic! Your data is probably intact. The most frequent cause for the "
 "error is that you tried to open an earlier Berkeley DB file with a later "
 "version of the Berkeley DB library."
 msgstr "慌てないでください！あなたのデータはおそらく無事です。このエラーの一番ありがちな原因は、新しいバージョンの Berkeley DB ライブラリから古い Berkeley DB ファイルを開こうとすることです。"
 
-#: ../../faq/library.rst:828
+#: ../../faq/library.rst:829
 msgid ""
 "Many Linux systems now have all three versions of Berkeley DB available.  If"
 " you are migrating from version 1 to a newer version use db_dump185 to dump "
@@ -907,61 +906,61 @@ msgid ""
 "database."
 msgstr "多くの Linux システムで、今では 3 種類全てのバージョンの Berkeley DB が利用できます。バージョン 1 から新しいバージョンに移行するには、 db_dump185 でデータベースのプレーンテキスト版をダンプしてください。バージョン 2 からバージョン 3 に移行するには、db_2dump でデータベースのプレーンテキスト版を生成してください。そのどちらの場合でも、db_load でコンピュータにインストールされている最新バージョンの新しいネイティブデータベースを生成してください。バージョン 3 の Berkeley DB がインストールされているなら、db2_load でネイティブのバージョン 2 のデータベースを生成できるでしょう。"
 
-#: ../../faq/library.rst:836
+#: ../../faq/library.rst:837
 msgid ""
 "You should move away from Berkeley DB version 1 files because the hash file "
 "code contains known bugs that can corrupt your data."
 msgstr "Berkeley DB バージョン 1 のハッシュファイルコードにはデータを破壊する既知のバグがありますから、使うのをやめるべきです。"
 
-#: ../../faq/library.rst:841
+#: ../../faq/library.rst:842
 msgid "Mathematics and Numerics"
 msgstr "数学と数"
 
-#: ../../faq/library.rst:844
+#: ../../faq/library.rst:845
 msgid "How do I generate random numbers in Python?"
 msgstr "Python でランダムな数を生成するにはどうしますか？"
 
-#: ../../faq/library.rst:846
+#: ../../faq/library.rst:847
 msgid ""
 "The standard module :mod:`random` implements a random number generator.  "
 "Usage is simple::"
 msgstr "標準モジュールの :mod:`random` がランダムな数の生成器を実装しています。使い方は単純です::"
 
-#: ../../faq/library.rst:852
+#: ../../faq/library.rst:853
 msgid "This returns a random floating point number in the range [0, 1)."
 msgstr "これは区間 [0, 1) 内のランダムな浮動小数点数を返します。"
 
-#: ../../faq/library.rst:854
+#: ../../faq/library.rst:855
 msgid ""
 "There are also many other specialized generators in this module, such as:"
 msgstr "このモジュールにはその他多くの特化した生成器もあります。例えば:"
 
-#: ../../faq/library.rst:856
+#: ../../faq/library.rst:857
 msgid "``randrange(a, b)`` chooses an integer in the range [a, b)."
 msgstr "``randrange(a, b)`` は区間 [a, b) から整数を選びます。"
 
-#: ../../faq/library.rst:857
+#: ../../faq/library.rst:858
 msgid "``uniform(a, b)`` chooses a floating point number in the range [a, b)."
 msgstr "``uniform(a, b)`` は区間 [a, b) から浮動小数点数を選びます。"
 
-#: ../../faq/library.rst:858
+#: ../../faq/library.rst:859
 msgid ""
 "``normalvariate(mean, sdev)`` samples the normal (Gaussian) distribution."
 msgstr "``normalvariate(mean, sdev)`` は正規(ガウス)分布をサンプリングします。"
 
-#: ../../faq/library.rst:860
+#: ../../faq/library.rst:861
 msgid "Some higher-level functions operate on sequences directly, such as:"
 msgstr "シーケンスに直接作用する高水準な関数もあります。例えば:"
 
-#: ../../faq/library.rst:862
+#: ../../faq/library.rst:863
 msgid "``choice(S)`` chooses random element from a given sequence"
 msgstr "``choice(S)`` は与えられたシーケンスからランダムな要素を選びます。"
 
-#: ../../faq/library.rst:863
+#: ../../faq/library.rst:864
 msgid "``shuffle(L)`` shuffles a list in-place, i.e. permutes it randomly"
 msgstr "``shuffle(L)`` はリストをインプレースにシャッフルします。すなわち、ランダムに並び替えます。"
 
-#: ../../faq/library.rst:865
+#: ../../faq/library.rst:866
 msgid ""
 "There's also a ``Random`` class you can instantiate to create independent "
 "multiple random number generators."

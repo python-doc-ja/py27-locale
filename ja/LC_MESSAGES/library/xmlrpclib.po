@@ -1,18 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 # INADA Naoki <songofacandy@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-01 03:39+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:10+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,12 +35,12 @@ msgstr "**Source code:** :source:`Lib/xmlrpclib.py`"
 
 #: ../../library/xmlrpclib.rst:24
 msgid ""
-"XML-RPC is a Remote Procedure Call method that uses XML passed via HTTP as a"
-" transport.  With it, a client can call methods with parameters on a remote "
-"server (the server is named by a URI) and get back structured data.  This "
-"module supports writing XML-RPC client code; it handles all the details of "
-"translating between conformable Python objects and XML on the wire."
-msgstr "XML-RPCはXMLを利用した遠隔手続き呼び出し(Remote Procedure Call)の一種で、HTTPをトランスポートとして使用します。XML- RPCでは、クライアントはリモートサーバ(URIで指定されたサーバ)上のメソッドをパラメータを指定して呼び出し、構造化されたデータを取得します。このモジュールは、XML-RPCクライアントの開発をサポートしており、Pythonオブジェクトに適合する転送用XMLの変換の全てを行います。"
+"XML-RPC is a Remote Procedure Call method that uses XML passed via HTTP(S) "
+"as a transport.  With it, a client can call methods with parameters on a "
+"remote server (the server is named by a URI) and get back structured data.  "
+"This module supports writing XML-RPC client code; it handles all the details"
+" of translating between conformable Python objects and XML on the wire."
+msgstr ""
 
 #: ../../library/xmlrpclib.rst:33
 msgid ""
@@ -52,9 +51,9 @@ msgstr ":mod:`xmlrpclib` モジュールは悪意を持って構築されたデ�
 
 #: ../../library/xmlrpclib.rst:39
 msgid ""
-"For https URIs, :mod:`xmlrpclib` now performs all the necessary certificate "
-"and hostname checks by default"
-msgstr "https URI に対して、 :mod:`xmlrpclib` は今では、全ての必要な証明書検証とホスト名チェックをデフォルトで行うようになっています。"
+"For HTTPS URIs, :mod:`xmlrpclib` now performs all the necessary certificate "
+"and hostname checks by default."
+msgstr ""
 
 #: ../../library/xmlrpclib.rst:44
 msgid ""
@@ -65,29 +64,37 @@ msgid ""
 "an internal :class:`SafeTransport` instance for https: URLs and an internal "
 "HTTP :class:`Transport` instance otherwise.  The optional third argument is "
 "an encoding, by default UTF-8. The optional fourth argument is a debugging "
-"flag. If *allow_none* is true,  the Python constant ``None`` will be "
-"translated into XML; the default behaviour is for ``None`` to raise a "
-":exc:`TypeError`. This is a commonly-used extension to the XML-RPC "
-"specification, but isn't supported by all clients and servers; see "
-"http://ontosys.com/xml-rpc/extensions.php for a description.  The "
-"*use_datetime* flag can be used to cause date/time values to be presented as"
-" :class:`datetime.datetime` objects; this is false by default. "
-":class:`datetime.datetime` objects may be passed to calls."
-msgstr ":class:`ServerProxy` は、リモートのXML-RPCサーバとの通信を管理するオブジェクトです。最初のパラメータはURI(Uniform Resource Indicator)で、通常はサーバのURLを指定します。2番目のパラメータにはトランスポート・ファクトリを指定する事ができます。トランスポート・ファクトリを省略した場合、URLが https: ならモジュール内部の :class:`SafeTransport` インスタンスを使用し、それ以外の場合にはモジュール内部の :class:`Transport` インスタンスを使用します。オプションの 3 番目の引数はエンコード方法で、デフォルトでは UTF-8 です。オプションの 4 番目の引数はデバッグフラグです。 *allow_none* が真の場合、Python の定数 ``None`` は XML に翻訳されます; デフォルトの動作は ``None`` に対して :exc:`TypeError` を送出します。この仕様は XML-RPC 仕様でよく用いられている拡張ですが、全てのクライアントやサーバでサポートされているわけではありません; 詳細記述については http://ontosys.com/xml-rpc/extensions.html を参照してください。 *use_datetime* フラグは :class:`datetime.datetime` のオブジェクトとして日付/時刻を表現する時に使用し、デフォルトでは false に設定されています。呼び出しに :class:`datetime.datetime` のオブジェクトを渡すことができます。"
+"flag."
+msgstr ""
 
-#: ../../library/xmlrpclib.rst:59
+#: ../../library/xmlrpclib.rst:52
+msgid ""
+"The following parameters govern the use of the returned proxy instance. If "
+"*allow_none* is true,  the Python constant ``None`` will be translated into "
+"XML; the default behaviour is for ``None`` to raise a :exc:`TypeError`. This"
+" is a commonly-used extension to the XML-RPC specification, but isn't "
+"supported by all clients and servers; see `http://ontosys.com/xml-"
+"rpc/extensions.php "
+"<https://web.archive.org/web/20130120074804/http://ontosys.com/xml-"
+"rpc/extensions.php>`_ for a description. The *use_datetime* flag can be used"
+" to cause date/time values to be presented as :class:`datetime.datetime` "
+"objects; this is false by default. :class:`datetime.datetime` objects may be"
+" passed to calls."
+msgstr ""
+
+#: ../../library/xmlrpclib.rst:63
 msgid ""
 "Both the HTTP and HTTPS transports support the URL syntax extension for HTTP"
 " Basic Authentication: ``http://user:pass@host:port/path``.  The "
 "``user:pass`` portion will be base64-encoded as an HTTP 'Authorization' "
 "header, and sent to the remote server as part of the connection process when"
 " invoking an XML-RPC method.  You only need to use this if the remote server"
-" requires a Basic Authentication user and password. If an HTTPS url is "
+" requires a Basic Authentication user and password. If an HTTPS URL is "
 "provided, *context* may be :class:`ssl.SSLContext` and configures the SSL "
 "settings of the underlying HTTPS connection."
-msgstr "HTTP及びHTTPS通信の両方で、 ``http://user:pass@host:port/path`` のようなHTTP基本認証のための拡張URL構文をサポートしています。 ``user:pass`` はbase64でエンコードしてHTTPの'Authorization 'ヘッダとなり、XML-RPCメソッド呼び出し時に接続処理の一部としてリモートサーバに送信されます。リモートサーバが基本認証を要求する場合のみ、この機能を利用する必要があります。HTTPS の url が与える場合、 *context* に :class:`ssl.SSLContext` を与えて下層の HTTPS 接続の SSL 設定をすることが出来ます。"
+msgstr ""
 
-#: ../../library/xmlrpclib.rst:68
+#: ../../library/xmlrpclib.rst:72
 msgid ""
 "The returned instance is a proxy object with methods that can be used to "
 "invoke corresponding RPC calls on the remote server.  If the remote server "
@@ -96,87 +103,102 @@ msgid ""
 "other server-associated metadata."
 msgstr "生成されるインスタンスはリモートサーバへのプロクシオブジェクトで、RPC呼び出しを行う為のメソッドを持ちます。リモートサーバがイントロスペクション APIをサポートしている場合は、リモートサーバのサポートするメソッドを検索 (サービス検索)やサーバのメタデータの取得なども行えます。"
 
-#: ../../library/xmlrpclib.rst:74
+#: ../../library/xmlrpclib.rst:78
 msgid ""
-":class:`ServerProxy` instance methods take Python basic types and objects as"
-" arguments and return Python basic types and classes.  Types that are "
-"conformable (e.g. that can be marshalled through XML), include the following"
-" (and except where noted, they are unmarshalled as the same Python type):"
-msgstr ":class:`ServerProxy` インスタンスのメソッドは引数としてPythonの基礎型とオブジェクトを受け取り、戻り値としてPythonの基礎型かオブジェクトを返します。以下の型をXMLに変換(XMLを通じてマーシャルする)する事ができます (特別な指定がない限り、逆変換でも同じ型として変換されます):"
-
-#: ../../library/xmlrpclib.rst:80
-msgid "Name"
-msgstr "名前"
-
-#: ../../library/xmlrpclib.rst:80
-msgid "Meaning"
-msgstr "意味"
-
-#: ../../library/xmlrpclib.rst:82
-msgid ":const:`boolean`"
-msgstr ":const:`boolean`"
-
-#: ../../library/xmlrpclib.rst:82
-msgid "The :const:`True` and :const:`False` constants"
-msgstr "定数 :const:`True` と :const:`False`"
+"Types that are conformable (e.g. that can be marshalled through XML), "
+"include the following (and except where noted, they are unmarshalled as the "
+"same Python type):"
+msgstr ""
 
 #: ../../library/xmlrpclib.rst:85
-msgid ":const:`integers`"
-msgstr "整数"
+msgid "XML-RPC type"
+msgstr "XML-RPC の型"
 
-#: ../../library/xmlrpclib.rst:85 ../../library/xmlrpclib.rst:87
-#: ../../library/xmlrpclib.rst:89
-msgid "Pass in directly"
-msgstr "そのまま"
+#: ../../library/xmlrpclib.rst:85
+msgid "Python type"
+msgstr "Python の型"
 
 #: ../../library/xmlrpclib.rst:87
-msgid ":const:`floating-point numbers`"
-msgstr "浮動小数点数"
+msgid "``boolean``"
+msgstr "``boolean``"
+
+#: ../../library/xmlrpclib.rst:87
+msgid ":class:`bool`"
+msgstr ":class:`bool`"
 
 #: ../../library/xmlrpclib.rst:89
-msgid ":const:`strings`"
-msgstr "文字列"
+msgid "``int`` or ``i4``"
+msgstr "``int`` または ``i4``"
 
-#: ../../library/xmlrpclib.rst:91
-msgid ":const:`arrays`"
-msgstr "配列"
+#: ../../library/xmlrpclib.rst:89
+msgid ":class:`int` or :class:`long` in range from -2147483648 to 2147483647."
+msgstr ""
 
-#: ../../library/xmlrpclib.rst:91
+#: ../../library/xmlrpclib.rst:92
+msgid "``double``"
+msgstr "``double``"
+
+#: ../../library/xmlrpclib.rst:92
+msgid ":class:`float`"
+msgstr ":class:`float`"
+
+#: ../../library/xmlrpclib.rst:94
+msgid "``string``"
+msgstr "``string``"
+
+#: ../../library/xmlrpclib.rst:94
+msgid ":class:`str` or :class:`unicode`"
+msgstr ""
+
+#: ../../library/xmlrpclib.rst:96
+msgid "``array``"
+msgstr "``array``"
+
+#: ../../library/xmlrpclib.rst:96
 msgid ""
-"Any Python sequence type containing conformable elements. Arrays are "
-"returned as lists"
-msgstr "変換可能な要素を含むPythonシーケンス。戻り値はリスト。"
+":class:`list` or :class:`tuple` containing conformable elements.  Arrays are"
+" returned as :class:`lists <list>`."
+msgstr "適合する要素を持つ :class:`list` または :class:`tuple`。array は :class:`list` として返します。"
 
-#: ../../library/xmlrpclib.rst:95
-msgid ":const:`structures`"
-msgstr "構造体"
+#: ../../library/xmlrpclib.rst:100
+msgid "``struct``"
+msgstr "``struct``"
 
-#: ../../library/xmlrpclib.rst:95
+#: ../../library/xmlrpclib.rst:100
 msgid ""
-"A Python dictionary. Keys must be strings, values may be any conformable "
-"type. Objects of user-defined classes can be passed in; only their "
-"*__dict__* attribute is transmitted."
-msgstr "Pythonの辞書。キーは文字列のみ。全ての値は変換可能でなくてはならない。ユーザー定義型を渡すこともできます。 *__dict__* の属性のみ転送されます。"
-
-#: ../../library/xmlrpclib.rst:101
-msgid ":const:`dates`"
-msgstr "日付"
-
-#: ../../library/xmlrpclib.rst:101
-msgid ""
-"in seconds since the epoch (pass in an instance of the :class:`DateTime` "
-"class) or a :class:`datetime.datetime` instance."
-msgstr "エポックからの経過秒数(:class:`DateTime` クラスのインスタンスとして渡す) もしくは、 :class:`datetime.datetime` のインスタンス"
+":class:`dict`.  Keys must be strings, values may be any conformable type.  "
+"Objects of user-defined classes can be passed in; only their "
+":attr:`~object.__dict__` attribute is transmitted."
+msgstr ""
 
 #: ../../library/xmlrpclib.rst:105
-msgid ":const:`binary data`"
-msgstr "バイナリ"
+msgid "``dateTime.iso8601``"
+msgstr "``dateTime.iso8601``"
 
 #: ../../library/xmlrpclib.rst:105
-msgid "pass in an instance of the :class:`Binary` wrapper class"
-msgstr ":class:`Binary` ラッパクラスのインスタンス"
+msgid ""
+":class:`DateTime` or :class:`datetime.datetime`. Returned type depends on "
+"values of the *use_datetime* flags."
+msgstr ""
 
 #: ../../library/xmlrpclib.rst:109
+msgid "``base64``"
+msgstr "``base64``"
+
+#: ../../library/xmlrpclib.rst:109
+msgid ":class:`Binary`"
+msgstr ""
+
+#: ../../library/xmlrpclib.rst:111
+msgid "``nil``"
+msgstr "``nil``"
+
+#: ../../library/xmlrpclib.rst:111
+msgid ""
+"The ``None`` constant.  Passing is allowed only if *allow_none* is true."
+msgstr "``None`` 定数。 *allow_none* が真の場合にのみ渡すことが出来ます。"
+
+#: ../../library/xmlrpclib.rst:115
 msgid ""
 "This is the full set of data types supported by XML-RPC.  Method calls may "
 "also raise a special :exc:`Fault` instance, used to signal XML-RPC server "
@@ -187,7 +209,7 @@ msgid ""
 " marshal instances of such subclasses."
 msgstr "上記のXML-RPCでサポートする全データ型を使用することができます。メソッド呼び出し時、XML- RPCサーバエラーが発生すると :exc:`Fault` インスタンスを送出し、HTTP/HTTPSトランスポート層でエラーが発生した場合には :exc:`ProtocolError` を送出します。 :exc:`Error` をベースとする :exc:`Fault` と :exc:`ProtocolError` の両方が発生します。 Python 2.2以降では組み込み型のサブクラスを作成する事ができますが、現在のところxmlrpclibではそのようなサブクラスのインスタンスをマーシャルすることはできません。"
 
-#: ../../library/xmlrpclib.rst:117
+#: ../../library/xmlrpclib.rst:123
 msgid ""
 "When passing strings, characters special to XML such as ``<``, ``>``, and "
 "``&`` will be automatically escaped.  However, it's the caller's "
@@ -199,70 +221,73 @@ msgid ""
 "class described below."
 msgstr "文字列を渡す場合、 ``<``, ``>``, ``&`` などのXMLで特殊な意味を持つ文字は自動的にエスケープされます。しかし、ASCII値0〜31の制御文字(もちろん、タブ'TAB',改行'LF',リターン'CR'は除く)などのXMLで使用することのできない文字を使用することはできず、使用するとそのXML-RPCリクエストはwell-formedなXMLとはなりません。そのような文字列を渡す必要がある場合は、後述の :class:`Binary` ラッパクラスを使用してください。"
 
-#: ../../library/xmlrpclib.rst:125
+#: ../../library/xmlrpclib.rst:131
 msgid ""
 ":class:`Server` is retained as an alias for :class:`ServerProxy` for "
 "backwards compatibility.  New code should use :class:`ServerProxy`."
 msgstr ":class:`Server` は、後方互換性の為に :class:`ServerProxy` の別名として残されています。新しいコードでは :class:`ServerProxy` を使用してください。"
 
-#: ../../library/xmlrpclib.rst:128 ../../library/xmlrpclib.rst:543
+#: ../../library/xmlrpclib.rst:134 ../../library/xmlrpclib.rst:557
 msgid "The *use_datetime* flag was added."
 msgstr "*use_datetime* フラグが追加されました"
 
-#: ../../library/xmlrpclib.rst:131
+#: ../../library/xmlrpclib.rst:137
 msgid ""
 "Instances of :term:`new-style class`\\es can be passed in if they have an "
 "*__dict__* attribute and don't have a base class that is marshalled in a "
 "special way."
 msgstr "ニュースタイルクラス(:term:`new-style class`)も、 *__dict__* 属性を持っていて、特別な方法でマーシャルされている親クラスを持っていなければ、渡すことができます。"
 
-#: ../../library/xmlrpclib.rst:136
+#: ../../library/xmlrpclib.rst:142
 msgid "Added the *context* argument."
 msgstr "*context* 引数が追加されました。"
 
-#: ../../library/xmlrpclib.rst:144
-msgid "XML-RPC HOWTO"
-msgstr "XML-RPC HOWTO"
+#: ../../library/xmlrpclib.rst:150
+msgid "`XML-RPC HOWTO <http://www.tldp.org/HOWTO/XML-RPC-HOWTO/index.html>`_"
+msgstr "`XML-RPC HOWTO <http://www.tldp.org/HOWTO/XML-RPC-HOWTO/index.html>`_"
 
-#: ../../library/xmlrpclib.rst:143
+#: ../../library/xmlrpclib.rst:149
 msgid ""
 "A good description of XML-RPC operation and client software in several "
 "languages. Contains pretty much everything an XML-RPC client developer needs"
 " to know."
 msgstr "数種類のプログラミング言語で記述された XML-RPCの操作とクライアントソフトウェアの素晴らしい説明が掲載されています。 XML- RPCクライアントの開発者が知っておくべきことがほとんど全て記載されています。"
 
-#: ../../library/xmlrpclib.rst:147
-msgid "XML-RPC Introspection"
-msgstr "XML-RPC Introspection"
+#: ../../library/xmlrpclib.rst:153
+msgid ""
+"`XML-RPC Introspection "
+"<http://xmlrpc-c.sourceforge.net/introspection.html>`_"
+msgstr "`XML-RPC Introspection <http://xmlrpc-c.sourceforge.net/introspection.html>`_"
 
-#: ../../library/xmlrpclib.rst:147
+#: ../../library/xmlrpclib.rst:153
 msgid "Describes the XML-RPC protocol extension for introspection."
 msgstr "インストロペクションをサポートする、 XML-RPC プロトコルの拡張を解説しています。"
 
-#: ../../library/xmlrpclib.rst:150
-msgid "XML-RPC Specification"
-msgstr "XML-RPC Specification"
+#: ../../library/xmlrpclib.rst:156
+msgid "`XML-RPC Specification <http://www.xmlrpc.com/spec>`_"
+msgstr "`XML-RPC Specification <http://www.xmlrpc.com/spec>`_"
 
-#: ../../library/xmlrpclib.rst:150
+#: ../../library/xmlrpclib.rst:156
 msgid "The official specification."
 msgstr "公式の仕様"
 
-#: ../../library/xmlrpclib.rst:155
-msgid "Unofficial XML-RPC Errata"
-msgstr "Unofficial XML-RPC Errata"
+#: ../../library/xmlrpclib.rst:161
+msgid ""
+"`Unofficial XML-RPC Errata <http://effbot.org/zone/xmlrpc-errata.htm>`_"
+msgstr "`XML-RPC 非公式正誤表 <http://effbot.org/zone/xmlrpc-errata.htm>`_"
 
-#: ../../library/xmlrpclib.rst:153
+#: ../../library/xmlrpclib.rst:159
 msgid ""
 "Fredrik Lundh's \"unofficial errata, intended to clarify certain details in "
 "the XML-RPC specification, as well as hint at 'best practices' to use when "
 "designing your own XML-RPC implementations.\""
 msgstr "Fredrik Lundh による \"unofficial errata, intended to clarify certain details in the XML-RPC specification, as well as hint at 'best practices' to use when designing your own XML-RPC implementations.\""
 
-#: ../../library/xmlrpclib.rst:161
+#: ../../library/xmlrpclib.rst:167
 msgid "ServerProxy Objects"
 msgstr "ServerProxy オブジェクト"
 
-#: ../../library/xmlrpclib.rst:163
+#: ../../library/xmlrpclib.rst:169
 msgid ""
 "A :class:`ServerProxy` instance has a method corresponding to each remote "
 "procedure call accepted by the XML-RPC server.  Calling the method performs "
@@ -273,19 +298,19 @@ msgid ""
 "indicating an error."
 msgstr ":class:`ServerProxy` インスタンスの各メソッドはそれぞれXML-RPCサーバの遠隔手続き呼び出しに対応しており、メソッドが呼び出されると名前と引数をシグネチャとしてRPCを実行します(同じ名前のメソッドでも、異なる引数シグネチャによってオーバロードされます)。RPC実行後、変換された値を返すか、または :class:`Fault` オブジェクトもしくは :class:`ProtocolError` オブジェクトでエラーを通知します。"
 
-#: ../../library/xmlrpclib.rst:170
+#: ../../library/xmlrpclib.rst:176
 msgid ""
 "Servers that support the XML introspection API support some common methods "
-"grouped under the reserved :attr:`system` attribute:"
-msgstr "予約属性 :attr:`system` から、XMLイントロスペクションAPIの一般的なメソッドを利用する事ができます:"
+"grouped under the reserved :attr:`~ServerProxy.system` attribute:"
+msgstr ""
 
-#: ../../library/xmlrpclib.rst:176
+#: ../../library/xmlrpclib.rst:182
 msgid ""
 "This method returns a list of strings, one for each (non-system) method "
 "supported by the XML-RPC server."
 msgstr "XML-RPCサーバがサポートするメソッド名(system以外)を格納する文字列のリストを返します。"
 
-#: ../../library/xmlrpclib.rst:182
+#: ../../library/xmlrpclib.rst:188
 msgid ""
 "This method takes one parameter, the name of a method implemented by the "
 "XML-RPC server. It returns an array of possible signatures for this method. "
@@ -293,13 +318,13 @@ msgid ""
 "type of the method, the rest are parameters."
 msgstr "XML-RPCサーバで実装されているメソッドの名前を指定し、利用可能なシグネチャの配列を取得します。シグネチャは型のリストで、先頭の型は戻り値の型を示し、以降はパラメータの型を示します。"
 
-#: ../../library/xmlrpclib.rst:187
+#: ../../library/xmlrpclib.rst:193
 msgid ""
 "Because multiple signatures (ie. overloading) is permitted, this method "
 "returns a list of signatures rather than a singleton."
 msgstr "XML-RPCでは複数のシグネチャ(オーバロード)を使用することができるので、単独のシグネチャではなく、シグネチャのリストを返します。"
 
-#: ../../library/xmlrpclib.rst:190
+#: ../../library/xmlrpclib.rst:196
 msgid ""
 "Signatures themselves are restricted to the top level parameters expected by"
 " a method. For instance if a method expects one array of structs as a "
@@ -308,14 +333,14 @@ msgid ""
 " \"string, int, int, int\"."
 msgstr "シグネチャは、メソッドが使用する最上位のパラメータにのみ適用されます。例えばあるメソッドのパラメータが構造体の配列で戻り値が文字列の場合、シグネチャは単に\"string, array\" となります。パラメータが三つの整数で戻り値が文字列の場合は\"string, int, int, int\"となります。"
 
-#: ../../library/xmlrpclib.rst:195
+#: ../../library/xmlrpclib.rst:201
 msgid ""
 "If no signature is defined for the method, a non-array value is returned. In"
 " Python this means that the type of the returned  value will be something "
 "other than list."
 msgstr "メソッドにシグネチャが定義されていない場合、配列以外の値が返ります。 Pythonでは、この値はlist以外の値となります。"
 
-#: ../../library/xmlrpclib.rst:202
+#: ../../library/xmlrpclib.rst:208
 msgid ""
 "This method takes one parameter, the name of a method implemented by the "
 "XML-RPC server.  It returns a documentation string describing the use of "
@@ -323,11 +348,11 @@ msgid ""
 "The documentation string may contain HTML markup."
 msgstr "XML-RPCサーバで実装されているメソッドの名前を指定し、そのメソッドを解説する文書文字列を取得します。文書文字列を取得できない場合は空文字列を返します。文書文字列にはHTMLマークアップが含まれます。"
 
-#: ../../library/xmlrpclib.rst:211
+#: ../../library/xmlrpclib.rst:217
 msgid "Boolean Objects"
 msgstr "Boolean オブジェクト"
 
-#: ../../library/xmlrpclib.rst:213
+#: ../../library/xmlrpclib.rst:219
 msgid ""
 "This class may be initialized from any Python value; the instance returned "
 "depends only on its truth value.  It supports various Python operators "
@@ -335,31 +360,31 @@ msgid ""
 ":meth:`__nonzero__` methods, all implemented in the obvious ways."
 msgstr "このクラスは全てのPythonの値で初期化することができ、生成されるインスタンスは指定した値の真偽値によってのみ決まります。Booleanという名前から想像される通りに各種のPython演算子を実装しており、 :meth:`__cmp__`, :meth:`__repr__`, :meth:`__int__`, :meth:`__nonzero__` で定義される演算子を使用することができます。"
 
-#: ../../library/xmlrpclib.rst:218
+#: ../../library/xmlrpclib.rst:224
 msgid ""
 "It also has the following method, supported mainly for internal use by the "
 "unmarshalling code:"
 msgstr "以下のメソッドは、主に内部的にアンマーシャル時に使用されます:"
 
-#: ../../library/xmlrpclib.rst:224
+#: ../../library/xmlrpclib.rst:230
 msgid ""
 "Write the XML-RPC encoding of this Boolean item to the out stream object."
 msgstr "出力ストリームオブジェクト ``out`` に、XML-RPCエンコーディングのBoolean値を出力します。"
 
-#: ../../library/xmlrpclib.rst:226 ../../library/xmlrpclib.rst:271
+#: ../../library/xmlrpclib.rst:232 ../../library/xmlrpclib.rst:279
 msgid "A working example follows. The server code::"
 msgstr "動作する例です。サーバー側::"
 
-#: ../../library/xmlrpclib.rst:239 ../../library/xmlrpclib.rst:286
-#: ../../library/xmlrpclib.rst:392 ../../library/xmlrpclib.rst:498
+#: ../../library/xmlrpclib.rst:245 ../../library/xmlrpclib.rst:294
+#: ../../library/xmlrpclib.rst:404 ../../library/xmlrpclib.rst:512
 msgid "The client code for the preceding server::"
 msgstr "上記のサーバーに対するクライアント側::"
 
-#: ../../library/xmlrpclib.rst:250
+#: ../../library/xmlrpclib.rst:256
 msgid "DateTime Objects"
 msgstr "DateTime オブジェクト"
 
-#: ../../library/xmlrpclib.rst:252
+#: ../../library/xmlrpclib.rst:260
 msgid ""
 "This class may be initialized with seconds since the epoch, a time tuple, an"
 " ISO 8601 time/date string, or a :class:`datetime.datetime` instance.  It "
@@ -367,150 +392,150 @@ msgid ""
 "marshalling/unmarshalling code:"
 msgstr "このクラスは、エポックからの秒数、タプルで表現された時刻、ISO 8601形式の時間/日付文字列、 :class:`datetime.datetime`, のインスタンスのいずれかで初期化することができます。このクラスには以下のメソッドがあり、主にコードをマーシャル/アンマーシャルするための内部処理を行います:"
 
-#: ../../library/xmlrpclib.rst:260
+#: ../../library/xmlrpclib.rst:268
 msgid "Accept a string as the instance's new time value."
 msgstr "文字列をインスタンスの新しい時間を示す値として指定します。"
 
-#: ../../library/xmlrpclib.rst:265
+#: ../../library/xmlrpclib.rst:273
 msgid ""
 "Write the XML-RPC encoding of this :class:`DateTime` item to the *out* "
 "stream object."
 msgstr "出力ストリームオブジェクト *out* に、XML-RPCエンコーディングの :class:`DateTime` 値を出力します。"
 
-#: ../../library/xmlrpclib.rst:268
+#: ../../library/xmlrpclib.rst:276
 msgid ""
-"It also supports certain of Python's built-in operators through  "
+"It also supports certain of Python's built-in operators through "
 ":meth:`__cmp__` and :meth:`__repr__` methods."
-msgstr "また、 :meth:`__cmp__` と :meth:`__repr__` で定義される演算子を使用することができます。"
+msgstr ""
 
-#: ../../library/xmlrpclib.rst:301
+#: ../../library/xmlrpclib.rst:309
 msgid "Binary Objects"
 msgstr "Binary オブジェクト"
 
-#: ../../library/xmlrpclib.rst:303
+#: ../../library/xmlrpclib.rst:313
 msgid ""
 "This class may be initialized from string data (which may include NULs). The"
 " primary access to the content of a :class:`Binary` object is provided by an"
 " attribute:"
 msgstr "このクラスは、文字列(NULを含む)で初期化することができます。 :class:`Binary` の内容は、属性で参照します。"
 
-#: ../../library/xmlrpclib.rst:310
+#: ../../library/xmlrpclib.rst:320
 msgid ""
 "The binary data encapsulated by the :class:`Binary` instance.  The data is "
 "provided as an 8-bit string."
 msgstr ":class:`Binary` インスタンスがカプセル化しているバイナリデータ。このデータは8bitクリーンです。"
 
-#: ../../library/xmlrpclib.rst:313
+#: ../../library/xmlrpclib.rst:323
 msgid ""
 ":class:`Binary` objects have the following methods, supported mainly for "
 "internal use by the marshalling/unmarshalling code:"
 msgstr ":class:`Binary` オブジェクトは以下のメソッドを持ち、主に内部的にマーシャル/アンマーシャル時に使用されます:"
 
-#: ../../library/xmlrpclib.rst:319
+#: ../../library/xmlrpclib.rst:329
 msgid "Accept a base64 string and decode it as the instance's new data."
 msgstr "指定されたbase64文字列をデコードし、インスタンスのデータとします。"
 
-#: ../../library/xmlrpclib.rst:324
+#: ../../library/xmlrpclib.rst:334
 msgid ""
-"Write the XML-RPC base 64 encoding of this binary item to the out stream "
+"Write the XML-RPC base 64 encoding of this binary item to the *out* stream "
 "object."
-msgstr "バイナリ値をbase64でエンコードし、出力ストリームオブジェクト ``out`` に出力します。"
+msgstr ""
 
-#: ../../library/xmlrpclib.rst:326
+#: ../../library/xmlrpclib.rst:336
 msgid ""
 "The encoded data will have newlines every 76 characters as per `RFC 2045 "
-"section 6.8 <http://tools.ietf.org/html/rfc2045#section-6.8>`_, which was "
+"section 6.8 <https://tools.ietf.org/html/rfc2045#section-6.8>`_, which was "
 "the de facto standard base64 specification when the XML-RPC spec was "
 "written."
-msgstr "エンコードされたデータは、 `RFC 2045 section 6.8 <http://tools.ietf.org/html/rfc2045#section-6.8>`_ にある通り、76文字ごとに改行されます。これは、XMC-RPC仕様が作成された時のデ・ファクト・スタンダードのbase64です。"
+msgstr ""
 
-#: ../../library/xmlrpclib.rst:331
+#: ../../library/xmlrpclib.rst:341
 msgid ""
 "It also supports certain of Python's built-in operators through a "
 ":meth:`__cmp__` method."
 msgstr "また、 :meth:`__cmp__` で定義される演算子を使用することができます。"
 
-#: ../../library/xmlrpclib.rst:334
+#: ../../library/xmlrpclib.rst:344
 msgid ""
 "Example usage of the binary objects.  We're going to transfer an image over "
 "XMLRPC::"
 msgstr "バイナリオブジェクトの使用例です。 XML-RPCごしに画像を転送します。 ::"
 
-#: ../../library/xmlrpclib.rst:350
+#: ../../library/xmlrpclib.rst:360
 msgid "The client gets the image and saves it to a file::"
 msgstr "クライアント側は画像を取得して、ファイルに保存します。 ::"
 
-#: ../../library/xmlrpclib.rst:361
+#: ../../library/xmlrpclib.rst:371
 msgid "Fault Objects"
 msgstr "Fault オブジェクト"
 
-#: ../../library/xmlrpclib.rst:363
+#: ../../library/xmlrpclib.rst:375
 msgid ""
 "A :class:`Fault` object encapsulates the content of an XML-RPC fault tag. "
 "Fault objects have the following attributes:"
 msgstr ":class:`Fault` オブジェクトは、XML-RPCのfaultタグの内容をカプセル化しており、以下の属性を持ちます:"
 
-#: ../../library/xmlrpclib.rst:369
+#: ../../library/xmlrpclib.rst:381
 msgid "A string indicating the fault type."
 msgstr "失敗のタイプを示す文字列。"
 
-#: ../../library/xmlrpclib.rst:374
+#: ../../library/xmlrpclib.rst:386
 msgid "A string containing a diagnostic message associated with the fault."
 msgstr "失敗の診断メッセージを含む文字列。"
 
-#: ../../library/xmlrpclib.rst:376
+#: ../../library/xmlrpclib.rst:388
 msgid ""
 "In the following example we're going to intentionally cause a :exc:`Fault` "
 "by returning a complex type object.  The server code::"
 msgstr "以下のサンプルでは、複素数型のオブジェクトを返そうとして、故意に :exc:`Fault` を起こしています。 ::"
 
-#: ../../library/xmlrpclib.rst:409
+#: ../../library/xmlrpclib.rst:421
 msgid "ProtocolError Objects"
 msgstr "ProtocolError オブジェクト"
 
-#: ../../library/xmlrpclib.rst:411
+#: ../../library/xmlrpclib.rst:425
 msgid ""
 "A :class:`ProtocolError` object describes a protocol error in the underlying"
 " transport layer (such as a 404 'not found' error if the server named by the"
 " URI does not exist).  It has the following attributes:"
 msgstr ":class:`ProtocolError` オブジェクトはトランスポート層で発生したエラー(URI で指定したサーバが見つからなかった場合に発生する404 'not found'など)の内容を示し、以下の属性を持ちます:"
 
-#: ../../library/xmlrpclib.rst:418
+#: ../../library/xmlrpclib.rst:432
 msgid "The URI or URL that triggered the error."
 msgstr "エラーの原因となったURIまたはURL。"
 
-#: ../../library/xmlrpclib.rst:423
+#: ../../library/xmlrpclib.rst:437
 msgid "The error code."
 msgstr "エラーコード。"
 
-#: ../../library/xmlrpclib.rst:428
+#: ../../library/xmlrpclib.rst:442
 msgid "The error message or diagnostic string."
 msgstr "エラーメッセージまたは診断文字列。"
 
-#: ../../library/xmlrpclib.rst:433
+#: ../../library/xmlrpclib.rst:447
 msgid ""
 "A string containing the headers of the HTTP/HTTPS request that triggered the"
 " error."
 msgstr "エラーの原因となったHTTP/HTTPSリクエストを含む文字列。"
 
-#: ../../library/xmlrpclib.rst:436
+#: ../../library/xmlrpclib.rst:450
 msgid ""
 "In the following example we're going to intentionally cause a "
-":exc:`ProtocolError` by providing an URI that doesn't point to an XMLRPC "
+":exc:`ProtocolError` by providing a URI that doesn't point to an XMLRPC "
 "server::"
-msgstr "次の例では、XMLRPC サーバを指していない URI を利用して、故意に :exc:`ProtocolError` を発生させています。 ::"
+msgstr ""
 
-#: ../../library/xmlrpclib.rst:454
+#: ../../library/xmlrpclib.rst:468
 msgid "MultiCall Objects"
 msgstr "MultiCall オブジェクト"
 
-#: ../../library/xmlrpclib.rst:458
+#: ../../library/xmlrpclib.rst:472
 msgid ""
 "The :class:`MultiCall` object provides a way to encapsulate multiple calls "
 "to a remote server into a single request [#]_."
 msgstr "遠隔のサーバに対する複数の呼び出しをひとつのリクエストにカプセル化する方法は、http://www.xmlrpc.com/discuss/msgReader%241208 で示されています。"
 
-#: ../../library/xmlrpclib.rst:464
+#: ../../library/xmlrpclib.rst:478
 msgid ""
 "Create an object used to boxcar method calls. *server* is the eventual "
 "target of the call. Calls can be made to the result object, but they will "
@@ -521,21 +546,21 @@ msgid ""
 "the individual results."
 msgstr "巨大な (boxcar) メソッド呼び出しに使えるオブジェクトを作成します。 *server* には最終的に呼び出しを行う対象を指定します。作成した MultiCall オブジェクトを使って呼び出しを行うと、即座に ``None`` を返し、呼び出したい手続き名とパラメタを :class:`MultiCall` オブジェクトに保存するだけに留まります。オブジェクト自体を呼び出すと、それまでに保存しておいたすべての呼び出しを単一の ``system.multicall`` リクエストの形で伝送します。呼び出し結果はジェネレータ(:term:`generator`)になります。このジェネレータにわたってイテレーションを行うと、個々の呼び出し結果を返します。"
 
-#: ../../library/xmlrpclib.rst:472
+#: ../../library/xmlrpclib.rst:486
 msgid "A usage example of this class follows.  The server code ::"
 msgstr "以下にこのクラスの使い方を示します。サーバー側のコード::"
 
-#: ../../library/xmlrpclib.rst:514
+#: ../../library/xmlrpclib.rst:528
 msgid "Convenience Functions"
 msgstr "補助関数"
 
-#: ../../library/xmlrpclib.rst:519
+#: ../../library/xmlrpclib.rst:533
 msgid ""
 "Convert any Python value to one of the XML-RPC Boolean constants, ``True`` "
 "or ``False``."
 msgstr "Pythonの値を、XML-RPCのBoolean定数 ``True`` または ``False`` に変換します。"
 
-#: ../../library/xmlrpclib.rst:525
+#: ../../library/xmlrpclib.rst:539
 msgid ""
 "Convert *params* into an XML-RPC request. or into a response if "
 "*methodresponse* is true. *params* can be either a tuple of arguments or an "
@@ -547,7 +572,7 @@ msgid ""
 "for *allow_none*."
 msgstr "*params* を XML-RPC リクエストの形式に変換します。 *methodresponse* が真の場合、XML-RPC レスポンスの形式に変換します。 *params* に指定できるのは、引数からなるタプルか :exc:`Fault` 例外クラスのインスタンスです。 *methodresponse* が真の場合、単一の値だけを返します。従って、 *params* の長さも 1 でなければなりません。 *encoding* を指定した場合、生成される XML のエンコード方式になります。デフォルトは UTF-8 です。 Python の :const:`None` は標準の XML-RPC には利用できません。 :const:`None` を使えるようにするには、 *allow_none* を真にして、拡張機能つきにしてください。"
 
-#: ../../library/xmlrpclib.rst:536
+#: ../../library/xmlrpclib.rst:550
 msgid ""
 "Convert an XML-RPC request or response into Python objects, a ``(params, "
 "methodname)``.  *params* is a tuple of argument; *methodname* is a string, "
@@ -558,30 +583,30 @@ msgid ""
 "default."
 msgstr "XML-RPC リクエストまたはレスポンスを ``(params, methodname)`` の形式をとる Python オブジェクトにします。 *params* は引数のタプルです。 *methodname* は文字列で、パケット中にメソッド名がない場合には ``None`` になります。例外条件を示す XML-RPC パケットの場合には、 :exc:`Fault` 例外を送出します。 *use_datetime* フラグは :class:`datetime.datetime` のオブジェクトとして日付/時刻を表現する時に使用し、デフォルトでは false に設定されています。"
 
-#: ../../library/xmlrpclib.rst:550
+#: ../../library/xmlrpclib.rst:564
 msgid "Example of Client Usage"
 msgstr "クライアントのサンプル"
 
-#: ../../library/xmlrpclib.rst:567
+#: ../../library/xmlrpclib.rst:581
 msgid ""
-"To access an XML-RPC server through a proxy, you need to define  a custom "
-"transport.  The following example shows how:"
-msgstr "XML-RPCサーバにプロキシを経由して接続する場合、カスタムトランスポートを定義する必要があります。以下に例を示します:"
+"To access an XML-RPC server through a HTTP proxy, you need to define a "
+"custom transport.  The following example shows how:"
+msgstr "XML-RPC サーバに HTTP プロキシを経由して接続する場合、カスタムトランスポートを定義する必要があります。以下に例を示します:"
 
-#: ../../library/xmlrpclib.rst:595
+#: ../../library/xmlrpclib.rst:612
 msgid "Example of Client and Server Usage"
 msgstr "クライアントとサーバーの利用例"
 
-#: ../../library/xmlrpclib.rst:597
+#: ../../library/xmlrpclib.rst:614
 msgid "See :ref:`simplexmlrpcserver-example`."
 msgstr ":ref:`simplexmlrpcserver-example` を参照してください。"
 
-#: ../../library/xmlrpclib.rst:601
+#: ../../library/xmlrpclib.rst:618
 msgid "Footnotes"
 msgstr "脚注"
 
-#: ../../library/xmlrpclib.rst:602
+#: ../../library/xmlrpclib.rst:619
 msgid ""
 "This approach has been first presented in `a discussion on xmlrpc.com "
-"<http://web.archive.org/web/20060624230303/http://www.xmlrpc.com/discuss/msgReader$1208?mode=topic>`_."
-msgstr "このアプローチは `a discussion on xmlrpc.com <http://web.archive.org/web/20060624230303/http://www.xmlrpc.com/discuss/msgReader$1208?mode=topic>`_ にて最初に著されました。"
+"<https://web.archive.org/web/20060624230303/http://www.xmlrpc.com/discuss/msgReader$1208?mode=topic>`_."
+msgstr ""

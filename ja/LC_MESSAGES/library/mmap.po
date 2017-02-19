@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-01 02:41+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:58+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -36,14 +35,14 @@ msgstr "メモリにマップされたファイルオブジェクトは、文字
 
 #: ../../library/mmap.rst:18
 msgid ""
-"A memory-mapped file is created by the :class:`mmap` constructor, which is "
-"different on Unix and on Windows.  In either case you must provide a file "
-"descriptor for a file opened for update. If you wish to map an existing "
-"Python file object, use its :meth:`fileno` method to obtain the correct "
-"value for the *fileno* parameter.  Otherwise, you can open the file using "
-"the :func:`os.open` function, which returns a file descriptor directly (the "
-"file still needs to be closed when done)."
-msgstr "メモリマップファイルは Unix 上と Windows 上とでは異なる :class:`mmap` コンストラクタによって作られます。いずれの場合も、開いたファイルのファイル記述子を、更新のために提供しなければなりません。すでに存在する Python ファイルオブジェクトをマップしたい場合は、 *fileno* パラメータに渡す値を手に入れるために、 :meth:`fileno` メソッドを使用して下さい。そうでなければ、ファイル記述子を直接返す :func:`os.open` 関数 (呼び出すときにはまだファイルが閉じている必要があります) を使って、ファイルを開くことができます。"
+"A memory-mapped file is created by the :class:`~mmap.mmap` constructor, "
+"which is different on Unix and on Windows.  In either case you must provide "
+"a file descriptor for a file opened for update. If you wish to map an "
+"existing Python file object, use its :meth:`fileno` method to obtain the "
+"correct value for the *fileno* parameter.  Otherwise, you can open the file "
+"using the :func:`os.open` function, which returns a file descriptor directly"
+" (the file still needs to be closed when done)."
+msgstr "メモリマップドファイルは Unix と Windows で異なる :class:`~mmap.mmap` コンストラクタで生成されます。どちらの場合も、更新用に開かれたファイルディスクリプタを渡さなければなりません。既存の Python ファイルオブジェクトをマップしたければ、 :meth:`fileno` メソッドを使って *fileno* パラメータの正しい値を取得してください。そうでなければ、 :func:`os.open` 関数を使ってファイルを開けます。この関数はファイルディスクリプタを直接返します(処理が終わったら、やはりファイルを閉じる必要があります)。"
 
 #: ../../library/mmap.rst:27
 msgid ""
@@ -113,8 +112,8 @@ msgid ""
 "**(Unix version)** Maps *length* bytes from the file specified by the file "
 "descriptor *fileno*, and returns a mmap object.  If *length* is ``0``, the "
 "maximum length of the map will be the current size of the file when "
-":class:`mmap` is called."
-msgstr "**(Unix バージョン)** ファイル記述子 *fileno* によって指定されたファイルから *length* バイトをマップし、 mmap オブジェクトを返します。 *length* が ``0`` の場合、マップの最大長は :class:`mmap` が呼び出された時点のファイルサイズになります。"
+":class:`~mmap.mmap` is called."
+msgstr "**(Unix バージョン)** ファイルディスクリプタ *fileno* で指定されたファイルから *length* バイトをマップし、mmap オブジェクトを返します。*length* が ``0`` の場合、マップの最大の長さは :class:`~mmap.mmap` が呼ばれた時点でのファイルサイズになります。"
 
 #: ../../library/mmap.rst:82
 msgid ""
@@ -157,8 +156,8 @@ msgid ""
 msgstr "Mac OS X と OpenVMS において、作成された memory mapping の正当性を確実にするために *fileno* で指定されたファイルディスクリプタは内部で自動的に物理的なストレージ (physical backing store) と同期されます。"
 
 #: ../../library/mmap.rst:107
-msgid "This example shows a simple way of using :class:`mmap`::"
-msgstr "以下の例は :class:`mmap` の簡単な使い方です::"
+msgid "This example shows a simple way of using :class:`~mmap.mmap`::"
+msgstr "この例は :class:`~mmap.mmap` の簡潔な使い方を示すものです::"
 
 #: ../../library/mmap.rst:132
 msgid ""

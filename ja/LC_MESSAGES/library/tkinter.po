@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-09-01 09:23+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:07+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -38,7 +37,7 @@ msgid ""
 msgstr ":mod:`Tkinter` モジュールは、Python 3 では :mod:`tkinter` にリネームされました。 :term:`2to3` ツールが自動的にソースコードの import を修正します。"
 
 #: ../../library/tkinter.rst:24
-msgid "Python Tkinter Resources"
+msgid "`Python Tkinter Resources <https://wiki.python.org/moin/TkInter>`_"
 msgstr "`Python Tkinter Resources <https://wiki.python.org/moin/TkInter>`_"
 
 #: ../../library/tkinter.rst:23
@@ -48,7 +47,7 @@ msgid ""
 msgstr "Python Tkinter Topic Guide では、Tk を Python から利用する上での情報と、その他の Tk にまつわる情報源を数多く提供しています。"
 
 #: ../../library/tkinter.rst:27
-msgid "TKDocs"
+msgid "`TKDocs <http://www.tkdocs.com/>`_"
 msgstr "`TKDocs <http://www.tkdocs.com/>`_"
 
 #: ../../library/tkinter.rst:27
@@ -57,15 +56,17 @@ msgid ""
 msgstr "豊富なチュートリアルといくつかのウィジットについてのよりフレンドリなページ。"
 
 #: ../../library/tkinter.rst:30
-msgid "Tkinter reference: a GUI for Python"
-msgstr "`Tkinter reference: a GUI for Python <http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html>`_"
+msgid ""
+"`Tkinter reference: a GUI for Python "
+"<https://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html>`_"
+msgstr "`Tkinter reference: a GUI for Python <https://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html>`_"
 
 #: ../../library/tkinter.rst:30
 msgid "On-line reference material."
 msgstr "オンラインリファレンス資料です。"
 
 #: ../../library/tkinter.rst:33
-msgid "Tkinter docs from effbot"
+msgid "`Tkinter docs from effbot <http://effbot.org/tkinterbook/>`_"
 msgstr "`Tkinter docs from effbot <http://effbot.org/tkinterbook/>`_"
 
 #: ../../library/tkinter.rst:33
@@ -73,23 +74,26 @@ msgid "Online reference for tkinter supported by effbot.org."
 msgstr "effbot.org が提供している tkinter のオンラインリファレンスです。"
 
 #: ../../library/tkinter.rst:36
-msgid "Tcl/Tk manual"
-msgstr "`Tcl/Tk manual <http://www.tcl.tk/man/tcl8.5/>`_"
+msgid "`Tcl/Tk manual <https://www.tcl.tk/man/tcl8.5/>`_"
+msgstr "`Tcl/Tk manual <https://www.tcl.tk/man/tcl8.5/>`_"
 
 #: ../../library/tkinter.rst:36
 msgid "Official manual for the latest tcl/tk version."
 msgstr "tcl/tk の最新バージョンの公式マニュアルです。"
 
 #: ../../library/tkinter.rst:39
-msgid "Programming Python"
-msgstr "`Programming Python <http://www.rmi.net/~lutz/about-pp4e.html>`_"
+msgid ""
+"`Programming Python <http://learning-python.com/books/about-pp4e.html>`_"
+msgstr "`Programming Python <http://learning-python.com/books/about-pp4e.html>`_"
 
 #: ../../library/tkinter.rst:39
 msgid "Book by Mark Lutz, has excellent coverage of Tkinter."
 msgstr "マーク・ルッツによる書籍で、Tkinter についても広く取り上げています。"
 
 #: ../../library/tkinter.rst:42
-msgid "Modern Tkinter for Busy Python Developers"
+msgid ""
+"`Modern Tkinter for Busy Python Developers <http://www.amazon.com/Modern-"
+"Tkinter-Python-Developers-ebook/dp/B0071QDNLO/>`_"
 msgstr "`Modern Tkinter for Busy Python Developers <http://www.amazon.com/Modern-Tkinter-Python-Developers-ebook/dp/B0071QDNLO/>`_"
 
 #: ../../library/tkinter.rst:42
@@ -99,8 +103,10 @@ msgid ""
 msgstr "Mark Rozerman による書籍で、Python と Tkinter を使用した魅力的でモダンなグラフィカルユーザーインターフェースの構築方法を説明しています。"
 
 #: ../../library/tkinter.rst:44
-msgid "Python and Tkinter Programming"
-msgstr "`Python and Tkinter Programming <http://www.manning.com/grayson/>`_"
+msgid ""
+"`Python and Tkinter Programming <https://www.manning.com/books/python-and-"
+"tkinter-programming>`_"
+msgstr "`Python and Tkinter Programming <https://www.manning.com/books/python-and-tkinter-programming>`_"
 
 #: ../../library/tkinter.rst:45
 msgid "The book by John Grayson (ISBN 1-884777-81-3)."
@@ -161,64 +167,64 @@ msgid "Other modules that provide Tk support include:"
 msgstr "Tk をサポートしているモジュールには、他にも以下のようなモジュールがあります:"
 
 #: ../../library/tkinter.rst:97
-msgid "ScrolledText"
-msgstr ":mod:`ScrolledText`"
+msgid ":mod:`ScrolledText`"
+msgstr ""
 
 #: ../../library/tkinter.rst:97
 msgid "Text widget with a vertical scroll bar built in."
 msgstr "垂直スクロールバー付きのテキストウィジェットです。"
 
 #: ../../library/tkinter.rst:100
-msgid "tkColorChooser"
-msgstr ":mod:`tkColorChooser`"
+msgid ":mod:`tkColorChooser`"
+msgstr ""
 
 #: ../../library/tkinter.rst:100
 msgid "Dialog to let the user choose a color."
 msgstr "ユーザに色を選択させるためのダイアログです。"
 
 #: ../../library/tkinter.rst:103
-msgid "tkCommonDialog"
-msgstr ":mod:`tkCommonDialog`"
+msgid ":mod:`tkCommonDialog`"
+msgstr ""
 
 #: ../../library/tkinter.rst:103
 msgid "Base class for the dialogs defined in the other modules listed here."
 msgstr "このリストの他のモジュールが定義しているダイアログの基底クラスです。"
 
 #: ../../library/tkinter.rst:106
-msgid "tkFileDialog"
-msgstr ":mod:`tkFileDialog`"
+msgid ":mod:`tkFileDialog`"
+msgstr ""
 
 #: ../../library/tkinter.rst:106
 msgid "Common dialogs to allow the user to specify a file to open or save."
 msgstr "ユーザが開きたいファイルや保存したいファイルを指定できるようにする共通のダイアログです。"
 
 #: ../../library/tkinter.rst:109
-msgid "tkFont"
-msgstr ":mod:`tkFont`"
+msgid ":mod:`tkFont`"
+msgstr ""
 
 #: ../../library/tkinter.rst:109
 msgid "Utilities to help work with fonts."
 msgstr "フォントの扱いを補助するためのユーティリティです。"
 
 #: ../../library/tkinter.rst:112
-msgid "tkMessageBox"
-msgstr ":mod:`tkMessageBox`"
+msgid ":mod:`tkMessageBox`"
+msgstr ""
 
 #: ../../library/tkinter.rst:112
 msgid "Access to standard Tk dialog boxes."
 msgstr "標準的な Tk のダイアログボックスにアクセスします。"
 
 #: ../../library/tkinter.rst:115
-msgid "tkSimpleDialog"
-msgstr ":mod:`tkSimpleDialog`"
+msgid ":mod:`tkSimpleDialog`"
+msgstr ""
 
 #: ../../library/tkinter.rst:115
 msgid "Basic dialogs and convenience functions."
 msgstr "基本的なダイアログと便宜関数 (convenience function) です。"
 
 #: ../../library/tkinter.rst:119
-msgid "Tkdnd"
-msgstr ":mod:`Tkdnd`"
+msgid ":mod:`Tkdnd`"
+msgstr ""
 
 #: ../../library/tkinter.rst:118
 msgid ""
@@ -227,7 +233,7 @@ msgid ""
 msgstr ":mod:`Tkinter` 用のドラッグアンドドロップのサポートです。実験的なサポートで、Tk DND に置き替わった時点で撤廃されるはずです。"
 
 #: ../../library/tkinter.rst:122
-msgid "turtle"
+msgid ":mod:`turtle`"
 msgstr ":mod:`turtle`"
 
 #: ../../library/tkinter.rst:122
@@ -333,7 +339,7 @@ msgid ""
 msgstr "たいていの場合、 :file:`Tkinter.py` は参照先としては最後の地 (last resort) ですが、それ以外の手段で調べても分からない場合には救いの地 (good place) になるかもしれません。"
 
 #: ../../library/tkinter.rst:188
-msgid "ActiveState Tcl Home Page"
+msgid "`ActiveState Tcl Home Page <http://tcl.activestate.com/>`_"
 msgstr "`ActiveState Tcl ホームページ <http://tcl.activestate.com/>`_"
 
 #: ../../library/tkinter.rst:188
@@ -341,7 +347,9 @@ msgid "The Tk/Tcl development is largely taking place at ActiveState."
 msgstr "Tk/Tcl の開発は ActiveState で大々的に行われています。"
 
 #: ../../library/tkinter.rst:191
-msgid "Tcl and the Tk Toolkit"
+msgid ""
+"`Tcl and the Tk Toolkit "
+"<http://www.amazon.com/exec/obidos/ASIN/020163337X>`_"
 msgstr "`Tcl and the Tk Toolkit <http://www.amazon.com/exec/obidos/ASIN/020163337X>`_"
 
 #: ../../library/tkinter.rst:191
@@ -349,7 +357,7 @@ msgid "The book by John Ousterhout, the inventor of Tcl."
 msgstr "Tcl の発明者である John Ousterhout による本です。"
 
 #: ../../library/tkinter.rst:193
-msgid "Practical Programming in Tcl and Tk"
+msgid "`Practical Programming in Tcl and Tk <http://www.beedub.com/book/>`_"
 msgstr "`Practical Programming in Tcl and Tk <http://www.beedub.com/book/>`_"
 
 #: ../../library/tkinter.rst:194
@@ -416,7 +424,7 @@ msgid "To make a widget in Tk, the command is always of the form::"
 msgstr "Tk でウィジェットを作るには、常に次のような形式のコマンドを使います::"
 
 #: ../../library/tkinter.rst:267
-msgid "classCommand"
+msgid "*classCommand*"
 msgstr "*classCommand*"
 
 #: ../../library/tkinter.rst:267
@@ -424,7 +432,7 @@ msgid "denotes which kind of widget to make (a button, a label, a menu...)"
 msgstr "どの種類のウィジェット (ボタン、ラベル、メニュー、...) を作るかを表します。"
 
 #: ../../library/tkinter.rst:274
-msgid "newPathname"
+msgid "*newPathname*"
 msgstr "*newPathname*"
 
 #: ../../library/tkinter.rst:270
@@ -437,7 +445,7 @@ msgid ""
 msgstr "作成するウィジェットにつける新たな名前です。Tk 内の全ての名前は一意になっていなければなりません。一意性を持たせる助けとして、 Tk 内のウィジェットは、ファイルシステムにおけるファイルと同様、 *パス名 (pathname)* を使って名づけられます。トップレベルのウィジェット、すなわち *ルート* は ``.`` (ピリオド) という名前になり、その子ウィジェット階層もピリオドで区切ってゆきます。ウィジェットの名前は、例えば ``.myApp.controlPanel.okButton`` のようになります。"
 
 #: ../../library/tkinter.rst:280
-msgid "options"
+msgid "*options*"
 msgstr "*options*"
 
 #: ../../library/tkinter.rst:277

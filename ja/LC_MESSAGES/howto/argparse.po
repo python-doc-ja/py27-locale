@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -7,10 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-03 14:27+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:42+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -365,8 +364,8 @@ msgstr "期待通り、長い形式のフラグを指定しても同じ結果に
 msgid ""
 "Sadly, our help output isn't very informative on the new ability our script "
 "has acquired, but that can always be fixed by improving the documentation "
-"for out script (e.g. via the ``help`` keyword argument)."
-msgstr "残念ながら、ヘルプ出力はプログラムが新しく得た機能についてそこまで有益ではありません。しかし、ドキュメンテーションを改善することでいつでも修正することができます（例、``help`` キーワード引数を使用することで）。"
+"for our script (e.g. via the ``help`` keyword argument)."
+msgstr "残念ながら、このヘルプ出力はプログラムが新しく得た機能についてそこまで有益ではありません。しかし、スクリプトのドキュメンテーションを改善することでいつでも修正することができます（例えば、``help`` キーワード引数を使用することで）。"
 
 #: ../../howto/argparse.rst:518
 msgid "That last output exposes a bug in our program."

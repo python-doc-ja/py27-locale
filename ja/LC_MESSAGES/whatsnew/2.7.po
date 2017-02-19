@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -9,10 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-06 16:04+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:15+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -106,8 +105,8 @@ msgid ""
 " compared to earlier 2.x versions. Python 2.7 is currently expected to "
 "remain supported by the core development team (receiving security updates "
 "and other bug fixes) until at least 2020 (10 years after its initial "
-"release, compared to the more typical support period of 18-24 months)."
-msgstr "上述のように、 2.7 リリースは以前の 2.x バージョンに較べて遥かに長期間のメンテナンスとなります。Python 2.7 は現在では、最低でも 2020 年までコア開発チームによって(セキュリティアップデートやほかのバグフィックスの)サポートがなされ続けることが求められています(最初のリリースから 10 年後です。普通であれば 18-24 ヶ月なのに)。"
+"release, compared to the more typical support period of 18--24 months)."
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:109
 msgid ""
@@ -313,9 +312,10 @@ msgstr "エントリを削除して再挿入すると、順序は一番最後に
 #: ../../whatsnew/2.7.rst:247
 msgid ""
 "The :meth:`~collections.OrderedDict.popitem` method has an optional *last* "
-"argument that defaults to True.  If *last* is True, the most recently added "
-"key is returned and removed; if it's False, the oldest key is selected::"
-msgstr ":meth:`~collections.OrderedDict.popitem` メソッドは、オプションの *last* 引数を持ち、でフォルトで True になっています。 *last* が True の場合、一番最近に追加された key が返され、削除されます。 False の場合、最も古い key が選ばれます。 ::"
+"argument that defaults to ``True``.  If *last* is true, the most recently "
+"added key is returned and removed; if it's false, the oldest key is "
+"selected::"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:262
 msgid ""
@@ -366,8 +366,8 @@ msgid ""
 msgstr ":mod:`json` モジュールのデコーダーが :class:`OrderedDict` をビルドするのをサポートするために、 :class:`~json.JSONDecoder` クラスのコンストラクタに *object_pairs_hook* 引数が追加されました。 `PyYAML <http://pyyaml.org/>`_ などの外部のライブラリでもサポートされています。"
 
 #: ../../whatsnew/2.7.rst:307
-msgid "PEP 372 - Adding an ordered dictionary to collections"
-msgstr "PEP 372 - collections に順序付き辞書を追加"
+msgid ":pep:`372` - Adding an ordered dictionary to collections"
+msgstr ":pep:`372` - collections に順序付き辞書を追加"
 
 #: ../../whatsnew/2.7.rst:307
 msgid ""
@@ -415,8 +415,8 @@ msgid ""
 msgstr "この機構は全く柔軟性を持っていません。区切り文字は常にカンマですし、グループは常に数字3つになります。カンマ書式機構は :mod:`locale` ほど汎用ではありませんが、手軽に使うことができます。"
 
 #: ../../whatsnew/2.7.rst:345
-msgid "PEP 378 - Format Specifier for Thousands Separator"
-msgstr "PEP 378 - 1000区切りのための書式指定子"
+msgid ":pep:`378` - Format Specifier for Thousands Separator"
+msgstr ":pep:`378` - 1000区切りのための書式指定子"
 
 #: ../../whatsnew/2.7.rst:346
 msgid "PEP written by Raymond Hettinger; implemented by Eric Smith."
@@ -458,9 +458,9 @@ msgstr "以下はこの使用例です::"
 
 #: ../../whatsnew/2.7.rst:393
 msgid ""
-"Unless you override it, :option:`-h` and :option:`--help` switches are "
+"Unless you override it, :option:`!-h` and :option:`!--help` switches are "
 "automatically added, and produce neatly formatted output::"
-msgstr "オーバーライドしない限り、 :option:`-h` と :option:`--help` スイッチが自動的に追加され、綺麗にフォーマットした出力を生成します。 ::"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:410
 msgid ""
@@ -481,16 +481,16 @@ msgid ""
 msgstr ":mod:`argparse` は :mod:`optparse` よりも多くの便利なバリデーションを持っています。引数の正確な数を整数で指定したり、 ``'*'`` で0以上の数を指定したり、 ``'+'`` で1以上の数を指定したり、 ``'?'`` でオプションにしたりできます。トップレベルのパーサーはサブパーサーを持つことができ、 ``svn commit``, ``svn checkout`` のように異なるオプションを持ったサブコマンドを定義できます。引数のタイプに :class:`~argparse.FileType` を指定することで、自動でファイルを開き、 ``'-'`` が指定されたときに標準入出力だと判断することができます。"
 
 #: ../../whatsnew/2.7.rst:438
-msgid "argparse documentation"
-msgstr "argparse  のドキュメント"
+msgid ":mod:`argparse` documentation"
+msgstr ":mod:`argparse` のドキュメント"
 
 #: ../../whatsnew/2.7.rst:438
 msgid "The documentation page of the argparse module."
 msgstr "argparse モジュールのドキュメント"
 
 #: ../../whatsnew/2.7.rst:442
-msgid "argparse-from-optparse"
-msgstr "argparse-from-optparse"
+msgid ":ref:`argparse-from-optparse`"
+msgstr ":ref:`argparse-from-optparse`"
 
 #: ../../whatsnew/2.7.rst:441
 msgid ""
@@ -499,8 +499,8 @@ msgid ""
 msgstr ":mod:`optparse` を使うコードを変換する方法を説明した Python のドキュメントの一部"
 
 #: ../../whatsnew/2.7.rst:444
-msgid "PEP 389 - argparse - New Command Line Parsing Module"
-msgstr "PEP 389 - argparse コマンドライン解析モジュール"
+msgid ":pep:`389` - argparse - New Command Line Parsing Module"
+msgstr ":pep:`389` - argparse コマンドライン解析モジュール"
 
 #: ../../whatsnew/2.7.rst:445
 msgid "PEP written and implemented by Steven Bethard."
@@ -571,15 +571,15 @@ msgstr ":class:`~logging.Logger` インスタンスに :meth:`~logging.Logger.ge
 
 #: ../../whatsnew/2.7.rst:535
 msgid ""
-"The :class:`~logging.LoggerAdapter` class gained a "
+"The :class:`~logging.LoggerAdapter` class gained an "
 ":meth:`~logging.LoggerAdapter.isEnabledFor` method that takes a *level* and "
 "returns whether the underlying logger would process a message of that level "
 "of importance."
 msgstr ":class:`~logging.LoggerAdapter` クラスに  meth:`~logging.LoggerAdapter.isEnabledFor` メソッドが追加されました。 *level* を引数に取り、ベースの logger がその重要度レベルのメッセージを処理するかどうかを返します。"
 
 #: ../../whatsnew/2.7.rst:544
-msgid "PEP 391 - Dictionary-Based Configuration For Logging"
-msgstr "PEP 391 - logging の辞書ベースの設定"
+msgid ":pep:`391` - Dictionary-Based Configuration For Logging"
+msgstr ":pep:`391` - logging の辞書ベースの設定"
 
 #: ../../whatsnew/2.7.rst:545
 msgid "PEP written and implemented by Vinay Sajip."
@@ -632,8 +632,8 @@ msgid ""
 msgstr "Python 2.x で view メソッドを利用すると、 2to3 が自動的にそれを通常の :meth:`~dict.keys`, :meth:`~dict.values`, :meth:`~dict.items` メソッドに書き換えてくれます。"
 
 #: ../../whatsnew/2.7.rst:606
-msgid "PEP 3106 - Revamping dict.keys(), .values() and .items()"
-msgstr "PEP 3106 - Revamping dict.keys(), .values() and .items()"
+msgid ":pep:`3106` - Revamping dict.keys(), .values() and .items()"
+msgstr ":pep:`3106` - Revamping dict.keys(), .values() and .items()"
 
 #: ../../whatsnew/2.7.rst:606
 msgid ""
@@ -664,8 +664,8 @@ msgid ""
 msgstr ":class:`memoryview` オブジェクトは、対象となる背後のオブジェクトが変更可能 (mutable) な場合は、その変更を許可しています。"
 
 #: ../../whatsnew/2.7.rst:657
-msgid "PEP 3137 - Immutable Bytes and Mutable Buffer"
-msgstr "PEP 3137 - Immutable Bytes and Mutable Buffer"
+msgid ":pep:`3137` - Immutable Bytes and Mutable Buffer"
+msgstr ":pep:`3137` - Immutable Bytes and Mutable Buffer"
 
 #: ../../whatsnew/2.7.rst:656
 msgid ""
@@ -881,7 +881,7 @@ msgid ""
 "after a suggestion by George Sakkis; :issue:`5982`.)"
 msgstr "``@classmethod`` や ``@staticmethod`` を使ってクラスメソッドやスタティックメソッドを作成した時、そのラッパーオブジェクトがラップ対象となる関数を :attr:`__func__` 属性で公開するようになりました。(Contributed by Amaury Forgeot d'Arc, after a suggestion by George Sakkis; :issue:`5982`.)"
 
-#: ../../whatsnew/2.7.rst:852 ../../whatsnew/2.7.rst:2424
+#: ../../whatsnew/2.7.rst:852 ../../whatsnew/2.7.rst:2438
 msgid ""
 "When a restricted set of attributes were set using ``__slots__``, deleting "
 "an unset attribute would not raise :exc:`AttributeError` as you would "
@@ -1002,9 +1002,9 @@ msgid ""
 " improvements on 64-bit machines, but benchmark results on 32-bit machines "
 "have been mixed.  Therefore, the default is to use base 2**30 on 64-bit "
 "machines and base 2**15 on 32-bit machines; on Unix, there's a new configure"
-" option :option:`--enable-big-digits` that can be used to override this "
+" option :option:`!--enable-big-digits` that can be used to override this "
 "default."
-msgstr "多倍長整数の内部格納方式が、 2**15 ベースと 2**30 ベースのどちらかをビルド時に選択するようになりました。以前は常に 2**15 ベースで格納していました。 2**30 ベースにすると 64bit マシンに置いては確実にパフォーマンスが向上しますが、 32bit マシンではパフォーマンスが向上する場合も低下する場合もあります。なので、デフォルトでは 64bit マシンでは 2**30 ベースで、 32bit マシンでは 2**15 ベースになるようになります。 Unix では新しい configure オプションとして :option:`--enable-big-digits` が追加され、このデフォルトの選択をオーバーライドできるようになっています。"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:950
 msgid ""
@@ -1039,10 +1039,10 @@ msgstr "多倍長整数の除算アルゴリズムが、内部のループの軽
 #: ../../whatsnew/2.7.rst:976
 msgid ""
 "The implementation of ``%`` checks for the left-side operand being a Python "
-"string and special-cases it; this results in a 1-3% performance increase for"
-" applications that frequently use ``%`` with strings, such as templating "
+"string and special-cases it; this results in a 1--3% performance increase "
+"for applications that frequently use ``%`` with strings, such as templating "
 "libraries. (Implemented by Collin Winter; :issue:`5176`.)"
-msgstr "``%`` の実装が、左側のオペランドが文字列型かどうかをチェックしてその場合の処理を特殊化しました。これにより文字列に対して ``%`` を頻繁に使う、テンプレートライブラリなどのアプリケーションのパフォーマンスが1-3%向上します。 (Implemented by Collin Winter; :issue:`5176`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:982
 msgid ""
@@ -1115,12 +1115,12 @@ msgstr ":mod:`binascii` モジュールが buffer API をサポートするよ�
 msgid ""
 "Updated module: the :mod:`bsddb` module has been updated from 4.7.2devel9 to"
 " version 4.8.4 of `the pybsddb package "
-"<http://www.jcea.es/programacion/pybsddb.htm>`__. The new version features "
+"<https://www.jcea.es/programacion/pybsddb.htm>`__. The new version features "
 "better Python 3.x compatibility, various bug fixes, and adds several new "
 "BerkeleyDB flags and methods. (Updated by Jesús Cea Avión; :issue:`8156`.  "
 "The pybsddb changelog can be read at "
 "http://hg.jcea.es/pybsddb/file/tip/ChangeLog.)"
-msgstr ":mod:`bsddb` モジュールが `the pybsddb package <http://www.jcea.es/programacion/pybsddb.htm>`__ の 4.7.2devel9 から 4.8.4 に更新されました。新しいバージョンはより Python 3.x との互換性がよくなり、いくつかのバグ修正と、いくつかの新しい BerkeleyDB のフラグとメソッドが追加されています。 (Updated by Jesús Cea Avión; :issue:`8156`.  The pybsddb changelog can be read at http://hg.jcea.es/pybsddb/file/tip/ChangeLog.)"
+msgstr ":mod:`bsddb` モジュールが `pybsddb パッケージ <https://www.jcea.es/programacion/pybsddb.htm>`__ の 4.7.2devel9 から 4.8.4 に更新されました。新しいバージョンはより Python 3.x との互換性がよくなり、いくつかのバグ修正と、いくつかの新しい BerkeleyDB のフラグとメソッドが追加されています。 (Updated by Jesús Cea Avión; :issue:`8156`.  The pybsddb changelog can be read at http://hg.jcea.es/pybsddb/file/tip/ChangeLog.)"
 
 #: ../../whatsnew/2.7.rst:1038
 msgid ""
@@ -1226,10 +1226,10 @@ msgid ""
 "The :mod:`ctypes` module now always converts ``None`` to a C NULL pointer "
 "for arguments declared as pointers.  (Changed by Thomas Heller; "
 ":issue:`4606`.)  The underlying `libffi library "
-"<http://sourceware.org/libffi/>`__ has been updated to version 3.0.9, "
+"<https://sourceware.org/libffi/>`__ has been updated to version 3.0.9, "
 "containing various fixes for different platforms.  (Updated by Matthias "
 "Klose; :issue:`8142`.)"
-msgstr ":mod:`ctypes` モジュールが、ポインタとして宣言された引数に対して ``None`` が渡された場合常に C の NULL ポインタに変換するようになりました。(Changed by Thomas Heller; :issue:`4606`.) 基盤となっている `libffi ライブラリ <http://sourceware.org/libffi/>`__ が 3.0.9 にアップデートされ、いくつかのプラットフォームにおけるいろいろな問題が修正されました。(Updated by Matthias Klose; :issue:`8142`.)"
+msgstr ":mod:`ctypes` モジュールが、ポインタとして宣言された引数に対して ``None`` が渡された場合常に C の NULL ポインタに変換するようになりました。(Changed by Thomas Heller; :issue:`4606`.) 基盤となっている `libffi ライブラリ <https://sourceware.org/libffi/>`__ が 3.0.9 にアップデートされ、いくつかのプラットフォームにおけるいろいろな問題が修正されました。(Updated by Matthias Klose; :issue:`8142`.)"
 
 #: ../../whatsnew/2.7.rst:1164
 msgid ""
@@ -1699,26 +1699,26 @@ msgid ""
 "The :mod:`SocketServer` module's :class:`~SocketServer.TCPServer` class now "
 "supports socket timeouts and disabling the Nagle algorithm. The "
 ":attr:`~SocketServer.TCPServer.disable_nagle_algorithm` class attribute "
-"defaults to False; if overridden to be True, new request connections will "
-"have the TCP_NODELAY option set to prevent buffering many small sends into a"
-" single TCP packet. The :attr:`~SocketServer.BaseServer.timeout` class "
-"attribute can hold a timeout in seconds that will be applied to the request "
-"socket; if no request is received within that time, "
+"defaults to ``False``; if overridden to be true, new request connections "
+"will have the TCP_NODELAY option set to prevent buffering many small sends "
+"into a single TCP packet. The :attr:`~SocketServer.BaseServer.timeout` class"
+" attribute can hold a timeout in seconds that will be applied to the request"
+" socket; if no request is received within that time, "
 ":meth:`~SocketServer.BaseServer.handle_timeout` will be called and "
 ":meth:`~SocketServer.BaseServer.handle_request` will return. (Contributed by"
 " Kristján Valur Jónsson; :issue:`6192` and :issue:`6267`.)"
-msgstr ":mod:`SocketServer` モジュールの :class:`~SocketServer.TCPServer` クラスは、ソケットタイムアウトと Nagle アルゴリズムの無効化をサポートするようになりました。 :attr:`~SocketServer.TCPServer.disable_nagle_algorithm` クラス属性は、デフォルトで False です。上書きされて True になると、新しいリクエスト接続は、TCP_NODELAY オプションを設定され、一つの TCP パケットにたくさんの小さな送信がバッファリングされることを防ぎます。 :attr:`~SocketServer.BaseServer.timeout` クラス属性は、リクエストソケットに適用されるタイムアウトを秒で保持できます。その時間内にリクエストが受け付けられなければ、 :meth:`~SocketServer.BaseServer.handle_timeout` が呼び出され、 :meth:`~SocketServer.BaseServer.handle_request` が返されます。(Contributed by Kristján Valur Jónsson; :issue:`6192` and :issue:`6267`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1515
 msgid ""
 "Updated module: the :mod:`sqlite3` module has been updated to version 2.6.0 "
-"of the `pysqlite package <http://code.google.com/p/pysqlite/>`__. Version "
+"of the `pysqlite package <https://github.com/ghaering/pysqlite>`__. Version "
 "2.6.0 includes a number of bugfixes, and adds the ability to load SQLite "
 "extensions from shared libraries. Call the ``enable_load_extension(True)`` "
 "method to enable extensions, and then call "
 ":meth:`~sqlite3.Connection.load_extension` to load a particular shared "
 "library. (Updated by Gerhard Häring.)"
-msgstr "更新されたモジュール: :mod:`sqlite3` モジュールが `pysqlite package <http://code.google.com/p/pysqlite/>`__ のバージョン 2.6.0 にアップデートされました。バージョン 2.6.0 はいくつかのバグ修正を含み、共有ライブラリから SQLite 拡張をロードできるようになりました。拡張を有効にするには ``enable_load_extension(True)`` メソッドを呼び出し、そして特定の共有ライブラリをロードするには :meth:`~sqlite3.Connection.load_extension` を呼び出してください。 (Updated by Gerhard Häring.)"
+msgstr "更新されたモジュール: :mod:`sqlite3` モジュールが `pysqlite パッケージ <https://github.com/ghaering/pysqlite>`__ のバージョン 2.6.0 にアップデートされました。バージョン 2.6.0 はいくつかのバグ修正を含み、共有ライブラリから SQLite 拡張をロードできるようになりました。拡張を有効にするには ``enable_load_extension(True)`` メソッドを呼び出し、そして特定の共有ライブラリをロードするには :meth:`~sqlite3.Connection.load_extension` を呼び出してください。 (Updated by Gerhard Häring.)"
 
 #: ../../whatsnew/2.7.rst:1522
 msgid ""
@@ -1735,9 +1735,9 @@ msgid ""
 "The :func:`ssl.wrap_socket` constructor function now takes a *ciphers* "
 "argument that's a string listing the encryption algorithms to be allowed; "
 "the format of the string is described `in the OpenSSL documentation "
-"<http://www.openssl.org/docs/apps/ciphers.html#CIPHER_LIST_FORMAT>`__. "
+"<https://www.openssl.org/docs/apps/ciphers.html#CIPHER-LIST-FORMAT>`__. "
 "(Added by Antoine Pitrou; :issue:`8322`.)"
-msgstr ":func:`ssl.wrap_socket` コンストラクタ関数は、許可される暗号化アルゴリズムを列挙する文字列である *ciphers* 引数を取るようになりました。この文字列の書式は、 `OpenSSL ドキュメントで <http://www.openssl.org/docs/apps/ciphers.html#CIPHER_LIST_FORMAT>`__. 解説されています。 (Added by Antoine Pitrou; :issue:`8322`.)"
+msgstr ":func:`ssl.wrap_socket` コンストラクタ関数は、許可される暗号化アルゴリズムを列挙する文字列である *ciphers* 引数を取るようになりました。この文字列の書式は、 `OpenSSL ドキュメント <https://www.openssl.org/docs/apps/ciphers.html#CIPHER-LIST-FORMAT>`__ で解説されています。 (Added by Antoine Pitrou; :issue:`8322`.)"
 
 #: ../../whatsnew/2.7.rst:1536
 msgid ""
@@ -1794,7 +1794,7 @@ msgid ""
 "(Contributed by Jeremy Hylton.)"
 msgstr "新しい関数: :mod:`symtable` モジュールの :func:`~symtable.Symbol.is_declared_global` は、明示的に global と宣言された引数には真、暗示的に global である引数には偽を返します。(Contributed by Jeremy Hylton.)"
 
-#: ../../whatsnew/2.7.rst:1583 ../../whatsnew/2.7.rst:2458
+#: ../../whatsnew/2.7.rst:1583 ../../whatsnew/2.7.rst:2472
 msgid ""
 "The :mod:`syslog` module will now use the value of ``sys.argv[0]`` as the "
 "identifier instead of the previous default value of ``'python'``. (Changed "
@@ -1817,7 +1817,7 @@ msgid ""
 "(Contributed by Brian Curtin; :issue:`7766`.)"
 msgstr ":func:`sys.getwindowsversion` もまた、属性名 :attr:`major`, :attr:`minor`, :attr:`build`, :attr:`platform`, :attr:`service_pack`, :attr:`service_pack_major`, :attr:`service_pack_minor`, :attr:`suite_mask`, および :attr:`product_type` を持つ名前付きタプルを返します。(Contributed by Brian Curtin; :issue:`7766`.)"
 
-#: ../../whatsnew/2.7.rst:1598 ../../whatsnew/2.7.rst:2462
+#: ../../whatsnew/2.7.rst:1598 ../../whatsnew/2.7.rst:2476
 msgid ""
 "The :mod:`tarfile` module's default error handling has changed, to no longer"
 " suppress fatal errors.  The default error level was previously 0, which "
@@ -1861,7 +1861,7 @@ msgid ""
 "Florent Xicluna; :issue:`8024`)."
 msgstr ":mod:`unicodedata` モジュールに提供される Unicode データベースは、どの文字が数字や空白文字か、または改行を表すかを決定するために、内部で使われるようになりました。このデータベースはまた、 :file:`Unihan.txt` データファイルからの情報も含みます (patch by Anders Chrigström and Amaury Forgeot d'Arc; :issue:`1571184`)。また、バージョン 5.2.0 にアップデートされました (updated by Florent Xicluna; :issue:`8024`)。"
 
-#: ../../whatsnew/2.7.rst:1633 ../../whatsnew/2.7.rst:2470
+#: ../../whatsnew/2.7.rst:1633 ../../whatsnew/2.7.rst:2484
 msgid ""
 "The :mod:`urlparse` module's :func:`~urlparse.urlsplit` now handles unknown "
 "URL schemes in a fashion compliant with :rfc:`3986`: if the URL is of the "
@@ -1871,11 +1871,11 @@ msgid ""
 "For example, Python 2.6.4 or 2.5 will return the following:"
 msgstr ":mod:`urlparse` モジュールの :func:`~urlparse.urlsplit` は、未知の URL スキームを :rfc:`3986` に応じた方法で処理します。 URL が ``\"<something>://...\"`` の形式なら、 ``://`` の前のテキストを、それがモジュールの知らない作り物のスキームであってさえ、スキームとして扱います。この変更は、古い働きを使って動作していたコードを破壊することがあります。例えば、Python 2.6.4 や 2.5 は以下を返します:"
 
-#: ../../whatsnew/2.7.rst:1645 ../../whatsnew/2.7.rst:2482
+#: ../../whatsnew/2.7.rst:1645 ../../whatsnew/2.7.rst:2496
 msgid "Python 2.7 (and Python 2.6.5) will return:"
 msgstr "Python 2.7 (や Python 2.6.5) は以下を返します:"
 
-#: ../../whatsnew/2.7.rst:1651 ../../whatsnew/2.7.rst:2488
+#: ../../whatsnew/2.7.rst:1651 ../../whatsnew/2.7.rst:2502
 msgid ""
 "(Python 2.7 actually produces slightly different output, since it returns a "
 "named tuple instead of a standard tuple.)"
@@ -2055,10 +2055,10 @@ msgstr "Tcl/Tk 8.5 は、基本的な Tk ウィジェットを最実装しなが
 msgid ""
 "To learn more, read the :mod:`ttk` module documentation.  You may also wish "
 "to read the Tcl/Tk manual page describing the Ttk theme engine, available at"
-" http://www.tcl.tk/man/tcl8.5/TkCmd/ttk_intro.htm. Some screenshots of the "
+" https://www.tcl.tk/man/tcl8.5/TkCmd/ttk_intro.htm. Some screenshots of the "
 "Python/Ttk code in use are at http://code.google.com/p/python-"
 "ttk/wiki/Screenshots."
-msgstr "詳しく知るには、 :mod:`ttk` モジュールのドキュメントをお読みください。 http://www.tcl.tk/man/tcl8.5/TkCmd/ttk_intro.htm にある、Ttk テーマエンジンを解説した Tcl/Tk マニュアルページを読むのもいいでしょう。 Python/Ttk コードを動かしているスクリーンショットは http://code.google.com/p/python-ttk/wiki/Screenshots にあります。"
+msgstr "詳しく知るには、 :mod:`ttk` モジュールのドキュメントをお読みください。 https://www.tcl.tk/man/tcl8.5/TkCmd/ttk_intro.htm にある、Ttk テーマエンジンを解説した Tcl/Tk マニュアルページを読むのもいいでしょう。 Python/Ttk コードを動かしているスクリーンショットは http://code.google.com/p/python-ttk/wiki/Screenshots にあります。"
 
 #: ../../whatsnew/2.7.rst:1790
 msgid ""
@@ -2104,19 +2104,20 @@ msgstr ":func:`~unittest.main` 関数は、その他幾つかの新しいオプ�
 
 #: ../../whatsnew/2.7.rst:1823
 msgid ""
-":option:`-b` or :option:`--buffer` will buffer the standard output and "
-"standard error streams during each test.  If the test passes, any resulting "
-"output will be discarded; on failure, the buffered output will be displayed."
-msgstr ":option:`-b` や :option:`--buffer` は、標準出力や標準エラーストリームをそれぞれのテストの間バッファに入れます。テストが通れば、結果の出力は全て捨てられます。失敗したら、バッファに入れられた出力が表示されます。"
+":option:`-b <unittest -b>` or :option:`!--buffer` will buffer the standard "
+"output and standard error streams during each test.  If the test passes, any"
+" resulting output will be discarded; on failure, the buffered output will be"
+" displayed."
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1828
 msgid ""
-":option:`-c` or :option:`--catch` will cause the control-C interrupt to be "
-"handled more gracefully.  Instead of interrupting the test process "
-"immediately, the currently running test will be completed and then the "
-"partial results up to the interruption will be reported. If you're "
+":option:`-c <unittest -c>` or :option:`!--catch` will cause the control-C "
+"interrupt to be handled more gracefully.  Instead of interrupting the test "
+"process immediately, the currently running test will be completed and then "
+"the partial results up to the interruption will be reported. If you're "
 "impatient, a second press of control-C will cause an immediate interruption."
-msgstr ":option:`-c` や :option:`--catch` は、control-C による中断をより上品にします。テストプロセスを即座に中断するのではなく、現在実行中のテストは完了させ、中断までの部分的な結果は報告されます。待ちきれなければ、control-C をもう一度押せば、即座に中断されます。"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1835
 msgid ""
@@ -2130,10 +2131,11 @@ msgstr "この control-C ハンドラは、コードがテストされている�
 
 #: ../../whatsnew/2.7.rst:1842
 msgid ""
-":option:`-f` or :option:`--failfast` makes test execution stop immediately "
-"when a test fails instead of continuing to execute further tests.  "
-"(Suggested by Cliff Dyer and implemented by Michael Foord; :issue:`8074`.)"
-msgstr ":option:`-f` や :option:`--failfast` は、テストが失敗したとき、他のテストを続けるのではなく、テストの実行を即座に停止します。 (Suggested by Cliff Dyer and implemented by Michael Foord; :issue:`8074`.)"
+":option:`-f <unittest -f>` or :option:`!--failfast` makes test execution "
+"stop immediately when a test fails instead of continuing to execute further "
+"tests.  (Suggested by Cliff Dyer and implemented by Michael Foord; "
+":issue:`8074`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1847
 msgid ""
@@ -2154,10 +2156,10 @@ msgid ""
 ":meth:`~unittest.TestCase.assertTrue`, and "
 ":meth:`~unittest.TestCase.assertFalse` failures now provide more "
 "information.  If you set the :attr:`~unittest.TestCase.longMessage` "
-"attribute of your :class:`~unittest.TestCase` classes to True, both the "
+"attribute of your :class:`~unittest.TestCase` classes to true, both the "
 "standard error message and any additional message you provide will be "
 "printed for failures.  (Added by Michael Foord; :issue:`5663`.)"
-msgstr ":meth:`~unittest.TestCase.assertEqual`, :meth:`~unittest.TestCase.assertTrue`, および :meth:`~unittest.TestCase.assertFalse` 失敗のメッセージは、提供する情報量が増えました。 :class:`~unittest.TestCase` クラスの :attr:`~unittest.TestCase.longMessage` 属性を True に設定すると、失敗時に、標準のエラーメッセージと追加して提供したメッセージの両方が表示されます。(Added by Michael Foord; :issue:`5663`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1861
 msgid ""
@@ -2325,11 +2327,11 @@ msgstr "新しいフックにより、 :meth:`~unittest.TestCase.assertEqual` �
 
 #: ../../whatsnew/2.7.rst:1964
 msgid ""
-":func:`unittest.main` now takes an optional ``exit`` argument.  If False, "
+":func:`unittest.main` now takes an optional ``exit`` argument.  If false, "
 ":func:`~unittest.main` doesn't call :func:`sys.exit`, allowing "
 ":func:`~unittest.main` to be used from the interactive interpreter. "
 "(Contributed by J. Pablo Fernández; :issue:`3379`.)"
-msgstr ":func:`unittest.main` はオプションの ``exit`` 引数を取るようになりました。False なら、 :func:`~unittest.main` は :func:`sys.exit` を呼び出さず、これにより対話型インタプリタから :func:`~unittest.main` が使えるようになります。(Contributed by J. Pablo Fernández; :issue:`3379`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:1969
 msgid ""
@@ -2460,15 +2462,15 @@ msgstr "Python のビルド過程と C API の変更は以下の通りです:"
 #: ../../whatsnew/2.7.rst:2080
 msgid ""
 "The latest release of the GNU Debugger, GDB 7, can be `scripted using Python"
-" <http://sourceware.org/gdb/current/onlinedocs/gdb/Python.html>`__. When you"
-" begin debugging an executable program P, GDB will look for a file named "
+" <https://sourceware.org/gdb/current/onlinedocs/gdb/Python.html>`__. When "
+"you begin debugging an executable program P, GDB will look for a file named "
 "``P-gdb.py`` and automatically read it.  Dave Malcolm contributed a :file"
 ":`python-gdb.py` that adds a number of commands useful when debugging Python"
 " itself.  For example, ``py-up`` and ``py-down`` go up or down one Python "
 "stack frame, which usually corresponds to several C stack frames.  ``py-"
 "print`` prints the value of a Python variable, and ``py-bt`` prints the "
 "Python stack trace.  (Added as a result of :issue:`8032`.)"
-msgstr "GNU デバッガ、GDB 7、の最新のリリースは `Python を使って書けます <http://sourceware.org/gdb/current/onlinedocs/gdb/Python.html>`__ 実行可能なプログラム P のデバッグを始めるとき、GDB は ``P-gdb.py`` という名前のファイルをロックし、それを自動的に読み込みます。Dave Malcolm は Python 自体をデバッグするときに便利ないくつかのコマンドを加える :file:`python-gdb.py` に貢献しました。例えば、 ``py-up`` および ``py-down`` は、通常いくつかの C スタックフレームに対応する、 Python のスタックフレームを上がったり下がったりします。 ``py-print`` は、Python 変数の値を表示し、 ``py-bt`` は、 Python スタックトレースを表示します。(Added as a result of :issue:`8032`.)"
+msgstr "GNU デバッガ、GDB 7、の最新のリリースは `Python を使って書けます <https://sourceware.org/gdb/current/onlinedocs/gdb/Python.html>`__ 実行可能なプログラム P のデバッグを始めるとき、GDB は ``P-gdb.py`` という名前のファイルをロックし、それを自動的に読み込みます。Dave Malcolm は Python 自体をデバッグするときに便利ないくつかのコマンドを加える :file:`python-gdb.py` に貢献しました。例えば、 ``py-up`` および ``py-down`` は、通常いくつかの C スタックフレームに対応する、 Python のスタックフレームを上がったり下がったりします。 ``py-print`` は、Python 変数の値を表示し、 ``py-bt`` は、 Python スタックトレースを表示します。(Added as a result of :issue:`8032`.)"
 
 #: ../../whatsnew/2.7.rst:2092
 msgid ""
@@ -2559,10 +2561,10 @@ msgstr "Python を埋め込んだ C/C++ アプリケーションを保守して�
 
 #: ../../whatsnew/2.7.rst:2151
 msgid ""
-"Security issue reported as `CVE-2008-5983 <http://cve.mitre.org/cgi-"
+"Security issue reported as `CVE-2008-5983 <https://cve.mitre.org/cgi-"
 "bin/cvename.cgi?name=CVE-2008-5983>`_; discussed in :issue:`5753`, and fixed"
 " by Antoine Pitrou."
-msgstr ":issue:`5753` で `CVE-2008-5983 <http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5983>`_ として報告され、Antoine Pitrou によって修正されたたセキュリティ問題です。"
+msgstr ":issue:`5753` で `CVE-2008-5983 <https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5983>`_ として報告され、Antoine Pitrou によって修正されたたセキュリティ問題です。"
 
 #: ../../whatsnew/2.7.rst:2155
 msgid ""
@@ -2640,26 +2642,26 @@ msgstr ":mod:`ctypes` によって定義されたグローバルシンボルに�
 
 #: ../../whatsnew/2.7.rst:2217
 msgid ""
-"New configure option: the :option:`--with-system-expat` switch allows "
+"New configure option: the :option:`!--with-system-expat` switch allows "
 "building the :mod:`pyexpat` module to use the system Expat library. "
 "(Contributed by Arfrever Frehtes Taifersar Arahesis; :issue:`7609`.)"
-msgstr "新しい設定オプション: :option:`--with-system-expat` スイッチにより、 :mod:`pyexpat` モジュールをビルドして、システム Expat ライブラリを使えます。 (Contributed by Arfrever Frehtes Taifersar Arahesis; :issue:`7609`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:2221
 msgid ""
-"New configure option: the :option:`--with-valgrind` option will now disable "
-"the pymalloc allocator, which is difficult for the Valgrind memory-error "
+"New configure option: the :option:`!--with-valgrind` option will now disable"
+" the pymalloc allocator, which is difficult for the Valgrind memory-error "
 "detector to analyze correctly. Valgrind will therefore be better at "
 "detecting memory leaks and overruns. (Contributed by James Henstridge; "
 ":issue:`2422`.)"
-msgstr "新しい設定オプション: :option:`--with-valgrind` オプションは、 Valgrind メモリエラー検出器が正しく分析するのが難しい pymalloc アロケータを無効にするようになりました。ですから Valgrind は、メモリリークやオーバーランをより検出できます。 (Contributed by James Henstridge; :issue:`2422`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:2228
 msgid ""
-"New configure option: you can now supply an empty string to :option:`--with-"
-"dbmliborder=` in order to disable all of the various DBM modules.  (Added by"
-" Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
-msgstr "新しい設定オプション: :option:`--with-dbmliborder=` に空の文字列を与えて様々な DBM モジュールを全て無効にできます。 (Added by Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
+"New configure option: you can now supply an empty string to :option"
+":`!--with-dbmliborder=` in order to disable all of the various DBM modules."
+"  (Added by Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
+msgstr ""
 
 #: ../../whatsnew/2.7.rst:2233
 msgid ""
@@ -2711,10 +2713,10 @@ msgid ""
 "but it doesn't provide type safety.  Evil code written in pure Python could "
 "cause a segmentation fault by taking a :c:type:`PyCObject` from module A and"
 " somehow substituting it for the :c:type:`PyCObject` in module B.   Capsules"
-" know their own name, and getting the pointer requires providing the name::"
-msgstr "これに使われる既存のデータ型 :c:type:`PyCObject` がありますが、これは型安全性を提供しません。pure Python で書かれた邪悪なコードは、 :c:type:`PyCObject` をモジュール A から取り、どうにかしてそれをモジュール B の :c:type:`PyCObject` で代えることで、セグメンテーション違反を起こし得ます。カプセルは自身の名前を知っていて、ポインタを得るには名前を提供しなければなりません::"
+" know their own name, and getting the pointer requires providing the name:"
+msgstr "これに使われる既存のデータ型 :c:type:`PyCObject` がありますが、これは型安全性を提供しません。pure Python で書かれた邪悪なコードは、 :c:type:`PyCObject` をモジュール A から取り、どうにかしてそれをモジュール B の :c:type:`PyCObject` で代えることで、セグメンテーション違反を起こし得ます。カプセルは自身の名前を知っていて、ポインタを得るには名前を提供しなければなりません:"
 
-#: ../../whatsnew/2.7.rst:2280
+#: ../../whatsnew/2.7.rst:2282
 msgid ""
 "You are assured that ``vtable`` points to whatever you're expecting. If a "
 "different capsule was passed in, :c:func:`PyCapsule_IsValid` would detect "
@@ -2722,7 +2724,7 @@ msgid ""
 "more information on using these objects."
 msgstr "``vtable`` が期待どおりのものを指すことが保証されます。異なるカプセルが渡されたら、 :c:func:`PyCapsule_IsValid` は不適合な名前を検知し、偽を返します。これらのオブジェクトの使用について、より詳しい情報は、 :ref:`using-capsules` を参照してください。"
 
-#: ../../whatsnew/2.7.rst:2285
+#: ../../whatsnew/2.7.rst:2287
 msgid ""
 "Python 2.7 now uses capsules internally to provide various extension-module "
 "APIs, but the :c:func:`PyCObject_AsVoidPtr` was modified to handle capsules,"
@@ -2731,17 +2733,17 @@ msgid ""
 ":exc:`PendingDeprecationWarning`, which is silent by default."
 msgstr "Python 2.7 は、様々な拡張モジュール API を提供するためにカプセルを内部的に使うようになりましたが、カプセルを処理するために :c:func:`PyCObject_AsVoidPtr` が :c:type:`CObject` インタフェースとのコンパイル時互換性は保ったまま変更されました。 :c:func:`PyCObject_AsVoidPtr` を使うと :exc:`PendingDeprecationWarning` が合図されますが、デフォルトでは言及されません。"
 
-#: ../../whatsnew/2.7.rst:2292
+#: ../../whatsnew/2.7.rst:2294
 msgid ""
 "Implemented in Python 3.1 and backported to 2.7 by Larry Hastings; discussed"
 " in :issue:`5630`."
 msgstr "Implemented in Python 3.1 and backported to 2.7 by Larry Hastings; discussed in :issue:`5630`."
 
-#: ../../whatsnew/2.7.rst:2299
+#: ../../whatsnew/2.7.rst:2301
 msgid "Port-Specific Changes: Windows"
 msgstr "ポート特有の変更: Windows"
 
-#: ../../whatsnew/2.7.rst:2301
+#: ../../whatsnew/2.7.rst:2303
 msgid ""
 "The :mod:`msvcrt` module now contains some constants from the "
 ":file:`crtassem.h` header file: :data:`CRT_ASSEMBLY_VERSION`, "
@@ -2750,7 +2752,7 @@ msgid ""
 ":issue:`4365`.)"
 msgstr ":mod:`msvcrt` モジュールは、 :file:`crtassem.h` からのいくつかの定数を追加しました。 :data:`CRT_ASSEMBLY_VERSION`, :data:`VC_ASSEMBLY_PUBLICKEYTOKEN`, および :data:`LIBRARIES_ASSEMBLY_NAME_PREFIX`. (Contributed by David Cournapeau; :issue:`4365`.)"
 
-#: ../../whatsnew/2.7.rst:2308
+#: ../../whatsnew/2.7.rst:2310
 msgid ""
 "The :mod:`_winreg` module for accessing the registry now implements the "
 ":func:`~_winreg.CreateKeyEx` and :func:`~_winreg.DeleteKeyEx` functions, "
@@ -2761,14 +2763,14 @@ msgid ""
 "(Implemented by Brian Curtin: :issue:`7347`.)"
 msgstr "レジストリへのアクセスのための :mod:`_winreg` モジュールは、以前サポートされていた関数群の引数を増やした拡張版である :func:`~_winreg.CreateKeyEx` および :func:`~_winreg.DeleteKeyEx` を実装しました。 :func:`~_winreg.DisableReflectionKey`, :func:`~_winreg.EnableReflectionKey`, および :func:`~_winreg.QueryReflectionKey` もテストされ、ドキュメント化されました。(Implemented by Brian Curtin: :issue:`7347`.)"
 
-#: ../../whatsnew/2.7.rst:2316
+#: ../../whatsnew/2.7.rst:2318
 msgid ""
 "The new :c:func:`_beginthreadex` API is used to start threads, and the "
 "native thread-local storage functions are now used. (Contributed by Kristján"
 " Valur Jónsson; :issue:`3582`.)"
 msgstr "新しい :c:func:`_beginthreadex` API がスレッドの開始に使われ、ネイティブのスレッドローカルストレージ間数が使われるようになりました。(Contributed by Kristján Valur Jónsson; :issue:`3582`.)"
 
-#: ../../whatsnew/2.7.rst:2320
+#: ../../whatsnew/2.7.rst:2322
 msgid ""
 "The :func:`os.kill` function now works on Windows.  The signal value can be "
 "the constants :const:`CTRL_C_EVENT`, :const:`CTRL_BREAK_EVENT`, or any "
@@ -2778,23 +2780,23 @@ msgid ""
 ":issue:`1220212`.)"
 msgstr ":func:`os.kill` 関数が Windows で働くようになりました。このシグナル値は定数 :const:`CTRL_C_EVENT`, :const:`CTRL_BREAK_EVENT`, その他の整数にできます。最初の 2 定数は :kbd:`Control-C` および :kbd:`Control-Break` 打鍵イベントをサブプロセスに送ります。その他の値は、 :c:func:`TerminateProcess` API を使います。(Contributed by Miki Tebeka; :issue:`1220212`.)"
 
-#: ../../whatsnew/2.7.rst:2327
+#: ../../whatsnew/2.7.rst:2329
 msgid ""
 "The :func:`os.listdir` function now correctly fails for an empty path.  "
 "(Fixed by Hirokazu Yamamoto; :issue:`5913`.)"
 msgstr ":func:`os.listdir` 関数は、空のパスに対してちゃんと失敗するようになりました。 (Fixed by Hirokazu Yamamoto; :issue:`5913`.)"
 
-#: ../../whatsnew/2.7.rst:2330
+#: ../../whatsnew/2.7.rst:2332
 msgid ""
 "The :mod:`mimelib` module will now read the MIME database from the Windows "
 "registry when initializing. (Patch by Gabriel Genellina; :issue:`4969`.)"
 msgstr ":mod:`mimelib` モジュールは、初期化の際に Windows レジストリから MIME データベースを正しく読みこむようになりました。 (Patch by Gabriel Genellina; :issue:`4969`.)"
 
-#: ../../whatsnew/2.7.rst:2337
+#: ../../whatsnew/2.7.rst:2339
 msgid "Port-Specific Changes: Mac OS X"
 msgstr "ポート特有の変更: Mac OS X"
 
-#: ../../whatsnew/2.7.rst:2339
+#: ../../whatsnew/2.7.rst:2341
 msgid ""
 "The path ``/Library/Python/2.7/site-packages`` is now appended to "
 "``sys.path``, in order to share added packages between the system "
@@ -2802,11 +2804,23 @@ msgid ""
 "Ronald Oussoren; :issue:`4865`.)"
 msgstr "追加されたパッケージを、システムインストレーションとユーザがインストールした同じバージョンのコピーで共有するために、 ``sys.path`` に ``/Library/Python/2.7/site-packages`` が追加されました。 (Changed by Ronald Oussoren; :issue:`4865`.)"
 
-#: ../../whatsnew/2.7.rst:2345
+#: ../../whatsnew/2.7.rst:2348
+msgid ""
+"As of 2.7.13, this change was removed. ``/Library/Python/2.7/site-"
+"packages``, the site-packages directory used by the Apple-supplied system "
+"Python 2.7 is no longer appended to ``sys.path`` for user-installed Pythons "
+"such as from the python.org installers.  As of macOS 10.12, Apple changed "
+"how the system site-packages directory is configured, which could cause "
+"installation of pip components, like setuptools, to fail.  Packages "
+"installed for the system Python will no longer be shared with user-installed"
+" Pythons. (:issue:`28440`)"
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2359
 msgid "Port-Specific Changes: FreeBSD"
 msgstr "ポート特有の変更: FreeBSD"
 
-#: ../../whatsnew/2.7.rst:2347
+#: ../../whatsnew/2.7.rst:2361
 msgid ""
 "FreeBSD 7.1's :const:`SO_SETFIB` constant, used with "
 ":func:`~socket.getsockopt`/:func:`~socket.setsockopt` to select an alternate"
@@ -2814,11 +2828,11 @@ msgid ""
 "Kyle VanderBeek; :issue:`8235`.)"
 msgstr "FreeBSD 7.1 の、他のルーティングテーブルを選択するための :func:`~socket.getsockopt`/:func:`~socket.setsockopt` で使われている :const:`SO_SETFIB` 定数が、 :mod:`socket` モジュールで使えるようになりました。(Added by Kyle VanderBeek; :issue:`8235`.)"
 
-#: ../../whatsnew/2.7.rst:2353
+#: ../../whatsnew/2.7.rst:2367
 msgid "Other Changes and Fixes"
 msgstr "その他の変更と修正"
 
-#: ../../whatsnew/2.7.rst:2355
+#: ../../whatsnew/2.7.rst:2369
 msgid ""
 "Two benchmark scripts, :file:`iobench` and :file:`ccbench`, were added to "
 "the :file:`Tools` directory.  :file:`iobench` measures the speed of the "
@@ -2828,13 +2842,13 @@ msgid ""
 "bandwidth when performing several tasks using a varying number of threads."
 msgstr "ベンチマークスクリプトの 2 つ、 :file:`iobench` および :file:`ccbench`, が :file:`Tools` ディレクトリに追加されました。 :file:`iobench` は、様々な演算を実行している間 :func:`open` によって返された組み込みファイル I/O オブジェクトの速度を計測し、 :file:`ccbench` は、変化する数のスレッドを使っていくつかのタスクを処理するときの計算スループット、スレッド切り替えレイテンシ、IO 処理バンド幅の計測を試みる同時実行ベンチマークです。"
 
-#: ../../whatsnew/2.7.rst:2363
+#: ../../whatsnew/2.7.rst:2377
 msgid ""
 "The :file:`Tools/i18n/msgfmt.py` script now understands plural forms in "
 ":file:`.po` files.  (Fixed by Martin von Löwis; :issue:`5464`.)"
 msgstr ":file:`Tools/i18n/msgfmt.py` スクリプトは、複数の形式の :file:`.po` ファイルを理解できるようになりました。(Fixed by Martin von Löwis; :issue:`5464`.)"
 
-#: ../../whatsnew/2.7.rst:2367
+#: ../../whatsnew/2.7.rst:2381
 msgid ""
 "When importing a module from a :file:`.pyc` or :file:`.pyo` file with an "
 "existing :file:`.py` counterpart, the :attr:`co_filename` attributes of the "
@@ -2844,50 +2858,50 @@ msgid ""
 "Calderone; :issue:`1180193`.)"
 msgstr "既存の対応する :file:`.py` が存在する :file:`.pyc` または :file:`.pyo` ファイルからモジュールを import するとき、結果のコードオブジェクトの :attr:`co_filename` 属性は、元のファイル名が古くなったとき、上書きされます。これは、ファイルがリネーム、移動、異なるパスを通したアクセスをされたときに起こりえます。(Patch by Ziga Seilnacht and Jean-Paul Calderone; :issue:`1180193`.)"
 
-#: ../../whatsnew/2.7.rst:2374
+#: ../../whatsnew/2.7.rst:2388
 msgid ""
-"The :file:`regrtest.py` script now takes a :option:`--randseed=` switch that"
-" takes an integer that will be used as the random seed for the :option:`-r` "
-"option that executes tests in random order. The :option:`-r` option also "
-"reports the seed that was used (Added by Collin Winter.)"
-msgstr ":file:`regrtest.py` スクリプトは、テストを乱順に実行する :option:`-r` オプションの、ランダムシードに使われる整数を取る :option:`--randseed=` スイッチを取るようになりました。 :option:`-r` オプションは、使われたシードも報告します。 (Added by Collin Winter.)"
+"The :file:`regrtest.py` script now takes a :option:`!--randseed=` switch "
+"that takes an integer that will be used as the random seed for the "
+":option:`!-r` option that executes tests in random order. The :option:`!-r` "
+"option also reports the seed that was used (Added by Collin Winter.)"
+msgstr ""
 
-#: ../../whatsnew/2.7.rst:2380
+#: ../../whatsnew/2.7.rst:2394
 msgid ""
-"Another :file:`regrtest.py` switch is :option:`-j`, which takes an integer "
+"Another :file:`regrtest.py` switch is :option:`!-j`, which takes an integer "
 "specifying how many tests run in parallel. This allows reducing the total "
 "runtime on multi-core machines. This option is compatible with several other"
-" options, including the :option:`-R` switch which is known to produce long "
+" options, including the :option:`!-R` switch which is known to produce long "
 "runtimes. (Added by Antoine Pitrou, :issue:`6152`.)  This can also be used "
-"with a new :option:`-F` switch that runs selected tests in a loop until they"
-" fail.  (Added by Antoine Pitrou; :issue:`7312`.)"
-msgstr "もう一つの :file:`regrtest.py` スイッチは :option:`-j` で、いくつのテストを並行して実行するかを指定する整数です。これにより、マルチコア機での合計実行時間を短縮できます。このオプションは、実行時間を長くすることで知られている :option:`-R` スイッチなど、いくつかの他のオプションと互換です。 (Added by Antoine Pitrou, :issue:`6152`.) これはまた、選ばれたテストを失敗するまでループして実行する :option:`-F` スイッチとも同時に使えます。(Added by Antoine Pitrou; :issue:`7312`.)"
+"with a new :option:`!-F` switch that runs selected tests in a loop until "
+"they fail.  (Added by Antoine Pitrou; :issue:`7312`.)"
+msgstr ""
 
-#: ../../whatsnew/2.7.rst:2389
+#: ../../whatsnew/2.7.rst:2403
 msgid ""
 "When executed as a script, the :file:`py_compile.py` module now accepts "
 "``'-'`` as an argument, which will read standard input for the list of "
 "filenames to be compiled.  (Contributed by Piotr Ożarowski; :issue:`8233`.)"
 msgstr "スクリプトとして実行されるとき、 :file:`py_compile.py` モジュールは標準入力を読み込んでコンパイルするファイル名のリストとする ``'-'`` を引数として受け付けるようになりました。(Contributed by Piotr Ożarowski; :issue:`8233`.)"
 
-#: ../../whatsnew/2.7.rst:2397
+#: ../../whatsnew/2.7.rst:2411
 msgid "Porting to Python 2.7"
 msgstr "Python 2.7 への移植"
 
-#: ../../whatsnew/2.7.rst:2399
+#: ../../whatsnew/2.7.rst:2413
 msgid ""
 "This section lists previously described changes and other bugfixes that may "
 "require changes to your code:"
 msgstr "このセクションでは以前述べられた変更とコードの変更が必要となる他のバグフィックスを列挙しています:"
 
-#: ../../whatsnew/2.7.rst:2402
+#: ../../whatsnew/2.7.rst:2416
 msgid ""
 "The :func:`range` function processes its arguments more consistently; it "
 "will now call :meth:`__int__` on non-float, non-integer arguments that are "
 "supplied to it.  (Fixed by Alexander Belopolsky; :issue:`1533`.)"
 msgstr ":func:`range` 関数は、引数をより一貫して処理するようになりました。浮動小数点数でもなく整数でもない引数が与えられたら、その :meth:`__int__` を呼び出すようになりました。(Fixed by Alexander Belopolsky; :issue:`1533`.)"
 
-#: ../../whatsnew/2.7.rst:2407
+#: ../../whatsnew/2.7.rst:2421
 msgid ""
 "The string :meth:`format` method changed the default precision used for "
 "floating-point and complex numbers from 6 decimal places to 12, which "
@@ -2895,7 +2909,7 @@ msgid ""
 ":issue:`5920`.)"
 msgstr "文字列 :meth:`format` メソッドは浮動小数点数および複素数に使われるデフォルトの精度を、 :func:`str` で使われる精度に合わせ、小数第 6 位から 12 位に変更しました。 (Changed by Eric Smith; :issue:`5920`.)"
 
-#: ../../whatsnew/2.7.rst:2412
+#: ../../whatsnew/2.7.rst:2426
 msgid ""
 "Because of an optimization for the :keyword:`with` statement, the special "
 "methods :meth:`__enter__` and :meth:`__exit__` must belong to the object's "
@@ -2904,7 +2918,7 @@ msgid ""
 "types.  (:issue:`6101`.)"
 msgstr ":keyword:`with` 文の最適化のため、特殊メソッド :meth:`__enter__` および :meth:`__exit__` はオブジェクトの型に属さなければならず、オブジェクトのインスタンスには直接取り付けられません。これは (:class:`object` から導出された) 新スタイルクラスと C 拡張型に影響します。 (:issue:`6101`.)"
 
-#: ../../whatsnew/2.7.rst:2418
+#: ../../whatsnew/2.7.rst:2432
 msgid ""
 "Due to a bug in Python 2.6, the *exc_value* parameter to :meth:`__exit__` "
 "methods was often the string representation of the exception, not an "
@@ -2912,11 +2926,11 @@ msgid ""
 "expected.  (Fixed by Florent Xicluna; :issue:`7853`.)"
 msgstr "Python 2.6 におけるバグのため、 :meth:`__exit__` の *exc_value* パラメタははよく、例外のインスタンスではなく文字列表現になっていました。これは 2.7 では修正され、 *exc_value* は期待通りインスタンスになります。 (Fixed by Florent Xicluna; :issue:`7853`.)"
 
-#: ../../whatsnew/2.7.rst:2428
+#: ../../whatsnew/2.7.rst:2442
 msgid "In the standard library:"
 msgstr "標準ライブラリでは:"
 
-#: ../../whatsnew/2.7.rst:2430
+#: ../../whatsnew/2.7.rst:2444
 msgid ""
 "Operations with :class:`~datetime.datetime` instances that resulted in a "
 "year falling outside the supported range didn't always raise "
@@ -2925,7 +2939,7 @@ msgid ""
 " and Alexander Belopolsky; :issue:`7150`.)"
 msgstr "年がサポートされている範囲外にはみ出るような :class:`~datetime.datetime` インスタンスの演算が、 :exc:`OverflowError` を送出しないことがありました。このようなエラーはより注意深く調べられ、例外を送出するようになりました。(Reported by Mark Leander, patch by Anand B. Pillai and Alexander Belopolsky; :issue:`7150`.)"
 
-#: ../../whatsnew/2.7.rst:2436
+#: ../../whatsnew/2.7.rst:2450
 msgid ""
 "When using :class:`~decimal.Decimal` instances with a string's "
 ":meth:`format` method, the default alignment was previously left-alignment."
@@ -2933,7 +2947,7 @@ msgid ""
 " your programs. (Changed by Mark Dickinson; :issue:`6857`.)"
 msgstr ":class:`~decimal.Decimal` インスタンスを文字列の :meth:`format` メソッドに使うとき、デフォルトの揃えは以前は左揃えでした。これは右揃えに変更され、プログラムの出力が変わるかもしれません。(Changed by Mark Dickinson; :issue:`6857`.)"
 
-#: ../../whatsnew/2.7.rst:2442
+#: ../../whatsnew/2.7.rst:2456
 msgid ""
 "Comparisons involving a signaling NaN value (or ``sNAN``) now signal "
 ":const:`~decimal.InvalidOperation` instead of silently returning a true or "
@@ -2941,7 +2955,7 @@ msgid ""
 "``NaN``) are now hashable.  (Fixed by Mark Dickinson; :issue:`7279`.)"
 msgstr "signaling NaN (あるいは ``sNAN``) との比較は、暗黙に比較演算に応じて真偽値を返すのではなく、 :const:`~decimal.InvalidOperation` 例外を発生させるようになりました。 Quiet NaN (あるいは ``NAN``) はハッシュ可能になりました。 (Fixed by Mark Dickinson; :issue:`7279`.)"
 
-#: ../../whatsnew/2.7.rst:2448
+#: ../../whatsnew/2.7.rst:2462
 msgid ""
 "The ElementTree library, :mod:`xml.etree`, no longer escapes ampersands and "
 "angle brackets when outputting an XML processing instruction (which looks "
@@ -2949,36 +2963,36 @@ msgid ""
 "`<!-- comment -->`). (Patch by Neil Muller; :issue:`2746`.)"
 msgstr "ElementTree ライブラリ :mod:`xml.etree` は、 (`<?xml-stylesheet href=\"#style1\"?>` のような) 命令や (`<!-- comment -->` のような) コメントを処理する XML を出力するときにアンパサンドおよび角括弧をエスケープしなくなりました。 (Patch by Neil Muller; :issue:`2746`.)"
 
-#: ../../whatsnew/2.7.rst:2454
+#: ../../whatsnew/2.7.rst:2468
 msgid ""
 "The :meth:`~StringIO.StringIO.readline` method of "
 ":class:`~StringIO.StringIO` objects now does nothing when a negative length "
 "is requested, as other file-like objects do.  (:issue:`7348`)."
 msgstr ":class:`~StringIO.StringIO` オブジェクトの :meth:`~StringIO.StringIO.readline` メソッドは負の長さが要求されたとき、ほかのファイル風オブジェクトと同じように、何もしなくなりました。(:issue:`7348`)"
 
-#: ../../whatsnew/2.7.rst:2491
+#: ../../whatsnew/2.7.rst:2505
 msgid "For C extensions:"
 msgstr "C 拡張では:"
 
-#: ../../whatsnew/2.7.rst:2493
+#: ../../whatsnew/2.7.rst:2507
 msgid ""
 "C extensions that use integer format codes with the ``PyArg_Parse*`` family "
 "of functions will now raise a :exc:`TypeError` exception instead of "
 "triggering a :exc:`DeprecationWarning` (:issue:`5080`)."
 msgstr "``PyArg_Parse*`` 系統の関数で整数フォーマットコードを使う C 拡張は、 :exc:`DeprecationWarning` を引き起こすのではなく、 :exc:`TypeError` 例外を送出するようになりました。(:issue:`5080`)"
 
-#: ../../whatsnew/2.7.rst:2497
+#: ../../whatsnew/2.7.rst:2511
 msgid ""
 "Use the new :c:func:`PyOS_string_to_double` function instead of the old "
 ":c:func:`PyOS_ascii_strtod` and :c:func:`PyOS_ascii_atof` functions, which "
 "are now deprecated."
 msgstr "非推奨となった古い :c:func:`PyOS_ascii_strtod` および :c:func:`PyOS_ascii_atof` 関数の代わりに、新しい :c:func:`PyOS_string_to_double` 関数を使ってください。"
 
-#: ../../whatsnew/2.7.rst:2501
+#: ../../whatsnew/2.7.rst:2515
 msgid "For applications that embed Python:"
 msgstr "Python を埋め込んだアプリケーションでは:"
 
-#: ../../whatsnew/2.7.rst:2503
+#: ../../whatsnew/2.7.rst:2517
 msgid ""
 "The :c:func:`PySys_SetArgvEx` function was added, letting applications close"
 " a security hole when the existing :c:func:`PySys_SetArgv` function was "
@@ -2987,11 +3001,11 @@ msgid ""
 "with *updatepath* set to false."
 msgstr ":c:func:`PySys_SetArgvEx` 関数が追加され、既存の :c:func:`PySys_SetArgv` 関数が使われた時のセキュリティホールを塞ぐことができるようになりました。 :c:func:`PySys_SetArgv` を呼び出していないか調べ、 *updatepath* を偽に設定した :c:func:`PySys_SetArgvEx` を使うべきかよく考えてください。"
 
-#: ../../whatsnew/2.7.rst:2516
+#: ../../whatsnew/2.7.rst:2530
 msgid "New Features Added to Python 2.7 Maintenance Releases"
 msgstr "Python 2.7 メンテナンスリリースで追加された新機能"
 
-#: ../../whatsnew/2.7.rst:2518
+#: ../../whatsnew/2.7.rst:2532
 msgid ""
 "New features may be added to Python 2.7 maintenance releases when the "
 "situation genuinely calls for it. Any such additions must go through the "
@@ -3000,18 +3014,18 @@ msgid ""
 "Python 3, or else by publishing it on the Python Package Index."
 msgstr "Python 2.7 メンテナンスリリースでは、正真正銘それが求められる状況では、新しい機能が追加される場合があります。そのような追加のどんなものでも Python Enhancement Proposal プロセスを通過しなければなりません。Python 3 だけに新しい機能を追加することによっても Python Package Index に公開することによってもいずれでも十分ではないと言えるだけのやむにやまれない理由付けが必要です。"
 
-#: ../../whatsnew/2.7.rst:2524
+#: ../../whatsnew/2.7.rst:2538
 msgid ""
 "In addition to the specific proposals listed below, there is a general "
 "exemption allowing new ``-3`` warnings to be added in any Python 2.7 "
 "maintenance release."
 msgstr "個別の提案は以下にリストしますが、全ての Python 2.7 メンテナンスリリースに追加される新しい ``-3`` 警告は除いています。"
 
-#: ../../whatsnew/2.7.rst:2530
+#: ../../whatsnew/2.7.rst:2544
 msgid "PEP 434: IDLE Enhancement Exception for All Branches"
 msgstr "PEP 434: IDLE 拡張についての全てのブランチにおける例外的な扱い"
 
-#: ../../whatsnew/2.7.rst:2532
+#: ../../whatsnew/2.7.rst:2546
 msgid ""
 ":pep:`434` describes a general exemption for changes made to the IDLE "
 "development environment shipped along with Python. This exemption makes it "
@@ -3019,63 +3033,63 @@ msgid ""
 "experience across all supported versions of Python 2 and 3."
 msgstr ":pep:`434` は、Pythonと一緒に出荷されるIDLE開発環境に変更を加えるための一般的な免除事項を説明します。これは、IDLE の開発者 が Python 2 と 3 のすべてのサポートされているバージョン間でより一貫したユーザーエクスペリエンスを提供するためのものです。"
 
-#: ../../whatsnew/2.7.rst:2537
+#: ../../whatsnew/2.7.rst:2551
 msgid ""
 "For details of any IDLE changes, refer to the NEWS file for the specific "
 "release."
 msgstr "全ての IDLE の変更についての詳細は、個別のリリースについてのNEWS ファイルを参照してください。"
 
-#: ../../whatsnew/2.7.rst:2542
+#: ../../whatsnew/2.7.rst:2556
 msgid "PEP 466: Network Security Enhancements for Python 2.7"
 msgstr "PEP 466: Python 2.7 のためのネットワークセキュリティ拡張"
 
-#: ../../whatsnew/2.7.rst:2544
+#: ../../whatsnew/2.7.rst:2558
 msgid ""
 ":pep:`466` describes a number of network security enhancement proposals that"
 " have been approved for inclusion in Python 2.7 maintenance releases, with "
 "the first of those changes appearing in the Python 2.7.7 release."
 msgstr ":pep:`466` は、 Python 2.7 メンテナンスリリースに含めることを認められた数多くのネットワークセキュリティ強化についての提案を記述しています。それら変更の最初のものは Python 2.7.7 に初めて登場しました。"
 
-#: ../../whatsnew/2.7.rst:2548
+#: ../../whatsnew/2.7.rst:2562
 msgid ":pep:`466` related features added in Python 2.7.7:"
 msgstr "Python 2.7.7 に :pep:`466` 関連で追加された機能:"
 
-#: ../../whatsnew/2.7.rst:2550
+#: ../../whatsnew/2.7.rst:2564
 msgid ""
 ":func:`hmac.compare_digest` was backported from Python 3 to make a timing "
 "attack resistant comparison operation available to Python 2 applications. "
 "(Contributed by Alex Gaynor; :issue:`21306`.)"
 msgstr ":func:`hmac.compare_digest` が Python 3 からバックポートされました。これにより Python 2 アプリケーションで  timing attack resistant comparison operation が利用可能になります (Contributed by Alex Gaynor; :issue:`21306`.)"
 
-#: ../../whatsnew/2.7.rst:2554
+#: ../../whatsnew/2.7.rst:2568
 msgid ""
 "OpenSSL 1.0.1g was upgraded in the official Windows installers published on "
 "python.org. (Contributed by Zachary Ware; :issue:`21462`.)"
 msgstr "python.org で公開される公式 Windows インストーラのビルドに使う OpenSSL が 1.0.1g にアップグレードされました . (Contributed by Zachary Ware; :issue:`21462`.)"
 
-#: ../../whatsnew/2.7.rst:2557
+#: ../../whatsnew/2.7.rst:2571
 msgid ":pep:`466` related features added in Python 2.7.8:"
 msgstr "Python 2.7.8 に :pep:`466` 関連で追加された機能:"
 
-#: ../../whatsnew/2.7.rst:2559
+#: ../../whatsnew/2.7.rst:2573
 msgid ""
 ":func:`hashlib.pbkdf2_hmac` was backported from Python 3 to make a hashing "
 "algorithm suitable for secure password storage broadly available to Python 2"
 " applications. (Contributed by Alex Gaynor; :issue:`21304`.)"
 msgstr ":func:`hashlib.pbkdf2_hmac` が Python 3 からバックポートされました。これにより Python 2 アプリケーションでも、安全なパスワード格納に広範に使うのに相応しいハッシュアルゴリズムが利用できます (Contributed by Alex Gaynor; :issue:`21304`.)"
 
-#: ../../whatsnew/2.7.rst:2563
+#: ../../whatsnew/2.7.rst:2577
 msgid ""
 "OpenSSL 1.0.1h was upgraded for the official Windows installers published on"
 " python.org. (contributed by Zachary Ware in :issue:`21671` for "
 "CVE-2014-0224)"
 msgstr "python.org で公開される公式 Windows インストーラのビルドに使う OpenSSL が 1.0.1h にアップグレードされました (contributed by Zachary Ware in :issue:`21671` for CVE-2014-0224)"
 
-#: ../../whatsnew/2.7.rst:2566
+#: ../../whatsnew/2.7.rst:2580
 msgid ":pep:`466` related features added in Python 2.7.9:"
 msgstr "Python 2.7.9 に :pep:`466` 関連で追加された機能:"
 
-#: ../../whatsnew/2.7.rst:2568
+#: ../../whatsnew/2.7.rst:2582
 msgid ""
 "Most of Python 3.4's :mod:`ssl` module was backported. This means :mod:`ssl`"
 " now supports Server Name Indication, TLS1.x settings, access to the "
@@ -3083,20 +3097,20 @@ msgid ""
 "features. (Contributed by Alex Gaynor and David Reid; :issue:`21308`.)"
 msgstr "Python 3.4 の :mod:`ssl` モジュールのほとんどがバックポートされました。つまり :mod:`ssl` は今や、Server Name Indication, TLS1.x 設定, platform certificate store へのアクセス, :class:`~ssl.SSLContext` クラス, その他機能が使えます (Contributed by Alex Gaynor and David Reid; :issue:`21308`.)"
 
-#: ../../whatsnew/2.7.rst:2573
+#: ../../whatsnew/2.7.rst:2587
 msgid ""
 "Refer to the \"Version added: 2.7.9\" notes in the module documentation for "
 "specific details."
 msgstr "個別の詳細については、モジュールのドキュメンテーション内の \"バージョン 2.7.9 で追加\" の注釈を参照してください。"
 
-#: ../../whatsnew/2.7.rst:2576
+#: ../../whatsnew/2.7.rst:2590
 msgid ""
 ":func:`os.urandom` was changed to cache a file descriptor to "
 "``/dev/urandom`` instead of reopening ``/dev/urandom`` on every call. "
 "(Contributed by Alex Gaynor; :issue:`21305`.)"
 msgstr ":func:`os.urandom` は、呼び出しのたびに ``/dev/urandom`` を開きなおす代わりに ``/dev/urandom`` のファイル記述子をキャッシュするように変更されました。(Contributed by Alex Gaynor; :issue:`21305`.)"
 
-#: ../../whatsnew/2.7.rst:2580
+#: ../../whatsnew/2.7.rst:2594
 msgid ""
 ":data:`hashlib.algorithms_guaranteed` and "
 ":data:`hashlib.algorithms_available` were backported from Python 3 to make "
@@ -3104,22 +3118,22 @@ msgid ""
 "algorithm. (Contributed by Alex Gaynor in :issue:`21307`)"
 msgstr ":data:`hashlib.algorithms_guaranteed` と :data:`hashlib.algorithms_available` が Python 3 からバックポートされました。これにより Python 2 アプリケーションが可能な限り最強のハッシュアルゴリズムを選択するのが容易になります (Contributed by Alex Gaynor in :issue:`21307`)"
 
-#: ../../whatsnew/2.7.rst:2587
+#: ../../whatsnew/2.7.rst:2601
 msgid "PEP 477: Backport ensurepip (PEP 453) to Python 2.7"
 msgstr "PEP 477: Python 2.7 への ensurepip (PEP 453) バックポート"
 
-#: ../../whatsnew/2.7.rst:2589
+#: ../../whatsnew/2.7.rst:2603
 msgid ""
 ":pep:`477` approves the inclusion of the :pep:`453` ensurepip module and the"
 " improved documentation that was enabled by it in the Python 2.7 maintenance"
-" releases, appearing first in the the Python 2.7.9 release."
-msgstr ":pep:`477` が Python 2.7 メンテナンスリリースに :pep:`453` ensurepip モジュール, それによって可能になるドキュメンテーションの改善を含めることを認め、Python 2.7.9 リリースではじめてお披露目されました。"
+" releases, appearing first in the Python 2.7.9 release."
+msgstr ""
 
-#: ../../whatsnew/2.7.rst:2595
+#: ../../whatsnew/2.7.rst:2609
 msgid "Bootstrapping pip By Default"
 msgstr "デフォルトでの pip のブートストラッピング"
 
-#: ../../whatsnew/2.7.rst:2597
+#: ../../whatsnew/2.7.rst:2611
 msgid ""
 "The new :mod:`ensurepip` module (defined in :pep:`453`) provides a standard "
 "cross-platform mechanism to bootstrap the pip installer into Python "
@@ -3129,14 +3143,14 @@ msgid ""
 "the release candidate."
 msgstr "新しい :mod:`ensurepip` モジュール(:pep:`453` で定義されています)は標準のクロスプラットフォームのメカニズムで、Python インストールに pip インストーラをブートストラップします。Python 2.7.9 に含まれる ``pip`` のバージョンは ``pip`` 1.5.6 で、将来の 2.7.x メンテナンスリリースでは Python のリリース候補の作成時点で入手出来る最新バージョンの ``pip`` がバンドルされる予定です。"
 
-#: ../../whatsnew/2.7.rst:2604
+#: ../../whatsnew/2.7.rst:2618
 msgid ""
 "By default, the commands ``pip``, ``pipX`` and ``pipX.Y`` will be installed "
 "on all platforms (where X.Y stands for the version of the Python "
 "installation), along with the ``pip`` Python package and its dependencies."
 msgstr "デフォルトでは ``pip`` , ``pipX`` , ``pipX.Y`` コマンドが全てのプラットフォームに、Python パッケージ ``pip`` とその依存物とともにインストールされます(X. Y はインストールされる Python のバージョン)。"
 
-#: ../../whatsnew/2.7.rst:2608
+#: ../../whatsnew/2.7.rst:2622
 msgid ""
 "For CPython :ref:`source builds on POSIX systems <building-python-on-unix>`,"
 " the ``make install`` and ``make altinstall`` commands do not bootstrap "
@@ -3144,7 +3158,7 @@ msgid ""
 "options, and overridden through Makefile options."
 msgstr "CPython の :ref:`source builds on POSIX systems <building-python-on-unix>` では ``make install``, ``make altinstall`` コマンドはデフォルトでは ``pip`` ブートストラップを行いません。この振る舞いは configure のオプションを変更して Makefile を作ることで変更できます。"
 
-#: ../../whatsnew/2.7.rst:2613
+#: ../../whatsnew/2.7.rst:2627
 msgid ""
 "On Windows and Mac OS X, the CPython installers now default to installing "
 "``pip`` along with CPython itself (users may opt out of installing it during"
@@ -3154,7 +3168,7 @@ msgid ""
 "launcher for Windows as ``py -m pip``."
 msgstr "Windows と Mac OS X では CPython インストーラはそれ自身と一緒に ``pip`` をデフォルトでインストールするようになっています(ユーザはインストールプロセスで除外するかもしれませんが)。Windows ユーザは ``pip`` がコマンドラインからデフォルトで利用可能なように ``PATH`` の自動修正するかの選択を求められます。そうしない場合でも Windows のための Python ランチャで ``py -m pip`` のようにすれば良いです。"
 
-#: ../../whatsnew/2.7.rst:2620
+#: ../../whatsnew/2.7.rst:2634
 msgid ""
 "As `discussed in the PEP`__, platform packagers may choose not to install "
 "these commands by default, as long as, when invoked, they provide clear and "
@@ -3162,11 +3176,11 @@ msgid ""
 " system package manager)."
 msgstr "`discussed in the PEP`__ の通りプラットフォームのパッケージャは、プラットフォームでのそれらインストールの単純明快な手段を自身が提供する(普通システムのパッケージマネージャ)からと言う理由で、デフォルトでのこれらコマンドのインストールを選択しないかもしれません。"
 
-#: ../../whatsnew/2.7.rst:2629
+#: ../../whatsnew/2.7.rst:2643
 msgid "Documentation Changes"
 msgstr "ドキュメントの変更"
 
-#: ../../whatsnew/2.7.rst:2631
+#: ../../whatsnew/2.7.rst:2645
 msgid ""
 "As part of this change, the :ref:`installing-index` and :ref:`distributing-"
 "index` sections of the documentation have been completely redesigned as "
@@ -3176,49 +3190,85 @@ msgid ""
 "of the individual projects."
 msgstr "この変更の一部は、 :ref:`installing-index` と :ref:`distributing-index` セクションがより手短な始め方として完全にデザインし直されたことと、FAQ ドキュメントです。ほとんどのパッケージングについてのドキュメンテーションは `Python Packaging User Guide <http://packaging.python.org>`__  が保守している Python Packaging Authority に移動されて、独立したプロジェクトのドキュメンテーションになっています。"
 
-#: ../../whatsnew/2.7.rst:2639
+#: ../../whatsnew/2.7.rst:2653
 msgid ""
 "However, as this migration is currently still incomplete, the legacy "
 "versions of those guides remaining available as :ref:`install-index` and "
 ":ref:`distutils-index`."
 msgstr "ですが、この移行は現在のところまだ少し不完全ですので、これらのガイドのレガシーなバージョンは :ref:`install-index` と :ref:`distutils-index` に残してあります。"
 
-#: ../../whatsnew/2.7.rst:2646
-msgid "PEP 453 -- Explicit bootstrapping of pip in Python installations"
-msgstr "PEP 453 -- Python インストールの際の明示的なpipのブートストラッピング"
+#: ../../whatsnew/2.7.rst:2660
+msgid ":pep:`453` -- Explicit bootstrapping of pip in Python installations"
+msgstr ":pep:`453` -- Python インストールの際の明示的なpipのブートストラッピング"
 
-#: ../../whatsnew/2.7.rst:2646
+#: ../../whatsnew/2.7.rst:2660
 msgid ""
 "PEP written by Donald Stufft and Nick Coghlan, implemented by Donald Stufft,"
 " Nick Coghlan, Martin von Löwis and Ned Deily."
 msgstr "PEP は Donald Stufft と Nick Coghlan によって書かれ、Donald Stufft, Nick Coghlan, Martin von Löwis, Ned Deily により実装されました。"
 
-#: ../../whatsnew/2.7.rst:2650
+#: ../../whatsnew/2.7.rst:2664
 msgid ""
 "PEP 476: Enabling certificate verification by default for stdlib http "
 "clients"
 msgstr "PEP 476: stdlib http クライアントが証明書の検証を行うのをデフォルトで有効化"
 
-#: ../../whatsnew/2.7.rst:2652
+#: ../../whatsnew/2.7.rst:2666
 msgid ""
-":mod:`httplib` and modules which use it, such as :mod:`urllib2` and "
-":mod:`xmlrpclib`, will now verify that the server presents a certificate "
-"which is signed by a CA in the platform trust store and whose hostname "
-"matches the hostname being requested by default, significantly improving "
-"security for many applications."
-msgstr ":mod:`httplib` とこのモジュールを使っている例えば :mod:`urllib2` や :mod:`xmlrpclib` が、サーバをプラットフォームが持つ信頼ストアにある CA により署名された証明書で検証し、そのホスト名がリクエストされたホスト名かどうかのチェックをデフォルトで行うようになりました。これは多くのアプリケーションにとって大幅なセキュリティ改善になります。"
+":pep:`476` updated :mod:`httplib` and modules which use it, such as "
+":mod:`urllib2` and :mod:`xmlrpclib`, to now verify that the server presents "
+"a certificate which is signed by a Certificate Authority in the platform "
+"trust store and whose hostname matches the hostname being requested by "
+"default, significantly improving security for many applications. This change"
+" was made in the Python 2.7.9 release."
+msgstr ""
 
-#: ../../whatsnew/2.7.rst:2658
+#: ../../whatsnew/2.7.rst:2673
 msgid ""
 "For applications which require the old previous behavior, they can pass an "
 "alternate context::"
 msgstr "以前の古い振る舞いが必要なアプリケーションでは、代わりとなるコンテキストを渡せます::"
 
-#: ../../whatsnew/2.7.rst:2678
+#: ../../whatsnew/2.7.rst:2690
+msgid "PEP 493: HTTPS verification migration tools for Python 2.7"
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2692
+msgid ""
+":pep:`493` provides additional migration tools to support a more incremental"
+" infrastructure upgrade process for environments containing applications and"
+" services relying on the historically permissive processing of server "
+"certificates when establishing client HTTPS connections.  These additions "
+"were made in the Python 2.7.12 release."
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2698
+msgid ""
+"These tools are intended for use in cases where affected applications and "
+"services can't be modified to explicitly pass a more permissive SSL context "
+"when establishing the connection."
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2702
+msgid ""
+"For applications and services which can't be modified at all, the new "
+"``PYTHONHTTPSVERIFY`` environment variable may be set to ``0`` to revert an "
+"entire Python process back to the default permissive behaviour of Python "
+"2.7.8 and earlier."
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2707
+msgid ""
+"For cases where the connection establishment code can't be modified, but the"
+" overall application can be, the new :func:`ssl._https_verify_certificates` "
+"function can be used to adjust the default behaviour at runtime."
+msgstr ""
+
+#: ../../whatsnew/2.7.rst:2716
 msgid "Acknowledgements"
 msgstr "謝辞"
 
-#: ../../whatsnew/2.7.rst:2680
+#: ../../whatsnew/2.7.rst:2718
 msgid ""
 "The author would like to thank the following people for offering "
 "suggestions, corrections and assistance with various drafts of this article:"

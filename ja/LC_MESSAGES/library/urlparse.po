@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-09-19 14:28+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:08+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -364,19 +363,19 @@ msgid ""
 msgstr "*url* がフラグメント識別子を含む場合、フラグメント識別子を持たないバージョンに修正された *url* と、別の文字列に分割されたフラグメント識別子を返します。 *url* 中にフラグメント識別子がない場合、そのままの *url* と空文字列を返します。"
 
 #: ../../library/urlparse.rst:283
-msgid "RFC 3986 - Uniform Resource Identifiers"
+msgid ":rfc:`3986` - Uniform Resource Identifiers"
 msgstr ":rfc:`3986` - Uniform Resource Identifiers"
 
 #: ../../library/urlparse.rst:280
 msgid ""
 "This is the current standard (STD66). Any changes to urlparse module should "
-"conform to this. Certain deviations could be observed, which are mostly due "
-"backward compatiblity purposes and for certain de-facto parsing requirements"
-" as commonly observed in major browsers."
-msgstr "これが現在の標準規格 (STD66) です。 urlparse モジュールに対するすべての変更はこの規格に準拠していなければなりませんが、若干の逸脱はありえます。これは主には後方互換性のため、また主要なブラウザに一般的に見られる、事実上標準となったいくつかのURL 解析上の要求に対応するためです。"
+"conform to this. Certain deviations could be observed, which are mostly for "
+"backward compatibility purposes and for certain de-facto parsing "
+"requirements as commonly observed in major browsers."
+msgstr ""
 
 #: ../../library/urlparse.rst:286
-msgid "RFC 2732 - Format for Literal IPv6 Addresses in URL's."
+msgid ":rfc:`2732` - Format for Literal IPv6 Addresses in URL's."
 msgstr ":rfc:`2732` - Format for Literal IPv6 Addresses in URL's."
 
 #: ../../library/urlparse.rst:286
@@ -384,7 +383,7 @@ msgid "This specifies the parsing requirements of IPv6 URLs."
 msgstr "この規格は IPv6 の URL を解析するときの要求事項を記述しています。"
 
 #: ../../library/urlparse.rst:290
-msgid "RFC 2396 - Uniform Resource Identifiers (URI): Generic Syntax"
+msgid ":rfc:`2396` - Uniform Resource Identifiers (URI): Generic Syntax"
 msgstr ":rfc:`2396` - Uniform Resource Identifiers (URI): Generic Syntax"
 
 #: ../../library/urlparse.rst:289
@@ -394,15 +393,15 @@ msgid ""
 msgstr "この RFC では Uniform Resource Name (URN) と Uniform Resource Locator (URL) の両方に対する一般的な文法的要求事項を記述しています。"
 
 #: ../../library/urlparse.rst:293
-msgid "RFC 2368 - The mailto URL scheme."
+msgid ":rfc:`2368` - The mailto URL scheme."
 msgstr ":rfc:`2368` - The mailto URL scheme."
 
 #: ../../library/urlparse.rst:293
-msgid "Parsing requirements for mailto url schemes."
+msgid "Parsing requirements for mailto URL schemes."
 msgstr "mailto URL スキームに対する文法的要求事項です。"
 
 #: ../../library/urlparse.rst:298
-msgid "RFC 1808 - Relative Uniform Resource Locators"
+msgid ":rfc:`1808` - Relative Uniform Resource Locators"
 msgstr ":rfc:`1808` - Relative Uniform Resource Locators"
 
 #: ../../library/urlparse.rst:296
@@ -413,7 +412,7 @@ msgid ""
 msgstr "この RFC には絶対 URL と相対 URL を結合するための規則がボーダケースの取扱い方を決定する \"異常な例\" つきで収められています。"
 
 #: ../../library/urlparse.rst:300
-msgid "RFC 1738 - Uniform Resource Locators (URL)"
+msgid ":rfc:`1738` - Uniform Resource Locators (URL)"
 msgstr ":rfc:`1738` - Uniform Resource Locators (URL)"
 
 #: ../../library/urlparse.rst:301
@@ -452,23 +451,9 @@ msgid ""
 msgstr "以下のクラスが解析結果の実装を提供します:"
 
 #: ../../library/urlparse.rst:342
-msgid ""
-"Base class for the concrete result classes.  This provides most of the "
-"attribute definitions.  It does not provide a :meth:`geturl` method.  It is "
-"derived from :class:`tuple`, but does not override the :meth:`__init__` or "
-":meth:`__new__` methods."
-msgstr "具象の結果クラスたちの基底クラスです。このクラスがほとんどの属性の定義を与えます。しかし :meth:`geturl` メソッドは提供しません。このクラスは :class:`tuple` から派生していますが、 :meth:`__init__` や :meth:`__new__` をオーバーライドしません。"
+msgid "Concrete class for :func:`urlparse` results."
+msgstr ""
 
-#: ../../library/urlparse.rst:350
-msgid ""
-"Concrete class for :func:`urlparse` results.  The :meth:`__new__` method is "
-"overridden to support checking that the right number of arguments are "
-"passed."
-msgstr ":func:`urlparse` の結果のための具象クラスです。 :meth:`__new__` メソッドをオーバーライドして正しい個数の引数が引き渡されたことを確認するようにしています。"
-
-#: ../../library/urlparse.rst:356
-msgid ""
-"Concrete class for :func:`urlsplit` results.  The :meth:`__new__` method is "
-"overridden to support checking that the right number of arguments are "
-"passed."
-msgstr ":func:`urlsplit` の結果のための具象クラスです。 :meth:`__new__` メソッドをオーバーライドして正しい個数の引数が引き渡されたことを確認するようにしています。"
+#: ../../library/urlparse.rst:347
+msgid "Concrete class for :func:`urlsplit` results."
+msgstr ""

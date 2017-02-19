@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2015-12-02 05:11+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:44+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -389,11 +388,11 @@ msgstr "web サーバに応じて特別なモジュールが必要となりま�
 #: ../../howto/webservers.rst:269
 msgid ""
 "Apache has both `mod_fastcgi <http://www.fastcgi.com/drupal/>`_ and "
-"`mod_fcgid <http://httpd.apache.org/mod_fcgid/>`_.  ``mod_fastcgi`` is the "
+"`mod_fcgid <https://httpd.apache.org/mod_fcgid/>`_.  ``mod_fastcgi`` is the "
 "original one, but it has some licensing issues, which is why it is sometimes"
 " considered non-free. ``mod_fcgid`` is a smaller, compatible alternative.  "
 "One of these modules needs to be loaded by Apache."
-msgstr "Apache には `mod_fastcgi <http://www.fastcgi.com/drupal/>`_ と `mod_fcgid <http://httpd.apache.org/mod_fcgid/>`_ の両方があります。``mod_fastcgi`` が最初に作られましたが、非フリーとして扱われるという、いくつかのライセンスの問題があります。``mod_fcgid`` はより小さく、前者と互換性があります。このうちのどちらかを Apache から読み込む必要があります。"
+msgstr ""
 
 #: ../../howto/webservers.rst:275
 msgid ""
@@ -406,8 +405,8 @@ msgstr "lighttpd は自身に `FastCGI module <http://redmine.lighttpd.net/proje
 #: ../../howto/webservers.rst:279
 msgid ""
 "`nginx <http://nginx.org/>`_ also supports `FastCGI "
-"<http://wiki.nginx.org/NginxSimplePythonFCGI>`_."
-msgstr "nginx も `FastCGI <http://wiki.nginx.org/NginxSimplePythonFCGI>`_ をサポートしています。"
+"<https://www.nginx.com/resources/wiki/start/topics/examples/simplepythonfcgi/>`_."
+msgstr ""
 
 #: ../../howto/webservers.rst:282
 msgid ""
@@ -424,12 +423,12 @@ msgstr "これは単純な WSGI アプリケーションですが、まず `flup
 
 #: ../../howto/webservers.rst:309
 msgid ""
-"There is some documentation on `setting up Django with FastCGI "
-"<https://docs.djangoproject.com/en/dev/howto/deployment/fastcgi/>`_, most of"
-" which can be reused for other WSGI-compliant frameworks and libraries. Only"
-" the ``manage.py`` part has to be changed, the example used here can be used"
-" instead.  Django does more or less the exact same thing."
-msgstr "`setting up Django with FastCGI <https://docs.djangoproject.com/en/dev/howto/deployment/fastcgi/>`_ にドキュメントがあります、この内の多くは WSGI 互換フレームワークやライブラリで再利用できます。代わりに ``manage.py`` の部分を変更するだけで、ここで使った例を利用できます。Django もほとんど同様のことを行います。"
+"There is some documentation on `setting up Django with WSGI "
+"<https://docs.djangoproject.com/en/dev/howto/deployment/wsgi/>`_, most of "
+"which can be reused for other WSGI-compliant frameworks and libraries. Only "
+"the ``manage.py`` part has to be changed, the example used here can be used "
+"instead.  Django does more or less the exact same thing."
+msgstr ""
 
 #: ../../howto/webservers.rst:317
 msgid "mod_wsgi"
@@ -492,16 +491,17 @@ msgstr "WSGI を使う上での大きな利益は、統一性です。 WSGI と�
 msgid ""
 "A really great WSGI feature is middleware.  Middleware is a layer around "
 "your program which can add various functionality to it.  There is quite a "
-"bit of `middleware <http://www.wsgi.org/en/latest/libraries.html>`_ already "
-"available.  For example, instead of writing your own session management "
-"(HTTP is a stateless protocol, so to associate multiple HTTP requests with a"
-" single user your application must create and manage such state via a "
-"session), you can just download middleware which does that, plug it in, and "
-"get on with coding the unique parts of your application.  The same thing "
-"with compression -- there is existing middleware which handles compressing "
-"your HTML using gzip to save on your server's bandwidth.  Authentication is "
-"another a problem easily solved using existing middleware."
-msgstr "WSGI の本当に卓越している機能はミドルウェアです。ミドルウェアとはプログラムに様々な機能性を加えるためのレイヤーのことを指します。`無数のミドルウェア <http://www.wsgi.org/en/latest/libraries.html>`_ が利用可能になっています。例えばセッション管理(連続したリクエストの中でユーザを同定を行います、HTTP は状態を維持しないので、リクエストが同じユーザのものであるということがわかります)を書く代わりに、ミドルウェアを取ってきて繋ぐだけで、既存の機能を当てにできます。圧縮についても同じです -- HTML を gzip で圧縮してサーバの帯域を節約したい場合。ミドルウェアを組み込むだけで行うことができます。認証もミドルウェアで簡単に解決できる問題です。"
+"bit of `middleware <https://wsgi.readthedocs.org/en/latest/libraries.html>`_"
+" already available.  For example, instead of writing your own session "
+"management (HTTP is a stateless protocol, so to associate multiple HTTP "
+"requests with a single user your application must create and manage such "
+"state via a session), you can just download middleware which does that, plug"
+" it in, and get on with coding the unique parts of your application.  The "
+"same thing with compression -- there is existing middleware which handles "
+"compressing your HTML using gzip to save on your server's bandwidth.  "
+"Authentication is another problem that is easily solved using existing "
+"middleware."
+msgstr ""
 
 #: ../../howto/webservers.rst:370
 msgid ""
@@ -519,10 +519,10 @@ msgid ""
 "The code that is used to connect to various low level gateways like CGI or "
 "mod_python is called a *WSGI server*.  One of these servers is ``flup``, "
 "which supports FastCGI and SCGI, as well as `AJP "
-"<http://en.wikipedia.org/wiki/Apache_JServ_Protocol>`_.  Some of these "
+"<https://en.wikipedia.org/wiki/Apache_JServ_Protocol>`_.  Some of these "
 "servers are written in Python, as ``flup`` is, but there also exist others "
 "which are written in C and can be used as drop-in replacements."
-msgstr "CGI や mod_python などに様々な低レベルゲートウェイに接続するためのコードを *WSGI サーバ* と呼びます。これらのサーバの一つに ``flup`` があります、これは前に述べましたが FastCGI、SCGI と `AJP <http://en.wikipedia.org/wiki/Apache_JServ_Protocol>`_ をサポートしています。これらのサーバのいくつかは ``flup`` のように Python で書かれていますが、C で書かれたものもあります、それらは気軽に置き換えることができます。"
+msgstr ""
 
 #: ../../howto/webservers.rst:385
 msgid ""
@@ -534,10 +534,10 @@ msgstr "いくつものサーバが利用可能ですから、Python の web ア
 #: ../../howto/webservers.rst:391
 msgid ""
 "A good overview of WSGI-related code can be found in the `WSGI homepage "
-"<http://www.wsgi.org/en/latest/index.html>`_, which contains an extensive "
-"list of `WSGI servers <http://www.wsgi.org/en/latest/servers.html>`_ which "
-"can be used by *any* application supporting WSGI."
-msgstr "`WSGI homepage <http://www.wsgi.org/en/latest/index.html>`_ は全ての WSGI に関連したコードに対して素晴しい概観を与えてくれます、ここには WSGI をサポートするアプリケーション *全て* が利用できるサーバの広大なリスト `WSGI servers <http://www.wsgi.org/en/latest/servers.html>`_ が含まれています。"
+"<https://wsgi.readthedocs.org/>`_, which contains an extensive list of `WSGI"
+" servers <https://wsgi.readthedocs.org/en/latest/servers.html>`_ which can "
+"be used by *any* application supporting WSGI."
+msgstr ""
 
 #: ../../howto/webservers.rst:396
 msgid ""
@@ -563,10 +563,10 @@ msgstr "WSGI は web アプリケーションプログラマに何をもたら�
 #: ../../howto/webservers.rst:409
 msgid ""
 "One of the most widely used wiki software packages is `MoinMoin "
-"<http://moinmo.in/>`_.  It was created in 2000, so it predates WSGI by about"
-" three years.  Older versions needed separate code to run on CGI, "
+"<https://moinmo.in/>`_.  It was created in 2000, so it predates WSGI by "
+"about three years.  Older versions needed separate code to run on CGI, "
 "mod_python, FastCGI and standalone."
-msgstr "最も広く使われている wiki ソフトウェアの一つに `MoinMoin <http://moinmo.in/>`_ があります。これは2000年に作られたため、WSGI より3年ほど先行していました。古いバージョンでは CGI、mod_python、FastCGI、スタンドアロンで動作するためには別々のコードが必要でした。"
+msgstr ""
 
 #: ../../howto/webservers.rst:414
 msgid ""
@@ -637,9 +637,10 @@ msgstr "全ての Python フレームワークが明示的に MVC をサポー�
 #: ../../howto/webservers.rst:461
 msgid ""
 "The English Wikipedia has an article about the `Model-View-Controller "
-"pattern <http://en.wikipedia.org/wiki/Model-view-controller>`_.  It includes"
-" a long list of web frameworks for various programming languages."
-msgstr "Wikipedia の英語版には `Model-View-Controller pattern <http://en.wikipedia.org/wiki/Model-view-controller>`_ の記事があります、この記事には様々な言語での web フレームワークの長大なリストが含まれています。"
+"pattern "
+"<https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_.  It"
+" includes a long list of web frameworks for various programming languages."
+msgstr ""
 
 #: ../../howto/webservers.rst:467
 msgid "Ingredients for Websites"
@@ -753,14 +754,14 @@ msgstr "しばしば `MySQL <http://www.mysql.com/>`_ や `PostgreSQL <http://ww
 #: ../../howto/webservers.rst:549
 msgid ""
 "Relational databases are *queried* using a language called `SQL "
-"<http://en.wikipedia.org/wiki/SQL>`_.  Python programmers in general do not "
-"like SQL too much, as they prefer to work with objects.  It is possible to "
+"<https://en.wikipedia.org/wiki/SQL>`_.  Python programmers in general do not"
+" like SQL too much, as they prefer to work with objects.  It is possible to "
 "save Python objects into a database using a technology called `ORM "
-"<http://en.wikipedia.org/wiki/Object-relational_mapping>`_ (Object "
+"<https://en.wikipedia.org/wiki/Object-relational_mapping>`_ (Object "
 "Relational Mapping).  ORM translates all object-oriented access into SQL "
 "code under the hood, so the developer does not need to think about it.  Most"
 " `frameworks`_ use ORMs, and it works quite well."
-msgstr "それらは `SQL <http://en.wikipedia.org/wiki/SQL>`_ と呼ばれる言語を利用した *照会 (queried)* です。一般的な Python プログラマは SQL をあまり好みません、彼らはオブジェクトで動作する方を好みます。`ORM <http://en.wikipedia.org/wiki/Object-relational_mapping>`_ と呼ばれる技術を使うことでデータベース内の Python オブジェクトを節約できます。ORM は内部でオブジェクト指向的アクセスを SQL コードに変換し、ユーザはそのことを意識せずに済みます。多くの `framework`_ は ORMs を利用し、とてもうまく動作します."
+msgstr ""
 
 #: ../../howto/webservers.rst:558
 msgid ""
@@ -806,9 +807,9 @@ msgstr "`Database Programming <https://wiki.python.org/moin/DatabaseProgramming>
 #: ../../howto/webservers.rst:585
 msgid ""
 "`SQLAlchemy <http://www.sqlalchemy.org/>`_, the most powerful OR-Mapper for "
-"Python, and `Elixir <http://elixir.ematia.de/>`_, which makes SQLAlchemy "
-"easier to use"
-msgstr "`SQLAlchemy <http://www.sqlalchemy.org/>`_ は Python での最も強力な OR マッパーで、`Elixir <http://elixir.ematia.de/>`_ は利用しやすいものにしてくれます"
+"Python, and `Elixir <https://pypi.python.org/pypi/Elixir>`_, which makes "
+"SQLAlchemy easier to use"
+msgstr ""
 
 #: ../../howto/webservers.rst:589
 msgid "`SQLObject <http://www.sqlobject.org/>`_, another popular OR-Mapper"
@@ -816,9 +817,9 @@ msgstr "`SQLObject <http://www.sqlobject.org/>`_ は別の人気のある OR マ
 
 #: ../../howto/webservers.rst:591
 msgid ""
-"`ZODB <https://launchpad.net/zodb>`_ and `Durus <http://www.mems-"
-"exchange.org/software/durus/>`_, two object oriented databases"
-msgstr "`ZODB <https://launchpad.net/zodb>`_ と `Durus <http://www.mems-exchange.org/software/durus/>`_ の二つはオブジェクト指向データベースです"
+"`ZODB <https://launchpad.net/zodb>`_ and `Durus <https://www.mems-"
+"exchange.org/software/>`_, two object oriented databases"
+msgstr ""
 
 #: ../../howto/webservers.rst:599
 msgid "Frameworks"
@@ -930,12 +931,13 @@ msgstr "Python の他に人気あるフレームワークは `TurboGears <http:/
 
 #: ../../howto/webservers.rst:678
 msgid ""
-"The documentation can be found in the `TurboGears wiki "
-"<http://docs.turbogears.org/>`_, where links to screencasts can be found. "
-"TurboGears has also an active user community which can respond to most "
-"related questions.  There is also a `TurboGears book "
-"<http://turbogearsbook.com/>`_ published, which is a good starting point."
-msgstr "ドキュメントが `TurboGears wiki <http://docs.turbogears.org/>`_ にあり、スクリーンキャストへのリンクもあります。TurboGears には関連した質問のほとんどに答えられる、活動的なユーザコミュニティがあります。入門に向いた `TurboGears book <http://turbogearsbook.com/>`_ も出版されています。"
+"The documentation can be found in the `TurboGears documentation "
+"<https://turbogears.readthedocs.org/>`_, where links to screencasts can be "
+"found. TurboGears has also an active user community which can respond to "
+"most related questions.  There is also a `TurboGears book "
+"<http://turbogears.org/1.0/docs/TGBooks.html>`_ published, which is a good "
+"starting point."
+msgstr ""
 
 #: ../../howto/webservers.rst:684
 msgid ""

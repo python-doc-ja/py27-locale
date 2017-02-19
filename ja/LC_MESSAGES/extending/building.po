@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -7,10 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2015-11-28 19:11+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:40+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,14 +42,14 @@ msgstr "distutils を使った拡張モジュールのビルドには、ビル�
 #: ../../extending/building.rst:26
 msgid ""
 "A distutils package contains a driver script, :file:`setup.py`. This is a "
-"plain Python file, which, in the most simple case, could look like this::"
-msgstr "distutils ベースのパッケージには、駆動スクリプト (driver script) となる :file:`setup.py` が入っています。 :file:`setup.py` は普通の Python プログラムファイルで、ほとんどの場合以下のような見かけになっています::"
+"plain Python file, which, in the most simple case, could look like this:"
+msgstr "distutils ベースのパッケージには、駆動スクリプト (driver script) となる :file:`setup.py` が入っています。\n:file:`setup.py` は普通の Python プログラムファイルで、ほとんどの場合以下のような内容になっています:"
 
-#: ../../extending/building.rst:40
+#: ../../extending/building.rst:42
 msgid "With this :file:`setup.py`, and a file :file:`demo.c`, running ::"
 msgstr "この :file:`setup.py` とファイル :file:`demo.c` があるとき、以下のコマンド ::"
 
-#: ../../extending/building.rst:44
+#: ../../extending/building.rst:46
 msgid ""
 "will compile :file:`demo.c`, and produce an extension module named ``demo`` "
 "in the :file:`build` directory. Depending on the system, the module file "
@@ -58,7 +57,7 @@ msgid ""
 "like :file:`demo.so` or :file:`demo.pyd`."
 msgstr "を実行すると、 :file:`demo.c` をコンパイルして、 ``demo`` という名前の拡張モジュールを :file:`build` ディレクトリ内に生成します。システムによってはモジュールファイルは :file:`build/lib.system` サブディレクトリに生成され、 :file:`demo.so` や :file:`demo.pyd` といった名前になることがあります。"
 
-#: ../../extending/building.rst:49
+#: ../../extending/building.rst:51
 msgid ""
 "In the :file:`setup.py`, all execution is performed by calling the ``setup``"
 " function. This takes a variable number of keyword arguments, of which the "
@@ -70,7 +69,7 @@ msgid ""
 "distutils; this section explains building extension modules only."
 msgstr ":file:`setup.py` 内では、コマンドの実行はすべて ``setup`` 関数を呼び出して行います。この関数は可変個のキーワード引数をとります。例ではその一部を使っているにすぎません。もっと具体的にいうと、例の中ではパッケージをビルドするためのメタ情報と、パッケージの内容を指定しています。通常、パッケージには Python ソースモジュールやドキュメント、サブパッケージ等といった別のファイルも入ります。 distutils の機能に関する詳細は、 :ref:`distutils-index` に書かれている distutils のドキュメントを参照してください;  この節では、拡張モジュールのビルドについてのみ説明します。"
 
-#: ../../extending/building.rst:58
+#: ../../extending/building.rst:60
 msgid ""
 "It is common to pre-compute arguments to :func:`setup`, to better structure "
 "the driver script. In the example above, the ``ext_modules`` argument to "
@@ -80,14 +79,14 @@ msgid ""
 "source file, :file:`demo.c`."
 msgstr "駆動スクリプトをよりよく構成するために、 :func:`setup` への引数を前もって計算しておくことがよくあります。上の例では、 :func:`setup` の ``ext_modules`` は拡張モジュールのリストで、リストの各々の要素は :class:`~distutils.extension.Extension` クラスのインスタンスになっています。上の例では、 ``demo`` という名の拡張モジュールを定義していて、単一のソースファイル :file:`demo.c` をコンパイルしてビルドするよう定義しています。"
 
-#: ../../extending/building.rst:65
+#: ../../extending/building.rst:67
 msgid ""
 "In many cases, building an extension is more complex, since additional "
 "preprocessor defines and libraries may be needed. This is demonstrated in "
-"the example below. ::"
-msgstr "多くの場合、拡張モジュールのビルドはもっと複雑になります。というのは、プリプロセッサ定義やライブラリの追加指定が必要になることがあるからです。例えば以下のファイルがその実例です。 ::"
+"the example below."
+msgstr "多くの場合、拡張モジュールのビルドはもっと複雑になります。\nというのは、プリプロセッサ定義やライブラリの追加指定が必要になることがあるからです。\n例えば以下のファイルがその実例です。"
 
-#: ../../extending/building.rst:91
+#: ../../extending/building.rst:95
 msgid ""
 "In this example, :func:`setup` is called with additional meta-information, "
 "which is recommended when distribution packages have to be built. For the "
@@ -97,41 +96,41 @@ msgid ""
 "Unix, this may result in the compilation commands ::"
 msgstr "この例では、 :func:`setup` は追加のメタ情報と共に呼び出されます。配布パッケージを構築する際には、メタ情報の追加が推奨されています。拡張モジュール自体については、プリプロセッサ定義、インクルードファイルのディレクトリ、ライブラリのディレクトリ、ライブラリといった指定があります。 distutils はこの情報をコンパイラに応じて異なるやり方で引渡します。例えば、Unix では、上の設定は以下のようなコンパイルコマンドになるかもしれません ::"
 
-#: ../../extending/building.rst:102
+#: ../../extending/building.rst:106
 msgid ""
 "These lines are for demonstration purposes only; distutils users should "
 "trust that distutils gets the invocations right."
 msgstr "これらのコマンドラインは実演目的で書かれたものです; distutils のユーザは distutils が正しくコマンドを実行すると信用してください。"
 
-#: ../../extending/building.rst:109
+#: ../../extending/building.rst:113
 msgid "Distributing your extension modules"
 msgstr "拡張モジュールの配布"
 
-#: ../../extending/building.rst:111
+#: ../../extending/building.rst:115
 msgid ""
 "When an extension has been successfully build, there are three ways to use "
 "it."
 msgstr "拡張モジュールをうまくビルドできたら、三通りの使い方があります。"
 
-#: ../../extending/building.rst:113
+#: ../../extending/building.rst:117
 msgid ""
 "End-users will typically want to install the module, they do so by running "
 "::"
 msgstr "エンドユーザは普通モジュールをインストールしようと考えます; これには、次を実行します ::"
 
-#: ../../extending/building.rst:117
+#: ../../extending/building.rst:121
 msgid ""
 "Module maintainers should produce source packages; to do so, they run ::"
 msgstr "モジュールメンテナはソースパッケージを作成します; これには、次を実行します ::"
 
-#: ../../extending/building.rst:121
+#: ../../extending/building.rst:125
 msgid ""
 "In some cases, additional files need to be included in a source "
 "distribution; this is done through a :file:`MANIFEST.in` file; see the "
 "distutils documentation for details."
 msgstr "場合によっては、ソース配布物に追加のファイルを含める必要があります; これには :file:`MANIFEST.in` ファイルを使います; 詳しくは distutils のドキュメントを参照してください。"
 
-#: ../../extending/building.rst:125
+#: ../../extending/building.rst:129
 msgid ""
 "If the source distribution has been build successfully, maintainers can also"
 " create binary distributions. Depending on the platform, one of the "

@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-02 23:57+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:13+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -267,7 +266,7 @@ msgid ""
 msgstr "非負のインデクス対の場合、スライスされたシーケンスの長さは、スライスの両端のインデクスが範囲内にあるかぎり、インデクス間の差になります。例えば、 ``word[1:3]`` の長さは 2 になります。"
 
 #: ../../tutorial/introduction.rst:310
-msgid "Attempting to use a index that is too large will result in an error::"
+msgid "Attempting to use an index that is too large will result in an error::"
 msgstr "大き過ぎるインデクスを使おうとするとエラーが発生します::"
 
 #: ../../tutorial/introduction.rst:317
@@ -291,8 +290,8 @@ msgid "The built-in function :func:`len` returns the length of a string::"
 msgstr "組込み関数 :func:`len` は文字列の長さ (length) を返します::"
 
 #: ../../tutorial/introduction.rst:354
-msgid "typesseq"
-msgstr "typesseq"
+msgid ":ref:`typesseq`"
+msgstr ":ref:`typesseq`"
 
 #: ../../tutorial/introduction.rst:352
 msgid ""
@@ -302,8 +301,8 @@ msgid ""
 msgstr "次節で記述されている文字列および Unicode 文字列は *シーケンス型* の例であり、シーケンス型でサポートされている共通の操作をサポートしています。"
 
 #: ../../tutorial/introduction.rst:358
-msgid "string-methods"
-msgstr "string-methods"
+msgid ":ref:`string-methods`"
+msgstr ":ref:`string-methods`"
 
 #: ../../tutorial/introduction.rst:357
 msgid ""
@@ -311,31 +310,29 @@ msgid ""
 " transformations and searching."
 msgstr "(バイト)文字列や Unicode 文字列では、基本的な変換や検索を行うための数多くのメソッドをサポートしています。"
 
-#: ../../tutorial/introduction.rst:362
-msgid "new-string-formatting"
-msgstr "new-string-formatting"
+#: ../../tutorial/introduction.rst:361
+msgid ":ref:`formatstrings`"
+msgstr ":ref:`formatstrings`"
 
 #: ../../tutorial/introduction.rst:361
-msgid ""
-"Information about string formatting with :meth:`str.format` is described "
-"here."
-msgstr ":meth:`str.format` を使った文字列のフォーマットについて、ここで解説されています。"
+msgid "Information about string formatting with :meth:`str.format`."
+msgstr ":meth:`str.format` を使った文字列のフォーマットについての情報があります。"
 
-#: ../../tutorial/introduction.rst:365
-msgid "string-formatting"
-msgstr "string-formatting"
+#: ../../tutorial/introduction.rst:364
+msgid ":ref:`string-formatting`"
+msgstr ":ref:`string-formatting`"
 
-#: ../../tutorial/introduction.rst:365
+#: ../../tutorial/introduction.rst:364
 msgid ""
 "The old formatting operations invoked when strings and Unicode strings are "
 "the left operand of the ``%`` operator are described in more detail here."
 msgstr "(バイト)文字列や Unicode 文字列が ``%`` 演算子の左オペランドである場合に呼び出される(古い)フォーマット操作については、ここで詳しく記述されています。"
 
-#: ../../tutorial/introduction.rst:372
+#: ../../tutorial/introduction.rst:371
 msgid "Unicode Strings"
 msgstr "Unicode 文字列"
 
-#: ../../tutorial/introduction.rst:377
+#: ../../tutorial/introduction.rst:376
 msgid ""
 "Starting with Python 2.0 a new data type for storing text data is available "
 "to the programmer: the Unicode object. It can be used to store and "
@@ -344,7 +341,7 @@ msgid ""
 "necessary."
 msgstr "Python 2.0 から、プログラマはテキスト・データを格納するための新しいデータ型、 Unicode オブジェクトを利用できるようになりました。 Unicode オブジェクトを使うと、Unicode データ (http://www.unicode.org/ 参照) を記憶したり、操作したりできます。また、 Unicode オブジェクトは既存の文字列オブジェクトとよく統合されていて、必要に応じて自動変換されます。"
 
-#: ../../tutorial/introduction.rst:382
+#: ../../tutorial/introduction.rst:381
 msgid ""
 "Unicode has the advantage of providing one ordinal for every character in "
 "every script used in modern and ancient texts. Previously, there were only "
@@ -355,13 +352,13 @@ msgid ""
 "Unicode solves these problems by defining one code page for all scripts."
 msgstr "Unicode には、古今のテキストで使われているあらゆる書き文字のあらゆる文字について、対応付けを行うための一つの序数を規定しているという利点があります。これまでは、書き文字のために利用可能な序数は 256 個しかなく、テキストは書き文字の対応付けを行っているコードページに束縛されているのが通常でした。このことは、とりわけソフトウェアの国際化 (internationalization. よく、 ``i18n`` と書かれます --- ``'i'`` + 18 文字 + ``'n'`` の意) に対して大きな混乱をもたらしました。Unicode では、すべての書き文字に対して単一のコードページを定義することで、これらの問題を解決しています。"
 
-#: ../../tutorial/introduction.rst:390
+#: ../../tutorial/introduction.rst:389
 msgid ""
 "Creating Unicode strings in Python is just as simple as creating normal "
 "strings::"
 msgstr "Python では、Unicode 文字列の作成は通常の文字列を作成するのと同じように単純なものです。"
 
-#: ../../tutorial/introduction.rst:396
+#: ../../tutorial/introduction.rst:395
 msgid ""
 "The small ``'u'`` in front of the quote indicates that a Unicode string is "
 "supposed to be created. If you want to include special characters in the "
@@ -369,13 +366,13 @@ msgid ""
 "following example shows how::"
 msgstr "クオートの前にある小文字の ``'u'`` は、Unicode 文字列を生成することになっていることを示します。文字列に特殊な文字を含めたければ、Python の *Unicode-Escape* エンコーディングを使って行えます。以下はその方法を示しています。"
 
-#: ../../tutorial/introduction.rst:404
+#: ../../tutorial/introduction.rst:403
 msgid ""
 "The escape sequence ``\\u0020`` indicates to insert the Unicode character "
 "with the ordinal value 0x0020 (the space character) at the given position."
 msgstr "エスケープシーケンス ``\\u0020`` は、序数の値 0x0020 を持つ Unicode 文字 (スペース文字) を、指定場所に挿入することを示します。"
 
-#: ../../tutorial/introduction.rst:407
+#: ../../tutorial/introduction.rst:406
 msgid ""
 "Other characters are interpreted by using their respective ordinal values "
 "directly as Unicode ordinals.  If you have literal strings in the standard "
@@ -384,7 +381,7 @@ msgid ""
 "characters of Latin-1."
 msgstr "他の文字は、それぞれの序数値をそのまま Unicode の序数値に用いて解釈されます。多くの西洋諸国で使われている標準 Latin-1 エンコーディングのリテラル文字列があれば、Unicode の下位 256 文字が Latin-1 の 256 文字と同じになっていて便利だと思うことでしょう。"
 
-#: ../../tutorial/introduction.rst:413
+#: ../../tutorial/introduction.rst:412
 msgid ""
 "For experts, there is also a raw mode just like the one for normal strings. "
 "You have to prefix the opening quote with 'ur' to have Python use the *Raw-"
@@ -393,19 +390,19 @@ msgid ""
 " 'u'. ::"
 msgstr "上級者のために、通常の文字列の場合と同じく raw モードもあります。これには、文字列を開始するクオート文字の前に 'ur' を付けて、 Python に *Raw-Unicode-Escape* エンコーディングを使わせなければなりません。このモードでは、上記の ``\\uXXXX`` の変換は、小文字の 'u' の前に奇数個のバックスラッシュがあるときにだけ適用されます。"
 
-#: ../../tutorial/introduction.rst:424
+#: ../../tutorial/introduction.rst:423
 msgid ""
 "The raw mode is most useful when you have to enter lots of backslashes, as "
 "can be necessary in regular expressions."
 msgstr "raw モードは、正規表現を記述する時のように、沢山のバックスラッシュを入力しなければならないときとても役に立ちます。"
 
-#: ../../tutorial/introduction.rst:427
+#: ../../tutorial/introduction.rst:426
 msgid ""
 "Apart from these standard encodings, Python provides a whole set of other "
 "ways of creating Unicode strings on the basis of a known encoding."
 msgstr "これら標準のエンコーディングにとは別に、Python では、既知の文字エンコーディングに基づいて Unicode 文字列を生成する一連の手段を提供しています。"
 
-#: ../../tutorial/introduction.rst:432
+#: ../../tutorial/introduction.rst:431
 msgid ""
 "The built-in function :func:`unicode` provides access to all registered "
 "Unicode codecs (COders and DECoders). Some of the more well known encodings "
@@ -418,25 +415,25 @@ msgid ""
 "using this default encoding. ::"
 msgstr "組込み関数 :func:`unicode` は、登録されているすべての Unicode codecs (COder: エンコーダと DECoder デコーダ) へのアクセス機能を提供します。codecs が変換できるエンコーディングには、よく知られているものとして *Latin-1*, *ASCII*, *UTF-8* および *UTF-16* があります。後者の二つは可変長のエンコードで、各 Unicode 文字を 1 バイトまたはそれ以上のバイト列に保存します。デフォルトのエンコーディングは通常 ASCIIに設定されています。ASCIIでは 0 から 127 の範囲の文字だけを通過させ、それ以外の文字は受理せずエラーを出します。 Unicode 文字列を印字したり、ファイルに書き出したり、 :func:`str` で変換すると、デフォルトのエンコーディングを使った変換が行われます。(訳注: IDLE をはじめ、ほとんどの Python 2 用のインタラクティブシェルは、非ASCII 文字を含む Unicode リテラルを利用することができません。このサンプルを実行するには、インタプリタ内蔵のインタラクティブシェルを利用する必要があります。この問題は Python 3 では解決されています。)"
 
-#: ../../tutorial/introduction.rst:452
+#: ../../tutorial/introduction.rst:451
 msgid ""
 "To convert a Unicode string into an 8-bit string using a specific encoding, "
 "Unicode objects provide an :func:`encode` method that takes one argument, "
 "the name of the encoding.  Lowercase names for encodings are preferred. ::"
 msgstr "特定のエンコーディングを使って Unicode 文字列を 8 ビットの文字列に変換するために、Unicode オブジェクトは :func:`encode` メソッドを提供しています。このメソッドは第一引数としてエンコーディングの名前をとります。エンコーディング名には小文字の使用が推奨されています。"
 
-#: ../../tutorial/introduction.rst:459
+#: ../../tutorial/introduction.rst:458
 msgid ""
 "If you have data in a specific encoding and want to produce a corresponding "
 "Unicode string from it, you can use the :func:`unicode` function with the "
 "encoding name as the second argument. ::"
 msgstr "特定のエンコーディングで書かれているデータがあり、そこから Unicode 文字列を生成したいなら、 :func:`unicode` を使い、第 2 引数にエンコーディング名を指定します。"
 
-#: ../../tutorial/introduction.rst:470
+#: ../../tutorial/introduction.rst:469
 msgid "Lists"
 msgstr "リスト"
 
-#: ../../tutorial/introduction.rst:472
+#: ../../tutorial/introduction.rst:471
 msgid ""
 "Python knows a number of *compound* data types, used to group together other"
 " values.  The most versatile is the *list*, which can be written as a list "
@@ -445,67 +442,67 @@ msgid ""
 "type. ::"
 msgstr "Python 多くの *複合 (compound)* データ型を備えており、複数の値をまとめるのに使われます。最も汎用性が高いのは *リスト (list)* で、コンマ区切りの値 (要素) の並びを角括弧で囲んだものとして書き表されます。リストは異なる型の要素を含むこともありますが、通常は全ての要素は同じ型を持ちます。 ::"
 
-#: ../../tutorial/introduction.rst:481
+#: ../../tutorial/introduction.rst:480
 msgid ""
 "Like strings (and all other built-in :term:`sequence` type), lists can be "
 "indexed and sliced::"
 msgstr "文字列 (や他の全てのビルトインのシーケンス (:term:`sequence`) 型) のように、リストはインデクス表記やスライス表記ができます::"
 
-#: ../../tutorial/introduction.rst:491
+#: ../../tutorial/introduction.rst:490
 msgid ""
 "All slice operations return a new list containing the requested elements.  "
 "This means that the following slice returns a new (shallow) copy of the "
 "list::"
 msgstr "全てのスライス操作は指定された要素を含む新しいリストを返します。これは、次のスライスはリストの新しい (浅い) コピーを返すことを意味します::"
 
-#: ../../tutorial/introduction.rst:497
+#: ../../tutorial/introduction.rst:496
 msgid "Lists also supports operations like concatenation::"
 msgstr "リストは文字列の連結に似た操作もサポートしています::"
 
-#: ../../tutorial/introduction.rst:502
+#: ../../tutorial/introduction.rst:501
 msgid ""
 "Unlike strings, which are :term:`immutable`, lists are a :term:`mutable` "
 "type, i.e. it is possible to change their content::"
 msgstr "不変 (:term:`immutable`) な文字列とは違って、リストは可変 (:term:`mutable`) 型、つまり含んでいる要素を取り替えることができます::"
 
-#: ../../tutorial/introduction.rst:512
+#: ../../tutorial/introduction.rst:511
 msgid ""
 "You can also add new items at the end of the list, by using the "
 ":meth:`~list.append` *method* (we will see more about methods later)::"
 msgstr ":meth:`~list.append` を使って、リストの末尾に新しい要素を追加することもできます (このメソッドについては後で詳しく見ていきます)::"
 
-#: ../../tutorial/introduction.rst:520
+#: ../../tutorial/introduction.rst:519
 msgid ""
 "Assignment to slices is also possible, and this can even change the size of "
 "the list or clear it entirely::"
 msgstr "スライスに代入することもできます。スライスの代入を行って、リストのサイズを変更したり、完全に消すことさえできます::"
 
-#: ../../tutorial/introduction.rst:539
+#: ../../tutorial/introduction.rst:538
 msgid "The built-in function :func:`len` also applies to lists::"
 msgstr "組込み関数 :func:`len` はリストにも適用できます::"
 
-#: ../../tutorial/introduction.rst:545
+#: ../../tutorial/introduction.rst:544
 msgid ""
 "It is possible to nest lists (create lists containing other lists), for "
 "example::"
 msgstr "リストを入れ子にする (ほかのリストを含むリストを造る) ことも可能です。例えば::"
 
-#: ../../tutorial/introduction.rst:561
+#: ../../tutorial/introduction.rst:560
 msgid "First Steps Towards Programming"
 msgstr "プログラミングへの第一歩"
 
-#: ../../tutorial/introduction.rst:563
+#: ../../tutorial/introduction.rst:562
 msgid ""
 "Of course, we can use Python for more complicated tasks than adding two and "
 "two together.  For instance, we can write an initial sub-sequence of the "
 "*Fibonacci* series as follows::"
 msgstr "もちろん、2 たす 2 よりももっと複雑な仕事にも Python を使うことができます。*Fibonacci* 級数列の先頭の部分列は次のようにして書くことができます::"
 
-#: ../../tutorial/introduction.rst:581
+#: ../../tutorial/introduction.rst:580
 msgid "This example introduces several new features."
 msgstr "上の例では、いくつか新しい機能を取り入れています。"
 
-#: ../../tutorial/introduction.rst:583
+#: ../../tutorial/introduction.rst:582
 msgid ""
 "The first line contains a *multiple assignment*: the variables ``a`` and "
 "``b`` simultaneously get the new values 0 and 1.  On the last line this is "
@@ -514,7 +511,7 @@ msgid ""
 "hand side expressions are evaluated  from the left to the right."
 msgstr "最初の行には *複数同時の代入 (multiple assignment)* が入っています: 変数 ``a`` と ``b`` は、それぞれ同時に新しい値 0 と 1 になっています。この代入は最後の行でも再度使われており、代入が行われる前に右辺の式がまず評価されます。右辺の式は左から右へと順番に評価されます。"
 
-#: ../../tutorial/introduction.rst:589
+#: ../../tutorial/introduction.rst:588
 msgid ""
 "The :keyword:`while` loop executes as long as the condition (here: ``b < "
 "10``) remains true.  In Python, like in C, any non-zero integer value is "
@@ -526,7 +523,7 @@ msgid ""
 "to), ``>=`` (greater than or equal to) and ``!=`` (not equal to)."
 msgstr ":keyword:`while` は、条件 (ここでは ``b < 10``) が真である限り実行を繰り返し (ループし) ます。Python では、C 言語と同様に、ゼロでない整数値は真となり、ゼロは偽です。条件式は文字列値やリスト値、実際には任意のシーケンス型でもかまいません。 1つ以上の長さのシーケンスは真で、空のシーケンスは偽になります。例中で使われている条件テストはシンプルな比較です。標準的な比較演算子は C 言語と同様です: すなわち、 ``<`` (より小さい)、 ``>`` (より大きい)、 ``==`` (等しい)、 ``<=`` (より小さいか等しい)、 ``>=`` (より大きいか等しい)、および ``!=`` (等しくない)、です。"
 
-#: ../../tutorial/introduction.rst:598
+#: ../../tutorial/introduction.rst:597
 msgid ""
 "The *body* of the loop is *indented*: indentation is Python's way of "
 "grouping statements.  At the interactive prompt, you have to type a tab or "
@@ -538,7 +535,7 @@ msgid ""
 "that each line within a basic block must be indented by the same amount."
 msgstr "ループの *本体 (body)* は *インデント (indent, 字下げ)*  されています: インデントは Python において実行文をグループにまとめる方法です。対話的プロンプトでは、インデントされた各行を入力するにはタブや (複数個の) スペースを使わなければなりません。実際には、Python へのより複雑な入力を準備するにはテキストエディタを使うことになるでしょう; ほとんどのテキストエディタは自動インデント機能を持っています。複合文を対話的に入力するときには、(パーザはいつ最後の行を入力したのか推し量ることができないので) 入力の完了を示すために最後に空行を続けなければなりません。基本ブロックの各行は同じだけインデントされていなければならないので注意してください。"
 
-#: ../../tutorial/introduction.rst:607
+#: ../../tutorial/introduction.rst:606
 msgid ""
 "The :keyword:`print` statement writes the value of the expression(s) it is "
 "given.  It differs from just writing the expression you want to write (as we"
@@ -547,28 +544,28 @@ msgid ""
 " inserted between items, so you can format things nicely, like this::"
 msgstr ":keyword:`print` は指定した (1つまたは複数の) 式の値を書き出します。 :keyword:`print` は、(電卓の例でしたように) 単に値を出力したい式を書くのとは、複数の式や文字列を扱う方法が違います。文字列は引用符無しで出力され、複数の要素の間にはスペースが挿入されるので、以下のように出力をうまく書式化できます。 ::"
 
-#: ../../tutorial/introduction.rst:617
+#: ../../tutorial/introduction.rst:616
 msgid "A trailing comma avoids the newline after the output::"
 msgstr "末尾にコンマを入れると、出力を行った後に改行されません。"
 
-#: ../../tutorial/introduction.rst:626
+#: ../../tutorial/introduction.rst:625
 msgid ""
 "Note that the interpreter inserts a newline before it prints the next prompt"
 " if the last line was not completed."
 msgstr "インタプリタは、最後に入力した行がまだ完全な文になっていない場合、改行をはさんで次のプロンプトを出力することに注意してください。"
 
-#: ../../tutorial/introduction.rst:630
+#: ../../tutorial/introduction.rst:629
 msgid "Footnotes"
 msgstr "注記"
 
-#: ../../tutorial/introduction.rst:631
+#: ../../tutorial/introduction.rst:630
 msgid ""
 "Since ``**`` has higher precedence than ``-``, ``-3**2`` will be interpreted"
 " as ``-(3**2)`` and thus result in ``-9``.  To avoid this and get ``9``, you"
 " can use ``(-3)**2``."
 msgstr "``**`` は ``-`` より優先順位が高いので、``-3**2`` は ``-(3**2)`` と解釈され、計算結果は ``-9`` になります。これを避けて ``9`` を得たければ、``(-3)**2`` と書けば良いです。"
 
-#: ../../tutorial/introduction.rst:635
+#: ../../tutorial/introduction.rst:634
 msgid ""
 "Unlike other languages, special characters such as ``\\n`` have the same "
 "meaning with both single (``'...'``) and double (``\"...\"``) quotes. The "

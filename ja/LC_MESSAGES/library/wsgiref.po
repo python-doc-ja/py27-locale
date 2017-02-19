@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-09-04 22:53+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:09+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -50,9 +49,9 @@ msgstr ":mod:`wsgiref` は WSGI 仕様のリファレンス実装で、これは
 
 #: ../../library/wsgiref.rst:29
 msgid ""
-"See http://www.wsgi.org for more information about WSGI, and links to "
-"tutorials and other resources."
-msgstr "`<http://www.wsgi.org>`_ に、WSGIに関するさらなる情報と、チュートリアルやその他のリソースへのリンクがあります。"
+"See https://wsgi.readthedocs.org/ for more information about WSGI, and links"
+" to tutorials and other resources."
+msgstr "https://wsgi.readthedocs.org/ に、WSGIに関するさらなる情報と、チュートリアルやその他のリソースへのリンクがあります。"
 
 #: ../../library/wsgiref.rst:36
 msgid ":mod:`wsgiref.util` -- WSGI environment utilities"

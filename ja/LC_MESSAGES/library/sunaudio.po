@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-28 10:26+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:05+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -146,9 +145,9 @@ msgstr "このメソッドはオーディオ入力から *size* のサイズの�
 #: ../../library/sunaudio.rst:125
 msgid ""
 "This method sets the audio device status parameters. The *status* parameter "
-"is an device status object as returned by :func:`getinfo` and possibly "
+"is a device status object as returned by :func:`getinfo` and possibly "
 "modified by the program."
-msgstr "このメソッドはオーディオデバイスのステータスパラメータを設定します。パラメータ *status* は :func:`getinfo` で返されたり、プログラムで変更されたオーディオステータスオブジェクトです。"
+msgstr ""
 
 #: ../../library/sunaudio.rst:132
 msgid ""

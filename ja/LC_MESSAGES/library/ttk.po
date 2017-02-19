@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-09-03 10:41+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:07+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,8 +39,8 @@ msgid ""
 msgstr ":mod:`ttk` の基本的なアイディアは、拡張可能性のためにウィジェットの動作を実装するコードと見た目を記述するコードを分離することです。"
 
 #: ../../library/ttk.rst:24
-msgid "Tk Widget Styling Support"
-msgstr "`Tk Widget Styling Support <http://www.tcl.tk/cgi-bin/tct/tip/48>`_"
+msgid "`Tk Widget Styling Support <https://www.tcl.tk/cgi-bin/tct/tip/48>`_"
+msgstr "`Tk Widget Styling Support <https://www.tcl.tk/cgi-bin/tct/tip/48>`_"
 
 #: ../../library/ttk.rst:25
 msgid "The document which brought up theming support for Tk"
@@ -82,8 +81,10 @@ msgid ""
 msgstr "これにはプラットフォームをまたいでより良い見た目を得られるという、直接的な利益がありますが、ウィジェットは完全な互換性を持っているわけではないことに注意してください。一番の違いは \"fg\" や \"bg\" やその他のスタイルに関係するウィジェットのオプションが Ttk ウィジェットから無くなっていることです。同じ (もしくはより良い) 見た目にするためには :class:`ttk.Style` を使ってください。"
 
 #: ../../library/ttk.rst:58
-msgid "Converting existing applications to use the Tile widgets"
-msgstr "`Converting existing applications to use the Tile widgets <http://tktable.sourceforge.net/tile/doc/converting.txt>`_"
+msgid ""
+"`Converting existing applications to use the Tile widgets "
+"<http://tktable.sourceforge.net/tile/doc/converting.txt>`_"
+msgstr ""
 
 #: ../../library/ttk.rst:58
 msgid ""
@@ -519,10 +520,10 @@ msgid ""
 ":meth:`Widget.configure`, :meth:`Widget.identify`, :meth:`Widget.instate` "
 "and :meth:`Widget.state`) and those inherited from :class:`Entry` "
 "(:meth:`Entry.bbox`, :meth:`Entry.delete`, :meth:`Entry.icursor`, "
-":meth:`Entry.index`, :meth:`Entry.inset`, :meth:`Entry.selection`, "
+":meth:`Entry.index`, :meth:`Entry.insert`, :meth:`Entry.selection`, "
 ":meth:`Entry.xview`), this class has some other methods, described at "
 ":class:`ttk.Combobox`."
-msgstr ":class:`Widget` から継承したメソッド (:meth:`Widget.cget`, :meth:`Widget.configure`, :meth:`Widget.identify`, :meth:`Widget.instate`, :meth:`Widget.state`) と :class:`Entry` から継承したメソッド (:meth:`Entry.bbox`, :meth:`Entry.delete`, :meth:`Entry.icursor`, :meth:`Entry.index`, :meth:`Entry.inset`, :meth:`Entry.selection`, :meth:`Entry.xview`) に加え、このクラスには :class:`ttk.Combobox` で説明するメソッドがあります。"
+msgstr ""
 
 #: ../../library/ttk.rst:302 ../../library/ttk.rst:382
 #: ../../library/ttk.rst:568 ../../library/ttk.rst:637
@@ -1091,10 +1092,10 @@ msgstr "データが表示される順序はウィジェットの ``displaycolum
 
 #: ../../library/ttk.rst:689
 msgid ""
-"Each item is identified by an unique name. The widget will generate item IDs"
-" if they are not supplied by the caller. There is a distinguished root item,"
-" named ``{}``. The root item itself is not displayed; its children appear at"
-" the top level of the hierarchy."
+"Each item is identified by a unique name. The widget will generate item IDs "
+"if they are not supplied by the caller. There is a distinguished root item, "
+"named ``{}``. The root item itself is not displayed; its children appear at "
+"the top level of the hierarchy."
 msgstr "それぞれの要素は一意な名前で識別されます。要素の作成時に識別子が与えられなかった場合、ウィジェットが要素の識別子を生成します。このウィジェットには ``{}`` という名前の特別なルート要素があります。ルート要素自身は表示されません; その子要素たちが階層の最上位に現れます。"
 
 #: ../../library/ttk.rst:694
@@ -1776,8 +1777,10 @@ msgid ""
 msgstr ":mod:`ttk` のそれぞれのウィジェットにはスタイルが関連付けられていて、それと動的もしくはデフォルトで設定される要素のオプションによってウィジェットを構成する要素とその配置を指定します。デフォルトではスタイル名はウィジェットのクラス名と同じですが、ウィジェットの style オプションで上書きすることができます。ウィジェットのクラス名が分からない場合は、 :meth:`Misc.winfo_class` (somewidget.winfo_class()) メソッドを使ってください。"
 
 #: ../../library/ttk.rst:1157
-msgid "Tcl'2004 conference presentation"
-msgstr "`Tcl'2004 conference presentation <http://tktable.sourceforge.net/tile/tile-tcl2004.pdf>`_"
+msgid ""
+"`Tcl'2004 conference presentation <http://tktable.sourceforge.net/tile/tile-"
+"tcl2004.pdf>`_"
+msgstr "`Tcl'2004 conference のプレゼンテーション <http://tktable.sourceforge.net/tile/tile-tcl2004.pdf>`_"
 
 #: ../../library/ttk.rst:1158
 msgid "This document explains how the theme engine works"
@@ -1991,11 +1994,11 @@ msgstr "レイアウト"
 
 #: ../../library/ttk.rst:1383
 msgid ""
-"A layout can be just None, if it takes no options, or a dict of options "
+"A layout can be just ``None``, if it takes no options, or a dict of options "
 "specifying how to arrange the element. The layout mechanism uses a "
 "simplified version of the pack geometry manager: given an initial cavity, "
 "each element is allocated a parcel. Valid options/values are:"
-msgstr "レイアウトはオプションを取らない場合はただの None にできますし、そうでない場合は要素をどう配置するかを指定するオプションの辞書になります。レイアウト機構は単純化したジオメトリマネージャを使っています: 最初に空間が与えられ、それぞれの要素に分割された空間が配分されます。設定できるオプションと値は次の通りです:"
+msgstr "レイアウトはオプションを取らない場合はただの ``None`` にできますし、そうでない場合は要素をどう配置するかを指定するオプションの辞書になります。\nレイアウト機構は単純化したジオメトリマネージャを使っています:\n最初に空間が与えられ、それぞれの要素に分割された空間が配分されます。\n設定できるオプションと値は次の通りです:"
 
 #: ../../library/ttk.rst:1392
 msgid "side: whichside"

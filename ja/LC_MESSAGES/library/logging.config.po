@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-09-23 23:08+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:56+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -150,10 +149,10 @@ msgstr "ConfigParser に渡されるデフォルト値をこの引数で指定�
 msgid ""
 "If specified as ``False``, loggers which exist when this call is made are "
 "left enabled. The default is ``True`` because this enables old behaviour in "
-"a backward- compatible way. This behaviour is to disable any existing "
-"loggers unless they or their ancestors are explicitly named in the logging "
+"a backward-compatible way. This behaviour is to disable any existing loggers"
+" unless they or their ancestors are explicitly named in the logging "
 "configuration."
-msgstr "``False`` が指定された場合は、この呼び出しが行われたときに存在するロガーは有効のまま残されます。後方互換性のあるやり方で古い振る舞いを保つので、デフォルト値は ``True`` になっています。そのような振る舞いでは、既存のロガーまたはそれらのロガーの先祖がロギング設定の中で明示的に名付けられていない限り、既存のロガーを無効にします。"
+msgstr ""
 
 #: ../../library/logging.config.rst:102
 msgid ""
@@ -281,7 +280,7 @@ msgid ""
 "corresponding Handler instance."
 msgstr "*handlers* - 対応する値は辞書で、そのそれぞれのキーがハンドラ id になり、それぞれの値が対応する Handler インスタンスをどのように環境設定するかを記述する辞書になります。"
 
-#: ../../library/logging.config.rst:198 ../../library/logging.config.rst:238
+#: ../../library/logging.config.rst:198 ../../library/logging.config.rst:240
 msgid "The configuring dict is searched for the following keys:"
 msgstr "環境設定辞書は、以下のキーを検索されます:"
 
@@ -307,10 +306,10 @@ msgstr "``filters`` (任意)。このハンドラへのフィルタの id のリ
 #: ../../library/logging.config.rst:211
 msgid ""
 "All *other* keys are passed through as keyword arguments to the handler's "
-"constructor.  For example, given the snippet::"
-msgstr "その他の *すべての* キーは、ハンドラのコンストラクタにキーワード引数として渡されます。例えば、以下のコード片が与えられたら::"
+"constructor.  For example, given the snippet:"
+msgstr ""
 
-#: ../../library/logging.config.rst:228
+#: ../../library/logging.config.rst:230
 msgid ""
 "the handler with id ``console`` is instantiated as a "
 ":class:`logging.StreamHandler`, using ``sys.stdout`` as the underlying "
@@ -319,44 +318,44 @@ msgid ""
 "``filename='logconfig.log', maxBytes=1024, backupCount=3``."
 msgstr "id が ``console`` であるハンドラが、 ``sys.stdout`` を根底のストリームにして、 :class:`logging.StreamHandler` としてインスタンス化されます。id が ``file`` であるハンドラが、 ``filename='logconfig.log', maxBytes=1024, backupCount=3`` をキーワード引数にして、 :class:`logging.handlers.RotatingFileHandler` としてインスタンス化されます。"
 
-#: ../../library/logging.config.rst:234
+#: ../../library/logging.config.rst:236
 msgid ""
 "*loggers* - the corresponding value will be a dict in which each key is a "
 "logger name and each value is a dict describing how to configure the "
 "corresponding Logger instance."
 msgstr "*loggers* - 対応する値は辞書で、そのそれぞれのキーがロガー名になり、それぞれの値が対応する Logger インスタンスをどのように環境設定するかを記述する辞書になります。"
 
-#: ../../library/logging.config.rst:240
+#: ../../library/logging.config.rst:242
 msgid "``level`` (optional).  The level of the logger."
 msgstr "``level`` (任意)。ロガーのレベルです。"
 
-#: ../../library/logging.config.rst:242
+#: ../../library/logging.config.rst:244
 msgid "``propagate`` (optional).  The propagation setting of the logger."
 msgstr "``propagate`` (任意)。ロガーの伝播の設定です。"
 
-#: ../../library/logging.config.rst:244
+#: ../../library/logging.config.rst:246
 msgid "``filters`` (optional).  A list of ids of the filters for this logger."
 msgstr "``filters`` (任意)。このロガーへのフィルタの id のリストです。"
 
-#: ../../library/logging.config.rst:247
+#: ../../library/logging.config.rst:249
 msgid ""
 "``handlers`` (optional).  A list of ids of the handlers for this logger."
 msgstr "``handlers`` (任意)。このロガーへのハンドラの id のリストです。"
 
-#: ../../library/logging.config.rst:250
+#: ../../library/logging.config.rst:252
 msgid ""
 "The specified loggers will be configured according to the level, "
 "propagation, filters and handlers specified."
 msgstr "指定されたロガーは、指定されたレベル、伝播、ハンドラに従って環境設定されます。"
 
-#: ../../library/logging.config.rst:253
+#: ../../library/logging.config.rst:255
 msgid ""
 "*root* - this will be the configuration for the root logger. Processing of "
 "the configuration will be as for any logger, except that the ``propagate`` "
 "setting will not be applicable."
 msgstr "*root* - これは、ルートロガーへの設定になります。この環境設定の進行は、``propagate`` 設定が適用されないことを除き、他のロガーと同じです。"
 
-#: ../../library/logging.config.rst:257
+#: ../../library/logging.config.rst:259
 msgid ""
 "*incremental* - whether the configuration is to be interpreted as "
 "incremental to the existing configuration.  This value defaults to "
@@ -365,13 +364,13 @@ msgid ""
 ":func:`fileConfig` API."
 msgstr "*incremental* - この環境設定が既存の環境設定に対する増分として解釈されるかどうかです。この値のデフォルトは ``False`` で、指定された環境設定は、既存の :func:`fileConfig` API によって使われているのと同じ意味上で、既存の環境設定を置き換えます。"
 
-#: ../../library/logging.config.rst:263
+#: ../../library/logging.config.rst:265
 msgid ""
 "If the specified value is ``True``, the configuration is processed as "
 "described in the section on :ref:`logging-config-dict-incremental`."
 msgstr "指定された値が ``True`` なら、環境設定は :ref:`logging-config-dict-incremental` の節で記述されているように進行します。"
 
-#: ../../library/logging.config.rst:266
+#: ../../library/logging.config.rst:268
 msgid ""
 "*disable_existing_loggers* - whether any existing loggers are to be "
 "disabled. This setting mirrors the parameter of the same name in "
@@ -379,11 +378,11 @@ msgid ""
 "value is ignored if *incremental* is ``True``."
 msgstr "*disable_existing_loggers* - 既存のロガーをすべて無効にするべきかどうかです。この設定は、 :func:`fileConfig` における同じ名前のパラメータと同じです。設定されていなければ、このパラメータのデフォルトは ``True`` です。この値は、 *incremental* が ``True`` なら無視されます。"
 
-#: ../../library/logging.config.rst:274
+#: ../../library/logging.config.rst:276
 msgid "Incremental Configuration"
 msgstr "増分設定"
 
-#: ../../library/logging.config.rst:276
+#: ../../library/logging.config.rst:278
 msgid ""
 "It is difficult to provide complete flexibility for incremental "
 "configuration.  For example, because objects such as filters and formatters "
@@ -391,7 +390,7 @@ msgid ""
 "to such anonymous objects when augmenting a configuration."
 msgstr "増分設定に完全な柔軟性を提供するのは難しいです。例えば、フィルタやフォーマッタのようなオブジェクトは匿名なので、一旦環境設定がなされると、設定を拡張するときにそのような匿名オブジェクトを参照することができません。"
 
-#: ../../library/logging.config.rst:282
+#: ../../library/logging.config.rst:284
 msgid ""
 "Furthermore, there is not a compelling case for arbitrarily altering the "
 "object graph of loggers, handlers, filters, formatters at run-time, once a "
@@ -402,7 +401,7 @@ msgid ""
 "worth the complexity it adds to the implementation."
 msgstr "さらに、一旦環境設定がなされた後、実行時にロガー、ハンドラ、フィルタ、フォーマッタのオブジェクトグラフを任意に変えなければならない例もありません。ロガーとハンドラの冗長性は、レベル (または、ロガーの場合には、伝播フラグ) を設定することによってのみ制御できます。安全な方法でオブジェクトグラフを任意に変えることは、マルチスレッド環境で問題となります。不可能ではないですが、その効用は実装に加えられる複雑さに見合いません。"
 
-#: ../../library/logging.config.rst:291
+#: ../../library/logging.config.rst:293
 msgid ""
 "Thus, when the ``incremental`` key of a configuration dict is present and is"
 " ``True``, the system will completely ignore any ``formatters`` and "
@@ -411,7 +410,7 @@ msgid ""
 "``loggers`` and ``root`` entries."
 msgstr "従って、環境設定辞書の ``incremental`` キーが与えられ、これが ``True`` であるとき、システムは ``formatters`` と ``filters`` の項目を完全に無視し、``handlers`` の項目の ``level`` 設定と、``loggers`` と ``root`` の項目の ``level`` と ``propagate`` 設定のみを処理します。"
 
-#: ../../library/logging.config.rst:297
+#: ../../library/logging.config.rst:299
 msgid ""
 "Using a value in the configuration dict lets configurations to be sent over "
 "the wire as pickled dicts to a socket listener. Thus, the logging verbosity "
@@ -419,11 +418,11 @@ msgid ""
 "and restart the application."
 msgstr "環境設定辞書の値を使うことで、設定は pickle 化された辞書としてネットワークを通してソケットリスナに送ることができます。これにより、長時間起動するアプリケーションのロギングの冗長性を、アプリケーションを止めて再起動する必要なしに、いつでも変更することができます。"
 
-#: ../../library/logging.config.rst:305
+#: ../../library/logging.config.rst:307
 msgid "Object connections"
 msgstr "オブジェクトの接続"
 
-#: ../../library/logging.config.rst:307
+#: ../../library/logging.config.rst:309
 msgid ""
 "The schema describes a set of logging objects - loggers, handlers, "
 "formatters, filters - which are connected to each other in an object graph."
@@ -439,17 +438,17 @@ msgid ""
 "source and the destination object with that id."
 msgstr "このスキーマは、ロギングオブジェクトの一揃い - ロガー、ハンドラ、フォーマッタ、フィルタ - について記述します。これらは、オブジェクトグラフ上でお互い接続されます。従って、このスキーマは、オブジェクト間の接続を表現しなければなりません。例えば、環境設定で、特定のロガーが特定のハンドラに取り付けられたとします。この議論では、ロガーとハンドラが、これら 2 つの接続のそれぞれ送信元と送信先であるといえます。もちろん、この設定オブジェクト中では、これはハンドラへの参照を保持しているロガーで表されます。設定辞書中で、これは次のようになされます。まず、送信先オブジェクトを曖昧さなく指定する id を与えます。そして、その id を送信元オブジェクトの環境設定で使い、送信元とその id をもつ送信先が接続されていることを示します。"
 
-#: ../../library/logging.config.rst:321
-msgid "So, for example, consider the following YAML snippet::"
-msgstr "ですから、例えば、以下の YAML のコード片を例にとると::"
+#: ../../library/logging.config.rst:323
+msgid "So, for example, consider the following YAML snippet:"
+msgstr ""
 
-#: ../../library/logging.config.rst:340
+#: ../../library/logging.config.rst:344
 msgid ""
 "(Note: YAML used here because it's a little more readable than the "
 "equivalent Python source form for the dictionary.)"
 msgstr "(注釈: YAML がここで使われているのは、辞書の等価な Python 形式よりもこちらのほうが少し読みやすいからです。)"
 
-#: ../../library/logging.config.rst:343
+#: ../../library/logging.config.rst:347
 msgid ""
 "The ids for loggers are the logger names which would be used "
 "programmatically to obtain a reference to those loggers, e.g. "
@@ -460,7 +459,7 @@ msgid ""
 "the configuration call is complete."
 msgstr "ロガーの id は、プログラム上でロガーへの参照を得るために使われるロガー名で、たとえば ``foo.bar.baz`` です。フォーマッタとフィルタの id は、(上の ``brief``, ``precise`` のような) 任意の文字列値にできます。これらは一時的なもので、環境設定辞書の処理にのみ意味があり、オブジェクト間の接続を決定するのに使われます。また、これらは設定の呼び出しが完了したとき、どこにも残りません。"
 
-#: ../../library/logging.config.rst:351
+#: ../../library/logging.config.rst:355
 msgid ""
 "The above snippet indicates that logger named ``foo.bar.baz`` should have "
 "two handlers attached to it, which are described by the handler ids ``h1`` "
@@ -468,11 +467,11 @@ msgid ""
 "the formatter for ``h2`` is that described by id ``precise``."
 msgstr "上記のコード片は、``foo.bar.baz`` というの名ロガーに、ハンドラ id ``h1`` と ``h2`` で表される 2 つのハンドラを接続することを示します。``h1`` のフォーマッタは id ``brief`` で記述されるもので、``h2`` のフォーマッタは id ``precise`` で記述されるものです。"
 
-#: ../../library/logging.config.rst:361
+#: ../../library/logging.config.rst:365
 msgid "User-defined objects"
 msgstr "ユーザ定義オブジェクト"
 
-#: ../../library/logging.config.rst:363
+#: ../../library/logging.config.rst:367
 msgid ""
 "The schema supports user-defined objects for handlers, filters and "
 "formatters.  (Loggers do not need to have different types for different "
@@ -480,7 +479,7 @@ msgid ""
 "defined logger classes.)"
 msgstr "このスキーマは、ハンドラ、フィルタ、フォーマッタのための、ユーザ定義オブジェクトをサポートします。(ロガーは、異なるインスタンスに対して異なる型を持つ必要はないので、この環境設定スキーマは、ユーザ定義ロガークラスをサポートしていません。)"
 
-#: ../../library/logging.config.rst:368
+#: ../../library/logging.config.rst:372
 msgid ""
 "Objects to be configured are described by dictionaries which detail their "
 "configuration.  In some places, the logging system will be able to infer "
@@ -490,10 +489,10 @@ msgid ""
 "instantiation, the user needs to provide a 'factory' - a callable which is "
 "called with a configuration dictionary and which returns the instantiated "
 "object. This is signalled by an absolute import path to the factory being "
-"made available under the special key ``'()'``.  Here's a concrete example::"
-msgstr "設定されるオブジェクトは、それらの設定を詳述する辞書によって記述されます。場所によっては、あるオブジェクトがどのようにインスタンス化されるかというコンテキストを、ロギングシステムが推測できます。しかし、ユーザ定義オブジェクトがインスタンス化されるとき、システムはどのようにこれを行うかを知りません。ユーザ定義オブジェクトのインスタンス化を完全に柔軟なものにするため、ユーザは 'ファクトリ' - 設定辞書を引数として呼ばれ、インスタンス化されたオブジェクトを返す呼び出し可能オブジェクト - を提供する必要があります。これは特殊キー ``'()'`` で利用できる、ファクトリへの絶対インポートパスによって合図されます。ここに具体的な例を挙げます::"
+"made available under the special key ``'()'``.  Here's a concrete example:"
+msgstr ""
 
-#: ../../library/logging.config.rst:392
+#: ../../library/logging.config.rst:398
 msgid ""
 "The above YAML snippet defines three formatters.  The first, with id "
 "``brief``, is a standard :class:`logging.Formatter` instance with the "
@@ -504,11 +503,11 @@ msgid ""
 "configuration sub-dictionaries::"
 msgstr "上記の YAML コード片は 3 つのフォーマッタを定義します。 1 つ目は、id が ``brief`` で、指定されたフォーマット文字列をもつ、標準 :class:`logging.Formatter` インスタンスです。 2 つ目は、id が ``default`` で、長いフォーマットを持ち、時間フォーマットも定義していて、結果はその 2 つのフォーマット文字列で初期化された :class:`logging.Formatter` になります。Python ソース形式で見ると、 ``brief`` と ``default`` フォーマッタは、それぞれ設定の部分辞書::"
 
-#: ../../library/logging.config.rst:404
+#: ../../library/logging.config.rst:410
 msgid "and::"
 msgstr "および::"
 
-#: ../../library/logging.config.rst:411
+#: ../../library/logging.config.rst:417
 msgid ""
 "respectively, and as these dictionaries do not contain the special key "
 "``'()'``, the instantiation is inferred from the context: as a result, "
@@ -517,7 +516,7 @@ msgid ""
 "is::"
 msgstr "を持ち、これらの辞書が特殊キー ``'()'`` を持たないので、インスタンス化はコンテキストから推測され、結果として標準の :class:`logging.Formatter` インスタンスが生成されます。id が ``custom`` である、3 つ目のフォーマッタの設定をする部分辞書は::"
 
-#: ../../library/logging.config.rst:424
+#: ../../library/logging.config.rst:430
 msgid ""
 "and this contains the special key ``'()'``, which means that user-defined "
 "instantiation is wanted.  In this case, the specified factory callable will "
@@ -529,7 +528,7 @@ msgid ""
 "assumed to be returned by the call::"
 msgstr "で、ユーザ定義のインスタンス化が望まれることを示す特殊キー ``'()'`` を含みます。この場合、指定された呼び出し可能ファクトリオブジェクトが使われます。これが実際の呼び出し可能オブジェクトであれば、それが直接使われます - そうではなく、(この例でのように) 文字列を指定したなら、実際の呼び出し可能オブジェクトは、通常のインポート機構を使って検索されます。その呼び出し可能オブジェクトは、環境設定の部分辞書の、**残りの** 要素をキーワード引数として呼ばれます。上記の例では、id が ``custom`` のフォーマッタは、以下の呼び出しによって返されるものとみなされます::"
 
-#: ../../library/logging.config.rst:436
+#: ../../library/logging.config.rst:442
 msgid ""
 "The key ``'()'`` has been used as the special key because it is not a valid "
 "keyword parameter name, and so will not clash with the names of the keyword "
@@ -537,11 +536,11 @@ msgid ""
 " corresponding value is a callable."
 msgstr "キー ``'()'`` が特殊キーとして使われるのは、キーワードパラメータ名として不正で、呼び出しに使われるキーワード引数と衝突し得ないからです。``'()'`` はまた、対応する値が呼び出し可能オブジェクトであると覚えやすくします。"
 
-#: ../../library/logging.config.rst:445
+#: ../../library/logging.config.rst:451
 msgid "Access to external objects"
 msgstr "外部オブジェクトへのアクセス"
 
-#: ../../library/logging.config.rst:447
+#: ../../library/logging.config.rst:453
 msgid ""
 "There are times where a configuration needs to refer to objects external to "
 "the configuration, for example ``sys.stderr``.  If the configuration dict is"
@@ -556,7 +555,7 @@ msgid ""
 "using normal import mechanisms."
 msgstr "環境設定が、例えば ``sys.stderr`` のような、設定の外部のオブジェクトへの参照を必要とすることがあります。設定辞書が Python コードで構成されていれば話は簡単ですが、これがテキストファイル (JSON, YAML 等) を通して提供されていると問題となります。テキストファイルでは、``sys.stderr`` をリテラル文字列 ``'sys.stderr'`` と区別する標準の方法がありません。この区別を容易にするため、環境設定システムは、文字列中の特定の特殊接頭辞を見つけ、それらを特殊に扱います。例えば、リテラル文字列 ``'ext://sys.stderr'`` が設定中の値として与えられたら、この ``ext://`` は剥ぎ取られ、この値の残りが普通のインポート機構で処理されます。"
 
-#: ../../library/logging.config.rst:460
+#: ../../library/logging.config.rst:466
 msgid ""
 "The handling of such prefixes is done in a way analogous to protocol "
 "handling: there is a generic mechanism to look for prefixes which match the "
@@ -566,11 +565,11 @@ msgid ""
 "prefix is not recognised, then the string value will be left as-is."
 msgstr "このような接頭辞の処理は、プロトコルの処理と同じようになされます。どちらの機構も、正規表現 ``^(?P<prefix>[a-z]+)://(?P<suffix>.*)$`` にマッチする接頭辞を検索し、それによって ``prefix`` が認識されたなら、接頭辞に応じたやり方で ``suffix`` が処理され、その処理の結果によって文字列値が置き換えられます。接頭辞が認識されなければ、その文字列値はそのまま残されます。"
 
-#: ../../library/logging.config.rst:472
+#: ../../library/logging.config.rst:478
 msgid "Access to internal objects"
 msgstr "内部オブジェクトへのアクセス"
 
-#: ../../library/logging.config.rst:474
+#: ../../library/logging.config.rst:480
 msgid ""
 "As well as external objects, there is sometimes also a need to refer to "
 "objects in the configuration.  This will be done implicitly by the "
@@ -581,7 +580,7 @@ msgid ""
 "and resolve to the appropriate destination object."
 msgstr "外部オブジェクトと同様、環境設定内部のオブジェクトへのアクセスを必要とすることもあります。これは、その各オブジェクトを司る環境設定システムによって暗黙に行われます。例えば、ロガーやハンドラの ``level`` に対する文字列値 ``'DEBUG'`` は、自動的に値 ``logging.DEBUG`` に変換されますし、``handlers``, ``filters`` および ``formatter`` の項目は、オブジェクト id を取って、適切な送信先オブジェクトを決定します。"
 
-#: ../../library/logging.config.rst:482
+#: ../../library/logging.config.rst:488
 msgid ""
 "However, a more generic mechanism is needed for user-defined objects which "
 "are not known to the :mod:`logging` module.  For example, consider "
@@ -596,7 +595,7 @@ msgid ""
 "specify::"
 msgstr "しかし、ユーザ定義モジュールには、 :mod:`logging` モジュールには分からないような、より一般的な機構が必要です。例えば、 :class:`logging.handlers.MemoryHandler` があって、委譲する先の別のハンドラである ``target`` 引数を取るとします。システムはこのクラスをすでに知っていますから、設定中で、与えられた ``target`` は関連するターゲットハンドラのオブジェクト id でさえあればよく、システムはその id からハンドラを決定します。しかし、ユーザが ``my.package.MyHandler`` を定義して、それが ``alternate`` ハンドラを持つなら、設定システムは ``alternate`` がハンドラを参照していることを知りません。これを知らせるのに、一般的な解析システムで、ユーザはこのように指定できます::"
 
-#: ../../library/logging.config.rst:502
+#: ../../library/logging.config.rst:508
 msgid ""
 "The literal string ``'cfg://handlers.file'`` will be resolved in an "
 "analogous way to strings with the ``ext://`` prefix, but looking in the "
@@ -605,7 +604,7 @@ msgid ""
 "``str.format``.  Thus, given the following snippet::"
 msgstr "リテラル文字列 ``'cfg://handlers.file'`` は、``ext://`` 接頭辞が付いた文字列と同じように分析されますが、インポート名前空間ではなく、環境設定自体が検索されます。この機構は ``str.format`` でできるのと同じようにドットやインデックスのアクセスができます。従って、環境設定において以下のコード片が与えられれば::"
 
-#: ../../library/logging.config.rst:518
+#: ../../library/logging.config.rst:524
 msgid ""
 "in the configuration, the string ``'cfg://handlers'`` would resolve to the "
 "dict with key ``handlers``, the string ``'cfg://handlers.email`` would "
@@ -621,7 +620,7 @@ msgid ""
 "corresponding integer value, falling back to the string value if needed."
 msgstr "文字列 ``'cfg://handlers'`` は、キー ``handlers`` をもつ辞書であると分析され、文字列 ``'cfg://handlers.email'`` は、``handlers`` 辞書内の、``email`` キーをもつ辞書であると分析されます。文字列 ``'cfg://handlers.email.toaddrs[1]`` は、``'dev_team@domain.tld'`` と分析され、``'cfg://handlers.email.toaddrs[0]'`` は値 ``'support_team@domain.tld'`` と分析されます。``subject`` の値には、``'cfg://handlers.email.subject'`` または等価な ``'cfg://handlers.email[subject]'`` でアクセスできます。後者が必要なのは、キーがスペースや非アルファベット文字を含むときのみです。インデックス値が十進数字のみで構成されているなら、まず対応する整数値を使ってアクセスが試みられ、必要なら文字列値で代替します。"
 
-#: ../../library/logging.config.rst:532
+#: ../../library/logging.config.rst:538
 msgid ""
 "Given a string ``cfg://handlers.myhandler.mykey.123``, this will resolve to "
 "``config_dict['handlers']['myhandler']['mykey']['123']``. If the string is "
@@ -631,11 +630,11 @@ msgid ""
 "``config_dict['handlers']['myhandler']['mykey']['123']`` if that fails."
 msgstr "文字列 ``cfg://handlers.myhandler.mykey.123`` が与えられると、これは ``config_dict['handlers']['myhandler']['mykey']['123']`` と分析されます。文字列が ``cfg://handlers.myhandler.mykey[123]`` と指定されたら、システムは ``config_dict['handlers']['myhandler']['mykey'][123]`` から値を引き出そうとし、失敗したら ``config_dict['handlers']['myhandler']['mykey']['123']`` で代替します。"
 
-#: ../../library/logging.config.rst:544
+#: ../../library/logging.config.rst:550
 msgid "Import resolution and custom importers"
 msgstr "インポート解決とカスタムインポーター"
 
-#: ../../library/logging.config.rst:546
+#: ../../library/logging.config.rst:552
 msgid ""
 "Import resolution, by default, uses the builtin :func:`__import__` function "
 "to do its importing. You may want to replace this with your own importing "
@@ -647,17 +646,17 @@ msgid ""
 "instance level, you need to wrap it with :func:`staticmethod`. For example::"
 msgstr "インポート解決は、デフォルトではインポートを行うために :func:`__import__` 組み込み関数を使用します。これを独自のインポートメカニズムに置き換えたいと思うかもしれません: もしそうなら、 :class:`DictConfigurator` あるいはその上位クラスである :class:`BaseConfigurator` クラスの :attr:`importer` 属性を置換することができます。ただし、この関数はクラスからディスクリプタ経由でアクセスされる点に注意する必要があります。インポートを行うために Python callable を使用していて、それをインスタンスレベルではなくクラスレベルで定義したければ、 :func:`staticmethod` でそれをラップする必要があります。例えば::"
 
-#: ../../library/logging.config.rst:561
+#: ../../library/logging.config.rst:567
 msgid ""
 "You don't need to wrap with :func:`staticmethod` if you're setting the "
 "import callable on a configurator *instance*."
 msgstr "configurator *インスタンス* に対してインポート callable をセットする場合は、 :func:`staticmethod` でラップする必要はありません。"
 
-#: ../../library/logging.config.rst:568
+#: ../../library/logging.config.rst:574
 msgid "Configuration file format"
 msgstr "環境設定ファイルの書式"
 
-#: ../../library/logging.config.rst:570
+#: ../../library/logging.config.rst:576
 msgid ""
 "The configuration file format understood by :func:`fileConfig` is based on "
 ":mod:`configparser` functionality. The file must contain sections called "
@@ -674,7 +673,7 @@ msgid ""
 "specified in a section called ``[logger_root]``."
 msgstr ":func:`fileConfig` が解釈できる環境設定ファイルの形式は、 :mod:`configparser` の機能に基づいています。ファイルには、 ``[loggers]``, ``[handlers]``, ``[formatters]`` といったセクションが入っていなければならず、各セクションではファイル中で定義されている各タイプのエンティティを名前で指定しています。こうしたエンティティの各々について、そのエンティティをどう設定するかを示した個別のセクションがあります。すなわち、 ``log01`` という名前の ``[loggers]`` セクションにあるロガーに対しては、対応する詳細設定がセクション ``[logger_log01]`` に収められています。同様に、 ``hand01`` という名前の ``[handlers]`` セクションにあるハンドラは ``[handler_hand01]`` と呼ばれるセクションに設定をもつことになり、 ``[formatters]`` セクションにある ``form01`` は ``[formatter_form01]`` というセクションで設定が指定されています。ルートロガーの設定は ``[logger_root]`` と呼ばれるセクションで指定されていなければなりません。"
 
-#: ../../library/logging.config.rst:585
+#: ../../library/logging.config.rst:591
 msgid ""
 "The :func:`fileConfig` API is older than the :func:`dictConfig` API and does"
 " not provide functionality to cover certain aspects of logging. For example,"
@@ -687,17 +686,17 @@ msgid ""
 " transitioning to this newer API when it's convenient to do so."
 msgstr ":func:`fileConfig` API は :func:`dictConfig` API よりも古く、ロギングのある種の側面についてカバーする機能に欠けています。たとえば :func:`fileConfig` では数値レベルを超えたメッセージを単に拾うフィルタリングを行う :class:`~logging.Filter` オブジェクトを構成出来ません。 :class:`~logging.Filter` のインスタンスをロギングの設定において持つ必要があるならば、 :func:`dictConfig` を使う必要があるでしょう。設定の機能における将来の拡張は :func:`dictConfig` に対して行われることに注意してください。ですから、そうするのが便利であるときに新しい API に乗り換えるのは良い考えです。"
 
-#: ../../library/logging.config.rst:595
-msgid "Examples of these sections in the file are given below. ::"
-msgstr "ファイルにおけるこれらのセクションの例を以下に示します。 ::"
+#: ../../library/logging.config.rst:601
+msgid "Examples of these sections in the file are given below."
+msgstr ""
 
-#: ../../library/logging.config.rst:606
+#: ../../library/logging.config.rst:614
 msgid ""
 "The root logger must specify a level and a list of handlers. An example of a"
-" root logger section is given below. ::"
-msgstr "ルートロガーでは、レベルとハンドラのリストを指定しなければなりません。ルートロガーのセクションの例を以下に示します。 ::"
+" root logger section is given below."
+msgstr ""
 
-#: ../../library/logging.config.rst:613
+#: ../../library/logging.config.rst:623
 msgid ""
 "The ``level`` entry can be one of ``DEBUG, INFO, WARNING, ERROR, CRITICAL`` "
 "or ``NOTSET``. For the root logger only, ``NOTSET`` means that all messages "
@@ -705,7 +704,7 @@ msgid ""
 "``logging`` package's namespace."
 msgstr "``level`` エントリは ``DEBUG, INFO, WARNING, ERROR, CRITICAL`` のうちの一つか、 ``NOTSET`` になります。ルートロガーの場合にのみ、 ``NOTSET`` はすべてのメッセージがログ記録されることを意味します。レベル値は ``logging`` パッケージの名前空間のコンテキストにおいて :func:`eval` されます。"
 
-#: ../../library/logging.config.rst:618
+#: ../../library/logging.config.rst:628
 msgid ""
 "The ``handlers`` entry is a comma-separated list of handler names, which "
 "must appear in the ``[handlers]`` section. These names must appear in the "
@@ -713,13 +712,13 @@ msgid ""
 "file."
 msgstr "``handlers`` エントリはコンマで区切られたハンドラ名からなるリストで、``[handlers]`` セクションになくてはなりません。また、これらの各ハンドラの名前に対応するセクションが設定ファイルに存在しなければなりません。"
 
-#: ../../library/logging.config.rst:623
+#: ../../library/logging.config.rst:633
 msgid ""
 "For loggers other than the root logger, some additional information is "
-"required. This is illustrated by the following example. ::"
-msgstr "ルートロガー以外のロガーでは、いくつか追加の情報が必要になります。これは以下の例のように表されます。 ::"
+"required. This is illustrated by the following example."
+msgstr ""
 
-#: ../../library/logging.config.rst:632
+#: ../../library/logging.config.rst:644
 msgid ""
 "The ``level`` and ``handlers`` entries are interpreted as for the root "
 "logger, except that if a non-root logger's level is specified as ``NOTSET``,"
@@ -732,13 +731,13 @@ msgid ""
 " application to get the logger."
 msgstr "``level`` および ``handlers`` エントリはルートロガーのエントリと同様に解釈されますが、非ルートロガーのレベルが ``NOTSET`` に指定された場合、ロギングシステムはロガー階層のより上位のロガーにロガーの実効レベルを問い合わせるところが違います。``propagate`` エントリは、メッセージをロガー階層におけるこのロガーの上位のハンドラに伝播させることを示す 1 に設定されるか、メッセージを階層の上位に伝播 **しない** ことを示す 0 に設定されます。``qualname`` エントリはロガーのチャネル名を階層的に表したもの、すなわちアプリケーションがこのロガーを取得する際に使う名前になります。"
 
-#: ../../library/logging.config.rst:641
+#: ../../library/logging.config.rst:653
 msgid ""
 "Sections which specify handler configuration are exemplified by the "
-"following. ::"
-msgstr "ハンドラの環境設定を指定しているセクションは以下の例のようになります。 ::"
+"following."
+msgstr ""
 
-#: ../../library/logging.config.rst:650
+#: ../../library/logging.config.rst:663
 msgid ""
 "The ``class`` entry indicates the handler's class (as determined by "
 ":func:`eval` in the ``logging`` package's namespace). The ``level`` is "
@@ -746,13 +745,13 @@ msgid ""
 "everything'."
 msgstr "``class`` エントリはハンドラのクラス (``logging`` パッケージの名前空間において :func:`eval` で決定されます) を示します。 ``level`` はロガーの場合と同じように解釈され、 ``NOTSET`` は \"すべてを記録する (log everything)\" と解釈されます。"
 
-#: ../../library/logging.config.rst:654
+#: ../../library/logging.config.rst:667
 msgid ""
 "Added support for resolving the handler’s class as a dotted module and class"
 " name."
 msgstr "ハンドラクラスのドット区切りモジュールおよびクラス名としての解決のサポートが追加されました。"
 
-#: ../../library/logging.config.rst:658
+#: ../../library/logging.config.rst:671
 msgid ""
 "The ``formatter`` entry indicates the key name of the formatter for this "
 "handler. If blank, a default formatter (``logging._defaultFormatter``) is "
@@ -760,21 +759,21 @@ msgid ""
 " and have a corresponding section in the configuration file."
 msgstr "``formatter`` エントリはこのハンドラのフォーマッタに対するキー名を表します。空文字列の場合、デフォルトのフォーマッタ (``logging._defaultFormatter``) が使われます。名前が指定されている場合、その名前は ``[formatters]`` セクションになくてはならず、対応するセクションが設定ファイル中になければなりません。"
 
-#: ../../library/logging.config.rst:663
+#: ../../library/logging.config.rst:676
 msgid ""
 "The ``args`` entry, when :func:`eval`\\ uated in the context of the "
 "``logging`` package's namespace, is the list of arguments to the constructor"
 " for the handler class. Refer to the constructors for the relevant handlers,"
-" or to the examples below, to see how typical entries are constructed. ::"
-msgstr "``args`` エントリは、 ``logging`` パッケージの名前空間のコンテキストで :func:`eval` される際、ハンドラクラスのコンストラクタに対する引数からなるリストになります。典型的なエントリがどうやって作成されるかについては、対応するハンドラのコンストラクタか、以下の例を参照してください。 ::"
+" or to the examples below, to see how typical entries are constructed."
+msgstr ""
 
-#: ../../library/logging.config.rst:717
+#: ../../library/logging.config.rst:732
 msgid ""
 "Sections which specify formatter configuration are typified by the "
-"following. ::"
-msgstr "フォーマッタの環境設定を指定しているセクションは以下のような形式です。 ::"
+"following."
+msgstr ""
 
-#: ../../library/logging.config.rst:724
+#: ../../library/logging.config.rst:741
 msgid ""
 "The ``format`` entry is the overall format string, and the ``datefmt`` entry"
 " is the :func:`strftime`\\ -compatible date/time format string.  If empty, "
@@ -785,7 +784,7 @@ msgid ""
 " time in ISO8601 format is ``2003-01-23 00:29:50,411``."
 msgstr "``format`` エントリは全体を書式化する文字列で、 ``datefmt`` エントリは :func:`strftime` 互換の日付/時刻書式化文字列です。空文字列の場合、パッケージによって ISO8601 形式の日付/時刻に置き換えられ、日付書式化文字列 ``\\'%Y-%m-%d %H:%M:%S\\'`` を指定した場合とほとんど同じになります。 ISO8601 形式ではミリ秒も指定しており、上の書式化文字列の結果にカンマで区切って追加されます。 ISO8601 形式の時刻の例は ``2003-01-23 00:29:50,411`` です。"
 
-#: ../../library/logging.config.rst:732
+#: ../../library/logging.config.rst:749
 msgid ""
 "The ``class`` entry is optional.  It indicates the name of the formatter's "
 "class (as a dotted module and class name.)  This option is useful for "
@@ -794,7 +793,7 @@ msgid ""
 "or condensed format."
 msgstr "``class`` エントリはオプションです。これはフォーマッタクラスの名前を (モジュール名とクラス名をドットでつないだもので) 指し示すものです。このオプションは :class:`~logging.Formatter` の子クラスをインスタンス化するのに便利です。 :class:`~logging.Formatter` の子クラスが、展開もしくは要約された形式の例外トレースバックを表示することができます。"
 
-#: ../../library/logging.config.rst:740
+#: ../../library/logging.config.rst:757
 msgid ""
 "Due to the use of :func:`eval` as described above, there are potential "
 "security risks which result from using the :func:`listen` to send and "
@@ -803,18 +802,18 @@ msgid ""
 ":func:`listen` documentation for more information."
 msgstr ":func:`eval` を使用していることで、上述のようにソケット経由で設定を送受信するために :func:`listen` を使用していることに起因する潜在的なセキュリティリスクがあります。そのリスクは、相互に信頼できない多数のユーザが同じマシン上でコードを実行する場合に制限されています; 詳細は :func:`listen` ドキュメンテーションを参照してください。"
 
-#: ../../library/logging.config.rst:749
-msgid "Module logging"
+#: ../../library/logging.config.rst:766
+msgid "Module :mod:`logging`"
 msgstr ":mod:`logging` モジュール"
 
-#: ../../library/logging.config.rst:749
+#: ../../library/logging.config.rst:766
 msgid "API reference for the logging module."
 msgstr "logging モジュールの API リファレンス。"
 
-#: ../../library/logging.config.rst:751
-msgid "Module logging.handlers"
+#: ../../library/logging.config.rst:768
+msgid "Module :mod:`logging.handlers`"
 msgstr ":mod:`logging.handlers` モジュール"
 
-#: ../../library/logging.config.rst:752
+#: ../../library/logging.config.rst:769
 msgid "Useful handlers included with the logging module."
 msgstr "logging モジュールに含まれる、便利なハンドラです。"

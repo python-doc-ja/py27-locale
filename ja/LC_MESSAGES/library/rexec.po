@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-28 00:38+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:02+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -115,8 +114,8 @@ msgid ""
 msgstr "制限された環境で実行するコードも、やはり :func:`sys.exit` 関数を呼ぶことができることを知っておくことは大事なことです。制限されたコードがインタプリタから抜けだすことを許さないためには、いつでも、制限されたコードが、 :exc:`SystemExit` 例外をキャッチする :keyword:`try` / :keyword:`except` 文とともに実行するように、呼び出しを防御します。制限された環境から :func:`sys.exit` 関数を除去するだけでは不十分です -- 制限されたコードは、やはり ``raise SystemExit`` を使うことができてしまいます。 :exc:`SystemExit` を取り除くことも、合理的なオプションではありません; いくつかのライブラリコードはこれを使っていますし、これが利用できなくなると中断してしまうでしょう。"
 
 #: ../../library/rexec.rst:83
-msgid "Grail Home Page"
-msgstr "`Grail Home Page <http://grail.sourceforge.net/>`_"
+msgid "`Grail Home Page <http://grail.sourceforge.net/>`_"
+msgstr ""
 
 #: ../../library/rexec.rst:82
 msgid ""

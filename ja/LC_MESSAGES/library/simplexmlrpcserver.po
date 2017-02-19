@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-09-20 21:43+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:03+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,9 +36,9 @@ msgstr "**Source code:** :source:`Lib/SimpleXMLRPCServer.py`"
 msgid ""
 "The :mod:`SimpleXMLRPCServer` module provides a basic server framework for "
 "XML-RPC servers written in Python.  Servers can either be free standing, "
-"using :class:`SimpleXMLRPCServer`, or embedded in a CGI environment, using "
-":class:`CGIXMLRPCRequestHandler`."
-msgstr ":mod:`SimpleXMLRPCServer` モジュールはPythonで記述された基本的なXML-RPC サーバーフレームワークを提供します。サーバーはスタンドアロンであるか、 :class:`SimpleXMLRPCServer` を使うか、 :class:`CGIXMLRPCRequestHandler` を使って CGI 環境に組み込まれるかの、いずれかです。"
+"using :class:`~SimpleXMLRPCServer.SimpleXMLRPCServer`, or embedded in a CGI "
+"environment, using :class:`CGIXMLRPCRequestHandler`."
+msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:29
 msgid ""
@@ -79,8 +78,9 @@ msgstr "CGI 環境における XML-RPC リクエストハンドラーを、新�
 msgid ""
 "Create a new request handler instance.  This request handler supports "
 "``POST`` requests and modifies logging so that the *logRequests* parameter "
-"to the :class:`SimpleXMLRPCServer` constructor parameter is honored."
-msgstr "新しくリクエストハンドラーインスタンスを作成します。このリクエストハンドラーは ``POST`` リクエストを受け持ち、 :class:`SimpleXMLRPCServer` のコンストラクターの引数 *logRequests* に従ったログ出力を行います。"
+"to the :class:`~SimpleXMLRPCServer.SimpleXMLRPCServer` constructor parameter"
+" is honored."
+msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:71
 msgid "SimpleXMLRPCServer Objects"
@@ -88,10 +88,10 @@ msgstr "SimpleXMLRPCServer オブジェクト"
 
 #: ../../library/simplexmlrpcserver.rst:73
 msgid ""
-"The :class:`SimpleXMLRPCServer` class is based on "
+"The :class:`~SimpleXMLRPCServer.SimpleXMLRPCServer` class is based on "
 ":class:`SocketServer.TCPServer` and provides a means of creating simple, "
 "stand alone XML-RPC servers."
-msgstr ":class:`SimpleXMLRPCServer` クラスは :class:`SocketServer.TCPServer` のサブクラスで、基本的なスタンドアロンの XML-RPC サーバーを作成する手段を提供します。"
+msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:80
 msgid ""
@@ -181,9 +181,9 @@ msgstr "以下のクライアントコードは上のサーバーで使えるよ
 
 #: ../../library/simplexmlrpcserver.rst:200
 msgid ""
-"The following :class:`SimpleXMLRPCServer` example is included in the module "
-"`Lib/SimpleXMLRPCServer.py`::"
-msgstr "以下に続く :class:`SimpleXMLRPCServer` 例はモジュール  `Lib/SimpleXMLRPCServer.py` に含まれています::"
+"The following :class:`~SimpleXMLRPCServer.SimpleXMLRPCServer` example is "
+"included in the module `Lib/SimpleXMLRPCServer.py`::"
+msgstr ""
 
 #: ../../library/simplexmlrpcserver.rst:209
 msgid "This demo server can be run from the command line as::"
@@ -245,10 +245,10 @@ msgstr "XML-RPC マルチコール関数 ``system.multicall`` を登録します
 
 #: ../../library/simplexmlrpcserver.rst:276
 msgid ""
-"Handle a XML-RPC request. If *request_text* is given, it  should be the POST"
+"Handle an XML-RPC request. If *request_text* is given, it should be the POST"
 " data provided by the HTTP server,  otherwise the contents of stdin will be "
 "used."
-msgstr "XML-RPC リクエストを処理します。 *request_text* が与えられるなら、HTTP サーバに提供された POST データでなければなりません。与えられなければ、標準入力の内容が使われます。"
+msgstr "XML-RPC リクエストを処理します。 与えられた場合、 *request_text* はHTTP サーバが提供する POST データでなければなりません。\nそうでない場合、標準入力の内容が使われます。"
 
 #: ../../library/simplexmlrpcserver.rst:279
 msgid "Example::"

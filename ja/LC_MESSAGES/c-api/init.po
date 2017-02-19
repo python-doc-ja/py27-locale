@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-05 20:04+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:37+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,10 +42,10 @@ msgstr "Python インタプリタを初期化します。Python の埋め込み�
 
 #: ../../c-api/init.rst:46
 msgid ""
-"This function works like :c:func:`Py_Initialize` if *initsigs* is 1. If "
-"*initsigs* is 0, it skips initialization registration of signal handlers, "
-"which might be useful when Python is embedded."
-msgstr "*initsigs* に1を指定すれば :c:func:`Py_Initialize` と同じ処理を実行しますが、 Python埋め込みアプリケーションでは *initsigs* を0として初期化時にシグナルハンドラの登録をスキップすることができます。"
+"This function works like :c:func:`Py_Initialize` if *initsigs* is ``1``. If "
+"*initsigs* is ``0``, it skips initialization registration of signal "
+"handlers, which might be useful when Python is embedded."
+msgstr "*initsigs* に ``1`` を指定した場合、この関数は :c:func:`Py_Initialize` と同じように動作します。\n*initsigs* に ``0`` を指定した場合、初期化時のシグナルハンドラの登録をスキップすることができ、これは Python の埋め込みで便利でしょう。"
 
 #: ../../c-api/init.rst:55
 msgid ""
@@ -293,10 +292,10 @@ msgstr "それ以外の場合(*argc* が 0 だったり、 ``argv[0]`` が存在
 #: ../../c-api/init.rst:297
 msgid ""
 "It is recommended that applications embedding the Python interpreter for "
-"purposes other than executing a single script pass 0 as *updatepath*, and "
-"update :data:`sys.path` themselves if desired. See `CVE-2008-5983 "
-"<http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5983>`_."
-msgstr "Python インタプリタを、単一のスクリプトを実行する以外の目的で埋め込むアプリケーションは、 *updatepath* に 0 を渡して必要なら自分で :data:`sys.path` を更新することをおすすめします。 `CVE-2008-5983 <http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5983>`_ を参照してください。"
+"purposes other than executing a single script pass ``0`` as *updatepath*, "
+"and update :data:`sys.path` themselves if desired. See `CVE-2008-5983 "
+"<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5983>`_."
+msgstr "単一のスクリプトを実行する以外の目的でPython インタプリタを埋め込んでいるアプリケーションでは、 *updatepath* に ``0`` を渡して、必要な場合は自分で :data:`sys.path` を更新することをおすすめします。\n`CVE-2008-5983 <https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5983>`_ を参照してください。"
 
 #: ../../c-api/init.rst:302
 msgid ""
@@ -308,8 +307,8 @@ msgstr "2.6.6 より前のバージョンでは、 :c:func:`PySys_SetArgv` の�
 #: ../../c-api/init.rst:316
 msgid ""
 "This function works like :c:func:`PySys_SetArgvEx` with *updatepath* set to "
-"1."
-msgstr ":c:func:`PySys_SetArgvEx` の *updatepath* に 1 を設定したのと同じように動作します。"
+"``1``."
+msgstr ""
 
 #: ../../c-api/init.rst:321
 msgid ""
@@ -938,9 +937,9 @@ msgstr "インタプリタのメインスレッドに非同期な通知を行う
 #: ../../c-api/init.rst:919
 msgid ""
 "Schedule a function to be called from the main interpreter thread.  On "
-"success, 0 is returned and *func* is queued for being called in the main "
-"thread.  On failure, -1 is returned without setting any exception."
-msgstr "インタプリタのメインスレッドから関数が呼び出される予定を組みます。成功すると 0 が返り、*func* はメインスレッドの呼び出しキューに詰められます。失敗すると、例外をセットせずに -1 が返ります。"
+"success, ``0`` is returned and *func* is queued for being called in the main"
+" thread.  On failure, ``-1`` is returned without setting any exception."
+msgstr "インタプリタのメインスレッドから関数が呼び出される予定を組みます。成功すると ``0`` が返り、*func* はメインスレッドの呼び出しキューに詰められます。失敗すると、例外をセットせずに ``-1`` が返ります。"
 
 #: ../../c-api/init.rst:923
 msgid ""
@@ -962,11 +961,11 @@ msgstr "メインスレッドが :term:`global interpreter lock` を保持して
 
 #: ../../c-api/init.rst:932
 msgid ""
-"*func* must return 0 on success, or -1 on failure with an exception set.  "
-"*func* won't be interrupted to perform another asynchronous notification "
-"recursively, but it can still be interrupted to switch threads if the global"
-" interpreter lock is released."
-msgstr "成功したら *func* は 0 を返さねばならず、失敗したら -1 を返し例外をセットしなければいけません。*func* は、他の非同期通知を行うために、さらに割り込まれることはありませんが、グローバルインタプリタロックが解放された場合は、スレッドの切り替えによって割り込まれる可能性が残っています。"
+"*func* must return ``0`` on success, or ``-1`` on failure with an exception "
+"set.  *func* won't be interrupted to perform another asynchronous "
+"notification recursively, but it can still be interrupted to switch threads "
+"if the global interpreter lock is released."
+msgstr "成功したら *func* は ``0`` を返さねばならず、失敗したら ``-1`` を返し例外をセットしなければいけません。*func* は、他の非同期通知を行うために、さらに割り込まれることはありませんが、グローバルインタプリタロックが解放された場合は、スレッドの切り替えによって割り込まれる可能性が残っています。"
 
 #: ../../c-api/init.rst:937
 msgid ""

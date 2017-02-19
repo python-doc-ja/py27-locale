@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-31 08:46+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:11+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -65,8 +64,10 @@ msgid "ZIP archives with an archive comment are currently not supported."
 msgstr "アーカイブコメント付きの ZIP アーカイブは現在のところサポートされていません。"
 
 #: ../../library/zipimport.rst:42
-msgid "PKZIP Application Note"
-msgstr "`PKZIP Application Note <http://www.pkware.com/documents/casestudies/APPNOTE.TXT>`_"
+msgid ""
+"`PKZIP Application Note "
+"<https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT>`_"
+msgstr "`PKZIP Application Note <https://pkware.cachefly.net/webdocs/casestudies/APPNOTE.TXT>`_"
 
 #: ../../library/zipimport.rst:41
 msgid ""
@@ -75,8 +76,8 @@ msgid ""
 msgstr "ZIP ファイルフォーマットおよびアルゴリズムを作成した Phil Katz によるドキュメント。"
 
 #: ../../library/zipimport.rst:47
-msgid "PEP 273 - Import Modules from Zip Archives"
-msgstr "PEP 273 - Zip アーカイブからモジュールをインポートする"
+msgid ":pep:`273` - Import Modules from Zip Archives"
+msgstr ":pep:`273` - Zip アーカイブからモジュールをインポートする"
 
 #: ../../library/zipimport.rst:45
 msgid ""
@@ -86,8 +87,8 @@ msgid ""
 msgstr "このモジュールの実装も行った、James C. Ahlstrom による PEP です。Python 2.3 は PEP 273 の仕様に従っていますが、Just van Rossum の書いた import フックによる実装を使っています。import フックは PEP 302 で解説されています。"
 
 #: ../../library/zipimport.rst:49
-msgid "PEP 302 - New Import Hooks"
-msgstr "PEP 302 - 新たなインポートフック"
+msgid ":pep:`302` - New Import Hooks"
+msgstr ":pep:`302` - 新たなインポートフック"
 
 #: ../../library/zipimport.rst:50
 msgid "The PEP to add the import hooks that help this module work."
@@ -200,5 +201,5 @@ msgstr "例"
 #: ../../library/zipimport.rst:151
 msgid ""
 "Here is an example that imports a module from a ZIP archive - note that the "
-":mod:`zipimport` module is not explicitly used. ::"
-msgstr "モジュールを ZIP アーカイブから import する例を以下に示します - :mod:`zipimport` モジュールが明示的に使われていないことに注意してください。 ::"
+":mod:`zipimport` module is not explicitly used."
+msgstr "モジュールを ZIP アーカイブから import する例を以下に示します - :mod:`zipimport` モジュールが明示的に使われていないことに注意してください。"

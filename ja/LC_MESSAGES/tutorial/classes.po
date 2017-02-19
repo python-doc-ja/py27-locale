@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-05-19 09:58+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:12+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -303,7 +302,7 @@ msgid ""
 "if the class definition looked like this::"
 msgstr "*属性参照 (attribute reference)* は、Python におけるすべての属性参照で使われている標準的な構文、 ``obj.name`` を使います。クラスオブジェクトが生成された際にクラスの名前空間にあった名前すべてが有効な属性名です。従って、以下のようなクラス定義では::"
 
-#: ../../tutorial/classes.rst:216
+#: ../../tutorial/classes.rst:217
 msgid ""
 "then ``MyClass.i`` and ``MyClass.f`` are valid attribute references, "
 "returning an integer and a function object, respectively. Class attributes "
@@ -312,20 +311,20 @@ msgid ""
 "docstring belonging to the class: ``\"A simple example class\"``."
 msgstr "``MyClass.i`` と ``MyClass.f`` は妥当な属性参照であり、それぞれ整数と関数オブジェクトを返します。クラス属性に代入を行うこともできます。従って、 ``MyClass.i`` の値を代入して変更できます。 :attr:`__doc__` も有効な属性で、そのクラスに属している docstring、この場合は ``\"A simple example class\"`` を返します。"
 
-#: ../../tutorial/classes.rst:222
+#: ../../tutorial/classes.rst:223
 msgid ""
 "Class *instantiation* uses function notation.  Just pretend that the class "
 "object is a parameterless function that returns a new instance of the class."
 " For example (assuming the above class)::"
 msgstr "クラスの *インスタンス生成 (instantiation)* には関数のような表記法を使います。クラスオブジェクトのことを、単にクラスの新しいインスタンスを返すパラメタを持たない関数かのように扱います。例えば (上記のクラスでいえば)::"
 
-#: ../../tutorial/classes.rst:228
+#: ../../tutorial/classes.rst:229
 msgid ""
 "creates a new *instance* of the class and assigns this object to the local "
 "variable ``x``."
 msgstr "は、クラスの新しい *インスタンス (instance)* を生成し、そのオブジェクトをローカル変数 ``x`` へ代入します。"
 
-#: ../../tutorial/classes.rst:231
+#: ../../tutorial/classes.rst:232
 msgid ""
 "The instantiation operation (\"calling\" a class object) creates an empty "
 "object. Many classes like to create objects with instances customized to a "
@@ -333,32 +332,32 @@ msgid ""
 ":meth:`__init__`, like this::"
 msgstr "このクラスのインスタンス生成操作 (クラスオブジェクトの \"呼出し\") を行うと、空のオブジェクトを生成します。多くのクラスは、オブジェクトを作成する際に、カスタマイズされた特定の初期状態になってほしいと望んでいます。そのために、クラスには :meth:`__init__` という名前の特別なメソッド定義することができます。例えば次のようにします::"
 
-#: ../../tutorial/classes.rst:239
+#: ../../tutorial/classes.rst:240
 msgid ""
 "When a class defines an :meth:`__init__` method, class instantiation "
 "automatically invokes :meth:`__init__` for the newly-created class instance."
 "  So in this example, a new, initialized instance can be obtained by::"
 msgstr "クラスが :meth:`__init__` メソッドを定義している場合、クラスのインスタンスを生成すると、新しく生成されたクラスインスタンスに対して自動的に :meth:`__init__` を呼び出します。従って、この例では、新たな初期済みのインスタンスを次のようにして得ることができます::"
 
-#: ../../tutorial/classes.rst:245
+#: ../../tutorial/classes.rst:246
 msgid ""
 "Of course, the :meth:`__init__` method may have arguments for greater "
 "flexibility.  In that case, arguments given to the class instantiation "
 "operator are passed on to :meth:`__init__`.  For example, ::"
 msgstr "もちろん、より大きな柔軟性を持たせるために、 :meth:`__init__` メソッドに複数の引数をもたせることができます。その場合、次の例のように、クラスのインスタンス生成操作に渡された引数は :meth:`__init__` に渡されます。例えば、 ::"
 
-#: ../../tutorial/classes.rst:262
+#: ../../tutorial/classes.rst:263
 msgid "Instance Objects"
 msgstr "インスタンスオブジェクト"
 
-#: ../../tutorial/classes.rst:264
+#: ../../tutorial/classes.rst:265
 msgid ""
 "Now what can we do with instance objects?  The only operations understood by"
 " instance objects are attribute references.  There are two kinds of valid "
 "attribute names, data attributes and methods."
 msgstr "ところで、インスタンスオブジェクトを使うと何ができるのでしょうか？インスタンスオブジェクトが理解できる唯一の操作は、属性の参照です。有効な属性の名前には二種類(データ属性およびメソッド)あります。"
 
-#: ../../tutorial/classes.rst:268
+#: ../../tutorial/classes.rst:269
 msgid ""
 "*data attributes* correspond to \"instance variables\" in Smalltalk, and to "
 "\"data members\" in C++.  Data attributes need not be declared; like local "
@@ -368,7 +367,7 @@ msgid ""
 "trace::"
 msgstr "*データ属性 (data attribute)* は、これは Smalltalk の \"インスタンス変数\" や C++の \"データメンバ\" に相当します。データ属性を宣言する必要はありません。ローカルな変数と同様に、これらの属性は最初に代入された時点で湧き出てきます。例えば、上で生成した :class:`MyClass` のインスタンス ``x`` に対して、次のコードを実行すると、値 ``16`` を印字し、 ``x`` の痕跡は残りません::"
 
-#: ../../tutorial/classes.rst:280
+#: ../../tutorial/classes.rst:281
 msgid ""
 "The other kind of instance attribute reference is a *method*. A method is a "
 "function that \"belongs to\" an object.  (In Python, the term method is not "
@@ -379,7 +378,7 @@ msgid ""
 "stated otherwise.)"
 msgstr "もうひとつのインスタンス属性は *メソッド (method)* です。メソッドとは、オブジェクトに \"属している\" 関数のことです。(Python では、メソッドという用語はクラスインスタンスだけのものではありません。オブジェクト型にもメソッドを持つことができます。例えば、リストオブジェクトには、 append, insert, remove, sort などといったメソッドがあります。とはいえ、以下では特に明記しない限り、クラスのインスタンスオブジェクトのメソッドだけを意味するものとして使うことにします。)"
 
-#: ../../tutorial/classes.rst:289
+#: ../../tutorial/classes.rst:290
 msgid ""
 "Valid method names of an instance object depend on its class.  By "
 "definition, all attributes of a class that are function  objects define "
@@ -389,15 +388,15 @@ msgid ""
 "``MyClass.f`` --- it is a *method object*, not a function object."
 msgstr "インスタンスオブジェクトで有効なメソッド名は、そのクラスによります。定義により、クラスの全てのo関数オブジェクトである属性がインスタンスオブジェクトの妥当なメソッド名に決まります。従って、例では、 ``MyClass.f`` は関数なので、 ``x.f`` はメソッドの参照として有効です。しかし、 ``MyClass.i`` は関数ではないので、 ``x.i`` はメソッドの参照として有効ではありません。 ``x.f`` は ``MyClass.f`` と同じものではありません --- 関数オブジェクトではなく、 *メソッドオブジェクト (method object)* です。"
 
-#: ../../tutorial/classes.rst:300
+#: ../../tutorial/classes.rst:301
 msgid "Method Objects"
 msgstr "メソッドオブジェクト"
 
-#: ../../tutorial/classes.rst:302
+#: ../../tutorial/classes.rst:303
 msgid "Usually, a method is called right after it is bound::"
 msgstr "普通、メソッドはバインドされた直後に呼び出されます::"
 
-#: ../../tutorial/classes.rst:306
+#: ../../tutorial/classes.rst:307
 msgid ""
 "In the :class:`MyClass` example, this will return the string ``'hello "
 "world'``. However, it is not necessary to call a method right away: ``x.f`` "
@@ -405,11 +404,11 @@ msgid ""
 "example::"
 msgstr ":class:`MyClass` の例では、上のコードは文字列 ``'hello world'`` を返すでしょう。しかしながら、必ずしもメソッドをその場で呼び出さなければならないわけではありません。 ``x.f`` はメソッドオブジェクトであり、どこかに記憶しておいて後で呼び出すことができます。例えば次のコードは::"
 
-#: ../../tutorial/classes.rst:314
+#: ../../tutorial/classes.rst:315
 msgid "will continue to print ``hello world`` until the end of time."
 msgstr "``hello world`` を時が終わるまで印字し続けるでしょう。"
 
-#: ../../tutorial/classes.rst:316
+#: ../../tutorial/classes.rst:317
 msgid ""
 "What exactly happens when a method is called?  You may have noticed that "
 "``x.f()`` was called without an argument above, even though the function "
@@ -419,7 +418,7 @@ msgid ""
 "used..."
 msgstr "メソッドが呼び出されるときには実際には何が起きているのでしょうか？ :meth:`f` の関数定義では引数を一つ指定していたにもかかわらず、上の例では ``x.f()`` が引数なしで呼び出されています。引数はどうなったのでしょうか？たしか、引数が必要な関数を引数無しで呼び出すと、 Python が例外を送出するはずです --- たとえその引数が実際には使われなくても…。"
 
-#: ../../tutorial/classes.rst:322
+#: ../../tutorial/classes.rst:323
 msgid ""
 "Actually, you may have guessed the answer: the special thing about methods "
 "is that the object is passed as the first argument of the function.  In our "
@@ -429,7 +428,7 @@ msgid ""
 "inserting the method's object before the first argument."
 msgstr "もう答は想像できているかもしれませんね。メソッドについて特別なこととして、オブジェクトが関数の第1引数として渡されます。例では、 ``x.f()`` という呼び出しは、 ``MyClass.f(x)`` と厳密に等価なものです。一般に、 *n* 個の引数リストもったメソッドの呼出しは、そのメソッドのオブジェクトを最初の引数の前に挿入した引数リストでメソッドに対応する関数を呼び出すことと等価です。"
 
-#: ../../tutorial/classes.rst:329
+#: ../../tutorial/classes.rst:330
 msgid ""
 "If you still don't understand how methods work, a look at the implementation"
 " can perhaps clarify matters.  When an instance attribute is referenced that"
@@ -442,18 +441,18 @@ msgid ""
 "called with this new argument list."
 msgstr "もしまだメソッドの動作を理解できなければ、一度実装を見てみると事情がよく分かるかもしれません。データ属性ではないインスタンス属性が参照された時は、そのクラスが検索されます。その名前が有効なクラス属性を表している関数オブジェクトなら、インスタンスオブジェクトと見つかった関数オブジェクト (へのポインタ) を抽象オブジェクト、すなわちメソッドオブジェクトにパックして作成します。メソッドオブジェクトが引数リストと共に呼び出されるとき、インスタンスオブジェクトと渡された引数リストから新しい引数リストを作成して、元の関数オブジェクトを新しい引数リストで呼び出します。"
 
-#: ../../tutorial/classes.rst:343
+#: ../../tutorial/classes.rst:344
 msgid "Class and Instance Variables"
 msgstr "クラスとインスタンス変数"
 
-#: ../../tutorial/classes.rst:345
+#: ../../tutorial/classes.rst:346
 msgid ""
 "Generally speaking, instance variables are for data unique to each instance "
 "and class variables are for attributes and methods shared by all instances "
 "of the class::"
 msgstr "一般的に、インスタンス変数はそれぞれのインスタンスについて固有のデータのためのもので、クラス変数はそのクラスのすべてのインスタンスによって共有される属性やメソッドのためのものです::"
 
-#: ../../tutorial/classes.rst:367
+#: ../../tutorial/classes.rst:368
 msgid ""
 "As discussed in :ref:`tut-object`, shared data can have possibly surprising "
 "effects with involving :term:`mutable` objects such as lists and "
@@ -462,15 +461,15 @@ msgid ""
 "by all *Dog* instances::"
 msgstr ":ref:`tut-object` で議論したように、共有データはリストや辞書のような :term:`mutable` オブジェクトが関与すると驚くべき効果を持ち得ます。例えば、以下のコードの *tricks* リストはクラス変数として使われるべきではありません、なぜならたった一つのリストがすべての *Dog* インスタンスによって共有されることになり得るからです::"
 
-#: ../../tutorial/classes.rst:390
+#: ../../tutorial/classes.rst:391
 msgid "Correct design of the class should use an instance variable instead::"
 msgstr "このクラスの正しい設計ではインスタンス変数を代わりに使用するべきです::"
 
-#: ../../tutorial/classes.rst:414
+#: ../../tutorial/classes.rst:415
 msgid "Random Remarks"
 msgstr "いろいろな注意点"
 
-#: ../../tutorial/classes.rst:418
+#: ../../tutorial/classes.rst:419
 msgid ""
 "Data attributes override method attributes with the same name; to avoid "
 "accidental name conflicts, which may cause hard-to-find bugs in large "
@@ -481,7 +480,7 @@ msgid ""
 "attributes."
 msgstr "データ属性は同じ名前のメソッド属性を上書きしてしまいます。大規模なプログラムでみつけにくいバグを引き起こすことがあるこの偶然的な名前の衝突を避けるには、衝突の可能性を最小限にするような規約を使うのが賢明です。可能な規約としては、メソッド名を大文字で始める、データ属性名の先頭に短い一意な文字列 (あるいはただの下線) をつける、またメソッドには動詞、データ属性には名詞を用いる、などがあります。"
 
-#: ../../tutorial/classes.rst:425
+#: ../../tutorial/classes.rst:426
 msgid ""
 "Data attributes may be referenced by methods as well as by ordinary users "
 "(\"clients\") of an object.  In other words, classes are not usable to "
@@ -492,7 +491,7 @@ msgid ""
 "can be used by extensions to Python written in C.)"
 msgstr "データ属性は、メソッドから参照できると同時に、通常のオブジェクトのユーザ (\"クライアント\") からも参照できます。言い換えると、クラスは純粋な抽象データ型として使うことができません。実際、 Python では、データ隠蔽を補強するための機構はなにもありません --- データの隠蔽はすべて規約に基づいています。 (逆に、C 言語で書かれた Python の実装では実装の詳細を完全に隠蔽し、必要に応じてオブジェクトへのアクセスを制御できます。この機構は C 言語で書かれた Python 拡張で使うことができます。)"
 
-#: ../../tutorial/classes.rst:433
+#: ../../tutorial/classes.rst:434
 msgid ""
 "Clients should use data attributes with care --- clients may mess up "
 "invariants maintained by the methods by stamping on their data attributes.  "
@@ -501,7 +500,7 @@ msgid ""
 "are avoided --- again, a naming convention can save a lot of headaches here."
 msgstr "クライアントはデータ属性を注意深く扱うべきです --- クライアントは、メソッドが維持しているデータ属性の不変式を踏みにじり、台無しにするかもしれません。クライアントは、名前の衝突が回避されている限り、メソッドの有効性に影響を及ぼすことなくインスタンスに独自の属性を追加することができる、ということに注意してください --- ここでも、名前付けの規約は頭痛の種を無くしてくれます。"
 
-#: ../../tutorial/classes.rst:439
+#: ../../tutorial/classes.rst:440
 msgid ""
 "There is no shorthand for referencing data attributes (or other methods!) "
 "from within methods.  I find that this actually increases the readability of"
@@ -509,7 +508,7 @@ msgid ""
 "variables when glancing through a method."
 msgstr "メソッドの中から、データ属性を (または別のメソッドも！) 参照するための短縮された記法はありません。私は、この仕様がメソッドの可読性を高めていると感じています。あるメソッドを眺めているときにローカルな変数とインスタンス変数をはっきり区別できるからです。"
 
-#: ../../tutorial/classes.rst:444
+#: ../../tutorial/classes.rst:445
 msgid ""
 "Often, the first argument of a method is called ``self``.  This is nothing "
 "more than a convention: the name ``self`` has absolutely no special meaning "
@@ -519,7 +518,7 @@ msgid ""
 "convention."
 msgstr "よく、メソッドの最初の引数を ``self`` と呼びます。この名前付けは単なる慣習でしかありません。 ``self`` という名前は、 Python では何ら特殊な意味を持ちません。とはいえ、この慣行に従わないと、コードは他の Python プログラマにとってやや読みにくいものとなります。また、 *クラスブラウザ (class browser)* プログラムがこの慣行をあてにして書かれているかもしれません。"
 
-#: ../../tutorial/classes.rst:450
+#: ../../tutorial/classes.rst:451
 msgid ""
 "Any function object that is a class attribute defines a method for instances"
 " of that class.  It is not necessary that the function definition is "
@@ -527,7 +526,7 @@ msgid ""
 " local variable in the class is also ok.  For example::"
 msgstr "クラス属性である関数オブジェクトはいずれも、そのクラスのインスタンスのためのメソッドを定義しています。関数定義は、テキスト上でクラス定義の中に入っている必要はありません。関数オブジェクトをクラスのローカルな変数の中に代入するのも OK です。例えば以下のコードのようにします::"
 
-#: ../../tutorial/classes.rst:465
+#: ../../tutorial/classes.rst:468
 msgid ""
 "Now ``f``, ``g`` and ``h`` are all attributes of class :class:`C` that refer"
 " to function objects, and consequently they are all methods of instances of "
@@ -535,13 +534,13 @@ msgid ""
 "practice usually only serves to confuse the reader of a program."
 msgstr "これで、 ``f`` 、 ``g`` 、および ``h`` は、すべて :class:`C` の属性であり関数オブジェクトを参照しています。従って、これら全ては、 :class:`C` のインスタンスのメソッドとなります --- ``h`` は ``g`` と全く等価です。これを実践しても、大抵は単にプログラムの読者に混乱をもたらすだけなので注意してください。"
 
-#: ../../tutorial/classes.rst:470
+#: ../../tutorial/classes.rst:473
 msgid ""
 "Methods may call other methods by using method attributes of the ``self`` "
 "argument::"
 msgstr "メソッドは、 ``self`` 引数のメソッド属性を使って、他のメソッドを呼び出すことができます::"
 
-#: ../../tutorial/classes.rst:482
+#: ../../tutorial/classes.rst:487
 msgid ""
 "Methods may reference global names in the same way as ordinary functions.  "
 "The global scope associated with a method is the module containing its "
@@ -554,24 +553,24 @@ msgid ""
 " good reasons why a method would want to reference its own class."
 msgstr "メソッドは、通常の関数と同じようにしてグローバルな名前を参照します。あるメソッドに関するグローバルスコープは、その定義を含むモジュールです。(クラスはグローバルなスコープとして用いられることはありません。) メソッドでグローバルなデータを使う良い理由はほとんどありませんが、グローバルなスコープを使うべき場面は多々あります。一つ挙げると、メソッド内から、グローバルなスコープに import された関数やモジュールや、そのモジュール中で定義された関数やクラスを使うことができます。通常、メソッドの入っているクラス自体はグローバルなスコープ内で定義されています。次の節では、メソッドが自分のクラスを参照する理由として正当なものを見てみましょう。"
 
-#: ../../tutorial/classes.rst:492
+#: ../../tutorial/classes.rst:497
 msgid ""
 "Each value is an object, and therefore has a *class* (also called its "
 "*type*). It is stored as ``object.__class__``."
 msgstr "個々の値はオブジェクトなので、 *クラス* (*型* とも言います) を持っています。それは ``object.__class__`` に保持されています。"
 
-#: ../../tutorial/classes.rst:499
+#: ../../tutorial/classes.rst:504
 msgid "Inheritance"
 msgstr "継承"
 
-#: ../../tutorial/classes.rst:501
+#: ../../tutorial/classes.rst:506
 msgid ""
 "Of course, a language feature would not be worthy of the name \"class\" "
 "without supporting inheritance.  The syntax for a derived class definition "
 "looks like this::"
 msgstr "言うまでもなく、継承の概念をサポートしない言語機能は \"クラス\" と呼ぶに値しません。派生クラス (derived class) を定義する構文は次のようになります::"
 
-#: ../../tutorial/classes.rst:512
+#: ../../tutorial/classes.rst:517
 msgid ""
 "The name :class:`BaseClassName` must be defined in a scope containing the "
 "derived class definition.  In place of a base class name, other arbitrary "
@@ -579,7 +578,7 @@ msgid ""
 "base class is defined in another module::"
 msgstr "基底クラス (base class) の名前 :class:`BaseClassName` は、派生クラス定義の入っているスコープで定義されていなければなりません。基底クラス名のかわりに任意の式を入れることもできます。これは次の例のように、基底クラスが別モジュールで定義されているときに便利なことがあります::"
 
-#: ../../tutorial/classes.rst:519
+#: ../../tutorial/classes.rst:524
 msgid ""
 "Execution of a derived class definition proceeds the same as for a base "
 "class. When the class object is constructed, the base class is remembered.  "
@@ -589,7 +588,7 @@ msgid ""
 "some other class."
 msgstr "派生クラス定義の実行は、基底クラスの場合と同じように進められます。クラスオブジェクトが構築される時、基底クラスが記憶されます。記憶された基底クラスは、属性参照を解決するために使われます。要求された属性がクラスに見つからなかった場合、基底クラスに検索が進みます。この規則は、基底クラスが他の何らかのクラスから派生したものであった場合、再帰的に適用されます。"
 
-#: ../../tutorial/classes.rst:525
+#: ../../tutorial/classes.rst:530
 msgid ""
 "There's nothing special about instantiation of derived classes: "
 "``DerivedClassName()`` creates a new instance of the class.  Method "
@@ -598,7 +597,7 @@ msgid ""
 "method reference is valid if this yields a function object."
 msgstr "派生クラスのインスタンス化では、特別なことは何もありません。 ``DerivedClassName()`` はクラスの新たなインスタンスを生成します。メソッドの参照は次のようにしてい解決されます。まず対応するクラス属性が検索されます。検索は、必要に応じ、基底クラス連鎖を下って行われ、検索の結果として何らかの関数オブジェクトがもたらされた場合、メソッド参照は有効なものとなります。"
 
-#: ../../tutorial/classes.rst:531
+#: ../../tutorial/classes.rst:536
 msgid ""
 "Derived classes may override methods of their base classes.  Because methods"
 " have no special privileges when calling other methods of the same object, a"
@@ -607,7 +606,7 @@ msgid ""
 "(For C++ programmers: all methods in Python are effectively ``virtual``.)"
 msgstr "派生クラスは基底クラスのメソッドを上書き (override) することができます。メソッドは同じオブジェクトの別のメソッドを呼び出す際に何ら特殊な権限を持ちません。このため、ある基底クラスのメソッドが、同じ基底クラスで定義されているもう一つのメソッド呼び出しを行っている場合、派生クラスで上書きされた何らかのメソッドが呼び出されることになるかもしれません。 (C++ プログラマへ:  Python では、すべてのメソッドは事実上 ``virtual`` です。)"
 
-#: ../../tutorial/classes.rst:537
+#: ../../tutorial/classes.rst:542
 msgid ""
 "An overriding method in a derived class may in fact want to extend rather "
 "than simply replace the base class method of the same name. There is a "
@@ -617,18 +616,18 @@ msgid ""
 "accessible as ``BaseClassName`` in the global scope.)"
 msgstr "派生クラスで上書きしているメソッドでは、基底クラスの同名のメソッドを置き換えるのではなく、拡張したいのかもしれません。基底クラスのメソッドを直接呼び出す簡単な方法があります。単に ``BaseClassName.methodname(self, arguments)`` を呼び出すだけです。この仕様は、場合によってはクライアントでも役に立ちます。 (この呼び出し方が動作するのは、基底クラスがグローバルスコープの ``BaseClassName`` という名前でアクセスできるときだけです。)"
 
-#: ../../tutorial/classes.rst:544
+#: ../../tutorial/classes.rst:549
 msgid "Python has two built-in functions that work with inheritance:"
 msgstr "Python には継承に関係する 2 つの組み込み関数があります:"
 
-#: ../../tutorial/classes.rst:546
+#: ../../tutorial/classes.rst:551
 msgid ""
 "Use :func:`isinstance` to check an instance's type: ``isinstance(obj, int)``"
 " will be ``True`` only if ``obj.__class__`` is :class:`int` or some class "
 "derived from :class:`int`."
 msgstr ":func:`isinstance` を使うとインスタンスの型が調べられます。 ``isinstance(obj, int)`` は ``obj.__class__`` が :class:`int` や :class:`int` の派生クラスの場合に限り ``True`` になります。"
 
-#: ../../tutorial/classes.rst:550
+#: ../../tutorial/classes.rst:555
 msgid ""
 "Use :func:`issubclass` to check class inheritance: ``issubclass(bool, int)``"
 " is ``True`` since :class:`bool` is a subclass of :class:`int`.  However, "
@@ -637,17 +636,17 @@ msgid ""
 ":class:`basestring`)."
 msgstr ":func:`issubclass` を使うとクラスの継承関係が調べられます。 :class:`bool` は :class:`int` のサブクラスなので ``issubclass(bool, int)`` は ``True`` です。しかし、 :class:`unicode` は :class:`str` のサブクラスではない (単に共通の祖先 :class:`basestring` を共有している) ので ``issubclass(unicode, str)`` は ``False`` です。"
 
-#: ../../tutorial/classes.rst:561
+#: ../../tutorial/classes.rst:566
 msgid "Multiple Inheritance"
 msgstr "多重継承"
 
-#: ../../tutorial/classes.rst:563
+#: ../../tutorial/classes.rst:568
 msgid ""
 "Python supports a limited form of multiple inheritance as well.  A class "
 "definition with multiple base classes looks like this::"
 msgstr "Python では、限られた形式の多重継承 (multiple inheritance) もサポートしています。複数の基底クラスをもつクラス定義は次のようになります::"
 
-#: ../../tutorial/classes.rst:573
+#: ../../tutorial/classes.rst:578
 msgid ""
 "For old-style classes, the only rule is depth-first, left-to-right.  Thus, "
 "if an attribute is not found in :class:`DerivedClassName`, it is searched in"
@@ -656,7 +655,7 @@ msgid ""
 "on."
 msgstr "旧形式のクラスでは、名前解決規則は単に、深さ優先、左から右へ、だけです。従って、ある属性が :class:`DerivedClassName` で見つからなければ :class:`Base1` で検索され、次に :class:`Base1` の基底クラスで (再帰的に) 検索されます。それでも見つからなければはじめて :class:`Base2` で検索される、といった具合です。"
 
-#: ../../tutorial/classes.rst:578
+#: ../../tutorial/classes.rst:583
 msgid ""
 "(To some people breadth first --- searching :class:`Base2` and "
 ":class:`Base3` before the base classes of :class:`Base1` --- looks more "
@@ -667,7 +666,7 @@ msgid ""
 " differences between direct and inherited attributes of :class:`Base1`.)"
 msgstr "(人によっては、幅優先 (breadth first) --- :class:`Base2` と :class:`Base3` を検索してから :class:`Base1` の基底クラスで検索する --- のほうが自然に思うかもしれません。しかしながら、幅優先の検索では、 :class:`Base1` の特定の属性のうち、実際に定義されているのが :class:`Base1` なのか、その基底クラスなのかを知らなければ、 :class:`Base2` の属性との名前衝突がどんな結果をもたらすのか分からないことになります。深さ優先規則では、 :class:`Base1` の直接の属性と継承された属性とを区別しません。)"
 
-#: ../../tutorial/classes.rst:586
+#: ../../tutorial/classes.rst:591
 msgid ""
 "For :term:`new-style class`\\es, the method resolution order changes "
 "dynamically to support cooperative calls to :func:`super`.  This approach is"
@@ -675,7 +674,7 @@ msgid ""
 "is more powerful than the super call found in single-inheritance languages."
 msgstr "新スタイルクラス(:term:`new-style class`) では、協調的な :func:`super` の呼び出しのためにメソッドの解決順序は動的に変更されます。このアプローチは他の多重継承のある言語で call-next-method として知られており、単一継承しかない言語の super 呼び出しよりも強力です。"
 
-#: ../../tutorial/classes.rst:591
+#: ../../tutorial/classes.rst:596
 msgid ""
 "With new-style classes, dynamic ordering is necessary because all  cases of "
 "multiple inheritance exhibit one or more diamond relationships (where at "
@@ -692,11 +691,11 @@ msgid ""
 "https://www.python.org/download/releases/2.3/mro/."
 msgstr "新スタイルクラスについて、多重継承の全ての場合に 1 つかそれ以上のダイヤモンド継承 (少なくとも 1 つの祖先クラスに対し最も下のクラスから到達する経路が複数ある状態) があるので、動的順序付けが必要です。例えば、全ての新形式のクラスは :class:`object` を継承しているので、どの多重継承でも :class:`object` へ到達するための道は複数存在します。基底クラスが複数回アクセスされないようにするために、動的アルゴリズムで検索順序を直列化し、各クラスで指定されている祖先クラスどうしの左から右への順序は崩さず、各祖先クラスを一度だけ呼び出し、かつ一様になる (つまり祖先クラスの順序に影響を与えずにサブクラス化できる) ようにします。まとめると、これらの特徴のおかげで信頼性と拡張性のある多重継承したクラスを設計することができるのです。さらに詳細を知りたければ、 https://www.python.org/download/releases/2.3/mro/ を見てください。"
 
-#: ../../tutorial/classes.rst:609
+#: ../../tutorial/classes.rst:614
 msgid "Private Variables and Class-local References"
 msgstr "プライベート変数とクラスローカルな参照"
 
-#: ../../tutorial/classes.rst:611
+#: ../../tutorial/classes.rst:616
 msgid ""
 "\"Private\" instance variables that cannot be accessed except from inside an"
 " object don't exist in Python.  However, there is a convention that is "
@@ -706,7 +705,7 @@ msgid ""
 "implementation detail and subject to change without notice."
 msgstr "オブジェクトの中からしかアクセス出来ない \"プライベート\" インスタンス変数は、 Python にはありません。しかし、ほとんどの Python コードが従っている慣習があります。アンダースコアで始まる名前 (例えば ``_spam``) は、 (関数であれメソッドであれデータメンバであれ) 非 public なAPIとして扱います。これらは、予告なく変更されるかもしれない実装の詳細として扱われるべきです。"
 
-#: ../../tutorial/classes.rst:618
+#: ../../tutorial/classes.rst:623
 msgid ""
 "Since there is a valid use-case for class-private members (namely to avoid "
 "name clashes of names with names defined by subclasses), there is limited "
@@ -718,20 +717,20 @@ msgid ""
 "identifier, as long as it occurs within the definition of a class."
 msgstr "クラスのプライベートメンバについて適切なユースケース(特にサブクラスで定義された名前との衝突を避ける場合)があるので、マングリング(:dfn:`name mangling`) と呼ばれる、限定されたサポート機構があります。 ``__spam`` (先頭に二個以上の下線文字、末尾に一個以下の下線文字) という形式の識別子は、 ``_classname__spam`` へとテキスト置換されるようになりました。ここで ``classname`` は、現在のクラス名から先頭の下線文字をはぎとった名前になります。このような難号化 (mangle) は、識別子の文法的な位置にかかわらず行われるので、クラス定義内に現れた識別子全てに対して実行されます。"
 
-#: ../../tutorial/classes.rst:627
+#: ../../tutorial/classes.rst:632
 msgid ""
 "Name mangling is helpful for letting subclasses override methods without "
 "breaking intraclass method calls.  For example::"
 msgstr "名前のマングリングは、サブクラスが内部のメソッド呼び出しを壊さずにメソッドをオーバーライドするのに便利です。例えば::"
 
-#: ../../tutorial/classes.rst:649
+#: ../../tutorial/classes.rst:654
 msgid ""
 "Note that the mangling rules are designed mostly to avoid accidents; it "
 "still is possible to access or modify a variable that is considered private."
 "  This can even be useful in special circumstances, such as in the debugger."
 msgstr "難号化の規則は主に不慮の事故を防ぐためのものだということに注意してください; 確信犯的な方法で、プライベートとされている変数にアクセスしたり変更することは依然として可能なのです。デバッガのような特殊な状況では、この仕様は便利ですらあります。"
 
-#: ../../tutorial/classes.rst:653
+#: ../../tutorial/classes.rst:658
 msgid ""
 "Notice that code passed to ``exec``, ``eval()`` or ``execfile()`` does not "
 "consider the classname of the invoking  class to be the current class; this "
@@ -741,18 +740,18 @@ msgid ""
 "well as when referencing ``__dict__`` directly."
 msgstr " ``exec``, ``eval()`` や ``execfile()``  へ渡されたコードでは、呼出し元のクラス名を現在のクラスと見なさないことに注意してください。この仕様は ``global`` 文の効果と似ており、その効果もまた同様に、バイトコンパイルされたコードに制限されています。同じ制約が ``getattr()`` と ``setattr()`` と ``delattr()`` にも適用されます。また、 ``__dict__`` を直接参照するときにも適用されます。"
 
-#: ../../tutorial/classes.rst:664
+#: ../../tutorial/classes.rst:669
 msgid "Odds and Ends"
 msgstr "残りのはしばし"
 
-#: ../../tutorial/classes.rst:666
+#: ../../tutorial/classes.rst:671
 msgid ""
 "Sometimes it is useful to have a data type similar to the Pascal \"record\" "
 "or C \"struct\", bundling together a few named data items.  An empty class "
 "definition will do nicely::"
 msgstr "Pascal の \"レコード (record)\" や、C 言語の \"構造体 (struct)\" のような、名前つきのデータ要素を一まとめにするデータ型があると便利なことがあります。空のクラス定義を使うとうまくできます::"
 
-#: ../../tutorial/classes.rst:680
+#: ../../tutorial/classes.rst:685
 msgid ""
 "A piece of Python code that expects a particular abstract data type can "
 "often be passed a class that emulates the methods of that data type instead."
@@ -762,36 +761,36 @@ msgid ""
 "it as an argument."
 msgstr "ある特定の抽象データ型を要求する Python コードの断片に、そのデータ型のメソッドをエミュレーションするクラスを代わりに渡すことができます。例えば、ファイルオブジェクトから何らかのデータを構築する関数がある場合、 :meth:`read` と :meth:`!readline` を持つクラスを定義して、ファイルではなく文字列バッファからデータを取得するようにしておき、引数として渡すことができます。"
 
-#: ../../tutorial/classes.rst:691
+#: ../../tutorial/classes.rst:696
 msgid ""
 "Instance method objects have attributes, too: ``m.im_self`` is the instance "
 "object with the method :meth:`m`, and ``m.im_func`` is the function object "
 "corresponding to the method."
 msgstr "インスタンスメソッドオブジェクトにも属性があります。 ``m.im_self`` はメソッド :meth:`m` の属しているインスタンスオブジェクトで、 ``m.im_func`` はメソッドに対応する関数オブジェクトです。"
 
-#: ../../tutorial/classes.rst:699
+#: ../../tutorial/classes.rst:704
 msgid "Exceptions Are Classes Too"
 msgstr "例外はクラスであってもよい"
 
-#: ../../tutorial/classes.rst:701
+#: ../../tutorial/classes.rst:706
 msgid ""
 "User-defined exceptions are identified by classes as well.  Using this "
 "mechanism it is possible to create extensible hierarchies of exceptions."
 msgstr "ユーザ定義の例外をクラスとして識別することもできます。このメカニズムを使って、拡張可能な階層化された例外を作成することができます。"
 
-#: ../../tutorial/classes.rst:704
+#: ../../tutorial/classes.rst:709
 msgid ""
 "There are two new valid (semantic) forms for the :keyword:`raise` "
 "statement::"
 msgstr "新しい二つの (意味付け的な) 形式の :keyword:`raise` 文があります::"
 
-#: ../../tutorial/classes.rst:710
+#: ../../tutorial/classes.rst:715
 msgid ""
 "In the first form, ``instance`` must be an instance of :class:`Class` or of "
 "a class derived from it.  The second form is a shorthand for::"
 msgstr "第一の形式では、 ``instance`` は :class:`Class` またはその派生クラスのインスタンスでなければなりません。第二の形式は以下の表記の短縮された記法です。"
 
-#: ../../tutorial/classes.rst:715
+#: ../../tutorial/classes.rst:720
 msgid ""
 "A class in an :keyword:`except` clause is compatible with an exception if it"
 " is the same class or a base class thereof (but not the other way around ---"
@@ -799,31 +798,31 @@ msgid ""
 "class).  For example, the following code will print B, C, D in that order::"
 msgstr ":keyword:`except` 節のクラスは、例外と同じクラスか基底クラスのときに互換 (compatible)となります。 (逆方向では成り立ちません --- 派生クラスの例外がリストされている except 節は基底クラスの例外と互換ではありません)。例えば、次のコードは、 B, C, D を順序通りに出力します::"
 
-#: ../../tutorial/classes.rst:737
+#: ../../tutorial/classes.rst:742
 msgid ""
 "Note that if the except clauses were reversed (with ``except B`` first), it "
 "would have printed B, B, B --- the first matching except clause is "
 "triggered."
 msgstr "except 節が逆に並んでいた場合 (``except B`` が最初にくる場合)、 B, B, B と出力されるはずだったことに注意してください --- 最初に一致した except 節が駆動されるのです。"
 
-#: ../../tutorial/classes.rst:740
+#: ../../tutorial/classes.rst:745
 msgid ""
 "When an error message is printed for an unhandled exception, the exception's"
 " class name is printed, then a colon and a space, and finally the instance "
 "converted to a string using the built-in function :func:`str`."
 msgstr "処理されないクラスの例外に対してエラーメッセージが出力されるとき、まずクラス名が出力され、続いてコロン、スペース、最後に組み込み関数 :func:`str` を使って文字列に変換したインスタンスが出力されます。"
 
-#: ../../tutorial/classes.rst:748
+#: ../../tutorial/classes.rst:753
 msgid "Iterators"
 msgstr "イテレータ (iterator)"
 
-#: ../../tutorial/classes.rst:750
+#: ../../tutorial/classes.rst:755
 msgid ""
 "By now you have probably noticed that most container objects can be looped "
 "over using a :keyword:`for` statement::"
 msgstr "すでに気づいているでしょうが、 :keyword:`for` 文を使うとほとんどのコンテナオブジェクトにわたってループを行うことができます::"
 
-#: ../../tutorial/classes.rst:764
+#: ../../tutorial/classes.rst:769
 msgid ""
 "This style of access is clear, concise, and convenient.  The use of "
 "iterators pervades and unifies Python.  Behind the scenes, the "
@@ -835,7 +834,7 @@ msgid ""
 "terminate. This example shows how it all works::"
 msgstr "こうしたアクセス方法は明確で、簡潔で、かつ便利なものです。イテレータの使用は Python 全体に普及していて、統一性をもたらしています。背後では、:keyword:`for` 文はコンテナオブジェクトの :func:`iter` を呼び出しています。この関数は :meth:`~iterator.next` メソッドの定義されたイテレータオブジェクトを返します。 :meth:`~iterator.next` メソッドは一度コンテナ内の要素に一度に一つづつアクセスします。コンテナ内にアクセスすべき要素がなくなると、 :meth:`~iterator.next` は :exc:`StopIteration` 例外を送出し、 ``for`` ループを終了させます。実際にどのように動作するかを以下の例に示します::"
 
-#: ../../tutorial/classes.rst:789
+#: ../../tutorial/classes.rst:794
 msgid ""
 "Having seen the mechanics behind the iterator protocol, it is easy to add "
 "iterator behavior to your classes.  Define an :meth:`__iter__` method which "
@@ -844,11 +843,11 @@ msgid ""
 "``self``::"
 msgstr "イテレータプロトコルの背後にあるメカニズムを一度目にすれば、自作のクラスにイテレータとしての振る舞いを追加するのは簡単です。 :meth:`__iter__` メソッドを定義して、 :meth:`~iterator.next` メソッドを持つオブジェクトを返すようにしてください。クラス自体で :meth:`~iterator.next` を定義している場合、 :meth:`__iter__` では単に ``self`` を返すようにできます::"
 
-#: ../../tutorial/classes.rst:824
+#: ../../tutorial/classes.rst:831
 msgid "Generators"
 msgstr "ジェネレータ (generator)"
 
-#: ../../tutorial/classes.rst:826
+#: ../../tutorial/classes.rst:833
 msgid ""
 ":term:`Generator`\\s are a simple and powerful tool for creating iterators."
 "  They are written like regular functions but use the :keyword:`yield` "
@@ -858,7 +857,7 @@ msgid ""
 "generators can be trivially easy to create::"
 msgstr "ジェネレータ(:term:`generator`)は、イテレータを作成するための簡潔で強力なツールです。ジェネレータは通常の関数のように書かれますが、何らかのデータを返すときには :keyword:`yield` 文を使います。そのジェネレータに対して :func:`next` が呼び出されるたびに、ジェネレータは以前に中断した処理を再開します (ジェネレータは、全てのデータ値と最後にどの文が実行されたかを記憶しています)。以下の例を見れば、ジェネレータがとても簡単に作成できることがわかります::"
 
-#: ../../tutorial/classes.rst:847
+#: ../../tutorial/classes.rst:854
 msgid ""
 "Anything that can be done with generators can also be done with class-based "
 "iterators as described in the previous section.  What makes generators so "
@@ -866,7 +865,7 @@ msgid ""
 " created automatically."
 msgstr "ジェネレータを使ってできることは、前節で記述したクラスベースのイテレータを使ってもできます。ジェネレータを使うとコンパクトに記述できるのは、 :meth:`__iter__` と :meth:`~iterator.next` メソッドが自動的に作成されるからです。"
 
-#: ../../tutorial/classes.rst:852
+#: ../../tutorial/classes.rst:859
 msgid ""
 "Another key feature is that the local variables and execution state are "
 "automatically saved between calls.  This made the function easier to write "
@@ -874,7 +873,7 @@ msgid ""
 "``self.index`` and ``self.data``."
 msgstr "ジェネレータのもう一つの重要な機能は、呼び出しごとにローカル変数と実行状態が自動的に保存されるということです。これにより、 ``self.index`` や ``self.data`` といったインスタンス変数を使ったアプローチよりも簡単に関数を書くことができるようになります。"
 
-#: ../../tutorial/classes.rst:857
+#: ../../tutorial/classes.rst:864
 msgid ""
 "In addition to automatic method creation and saving program state, when "
 "generators terminate, they automatically raise :exc:`StopIteration`. In "
@@ -882,11 +881,11 @@ msgid ""
 "effort than writing a regular function."
 msgstr "メソッドを自動生成したりプログラムの実行状態を自動保存するほかに、ジェネレータは終了時に自動的に :exc:`StopIteration` を送出します。これらの機能を組み合わせると、通常の関数を書くのと同じ労力で、簡単にイテレータを生成できます。"
 
-#: ../../tutorial/classes.rst:866
+#: ../../tutorial/classes.rst:873
 msgid "Generator Expressions"
 msgstr "ジェネレータ式"
 
-#: ../../tutorial/classes.rst:868
+#: ../../tutorial/classes.rst:875
 msgid ""
 "Some simple generators can be coded succinctly as expressions using a syntax"
 " similar to list comprehensions but with parentheses instead of brackets.  "
@@ -896,20 +895,20 @@ msgid ""
 "memory friendly than equivalent list comprehensions."
 msgstr "単純なジェネレータなら、式を使って簡潔にコードする方法があります。リスト内包に似た構文の式ですが、角括弧ではなく丸括弧を使います。ジェネレータ式は、関数の中でジェネレータをすぐに使いたいような状況のために用意されています。ジェネレータ式はコンパクトですが、完全なジェネレータに比べてちょっと融通の効かないところがありますが、同じ内容を返すリスト内包よりはメモリに優しいことが多いという利点があります。"
 
-#: ../../tutorial/classes.rst:875
+#: ../../tutorial/classes.rst:882
 msgid "Examples::"
 msgstr "例::"
 
-#: ../../tutorial/classes.rst:899
+#: ../../tutorial/classes.rst:906
 msgid "Footnotes"
 msgstr "注記"
 
-#: ../../tutorial/classes.rst:900
+#: ../../tutorial/classes.rst:907
 msgid ""
 "Except for one thing.  Module objects have a secret read-only attribute "
-"called :attr:`__dict__` which returns the dictionary used to implement the "
-"module's namespace; the name :attr:`__dict__` is an attribute but not a "
-"global name. Obviously, using this violates the abstraction of namespace "
-"implementation, and should be restricted to things like post-mortem "
-"debuggers."
-msgstr "例外が一つあります。モジュールオブジェクトには、秘密の読取り専用の属性 :attr:`__dict__` があり、モジュールの名前空間を実装するために使われている辞書を返します; :attr:`__dict__` という名前は属性ですが、グローバルな名前ではありません。この属性を利用すると名前空間の実装に対する抽象化を侵すことになるので、プログラムを検死するデバッガのような用途に限るべきです。"
+"called :attr:`~object.__dict__` which returns the dictionary used to "
+"implement the module's namespace; the name :attr:`~object.__dict__` is an "
+"attribute but not a global name. Obviously, using this violates the "
+"abstraction of namespace implementation, and should be restricted to things "
+"like post-mortem debuggers."
+msgstr "例外が一つあります。モジュールオブジェクトには、秘密の読取り専用の属性 :attr:`~object.__dict__` があり、モジュールの名前空間を実装するために使われている辞書を返します; :attr:`~object.__dict__` という名前は属性ですが、グローバルな名前ではありません。この属性を利用すると名前空間の実装に対する抽象化を侵すことになるので、プログラムを検死するデバッガのような用途に限るべきです。"

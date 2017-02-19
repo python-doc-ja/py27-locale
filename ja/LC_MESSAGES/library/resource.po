@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,9 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2017-01-04 11:51+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
+"PO-Revision-Date: 2017-02-19 16:02+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -69,7 +68,7 @@ msgid ""
 msgstr "制限をかけるべく指定できるリソースはシステムに依存します。指定できるリソースは :manpage:`getrlimit(2)` マニュアルページで解説されています。以下に列挙するリソースは背後のオペレーティングシステムがサポートする場合にサポートされています; オペレーティングシステム側で値を調べたり制御したりできないリソースは、そのプラットフォーム向けのこのモジュール内では定義されていません。"
 
 #: ../../library/resource.rst:47
-msgid "Constant used to represent the the limit for an unlimited resource."
+msgid "Constant used to represent the limit for an unlimited resource."
 msgstr "無制限のリソースの上限を示すための定数です。"
 
 #: ../../library/resource.rst:52
@@ -137,18 +136,18 @@ msgid ""
 msgstr "プロセッサが利用することができる最大プロセッサ時間 (秒) です。この制限を超えた場合、 :const:`SIGXCPU` シグナルがプロセスに送られます。 (どのようにしてシグナルを捕捉したり、例えば開かれているファイルをディスクにフラッシュするといった有用な処理を行うかについての情報は、 :mod:`signal` モジュールのドキュメントを参照してください)"
 
 #: ../../library/resource.rst:104
-msgid ""
-"The maximum size of a file which the process may create.  This only affects "
-"the stack of the main thread in a multi-threaded process."
-msgstr "プロセスが生成できるファイルの最大サイズです。マルチスレッドプロセスの場合、この値は主スレッドのスタックにのみ影響します。"
+msgid "The maximum size of a file which the process may create."
+msgstr "プロセスが作成するファイルの最大サイズです。"
 
-#: ../../library/resource.rst:110
+#: ../../library/resource.rst:109
 msgid "The maximum size (in bytes) of the process's heap."
 msgstr "プロセスのヒープの最大 (バイト) サイズです。"
 
-#: ../../library/resource.rst:115
-msgid "The maximum size (in bytes) of the call stack for the current process."
-msgstr "現在のプロセスのコールスタックの最大 (バイト) サイズです。"
+#: ../../library/resource.rst:114
+msgid ""
+"The maximum size (in bytes) of the call stack for the current process.  This"
+" only affects the stack of the main thread in a multi-threaded process."
+msgstr "現在のプロセスのコールスタックの最大サイズ (バイト単位) です。\nこれはマルチスレッドプロセスのメインスレッドのスタックのみに影響します。"
 
 #: ../../library/resource.rst:120
 msgid ""

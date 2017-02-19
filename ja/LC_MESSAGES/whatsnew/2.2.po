@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-06 15:07+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:14+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -50,11 +49,11 @@ msgid ""
 "This article doesn't attempt to provide a complete specification of the new "
 "features, but instead provides a convenient overview.  For full details, you"
 " should refer to the documentation for Python 2.2, such as the `Python "
-"Library Reference <https://www.python.org/doc/2.2/lib/lib.html>`_ and the "
-"`Python Reference Manual <https://www.python.org/doc/2.2/ref/ref.html>`_.  "
-"If you want to understand the complete implementation and design rationale "
-"for a change, refer to the PEP for a particular new feature."
-msgstr "このドキュメントは個々の新機能の完全な詳細を提供するのではなくて、簡易な概要を提供することを目的にしています。完全な詳細が知りたければ、`Python ライブラリリファレンス <https://www.python.org/doc/2.2/lib/lib.html>`_ 、`Python リファレンスマニュアル <https://www.python.org/doc/2.2/ref/ref.html>`_ のような Python 2.2 のドキュメントを参照すべきです。設計と実装の根拠を理解したい場合は、新機能に関する PEP を参照してください。"
+"Library Reference <https://docs.python.org/2.2/lib/lib.html>`_ and the "
+"`Python Reference Manual <https://docs.python.org/2.2/ref/ref.html>`_.  If "
+"you want to understand the complete implementation and design rationale for "
+"a change, refer to the PEP for a particular new feature."
+msgstr "このドキュメントは個々の新機能の完全な詳細を提供するのではなくて、簡易な概要を提供することを目的にしています。完全な詳細が知りたければ、`Python ライブラリリファレンス <https://docs.python.org/2.2/lib/lib.html>`_ 、`Python リファレンスマニュアル <https://docs.python.org/2.2/ref/ref.html>`_ のような Python 2.2 のドキュメントを参照すべきです。設計と実装の根拠を理解したい場合は、新機能に関する PEP を参照してください。"
 
 #: ../../whatsnew/2.2.rst:43
 msgid "PEPs 252 and 253: Type and Class Changes"
@@ -79,8 +78,8 @@ msgid ""
 "useful method to them. The :mod:`UserList` module provides a class that "
 "supports all of the methods of lists and that can be subclassed further, but"
 " there's lots of C code that expects a regular Python list and won't accept "
-"a :class:`UserList` instance."
-msgstr "昔々、あるところにいた私は、Python 設計の欠点を列挙するウェブページを書きました。その中でも最も重大な欠陥と思われたのが、C で実装された Python 型をサブクラス化出来ないことでした。特に、組み込み型をサブクラス化できません。ですからあなたは、そう、一つの便利メソッドを追加したくてリストをサブクラス化することも出来ないのです。 :mod:`UserList` モジュールがリストの全てのメソッドをサポートし、さらにサブクラス化も出来ますが、大量の通常 Python リストを期待する C コードがあり、それらは :class:`UserList` のインスタンスを受け付けないでしょう。"
+"a :class:`~UserList.UserList` instance."
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:61
 msgid ""
@@ -213,10 +212,10 @@ msgid ""
 "informal conventions, such as defining :attr:`__members__` and "
 ":attr:`__methods__` attributes that were lists of names, but often the "
 "author of an extension type or a class wouldn't bother to define them.  You "
-"could fall back on inspecting the :attr:`__dict__` of an object, but when "
-"class inheritance or an arbitrary :meth:`__getattr__` hook were in use this "
-"could still be inaccurate."
-msgstr "以前のバージョンの Python には、オブジェクトによってサポートされている属性とメソッドがなんなのかを見つけ出すための一貫した方法はありませんでした。 :attr:`__members__` と :attr:`__methods__` で名前のリストを公開するといった非公式な慣習は存在してはいましたが、拡張型やクラスの作者はわざわざそれらを定義しないということは、ままありました。一歩後退してオブジェクトの :attr:`__dict__` を調べられたとしても、クラスが継承や任意の :meth:`__getattr__` フックを使っていたりすれば、これはなお不正確になりえました。"
+"could fall back on inspecting the :attr:`~object.__dict__` of an object, but"
+" when class inheritance or an arbitrary :meth:`__getattr__` hook were in use"
+" this could still be inaccurate."
+msgstr "以前のバージョンの Python には、オブジェクトによってサポートされている属性とメソッドがなんなのかを見つけ出すための一貫した方法はありませんでした。 :attr:`__members__` と :attr:`__methods__` で名前のリストを公開するといった非公式な慣習は存在してはいましたが、拡張型やクラスの作者はわざわざそれらを定義しないということは、ままありました。一歩後退してオブジェクトの :attr:`~object.__dict__` を調べられたとしても、クラスが継承や任意の :meth:`__getattr__` フックを使っていたりすれば、これはなお不正確になりえました。"
 
 #: ../../whatsnew/2.2.rst:163
 msgid ""
@@ -234,8 +233,8 @@ msgid ""
 msgstr "属性デスクリプタはクラスオブジェクト内部に棲息するオブジェクトで、それ自身のいくつかの属性を持っています:"
 
 #: ../../whatsnew/2.2.rst:172
-msgid ":attr:`__name__` is the attribute's name."
-msgstr ":attr:`__name__` は属性の名前です。"
+msgid ":attr:`~definition.__name__` is the attribute's name."
+msgstr ":attr:`~definition.__name__` は属性の名前です。"
 
 #: ../../whatsnew/2.2.rst:174
 msgid ":attr:`__doc__` is the attribute's docstring."
@@ -243,20 +242,18 @@ msgstr ":attr:`__doc__` は属性の docstring です。"
 
 #: ../../whatsnew/2.2.rst:176
 msgid ""
-":meth:`__get__(object)` is a method that retrieves the attribute value from "
+"``__get__(object)`` is a method that retrieves the attribute value from "
 "*object*."
-msgstr ":meth:`__get__(object)` は *object* から属性値を取り出すメソッドです。"
+msgstr "``__get__(object)`` は *object* から属性値を取り出すメソッドです。"
 
 #: ../../whatsnew/2.2.rst:179
-msgid ""
-":meth:`__set__(object, value)` sets the attribute on *object* to *value*."
-msgstr ":meth:`__set__(object, value)` は *object* の属性に  *value* をセットするメソッドです。"
+msgid "``__set__(object, value)`` sets the attribute on *object* to *value*."
+msgstr "``__set__(object, value)`` は *object* の属性に  *value* をセットするメソッドです。"
 
 #: ../../whatsnew/2.2.rst:181
 msgid ""
-":meth:`__delete__(object, value)` deletes the *value*  attribute of "
-"*object*."
-msgstr ":meth:`__delete__(object, value)` は *object* の *value*  属性を削除します。"
+"``__delete__(object, value)`` deletes the *value*  attribute of *object*."
+msgstr "``__delete__(object, value)`` は *object* の *value*  属性を削除します。"
 
 #: ../../whatsnew/2.2.rst:183
 msgid ""
@@ -359,18 +356,18 @@ msgid ""
 "one followed by Common Lisp.  A new built-in function, :func:`super`, "
 "provides a way to get at a class's superclasses without having to "
 "reimplement Python's algorithm. The most commonly used form will be  "
-":func:`super(class, obj)`, which returns  a bound superclass object (not the"
-" actual class object).  This form will be used in methods to call a method "
-"in the superclass; for example, :class:`D`'s :meth:`save` method would look "
+"``super(class, obj)``, which returns  a bound superclass object (not the "
+"actual class object).  This form will be used in methods to call a method in"
+" the superclass; for example, :class:`D`'s :meth:`save` method would look "
 "like this::"
-msgstr "このルールに従うと :meth:`D.save` 参照は :meth:`C.save` を返します。これが我々が望んだ振る舞いです。この探索ルールは Common Lisp に倣ったものです。新しい組み込み関数 :func:`super` は Python のアルゴリズムを再実装する必要なくクラスのスーパークラスを得る手段を提供します。その最も一般的な用法は :func:`super(class, obj)` とすることで束縛されたスーパークラスのオブジェクト(実際のクラスオブジェクトではなく)を取得することです。この形式はスーパークラス内のメソッドを呼び出すメソッドで使われるでしょう。例えば :class:`D` の :meth:`save` メソッドはこのように呼び出すことが出来ます::"
+msgstr "このルールに従うと :meth:`D.save` 参照は :meth:`C.save` を返します。これが我々が望んだ振る舞いです。この探索ルールは Common Lisp に倣ったものです。新しい組み込み関数 :func:`super` は Python のアルゴリズムを再実装する必要なくクラスのスーパークラスを得る手段を提供します。その最も一般的な用法は ``super(class, obj)`` とすることで束縛されたスーパークラスのオブジェクト(実際のクラスオブジェクトではなく)を取得することです。この形式はスーパークラス内のメソッドを呼び出すメソッドで使われるでしょう。例えば :class:`D` の :meth:`save` メソッドはこのように呼び出すことが出来ます::"
 
 #: ../../whatsnew/2.2.rst:303
 msgid ""
 ":func:`super` can also return unbound superclass objects when called as "
-":func:`super(class)` or :func:`super(class1, class2)`, but this probably "
-"won't often be useful."
-msgstr ":func:`super` は :func:`super(class)` や :func:`super(class1, class2)` のように呼ばれれば非束縛のスーパークラスオブジェクトも返せますが、これはあまり役には立たないでしょう。"
+"``super(class)`` or ``super(class1, class2)``, but this probably won't often"
+" be useful."
+msgstr ":func:`super` は ``super(class)`` や ``super(class1, class2)`` のように呼ばれれば非束縛のスーパークラスオブジェクトも返せますが、これはあまり役には立たないでしょう。"
 
 #: ../../whatsnew/2.2.rst:309
 msgid "Attribute Access"
@@ -388,20 +385,20 @@ msgstr "かなりの数の洗練された Python クラスが、 :meth:`__getatt
 
 #: ../../whatsnew/2.2.rst:317
 msgid ""
-"First, :meth:`__getattr__(attr_name)` is still supported by new-style "
-"classes, and nothing about it has changed.  As before, it will be called "
-"when an attempt is made to access ``obj.foo`` and no attribute named ``foo``"
-" is found in the instance's dictionary."
-msgstr "まず、 :meth:`__getattr__(attr_name)` は新スタイルクラスにおいてもなおサポートされ、変更はありません。これまで同様に、 ``obj.foo`` アクセスが試みられて、インスタンスの辞書に ``foo`` 名の属性が見つからなければ呼び出されます。"
+"First, ``__getattr__(attr_name)`` is still supported by new-style classes, "
+"and nothing about it has changed.  As before, it will be called when an "
+"attempt is made to access ``obj.foo`` and no attribute named ``foo`` is "
+"found in the instance's dictionary."
+msgstr "まず、 ``__getattr__(attr_name)`` は新スタイルクラスにおいてもなおサポートされ、変更はありません。これまで同様に、 ``obj.foo`` アクセスが試みられて、インスタンスの辞書に ``foo`` 名の属性が見つからなければ呼び出されます。"
 
 #: ../../whatsnew/2.2.rst:322
 msgid ""
 "New-style classes also support a new method, "
-":meth:`__getattribute__(attr_name)`.  The difference between the two methods"
-" is that :meth:`__getattribute__` is *always* called whenever any attribute "
-"is accessed, while the old :meth:`__getattr__` is only called if ``foo`` "
-"isn't found in the instance's dictionary."
-msgstr "新スタイルクラスでは新しいメソッド :meth:`__getattribute__(attr_name)` もサポートされます。 2 つのメソッドの違いは、古いほうの :meth:`__getattr__` が ``foo`` がインスタンスの辞書に見つからなかった場合のみ呼ばれる一方で、 :meth:`__getattribute__` は任意の属性アクセスがあればいつでも *常に* 呼び出されることです。"
+"``__getattribute__(attr_name)``.  The difference between the two methods is "
+"that :meth:`__getattribute__` is *always* called whenever any attribute is "
+"accessed, while the old :meth:`__getattr__` is only called if ``foo`` isn't "
+"found in the instance's dictionary."
+msgstr "新スタイルクラスでは新しいメソッド ``__getattribute__(attr_name)`` もサポートされます。 2 つのメソッドの違いは、古いほうの :meth:`__getattr__` が ``foo`` がインスタンスの辞書に見つからなかった場合のみ呼ばれる一方で、 :meth:`__getattribute__` は任意の属性アクセスがあればいつでも *常に* 呼び出されることです。"
 
 #: ../../whatsnew/2.2.rst:328
 msgid ""
@@ -409,12 +406,12 @@ msgid ""
 "way to trap attribute references.  Writing a :meth:`__getattr__` method is "
 "complicated because to avoid recursion you can't use regular attribute "
 "accesses inside them, and instead have to mess around with the contents of "
-":attr:`__dict__`. :meth:`__getattr__` methods also end up being called by "
-"Python when it checks for other methods such as :meth:`__repr__` or "
-":meth:`__coerce__`, and so have to be written with this in mind. Finally, "
-"calling a function on every attribute access results in a sizable "
+":attr:`~object.__dict__`. :meth:`__getattr__` methods also end up being "
+"called by Python when it checks for other methods such as :meth:`__repr__` "
+"or :meth:`__coerce__`, and so have to be written with this in mind. Finally,"
+" calling a function on every attribute access results in a sizable "
 "performance loss."
-msgstr "しかしながら、Python 2.2 の :dfn:`properties` サポートは、しばしば属性参照をトラップするより簡単な方法になります。 :meth:`__getattr__` メソッドの記述が複雑になるのは、再帰を避けるために内部では普通の属性アクセスが出来ず、代わりに :attr:`__dict__` の中身をもてあそぶ必要があるからです。 :meth:`__getattr__` メソッド は、 :meth:`__repr__` や :meth:`__coerce__` のようなほかのメソッドのためにチェックするのにも結局 Python によって呼び出されるので、これを念頭に置いて書かなければなりません。挙句、属性アクセスのたびに毎回関数を呼び出すことは、かなり大きなパフォーマンスロスに繋がります。"
+msgstr "しかしながら、Python 2.2 の :dfn:`properties` サポートは、しばしば属性参照をトラップするより簡単な方法になります。 :meth:`__getattr__` メソッドの記述が複雑になるのは、再帰を避けるために内部では普通の属性アクセスが出来ず、代わりに :attr:`~object.__dict__` の中身をもてあそぶ必要があるからです。 :meth:`__getattr__` メソッド は、 :meth:`__repr__` や :meth:`__coerce__` のようなほかのメソッドのためにチェックするのにも結局 Python によって呼び出されるので、これを念頭に置いて書かなければなりません。挙句、属性アクセスのたびに毎回関数を呼び出すことは、かなり大きなパフォーマンスロスに繋がります。"
 
 #: ../../whatsnew/2.2.rst:337
 msgid ""
@@ -429,27 +426,28 @@ msgid ""
 "That is certainly clearer and easier to write than a pair of "
 ":meth:`__getattr__`/:meth:`__setattr__` methods that check for the "
 ":attr:`size` attribute and handle it specially while retrieving all other "
-"attributes from the instance's :attr:`__dict__`.  Accesses to :attr:`size` "
-"are also the only ones which have to perform the work of calling a function,"
-" so references to other attributes run at their usual speed."
-msgstr "これは確実に、より明快であり書くのが容易です。 :meth:`__getattr__`/:meth:`__setattr__` メソッドのペアでは、全てのほかの属性をインスタンスの :attr:`__dict__` から抽出しながら :attr:`size` 属性を特別に処理しなければならないところでした。:attr:`size` へのアクセス時に行われるのは仕掛けた関数を呼び出すことだけなので、ほかの属性への参照が速度を落とすことはありません。"
+"attributes from the instance's :attr:`~object.__dict__`.  Accesses to "
+":attr:`size` are also the only ones which have to perform the work of "
+"calling a function, so references to other attributes run at their usual "
+"speed."
+msgstr "これは確実に、より明快であり書くのが容易です。 :meth:`__getattr__`/:meth:`__setattr__` メソッドのペアでは、全てのほかの属性をインスタンスの :attr:`~object.__dict__` から抽出しながら :attr:`size` 属性を特別に処理しなければならないところでした。:attr:`size` へのアクセス時に行われるのは仕掛けた関数を呼び出すことだけなので、ほかの属性への参照が速度を落とすことはありません。"
 
 #: ../../whatsnew/2.2.rst:364
 msgid ""
 "Finally, it's possible to constrain the list of attributes that can be "
-"referenced on an object using the new :attr:`__slots__` class attribute. "
-"Python objects are usually very dynamic; at any time it's possible to define"
-" a new attribute on an instance by just doing ``obj.new_attr=1``.   A new-"
-"style class can define a class attribute named :attr:`__slots__` to limit "
-"the legal attributes  to a particular set of names.  An example will make "
-"this clear::"
-msgstr "もう一つ最後、新しいクラス属性 :attr:`__slots__` を使うと、オブジェクトで参照出来る属性リストを制約することが出来ます。Python オブジェクトは普通非常に動的で、どんなときにもインスタンスに対して単に ``obj.new_attr=1`` とするだけで新しい属性を定義出来ます。新スタイルクラスは :attr:`__slots__` という名前のクラス属性を定義出来、これにより適正な属性名集合を特定の集合に制限出来ます。実例をみるのが早いです::"
+"referenced on an object using the new :attr:`~object.__slots__` class "
+"attribute. Python objects are usually very dynamic; at any time it's "
+"possible to define a new attribute on an instance by just doing "
+"``obj.new_attr=1``.   A new-style class can define a class attribute named "
+":attr:`~object.__slots__` to limit the legal attributes  to a particular set"
+" of names.  An example will make this clear::"
+msgstr "もう一つ最後、新しいクラス属性 :attr:`~object.__slots__` を使うと、オブジェクトで参照出来る属性リストを制約することが出来ます。Python オブジェクトは普通非常に動的で、どんなときにもインスタンスに対して単に ``obj.new_attr=1`` とするだけで新しい属性を定義出来ます。新スタイルクラスは :attr:`~object.__slots__` という名前のクラス属性を定義出来、これにより適正な属性名集合を特定の集合に制限出来ます。実例をみるのが早いです::"
 
 #: ../../whatsnew/2.2.rst:385
 msgid ""
 "Note how you get an :exc:`AttributeError` on the attempt to assign to an "
-"attribute not listed in :attr:`__slots__`."
-msgstr ":attr:`__slots__` リストに含めなかった属性への代入を試みて :exc:`AttributeError` になっていることに注目してください。"
+"attribute not listed in :attr:`~object.__slots__`."
+msgstr ":attr:`~object.__slots__` リストに含めなかった属性への代入を試みて :exc:`AttributeError` になっていることに注目してください。"
 
 #: ../../whatsnew/2.2.rst:392
 msgid "Related Links"
@@ -465,12 +463,12 @@ msgstr "このセクションは新機能について、あなたがプログラ
 
 #: ../../whatsnew/2.2.rst:398
 msgid ""
-"https://www.python.org/2.2/descrintro.html is a lengthy tutorial "
+"https://docs.python.org/dev/howto/descriptor.html is a lengthy tutorial "
 "introduction to the descriptor features, written by Guido van Rossum. If my "
 "description has whetted your appetite, go read this tutorial next, because "
 "it goes into much more detail about the new features while still remaining "
 "quite easy to read."
-msgstr "https://www.python.org/2.2/descrintro.html はデスクリプタ機能のイントロダクションのために書かれた、Guido van Rossum による大作チュートリアルです。もしも私のこの記事があなたの食欲を刺激したのであれば、次はこのチュートリアルです。新機能について遥かに細かく書かれているのに、大変読みやすく書かれています。"
+msgstr "https://docs.python.org/dev/howto/descriptor.html はデスクリプタ機能のイントロダクションのために書かれた、Guido van Rossum による大作チュートリアルです。もしも私のこの記事があなたの食欲を刺激したのであれば、次はこのチュートリアルです。新機能について遥かに細かく書かれているのに、大変読みやすく書かれています。"
 
 #: ../../whatsnew/2.2.rst:403
 msgid ""
@@ -527,11 +525,11 @@ msgid ""
 "In Python 2.2, iteration can be implemented separately, and "
 ":meth:`__getitem__` methods can be limited to classes that really do support"
 " random access.  The basic idea of iterators is  simple.  A new built-in "
-"function, :func:`iter(obj)` or ``iter(C, sentinel)``, is used to get an "
-"iterator. :func:`iter(obj)` returns an iterator for the object *obj*, while "
+"function, ``iter(obj)`` or ``iter(C, sentinel)``, is used to get an "
+"iterator. ``iter(obj)`` returns an iterator for the object *obj*, while "
 "``iter(C, sentinel)`` returns an iterator that will invoke the callable "
 "object *C* until it returns *sentinel* to signal that the iterator is done."
-msgstr "Python 2.2 においては、イテレーションは分けて定義出来ます。 :meth:`__getitem__` メソッドは本当にランダムアクセスをサポートしたいクラスだけが使えば良いです。イテレータの基礎的なアイディアは単純です。新しいビルトイン関数 :func:`iter(obj)` または ``iter(C, sentinel)`` は、イテレータを取り出すのに使います。 :func:`iter(obj)` はオブジェクト  *obj* についてのイテレータを返し、 ``iter(C, sentinel)`` は、そのイテレータが完了を表明する *sentinel* を返すまで呼び出し可能オブジェクト *C* を呼び続けるイテレータを返します。"
+msgstr "Python 2.2 においては、イテレーションは分けて定義出来ます。 :meth:`__getitem__` メソッドは本当にランダムアクセスをサポートしたいクラスだけが使えば良いです。イテレータの基礎的なアイディアは単純です。新しいビルトイン関数 ``iter(obj)`` または ``iter(C, sentinel)`` は、イテレータを取り出すのに使います。 ``iter(obj)`` はオブジェクト  *obj* についてのイテレータを返し、 ``iter(C, sentinel)`` は、そのイテレータが完了を表明する *sentinel* を返すまで呼び出し可能オブジェクト *C* を呼び続けるイテレータを返します。"
 
 #: ../../whatsnew/2.2.rst:450
 msgid ""
@@ -597,8 +595,8 @@ msgid ""
 msgstr "イテレータは前進しか出来ないことに注意してください; 前の要素を取り出す手段もなければ、イテレータをリセットしたりコピーしたりといったことも出来ません。イテレータオブジェクトにそのような追加の能力を持たせることは出来ますが、イテレータプロトコルが規定するのは :meth:`next` メソッドのみです。"
 
 #: ../../whatsnew/2.2.rst:535
-msgid "PEP 234 - Iterators"
-msgstr "PEP 234 - イテレータ"
+msgid ":pep:`234` - Iterators"
+msgstr ":pep:`234`: イテレータ"
 
 #: ../../whatsnew/2.2.rst:535
 msgid ""
@@ -706,12 +704,12 @@ msgstr "ほかにも:file:`Lib/test/test_generators.py` には、N-Queens 問題
 #: ../../whatsnew/2.2.rst:634
 msgid ""
 "The idea of generators comes from other programming languages, especially "
-"Icon (http://www.cs.arizona.edu/icon/), where the idea of generators is "
+"Icon (https://www.cs.arizona.edu/icon/), where the idea of generators is "
 "central.  In Icon, every expression and function call behaves like a "
 "generator.  One example from \"An Overview of the Icon Programming "
-"Language\" at http://www.cs.arizona.edu/icon/docs/ipd266.htm gives an idea "
+"Language\" at https://www.cs.arizona.edu/icon/docs/ipd266.htm gives an idea "
 "of what this looks like::"
-msgstr "ジェネレータの発想はほかのプログラミング言語、特に Icon (http://www.cs.arizona.edu/icon/) から着想しています。Icon ではジェネレータが言語の中枢になっています。Icon では、あらゆる式と関数がジェネレータのように振舞います。 http://www.cs.arizona.edu/icon/docs/ipd266.htm の \"Icon プログラミング言語の概要\" の一つの例が、これがどのようなものであるのかを教えてくれます::"
+msgstr "ジェネレータの発想はほかのプログラミング言語、特に Icon (https://www.cs.arizona.edu/icon/) から着想しています。Icon ではジェネレータが言語の中枢になっています。Icon では、あらゆる式と関数がジェネレータのように振舞います。 https://www.cs.arizona.edu/icon/docs/ipd266.htm の \"Icon プログラミング言語の概要\" の一つの例が、これがどのようなものであるのかを教えてくれます::"
 
 #: ../../whatsnew/2.2.rst:644
 msgid ""
@@ -734,8 +732,8 @@ msgid ""
 msgstr "Python では Icon がそうするほどにはジェネレータを中心的概念に置きません。ジェネレータは Python 言語中核の新たな一面ではありますが、それらを学ぶのも使うのも誰しも行うべきだというものでもなく、そしてこれで解決できない何か問題があれば、忘れてしまっても良いものです。Icon と比較した特筆すべき Python インターフェイスの機能はジェネレータの状態が具象オブジェクト (イテレータ) で表現されることであり、それは他の関数に渡せますし、データ構造に記憶しておくことも出来ます。(---訳注: ジェネレータについてかなり控えめなのは、この時点で著者は将来の拡張を既に見据えていたから? かもしれませんね。PEP 342 と PEP 380 により今やジェネレータはこの頃より遥かに高機能になっており、今ではきっと「こんなものなくても困らない」なんて Python 使いはいないでしょう。---)"
 
 #: ../../whatsnew/2.2.rst:662
-msgid "PEP 255 - Simple Generators"
-msgstr "PEP 255 - 単純なジェネレータ"
+msgid ":pep:`255` - Simple Generators"
+msgstr ":pep:`255` - 単純なジェネレータ"
 
 #: ../../whatsnew/2.2.rst:662
 msgid ""
@@ -780,8 +778,8 @@ msgid ""
 msgstr "ほとんどのケースで、今や整数と長整数は同じものとして扱われるでしょう。 :func:`type` ビルトインで今でも区別出来ますが、ほとんど必要ないでしょう (--- 訳注: Python 3 では本当にこの2つの区別がなくなったので、当然区別出来ません。Python 3 系への移行を考えている Python 2 コードは、両者の区別に頼らないようにするべきです。 ---)。"
 
 #: ../../whatsnew/2.2.rst:702
-msgid "PEP 237 - Unifying Long Integers and Integers"
-msgstr "PEP 237 - 長整数と整数を一体化していく"
+msgid ":pep:`237` - Unifying Long Integers and Integers"
+msgstr ":pep:`237` - 長整数と整数を一体化していく"
 
 #: ../../whatsnew/2.2.rst:702
 msgid ""
@@ -810,7 +808,7 @@ msgstr "Python 2.2 の変更で最も物議を醸すものが、Python 誕生時
 msgid ""
 "(The controversy is over whether this is *really* a design flaw, and whether"
 " it's worth breaking existing code to fix this.  It's caused endless "
-"discussions on python-dev, and in July 2001 erupted into an storm of acidly "
+"discussions on python-dev, and in July 2001 erupted into a storm of acidly "
 "sarcastic postings on :newsgroup:`comp.lang.python`. I won't argue for "
 "either side here and will stick to describing what's  implemented in 2.2.  "
 "Read :pep:`238` for a summary of arguments and counter-arguments.)"
@@ -872,17 +870,17 @@ msgstr "クラスでは :meth:`__truediv__` と :meth:`__floordiv__` メソッ�
 #: ../../whatsnew/2.2.rst:760
 msgid ""
 "Python 2.2 supports some command-line arguments for testing whether code "
-"will works with the changed division semantics.  Running python with "
-":option:`-Q warn` will cause a warning to be issued whenever division is "
-"applied to two integers.  You can use this to find code that's affected by "
-"the change and fix it.  By default, Python 2.2 will simply perform classic "
-"division without a warning; the warning will be turned on by default in "
-"Python 2.3."
-msgstr "Python 2.2 は、コードが変更後の除算セマンティクスで動作するかどうかをテストするコマンドライン引数をサポートします。 :option:`-Q warn` で python を実行すると、除算が二つの整数に適用されている箇所全てで警告します。除算の意味変更の影響を受ける箇所の特定と修正に使えるでしょう。デフォルトでは、Python 2.2 は警告なしで単純に classic division を実行します; その警告がデフォルトになるのは Python 2.3 からです。"
+"will work with the changed division semantics.  Running python with "
+":option:`-Q warn <-Q>` will cause a warning to be issued whenever division "
+"is applied to two integers.  You can use this to find code that's affected "
+"by the change and fix it.  By default, Python 2.2 will simply perform "
+"classic division without a warning; the warning will be turned on by default"
+" in Python 2.3."
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:770
-msgid "PEP 238 - Changing the Division Operator"
-msgstr "PEP 238 - 除算演算子を変更していく"
+msgid ":pep:`238` - Changing the Division Operator"
+msgstr ":pep:`238` - 除算演算子を変更していく"
 
 #: ../../whatsnew/2.2.rst:771
 msgid ""
@@ -899,10 +897,10 @@ msgid ""
 "Python's Unicode support has been enhanced a bit in 2.2.  Unicode strings "
 "are usually stored as UCS-2, as 16-bit unsigned integers. Python 2.2 can "
 "also be compiled to use UCS-4, 32-bit unsigned integers, as its internal "
-"encoding by supplying :option:`--enable-unicode=ucs4` to the configure "
-"script.   (It's also possible to specify :option:`--disable-unicode` to "
+"encoding by supplying :option:`!--enable-unicode=ucs4` to the configure "
+"script.   (It's also possible to specify :option:`!--disable-unicode` to "
 "completely disable Unicode support.)"
-msgstr "Python の Unicode サポートが 2.2 で少し拡張されています。Unicode 文字列は普通は 16 ビット符号なし整数としての UCS-2 で格納されます。Python 2.2 は内部エンコーディングとして 32 ビット符号なし整数の UCS-4 を使うようにもコンパイル出来ます。これは :program:`configure` スクリプトに :option:`--enable-unicode=ucs4` オプションを与えることで行います。(:option:`--disable-unicode` を与えることで完全に Unicode サポートを無効にすることも出来ます。)"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:786
 msgid ""
@@ -920,10 +918,10 @@ msgid ""
 "Another change is simpler to explain. Since their introduction, Unicode "
 "strings have supported an :meth:`encode` method to convert the string to a "
 "selected encoding such as UTF-8 or Latin-1.  A symmetric "
-":meth:`decode([*encoding*])` method has been added to 8-bit strings (though "
-"not to Unicode strings) in 2.2. :meth:`decode` assumes that the string is in"
-" the specified encoding and decodes it, returning whatever is returned by "
-"the codec."
+"``decode([*encoding*])`` method has been added to 8-bit strings (though not "
+"to Unicode strings) in 2.2. :meth:`decode` assumes that the string is in the"
+" specified encoding and decodes it, returning whatever is returned by the "
+"codec."
 msgstr "もう一つの変更については説明は簡単です。その導入以来 Unicode 文字列は、文字列を選択した UTF-8 や Latin-1 のようなエンコーディングで変換するための :meth:`encode` メソッドをサポートしてきました。2.2 では、対となる ``decode([*encoding*])`` メソッドが (Unicode 文字列ではない)  8 ビット文字列に追加されました。 :meth:`decode` は文字列が特定のエンコーディングであることを仮定してデコードを行い、コーデックにより返されるものを返します。"
 
 #: ../../whatsnew/2.2.rst:801
@@ -947,7 +945,7 @@ msgid ""
 msgstr ":meth:`encode`, :meth:`decode`, :meth:`__unicode__` は Marc-André Lemburg により実装されました。UCS-4 を内部的に使う変更に関しては Fredrik Lundh と Martin von Löwis により実装されました。"
 
 #: ../../whatsnew/2.2.rst:832
-msgid "PEP 261 - Support for 'wide' Unicode characters"
+msgid ":pep:`261` - Support for 'wide' Unicode characters"
 msgstr ":pep:`261` - 'wide' Unicode 文字のサポート"
 
 #: ../../whatsnew/2.2.rst:833
@@ -1054,8 +1052,8 @@ msgid ""
 msgstr "これは実際には大した制約でもないはずです。 :keyword:`exec` が Python コードで使われるのは稀です(使われているとしたら大抵どこか貧弱な設計であることの証)。"
 
 #: ../../whatsnew/2.2.rst:927
-msgid "PEP 227 - Statically Nested Scopes"
-msgstr "PEP 227 - 静的に入れ子になったスコープ"
+msgid ":pep:`227` - Statically Nested Scopes"
+msgstr ":pep:`227` - 静的に入れ子になったスコープ"
 
 #: ../../whatsnew/2.2.rst:928
 msgid "Written and implemented by Jeremy Hylton."
@@ -1090,12 +1088,12 @@ msgstr "新しい :mod:`hmac` モジュールは、 :rfc:`2104` で記述され�
 #: ../../whatsnew/2.2.rst:965
 msgid ""
 "Several functions that originally returned lengthy tuples now return pseudo-"
-" sequences that still behave like tuples but also have mnemonic attributes "
+"sequences that still behave like tuples but also have mnemonic attributes "
 "such as memberst_mtime or :attr:`tm_year`. The enhanced functions include "
 ":func:`stat`, :func:`fstat`, :func:`statvfs`, and :func:`fstatvfs` in the "
 ":mod:`os` module, and :func:`localtime`, :func:`gmtime`, and "
 ":func:`strptime` in the :mod:`time` module."
-msgstr "元々が長ったらしいタプルを返していたいくつもの関数が、擬似シーケンスを返すように変更されています。変更後もそれはタプルとして振舞いますが、例えば memberst_mtime や :attr:`tm_year` といった記憶しやすい属性も持ちます。この変更が行われたものには :mod:`os` モジュールの :func:`stat`, :func:`fstat`, :func:`statvfs`, :func:`fstatvfs` や :mod:`time` モジュールの :func:`localtime`, :func:`gmtime`, and :func:`strptime` が含まれます。"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:972
 msgid ""
@@ -1119,9 +1117,9 @@ msgstr "Python プロファイラが大幅に改造されて、出力の色々�
 #: ../../whatsnew/2.2.rst:981
 msgid ""
 "The :mod:`socket` module can be compiled to support IPv6; specify the "
-":option:`--enable-ipv6` option to Python's configure script.  (Contributed "
+":option:`!--enable-ipv6` option to Python's configure script.  (Contributed "
 "by Jun-ichiro \"itojun\" Hagino.)"
-msgstr ":mod:`socket` モジュールを IPv6 サポート付きでコンパイル可能になりました。Python の :program:`configure` スクリプトに :option:`--enable-ipv6` オプションを与えてください。(Contributed by Jun-ichiro \"itojun\" Hagino.)"
+msgstr ""
 
 #: ../../whatsnew/2.2.rst:985
 msgid ""
@@ -1272,7 +1270,8 @@ msgid "Rename :c:func:`Py_TPFLAGS_GC` to :c:func:`PyTPFLAGS_HAVE_GC`."
 msgstr ":c:func:`Py_TPFLAGS_GC` を :c:func:`PyTPFLAGS_HAVE_GC` にリネームします。"
 
 #: ../../whatsnew/2.2.rst:1084
-msgid "Use PyObject_GC_New() or PyObject_GC_NewVar() to allocate"
+msgid ""
+"Use :c:func:`PyObject_GC_New` or :c:func:`PyObject_GC_NewVar` to allocate"
 msgstr "オブジェクトのアロケートには :c:func:`PyObject_GC_New` または :c:func:`PyObject_GC_NewVar` を使ってください。"
 
 #: ../../whatsnew/2.2.rst:1084
@@ -1280,7 +1279,7 @@ msgid "objects, and :c:func:`PyObject_GC_Del` to deallocate them."
 msgstr "そしてオブジェクトのデアロケートには :c:func:`PyObject_GC_Del` を使ってください。"
 
 #: ../../whatsnew/2.2.rst:1087
-msgid "Rename PyObject_GC_Init() to PyObject_GC_Track() and"
+msgid "Rename :c:func:`PyObject_GC_Init` to :c:func:`PyObject_GC_Track` and"
 msgstr ":c:func:`PyObject_GC_Init` は :c:func:`PyObject_GC_Track` にリネームし、"
 
 #: ../../whatsnew/2.2.rst:1087
@@ -1374,9 +1373,9 @@ msgstr ""
 #: ../../whatsnew/2.2.rst:1142
 msgid ""
 "The most significant change is the ability to build Python as a framework, "
-"enabled by supplying the :option:`--enable-framework` option to the "
+"enabled by supplying the :option:`!--enable-framework` option to the "
 "configure script when compiling Python.  According to Jack Jansen, \"This "
-"installs a self- contained Python installation plus the OS X framework "
+"installs a self-contained Python installation plus the OS X framework "
 "\"glue\" into :file:`/Library/Frameworks/Python.framework` (or another "
 "location of choice). For now there is little immediate added benefit to this"
 " (actually, there is the disadvantage that you have to change your PATH to "
@@ -1440,9 +1439,9 @@ msgid ""
 "it to an MBCS encoded string, as used by the Microsoft file APIs.  As MBCS "
 "is explicitly used by the file APIs, Python's choice of ASCII as the default"
 " encoding turns out to be an annoyance.  On Unix, the locale's character set"
-" is used if :func:`locale.nl_langinfo(CODESET)` is available.  (Windows "
-"support was contributed by Mark Hammond with assistance from Marc-André "
-"Lemburg. Unix support was added by Martin von Löwis.)"
+" is used if ``locale.nl_langinfo(CODESET)`` is available.  (Windows support "
+"was contributed by Mark Hammond with assistance from Marc-André Lemburg. "
+"Unix support was added by Martin von Löwis.)"
 msgstr "Windows において Unicode ファイル名がある場合に、Python はそれを Microsoft ファイル API を使うことで MBCS 文字列に変換するようになりました。MBCS はそのファイル API によって明示的に使われるので、デフォルトのエンコーディングとして Python が ASCII を選択するのは苛立たしいことがわかりました。Unix においては ``locale.nl_langinfo(CODESET)`` が利用可能であればロケールの文字セットが使われます。 (Windows support was contributed by Mark Hammond with assistance from Marc-André Lemburg. Unix support was added by Martin von Löwis.)"
 
 #: ../../whatsnew/2.2.rst:1210

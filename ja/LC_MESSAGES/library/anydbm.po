@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-03 10:19+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:45+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -135,40 +134,40 @@ msgid "Close the ``anydbm`` database."
 msgstr "``anydbm`` データベースをクローズします。"
 
 #: ../../library/anydbm.rst:106
-msgid "Module dbhash"
-msgstr "Module :mod:`dbhash`"
+msgid "Module :mod:`dbhash`"
+msgstr ""
 
 #: ../../library/anydbm.rst:106
 msgid "BSD ``db`` database interface."
 msgstr "BSD ``db`` データベースインタフェース。"
 
 #: ../../library/anydbm.rst:109
-msgid "Module dbm"
-msgstr "Module :mod:`dbm`"
+msgid "Module :mod:`dbm`"
+msgstr ":mod:`dbm` モジュール"
 
 #: ../../library/anydbm.rst:109
 msgid "Standard Unix database interface."
 msgstr "標準の Unix データベースインタフェース。"
 
 #: ../../library/anydbm.rst:112
-msgid "Module dumbdbm"
-msgstr "Module :mod:`dumbdbm`"
+msgid "Module :mod:`dumbdbm`"
+msgstr ""
 
 #: ../../library/anydbm.rst:112
 msgid "Portable implementation of the ``dbm`` interface."
 msgstr "``dbm`` インタフェースの移植性のある実装。"
 
 #: ../../library/anydbm.rst:115
-msgid "Module gdbm"
-msgstr "Module :mod:`gdbm`"
+msgid "Module :mod:`gdbm`"
+msgstr ""
 
 #: ../../library/anydbm.rst:115
 msgid "GNU database interface, based on the ``dbm`` interface."
 msgstr "``dbm`` インタフェースに基づいた GNU データベースインタフェース。"
 
 #: ../../library/anydbm.rst:118
-msgid "Module shelve"
-msgstr "Module :mod:`shelve`"
+msgid "Module :mod:`shelve`"
+msgstr ":mod:`shelve` モジュール"
 
 #: ../../library/anydbm.rst:118
 msgid ""
@@ -176,8 +175,8 @@ msgid ""
 msgstr "Python ``dbm`` インタフェース上に構築された汎用オブジェクト永続化機構。"
 
 #: ../../library/anydbm.rst:120
-msgid "Module whichdb"
-msgstr "Module :mod:`whichdb`"
+msgid "Module :mod:`whichdb`"
+msgstr ""
 
 #: ../../library/anydbm.rst:121
 msgid "Utility module used to determine the type of an existing database."

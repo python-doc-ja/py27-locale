@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-28 09:57+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:51+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -124,32 +123,32 @@ msgid "``x``"
 msgstr "``x``"
 
 #: ../../library/easydialogs.rst:93
-msgid ":option:`-x` (short option)"
-msgstr ":option:`-x` (短いオプション)"
+msgid ":option:`!-x` (short option)"
+msgstr ""
 
 #: ../../library/easydialogs.rst:95
 msgid "``x:`` or ``x=``"
 msgstr "``x:`` あるいは ``x=``"
 
 #: ../../library/easydialogs.rst:95
-msgid ":option:`-x` (short option with value)"
-msgstr ":option:`-x` (値を持つ短いオプション)"
+msgid ":option:`!-x` (short option with value)"
+msgstr ""
 
 #: ../../library/easydialogs.rst:97
 msgid "``xyz``"
 msgstr "``xyz``"
 
 #: ../../library/easydialogs.rst:97
-msgid ":option:`--xyz` (long option)"
-msgstr ":option:`--xyz` (長いオプション)"
+msgid ":option:`!--xyz` (long option)"
+msgstr ""
 
 #: ../../library/easydialogs.rst:99
 msgid "``xyz:`` or ``xyz=``"
 msgstr "``xyz:`` あるいは ``xyz=``"
 
 #: ../../library/easydialogs.rst:99
-msgid ":option:`--xyz` (long option with value)"
-msgstr ":option:`--xyz` (値を持つ長いオプション)"
+msgid ":option:`!--xyz` (long option with value)"
+msgstr ""
 
 #: ../../library/easydialogs.rst:102
 msgid ""
@@ -196,8 +195,10 @@ msgid ""
 msgstr "フォルダの選択をユーザに促すダイアログを表示して、ユーザが選択したフォルダを返します。ユーザがダイアログをキャンセルした場合には :const:`None` を返します。引数についての説明は :func:`AskFileForOpen` を参照してください。"
 
 #: ../../library/easydialogs.rst:147
-msgid "Navigation Services Reference"
-msgstr "`Navigation Services Reference <http://developer.apple.com/documentation/Carbon/Reference/Navigation_Services_Ref/>`_"
+msgid ""
+"`Navigation Services Reference "
+"<http://developer.apple.com/legacy/mac/library/#documentation/Carbon/Conceptual/NavServicesIntro/ns_intro_carb/ns_into_carb.html>`_"
+msgstr ""
 
 #: ../../library/easydialogs.rst:147
 msgid ""

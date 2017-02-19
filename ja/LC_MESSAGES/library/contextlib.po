@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -7,10 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-31 01:50+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:48+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -155,8 +154,8 @@ msgid ""
 msgstr "``page`` を明示的に close する必要は無く、エラーが発生した場合でも、 :keyword:`with` ブロックを出るときに ``page.close()`` が呼ばれます。"
 
 #: ../../library/contextlib.rst:139
-msgid "PEP 0343 - The \"with\" statement"
-msgstr ":pep:`0343` - \"with\" ステートメント"
+msgid ":pep:`343` - The \"with\" statement"
+msgstr ":pep:`343` - \"with\" ステートメント"
 
 #: ../../library/contextlib.rst:139
 msgid ""

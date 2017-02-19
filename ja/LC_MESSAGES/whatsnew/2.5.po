@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-06 15:03+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:14+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -163,8 +162,8 @@ msgid ""
 msgstr "括弧を含めるもう一つの理由があります: 少し奇妙なリスト内包とラムダの組合せが、不完全な条件式になることがあります。 :pep:`308` にいくつかの例があるので見てください。条件式の周りをいつでも括弧で囲むなら、このケースにぶち当たることもありません。"
 
 #: ../../whatsnew/2.5.rst:123
-msgid "PEP 308 - Conditional Expressions"
-msgstr "PEP 308 - 条件式 (Conditional Expressions)"
+msgid ":pep:`308` - Conditional Expressions"
+msgstr ":pep:`308` - 条件式 (Conditional Expressions)"
 
 #: ../../whatsnew/2.5.rst:123
 msgid ""
@@ -205,20 +204,20 @@ msgstr "以下にあるのは、小さいけれども現実的な一つの例で
 
 #: ../../whatsnew/2.5.rst:160
 msgid ""
-"Here's another example, from a program that uses PyGTK.  Here a context- "
+"Here's another example, from a program that uses PyGTK.  Here a context-"
 "sensitive pop-up menu is being constructed dynamically.  The callback "
 "provided for the menu option is a partially applied version of the "
 ":meth:`open_item` method, where the first argument has been provided. ::"
-msgstr "もうひとつ、PyGTK を使うプログラムからの例をみてみましょう。いま、「コンテキスト依存」のポップアップメニューを動的に構築しようとしています。そのメニューオプションから提供されるコールバックは、 :meth:`open_item` メソッドの部分適用版で、その最初の引数が適用済みです::"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:173
 msgid ""
 "Another function in the :mod:`functools` module is the "
-":func:`update_wrapper(wrapper, wrapped)` function that helps you write well-"
-" behaved decorators.  :func:`update_wrapper` copies the name, module, and "
+"``update_wrapper(wrapper, wrapped)`` function that helps you write well-"
+"behaved decorators.  :func:`update_wrapper` copies the name, module, and "
 "docstring attribute to a wrapper function so that tracebacks inside the "
 "wrapped function are easier to understand.  For example, you might write::"
-msgstr ":mod:`functools` のもう一つの関数は ``update_wrapper(wrapper, wrapped)`` で、より良く振舞うデコレータを書くのに役立ちます。 :func:`update_wrapper` は包まれるほうの名前、モジュール、ドキュメンテーション文字列属性をラッパー関数にコピーすることで、トレースバックを理解しやすくします。たとえばこう書けます::"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:186
 msgid ""
@@ -228,8 +227,8 @@ msgid ""
 msgstr ":func:`wraps` は、ラップされる関数についての情報をコピーするために、あなた自身のデコレータ内で使えるデコレータです。先の例はこのようにも書けます::"
 
 #: ../../whatsnew/2.5.rst:201
-msgid "PEP 309 - Partial Function Application"
-msgstr "PEP 309 - 関数の部分適用"
+msgid ":pep:`309` - Partial Function Application"
+msgstr ":pep:`309` - 関数の部分適用"
 
 #: ../../whatsnew/2.5.rst:201
 msgid ""
@@ -271,9 +270,9 @@ msgid ""
 "Before a package can be uploaded, you must be able to build a distribution "
 "using the :command:`sdist` Distutils command.  Once that works, you can run "
 "``python setup.py upload`` to add your package to the PyPI archive.  "
-"Optionally you can GPG-sign the package by supplying the :option:`--sign` "
-"and :option:`--identity` options."
-msgstr "パッケージがアップロードされる前には、Distutils :command:`sdist` コマンドを使って配布物をビルド可能でなければなりません。それさえ出来ていれば、 ``python setup.py upload`` がパッケージを PyPI アーカイブに追加してくれます。追加で、パッケージに GPG 署名出来ます。これには :option:`--sign` オプションと :option:`--identity` オプションを使います。"
+"Optionally you can GPG-sign the package by supplying the :option:`!--sign` "
+"and :option:`!--identity` options."
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:242
 msgid ""
@@ -281,8 +280,8 @@ msgid ""
 msgstr "パッケージのアップロードは Martin von Löwis と Richard Jones により実装されました。"
 
 #: ../../whatsnew/2.5.rst:248
-msgid "PEP 314 - Metadata for Python Software Packages v1.1"
-msgstr "PEP 314 - Metadata for Python Software Packages v1.1"
+msgid ":pep:`314` - Metadata for Python Software Packages v1.1"
+msgstr ":pep:`314` - Metadata for Python Software Packages v1.1"
 
 #: ../../whatsnew/2.5.rst:248
 msgid ""
@@ -354,12 +353,12 @@ msgstr "相対インポートに頼ったコードを読むことは、より不
 msgid ""
 "In Python 2.5, you can switch :keyword:`import`'s behaviour to  absolute "
 "imports using a ``from __future__ import absolute_import`` directive.  This "
-"absolute- import behaviour will become the default in a future version "
+"absolute-import behaviour will become the default in a future version "
 "(probably Python 2.7).  Once absolute imports  are the default, ``import "
 "string`` will always find the standard library's version. It's suggested "
 "that users should begin using absolute imports as much as possible, so it's "
 "preferable to begin writing ``from pkg import string`` in your code."
-msgstr "Python 2.5 では :keyword:`import` の振る舞いを、 ``from __future__ import absolute_import`` ディレクティブを使うことによって絶対インポートに切り替えられます。この絶対インポートの振る舞いは将来バージョンの Python でデフォルトになります(おそらく Python 2.7 で)。(訳注: ご承知のとおり Python 2.7 でもこれはデフォルトとはなっていません。Python 3.x への移行のためにも 2.5 - 2.7 では ``from __future__ import absolute_import`` を使うべきです。) 絶対インポートをデフォルトにしてしまえば、 ``import string`` はいつでも標準ライブラリ版を見つけます。ユーザは可能な限り絶対インポートを使い始めるべきで、あなたのコードでは ``from pkg import string`` と書き始めることが望まれます。"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:307
 msgid ""
@@ -383,16 +382,16 @@ msgid ""
 msgstr "このピリオドによる書き方は ``import modname`` 形式のインポート文では使えず、 ``from ... import`` 形式でのみ使えます。"
 
 #: ../../whatsnew/2.5.rst:331
-msgid "PEP 328 - Imports: Multi-Line and Absolute/Relative"
-msgstr "PEP 328  - マルチラインインポートと、絶対/相対インポート"
+msgid ":pep:`328` - Imports: Multi-Line and Absolute/Relative"
+msgstr ":pep:`328` - マルチラインインポートと、絶対/相対インポート"
 
 #: ../../whatsnew/2.5.rst:331
 msgid "PEP written by Aahz; implemented by Thomas Wouters."
 msgstr "PEP 著 Aahz; 実装 Thomas Wouters。"
 
 #: ../../whatsnew/2.5.rst:333
-msgid "http://codespeak.net/py/current/doc/index.html"
-msgstr "http://codespeak.net/py/current/doc/index.html"
+msgid "https://pylib.readthedocs.org/"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:334
 msgid ""
@@ -422,8 +421,8 @@ msgid ""
 msgstr ":mod:`runpy` モジュールはインポートのメカニズムをより洗練された方法で実装しているので、今では :mod:`pychecker.checker` のようにパッケージ内のモジュールも実行出来ます。このモジュールは異なるインポートメカニズム、例えば :mod:`zipimport` モジュールもサポートします。このことにより、 ``sys.path`` に .zip アーカイブのパスを追加して、 :option:`-m` スイッチでアーカイブ内のコードを実行する、といったことも出来ます。"
 
 #: ../../whatsnew/2.5.rst:359
-msgid "PEP 338 - Executing modules as scripts"
-msgstr "PEP 338 - モジュールをスクリプトとして実行する"
+msgid ":pep:`338` - Executing modules as scripts"
+msgstr ":pep:`338` - モジュールをスクリプトとして実行する"
 
 #: ../../whatsnew/2.5.rst:360
 msgid "PEP written and  implemented by Nick Coghlan."
@@ -470,8 +469,8 @@ msgid ""
 msgstr "以前に何が起こったのかに拠らず、コードブロック完了時やどれかの例外が処理されれば *final-block* が実行されます。例外ハンドラ内や *else-block* でエラーが起こったり、 新しく例外を投げる場合でさえ、 *final-block* 内のコードはそれでも実行されます。"
 
 #: ../../whatsnew/2.5.rst:407
-msgid "PEP 341 - Unifying try-except and try-finally"
-msgstr "PEP 341 - try/except/finally の一体化"
+msgid ":pep:`341` - Unifying try-except and try-finally"
+msgstr ":pep:`341` - try-except と try-finally を一体化する"
 
 #: ../../whatsnew/2.5.rst:408
 msgid "PEP written by Georg Brandl;  implementation by Thomas Lee."
@@ -533,11 +532,11 @@ msgstr "(:pep:`342` がその規則を正確に説明していますが、それ
 
 #: ../../whatsnew/2.5.rst:457
 msgid ""
-"Values are sent into a generator by calling its :meth:`send(value)` method."
-"  The generator's code is then resumed and the :keyword:`yield` expression "
+"Values are sent into a generator by calling its ``send(value)`` method.  The"
+" generator's code is then resumed and the :keyword:`yield` expression "
 "returns the specified *value*.  If the regular :meth:`next` method is "
 "called, the :keyword:`yield` returns :const:`None`."
-msgstr "ジェネレータに値を送るには ``send(value)`` メソッドを呼びます。するとジェネレータのコードが実行を再開し、 ``yield`` 式がその *value* を返すのです。ふつうの ``next()`` メソッドを呼ぶと、 ``yield`` は ``None`` を返します。"
+msgstr "ジェネレータに値を送るには ``send(value)`` メソッドを呼びます。するとジェネレータのコードが実行を再開し、 :keyword:`yield`  式がその *value* を返すのです。ふつうの ``next()`` メソッドを呼ぶと、 :keyword:`yield` は :const:`None` を返します。"
 
 #: ../../whatsnew/2.5.rst:462
 msgid ""
@@ -564,10 +563,10 @@ msgstr "ジェネレータには、 :meth:`send` のほかにも新しいメソ�
 
 #: ../../whatsnew/2.5.rst:499
 msgid ""
-":meth:`throw(type, value=None, traceback=None)` is used to raise an "
-"exception inside the generator; the exception is raised by the "
-":keyword:`yield` expression where the generator's execution is paused."
-msgstr "``throw(type, value=None, traceback=None)`` はジェネレータ内で例外を投げるために使います; その例外はジェネレータの実行が停止したところの ``yield`` 式によって投げられます。"
+"``throw(type, value=None, traceback=None)`` is used to raise an exception "
+"inside the generator; the exception is raised by the :keyword:`yield` "
+"expression where the generator's execution is paused."
+msgstr "``throw(type, value=None, traceback=None)`` はジェネレータ内で例外を投げるために使います; その例外はジェネレータの実行が停止したところの :keyword:`yield` 式によって投げられます。"
 
 #: ../../whatsnew/2.5.rst:503
 msgid ""
@@ -629,8 +628,8 @@ msgid ""
 msgstr "もう一つさらに深遠なこの変更の効果: 以前はジェネレータの :attr:`gi_frame` 属性は常にフレームオブジェクトでした。今では :attr:`gi_frame` は、ジェネレータが使い果たされた場合に ``None`` になります。"
 
 #: ../../whatsnew/2.5.rst:548
-msgid "PEP 342 - Coroutines via Enhanced Generators"
-msgstr "PEP 342 - 拡張されたジェネレータを用いたコルーチン"
+msgid ":pep:`342` - Coroutines via Enhanced Generators"
+msgstr ":pep:`0342` - 拡張されたジェネレータを用いたコルーチン"
 
 #: ../../whatsnew/2.5.rst:544
 msgid ""
@@ -646,8 +645,8 @@ msgid ""
 msgstr "この機能の初期バージョンは Raymond Hettinger による :pep:`288` と Samuele Pedroni による :pep:`325` で提案されました。"
 
 #: ../../whatsnew/2.5.rst:551
-msgid "http://en.wikipedia.org/wiki/Coroutine"
-msgstr "http://en.wikipedia.org/wiki/Coroutine"
+msgid "https://en.wikipedia.org/wiki/Coroutine"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:551
 msgid "The Wikipedia entry for  coroutines."
@@ -725,8 +724,8 @@ msgstr "いくつかの Python 標準オブジェクトが既にコンテキス�
 msgid ""
 "After this statement has executed, the file object in *f* will have been "
 "automatically closed, even if the :keyword:`for` loop raised an exception "
-"part- way through the block."
-msgstr "このステートメントが実行し終わったあかつきには、 *f* のファイルオブジェクトは、たとえ :keyword:`for` ループが道半ばにして例外と成り果てても、自動的にクローズされます。"
+"part-way through the block."
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:610
 msgid ""
@@ -790,14 +789,14 @@ msgstr "*BLOCK* 内のコードが実行されます。"
 
 #: ../../whatsnew/2.5.rst:663
 msgid ""
-"If *BLOCK* raises an exception, the :meth:`__exit__(type, value, traceback)`"
-" is called with the exception details, the same values returned by "
+"If *BLOCK* raises an exception, the ``__exit__(type, value, traceback)`` is "
+"called with the exception details, the same values returned by "
 ":func:`sys.exc_info`.  The method's return value controls whether the "
 "exception is re-raised: any false value re-raises the exception, and "
 "``True`` will result in suppressing it.  You'll only rarely want to suppress"
 " the exception, because if you do the author of the code containing the "
 "':keyword:`with`' statement will never realize anything went wrong."
-msgstr "*BLOCK* が例外を起こした場合、コンテキストマネージャの :meth:`__exit__` メソッドが 3 つの引数とともに呼び出されます。これは例外の詳細です (``type, value, traceback``, これは :func:`sys.exc_info` が返す値と同じで、例外が起こらなければ ``None`` です)。そのメソッドの戻り値は例外を再送出するかどうかを制御します: 全ての偽の値ではその例外が再送出され、 ``True`` では揉み消します。例外を揉み消すなど滅多なことでは欲しいと思わないでしょう。もしそうしてしまったら、 ':keyword:`with`' ステートメントを含んだコードの作者は何か間違ったことが起こったことに決して気付かないですから。"
+msgstr "*BLOCK* が例外を起こした場合、コンテキストマネージャの ``__exit__`` メソッドが 3 つの引数とともに呼び出されます。これは例外の詳細です (``type, value, traceback``, これは :func:`sys.exc_info` が返す値と同じで、例外が起こらなければ ``None`` です)。そのメソッドの戻り値は例外を再送出するかどうかを制御します: 全ての偽の値ではその例外が再送出され、 ``True`` では揉み消します。例外を揉み消すなど滅多なことでは欲しいと思わないでしょう。もしそうしてしまったら、 ':keyword:`with`' ステートメントを含んだコードの作者は何か間違ったことが起こったことに決して気付かないですから。"
 
 #: ../../whatsnew/2.5.rst:671
 msgid ""
@@ -890,23 +889,22 @@ msgstr "このデコレータを使って、前セクションの私たちのデ
 
 #: ../../whatsnew/2.5.rst:776
 msgid ""
-"The :mod:`contextlib` module also has a :func:`nested(mgr1, mgr2, ...)` "
-"function that combines a number of context managers so you don't need to "
-"write nested ':keyword:`with`' statements.  In this example, the single "
+"The :mod:`contextlib` module also has a ``nested(mgr1, mgr2, ...)`` function"
+" that combines a number of context managers so you don't need to write "
+"nested ':keyword:`with`' statements.  In this example, the single "
 "':keyword:`with`' statement both starts a database transaction and acquires "
 "a thread lock::"
 msgstr ":mod:`contextlib` モジュールには ``nested(mgr1, mgr2, ...)`` 関数もあって、これはたくさんのコンテキストマネージャを組み合わせることが出来るので、入れ子の ':keyword:`with`' を書く必要性をなくしてくれます。この例では、単一の ':keyword:`with`' でデータベーストランザクション開始とスレッドのロック獲得の両方をやってのけています::"
 
 #: ../../whatsnew/2.5.rst:785
 msgid ""
-"Finally, the :func:`closing(object)` function returns *object* so that it "
-"can be bound to a variable, and calls ``object.close`` at the end of the "
-"block. ::"
-msgstr "最後になりますが、 :func:`closing` 関数はその与えた引数をそのまま返して変数に束縛出来るようにし、かつブロックの終了で、与えた引数が持つ ``.close()`` を呼び出します::"
+"Finally, the ``closing(object)`` function returns *object* so that it can be"
+" bound to a variable, and calls ``object.close`` at the end of the block. ::"
+msgstr "最後になりますが、 ``closing(object)`` 関数は *object* をそのまま返して変数に束縛出来るようにし、かつブロックの終了で、与えた引数が持つ ``object.close`` を呼び出します::"
 
 #: ../../whatsnew/2.5.rst:802
-msgid "PEP 343 - The \"with\" statement"
-msgstr "PEP 343 - \"with\" ステートメント"
+msgid ":pep:`343` - The \"with\" statement"
+msgstr ":pep:`343` - \"with\" ステートメント"
 
 #: ../../whatsnew/2.5.rst:799
 msgid ""
@@ -976,8 +974,8 @@ msgid ""
 msgstr "例外として文字列を``raise \"Error occurred\"`` として　raise することは Python 2.5 では非推奨であり警告を引き起こします。その目的は、あと少しのリリースで文字列例外を削除することです。 (---訳注: 2.6 以降の What's New では明示的に書かれてはいませんが、2.7 では警告ではなくエラーです。---)"
 
 #: ../../whatsnew/2.5.rst:862
-msgid "PEP 352 - Required Superclass for Exceptions"
-msgstr "PEP 352 - 例外のためのスーパークラス"
+msgid ":pep:`352` - Required Superclass for Exceptions"
+msgstr ":pep:`352` - 例外のためのスーパークラス"
 
 #: ../../whatsnew/2.5.rst:863
 msgid ""
@@ -1057,8 +1055,8 @@ msgid ""
 msgstr ":pep:`353` には、拡張の著者が読んで学ぶべき 64 ビットプラットフォームサポートについてのセクションがあります。"
 
 #: ../../whatsnew/2.5.rst:921
-msgid "PEP 353 - Using ssize_t as the index type"
-msgstr "PEP 353 - 添え字型に ssize_t を使う"
+msgid ":pep:`353` - Using ssize_t as the index type"
+msgstr ":pep:`353` - 添え字型に ssize_t を使う"
 
 #: ../../whatsnew/2.5.rst:922
 msgid "PEP written and implemented by Martin von Löwis."
@@ -1105,13 +1103,13 @@ msgstr "戻り値は Python 整数または長整数でなければなりませ�
 msgid ""
 "A corresponding :attr:`nb_index` slot was added to the C-level "
 ":c:type:`PyNumberMethods` structure to let C extensions implement this "
-"protocol. :c:func:`PyNumber_Index(obj)` can be used in extension code to "
-"call the :meth:`__index__` function and retrieve its result."
-msgstr "これに呼応する :attr:`nb_index` スロットが C レベルの :c:type:`PyNumberMethods` 構造体に追加され、C 拡張はこれでこのプロトコルを実装出来ます。 :c:func:`PyNumber_Index(obj)` は拡張コード内で :meth:`__index__` を呼び出してその結果を得るのに使えます。"
+"protocol. ``PyNumber_Index(obj)`` can be used in extension code to call the "
+":meth:`__index__` function and retrieve its result."
+msgstr "これに呼応する :attr:`nb_index` スロットが C レベルの :c:type:`PyNumberMethods` 構造体に追加され、C 拡張はこれでこのプロトコルを実装出来ます。 ``PyNumber_Index(obj)`` は拡張コード内で :meth:`__index__` を呼び出してその結果を得るのに使えます。"
 
 #: ../../whatsnew/2.5.rst:964
-msgid "PEP 357 - Allowing Any Object to be Used for Slicing"
-msgstr "PEP 357 - スライシングのために任意のオブジェクトを使えるようにする"
+msgid ":pep:`357` - Allowing Any Object to be Used for Slicing"
+msgstr ":pep:`357` - スライシングのために任意のオブジェクトを使えるようにする"
 
 #: ../../whatsnew/2.5.rst:965
 msgid "PEP written  and implemented by Travis Oliphant."
@@ -1131,29 +1129,29 @@ msgstr "以下が、Python 2.5 言語コアに加えられた全ての変更点�
 msgid ""
 "The :class:`dict` type has a new hook for letting subclasses provide a "
 "default value when a key isn't contained in the dictionary. When a key isn't"
-" found, the dictionary's :meth:`__missing__(key)` method will be called.  "
-"This hook is used to implement the new :class:`defaultdict` class in the "
+" found, the dictionary's ``__missing__(key)`` method will be called.  This "
+"hook is used to implement the new :class:`defaultdict` class in the "
 ":mod:`collections` module.  The following example defines a dictionary  that"
 " returns zero for any missing key::"
-msgstr ":class:`dict` 型に新たなフックが追加されています。サブクラスが、辞書に含まれないキーに対してデフォルトを提供出来るようにするものです。キーが見つからない場合、辞書の :meth:`__missing__(key)` メソッドが呼ばれます。このフックは :mod:`collections` モジュール内の新しいクラス :class:`defaultdict` で使われています。続く例は存在しないキーに対してゼロを返す辞書を定義しています::"
+msgstr ":class:`dict` 型に新たなフックが追加されています。サブクラスが、辞書に含まれないキーに対してデフォルトを提供出来るようにするものです。キーが見つからない場合、辞書の ``__missing__(key)`` メソッドが呼ばれます。このフックは :mod:`collections` モジュール内の新しいクラス :class:`defaultdict` で使われています。続く例は存在しないキーに対してゼロを返す辞書を定義しています::"
 
 #: ../../whatsnew/2.5.rst:992
 msgid ""
-"Both 8-bit and Unicode strings have new :meth:`partition(sep)`  and "
-":meth:`rpartition(sep)` methods that simplify a common use case."
+"Both 8-bit and Unicode strings have new ``partition(sep)``  and "
+"``rpartition(sep)`` methods that simplify a common use case."
 msgstr "8 ビット文字列、Unicode ともに、ありがちなユースケースを単純化する  :meth:`partition(sep)` と :meth:`rpartition(sep)`  が追加されました。"
 
 #: ../../whatsnew/2.5.rst:995
 msgid ""
-"The :meth:`find(S)` method is often used to get an index which is then used "
-"to slice the string and obtain the pieces that are before and after the "
-"separator. :meth:`partition(sep)` condenses this pattern into a single "
-"method call that returns a 3-tuple containing the substring before the "
-"separator, the separator itself, and the substring after the separator.  If "
-"the separator isn't found, the first element of the tuple is the entire "
-"string and the other two elements are empty.  :meth:`rpartition(sep)` also "
-"returns a 3-tuple but starts searching from the end of the string; the ``r``"
-" stands for 'reverse'."
+"The ``find(S)`` method is often used to get an index which is then used to "
+"slice the string and obtain the pieces that are before and after the "
+"separator. ``partition(sep)`` condenses this pattern into a single method "
+"call that returns a 3-tuple containing the substring before the separator, "
+"the separator itself, and the substring after the separator.  If the "
+"separator isn't found, the first element of the tuple is the entire string "
+"and the other two elements are empty.  ``rpartition(sep)`` also returns a "
+"3-tuple but starts searching from the end of the string; the ``r`` stands "
+"for 'reverse'."
 msgstr "文字列のスライスに使うために :meth:`find(S)` メソッドを使ってインデクスを得るのだけれども、やりたいのはそのセパレータ(S)の前後の部分文字列を得ることだ、といったことはしょっちゅう必要になります。 :meth:`partition(sep)` はこのパターンのコードを、一撃、に圧縮してくれます。これはセパレータ前の部分文字列、セパレータ自身、セパレータ後の部分文字列の 3 要素タプルを返します。セパレータが含まれない場合は、返却値の最初の要素に文字列全体が、残り2つは空文字列で返ります。 :meth:`rpartition(sep)` もほぼ同じことをしますがセパレータの検索をお尻から始めます。 ``r`` は逆順('reverse')を表します。"
 
 #: ../../whatsnew/2.5.rst:1004
@@ -1255,10 +1253,10 @@ msgid ""
 "switch to log all the paths searched. In Python 2.5, a new "
 ":exc:`ImportWarning` warning is triggered when an import would have picked "
 "up a directory as a package but no :file:`__init__.py` was found.  This "
-"warning is silently ignored by default; provide the :option:`-Wd` option "
-"when running the Python executable to display the warning message. "
+"warning is silently ignored by default; provide the :option:`-Wd <-W>` "
+"option when running the Python executable to display the warning message. "
 "(Implemented by Thomas Wouters.)"
-msgstr "Python プログラマがよくしでかす間違いとして、パッケージディレクトリに :file:`__init__.py` を入れ忘れる、というものがあります。この間違いのデバッグはややこしく、大抵 Python を :option:`-v` スイッチ付きで起動して、パス検索全てをログ出力するハメになります。Python 2.5 ではパッケージディレクトリに :file:`__init__.py` がないことが検出されると新たに :exc:`ImportWarning` 警告を出すようになりました。デフォルトではこの警告は黙って無視されます; これを出したければ、 :option:`-Wd` スイッチをつけて Python を起動してください。(Implemented by Thomas Wouters.)"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:1101
 msgid ""
@@ -1293,9 +1291,9 @@ msgstr "Python 2.5 でも ``quit`` と ``exit`` はそれ自身そのような�
 msgid ""
 "The Python executable now accepts the standard long options  "
 ":option:`--help` and :option:`--version`; on Windows,  it also accepts the "
-":option:`/?` option for displaying a help message. (Implemented by Georg "
-"Brandl.)"
-msgstr "Python 実行形式ファイルが標準的な長い形式の :option:`--help` と :option:`--version` を受け付けるようになりました。Windows の場合はヘルプメッセージを出力するのに :option:`/?` オプションも受け付けます。(Implemented by Georg Brandl.)"
+":option:`/? <-?>` option for displaying a help message. (Implemented by "
+"Georg Brandl.)"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:1138
 msgid "Optimizations"
@@ -1330,10 +1328,10 @@ msgstr ""
 
 #: ../../whatsnew/2.5.rst:1160
 msgid ""
-"The :func:`long(str, base)` function is now faster on long digit strings "
-"because fewer intermediate results are calculated.  The peak is for strings "
-"of around 800--1000 digits where  the function is 6 times faster. "
-"(Contributed by Alan McIntyre and committed at the NeedForSpeed sprint.)"
+"The ``long(str, base)`` function is now faster on long digit strings because"
+" fewer intermediate results are calculated.  The peak is for strings of "
+"around 800--1000 digits where  the function is 6 times faster. (Contributed "
+"by Alan McIntyre and committed at the NeedForSpeed sprint.)"
 msgstr ""
 
 #: ../../whatsnew/2.5.rst:1167
@@ -1456,10 +1454,9 @@ msgstr "(Contributed by Guido van Rossum.)"
 #: ../../whatsnew/2.5.rst:1270
 msgid ""
 "The :class:`deque` double-ended queue type supplied by the "
-":mod:`collections` module now has a :meth:`remove(value)` method that "
-"removes the first occurrence of *value* in the queue, raising "
-":exc:`ValueError` if the value isn't found. (Contributed by Raymond "
-"Hettinger.)"
+":mod:`collections` module now has a ``remove(value)`` method that removes "
+"the first occurrence of *value* in the queue, raising :exc:`ValueError` if "
+"the value isn't found. (Contributed by Raymond Hettinger.)"
 msgstr ":mod:`collections` モジュールで提供されている両端キュー (double-ended queue) 型 :class:`deque` に、キュー内で最初に現れる *value* を削除するメソッド :meth:`remove(value)` メソッドが追加されています。 *value* が見つからなければ :exc:`ValueError` が送出されます。 (Contributed by Raymond Hettinger.)"
 
 #: ../../whatsnew/2.5.rst:1275
@@ -1493,7 +1490,7 @@ msgid ""
 "The :mod:`csv` module, which parses files in comma-separated value format, "
 "received several enhancements and a number of bugfixes.  You can now set the"
 " maximum size in bytes of a field by calling the "
-":meth:`csv.field_size_limit(new_limit)` function; omitting the *new_limit* "
+"``csv.field_size_limit(new_limit)`` function; omitting the *new_limit* "
 "argument will return the currently-set limit.  The :class:`reader` class now"
 " has a :attr:`line_num` attribute that counts the number of physical lines "
 "read from the source; records can span multiple physical lines, so "
@@ -1518,11 +1515,11 @@ msgstr "(Contributed by Skip Montanaro and Andrew McNamara.)"
 
 #: ../../whatsnew/2.5.rst:1310
 msgid ""
-"The :class:`datetime` class in the :mod:`datetime`  module now has a "
-":meth:`strptime(string, format)`  method for parsing date strings, "
+"The :class:`~datetime.datetime` class in the :mod:`datetime`  module now has"
+" a ``strptime(string, format)``  method for parsing date strings, "
 "contributed by Josh Spoerri. It uses the same format characters as "
 ":func:`time.strptime` and :func:`time.strftime`::"
-msgstr ":mod:`datetime` モジュールの :class:`datetime` クラスに、Josh Spoerri より寄稿された日付文字列を解析する :meth:`strptime(string, format)` メソッドが追加されています。 :func:`time.strptime`, :func:`time.strftime` と同じフォーマット文字列を使います::"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:1320
 msgid ""
@@ -1635,8 +1632,8 @@ msgid ""
 "The :mod:`mailbox` module underwent a massive rewrite to add the capability "
 "to modify mailboxes in addition to reading them.  A new set of classes that "
 "include :class:`mbox`, :class:`MH`, and :class:`Maildir` are used to read "
-"mailboxes, and have an :meth:`add(message)` method to add messages, "
-":meth:`remove(key)` to remove messages, and :meth:`lock`/:meth:`unlock` to "
+"mailboxes, and have an ``add(message)`` method to add messages, "
+"``remove(key)`` to remove messages, and :meth:`lock`/:meth:`unlock` to "
 "lock/unlock the mailbox. The following example converts a maildir-format "
 "mailbox into an mbox-format one::"
 msgstr ":mod:`mailbox` モジュールでは、メールボックスについてそれを読むことに加えて修正出来る能力を追加するための、大々的な書き換えが行われています。 :class:`mbox`, :class:`MH`, :class:`Maildir` を含む新しいクラス群はメールボックス読み込みに使われますが、メッセージ追加のための ``add(message)`` 、削除の ``remove(key)`` 、ロック/アンロックのための :meth:`lock`/:meth:`unlock` も持っています。続く例は maildir 形式から mbox 形式に変換する例です::"
@@ -1706,8 +1703,7 @@ msgid ""
 ":func:`wait3` doesn't take a process ID as input, so it waits for any child "
 "process to exit and returns a 3-tuple of *process-id*, *exit-status*, "
 "*resource-usage* as returned from the :func:`resource.getrusage` function. "
-":func:`wait4(pid)` does take a process ID. (Contributed by Chad J. "
-"Schroeder.)"
+"``wait4(pid)`` does take a process ID. (Contributed by Chad J. Schroeder.)"
 msgstr "2 つの新しい関数 :func:`wait3` と :func:`wait4` が追加されています。これらは :func:`waitpid` 関数に似ています。これは子プロセスが終了するのを待ってプロセス ID とその終了コードを返しますが、 :func:`wait3` と :func:`wait4` は追加の情報を返します。 :func:`wait3` はプロセス ID を入力に取りませんので任意の子プロセス終了を待ち、 :func:`resource.getrusage` 関数から返る *process-id*, *exit-status*, *resource-usage* の 3 要素タプルを返します。 ``wait4(pid)`` はプロセス ID を取ります。 (Contributed by Chad J. Schroeder.)"
 
 #: ../../whatsnew/2.5.rst:1464
@@ -1762,13 +1758,13 @@ msgstr ":mod:`pyexpat` モジュールが使う Expat パーサをバージョ�
 
 #: ../../whatsnew/2.5.rst:1500
 msgid ""
-"The :class:`Queue` class provided by the :mod:`Queue` module gained two new "
-"methods.  :meth:`join` blocks until all items in the queue have been "
-"retrieved and all processing work on the items  have been completed.  Worker"
-" threads call the other new method,  :meth:`task_done`, to signal that "
-"processing for an item has been completed.  (Contributed by Raymond "
+"The :class:`~Queue.Queue` class provided by the :mod:`Queue` module gained "
+"two new methods.  :meth:`join` blocks until all items in the queue have been"
+" retrieved and all processing work on the items  have been completed.  "
+"Worker threads call the other new method,  :meth:`task_done`, to signal that"
+" processing for an item has been completed.  (Contributed by Raymond "
 "Hettinger.)"
-msgstr ":mod:`Queue` モジュールの :class:`Queue` クラスに新たに 2 つのメソッドが追加されました。 :meth:`join` メソッドはキュー内のアイテムが全て抽出されて、アイテム内の全ての処理が完了するまでブロックします。ワーカースレッドではほかの新しいメソッド :meth:`task_done` を使えます。これはアイテムについての処理が完了したことを報せるのに使います。 (Contributed by Raymond Hettinger.)"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:1506
 msgid ""
@@ -1807,14 +1803,14 @@ msgid ""
 "thanks to a patch from Philippe Biondi.   Netlink sockets are a Linux-"
 "specific mechanism for communications between a user-space process and "
 "kernel code; an introductory  article about them is at "
-"http://www.linuxjournal.com/article/7356. In Python code, netlink addresses "
-"are represented as a tuple of 2 integers, ``(pid, group_mask)``."
-msgstr ":mod:`socket` モジュールが Linux で :const:`AF_NETLINK` をサポートするようになりました。Philippe Biondi によるパッチのおかげです。Netlink ソケットは Linux 固有のメカニズムで、ユーザ空間プロセスとカーネルコードとのコミュニケーションのためのものです; 導入的な記事が http://www.linuxjournal.com/article/7356 にあります。Python コードでは netlink アドレスは 2 つの整数のタプル ``(pid, group_mask)`` で表現されます。"
+"https://www.linuxjournal.com/article/7356. In Python code, netlink addresses"
+" are represented as a tuple of 2 integers, ``(pid, group_mask)``."
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:1535
 msgid ""
-"Two new methods on socket objects, :meth:`recv_into(buffer)` and "
-":meth:`recvfrom_into(buffer)`, store the received data in an object  that "
+"Two new methods on socket objects, ``recv_into(buffer)`` and "
+"``recvfrom_into(buffer)``, store the received data in an object  that "
 "supports the buffer protocol instead of returning the data as a string.  "
 "This means you can put the data directly into an array or a memory-mapped "
 "file."
@@ -1846,10 +1842,10 @@ msgstr ":meth:`pack`, :meth:`unpack` メソッドでフォーマット文字列�
 #: ../../whatsnew/2.5.rst:1559
 msgid ""
 "You can also pack and unpack data to and from buffer objects directly using "
-"the :meth:`pack_into(buffer, offset, v1, v2, ...)` and "
-":meth:`unpack_from(buffer, offset)` methods.  This lets you store data "
-"directly into an array or a memory- mapped file."
-msgstr "直接的にバッファオブジェクトを介した pack と unpack も可能で、 ``pack_into(buffer, offset, v1, v2, ...)`` と ``unpack_from(buffer, offset)`` メソッドを使います。これにより array やメモリマップドファイルにデータを直接格納出来ます。"
+"the ``pack_into(buffer, offset, v1, v2, ...)`` and ``unpack_from(buffer, "
+"offset)`` methods.  This lets you store data directly into an array or a "
+"memory-mapped file."
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:1564
 msgid ""
@@ -1901,12 +1897,12 @@ msgstr "ストリームモードで開く tarfile に使われる圧縮を、モ
 #: ../../whatsnew/2.5.rst:1594
 msgid ""
 "The :mod:`threading` module now lets you set the stack size used when new "
-"threads are created. The :func:`stack_size([*size*])` function returns the "
+"threads are created. The ``stack_size([*size*])`` function returns the "
 "currently configured stack size, and supplying the optional *size* parameter"
 " sets a new value.  Not all platforms support changing the stack size, but "
 "Windows, POSIX threading, and OS/2 all do. (Contributed by Andrew "
 "MacIntyre.)"
-msgstr ":mod:`threading` モジュールで、新しいスレッドを作る際に使われるスタックサイズを設定出来るようになりました。 :func:`stack_size([*size*])` 関数は現在構成されているスタックサイズを返し、省略可能引数 *size* パラメータを与えると新しい値を設定します。全てのプラットフォームがスタックサイズ変更をサポートしているわけではなく、Windows、POSIX スレッド、OS/2 で可能です。 (Contributed by Andrew MacIntyre.)"
+msgstr ":mod:`threading` モジュールで、新しいスレッドを作る際に使われるスタックサイズを設定出来るようになりました。 ``stack_size([*size*])`` 関数は現在構成されているスタックサイズを返し、省略可能引数 *size* パラメータを与えると新しい値を設定します。全てのプラットフォームがスタックサイズ変更をサポートしているわけではなく、Windows、POSIX スレッド、OS/2 で可能です。 (Contributed by Andrew MacIntyre.)"
 
 #: ../../whatsnew/2.5.rst:1602
 msgid ""
@@ -1945,22 +1941,23 @@ msgid ""
 "The :mod:`webbrowser` module received a number of enhancements. It's now "
 "usable as a script with ``python -m webbrowser``, taking a URL as the "
 "argument; there are a number of switches  to control the behaviour "
-"(:option:`-n` for a new browser window,  :option:`-t` for a new tab).  New "
-"module-level functions, :func:`open_new` and :func:`open_new_tab`, were "
+"(:option:`!-n` for a new browser window,  :option:`!-t` for a new tab).  New"
+" module-level functions, :func:`open_new` and :func:`open_new_tab`, were "
 "added  to support this.  The module's :func:`open` function supports an "
 "additional feature, an *autoraise* parameter that signals whether to raise "
 "the open window when possible. A number of additional browsers were added to"
 " the supported list such as Firefox, Opera, Konqueror, and elinks.  "
 "(Contributed by Oleg Broytmann and Georg Brandl.)"
-msgstr ":mod:`webbrowser` モジュールにたくさんの機能拡張がありました。今や、引数に URL を受け取る、 ``python -m webbrowser`` で起動出来るスクリプトとして使えます; 振る舞いを変更するスイッチも取ります。(:option:`-n` で可能なら新しいブラウザウィンドウで、 :option:`-t` で新しいタブで開きます。)新しく追加されたモジュールレベル関数 :func:`open_new` と :func:`open_new_tab` がこれをサポートするために追加されました。モジュールの :func:`~webbrowser.open` 関数が追加機能をサポートしています。 *autoraise* で、可能なら開いたウィンドウを前面に持ってきます(起こす=raise します)。サポートリストとして追加のブラウザが多数追加されています。Firefox, Opera, Konqueror, elinks など。(Contributed by Oleg Broytmann and Georg Brandl.)"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:1652
 msgid ""
-"The :mod:`xmlrpclib` module now supports returning  :class:`datetime` "
-"objects for the XML-RPC date type.  Supply  ``use_datetime=True`` to the "
-":func:`loads` function or the :class:`Unmarshaller` class to enable this "
-"feature. (Contributed by Skip Montanaro.)"
-msgstr ":mod:`xmlrpclib` モジュールが XML-RPC データ型のために :class:`datetime` オブジェクトを返せるようになっています。この機能を有効にするには ``use_datetime=True`` を :func:`loads` 関数か :class:`Unmarshaller` クラスに渡してください。 (Contributed by Skip Montanaro.)"
+"The :mod:`xmlrpclib` module now supports returning  "
+":class:`~datetime.datetime` objects for the XML-RPC date type.  Supply  "
+"``use_datetime=True`` to the :func:`loads` function or the "
+":class:`Unmarshaller` class to enable this feature. (Contributed by Skip "
+"Montanaro.)"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:1659
 msgid ""
@@ -2285,7 +2282,7 @@ msgstr "古い :mod:`md5` と :mod:`sha` モジュールは、後方互換のた
 #: ../../whatsnew/2.5.rst:1913
 msgid ""
 "Once a hash object has been created, its methods are the same as before: "
-":meth:`update(string)` hashes the specified string into the  current digest "
+"``update(string)`` hashes the specified string into the  current digest "
 "state, :meth:`digest` and :meth:`hexdigest` return the digest value as a "
 "binary string or a string of hex digits, and :meth:`copy` returns a new "
 "hashing object with the same digest state."
@@ -2382,8 +2379,8 @@ msgstr "以下の例ではイテレータの形を使います::"
 #: ../../whatsnew/2.5.rst:2015
 msgid ""
 "For more information about the SQL dialect supported by SQLite, see "
-"http://www.sqlite.org."
-msgstr "SQLite でサポートされる SQL 方言についてもっと詳しく知りたければ、 http://www.sqlite.org を参照して下さい。"
+"https://www.sqlite.org."
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:2022
 msgid "http://www.pysqlite.org"
@@ -2394,8 +2391,8 @@ msgid "The pysqlite web page."
 msgstr "pysqlite のウェブページ。"
 
 #: ../../whatsnew/2.5.rst:2026
-msgid "http://www.sqlite.org"
-msgstr "http://www.sqlite.org"
+msgid "https://www.sqlite.org"
+msgstr "https://www.sqlite.org"
 
 #: ../../whatsnew/2.5.rst:2025
 msgid ""
@@ -2408,8 +2405,8 @@ msgid "The documentation  for the :mod:`sqlite3` module."
 msgstr ":mod:`sqlite3` モジュールについてのドキュメント。"
 
 #: ../../whatsnew/2.5.rst:2030
-msgid "PEP 249 - Database API Specification 2.0"
-msgstr "PEP 249 - Database API Specification 2.0"
+msgid ":pep:`249` - Database API Specification 2.0"
+msgstr ":pep:`249` - Database API Specification 2.0"
 
 #: ../../whatsnew/2.5.rst:2031
 msgid "PEP written by Marc-André Lemburg."
@@ -2443,8 +2440,8 @@ msgid "A central web site for WSGI-related resources."
 msgstr "WSGI 関連のリソースについて集約しているウェブサイト。"
 
 #: ../../whatsnew/2.5.rst:2070
-msgid "PEP 333 - Python Web Server Gateway Interface v1.0"
-msgstr "PEP 333 - Python Web Server Gateway Interface v1.0"
+msgid ":pep:`333` - Python Web Server Gateway Interface v1.0"
+msgstr ":pep:`333` - Python Web Server Gateway Interface v1.0"
 
 #: ../../whatsnew/2.5.rst:2071
 msgid "PEP written by Phillip J. Eby."
@@ -2471,8 +2468,8 @@ msgid ""
 " provided the results of their examination of the Python source code.  The "
 "analysis found about 60 bugs that  were quickly fixed.  Many of the bugs "
 "were refcounting problems, often occurring in error-handling code.  See "
-"http://scan.coverity.com for the statistics."
-msgstr "Coverity 社、この会社は Prevent と呼ばれるソースコード解析ツールを商品化していますが、彼らは Python ソースコードについての解析結果を提供してくれました。その解析では 60 のバグを発見し、それらはすぐさま修正されました。バグの多くは参照カウントの問題であり、それらはしばしばエラー処理コード内にありました。 http://scan.coverity.com を参照してください。"
+"https://scan.coverity.com for the statistics."
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:2093
 msgid ""
@@ -2574,10 +2571,10 @@ msgstr "C コードから Python インタプリタの正確なリビジョン�
 msgid ""
 "Two new macros can be used to indicate C functions that are local to the "
 "current file so that a faster calling convention can be used. "
-":c:func:`Py_LOCAL(type)` declares the function as returning a value of the "
+"``Py_LOCAL(type)`` declares the function as returning a value of the "
 "specified *type* and uses a fast-calling qualifier. "
-":c:func:`Py_LOCAL_INLINE(type)` does the same thing and also requests the "
-"function be inlined.  If :c:func:`PY_LOCAL_AGGRESSIVE` is defined before "
+"``Py_LOCAL_INLINE(type)`` does the same thing and also requests the function"
+" be inlined.  If :c:func:`PY_LOCAL_AGGRESSIVE` is defined before "
 ":file:`python.h` is included, a set of more aggressive optimizations are "
 "enabled for the module; you should benchmark the results to find out if "
 "these optimizations actually make the code faster.  (Contributed by Fredrik "
@@ -2586,17 +2583,17 @@ msgstr ""
 
 #: ../../whatsnew/2.5.rst:2180
 msgid ""
-":c:func:`PyErr_NewException(name, base, dict)` can now accept a tuple of "
-"base classes as its *base* argument.  (Contributed by Georg Brandl.)"
+"``PyErr_NewException(name, base, dict)`` can now accept a tuple of base "
+"classes as its *base* argument.  (Contributed by Georg Brandl.)"
 msgstr "``PyErr_NewException(name, base, dict)`` が *base* 引数としてベースクラスのタプルを受け付けるようになりました。 (Contributed by Georg Brandl.)"
 
 #: ../../whatsnew/2.5.rst:2183
 msgid ""
 "The :c:func:`PyErr_Warn` function for issuing warnings is now deprecated in "
-"favour of :c:func:`PyErr_WarnEx(category, message, stacklevel)` which lets "
-"you specify the number of stack frames separating this function and the "
-"caller.  A *stacklevel* of 1 is the function calling :c:func:`PyErr_WarnEx`,"
-" 2 is the function above that, and so forth.  (Added by Neal Norwitz.)"
+"favour of ``PyErr_WarnEx(category, message, stacklevel)`` which lets you "
+"specify the number of stack frames separating this function and the caller."
+"  A *stacklevel* of 1 is the function calling :c:func:`PyErr_WarnEx`, 2 is "
+"the function above that, and so forth.  (Added by Neal Norwitz.)"
 msgstr ":c:func:`PyErr_Warn` 関数が、 ``PyErr_WarnEx(category, message, stacklevel)`` を採用のために非推奨となっています。後者はこの関数と呼び出し元との間を隔てるスタックフレーム数を指定できます。 *stacklevel* を 1 とすると関数呼び出しは :c:func:`PyErr_WarnEx` からとなり、2 であればその一つ上から、などです。 (Added by Neal Norwitz.)"
 
 #: ../../whatsnew/2.5.rst:2189
@@ -2626,11 +2623,11 @@ msgstr "MacOS X (10.3 以上): モジュールの動的ロードに、MacOS 固�
 
 #: ../../whatsnew/2.5.rst:2212
 msgid ""
-"MacOS X: an :option:`--enable-universalsdk` switch was added to the "
+"MacOS X: an :option:`!--enable-universalsdk` switch was added to the "
 ":program:`configure` script that compiles the interpreter as a universal "
 "binary able to run on both PowerPC and Intel processors. (Contributed by "
 "Ronald Oussoren; :issue:`2573`.)"
-msgstr "MacOS X: :program:`configure` スクリプトへのスイッチ :option:`--enable-universalsdk` が追加され、これにより PowerPC と Intel プロセッサ両方で動作することが出来るユニバーサルバイナリとしてインタプリタをコンパイル出来ます。 (Contributed by Ronald Oussoren; :issue:`2573`.)"
+msgstr ""
 
 #: ../../whatsnew/2.5.rst:2217
 msgid ""
@@ -2730,8 +2727,8 @@ msgid ""
 "The author would like to thank the following people for offering "
 "suggestions, corrections and assistance with various drafts of this article:"
 " Georg Brandl, Nick Coghlan, Phillip J. Eby, Lars Gustäbel, Raymond "
-"Hettinger, Ralf W. Grosse- Kunstleve, Kent Johnson, Iain Lowe, Martin von "
+"Hettinger, Ralf W. Grosse-Kunstleve, Kent Johnson, Iain Lowe, Martin von "
 "Löwis, Fredrik Lundh, Andrew McNamara, Skip Montanaro, Gustavo Niemeyer, "
 "Paul Prescod, James Pryor, Mike Rovner, Scott Weikart, Barry Warsaw, Thomas "
 "Wouters."
-msgstr "著者は提案の申し出や修正、様々なこの記事の草稿の助けをしてくれた以下の人々に感謝します:  Georg Brandl, Nick Coghlan, Phillip J. Eby, Lars Gustäbel, Raymond Hettinger, Ralf W. Grosse- Kunstleve, Kent Johnson, Iain Lowe, Martin von Löwis, Fredrik Lundh, Andrew McNamara, Skip Montanaro, Gustavo Niemeyer, Paul Prescod, James Pryor, Mike Rovner, Scott Weikart, Barry Warsaw, Thomas Wouters."
+msgstr ""

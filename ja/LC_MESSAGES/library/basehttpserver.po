@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-26 09:24+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:46+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -207,10 +206,12 @@ msgid ""
 "Sends and logs a complete error reply to the client. The numeric *code* "
 "specifies the HTTP error code, with *message* as optional, more specific "
 "text. A complete set of headers is sent, followed by text composed using the"
-" :attr:`error_message_format` class variable."
-msgstr "完全なエラー応答をクライアントに送信し、ログ記録します。 *code* は数値型で、HTTP エラーコードを指定します。 *message* はオプションで、より詳細なメッセージテキストです。完全なヘッダのセットが送信された後, :attr:`error_message_format` クラス変数を使って組み立てられたテキストが送られます。"
+" :attr:`error_message_format` class variable. The body will be empty if the "
+"method is HEAD or the response code is one of the following: ``1xx``, ``204 "
+"No Content``, ``205 Reset Content``, ``304 Not Modified``."
+msgstr ""
 
-#: ../../library/basehttpserver.rst:205
+#: ../../library/basehttpserver.rst:208
 msgid ""
 "Sends a response header and logs the accepted request. The HTTP response "
 "line is sent, followed by *Server* and *Date* headers. The values for these "
@@ -218,32 +219,32 @@ msgid ""
 ":meth:`date_time_string` methods, respectively."
 msgstr "応答ヘッダを送信し、受理したリクエストをログ記録します。HTTP 応答行が送られた後、 *Server* および *Date* ヘッダが送られます。これら二つのヘッダはそれぞれ :meth:`version_string`  および :meth:`date_time_string` メソッドで取り出します。"
 
-#: ../../library/basehttpserver.rst:213
+#: ../../library/basehttpserver.rst:216
 msgid ""
 "Writes a specific HTTP header to the output stream. *keyword* should specify"
 " the header keyword, with *value* specifying its value."
 msgstr "出力ストリームに特定の HTTP ヘッダを書き込みます。 *keyword* はヘッダのキーワードを指定し、 *value* にはその値を指定します。"
 
-#: ../../library/basehttpserver.rst:219
+#: ../../library/basehttpserver.rst:222
 msgid ""
 "Sends a blank line, indicating the end of the HTTP headers in the response."
 msgstr "応答中の HTTP ヘッダの終了を示す空行を送信します。"
 
-#: ../../library/basehttpserver.rst:225
+#: ../../library/basehttpserver.rst:228
 msgid ""
 "Logs an accepted (successful) request. *code* should specify the numeric "
 "HTTP code associated with the response. If a size of the response is "
 "available, then it should be passed as the *size* parameter."
 msgstr "受理された (成功した) リクエストをログに記録します。*code* にはこの応答に関連付けられた HTTP コード番号を指定します。応答メッセージの大きさを知ることができる場合、*size* パラメタに渡すとよいでしょう。"
 
-#: ../../library/basehttpserver.rst:232
+#: ../../library/basehttpserver.rst:235
 msgid ""
 "Logs an error when a request cannot be fulfilled. By default, it passes the "
 "message to :meth:`log_message`, so it takes the same arguments (*format* and"
 " additional values)."
 msgstr "リクエストを遂行できなかった際に、エラーをログに記録します。標準では、メッセージを :meth:`log_message` に渡します。従って同じ引数 (*format* と追加の値) を取ります。"
 
-#: ../../library/basehttpserver.rst:239
+#: ../../library/basehttpserver.rst:242
 msgid ""
 "Logs an arbitrary message to ``sys.stderr``. This is typically overridden to"
 " create custom error logging mechanisms. The *format* argument is a standard"
@@ -252,60 +253,60 @@ msgid ""
 "address and current date and time are prefixed to every message logged."
 msgstr "任意のメッセージを ``sys.stderr`` にログ記録します。このメソッドは通常、カスタムのエラーログ記録機構を作成するために上書きされます。 *format* 引数は標準の printf 形式の書式化文字列で、 :meth:`log_message` に渡された追加の引数は書式化の入力として適用されます。ログ記録される全てのメッセージには、クライアントの IP アドレスおよび現在の日付、時刻が先頭に付けられます。"
 
-#: ../../library/basehttpserver.rst:248
+#: ../../library/basehttpserver.rst:251
 msgid ""
 "Returns the server software's version string. This is a combination of the "
 ":attr:`server_version` and :attr:`sys_version` class variables."
 msgstr "サーバソフトウェアのバージョン文字列を返します。この文字列はクラス変数 :attr:`server_version` および :attr:`sys_version` を組み合わせたものです。"
 
-#: ../../library/basehttpserver.rst:254
+#: ../../library/basehttpserver.rst:257
 msgid ""
 "Returns the date and time given by *timestamp* (which must be in the format "
 "returned by :func:`time.time`), formatted for a message header. If "
 "*timestamp* is omitted, it uses the current date and time."
 msgstr "メッセージヘッダ向けに書式化された、 *timestamp* (:func:`time.time` のフォーマットである必要があります)で与えられた日時を返します。もし *timestamp* が省略された場合には、現在の日時が使われます。"
 
-#: ../../library/basehttpserver.rst:258
+#: ../../library/basehttpserver.rst:261
 msgid "The result looks like ``'Sun, 06 Nov 1994 08:49:37 GMT'``."
 msgstr "出力は ``'Sun, 06 Nov 1994 08:49:37 GMT'`` のようになります。"
 
-#: ../../library/basehttpserver.rst:260
+#: ../../library/basehttpserver.rst:263
 msgid "The *timestamp* parameter."
 msgstr "*timestamp* パラメータ."
 
-#: ../../library/basehttpserver.rst:266
+#: ../../library/basehttpserver.rst:269
 msgid "Returns the current date and time, formatted for logging."
 msgstr "ログ記録向けに書式化された、現在の日付および時刻を返します。"
 
-#: ../../library/basehttpserver.rst:271
+#: ../../library/basehttpserver.rst:274
 msgid ""
 "Returns the client address, formatted for logging. A name lookup is "
 "performed on the client's IP address."
 msgstr "ログ記録向けに書式化された、クライアントのアドレスを返します。このときクライアントの IP アドレスに対する名前解決を行います。"
 
-#: ../../library/basehttpserver.rst:276
+#: ../../library/basehttpserver.rst:279
 msgid "More examples"
 msgstr "他の例"
 
-#: ../../library/basehttpserver.rst:278
+#: ../../library/basehttpserver.rst:281
 msgid ""
 "To create a server that doesn't run forever, but until some condition is "
 "fulfilled::"
 msgstr "永遠ではなく、何かの条件が満たされるまでの間実行するサーバーを作るには::"
 
-#: ../../library/basehttpserver.rst:297
-msgid "Module CGIHTTPServer"
-msgstr "Module :mod:`CGIHTTPServer`"
+#: ../../library/basehttpserver.rst:300
+msgid "Module :mod:`CGIHTTPServer`"
+msgstr ""
 
-#: ../../library/basehttpserver.rst:297
+#: ../../library/basehttpserver.rst:300
 msgid "Extended request handler that supports CGI scripts."
 msgstr "CGI スクリプトをサポートするように拡張されたリクエストハンドラ。"
 
-#: ../../library/basehttpserver.rst:300
-msgid "Module SimpleHTTPServer"
-msgstr "Module :mod:`SimpleHTTPServer`"
+#: ../../library/basehttpserver.rst:303
+msgid "Module :mod:`SimpleHTTPServer`"
+msgstr ""
 
-#: ../../library/basehttpserver.rst:300
+#: ../../library/basehttpserver.rst:303
 msgid ""
 "Basic request handler that limits response to files actually under the "
 "document root."

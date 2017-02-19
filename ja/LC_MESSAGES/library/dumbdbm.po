@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-29 21:20+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:51+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -91,40 +90,40 @@ msgid "Close the ``dumbdm`` database."
 msgstr "``dumbdm`` データベースをクローズします。"
 
 #: ../../library/dumbdbm.rst:64
-msgid "Module anydbm"
-msgstr "Module :mod:`anydbm`"
+msgid "Module :mod:`anydbm`"
+msgstr ""
 
 #: ../../library/dumbdbm.rst:64
 msgid "Generic interface to ``dbm``\\ -style databases."
 msgstr "``dbm`` スタイルの汎用的なインタフェース"
 
 #: ../../library/dumbdbm.rst:67
-msgid "Module dbm"
-msgstr "Module :mod:`dbm`"
+msgid "Module :mod:`dbm`"
+msgstr ":mod:`dbm` モジュール"
 
 #: ../../library/dumbdbm.rst:67
 msgid "Similar interface to the DBM/NDBM library."
 msgstr "DBM/NDBM ライブラリに対する同様のインタフェース。"
 
 #: ../../library/dumbdbm.rst:70
-msgid "Module gdbm"
-msgstr "Module :mod:`gdbm`"
+msgid "Module :mod:`gdbm`"
+msgstr ""
 
 #: ../../library/dumbdbm.rst:70
 msgid "Similar interface to the GNU GDBM library."
 msgstr "GNU GDBM ライブラリの類似したインタフェース"
 
 #: ../../library/dumbdbm.rst:73
-msgid "Module shelve"
-msgstr "Module :mod:`shelve`"
+msgid "Module :mod:`shelve`"
+msgstr ":mod:`shelve` モジュール"
 
 #: ../../library/dumbdbm.rst:73
 msgid "Persistence module which stores non-string data."
 msgstr "非文字列データを記録する永続化モジュール。"
 
 #: ../../library/dumbdbm.rst:75
-msgid "Module whichdb"
-msgstr "Module :mod:`whichdb`"
+msgid "Module :mod:`whichdb`"
+msgstr ""
 
 #: ../../library/dumbdbm.rst:76
 msgid "Utility module used to determine the type of an existing database."
@@ -137,8 +136,8 @@ msgstr "Dumbdbm オブジェクト"
 #: ../../library/dumbdbm.rst:84
 msgid ""
 "In addition to the methods provided by the :class:`UserDict.DictMixin` "
-"class, :class:`dumbdbm` objects provide the following methods."
-msgstr ":class:`UserDict.DictMixin` クラスで提供されているメソッドに加え、 :class:`dumbdbm` オブジェクトでは以下のメソッドを提供しています。"
+"class, :class:`~dumbdbm.dumbdbm` objects provide the following methods."
+msgstr ""
 
 #: ../../library/dumbdbm.rst:90
 msgid ""

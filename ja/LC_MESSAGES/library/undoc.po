@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-29 13:15+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:07+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,8 +44,8 @@ msgid "Some of these are very old and/or not very robust; marked with \"hmm.\""
 msgstr "以下のいくつかは非常に古く、かつ／またはあまり頑健ではありません。  \"hmm.\" マーク付きです。"
 
 #: ../../library/undoc.rst:25
-msgid "ihooks"
-msgstr ":mod:`ihooks`"
+msgid ":mod:`ihooks`"
+msgstr ""
 
 #: ../../library/undoc.rst:23
 msgid ""
@@ -65,7 +64,7 @@ msgid ""
 msgstr "これらのモジュールは :mod:`os.path` モジュールを実装するために用いられていますが、ここで触れる内容を超えてドキュメントされていません。これらはもう少しドキュメント化する必要があります。"
 
 #: ../../library/undoc.rst:34
-msgid "ntpath"
+msgid ":mod:`ntpath`"
 msgstr ":mod:`ntpath`"
 
 #: ../../library/undoc.rst:34
@@ -75,7 +74,7 @@ msgid ""
 msgstr "--- Win32、 Win64、 WinCE、および OS/2 プラットフォームにおける :mod:`os.path` 実装です。"
 
 #: ../../library/undoc.rst:37
-msgid "posixpath"
+msgid ":mod:`posixpath`"
 msgstr ":mod:`posixpath`"
 
 #: ../../library/undoc.rst:37
@@ -83,8 +82,8 @@ msgid "--- Implementation of :mod:`os.path` on POSIX."
 msgstr "--- POSIXにおける :mod:`os.path` 実装です。"
 
 #: ../../library/undoc.rst:43
-msgid "bsddb185"
-msgstr ":mod:`bsddb185`"
+msgid ":mod:`bsddb185`"
+msgstr ""
 
 #: ../../library/undoc.rst:40
 msgid ""
@@ -98,8 +97,8 @@ msgid "Multimedia"
 msgstr "マルチメディア関連"
 
 #: ../../library/undoc.rst:49
-msgid "audiodev"
-msgstr ":mod:`audiodev`"
+msgid ":mod:`audiodev`"
+msgstr ""
 
 #: ../../library/undoc.rst:49
 msgid ""
@@ -107,8 +106,8 @@ msgid ""
 msgstr "--- 音声データを再生するためのプラットフォーム非依存の API です。 Python 3.x で削除されました。"
 
 #: ../../library/undoc.rst:53
-msgid "linuxaudiodev"
-msgstr ":mod:`linuxaudiodev`"
+msgid ":mod:`linuxaudiodev`"
+msgstr ""
 
 #: ../../library/undoc.rst:52
 msgid ""
@@ -117,8 +116,8 @@ msgid ""
 msgstr "--- Linux 音声デバイスで音声データを再生します。Python 2.3 では :mod:`ossaudiodev` モジュールと置き換えられました。 Python 3.x で削除されました。"
 
 #: ../../library/undoc.rst:57
-msgid "sunaudio"
-msgstr ":mod:`sunaudio`"
+msgid ":mod:`sunaudio`"
+msgstr ""
 
 #: ../../library/undoc.rst:56
 msgid ""
@@ -127,8 +126,8 @@ msgid ""
 msgstr "--- Sun 音声データヘッダを解釈します (撤廃されるか、ツール/デモになるかもしれません)。 Python 3.x で削除されました。"
 
 #: ../../library/undoc.rst:62
-msgid "toaiff"
-msgstr ":mod:`toaiff`"
+msgid ":mod:`toaiff`"
+msgstr ""
 
 #: ../../library/undoc.rst:60
 msgid ""
@@ -249,8 +248,8 @@ msgid ""
 msgstr "これらの拡張モジュールのうち C で書かれたものは、標準の設定ではビルドされません。Unix でこれらのモジュールを有効にするには、ビルドツリー内の :file:`Modules/Setup` の適切な行のコメントアウトを外して、モジュールを静的リンクするなら Python をビルドしなおし、動的にロードされる拡張を使うなら共有オブジェクトをビルドしてインストールする必要があります。"
 
 #: ../../library/undoc.rst:235
-msgid "timing"
-msgstr ":mod:`timing`"
+msgid ":mod:`timing`"
+msgstr ""
 
 #: ../../library/undoc.rst:233
 msgid ""
@@ -269,16 +268,16 @@ msgid ""
 msgstr "以下は SGI 固有のモジュールで、現在のバージョンの SGI の実情が反映されていないかもしれません。"
 
 #: ../../library/undoc.rst:244
-msgid "cl"
-msgstr ":mod:`cl`"
+msgid ":mod:`cl`"
+msgstr ""
 
 #: ../../library/undoc.rst:244
 msgid "--- Interface to the SGI compression library."
 msgstr "--- SGI 圧縮ライブラリへのインタフェースです。"
 
 #: ../../library/undoc.rst:247
-msgid "sv"
-msgstr ":mod:`sv`"
+msgid ":mod:`sv`"
+msgstr ""
 
 #: ../../library/undoc.rst:247
 msgid ""

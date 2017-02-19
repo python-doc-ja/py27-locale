@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-06 10:24+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:10+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -155,7 +154,7 @@ msgid ""
 msgstr "SAX :class:`~xml.sax.xmlreader.XMLReader` が要求された機能をサポートしていないとき発生させる :exc:`SAXException` のサブクラスです。 SAX アプリケーションや拡張モジュールにおいて同様の目的にこのクラスを利用することもできます。"
 
 #: ../../library/xml.sax.rst:132
-msgid "SAX: The Simple API for XML"
+msgid "`SAX: The Simple API for XML <http://www.saxproject.org/>`_"
 msgstr "`SAX: The Simple API for XML <http://www.saxproject.org/>`_"
 
 #: ../../library/xml.sax.rst:130
@@ -166,7 +165,7 @@ msgid ""
 msgstr "SAX API 定義に関し中心となっているサイトです。Java による実装とオンライン・ドキュメントが提供されています。実装と SAX API の歴史に関する情報のリンクも掲載されています。"
 
 #: ../../library/xml.sax.rst:135
-msgid "Module xml.sax.handler"
+msgid "Module :mod:`xml.sax.handler`"
 msgstr ":mod:`xml.sax.handler` モジュール"
 
 #: ../../library/xml.sax.rst:135
@@ -174,7 +173,7 @@ msgid "Definitions of the interfaces for application-provided objects."
 msgstr "アプリケーションが提供するオブジェクトのインターフェース定義。"
 
 #: ../../library/xml.sax.rst:138
-msgid "Module xml.sax.saxutils"
+msgid "Module :mod:`xml.sax.saxutils`"
 msgstr ":mod:`xml.sax.saxutils` モジュール"
 
 #: ../../library/xml.sax.rst:138
@@ -182,7 +181,7 @@ msgid "Convenience functions for use in SAX applications."
 msgstr "SAX アプリケーション向けの有用な関数群。"
 
 #: ../../library/xml.sax.rst:140
-msgid "Module xml.sax.xmlreader"
+msgid "Module :mod:`xml.sax.xmlreader`"
 msgstr ":mod:`xml.sax.xmlreader` モジュール"
 
 #: ../../library/xml.sax.rst:141

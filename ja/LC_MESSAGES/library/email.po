@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-05 11:44+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:52+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -83,7 +82,7 @@ msgid "Contents of the :mod:`email` package documentation:"
 msgstr ":mod:`email` パッケージ文書の内容"
 
 #: ../../library/email.rst:72
-msgid "Module smtplib"
+msgid "Module :mod:`smtplib`"
 msgstr ":mod:`smtplib` モジュール"
 
 #: ../../library/email.rst:72
@@ -91,7 +90,7 @@ msgid "SMTP protocol client"
 msgstr "SMTP プロトコルクライアント"
 
 #: ../../library/email.rst:74
-msgid "Module nntplib"
+msgid "Module :mod:`nntplib`"
 msgstr ":mod:`nntplib` モジュール"
 
 #: ../../library/email.rst:75

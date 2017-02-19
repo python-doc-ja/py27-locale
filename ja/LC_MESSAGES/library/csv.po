@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-23 17:05+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:49+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -62,8 +61,8 @@ msgid ""
 msgstr "このバージョンの :mod:`csv` モジュールは Unicode 入力をサポートしていません。また、現在のところ、 ASCII NUL 文字に関連したいくつかの問題があります。従って、安全を期すには、全ての入力を UTF-8 または印字可能な ASCII にしなければなりません。これについては :ref:`csv-examples` 節の例を参照してください。"
 
 #: ../../library/csv.rst:48
-msgid "PEP 305 - CSV File API"
-msgstr "PEP 305 - CSV File API"
+msgid ":pep:`305` - CSV File API"
+msgstr ":pep:`305` - CSV File API"
 
 #: ../../library/csv.rst:49
 msgid ""
@@ -100,8 +99,8 @@ msgid ""
 "automatic data type conversion is performed."
 msgstr "csv ファイルから読み込まれた各行は、文字列のリストとして返されます。 データ型の変換が自動的に行われることはありません。"
 
-#: ../../library/csv.rst:78 ../../library/csv.rst:117
-#: ../../library/csv.rst:183 ../../library/csv.rst:217
+#: ../../library/csv.rst:78 ../../library/csv.rst:118
+#: ../../library/csv.rst:184 ../../library/csv.rst:218
 msgid "A short usage example::"
 msgstr "短い利用例::"
 
@@ -134,11 +133,11 @@ msgid ""
 ":const:`None` is written as the empty string.  While this isn't a reversible"
 " transformation, it makes it easier to dump SQL NULL data values to CSV "
 "files without preprocessing the data returned from a ``cursor.fetch*`` call."
-" All other non-string data are stringified with :func:`str` before being "
-"written."
-msgstr "ユーザが与えたデータをデリミタで区切られた文字列に変換し、与えられたファイルオブジェクトに書き込むための writer オブジェクトを返します。 *csvfile* は :func:`write` メソッドを持つ任意のオブジェクトです。 *csvfile* がファイルオブジェクトの場合、 'b' フラグが意味を持つプラットフォームでは 'b' フラグを付けて開かなければなりません。 オプションとして *dialect* 引数を与えることができ、利用するCSV表現形式(dialect)を指定することができます。 *dialect* パラメタは :class:`Dialect` クラスのサブクラスのインスタンスか、 :func:`list_dialects` 関数が返す文字列の1つにすることができます。 別のオプション引数である *fmtparams* キーワード引数は、現在の表現形式における個々の書式パラメタを上書きするために与えることができます。 *dialect* と書式パラメタについての詳細は、 :ref:`csv-fmt-params` 節を参照してください。 DB API を実装するモジュールとのインタフェースを可能な限り容易にするために、 :const:`None` は空文字列として書き込まれます。 この処理は可逆な変換ではありませんが、SQL で NULL データ値を CSV にダンプする処理を、 ``cursor.fetch*`` 呼び出しによって 返されたデータを前処理することなく簡単に行うことができます。 他の非文字列データは、書き出される前に :func:`str` を使って文字列に変換されます。"
+" Floats are stringified with :func:`repr` before being written. All other "
+"non-string data are stringified with :func:`str` before being written."
+msgstr ""
 
-#: ../../library/csv.rst:129
+#: ../../library/csv.rst:130
 msgid ""
 "Associate *dialect* with *name*.  *name* must be a string or Unicode object."
 " The dialect can be specified either by passing a sub-class of "
@@ -147,40 +146,40 @@ msgid ""
 "dialect and formatting parameters, see section :ref:`csv-fmt-params`."
 msgstr "*dialect* を *name* と関連付けます。 *name* は文字列か Unicode オブジェクトでなければなりません。表現形式(dialect)は :class:`Dialect` のサブクラスを渡すか、またはキーワード引数 *fmtparams* 、もしくは両方で指定できますが、 キーワード引数の方が優先されます。表現形式と書式化パラメタについての詳細は、 :ref:`csv-fmt-params` 節を参照してください。"
 
-#: ../../library/csv.rst:138
+#: ../../library/csv.rst:139
 msgid ""
 "Delete the dialect associated with *name* from the dialect registry.  An "
 ":exc:`Error` is raised if *name* is not a registered dialect name."
 msgstr "*name* に関連づけられた表現形式を表現形式レジストリから削除します。 *name* が表現形式名でない場合には :exc:`Error` を送出します。"
 
-#: ../../library/csv.rst:144
+#: ../../library/csv.rst:145
 msgid ""
 "Return the dialect associated with *name*.  An :exc:`Error` is raised if "
 "*name* is not a registered dialect name."
 msgstr "*name* に関連づけられた表現形式を返します。 *name* が表現形式名でない場合には :exc:`Error` を送出します。"
 
-#: ../../library/csv.rst:147
+#: ../../library/csv.rst:148
 msgid ""
 "This function now returns an immutable :class:`Dialect`.  Previously an "
 "instance of the requested dialect was returned.  Users could modify the "
 "underlying class, changing the behavior of active readers and writers."
 msgstr "この関数は :term:`immutable` な :class:`Dialect` クラスを返します。 以前は、要求された dialect のインスタンスが返されていました。 ユーザーはクラスを操作すうることで、アクティブな reader や writer の動作を変更することができます。"
 
-#: ../../library/csv.rst:154
+#: ../../library/csv.rst:155
 msgid "Return the names of all registered dialects."
 msgstr "登録されている全ての表現形式を返します。"
 
-#: ../../library/csv.rst:159
+#: ../../library/csv.rst:160
 msgid ""
 "Returns the current maximum field size allowed by the parser. If *new_limit*"
 " is given, this becomes the new limit."
 msgstr "パーサが許容する現在の最大フィールドサイズを返します。 *new_limit* が渡されたときは、その値が新しい上限になります。"
 
-#: ../../library/csv.rst:164
+#: ../../library/csv.rst:165
 msgid "The :mod:`csv` module defines the following classes:"
 msgstr ":mod:`csv` モジュールでは以下のクラスを定義しています:"
 
-#: ../../library/csv.rst:170
+#: ../../library/csv.rst:171
 msgid ""
 "Create an object which operates like a regular reader but maps the "
 "information read into a dict whose keys are given by the optional "
@@ -196,7 +195,7 @@ msgid ""
 "arguments are passed to the underlying :class:`reader` instance."
 msgstr "省略可能な *fieldnames* パラメタで与えられたキーを読み出された情報に対応付ける他は正規の reader のように動作するオブジェクトを生成します。 *fieldnames* パラメタは :ref:`sequence <collections-abstract-base-classes>` で各要素が入力データのフィールドに関連づけられます。 *fieldnames* パラメタが無い場合には、 *csvfile* の最初の行の値がフィールド名として利用されます。読み出された行が *fieldnames* のシーケンスよりも多くのフィールドを持っていた場合、残りのフィールドデータは *restkey* の値をキーとするシーケンスに追加されます。読み出された行が *fieldnames* のシーケンスよりも少ないフィールドしか持たない場合、残りのキーはオプションの *restval* パラメタに指定された値を取ります。その他の省略可能またはキーワード形式のパラメタはベースになっている :class:`reader` のインスタンスに渡されます。"
 
-#: ../../library/csv.rst:199
+#: ../../library/csv.rst:200
 msgid ""
 "Create an object which operates like a regular writer but maps dictionaries "
 "onto output rows.  The *fieldnames* parameter is a :ref:`sequence "
@@ -212,7 +211,7 @@ msgid ""
 ":class:`writer` instance."
 msgstr "辞書を出力行に対応付ける他は正規の writer のように動作するオブジェクトを生成します。 *fieldnames* パラメタは、辞書中の :meth:`writerow` メソッドに渡される値がどの順番で *csvfile* に書き出されるかを指定する :ref:`sequence <collections-abstract-base-classes>` です。オプションの *restval* パラメタは、 *fieldnames* 内のキーが辞書中にない場合に書き出される値を指定します。 :meth:`writerow` メソッドに渡された辞書に、 *fieldnames* 内には存在しないキーが入っている場合、オプションの *extrasaction* パラメタでどのような動作を行うかを指定します。この値が ``'raise'`` に設定されている場合 :exc:`ValueError` が送出されます。 ``'ignore'`` に設定されている場合、辞書の余分の値は無視されます。その他のパラメタはベースになっている :class:`writer` のインスタンスに渡されます。"
 
-#: ../../library/csv.rst:212
+#: ../../library/csv.rst:213
 msgid ""
 "Note that unlike the :class:`DictReader` class, the *fieldnames* parameter "
 "of the :class:`DictWriter` is not optional.  Since Python's :class:`dict` "
@@ -220,75 +219,75 @@ msgid ""
 " the order in which the row should be written to the *csvfile*."
 msgstr ":class:`DictReader` クラスとは違い、 :class:`DictWriter` の *fieldnames* パラメータは省略可能ではありません。Pythonの :class:`dict` オブジェクトは整列されていないので、列が *csvfile* に書かれるべき順序を推定するための十分な情報はありません。"
 
-#: ../../library/csv.rst:233
+#: ../../library/csv.rst:234
 msgid ""
 "The :class:`Dialect` class is a container class relied on primarily for its "
 "attributes, which are used to define the parameters for a specific "
 ":class:`reader` or :class:`writer` instance."
 msgstr ":class:`Dialect` クラスはコンテナクラスで、基本的な用途としては、その属性を特定の :class:`reader` や :class:`writer` インスタンスのパラメタを定義するために用います。"
 
-#: ../../library/csv.rst:240
+#: ../../library/csv.rst:241
 msgid ""
 "The :class:`excel` class defines the usual properties of an Excel-generated "
 "CSV file.  It is registered with the dialect name ``'excel'``."
 msgstr ":class:`excel` クラスは Excel で生成される CSV ファイルの通常のプロパティを定義します。これは ``'excel'`` という名前の dialect として登録されています。"
 
-#: ../../library/csv.rst:246
+#: ../../library/csv.rst:247
 msgid ""
 "The :class:`excel_tab` class defines the usual properties of an Excel-"
 "generated TAB-delimited file.  It is registered with the dialect name "
 "``'excel-tab'``."
 msgstr ":class:`excel_tab` クラスは Excel で生成されるタブ分割ファイルの通常のプロパティを定義します。これは ``'excel-tab'`` という名前の dialect として登録されています。"
 
-#: ../../library/csv.rst:252
+#: ../../library/csv.rst:253
 msgid "The :class:`Sniffer` class is used to deduce the format of a CSV file."
 msgstr ":class:`Sniffer` クラスは CSV ファイルの書式を推理するために用いられるクラスです。"
 
-#: ../../library/csv.rst:254
+#: ../../library/csv.rst:255
 msgid "The :class:`Sniffer` class provides two methods:"
 msgstr ":class:`Sniffer` クラスではメソッドを二つ提供しています:"
 
-#: ../../library/csv.rst:258
+#: ../../library/csv.rst:259
 msgid ""
 "Analyze the given *sample* and return a :class:`Dialect` subclass reflecting"
 " the parameters found.  If the optional *delimiters* parameter is given, it "
 "is interpreted as a string containing possible valid delimiter characters."
 msgstr "与えられた *sample* を解析し、発見されたパラメタを反映した :class:`Dialect` サブクラスを返します。オプションの *delimiters* パラメタを与えた場合、有効なデリミタ文字を含んでいるはずの文字列として解釈されます。"
 
-#: ../../library/csv.rst:266
+#: ../../library/csv.rst:267
 msgid ""
 "Analyze the sample text (presumed to be in CSV format) and return "
 ":const:`True` if the first row appears to be a series of column headers."
 msgstr "(CSV 形式と仮定される) サンプルテキストを解析して、最初の行がカラムヘッダの羅列のように推察される場合 :const:`True` を返します。"
 
-#: ../../library/csv.rst:269
+#: ../../library/csv.rst:270
 msgid "An example for :class:`Sniffer` use::"
 msgstr ":class:`Sniffer` の利用例::"
 
-#: ../../library/csv.rst:278
+#: ../../library/csv.rst:279
 msgid "The :mod:`csv` module defines the following constants:"
 msgstr ":mod:`csv` モジュールでは以下の定数を定義しています:"
 
-#: ../../library/csv.rst:282
+#: ../../library/csv.rst:283
 msgid "Instructs :class:`writer` objects to quote all fields."
 msgstr ":class:`writer` オブジェクトに対し、全てのフィールドをクオートするように指示します。"
 
-#: ../../library/csv.rst:287
+#: ../../library/csv.rst:288
 msgid ""
 "Instructs :class:`writer` objects to only quote those fields which contain "
 "special characters such as *delimiter*, *quotechar* or any of the characters"
 " in *lineterminator*."
 msgstr ":class:`writer` オブジェクトに対し、 *delimiter* 、 *quotechar* または *lineterminator* に含まれる任意の文字のような特別な文字を含むフィールドだけをクオートするように指示します。"
 
-#: ../../library/csv.rst:294
+#: ../../library/csv.rst:295
 msgid "Instructs :class:`writer` objects to quote all non-numeric fields."
 msgstr ":class:`writer` オブジェクトに対し、全ての非数値フィールドをクオートするように指示します。"
 
-#: ../../library/csv.rst:296
+#: ../../library/csv.rst:297
 msgid "Instructs the reader to convert all non-quoted fields to type *float*."
 msgstr ":class:`reader` に対しては、クオートされていない全てのフィールドを *float* 型に変換するよう指示します。"
 
-#: ../../library/csv.rst:301
+#: ../../library/csv.rst:302
 msgid ""
 "Instructs :class:`writer` objects to never quote fields.  When the current "
 "*delimiter* occurs in output data it is preceded by the current *escapechar*"
@@ -296,25 +295,25 @@ msgid ""
 "if any characters that require escaping are encountered."
 msgstr ":class:`writer` オブジェクトに対し、フィールドを決してクオートしないように指示します。現在の *delimiter* が出力データ中に現れた場合、現在設定されている *escapechar* 文字が前に付けられます。 *escapechar* がセットされていない場合、エスケープが必要な文字に遭遇した writer は :exc:`Error` を送出します。"
 
-#: ../../library/csv.rst:306
+#: ../../library/csv.rst:307
 msgid ""
 "Instructs :class:`reader` to perform no special processing of quote "
 "characters."
 msgstr ":class:`reader` に対しては、クオート文字の特別扱いをしないように指示します。"
 
-#: ../../library/csv.rst:308
+#: ../../library/csv.rst:309
 msgid "The :mod:`csv` module defines the following exception:"
 msgstr ":mod:`csv` モジュールでは以下の例外を定義しています:"
 
-#: ../../library/csv.rst:313
+#: ../../library/csv.rst:314
 msgid "Raised by any of the functions when an error is detected."
 msgstr "全ての関数において、エラーが検出された際に送出される例外です。"
 
-#: ../../library/csv.rst:319
+#: ../../library/csv.rst:320
 msgid "Dialects and Formatting Parameters"
 msgstr "Dialect クラスと書式化パラメタ"
 
-#: ../../library/csv.rst:321
+#: ../../library/csv.rst:322
 msgid ""
 "To make it easier to specify the format of input and output records, "
 "specific formatting parameters are grouped together into dialects.  A "
@@ -327,16 +326,16 @@ msgid ""
 " the attributes defined below for the :class:`Dialect` class."
 msgstr "レコードに対する入出力形式の指定をより簡単にするために、特定の書式化パラメタは表現形式 (dialect) にまとめてグループ化されます。表現形式は :class:`Dialect` クラスのサブクラスで、様々なクラス特有のメソッドと、 :meth:`validate` メソッドを一つ持っています。 :class:`reader` または :class:`writer` オブジェクトを生成するとき、プログラマは文字列または :class:`Dialect` クラスのサブクラスを表現形式パラメタとして渡さなければなりません。さらに、 *dialect* パラメタの代りに、プログラマは上で定義されている属性と同じ名前を持つ個々の書式化パラメタを :class:`Dialect` クラスに指定することができます。"
 
-#: ../../library/csv.rst:331
+#: ../../library/csv.rst:332
 msgid "Dialects support the following attributes:"
 msgstr "Dialect は以下の属性をサポートしています:"
 
-#: ../../library/csv.rst:336
+#: ../../library/csv.rst:337
 msgid ""
 "A one-character string used to separate fields.  It defaults to ``','``."
 msgstr "フィールド間を分割するのに用いられる 1 文字からなる文字列です。デフォルトでは ``','`` です。"
 
-#: ../../library/csv.rst:341
+#: ../../library/csv.rst:342
 msgid ""
 "Controls how instances of *quotechar* appearing inside a field should "
 "themselves be quoted.  When :const:`True`, the character is doubled. When "
@@ -344,13 +343,13 @@ msgid ""
 " defaults to :const:`True`."
 msgstr "フィールド内に現れた *quotechar* のインスタンスで、クオートではないその文字自身でなければならない文字をどのようにクオートするかを制御します。 :const:`True` の場合、この文字は二重化されます。 :const:`False` の場合、 *escapechar* は *quotechar* の前に置かれます。デフォルトでは :const:`True` です。"
 
-#: ../../library/csv.rst:346
+#: ../../library/csv.rst:347
 msgid ""
 "On output, if *doublequote* is :const:`False` and no *escapechar* is set, "
 ":exc:`Error` is raised if a *quotechar* is found in a field."
 msgstr "出力においては、 *doublequote* が :const:`False` で *escapechar* がセットされていない場合、フィールド内に *quotechar* が現れると :exc:`Error` が送出されます。"
 
-#: ../../library/csv.rst:352
+#: ../../library/csv.rst:353
 msgid ""
 "A one-character string used by the writer to escape the *delimiter* if "
 "*quoting* is set to :const:`QUOTE_NONE` and the *quotechar* if *doublequote*"
@@ -359,91 +358,91 @@ msgid ""
 "escaping."
 msgstr "writer が、 *quoting* が :const:`QUOTE_NONE` に設定されている場合に *delimiter* をエスケープするため、および、 *doublequote* が :const:`False` の場合に *quotechar* をエスケープするために用いられる、 1 文字からなる文字列です。読み込み時には *escapechar* はそれに引き続く文字の特別な意味を取り除きます。デフォルトでは :const:`None` で、エスケープを行ないません。"
 
-#: ../../library/csv.rst:360
+#: ../../library/csv.rst:361
 msgid ""
 "The string used to terminate lines produced by the :class:`writer`. It "
 "defaults to ``'\\r\\n'``."
 msgstr ":class:`writer` が作り出す各行を終端する際に用いられる文字列です。デフォルトでは ``'\\r\\n'`` です。"
 
-#: ../../library/csv.rst:365
+#: ../../library/csv.rst:366
 msgid ""
 "The :class:`reader` is hard-coded to recognise either ``'\\r'`` or ``'\\n'``"
 " as end-of-line, and ignores *lineterminator*. This behavior may change in "
 "the future."
 msgstr ":class:`reader` は ``'\\r'`` または ``'\\n'`` のどちらかを行末と認識するようにハードコードされており、 *lineterminator* を無視します。この振る舞いは将来変更されるかもしれません。"
 
-#: ../../library/csv.rst:372
+#: ../../library/csv.rst:373
 msgid ""
 "A one-character string used to quote fields containing special characters, "
 "such as the *delimiter* or *quotechar*, or which contain new-line "
 "characters.  It defaults to ``'\"'``."
 msgstr "*delimiter* や *quotechar* といった特殊文字を含むか、改行文字を含むフィールドをクオートする際に用いられる 1 文字からなる文字列です。デフォルトでは ``'\"'`` です。"
 
-#: ../../library/csv.rst:379
+#: ../../library/csv.rst:380
 msgid ""
 "Controls when quotes should be generated by the writer and recognised by the"
 " reader.  It can take on any of the :const:`QUOTE_\\*` constants (see "
 "section :ref:`csv-contents`) and defaults to :const:`QUOTE_MINIMAL`."
 msgstr "クオートがいつ writer によって生成されるか、また reader によって認識されるかを制御します。 :const:`QUOTE_\\*` 定数のいずれか (:ref:`csv-contents` 節参照) をとることができ、デフォルトでは :const:`QUOTE_MINIMAL` です。"
 
-#: ../../library/csv.rst:386
+#: ../../library/csv.rst:387
 msgid ""
 "When :const:`True`, whitespace immediately following the *delimiter* is "
 "ignored. The default is :const:`False`."
 msgstr ":const:`True` の場合、 *delimiter* の直後に続く空白は無視されます。デフォルトでは :const:`False` です。"
 
-#: ../../library/csv.rst:392
+#: ../../library/csv.rst:393
 msgid ""
 "When ``True``, raise exception :exc:`Error` on bad CSV input. The default is"
 " ``False``."
 msgstr "``True`` の場合、 不正な CSV 入力に対して :exc:`Error` を送出します。デフォルトでは ``False`` です。"
 
-#: ../../library/csv.rst:396
+#: ../../library/csv.rst:397
 msgid "Reader Objects"
 msgstr "reader オブジェクト"
 
-#: ../../library/csv.rst:398
+#: ../../library/csv.rst:399
 msgid ""
 "Reader objects (:class:`DictReader` instances and objects returned by the "
 ":func:`reader` function) have the following public methods:"
 msgstr "reader オブジェクト(:class:`DictReader` インスタンス、および :func:`reader` 関数によって返されたオブジェクト) は、以下の public なメソッドを持っています:"
 
-#: ../../library/csv.rst:404
+#: ../../library/csv.rst:405
 msgid ""
 "Return the next row of the reader's iterable object as a list, parsed "
 "according to the current dialect."
 msgstr "reader の反復可能なオブジェクトから、現在の表現形式に基づいて次の行を解析して返します。"
 
-#: ../../library/csv.rst:407
+#: ../../library/csv.rst:408
 msgid "Reader objects have the following public attributes:"
 msgstr "reader オブジェクトには以下の公開属性があります:"
 
-#: ../../library/csv.rst:412
+#: ../../library/csv.rst:413
 msgid "A read-only description of the dialect in use by the parser."
 msgstr "パーサで使われる表現形式の読み取り専用の記述です。"
 
-#: ../../library/csv.rst:417
+#: ../../library/csv.rst:418
 msgid ""
 "The number of lines read from the source iterator. This is not the same as "
 "the number of records returned, as records can span multiple lines."
 msgstr "ソースイテレータから読んだ行数です。この数は返されるレコードの数とは、レコードが複数行に亘ることがあるので、一致しません。"
 
-#: ../../library/csv.rst:423
+#: ../../library/csv.rst:424
 msgid "DictReader objects have the following public attribute:"
 msgstr "DictReader オブジェクトは、以下の public な属性を持っています:"
 
-#: ../../library/csv.rst:428
+#: ../../library/csv.rst:429
 msgid ""
 "If not passed as a parameter when creating the object, this attribute is "
 "initialized upon first access or when the first record is read from the "
 "file."
 msgstr "オブジェクトを生成するときに渡されなかった場合、この属性は最初のアクセス時か、ファイルから最初のレコードを読み出したときに初期化されます。"
 
-#: ../../library/csv.rst:436
+#: ../../library/csv.rst:437
 msgid "Writer Objects"
 msgstr "writer オブジェクト"
 
-#: ../../library/csv.rst:438
+#: ../../library/csv.rst:439
 msgid ""
 ":class:`Writer` objects (:class:`DictWriter` instances and objects returned "
 "by the :func:`writer` function) have the following public methods.  A *row* "
@@ -455,67 +454,67 @@ msgid ""
 "numbers at all)."
 msgstr ":class:`Writer` オブジェクト (:class:`DictWriter` インスタンス、および :func:`writer` 関数によって返されたオブジェクト) は、以下の public なメソッドを持っています: *row* には、 :class:`Writer` オブジェクトの場合には文字列か数値のシーケンスを指定し、 :class:`DictWriter` オブジェクトの場合はフィールド名をキーとして対応する文字列か数値を格納した辞書オブジェクトを指定します(数値は :func:`str` で変換されます)。複素数を出力する場合、値をかっこで囲んで出力します。このため、CSV ファイルを読み込むアプリケーションで（そのアプリケーションが複素数をサポートしていたとしても）問題が発生する場合があります。"
 
-#: ../../library/csv.rst:449
+#: ../../library/csv.rst:450
 msgid ""
 "Write the *row* parameter to the writer's file object, formatted according "
 "to the current dialect."
 msgstr "*row* パラメタを現在の表現形式に基づいて書式化し、 writer のファイルオブジェクトに書き込みます。"
 
-#: ../../library/csv.rst:455
+#: ../../library/csv.rst:456
 msgid ""
 "Write all the *rows* parameters (a list of *row* objects as described above)"
 " to the writer's file object, formatted according to the current dialect."
 msgstr "*rows* パラメタ(上記 *row* のリスト)全てを現在の表現形式に基づいて書式化し、 writer のファイルオブジェクトに書き込みます。"
 
-#: ../../library/csv.rst:458
+#: ../../library/csv.rst:459
 msgid "Writer objects have the following public attribute:"
 msgstr "writer オブジェクトには以下の公開属性があります:"
 
-#: ../../library/csv.rst:463
+#: ../../library/csv.rst:464
 msgid "A read-only description of the dialect in use by the writer."
 msgstr "writer で使われる表現形式の読み取り専用の記述です。"
 
-#: ../../library/csv.rst:466
+#: ../../library/csv.rst:467
 msgid "DictWriter objects have the following public method:"
 msgstr "DictWriter のオブジェクトは以下の public メソッドを持っています:"
 
-#: ../../library/csv.rst:471
+#: ../../library/csv.rst:472
 msgid "Write a row with the field names (as specified in the constructor)."
 msgstr "(コンストラクタで指定された)フィールド名の行を出力します。"
 
-#: ../../library/csv.rst:479
+#: ../../library/csv.rst:480
 msgid "Examples"
 msgstr "使用例"
 
-#: ../../library/csv.rst:481
+#: ../../library/csv.rst:482
 msgid "The simplest example of reading a CSV file::"
 msgstr "最も簡単な CSV ファイル読み込みの例です::"
 
-#: ../../library/csv.rst:489
+#: ../../library/csv.rst:490
 msgid "Reading a file with an alternate format::"
 msgstr "別の書式での読み込み::"
 
-#: ../../library/csv.rst:497
+#: ../../library/csv.rst:498
 msgid "The corresponding simplest possible writing example is::"
 msgstr "上に対して、単純な書き込みのプログラム例は以下のようになります。 ::"
 
-#: ../../library/csv.rst:504
+#: ../../library/csv.rst:505
 msgid "Registering a new dialect::"
 msgstr "新しい表現形式の登録::"
 
-#: ../../library/csv.rst:511
+#: ../../library/csv.rst:512
 msgid ""
 "A slightly more advanced use of the reader --- catching and reporting "
 "errors::"
 msgstr "もう少し手の込んだ reader の使い方 --- エラーを捉えてレポートします。 ::"
 
-#: ../../library/csv.rst:523
+#: ../../library/csv.rst:524
 msgid ""
 "And while the module doesn't directly support parsing strings, it can easily"
 " be done::"
 msgstr "このモジュールは文字列の解析は直接サポートしませんが、簡単にできます。 ::"
 
-#: ../../library/csv.rst:530
+#: ../../library/csv.rst:531
 msgid ""
 "The :mod:`csv` module doesn't directly support reading and writing Unicode, "
 "but it is 8-bit-clean save for some problems with ASCII NUL characters.  So "
@@ -524,7 +523,7 @@ msgid ""
 "recommended."
 msgstr ":mod:`csv` モジュールは直接は Unicode の読み書きをサポートしませんが、 ASCII NUL 文字に関わる問題のために8ビットクリーンに書き込みます。ですから、NUL を使う UTF-16 のようなエンコーディングを避ける限り エンコード・デコードを行なう関数やクラスを書くことができます。 UTF-8 がお勧めです。"
 
-#: ../../library/csv.rst:535
+#: ../../library/csv.rst:536
 msgid ""
 ":func:`unicode_csv_reader` below is a :term:`generator` that wraps "
 ":class:`csv.reader` to handle Unicode CSV data (a list of Unicode strings)."
@@ -534,7 +533,7 @@ msgid ""
 "UTF-8-encoded cells back into Unicode::"
 msgstr "以下の :func:`unicode_csv_reader` は Unicode の CSV データ (Unicode 文字列のリスト)を扱うための :class:`csv.reader` をラップするジェネレータ(:term:`generator`)です。 :func:`utf_8_encoder` は一度に 1 文字列(または行) ずつ Unicode 文字列を UTF-8 としてエンコードするジェネレータです。エンコードされた文字列は CSV reader により分解され、 :func:`unicode_csv_reader` が UTF-8 エンコードの分解された文字列をデコードして Unicode に戻します。 ::"
 
-#: ../../library/csv.rst:555
+#: ../../library/csv.rst:556
 msgid ""
 "For all other encodings the following :class:`UnicodeReader` and "
 ":class:`UnicodeWriter` classes can be used. They take an additional "

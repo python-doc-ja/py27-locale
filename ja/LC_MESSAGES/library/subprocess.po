@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-03 04:37+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:05+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -316,10 +315,10 @@ msgstr "Windows 上では、 *args* がシーケンスなら :ref:`converting-ar
 
 #: ../../library/subprocess.rst:323
 msgid ""
-"The *shell* argument (which defaults to *False*) specifies whether to use "
-"the shell as the program to execute.  If *shell* is *True*, it is "
+"The *shell* argument (which defaults to ``False``) specifies whether to use "
+"the shell as the program to execute.  If *shell* is ``True``, it is "
 "recommended to pass *args* as a string rather than as a sequence."
-msgstr "*shell* 引数 (デフォルトでは *False*) は、実行するプログラムとしてシェルを使用するかどうかを指定します。*shell* が *True* の場合、*args* をシーケンスとしてではなく文字列として渡すことが推奨されます。"
+msgstr "*shell* 引数 (デフォルトでは ``False``) は、実行するプログラムとしてシェルを使用するかどうかを指定します。 *shell* が ``True`` の場合、 *args* をシーケンスとしてではなく文字列として渡すことが推奨されます。"
 
 #: ../../library/subprocess.rst:327
 msgid ""
@@ -630,10 +629,10 @@ msgstr ":class:`STARTUPINFO` クラスと以下の定数は、Windows でいつ�
 
 #: ../../library/subprocess.rst:588
 msgid ""
-"Partial support of the Windows `STARTUPINFO <http://msdn.microsoft.com/en-"
+"Partial support of the Windows `STARTUPINFO <https://msdn.microsoft.com/en-"
 "us/library/ms686331(v=vs.85).aspx>`__ structure is used for :class:`Popen` "
 "creation."
-msgstr ":class:`Popen` の生成に使われる Windows `STARTUPINFO <http://msdn.microsoft.com/en-us/library/ms686331(v=vs.85).aspx>`__ 構造の部分的なサポートです。"
+msgstr ":class:`Popen` の生成に使われる Windows `STARTUPINFO <https://msdn.microsoft.com/en-us/library/ms686331(v=vs.85).aspx>`__ 構造の部分的なサポートです。"
 
 #: ../../library/subprocess.rst:594
 msgid ""
@@ -666,10 +665,10 @@ msgstr ":attr:`dwFlags` が :data:`STARTF_USESTDHANDLES` を指定すれば、�
 msgid ""
 "If :attr:`dwFlags` specifies :data:`STARTF_USESHOWWINDOW`, this attribute "
 "can be any of the values that can be specified in the ``nCmdShow`` parameter"
-" for the `ShowWindow <http://msdn.microsoft.com/en-"
+" for the `ShowWindow <https://msdn.microsoft.com/en-"
 "us/library/ms633548(v=vs.85).aspx>`__ function, except for "
 "``SW_SHOWDEFAULT``. Otherwise, this attribute is ignored."
-msgstr ":attr:`dwFlags` が :data:`STARTF_USESHOWWINDOW` を指定すれば、この属性は `ShowWindow <http://msdn.microsoft.com/en-us/library/ms633548(v=vs.85).aspx>`__ 関数の ``nCmdShow`` パラメタで指定された値なら、 ``SW_SHOWDEFAULT`` 以外の任意のものにできます。しかし、この属性は無視されます。"
+msgstr ":attr:`dwFlags` が :data:`STARTF_USESHOWWINDOW` を指定すれば、この属性は `ShowWindow <https://msdn.microsoft.com/en-us/library/ms633548(v=vs.85).aspx>`__ 関数の ``nCmdShow`` 引数で指定された値なら、 ``SW_SHOWDEFAULT`` 以外の任意のものにできます。しかし、この属性は無視されます。"
 
 #: ../../library/subprocess.rst:629
 msgid ""
@@ -777,148 +776,153 @@ msgstr "以下の例では、適切な関数が :mod:`subprocess` モジュー�
 msgid "Replacing /bin/sh shell backquote"
 msgstr "/bin/sh シェルのバッククォートを置き換える"
 
-#: ../../library/subprocess.rst:717
+#: ../../library/subprocess.rst:713 ../../library/subprocess.rst:724
+#: ../../library/subprocess.rst:741
+msgid "becomes::"
+msgstr "これは以下のようになります::"
+
+#: ../../library/subprocess.rst:718
 msgid "Replacing shell pipeline"
 msgstr "シェルのパイプラインを置き換える"
 
-#: ../../library/subprocess.rst:728
+#: ../../library/subprocess.rst:731
 msgid ""
 "The p1.stdout.close() call after starting the p2 is important in order for "
 "p1 to receive a SIGPIPE if p2 exits before p1."
 msgstr "p2 を開始した後の p1.stdout.close() の呼び出しは、p1 が p2 の前に存在した場合に、p1 が SIGPIPE を受け取るために重要です。"
 
-#: ../../library/subprocess.rst:731
+#: ../../library/subprocess.rst:734
 msgid ""
 "Alternatively, for trusted input, the shell's own pipeline support may still"
-" be used directly::"
-msgstr "あるいは、信頼された入力に対しては、シェル自身のパイプラインサポートを直接使用することもできます::"
+" be used directly:"
+msgstr "あるいは、信頼された入力に対しては、シェル自身のパイプラインサポートを直接使用することもできます:"
 
-#: ../../library/subprocess.rst:740
+#: ../../library/subprocess.rst:747
 msgid "Replacing :func:`os.system`"
 msgstr ":func:`os.system` を置き換える"
 
-#: ../../library/subprocess.rst:748
+#: ../../library/subprocess.rst:755
 msgid "Notes:"
 msgstr "注釈:"
 
-#: ../../library/subprocess.rst:750
+#: ../../library/subprocess.rst:757
 msgid "Calling the program through the shell is usually not required."
 msgstr "このプログラムは普通シェル経由で呼び出す必要はありません。"
 
-#: ../../library/subprocess.rst:752
+#: ../../library/subprocess.rst:759
 msgid "A more realistic example would look like this::"
 msgstr "より現実的な例ではこうなるでしょう::"
 
-#: ../../library/subprocess.rst:765
+#: ../../library/subprocess.rst:772
 msgid "Replacing the :func:`os.spawn <os.spawnl>` family"
 msgstr ":func:`os.spawn <os.spawnl>` 関数群を置き換える"
 
-#: ../../library/subprocess.rst:767
+#: ../../library/subprocess.rst:774
 msgid "P_NOWAIT example::"
 msgstr "P_NOWAIT の例::"
 
-#: ../../library/subprocess.rst:773
+#: ../../library/subprocess.rst:780
 msgid "P_WAIT example::"
 msgstr "P_WAIT の例::"
 
-#: ../../library/subprocess.rst:779
+#: ../../library/subprocess.rst:786
 msgid "Vector example::"
 msgstr "シーケンスを使った例::"
 
-#: ../../library/subprocess.rst:785
+#: ../../library/subprocess.rst:792
 msgid "Environment example::"
 msgstr "環境変数を使った例::"
 
-#: ../../library/subprocess.rst:793
+#: ../../library/subprocess.rst:800
 msgid "Replacing :func:`os.popen`, :func:`os.popen2`, :func:`os.popen3`"
 msgstr ":func:`os.popen`, :func:`os.popen2`, :func:`os.popen3` を置き換える"
 
-#: ../../library/subprocess.rst:836
+#: ../../library/subprocess.rst:843
 msgid ""
 "On Unix, os.popen2, os.popen3 and os.popen4 also accept a sequence as the "
 "command to execute, in which case arguments will be passed directly to the "
 "program without shell intervention.  This usage can be replaced as follows::"
 msgstr "Unix では、 os.popen2、os.popen3、os.popen4 は実行するコマンドとしてシーケンスも受け入れます。どちらにせよ、引数はシェルの干渉を受けることなく直接渡されます。この使い方は以下のように置き換えられます。"
 
-#: ../../library/subprocess.rst:847
+#: ../../library/subprocess.rst:854
 msgid "Return code handling translates as follows::"
 msgstr "終了コードハンドリングは以下のように解釈します::"
 
-#: ../../library/subprocess.rst:863
+#: ../../library/subprocess.rst:870
 msgid "Replacing functions from the :mod:`popen2` module"
 msgstr ":mod:`popen2` モジュールの関数群を置き換える"
 
-#: ../../library/subprocess.rst:873
+#: ../../library/subprocess.rst:880
 msgid ""
 "On Unix, popen2 also accepts a sequence as the command to execute, in which "
 "case arguments will be passed directly to the program without shell "
 "intervention.  This usage can be replaced as follows::"
 msgstr "Unix では、 popen2 は実行するコマンドとしてシーケンスも受け入れます。どちらにせよ、引数はシェルの干渉を受けることなく、直接渡されます。この使い方は、以下のように置き換えられます。"
 
-#: ../../library/subprocess.rst:884
+#: ../../library/subprocess.rst:891
 msgid ""
 ":class:`popen2.Popen3` and :class:`popen2.Popen4` basically work as "
 ":class:`subprocess.Popen`, except that:"
 msgstr ":class:`popen2.Popen3` および :class:`popen2.Popen4` は以下の点を除けば、基本的に :class:`subprocess.Popen` と同じです:"
 
-#: ../../library/subprocess.rst:887
+#: ../../library/subprocess.rst:894
 msgid ":class:`Popen` raises an exception if the execution fails."
 msgstr ":class:`Popen` は実行が失敗した場合に例外を送出します。"
 
-#: ../../library/subprocess.rst:889
+#: ../../library/subprocess.rst:896
 msgid "the *capturestderr* argument is replaced with the *stderr* argument."
 msgstr "*capturestderr* 引数は *stderr* 引数に代わりました。"
 
-#: ../../library/subprocess.rst:891
+#: ../../library/subprocess.rst:898
 msgid "``stdin=PIPE`` and ``stdout=PIPE`` must be specified."
 msgstr "``stdin=PIPE`` および ``stdout=PIPE`` を指定する必要があります。"
 
-#: ../../library/subprocess.rst:893
+#: ../../library/subprocess.rst:900
 msgid ""
 "popen2 closes all file descriptors by default, but you have to specify "
 "``close_fds=True`` with :class:`Popen`."
 msgstr "popen2 はデフォルトですべてのファイル記述子を閉じますが、 :class:`Popen` では明示的に ``close_fds=True`` を指定する必要があります。"
 
-#: ../../library/subprocess.rst:898
+#: ../../library/subprocess.rst:905
 msgid "Notes"
 msgstr "注釈"
 
-#: ../../library/subprocess.rst:903
+#: ../../library/subprocess.rst:910
 msgid "Converting an argument sequence to a string on Windows"
 msgstr "Windows における引数シーケンスから文字列への変換"
 
-#: ../../library/subprocess.rst:905
+#: ../../library/subprocess.rst:912
 msgid ""
 "On Windows, an *args* sequence is converted to a string that can be parsed "
 "using the following rules (which correspond to the rules used by the MS C "
 "runtime):"
 msgstr "Windows では、 *args* シーケンスは以下の (MS C ランタイムで使われる規則に対応する) 規則を使って解析できる文字列に変換されます:"
 
-#: ../../library/subprocess.rst:909
+#: ../../library/subprocess.rst:916
 msgid ""
 "Arguments are delimited by white space, which is either a space or a tab."
 msgstr "引数は、スペースかタブのどちらかの空白で分けられます。"
 
-#: ../../library/subprocess.rst:912
+#: ../../library/subprocess.rst:919
 msgid ""
 "A string surrounded by double quotation marks is interpreted as a single "
 "argument, regardless of white space contained within.  A quoted string can "
 "be embedded in an argument."
 msgstr "ダブルクオーテーションマークで囲まれた文字列は、空白が含まれていたとしても 1 つの引数として解釈されます。クオートされた文字列は引数に埋め込めます。"
 
-#: ../../library/subprocess.rst:917
+#: ../../library/subprocess.rst:924
 msgid ""
 "A double quotation mark preceded by a backslash is interpreted as a literal "
 "double quotation mark."
 msgstr "バックスラッシュに続くダブルクオーテーションマークは、リテラルのダブルクオーテーションマークと解釈されます。"
 
-#: ../../library/subprocess.rst:920
+#: ../../library/subprocess.rst:927
 msgid ""
 "Backslashes are interpreted literally, unless they immediately precede a "
 "double quotation mark."
 msgstr "バックスラッシュは、ダブルクオーテーションが続かない限り、リテラルとして解釈されます。"
 
-#: ../../library/subprocess.rst:923
+#: ../../library/subprocess.rst:930
 msgid ""
 "If backslashes immediately precede a double quotation mark, every pair of "
 "backslashes is interpreted as a literal backslash.  If the number of "

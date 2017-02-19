@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-09-05 04:48+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:00+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -187,28 +186,28 @@ msgstr "プロセスの制御端末に対応するファイル名を返します
 #: ../../library/os.rst:1051 ../../library/os.rst:1106
 #: ../../library/os.rst:1114 ../../library/os.rst:1125
 #: ../../library/os.rst:1135 ../../library/os.rst:1144
-#: ../../library/os.rst:1176 ../../library/os.rst:1273
-#: ../../library/os.rst:1294 ../../library/os.rst:1492
-#: ../../library/os.rst:1502 ../../library/os.rst:1773
-#: ../../library/os.rst:1783 ../../library/os.rst:1792
-#: ../../library/os.rst:1801 ../../library/os.rst:1810
-#: ../../library/os.rst:1819 ../../library/os.rst:1828
-#: ../../library/os.rst:1837 ../../library/os.rst:1847
-#: ../../library/os.rst:1857 ../../library/os.rst:1866
-#: ../../library/os.rst:1875 ../../library/os.rst:1886
-#: ../../library/os.rst:1896 ../../library/os.rst:1906
-#: ../../library/os.rst:1915 ../../library/os.rst:1924
-#: ../../library/os.rst:1941 ../../library/os.rst:1983
-#: ../../library/os.rst:1992 ../../library/os.rst:2000
-#: ../../library/os.rst:2198 ../../library/os.rst:2238
-#: ../../library/os.rst:2251 ../../library/os.rst:2261
-#: ../../library/os.rst:2279 ../../library/os.rst:2293
-#: ../../library/os.rst:2303 ../../library/os.rst:2313
-#: ../../library/os.rst:2321 ../../library/os.rst:2329
-#: ../../library/os.rst:2337 ../../library/os.rst:2344
-#: ../../library/os.rst:2351 ../../library/os.rst:2387
-#: ../../library/os.rst:2396 ../../library/os.rst:2408
-#: ../../library/os.rst:2417
+#: ../../library/os.rst:1176 ../../library/os.rst:1282
+#: ../../library/os.rst:1303 ../../library/os.rst:1501
+#: ../../library/os.rst:1511 ../../library/os.rst:1782
+#: ../../library/os.rst:1792 ../../library/os.rst:1801
+#: ../../library/os.rst:1810 ../../library/os.rst:1819
+#: ../../library/os.rst:1828 ../../library/os.rst:1837
+#: ../../library/os.rst:1846 ../../library/os.rst:1856
+#: ../../library/os.rst:1866 ../../library/os.rst:1875
+#: ../../library/os.rst:1884 ../../library/os.rst:1895
+#: ../../library/os.rst:1905 ../../library/os.rst:1915
+#: ../../library/os.rst:1924 ../../library/os.rst:1933
+#: ../../library/os.rst:1950 ../../library/os.rst:1992
+#: ../../library/os.rst:2001 ../../library/os.rst:2009
+#: ../../library/os.rst:2207 ../../library/os.rst:2247
+#: ../../library/os.rst:2260 ../../library/os.rst:2270
+#: ../../library/os.rst:2288 ../../library/os.rst:2302
+#: ../../library/os.rst:2312 ../../library/os.rst:2322
+#: ../../library/os.rst:2330 ../../library/os.rst:2338
+#: ../../library/os.rst:2346 ../../library/os.rst:2353
+#: ../../library/os.rst:2360 ../../library/os.rst:2396
+#: ../../library/os.rst:2405 ../../library/os.rst:2417
+#: ../../library/os.rst:2426
 msgid "Availability: Unix."
 msgstr "利用できる環境 : Unix 。"
 
@@ -287,13 +286,13 @@ msgstr "現在のプロセス id を返します。"
 #: ../../library/os.rst:855 ../../library/os.rst:938 ../../library/os.rst:1003
 #: ../../library/os.rst:1021 ../../library/os.rst:1028
 #: ../../library/os.rst:1091 ../../library/os.rst:1154
-#: ../../library/os.rst:1232 ../../library/os.rst:1306
-#: ../../library/os.rst:1336 ../../library/os.rst:1360
-#: ../../library/os.rst:1439 ../../library/os.rst:1523
-#: ../../library/os.rst:1558 ../../library/os.rst:1577
-#: ../../library/os.rst:1694 ../../library/os.rst:1743
-#: ../../library/os.rst:1751 ../../library/os.rst:2088
-#: ../../library/os.rst:2101 ../../library/os.rst:2175
+#: ../../library/os.rst:1239 ../../library/os.rst:1315
+#: ../../library/os.rst:1345 ../../library/os.rst:1369
+#: ../../library/os.rst:1448 ../../library/os.rst:1532
+#: ../../library/os.rst:1567 ../../library/os.rst:1586
+#: ../../library/os.rst:1703 ../../library/os.rst:1752
+#: ../../library/os.rst:1760 ../../library/os.rst:2097
+#: ../../library/os.rst:2110 ../../library/os.rst:2184
 msgid "Availability: Unix, Windows."
 msgstr "利用できる環境 : Unix 、 Windows 。"
 
@@ -378,10 +377,10 @@ msgstr "Mac OS X では、 *groups* の長さはシステムで定義された�
 
 #: ../../library/os.rst:332
 msgid ""
-"Call the system call :c:func:`setpgrp` or :c:func:`setpgrp(0, 0)` depending "
-"on which version is implemented (if any).  See the Unix manual for the "
+"Call the system call :c:func:`setpgrp` or ``setpgrp(0, 0)`` depending on "
+"which version is implemented (if any).  See the Unix manual for the "
 "semantics."
-msgstr "システムコール :c:func:`setpgrp` か ``setpgrp(0, 0)`` のどちらか(実装されているもの)を呼び出します。機能については UNIX マニュアルを参照して下さい"
+msgstr "システムコール :c:func:`setpgrp` か ``setpgrp(0, 0)`` のどちらか(実装されているもの)を呼び出します。機能については UNIX マニュアルを参照して下さい。"
 
 #: ../../library/os.rst:340
 msgid ""
@@ -688,7 +687,7 @@ msgid ""
 " included in that mapping, passing an integer for *name* is also accepted."
 msgstr "オープンしているファイルに関連するシステム設定情報を返します。 *name* には取得したい設定名を指定します ; これは定義済みのシステム値名の文字列で、多くの標準 (POSIX.1 、 Unix 95 、 Unix 98 その他 ) で定義されています。プラットフォームによっては別の名前も定義されています。ホストオペレーティングシステムの関知する名前は ``pathconf_names`` 辞書で与えられています。このマップ型オブジェクトに入っていない設定変数については、 *name* に整数を渡してもかまいません。"
 
-#: ../../library/os.rst:695 ../../library/os.rst:1268
+#: ../../library/os.rst:695 ../../library/os.rst:1277
 msgid ""
 "If *name* is a string and is not known, :exc:`ValueError` is raised.  If a "
 "specific value for *name* is not supported by the host system, even if it is"
@@ -787,7 +786,7 @@ msgid ""
 "more portable approach, use the :mod:`pty` module."
 msgstr "新しい擬似端末のペアを開きます。ファイル記述子のペア ``(master, slave)`` を返し、それぞれ pty および tty を表します。 ( 少しだけ ) より可搬性のあるアプローチとしては、 :mod:`pty` モジュールを使用してください。"
 
-#: ../../library/os.rst:797 ../../library/os.rst:1952
+#: ../../library/os.rst:797 ../../library/os.rst:1961
 msgid "Availability: some flavors of Unix."
 msgstr "利用できる環境 : 一部の Unix 互換環境。"
 
@@ -862,22 +861,22 @@ msgid ""
 msgstr "以下の定数は :func:`~os.open` 関数の *flags* 引数に利用します。これらの定数は、ビット単位に OR 演算子 ``|`` で組み合わせることができます。一部、すべてのプラットフォームでは使用できない定数があります。利用可能かどうかや使い方については、 Unix では :manpage:`open(2)` 、 Windows では `MSDN <http://msdn.microsoft.com/en-us/library/z0kc8e3z.aspx>`_ を参照してください。"
 
 #: ../../library/os.rst:886
-msgid "These constants are available on Unix and Windows."
-msgstr "これらの定数は Unix および Windows で利用可能です。"
+msgid "The above constants are available on Unix and Windows."
+msgstr "上記の定数は Unix および Windows で利用可能です。"
 
-#: ../../library/os.rst:898
-msgid "These constants are only available on Unix."
-msgstr "これらの定数は Unix でのみ利用可能です。"
+#: ../../library/os.rst:896
+msgid "The above constants are only available on Unix."
+msgstr "上記の定数は Unix でのみ利用可能です。"
 
-#: ../../library/os.rst:909
-msgid "These constants are only available on Windows."
-msgstr "これらの定数は Windows でのみ利用可能です。"
+#: ../../library/os.rst:907
+msgid "The above constants are only available on Windows."
+msgstr "上記の定数は Windows でのみ利用可能です。"
 
 #: ../../library/os.rst:918
 msgid ""
-"These constants are GNU extensions and not present if they are not defined "
+"The above constants are extensions and not present if they are not defined "
 "by the C library."
-msgstr "これらの定数は GNU 拡張で、 C ライブラリで定義されていない場合は利用できません。"
+msgstr "上記の定数は拡張仕様であり、Cライブラリで定義されていない場合は利用できません。"
 
 #: ../../library/os.rst:925
 msgid "Files and Directories"
@@ -1207,37 +1206,50 @@ msgstr "メジャーおよびマイナーデバイス番号から、新しく RA
 #: ../../library/os.rst:1224
 msgid ""
 "Create a directory named *path* with numeric mode *mode*. The default *mode*"
-" is ``0777`` (octal).  On some systems, *mode* is ignored.  Where it is "
-"used, the current umask value is first masked out.  If the directory already"
-" exists, :exc:`OSError` is raised."
-msgstr "数値で指定されたモード *mode* をもつディレクトリ *path* を作成します。 *mode* の標準の値は ``0777`` (8 進 ) です。システムによっては、 *mode* は無視されます。利用の際には、現在の umask 値が前もってマスクされます。指定されたディレクトリがすでに存在する場合は :exc:`OSError` 例外を発生させます。"
+" is ``0777`` (octal).  If the directory already exists, :exc:`OSError` is "
+"raised."
+msgstr ""
 
-#: ../../library/os.rst:1229
+#: ../../library/os.rst:1230
+msgid ""
+"On some systems, *mode* is ignored.  Where it is used, the current umask "
+"value is first masked out.  If bits other than the last 9 (i.e. the last 3 "
+"digits of the octal representation of the *mode*) are set, their meaning is "
+"platform-dependent.  On some platforms, they are ignored and you should call"
+" :func:`chmod` explicitly to set them."
+msgstr "いくつかのシステムにおいては *mode* は無視されます。それが使われる時には、最初に現在の umask 値でマスクされます。もし最後の 9 ビット (つまり *mode* の8進法表記の最後の3桁) を除いたビットが設定されていたら、それらの意味はプラットフォームに依存します。いくつかのプラットフォームではそれらは無視され、それらを設定するためには明示的に :func:`chmod` を呼ぶ必要があるでしょう。"
+
+#: ../../library/os.rst:1236
 msgid ""
 "It is also possible to create temporary directories; see the :mod:`tempfile`"
 " module's :func:`tempfile.mkdtemp` function."
 msgstr "一時ディレクトリを作成することもできます : :mod:`tempfile` モジュールの :func:`tempfile.mkdtemp` 関数を参照してください。"
 
-#: ../../library/os.rst:1241
+#: ../../library/os.rst:1248
 msgid ""
 "Recursive directory creation function.  Like :func:`mkdir`, but makes all "
 "intermediate-level directories needed to contain the leaf directory.  Raises"
 " an :exc:`error` exception if the leaf directory already exists or cannot be"
-" created.  The default *mode* is ``0777`` (octal).  On some systems, *mode* "
-"is ignored. Where it is used, the current umask value is first masked out."
-msgstr "再帰的なディレクトリ作成関数です。 :func:`mkdir` に似ていますが、末端 (leaf) となるディレクトリを作成するために必要な中間の全てのディレクトリを作成します。末端ディレクトリがすでに存在する場合や、作成ができなかった場合には :exc:`error` 例外を送出します。 *mode* の標準の値は ``0777`` (8 進 ) です。システムによっては、 *mode* は無視されます。利用の際には、現在の umask 値が前もってマスクされます。"
+" created.  The default *mode* is ``0777`` (octal)."
+msgstr ""
 
-#: ../../library/os.rst:1249
+#: ../../library/os.rst:1253
+msgid ""
+"The *mode* parameter is passed to :func:`mkdir`; see :ref:`the mkdir() "
+"description <mkdir_modebits>` for how it is interpreted."
+msgstr "*mode* パラメータは :func:`mkdir` に渡されます; それがどのように解釈されるかは :ref:`mkdir() の説明 <mkdir_modebits>` を見てください。"
+
+#: ../../library/os.rst:1258
 msgid ""
 ":func:`makedirs` will become confused if the path elements to create include"
 " :data:`os.pardir`."
 msgstr ":func:`makedirs` は作り出すパス要素が :data:`os.pardir` を含むと混乱することになります。"
 
-#: ../../library/os.rst:1254
+#: ../../library/os.rst:1263
 msgid "This function now handles UNC paths correctly."
 msgstr "この関数は UNC パスを正しく扱えるようになりました ."
 
-#: ../../library/os.rst:1260
+#: ../../library/os.rst:1269
 msgid ""
 "Return system configuration information relevant to a named file. *name* "
 "specifies the configuration value to retrieve; it may be a string which is "
@@ -1248,7 +1260,7 @@ msgid ""
 " included in that mapping, passing an integer for *name* is also accepted."
 msgstr "名前付きファイルに関連するシステム設定情報を返します。 *name* には取得したい設定名を指定します ; これは定義済みのシステム値名の文字列で、多くの標準 (POSIX.1 、 Unix 95 、 Unix 98 その他 ) で定義されています。プラットフォームによっては別の名前も定義しています。ホストオペレーティングシステムの関知する名前は ``pathconf_names`` 辞書で与えられています。このマップ型オブジェクトに入っていない設定変数については、 *name* に整数を渡してもかまいません。"
 
-#: ../../library/os.rst:1278
+#: ../../library/os.rst:1287
 msgid ""
 "Dictionary mapping names accepted by :func:`pathconf` and :func:`fpathconf` "
 "to the integer values defined for those names by the host operating system."
@@ -1256,7 +1268,7 @@ msgid ""
 "Availability: Unix."
 msgstr ":func:`pathconf` および :func:`fpathconf` が受理するシステム設定名を、ホストオペレーティングシステムで定義されている整数値に対応付けている辞書です。この辞書はシステムでどの設定名が定義されているかを決定するために利用できます。利用出来る環境 : Unix 。"
 
-#: ../../library/os.rst:1286
+#: ../../library/os.rst:1295
 msgid ""
 "Return a string representing the path to which the symbolic link points.  "
 "The result may be either an absolute or relative pathname; if it is "
@@ -1264,12 +1276,12 @@ msgid ""
 "``os.path.join(os.path.dirname(path), result)``."
 msgstr "シンボリックリンクが指しているパスを表す文字列を返します。返される値は絶対パスにも、相対パスにもなり得ます ; 相対パスの場合、 ``os.path.join(os.path.dirname(path), result)`` を使って絶対パスに変換することができます。"
 
-#: ../../library/os.rst:1291
+#: ../../library/os.rst:1300
 msgid ""
 "If the *path* is a Unicode object the result will also be a Unicode object."
 msgstr "*path* が unicode オブジェクトだった場合、戻り値も unicode オブジェクトになります。"
 
-#: ../../library/os.rst:1299
+#: ../../library/os.rst:1308
 msgid ""
 "Remove (delete) the file *path*.  If *path* is a directory, :exc:`OSError` "
 "is raised; see :func:`rmdir` below to remove a directory.  This is identical"
@@ -1279,7 +1291,7 @@ msgid ""
 "made available until the original file is no longer in use."
 msgstr "ファイル *path* を削除 ( 消去 ) します。 *path* がディレクトリの場合、 :exc:`OSError` が送出されます ; ディレクトリの削除については :func:`rmdir` を参照してください。この関数は下で述べられている :func:`unlink` 関数と同一です。 Windows では、使用中のファイルを削除しようと試みると例外を送出します ; Unix では、ディレクトリエントリは削除されますが、記憶装置上にアロケーションされたファイル領域は元のファイルが使われなくなるまで残されます。"
 
-#: ../../library/os.rst:1313
+#: ../../library/os.rst:1322
 msgid ""
 "Remove directories recursively.  Works like :func:`rmdir` except that, if "
 "the leaf directory is successfully removed, :func:`removedirs`  tries to "
@@ -1291,7 +1303,7 @@ msgid ""
 " could not be successfully removed."
 msgstr "再帰的なディレクトリ削除関数です。 :func:`rmdir` と同じように動作しますが、末端ディレクトリがうまく削除できるかぎり、 :func:`removedirs` は *path* に現れる親ディレクトリをエラーが送出されるまで ( このエラーは通常、指定したディレクトリの親ディレクトリが空でないことを意味するだけなので無視されます ) 順に削除することを試みます。例えば、 ``os.removedirs('foo/bar/baz')`` では最初にディレクトリ ``'foo/bar/baz'`` を削除し、次に ``'foo/bar'`` さらに ``'foo'`` をそれらが空ならば削除します。末端のディレクトリが削除できなかった場合には :exc:`OSError` が送出されます。"
 
-#: ../../library/os.rst:1327
+#: ../../library/os.rst:1336
 msgid ""
 "Rename the file or directory *src* to *dst*.  If *dst* is a directory, "
 ":exc:`OSError` will be raised.  On Unix, if *dst* exists and is a file, it "
@@ -1303,7 +1315,7 @@ msgid ""
 "rename when *dst* names an existing file."
 msgstr "ファイルまたはディレクトリ *src* を *dst* に名前変更します。 *dst* がディレクトリの場合、 :exc:`OSError` が送出されます。 Unix では、 *dst* が存在し、かつファイルの場合、ユーザの権限があるかぎり暗黙のうちに元のファイルが置き換えられます。この操作はいくつかの Unix 系システムにおいて、 *src* と *dst* が異なるファイルシステム上にあると失敗することがあります。ファイル名の変更が成功する場合、この操作は原子的 (atomic) 操作となります ( これは POSIX 要求仕様です ) 。 Windows では、 *dst* が既に存在する場合には、たとえファイルの場合でも :exc:`OSError` が送出されます ; これは *dst* が既に存在するファイル名の場合、名前変更の原子的操作を実装する手段がないからです。"
 
-#: ../../library/os.rst:1341
+#: ../../library/os.rst:1350
 msgid ""
 "Recursive directory or file renaming function. Works like :func:`rename`, "
 "except creation of any intermediate directories needed to make the new "
@@ -1312,134 +1324,134 @@ msgid ""
 " using :func:`removedirs`."
 msgstr "再帰的にディレクトリやファイル名を変更する関数です。 :func:`rename` のように動作しますが、新たなパス名を持つファイルを配置するために必要な途中のディレクトリ構造をまず作成しようと試みます。名前変更の後、元のファイル名のパス要素は :func:`removedirs` を使って右側から順に削除されます。"
 
-#: ../../library/os.rst:1350
+#: ../../library/os.rst:1359
 msgid ""
 "This function can fail with the new directory structure made if you lack "
 "permissions needed to remove the leaf directory or file."
 msgstr "この関数はコピー元の末端のディレクトリまたはファイルを削除する権限がない場合には失敗します。"
 
-#: ../../library/os.rst:1356
+#: ../../library/os.rst:1365
 msgid ""
 "Remove (delete) the directory *path*.  Only works when the directory is "
 "empty, otherwise, :exc:`OSError` is raised.  In order to remove whole "
 "directory trees, :func:`shutil.rmtree` can be used."
 msgstr "ディレクトリ *path* を削除します。ディレクトリが空の場合にだけ正常に動作します。そうでなければ :exc:`OSError` が送出されます。ディレクトリツリー全体を削除するには :func:`shutil.rmtree` を使います。"
 
-#: ../../library/os.rst:1365
+#: ../../library/os.rst:1374
 msgid ""
 "Perform the equivalent of a :c:func:`stat` system call on the given path. "
 "(This function follows symlinks; to stat a symlink use :func:`lstat`.)"
 msgstr "与えられた *path* に対して :c:func:`stat` システムコール相当の処理を実行します。 ( この関数はシンボリックリンクをたどります。シンボリックリンクに対して stat したい場合は :func:`lstat` を利用してください )"
 
-#: ../../library/os.rst:1368
+#: ../../library/os.rst:1377
 msgid ""
 "The return value is an object whose attributes correspond to the members of "
 "the :c:type:`stat` structure, namely:"
 msgstr "返り値はオブジェクトになり、その属性はおおむね :c:type:`stat` 構造体のメンバーに対応します:"
 
-#: ../../library/os.rst:1371
+#: ../../library/os.rst:1380
 msgid ":attr:`st_mode` - protection bits,"
 msgstr ":attr:`st_mode` - 保護ビット"
 
-#: ../../library/os.rst:1372
+#: ../../library/os.rst:1381
 msgid ":attr:`st_ino` - inode number,"
 msgstr ":attr:`st_ino` - inode 番号"
 
-#: ../../library/os.rst:1373
+#: ../../library/os.rst:1382
 msgid ":attr:`st_dev` - device,"
 msgstr ":attr:`st_dev` - デバイス"
 
-#: ../../library/os.rst:1374
+#: ../../library/os.rst:1383
 msgid ":attr:`st_nlink` - number of hard links,"
 msgstr ":attr:`st_nlink` - ハードリンクの数"
 
-#: ../../library/os.rst:1375
+#: ../../library/os.rst:1384
 msgid ":attr:`st_uid` - user id of owner,"
 msgstr ":attr:`st_uid` - 所有者のユーザー id"
 
-#: ../../library/os.rst:1376
+#: ../../library/os.rst:1385
 msgid ":attr:`st_gid` - group id of owner,"
 msgstr ":attr:`st_gid` - 所有者のグループ id"
 
-#: ../../library/os.rst:1377
+#: ../../library/os.rst:1386
 msgid ":attr:`st_size` - size of file, in bytes,"
 msgstr ":attr:`st_size` - ファイルのサイズ ( 単位 : バイト )"
 
-#: ../../library/os.rst:1378
+#: ../../library/os.rst:1387
 msgid ":attr:`st_atime` - time of most recent access,"
 msgstr ":attr:`st_atime` - 最近にアクセスされた時間 ,"
 
-#: ../../library/os.rst:1379
+#: ../../library/os.rst:1388
 msgid ":attr:`st_mtime` - time of most recent content modification,"
 msgstr ":attr:`st_mtime` - 最近に内容を変更した時間 ,"
 
-#: ../../library/os.rst:1380
+#: ../../library/os.rst:1389
 msgid ""
 ":attr:`st_ctime` - platform dependent; time of most recent metadata change "
 "on Unix, or the time of creation on Windows)"
 msgstr ":attr:`st_ctime` - プラットフォーム依存 ; Unix では最近のメタデータ変更時間、 Windows ではファイルが生成された時間"
 
-#: ../../library/os.rst:1383
+#: ../../library/os.rst:1392
 msgid ""
 "If :func:`stat_float_times` returns ``True``, the time values are floats, "
 "measuring seconds. Fractions of a second may be reported if the system "
 "supports that. See :func:`stat_float_times` for further discussion."
 msgstr "もし :func:`stat_float_times` が ``True`` を返す場合、時間値は浮動小数点で秒を計ります。ファイルシステムがサポートしていれば、秒の小数点以下の桁も含めて返されます。詳細な説明は :func:`stat_float_times` を参照してください。"
 
-#: ../../library/os.rst:1388
+#: ../../library/os.rst:1397
 msgid ""
 "On some Unix systems (such as Linux), the following attributes may also be "
 "available:"
 msgstr "(Linux のような ) 一部の Unix システムでは、以下の属性が利用できる場合があります :"
 
-#: ../../library/os.rst:1391
+#: ../../library/os.rst:1400
 msgid ":attr:`st_blocks` - number of 512-byte blocks allocated for file"
 msgstr ":attr:`st_blocks` - ファイルの大きさを 512 バイトのブロックサイズ単位で示す"
 
-#: ../../library/os.rst:1392
+#: ../../library/os.rst:1401
 msgid ""
 ":attr:`st_blksize` - filesystem blocksize for efficient file system I/O"
 msgstr ":attr:`st_blksize` - 効率的にファイルシステム I/O ができる好ましいファイルシステムのブロックサイズ "
 
-#: ../../library/os.rst:1393
+#: ../../library/os.rst:1402
 msgid ":attr:`st_rdev` - type of device if an inode device"
 msgstr ":attr:`st_rdev` - i ノードデバイスの場合、デバイスのタイプ"
 
-#: ../../library/os.rst:1394
+#: ../../library/os.rst:1403
 msgid ":attr:`st_flags` - user defined flags for file"
 msgstr ":attr:`st_flags` - ファイルに対するユーザー定義のフラグ"
 
-#: ../../library/os.rst:1396
+#: ../../library/os.rst:1405
 msgid ""
 "On other Unix systems (such as FreeBSD), the following attributes may be "
 "available (but may be only filled out if root tries to use them):"
 msgstr "他の (FreeBSD のような ) Unix システムでは、以下の属性が利用できる場合があります ( ただし root ユーザ以外が使うと値が入っていない場合があります ):"
 
-#: ../../library/os.rst:1399
+#: ../../library/os.rst:1408
 msgid ":attr:`st_gen` - file generation number"
 msgstr ":attr:`st_gen` - ファイル生成番号"
 
-#: ../../library/os.rst:1400
+#: ../../library/os.rst:1409
 msgid ":attr:`st_birthtime` - time of file creation"
 msgstr ":attr:`st_birthtime` - ファイル作成時刻"
 
-#: ../../library/os.rst:1402
+#: ../../library/os.rst:1411
 msgid "On RISCOS systems, the following attributes are also available:"
 msgstr "RISCOS システムでは、以下の属性も利用できます :"
 
-#: ../../library/os.rst:1404
+#: ../../library/os.rst:1413
 msgid ":attr:`st_ftype` (file type)"
 msgstr ":attr:`st_ftype` (file type),"
 
-#: ../../library/os.rst:1405
+#: ../../library/os.rst:1414
 msgid ":attr:`st_attrs` (attributes)"
 msgstr ":attr:`st_attrs` (attributes),"
 
-#: ../../library/os.rst:1406
+#: ../../library/os.rst:1415
 msgid ":attr:`st_obtype` (object type)."
 msgstr ":attr:`st_obtype` (object type)"
 
-#: ../../library/os.rst:1410
+#: ../../library/os.rst:1419
 msgid ""
 "The exact meaning and resolution of the :attr:`st_atime`, :attr:`st_mtime`, "
 "and :attr:`st_ctime` attributes depend on the operating system and the file "
@@ -1448,7 +1460,7 @@ msgid ""
 "1-day resolution.  See your operating system documentation for details."
 msgstr ":attr:`st_atime` 、 :attr:`st_mtime` 、および :attr:`st_ctime` 属性の厳密な意味や精度はオペレーティングシステムやファイルシステムによって変わります。例えば、 FAT や FAT32 ファイルシステムを使用している Windows システムでは、 :attr:`st_mtime` の精度は 2 秒であり、 :attr:`st_atime` の精度は 1 日に過ぎません。詳しくはお使いのオペレーティングシステムのドキュメントを参照してください。"
 
-#: ../../library/os.rst:1417
+#: ../../library/os.rst:1426
 msgid ""
 "For backward compatibility, the return value of :func:`~os.stat` is also "
 "accessible as a tuple of at least 10 integers giving the most important (and"
@@ -1459,26 +1471,26 @@ msgid ""
 "some implementations."
 msgstr "後方互換性のため、 :func:`~os.stat` の返り値は :c:type:`stat` 構造体の最も重要な ( そして移植性の高い ) メンバーを表すタプルとしてもアクセス可能です。これは少なくとも 10 個の整数からなり、 :attr:`st_mode` 、 :attr:`st_ino` 、 :attr:`st_dev` 、 :attr:`st_nlink` 、 :attr:`st_uid` 、 :attr:`st_gid` 、 :attr:`st_size` 、 :attr:`st_atime` 、 :attr:`st_mtime` 、 :attr:`st_ctime` の順になります。実装によってはそれ以上のアイテムが末尾に追加されます。"
 
-#: ../../library/os.rst:1426
+#: ../../library/os.rst:1435
 msgid ""
 "The standard module :mod:`stat` defines functions and constants that are "
 "useful for extracting information from a :c:type:`stat` structure. (On "
 "Windows, some items are filled with dummy values.)"
 msgstr "標準モジュール :mod:`stat` は :c:type:`stat` 構造体からの情報の取り出しに役立つ関数と定数を定義しています。 (Windows では、一部のアイテムにダミー値が入ります )"
 
-#: ../../library/os.rst:1430
+#: ../../library/os.rst:1439
 msgid "Example::"
 msgstr "例 ::"
 
-#: ../../library/os.rst:1441 ../../library/os.rst:1494
+#: ../../library/os.rst:1450 ../../library/os.rst:1503
 msgid "Added access to values as attributes of the returned object."
 msgstr "値へのアクセスを戻り値の属性として追加しました。"
 
-#: ../../library/os.rst:1444
+#: ../../library/os.rst:1453
 msgid "Added :attr:`st_gen` and :attr:`st_birthtime`."
 msgstr ":attr:`st_gen` および :attr:`st_birthtime` 属性が追加されました。"
 
-#: ../../library/os.rst:1450
+#: ../../library/os.rst:1459
 msgid ""
 "Determine whether :class:`stat_result` represents time stamps as float "
 "objects. If *newvalue* is ``True``, future calls to :func:`~os.stat` return "
@@ -1486,27 +1498,27 @@ msgid ""
 "omitted, return the current setting."
 msgstr ":class:`stat_result` がタイムスタンプに浮動小数点オブジェクトを使うかどうかを決定します。 *newvalue* が ``True`` の場合、以後の :func:`~os.stat` 呼び出しは浮動小数点を返し、 ``False`` の場合には以後整数を返します。 *newvalue* が省略された場合、現在の設定どおりの返り値になります。"
 
-#: ../../library/os.rst:1455
+#: ../../library/os.rst:1464
 msgid ""
 "For compatibility with older Python versions, accessing :class:`stat_result`"
 " as a tuple always returns integers."
 msgstr "古いバージョンの Python と互換性を保つため、 :class:`stat_result` にタプルとしてアクセスすると、常に整数が返されます。"
 
-#: ../../library/os.rst:1458
+#: ../../library/os.rst:1467
 msgid ""
 "Python now returns float values by default. Applications which do not work "
 "correctly with floating point time stamps can use this function to restore "
 "the old behaviour."
 msgstr "Python は現在デフォルトで浮動小数点値を返します。タイムスタンプが浮動小数点では正常に動作しないアプリケーションは、この関数で古い挙動を利用できます。"
 
-#: ../../library/os.rst:1463
+#: ../../library/os.rst:1472
 msgid ""
 "The resolution of the timestamps (that is the smallest possible fraction) "
 "depends on the system. Some systems only support second resolution; on these"
 " systems, the fraction will always be zero."
 msgstr "タイムスタンプの精度 ( すなわち最小の小数部分 ) はシステム依存です。システムによっては秒単位の精度しかサポートしません。そういったシステムでは小数部分は常に 0 です。"
 
-#: ../../library/os.rst:1467
+#: ../../library/os.rst:1476
 msgid ""
 "It is recommended that this setting is only changed at program startup time "
 "in the *__main__* module; libraries should never change this setting. If an "
@@ -1515,7 +1527,7 @@ msgid ""
 " library has been corrected."
 msgstr "この設定の変更は、プログラムの起動時に、 *__main__* モジュールの中でのみ行うことを推奨します。ライブラリは決してこの設定を変更すべきではありません。浮動小数点型のタイムスタンプを処理すると不正確な動作をするようなライブラリを使う場合、ライブラリが修正されるまで、その機能を停止させておくべきです。"
 
-#: ../../library/os.rst:1476
+#: ../../library/os.rst:1485
 msgid ""
 "Perform a :c:func:`statvfs` system call on the given path.  The return value"
 " is an object whose attributes describe the filesystem on the given path, "
@@ -1525,7 +1537,7 @@ msgid ""
 ":attr:`f_flag`, :attr:`f_namemax`."
 msgstr "与えられたパスに対して :c:func:`statvfs` システムコールを実行します。返り値はオブジェクトで、その属性は与えられたパスが格納されているファイルシステムについて記述したものです。各属性は :c:type:`statvfs` 構造体のメンバーに対応します : :attr:`f_bsize`, :attr:`f_frsize`, :attr:`f_blocks`, :attr:`f_bfree`, :attr:`f_bavail`, :attr:`f_files`, :attr:`f_ffree`, :attr:`f_favail`, :attr:`f_flag`, :attr:`f_namemax` 。"
 
-#: ../../library/os.rst:1485
+#: ../../library/os.rst:1494
 msgid ""
 "For backward compatibility, the return value is also accessible as a tuple "
 "whose values correspond to the attributes, in the order given above. The "
@@ -1535,11 +1547,11 @@ msgid ""
 " versions of Python that don't support accessing the fields as attributes."
 msgstr "後方互換性のために、戻り値は上の順にそれぞれ対応する属性値が並んだタプルとしてアクセスすることもできます。標準モジュール :mod:`statvfs` では、シーケンスとしてアクセスする場合に、 :c:type:`statvfs` 構造体から情報を引き出す上便利な関数や定数を定義しています ; これは属性として各フィールドにアクセスできないバージョンの Python で動作する必要のあるコードを書く際に便利です。"
 
-#: ../../library/os.rst:1500
+#: ../../library/os.rst:1509
 msgid "Create a symbolic link pointing to *source* named *link_name*."
 msgstr "*source* を指すシンボリックリンク *link_name* を作成します。"
 
-#: ../../library/os.rst:1507
+#: ../../library/os.rst:1516
 msgid ""
 "Return a unique path name that is reasonable for creating a temporary file. "
 "This will be an absolute path that names a potential directory entry in the "
@@ -1553,13 +1565,13 @@ msgid ""
 "implementation; some aspects are underspecified in system documentation."
 msgstr "一時ファイル (temporary file) を生成する上でファイル名として相応しい一意なパス名を返します。この値は一時的なディレクトリエントリを表す絶対パスで、 *dir* ディレクトリの下か、*dir* が省略されたり ``None`` の場合には一時ファイルを置くための共通のディレクトリの下になります。 *prefix* が与えられており、かつ ``None`` でない場合、ファイル名の先頭につけられる短い接頭辞になります。アプリケーションは :func:`tempnam` が返したパス名を使って正しくファイルを生成し、生成したファイルを管理する責任があります; 一時ファイルの自動消去機能は提供されていません。Unix では、環境変数 :envvar:`TMPDIR` が *dir* を上書きし、Windows では環境変数 :envvar:`TMP` が使われます。これら関数の固有の振る舞いについては C ライブラリの実装に依存しています; いくつかの側面についてはシステムのドキュメントで曖昧です。"
 
-#: ../../library/os.rst:1520
+#: ../../library/os.rst:1529
 msgid ""
 "Use of :func:`tempnam` is vulnerable to symlink attacks; consider using "
 ":func:`tmpfile` (section :ref:`os-newstreams`) instead."
 msgstr ":func:`tempnam` を使うと、 symlink 攻撃に対して脆弱になります ; 代りに :func:`tmpfile` (:ref:`os-newstreams`) を使うよう検討してください。"
 
-#: ../../library/os.rst:1528
+#: ../../library/os.rst:1537
 msgid ""
 "Return a unique path name that is reasonable for creating a temporary file. "
 "This will be an absolute path that names a potential directory entry in a "
@@ -1568,13 +1580,13 @@ msgid ""
 ":func:`tmpnam`; no automatic cleanup is provided."
 msgstr "一時ファイル (temporary file) を生成する上でファイル名として相応しい一意なパス名を返します。この値は一時ファイルを置くための共通のディレクトリ下の一時的なディレクトリエントリを表す絶対パスです。アプリケーションは :func:`tmpnam` が返したパス名を使って正しくファイルを生成し、生成したファイルを管理する責任があります ; 一時ファイルの自動消去機能は提供されていません。"
 
-#: ../../library/os.rst:1536
+#: ../../library/os.rst:1545
 msgid ""
 "Use of :func:`tmpnam` is vulnerable to symlink attacks; consider using "
 ":func:`tmpfile` (section :ref:`os-newstreams`) instead."
 msgstr ":func:`tmpnam` を使うと、 symlink 攻撃に対して脆弱になります ; 代りに :func:`tmpfile` (:ref:`os-newstreams`) を使うよう検討してください。"
 
-#: ../../library/os.rst:1539
+#: ../../library/os.rst:1548
 msgid ""
 "Availability: Unix, Windows.  This function probably shouldn't be used on "
 "Windows, though: Microsoft's implementation of :func:`tmpnam` always creates"
@@ -1583,19 +1595,19 @@ msgid ""
 "able to open a file using this name)."
 msgstr "利用できる環境 : Unix, Windows 。この関数はおそらく Windows では使うべきではないでしょう ; Micorosoft の :func:`tmpnam` 実装では、常に現在のドライブのルートディレクトリ下のファイル名を生成しますが、これは一般的にはテンポラリファイルを置く場所としてはひどい場所です ( アクセス権限によっては、この名前をつかってファイルを開くことすらできないかもしれません ) 。"
 
-#: ../../library/os.rst:1548
+#: ../../library/os.rst:1557
 msgid ""
 "The maximum number of unique names that :func:`tmpnam` will generate before "
 "reusing names."
 msgstr ":func:`tmpnam` がテンポラリ名を再利用し始めるまでに生成できる一意な名前の最大数です。"
 
-#: ../../library/os.rst:1554
+#: ../../library/os.rst:1563
 msgid ""
 "Remove (delete) the file *path*.  This is the same function as "
 ":func:`remove`; the :func:`unlink` name is its traditional Unix name."
 msgstr "ファイル *path* を削除します。 :func:`remove` と同じです ; :func:`unlink` の名前は伝統的な Unix の関数名です。"
 
-#: ../../library/os.rst:1563
+#: ../../library/os.rst:1572
 msgid ""
 "Set the access and modified times of the file specified by *path*. If "
 "*times* is ``None``, then the file's access and modified times are set to "
@@ -1610,11 +1622,11 @@ msgid ""
 "times; see :func:`~os.stat`."
 msgstr "*path* で指定されたファイルに最終アクセス時刻および最終修正時刻を設定します。 *times* が ``None`` の場合、ファイルの最終アクセス時刻および最終更新時刻は現在の時刻になります。 ( この動作は、その *path* に対して Unix の :program:`touch` プログラムを実行するのに似ています ) 。そうでない場合、 *times* は 2 要素のタプルで、 ``(atime, mtime)`` の形式をとらなくてはなりません。これらはそれぞれアクセス時刻および修正時刻を設定するために使われます。 *path* にディレクトリを指定できるかどうかは、オペレーティングシステムがディレクトリをファイルの一種として実装しているかどうかに依存します ( 例えば、 Windows はそうではありません ) 。ここで設定した時刻の値は、オペレーティングシステムがアクセス時刻や更新時刻を記録する際の精度によっては、後で :func:`~os.stat` 呼び出したときの値と同じにならないかも知れないので注意してください。 :func:`~os.stat` も参照してください。"
 
-#: ../../library/os.rst:1574
+#: ../../library/os.rst:1583
 msgid "Added support for ``None`` for *times*."
 msgstr "*times* として ``None`` をサポートするようにしました ."
 
-#: ../../library/os.rst:1586
+#: ../../library/os.rst:1595
 msgid ""
 "Generate the file names in a directory tree by walking the tree either top-"
 "down or bottom-up. For each directory in the tree rooted at directory *top* "
@@ -1622,7 +1634,7 @@ msgid ""
 "filenames)``."
 msgstr "ディレクトリツリー以下のファイル名を、ツリーをトップダウンもしくはボトムアップに走査することで作成します。ディレクトリ *top* を根に持つディレクトリツリーに含まれる、各ディレクトリ (*top* 自身を含む ) ごとに、タプル ``(dirpath, dirnames, filenames)`` を yield します。"
 
-#: ../../library/os.rst:1591
+#: ../../library/os.rst:1600
 msgid ""
 "*dirpath* is a string, the path to the directory.  *dirnames* is a list of "
 "the names of the subdirectories in *dirpath* (excluding ``'.'`` and "
@@ -1632,7 +1644,7 @@ msgid ""
 "*dirpath*, do ``os.path.join(dirpath, name)``."
 msgstr "*dirpath* は文字列で、ディレクトリへのパスです。 *dirnames* は *dirpath* 内のサブディレクトリ名のリスト (``'.'`` と ``'..'`` は除く）です。 *filenames* は *dirpath* 内の非ディレクトリ・ファイル名のリストです。このリスト内の名前にはファイル名までのパスが含まれません。 *dirpath* 内のファイルやディレクトリへの (*top* からたどった ) フルパスを得るには、 ``os.path.join(dirpath, name)`` を使用してください。"
 
-#: ../../library/os.rst:1598
+#: ../../library/os.rst:1607
 msgid ""
 "If optional argument *topdown* is ``True`` or not specified, the triple for "
 "a directory is generated before the triples for any of its subdirectories "
@@ -1643,7 +1655,7 @@ msgid ""
 "the directory and its subdirectories are generated."
 msgstr "オプション引数 *topdown* が ``True`` であるか、指定されなかった場合、各ディレクトリからタプルを生成した後で、サブディレクトリからタプルを生成します。 ( ディレクトリはトップダウンで生成 ) 。 *topdown* が ``False`` の場合、ディレクトリに対応するタプルは、そのディレクトリ以下の全てのサブディレクトリに対応するタプルの後で ( ボトムアップで ) 生成されます。 *topdown* の値によらず、サブディレクトリのリストは、ディレクトリとそのサブディレクトリのタプルを生成する前に取り出されます。"
 
-#: ../../library/os.rst:1606
+#: ../../library/os.rst:1615
 msgid ""
 "When *topdown* is ``True``, the caller can modify the *dirnames* list in-"
 "place (perhaps using :keyword:`del` or slice assignment), and :func:`walk` "
@@ -1656,7 +1668,7 @@ msgid ""
 " itself is generated."
 msgstr "*topdown* が ``True`` のとき、呼び出し側は *dirnames* リストを、インプレースで ( たとえば、 :keyword:`del` やスライスを使った代入で ) 変更でき、 :func:`walk` は *dirnames* に残っているサブディレクトリ内のみを再帰します。これにより、検索を省略したり、特定の訪問順序を強制したり、呼び出し側が :func:`walk` を再開する前に、呼び出し側が作った、または名前を変更したディレクトリを、 :func:`walk` に知らせたりすることができます。 *topdown* が ``False`` のときに *dirnames* を変更しても効果はありません。ボトムアップモードでは *dirpath* 自身が生成される前に *dirnames* 内のディレクトリの情報が生成されるからです。"
 
-#: ../../library/os.rst:1615
+#: ../../library/os.rst:1624
 msgid ""
 "By default, errors from the :func:`listdir` call are ignored.  If optional "
 "argument *onerror* is specified, it should be a function; it will be called "
@@ -1666,53 +1678,53 @@ msgid ""
 "object."
 msgstr "デフォルトでは、 :func:`listdir` 呼び出しからのエラーは無視されます。オプション引数の *onerror* を指定する場合は関数でなければなりません ; この関数は単一の引数として :exc:`OSError` インスタンスを伴って呼び出されます。この関数でエラーを報告して走査を継続したり、例外を送出して走査を中止したりできます。ファイル名は例外オブジェクトの ``filename`` 属性として利用できます。"
 
-#: ../../library/os.rst:1621
+#: ../../library/os.rst:1630
 msgid ""
 "By default, :func:`walk` will not walk down into symbolic links that resolve"
 " to directories. Set *followlinks* to ``True`` to visit directories pointed "
 "to by symlinks, on systems that support them."
 msgstr "デフォルトでは、 :func:`walk` はディレクトリへのシンボリックリンクをたどりません。 *followlinks* に ``True`` を指定すると、ディレクトリへのシンボリックリンクをサポートしているシステムでは、シンボリックリンクの指しているディレクトリを走査します。"
 
-#: ../../library/os.rst:1625
+#: ../../library/os.rst:1634
 msgid "The *followlinks* parameter."
 msgstr "*followlinks* 引数"
 
-#: ../../library/os.rst:1630
+#: ../../library/os.rst:1639
 msgid ""
 "Be aware that setting *followlinks* to ``True`` can lead to infinite "
 "recursion if a link points to a parent directory of itself. :func:`walk` "
 "does not keep track of the directories it visited already."
 msgstr "*followlinks* に ``True`` を指定すると、シンボリックリンクが親ディレクトリを指していた場合に、無限ループになることに注意してください。 :func:`walk` はすでにたどったディレクトリを管理したりはしません。"
 
-#: ../../library/os.rst:1636
+#: ../../library/os.rst:1645
 msgid ""
 "If you pass a relative pathname, don't change the current working directory "
 "between resumptions of :func:`walk`.  :func:`walk` never changes the current"
 " directory, and assumes that its caller doesn't either."
 msgstr "相対パスを渡した場合、 :func:`walk` が再開されるまでの間に現在の作業ディレクトリを変更しないでください。 :func:`walk` はカレントディレクトリを変更しませんし、呼び出し側もカレントディレクトリを変更しないと仮定しています。"
 
-#: ../../library/os.rst:1640
+#: ../../library/os.rst:1649
 msgid ""
 "This example displays the number of bytes taken by non-directory files in "
 "each directory under the starting directory, except that it doesn't look "
 "under any CVS subdirectory::"
 msgstr "以下の例では、最初のディレクトリ以下にある各ディレクトリに含まれる、非ディレクトリファイルのバイト数を表示します。ただし、 CVS サブディレクトリ以下は見に行きません ::"
 
-#: ../../library/os.rst:1653
+#: ../../library/os.rst:1662
 msgid ""
 "In the next example, walking the tree bottom-up is essential: :func:`rmdir` "
 "doesn't allow deleting a directory before the directory is empty::"
 msgstr "次の例では、ツリーをボトムアップで走査することが不可欠になります ; :func:`rmdir` はディレクトリが空になるまで削除を許さないからです ::"
 
-#: ../../library/os.rst:1673
+#: ../../library/os.rst:1682
 msgid "Process Management"
 msgstr "プロセス管理"
 
-#: ../../library/os.rst:1675
+#: ../../library/os.rst:1684
 msgid "These functions may be used to create and manage processes."
 msgstr "以下の関数はプロセスの生成や管理に利用できます。"
 
-#: ../../library/os.rst:1677
+#: ../../library/os.rst:1686
 msgid ""
 "The various :func:`exec\\* <execl>` functions take a list of arguments for "
 "the new program loaded into the process.  In each case, the first of these "
@@ -1723,7 +1735,7 @@ msgid ""
 "standard output; ``foo`` will seem to be ignored."
 msgstr "さまざまな :func:`exec\\* <execl>` 関数は、プロセス内にロードされる新しいプログラムに与えるための、引数のリストを取ります。どの関数の場合でも、新しいプログラムに渡されるリストの最初の引数は、ユーザがコマンドラインで入力する引数ではなく、そのプログラム自体の名前です。 C プログラマならば、プログラムの :c:func:`main` に渡される ``argv[0]`` だと考えれば良いでしょう。たとえば、 ``os.execv('/bin/echo', ['foo', 'bar'])`` が標準出力に出力するのは ``bar`` だけで、 ``foo`` は無視されたかのように見えることになります。"
 
-#: ../../library/os.rst:1688
+#: ../../library/os.rst:1697
 msgid ""
 "Generate a :const:`SIGABRT` signal to the current process.  On Unix, the "
 "default behavior is to produce a core dump; on Windows, the process "
@@ -1732,7 +1744,7 @@ msgid ""
 ":const:`SIGABRT` with :func:`signal.signal`."
 msgstr ":const:`SIGABRT` シグナルを現在のプロセスに対して生成します。 Unix では、デフォルトの動作はコアダンプの生成です ; Windows では、プロセスは即座に終了コード ``3`` を返します。この関数の呼び出しは :func:`signal.signal` を使って :const:`SIGABRT` に対し登録された Python シグナルハンドラーを呼び出さないことに注意してください。"
 
-#: ../../library/os.rst:1706
+#: ../../library/os.rst:1715
 msgid ""
 "These functions all execute a new program, replacing the current process; "
 "they do not return.  On Unix, the new executable is loaded into the current "
@@ -1740,7 +1752,7 @@ msgid ""
 "reported as :exc:`OSError` exceptions."
 msgstr "これらの関数はすべて、現在のプロセスを置き換える形で新たなプログラムを実行します ; 現在のプロセスは返り値を返しません。 Unix では、新たに実行される実行コードは現在のプロセス内に読み込まれ、呼び出し側と同じプロセス ID を持つことになります。エラーは :exc:`OSError` 例外として報告されます。"
 
-#: ../../library/os.rst:1711
+#: ../../library/os.rst:1720
 msgid ""
 "The current process is replaced immediately. Open file objects and "
 "descriptors are not flushed, so if there may be data buffered on these open "
@@ -1748,7 +1760,7 @@ msgid ""
 ":func:`os.fsync` before calling an :func:`exec\\* <execl>` function."
 msgstr "現在のプロセスは瞬時に置き換えられます。開かれているファイルオブジェクトやファイル記述子はフラッシュされません。そのため、バッファ内にデータが残っているかもしれない場合、 :func:`exec\\* <execl>` 関数を実行する前に :func:`sys.stdout.flush` か :func:`os.fsync` を利用してバッファをフラッシュしておく必要があります。"
 
-#: ../../library/os.rst:1717
+#: ../../library/os.rst:1726
 msgid ""
 "The \"l\" and \"v\" variants of the :func:`exec\\* <execl>` functions differ"
 " in how command-line arguments are passed.  The \"l\" variants are perhaps "
@@ -1761,7 +1773,7 @@ msgid ""
 "is not enforced."
 msgstr "\"l\" および \"v\" のついた :func:`exec\\* <execl>` 関数は、コマンドライン引数をどのように渡すかが異なります。 \"l\" 型は、コードを書くときにパラメタ数が決まっている場合に、おそらくもっとも簡単に利用できます。個々のパラメタは単に :func:`execl\\*` 関数の追加パラメタとなります。 \"v\" 型は、パラメタの数が可変の時に便利で、リストかタプルの引数が *args* パラメタとして渡されます。どちらの場合も、子プロセスに渡す引数は動作させようとしているコマンドの名前から始まるべきですが、これは強制されません。"
 
-#: ../../library/os.rst:1726
+#: ../../library/os.rst:1735
 msgid ""
 "The variants which include a \"p\" near the end (:func:`execlp`, "
 ":func:`execlpe`, :func:`execvp`, and :func:`execvpe`) will use the "
@@ -1774,7 +1786,7 @@ msgid ""
 "contain an appropriate absolute or relative path."
 msgstr "末尾近くに \"p\" をもつ型 (:func:`execlp`, :func:`execlpe`, :func:`execvp`, および :func:`execvpe`) は、プログラム *file* を探すために環境変数 :envvar:`PATH` を利用します。環境変数が ( 次の段で述べる :func:`exec\\*e <execl>` 型関数で ) 置き換えられる場合、環境変数は :envvar:`PATH` を決定する上の情報源として使われます。その他の型、 :func:`execl`, :func:`execle`, :func:`execv`, および :func:`execve` では、実行コードを探すために :envvar:`PATH` を使いません。 *path* には適切に設定された絶対パスまたは相対パスが入っていなくてはなりません。"
 
-#: ../../library/os.rst:1736
+#: ../../library/os.rst:1745
 msgid ""
 "For :func:`execle`, :func:`execlpe`, :func:`execve`, and :func:`execvpe` "
 "(note that these all end in \"e\"), the *env* parameter must be a mapping "
@@ -1784,19 +1796,19 @@ msgid ""
 "the new process to inherit the environment of the current process."
 msgstr ":func:`execle` 、 :func:`execlpe` 、 :func:`execve` 、および :func:`execvpe` ( すべて末尾に \"e\" がついています ) では、 *env* パラメーターは新たなプロセスで利用される環境変数を定義するためのマップ型でなくてはなりません ( 現在のプロセスの環境変数の代わりに利用されます ); :func:`execl` 、 :func:`execlp` 、 :func:`execv` 、および :func:`execvp` では、すべて新たなプロセスは現在のプロセスの環境を引き継ぎます。"
 
-#: ../../library/os.rst:1748
+#: ../../library/os.rst:1757
 msgid ""
 "Exit the process with status *n*, without calling cleanup handlers, flushing"
 " stdio buffers, etc."
 msgstr "終了ステータス *n* でプロセスを終了します。この時クリーンアップハンドラーの呼び出しや、標準入出力バッファーのフラッシュなどは行いません。"
 
-#: ../../library/os.rst:1755
+#: ../../library/os.rst:1764
 msgid ""
 "The standard way to exit is ``sys.exit(n)``.  :func:`_exit` should normally "
 "only be used in the child process after a :func:`fork`."
 msgstr "終了する標準的な方法は ``sys.exit(n)`` です。 :func:`_exit` は通常、 :func:`fork` された後の子プロセスでのみ使われます。"
 
-#: ../../library/os.rst:1758
+#: ../../library/os.rst:1767
 msgid ""
 "The following exit codes are defined and can be used with :func:`_exit`, "
 "although they are not required.  These are typically used for system "
@@ -1804,113 +1816,113 @@ msgid ""
 "delivery program."
 msgstr "以下の終了コードは必須ではありませんが :func:`_exit` で使うことができます。一般に、メールサーバーの外部コマンド配送プログラムのような、 Python で書かれたシステムプログラムに使います。"
 
-#: ../../library/os.rst:1764
+#: ../../library/os.rst:1773
 msgid ""
 "Some of these may not be available on all Unix platforms, since there is "
 "some variation.  These constants are defined where they are defined by the "
 "underlying platform."
 msgstr "いくつかのバリエーションがあって、これらのすべてがすべての Unix プラットフォームで使えるわけではありません。以下の定数は下層のプラットフォームで定義されていれば定義されます。"
 
-#: ../../library/os.rst:1771
+#: ../../library/os.rst:1780
 msgid "Exit code that means no error occurred."
 msgstr "エラーが起きなかったことを表す終了コード。"
 
-#: ../../library/os.rst:1780
+#: ../../library/os.rst:1789
 msgid ""
 "Exit code that means the command was used incorrectly, such as when the "
 "wrong number of arguments are given."
 msgstr "誤った個数の引数が渡された時など、コマンドが間違って使われたことを表す終了コード。"
 
-#: ../../library/os.rst:1790
+#: ../../library/os.rst:1799
 msgid "Exit code that means the input data was incorrect."
 msgstr "入力データが誤っていたことを表す終了コード。"
 
-#: ../../library/os.rst:1799
+#: ../../library/os.rst:1808
 msgid "Exit code that means an input file did not exist or was not readable."
 msgstr "入力ファイルが存在しなかった、または、読み込み不可だったことを表す終了コード。"
 
-#: ../../library/os.rst:1808
+#: ../../library/os.rst:1817
 msgid "Exit code that means a specified user did not exist."
 msgstr "指定されたユーザーが存在しなかったことを表す終了コード。"
 
-#: ../../library/os.rst:1817
+#: ../../library/os.rst:1826
 msgid "Exit code that means a specified host did not exist."
 msgstr "指定されたホストが存在しなかったことを表す終了コード。"
 
-#: ../../library/os.rst:1826
+#: ../../library/os.rst:1835
 msgid "Exit code that means that a required service is unavailable."
 msgstr "要求されたサービスが利用できないことを表す終了コード。"
 
-#: ../../library/os.rst:1835
+#: ../../library/os.rst:1844
 msgid "Exit code that means an internal software error was detected."
 msgstr "内部ソフトウェアエラーが検出されたことを表す終了コード。"
 
-#: ../../library/os.rst:1844
+#: ../../library/os.rst:1853
 msgid ""
 "Exit code that means an operating system error was detected, such as the "
 "inability to fork or create a pipe."
 msgstr "fork できない、 pipe の作成ができないなど、オペレーティングシステムのエラーが検出されたことを表す終了コード。"
 
-#: ../../library/os.rst:1854
+#: ../../library/os.rst:1863
 msgid ""
 "Exit code that means some system file did not exist, could not be opened, or"
 " had some other kind of error."
 msgstr "システムファイルが存在しなかった、開けなかった、あるいはその他のエラーが起きたことを表す終了コード。"
 
-#: ../../library/os.rst:1864
+#: ../../library/os.rst:1873
 msgid ""
 "Exit code that means a user specified output file could not be created."
 msgstr "ユーザーには作成できない出力ファイルを指定したことを表す終了コード。"
 
-#: ../../library/os.rst:1873
+#: ../../library/os.rst:1882
 msgid ""
 "Exit code that means that an error occurred while doing I/O on some file."
 msgstr "ファイルの I/O を行っている途中にエラーが発生した時の終了コード。"
 
-#: ../../library/os.rst:1882
+#: ../../library/os.rst:1891
 msgid ""
 "Exit code that means a temporary failure occurred.  This indicates something"
 " that may not really be an error, such as a network connection that couldn't"
 " be made during a retryable operation."
 msgstr "一時的な失敗が発生したことを表す終了コード。これは、再試行可能な操作の途中に、ネットワークに接続できないというような、実際にはエラーではないかも知れないことを意味します。"
 
-#: ../../library/os.rst:1893
+#: ../../library/os.rst:1902
 msgid ""
 "Exit code that means that a protocol exchange was illegal, invalid, or not "
 "understood."
 msgstr "プロトコル交換が不正、不適切、または理解不能なことを表す終了コード。"
 
-#: ../../library/os.rst:1903
+#: ../../library/os.rst:1912
 msgid ""
 "Exit code that means that there were insufficient permissions to perform the"
 " operation (but not intended for file system problems)."
 msgstr "操作を行うために十分な許可がなかった（ファイルシステムの問題を除く）ことを表す終了コード。"
 
-#: ../../library/os.rst:1913
+#: ../../library/os.rst:1922
 msgid "Exit code that means that some kind of configuration error occurred."
 msgstr "設定エラーが起こったことを表す終了コード。"
 
-#: ../../library/os.rst:1922
+#: ../../library/os.rst:1931
 msgid "Exit code that means something like \"an entry was not found\"."
 msgstr "\"an entry was not found\" のようなことを表す終了コード。"
 
-#: ../../library/os.rst:1931
+#: ../../library/os.rst:1940
 msgid ""
 "Fork a child process.  Return ``0`` in the child and the child's process id "
 "in the parent.  If an error occurs :exc:`OSError` is raised."
 msgstr "子プロセスを fork します。子プロセスでは ``0`` が返り、親プロセスでは子プロセスの id が返ります。エラーが発生した場合は、 :exc:`OSError` を送出します。"
 
-#: ../../library/os.rst:1934
+#: ../../library/os.rst:1943
 msgid ""
 "Note that some platforms including FreeBSD <= 6.3, Cygwin and OS/2 EMX have "
 "known issues when using fork() from a thread."
 msgstr "FreeBSD 6.3 以下、 Cygwin 、 OS/2 EMX を含む一部のプラットフォームにおいて、 fork() をスレッド内から利用した場合に既知の問題があることに注意してください。"
 
-#: ../../library/os.rst:1939
+#: ../../library/os.rst:1948
 msgid "See :mod:`ssl` for applications that use the SSL module with fork()."
 msgstr "SSL モジュールを fork() とともに使うアプリケーションについて、 :mod:`ssl` を参照して下さい。"
 
-#: ../../library/os.rst:1946
+#: ../../library/os.rst:1955
 msgid ""
 "Fork a child process, using a new pseudo-terminal as the child's controlling"
 " terminal. Return a pair of ``(pid, fd)``, where *pid* is ``0`` in the "
@@ -1920,13 +1932,13 @@ msgid ""
 "raised."
 msgstr "子プロセスを fork します。この時新しい擬似端末を子プロセスの制御端末として使います。親プロセスでは ``(pid, fd)`` からなるペアが返り、 *fd* は擬似端末のマスター側のファイル記述子となります。可搬性のあるアプローチを取るには、 :mod:`pty` モジュールを利用してください。エラーが発生した場合は、 :exc:`OSError` を送出します。"
 
-#: ../../library/os.rst:1961
+#: ../../library/os.rst:1970
 msgid ""
 "Send signal *sig* to the process *pid*.  Constants for the specific signals "
 "available on the host platform are defined in the :mod:`signal` module."
 msgstr "プロセス *pid* にシグナル *sig* を送ります。ホストプラットフォームで利用可能なシグナルを特定する定数は :mod:`signal` モジュールで定義されています。"
 
-#: ../../library/os.rst:1964
+#: ../../library/os.rst:1973
 msgid ""
 "Windows: The :data:`signal.CTRL_C_EVENT` and :data:`signal.CTRL_BREAK_EVENT`"
 " signals are special signals which can only be sent to console processes "
@@ -1936,35 +1948,35 @@ msgid ""
 "version of :func:`kill` additionally takes process handles to be killed."
 msgstr "Windows: :data:`signal.CTRL_C_EVENT` と :data:`signal.CTRL_BREAK_EVENT` は、同じコンソールウィンドウを共有しているコンソールプロセス ( 例 : 子プロセス ) にだけ送ることができる特別なシグナルです。その他の値を *sig* に与えると、そのプロセスが無条件に TerminateProcess API によって kill され、終了コードが *sig* に設定されます。 Windows の :func:`kill` は kill するプロセスのハンドルも受け取ります。"
 
-#: ../../library/os.rst:1972
+#: ../../library/os.rst:1981
 msgid "Windows support"
 msgstr "Windows サポート"
 
-#: ../../library/os.rst:1981
+#: ../../library/os.rst:1990
 msgid "Send the signal *sig* to the process group *pgid*."
 msgstr "プロセスグループ *pgid* にシグナル *sig* を送ります。"
 
-#: ../../library/os.rst:1990
+#: ../../library/os.rst:1999
 msgid "Add *increment* to the process's \"niceness\".  Return the new niceness."
 msgstr "プロセスの \"nice 値 \" に *increment* を加えます。新たな nice 値を返します。"
 
-#: ../../library/os.rst:1997
+#: ../../library/os.rst:2006
 msgid ""
 "Lock program segments into memory.  The value of *op* (defined in "
 "``<sys/lock.h>``) determines which segments are locked."
 msgstr "プログラムのセグメントをメモリ内にロックします。 *op* (``<sys/lock.h>`` で定義されています ) にはどのセグメントをロックするかを指定します。"
 
-#: ../../library/os.rst:2009
+#: ../../library/os.rst:2018
 msgid ""
 "Run child processes, returning opened pipes for communications.  These "
 "functions are described in section :ref:`os-newstreams`."
 msgstr "子プロセスを起動し、子プロセスとの通信のために開かれたパイプを返します。これらの関数は :ref:`os-newstreams` 節で説明されています。"
 
-#: ../../library/os.rst:2022
+#: ../../library/os.rst:2031
 msgid "Execute the program *path* in a new process."
 msgstr "新たなプロセス内でプログラム *path* を実行します。"
 
-#: ../../library/os.rst:2024
+#: ../../library/os.rst:2033
 msgid ""
 "(Note that the :mod:`subprocess` module provides more powerful facilities "
 "for spawning new processes and retrieving their results; using that module "
@@ -1972,7 +1984,7 @@ msgid ""
 ":`subprocess-replacements` section.)"
 msgstr "(:mod:`subprocess` モジュールが、新しいプロセスを実行して結果を取得するための、より強力な機能を提供しています。この関数の代わりに :mod:`subprocess` モジュールを利用することが推奨されています。 :mod:`subprocess` モジュールのドキュメントの、 :ref:`subprocess-replacements` セクションを参照してください )"
 
-#: ../../library/os.rst:2029
+#: ../../library/os.rst:2038
 msgid ""
 "If *mode* is :const:`P_NOWAIT`, this function returns the process id of the "
 "new process; if *mode* is :const:`P_WAIT`, returns the process's exit code "
@@ -1981,7 +1993,7 @@ msgid ""
 " handle, so can be used with the :func:`waitpid` function."
 msgstr "*mode* が :const:`P_NOWAIT` の場合、この関数は新たなプロセスのプロセス ID を返します ; *mode* が :const:`P_WAIT` の場合、子プロセスが正常に終了するとその終了コードが返ります。そうでない場合にはプロセスを kill したシグナル *signal* に対して ``-signal`` が返ります。 Windows では、プロセス ID は実際にはプロセスハンドル値になるので、 :func:`waitpid` 関数で使えます。"
 
-#: ../../library/os.rst:2035
+#: ../../library/os.rst:2044
 msgid ""
 "The \"l\" and \"v\" variants of the :func:`spawn\\* <spawnl>` functions "
 "differ in how command-line arguments are passed.  The \"l\" variants are "
@@ -1993,7 +2005,7 @@ msgid ""
 "to the child process must start with the name of the command being run."
 msgstr "\"l\" および \"v\" のついた :func:`spawn\\* <spawnl>` 関数は、コマンドライン引数をどのように渡すかが異なります。 \"l\" 型は、コードを書くときにパラメタ数が決まっている場合に、おそらくもっとも簡単に利用できます。個々のパラメタは単に :func:`spawnl\\*` 関数の追加パラメタとなります。 \"v\" 型は、パラメタの数が可変の時に便利で、リストかタプルの引数が *args* パラメタとして渡されます。どちらの場合も、子プロセスに渡す引数は動作させようとしているコマンドの名前から始まらなければなりません。"
 
-#: ../../library/os.rst:2044
+#: ../../library/os.rst:2053
 msgid ""
 "The variants which include a second \"p\" near the end (:func:`spawnlp`, "
 ":func:`spawnlpe`, :func:`spawnvp`, and :func:`spawnvpe`) will use the "
@@ -2006,7 +2018,7 @@ msgid ""
 "contain an appropriate absolute or relative path."
 msgstr "末尾近くに \"p\" をもつ型 (:func:`spawnlp`, :func:`spawnlpe`, :func:`spawnvp`, :func:`spawnvpe`) は、プログラム *file* を探すために環境変数 :envvar:`PATH` を利用します。環境変数が ( 次の段で述べる :func:`spawn\\*e <spawnl>` 型関数で ) 置き換えられる場合、環境変数は :envvar:`PATH` を決定する上の情報源として使われます。その他の型、 :func:`spawnl`, :func:`spawnle`, :func:`spawnv`, および :func:`spawnve` では、実行コードを探すために :envvar:`PATH` を使いません。 *path* には適切に設定された絶対パスまたは相対パスが入っていなくてはなりません。"
 
-#: ../../library/os.rst:2054
+#: ../../library/os.rst:2063
 msgid ""
 "For :func:`spawnle`, :func:`spawnlpe`, :func:`spawnve`, and :func:`spawnvpe`"
 " (note that these all end in \"e\"), the *env* parameter must be a mapping "
@@ -2019,13 +2031,13 @@ msgid ""
 "``127``."
 msgstr ":func:`spawnle`, :func:`spawnlpe`, :func:`spawnve`, および :func:`spawnvpe` ( すべて末尾に \"e\" がついています ) では、 *env* パラメーターは新たなプロセスで利用される環境変数を定義するためのマップ型でなくてはなりません ; :func:`spawnl` 、 :func:`spawnlp` 、 :func:`spawnv` 、および :func:`spawnvp` では、すべて新たなプロセスは現在のプロセスの環境を引き継ぎます。 *env* 辞書のキーと値はすべて文字列である必要があります。不正なキーや値を与えると関数が失敗し、 ``127`` を返します。"
 
-#: ../../library/os.rst:2063
+#: ../../library/os.rst:2072
 msgid ""
 "As an example, the following calls to :func:`spawnlp` and :func:`spawnvpe` "
 "are equivalent::"
 msgstr "例えば、以下の :func:`spawnlp` および :func:`spawnvpe` 呼び出しは等価です ::"
 
-#: ../../library/os.rst:2072
+#: ../../library/os.rst:2081
 msgid ""
 "Availability: Unix, Windows.  :func:`spawnlp`, :func:`spawnlpe`, "
 ":func:`spawnvp` and :func:`spawnvpe` are not available on Windows.  "
@@ -2033,7 +2045,7 @@ msgid ""
 "advise you to use the :mod:`subprocess` module instead."
 msgstr "利用できる環境 : Unix 、 Windows :func:`spawnlp` 、 :func:`spawnlpe` 、 :func:`spawnvp` 、および :func:`spawnvpe` は Windows では利用できません。 :func:`spawnle` および :func:`spawnve` は Windows においてスレッドセーフではありません ; 代わりに :mod:`subprocess` モジュールの利用を推奨します。"
 
-#: ../../library/os.rst:2083
+#: ../../library/os.rst:2092
 msgid ""
 "Possible values for the *mode* parameter to the :func:`spawn\\* <spawnl>` "
 "family of functions.  If either of these values is given, the "
@@ -2041,7 +2053,7 @@ msgid ""
 "created, with the process id as the return value."
 msgstr ":func:`spawn\\* <spawnl>` 関数ファミリに対する *mode* パラメタとして取れる値です。この値のいずれかを *mode* として与えた場合、 :func:`spawn\\*` 関数は新たなプロセスが生成されるとすぐに、プロセスの ID を戻り値として返ります。"
 
-#: ../../library/os.rst:2095
+#: ../../library/os.rst:2104
 msgid ""
 "Possible value for the *mode* parameter to the :func:`spawn\\* <spawnl>` "
 "family of functions.  If this is given as *mode*, the :func:`spawn\\*` "
@@ -2050,7 +2062,7 @@ msgid ""
 "``-signal`` if a signal kills the process."
 msgstr ":func:`spawn\\* <spawnl>` 関数ファミリに対する *mode* パラメタとして取れる値です。この値を *mode* として与えた場合、 :func:`spawn\\*` 関数は新たなプロセスを起動して完了するまで返らず、プロセスがうまく終了した場合には終了コードを、シグナルによってプロセスが kill された場合には ``-signal`` を返します。"
 
-#: ../../library/os.rst:2109
+#: ../../library/os.rst:2118
 msgid ""
 "Possible values for the *mode* parameter to the :func:`spawn\\* <spawnl>` "
 "family of functions.  These are less portable than those listed above. "
@@ -2060,15 +2072,15 @@ msgid ""
 "will not return."
 msgstr ":func:`spawn\\* <spawnl>` 関数ファミリに対する *mode* パラメタとして取れる値です。これらの値は上の値よりもやや可搬性において劣っています。 :const:`P_DETACH` は :const:`P_NOWAIT` に似ていますが、新たなプロセスは呼び出しプロセスのコンソールから切り離され (detach) ます。 :const:`P_OVERLAY` が使われた場合、現在のプロセスは置き換えられます ; 従って :func:`spawn\\*` は返りません。"
 
-#: ../../library/os.rst:2115 ../../library/os.rst:2142
+#: ../../library/os.rst:2124 ../../library/os.rst:2151
 msgid "Availability: Windows."
 msgstr "利用出来る環境 : Windows."
 
-#: ../../library/os.rst:2122
+#: ../../library/os.rst:2131
 msgid "Start a file with its associated application."
 msgstr "ファイルを関連付けられたアプリケーションを使ってスタートします。"
 
-#: ../../library/os.rst:2124
+#: ../../library/os.rst:2133
 msgid ""
 "When *operation* is not specified or ``'open'``, this acts like double-"
 "clicking the file in Windows Explorer, or giving the file name as an "
@@ -2077,7 +2089,7 @@ msgid ""
 "associated."
 msgstr "*operation* が指定されないか、または ``'open'`` である時、この動作は、 Windows の Explorer 上でのファイルをダブルクリックした、あるいはコマンドプロンプト上でファイル名を :program:`start` コマンドの引数としての実行した場合と等価です : ファイルは拡張子が関連付けされているアプリケーション ( が存在する場合 ) を使って開かれます。"
 
-#: ../../library/os.rst:2129
+#: ../../library/os.rst:2138
 msgid ""
 "When another *operation* is given, it must be a \"command verb\" that "
 "specifies what should be done with the file. Common verbs documented by "
@@ -2085,7 +2097,7 @@ msgid ""
 "``'explore'`` and ``'find'`` (to be used on directories)."
 msgstr "他の *operation* が与えられる場合、それはファイルに対して何がなされるべきかを表す \"command verb\" ( コマンドを表す動詞 ) でなければなりません。 Microsoft が文書化している動詞は、 ``'print'`` と ``'edit'`` ( ファイルに対して ) および ``'explore'`` と ``'find'`` ( ディレクトリに対して ) です。"
 
-#: ../../library/os.rst:2134
+#: ../../library/os.rst:2143
 msgid ""
 ":func:`startfile` returns as soon as the associated application is launched."
 " There is no option to wait for the application to close, and no way to "
@@ -2097,11 +2109,11 @@ msgid ""
 "encoded for Win32."
 msgstr ":func:`startfile` は関連付けされたアプリケーションが起動すると同時に返ります。アプリケーションが閉じるまで待機させるためのオプションはなく、アプリケーションの終了状態を取得する方法もありません。引数 *path* はカレントディレクトリからの相対パスです。絶対パスで指定したい場合は、最初の文字はスラッシュ (``'/'``) ではないので注意してください ; もし最初の文字がスラッシュなら、下層の Win32 :c:func:`ShellExecute` 関数は動作しません。 :func:`os.path.normpath` 関数を使って、 Win32 用に正しくコード化されたパスになるようにしてください。"
 
-#: ../../library/os.rst:2146
+#: ../../library/os.rst:2155
 msgid "The *operation* parameter."
 msgstr "*operation* パラメータ ."
 
-#: ../../library/os.rst:2152
+#: ../../library/os.rst:2161
 msgid ""
 "Execute the command (a string) in a subshell.  This is implemented by "
 "calling the Standard C function :c:func:`system`, and has the same "
@@ -2109,7 +2121,7 @@ msgid ""
 "environment of the executed command."
 msgstr "サブシェル内でコマンド (文字列) を実行します。この関数は標準 C 関数 :c:func:`system` を使って実装されており、 :c:func:`system` と同じ制限があります。 :data:`sys.stdin` などに対する変更を行っても、実行されるコマンドの環境には反映されません。"
 
-#: ../../library/os.rst:2157
+#: ../../library/os.rst:2166
 msgid ""
 "On Unix, the return value is the exit status of the process encoded in the "
 "format specified for :func:`wait`.  Note that POSIX does not specify the "
@@ -2117,7 +2129,7 @@ msgid ""
 "return value of the Python function is system-dependent."
 msgstr "Unix では、返り値はプロセスの終了ステータスで、 :func:`wait` で定義されている書式にコード化されています。 POSIX は :c:func:`system` 関数の返り値の意味について定義していないので、 Python の :func:`system` における返り値はシステム依存となることに注意してください。"
 
-#: ../../library/os.rst:2162
+#: ../../library/os.rst:2171
 msgid ""
 "On Windows, the return value is that returned by the system shell after "
 "running *command*, given by the Windows environment variable "
@@ -2127,7 +2139,7 @@ msgid ""
 "native shell, consult your shell documentation."
 msgstr "Windows では、戻り値は *command* を実行した後にシステムシェルから返される値で、 Windows の環境変数 :envvar:`COMSPEC` となります : :program:`command.com` ベースのシステム (Windows 95, 98 および ME) では、この値は常に ``0`` です ; :program:`cmd.exe` ベースのシステム (Windows NT, 2000 および XP) では、この値は実行したコマンドの終了ステータスです ; ネイティブでないシェルを使っているシステムについては、使っているシェルのドキュメントを参照してください。"
 
-#: ../../library/os.rst:2169
+#: ../../library/os.rst:2178
 msgid ""
 "The :mod:`subprocess` module provides more powerful facilities for spawning "
 "new processes and retrieving their results; using that module is preferable "
@@ -2135,7 +2147,7 @@ msgid ""
 "the :mod:`subprocess` documentation for some helpful recipes."
 msgstr ":mod:`subprocess` モジュールは、新しいプロセスを実行して結果を取得するためのより強力な機能を提供しています。この関数の代わりに :mod:`subprocess` モジュールを利用することが推奨されています。 :mod:`subprocess` モジュールのドキュメントの :ref:`subprocess-replacements` 節のレシピを参考にして下さい。"
 
-#: ../../library/os.rst:2180
+#: ../../library/os.rst:2189
 msgid ""
 "Return a 5-tuple of floating point numbers indicating accumulated (processor"
 " or other) times, in seconds.  The items are: user time, system time, "
@@ -2145,11 +2157,11 @@ msgid ""
 " On Windows, only the first two items are filled, the others are zero."
 msgstr "( プロセッサまたはその他の ) 積算時間を秒で表す浮動小数点数からなる、 5 要素のタプルを返します。タプルの要素は、ユーザ時間 (user time) 、システム時間 (system time) 、子プロセスのユーザ時間、子プロセスのシステム時間、そして過去のある固定時点からの経過時間で、この順に並んでいます。 Unix マニュアルページ :manpage:`times(2)` または対応する Windows プラットフォーム API ドキュメントを参照してください。 Windows では、最初の２つの要素だけが埋められ、残りは 0 になります。"
 
-#: ../../library/os.rst:2187
+#: ../../library/os.rst:2196
 msgid "Availability: Unix, Windows"
 msgstr "利用できる環境 : Unix, Windows"
 
-#: ../../library/os.rst:2192
+#: ../../library/os.rst:2201
 msgid ""
 "Wait for completion of a child process, and return a tuple containing its "
 "pid and exit status indication: a 16-bit number, whose low byte is the "
@@ -2158,11 +2170,11 @@ msgid ""
 "if a core file was produced."
 msgstr "子プロセスの実行完了を待機し、子プロセスの pid と終了コードインジケーター --- 16 ビットの数値で、下位バイトがプロセスを kill したシグナル番号、上位バイトが終了ステータス ( シグナル番号がゼロの場合 ) --- の入ったタプルを返します ; コアダンプファイルが生成された場合、下位バイトの最上桁ビットが立てられます。"
 
-#: ../../library/os.rst:2203
+#: ../../library/os.rst:2212
 msgid "The details of this function differ on Unix and Windows."
 msgstr "この関数の詳細は Unix と Windows で異なります。"
 
-#: ../../library/os.rst:2205
+#: ../../library/os.rst:2214
 msgid ""
 "On Unix: Wait for completion of a child process given by process id *pid*, "
 "and return a tuple containing its process id and exit status indication "
@@ -2171,7 +2183,7 @@ msgid ""
 "operation."
 msgstr "Unix の場合 : プロセス id *pid* で与えられた子プロセスの完了を待機し、子プロセスのプロセス id と (:func:`wait` と同様にコード化された ) 終了ステータスインジケーターからなるタプルを返します。この関数の動作は *options* によって変わります。通常の操作では ``0`` にします。"
 
-#: ../../library/os.rst:2210
+#: ../../library/os.rst:2219
 msgid ""
 "If *pid* is greater than ``0``, :func:`waitpid` requests status information "
 "for that specific process.  If *pid* is ``0``, the request is for the status"
@@ -2181,13 +2193,13 @@ msgid ""
 "group ``-pid`` (the absolute value of *pid*)."
 msgstr "*pid* が ``0`` よりも大きい場合、 :func:`waitpid` は特定のプロセスのステータス情報を要求します。 *pid* が ``0`` の場合、現在のプロセスグループ内の任意の子プロセスの状態に対する要求です。 *pid* が ``-1`` の場合、現在のプロセスの任意の子プロセスに対する要求です。 *pid* が ``-1`` よりも小さい場合、プロセスグループ ``-pid`` ( すなわち *pid* の絶対値 ) 内の任意のプロセスに対する要求です。"
 
-#: ../../library/os.rst:2217
+#: ../../library/os.rst:2226
 msgid ""
 "An :exc:`OSError` is raised with the value of errno when the syscall returns"
 " -1."
 msgstr "システムコールが -1 を返した時、 :exc:`OSError` を errno と共に送出します。"
 
-#: ../../library/os.rst:2220
+#: ../../library/os.rst:2229
 msgid ""
 "On Windows: Wait for completion of a process given by process handle *pid*, "
 "and return a tuple containing *pid*, and its exit status shifted left by 8 "
@@ -2199,7 +2211,7 @@ msgid ""
 "suitable process handles."
 msgstr "Windows では、プロセスハンドル *pid* を指定してプロセスの終了を待って、 *pid* と、終了ステータスを 8bit 左シフトした値のタプルを返します。 ( シフトは、この関数をクロスプラットフォームで利用しやすくするために行われます ) ``0`` 以下の *pid* は Windows では特別な意味を持っておらず、例外を発生させます。 *options* の値は効果がありません。 *pid* は、子プロセスで無くても、プロセス ID を知っているどんなプロセスでも参照することが可能です。 :func:`spawn\\* <spawnl>` 関数を :const:`P_NOWAIT` と共に呼び出した場合、適切なプロセスハンドルが返されます。"
 
-#: ../../library/os.rst:2231
+#: ../../library/os.rst:2240
 msgid ""
 "Similar to :func:`waitpid`, except no process id argument is given and a "
 "3-element tuple containing the child's process id, exit status indication, "
@@ -2209,7 +2221,7 @@ msgid ""
 ":func:`wait4`."
 msgstr ":func:`waitpid` に似ていますが、プロセス id を引数に取らず、子プロセス id 、終了ステータスインジケータ、リソース使用情報の 3 要素からなるタプルを返します。リソース使用情報の詳しい情報は :mod:`resource`. :func:`~resource.getrusage` を参照してください。 オプション引数は :func:`waitpid` および :func:`wait4` と同じです。"
 
-#: ../../library/os.rst:2245
+#: ../../library/os.rst:2254
 msgid ""
 "Similar to :func:`waitpid`, except a 3-element tuple, containing the child's"
 " process id, exit status indication, and resource usage information is "
@@ -2218,84 +2230,84 @@ msgid ""
 "the same as those provided to :func:`waitpid`."
 msgstr ":func:`waitpid` に似ていますが、子プロセス id 、終了ステータスインジケータ、リソース使用情報の 3 要素からなるタプルを返します。リソース使用情報の詳しい情報は :mod:`resource`. :func:`~resource.getrusage` を参照してください。 :func:`wait4` の引数は :func:`waitpid` に与えられるものと同じです。"
 
-#: ../../library/os.rst:2258
+#: ../../library/os.rst:2267
 msgid ""
 "The option for :func:`waitpid` to return immediately if no child process "
 "status is available immediately. The function returns ``(0, 0)`` in this "
 "case."
 msgstr "子プロセス状態がすぐに取得できなかった場合に直ちに終了するようにするための :func:`waitpid` のオプションです。この場合、関数は ``(0, 0)`` を返します。"
 
-#: ../../library/os.rst:2266
+#: ../../library/os.rst:2275
 msgid ""
 "This option causes child processes to be reported if they have been "
 "continued from a job control stop since their status was last reported."
 msgstr "このオプションによって子プロセスは前回状態が報告された後にジョブ制御による停止状態から実行を再開された場合に報告されるようになります。"
 
-#: ../../library/os.rst:2269
+#: ../../library/os.rst:2278
 msgid "Availability: Some Unix systems."
 msgstr "利用できる環境 : ある種の Unix システム。"
 
-#: ../../library/os.rst:2276
+#: ../../library/os.rst:2285
 msgid ""
 "This option causes child processes to be reported if they have been stopped "
 "but their current state has not been reported since they were stopped."
 msgstr "このオプションによって子プロセスは停止されていながら停止されてから状態が報告されていない場合に報告されるようになります。"
 
-#: ../../library/os.rst:2283
+#: ../../library/os.rst:2292
 msgid ""
 "The following functions take a process status code as returned by "
 ":func:`system`, :func:`wait`, or :func:`waitpid` as a parameter.  They may "
 "be used to determine the disposition of a process."
 msgstr "以下の関数は :func:`system` 、 :func:`wait` 、あるいは :func:`waitpid` が返すプロセス状態コードを引数にとります。これらの関数はプロセスの配置を決めるために利用できます。"
 
-#: ../../library/os.rst:2290
+#: ../../library/os.rst:2299
 msgid ""
 "Return ``True`` if a core dump was generated for the process, otherwise "
 "return ``False``."
 msgstr "プロセスに対してコアダンプが生成されていた場合には ``True`` を、それ以外の場合は ``False`` を返します。"
 
-#: ../../library/os.rst:2300
+#: ../../library/os.rst:2309
 msgid ""
 "Return ``True`` if the process has been continued from a job control stop, "
 "otherwise return ``False``."
 msgstr "プロセスがジョブ制御による停止状態から実行を再開された (continue) 場合に ``True`` を、それ以外の場合は ``False`` を返します。"
 
-#: ../../library/os.rst:2310
+#: ../../library/os.rst:2319
 msgid ""
 "Return ``True`` if the process has been stopped, otherwise return ``False``."
 msgstr "プロセスが停止された (stop) 場合に ``True`` を、それ以外の場合は ``False`` を返します。"
 
-#: ../../library/os.rst:2318
+#: ../../library/os.rst:2327
 msgid ""
 "Return ``True`` if the process exited due to a signal, otherwise return "
 "``False``."
 msgstr "プロセスがシグナルによって終了した (exit) 場合に ``True`` を、それ以外の場合は ``False`` を返します。"
 
-#: ../../library/os.rst:2326
+#: ../../library/os.rst:2335
 msgid ""
 "Return ``True`` if the process exited using the :manpage:`exit(2)` system "
 "call, otherwise return ``False``."
 msgstr "プロセスが :manpage:`exit(2)` システムコールで終了した場合に ``True`` を、それ以外の場合は ``False`` を返します。"
 
-#: ../../library/os.rst:2334
+#: ../../library/os.rst:2343
 msgid ""
 "If ``WIFEXITED(status)`` is true, return the integer parameter to the "
 ":manpage:`exit(2)` system call.  Otherwise, the return value is meaningless."
 msgstr "``WIFEXITED(status)`` が真の場合、 :manpage:`exit(2)` システムコールに渡された整数パラメーターを返します。そうでない場合、返される値には意味がありません。"
 
-#: ../../library/os.rst:2342
+#: ../../library/os.rst:2351
 msgid "Return the signal which caused the process to stop."
 msgstr "プロセスを停止させたシグナル番号を返します。"
 
-#: ../../library/os.rst:2349
+#: ../../library/os.rst:2358
 msgid "Return the signal which caused the process to exit."
 msgstr "プロセスを終了させたシグナル番号を返します。"
 
-#: ../../library/os.rst:2357
+#: ../../library/os.rst:2366
 msgid "Miscellaneous System Information"
 msgstr "雑多なシステム情報"
 
-#: ../../library/os.rst:2362
+#: ../../library/os.rst:2371
 msgid ""
 "Return string-valued system configuration values. *name* specifies the "
 "configuration value to retrieve; it may be a string which is the name of a "
@@ -2306,13 +2318,13 @@ msgid ""
 "included in that mapping, passing an integer for *name* is also accepted."
 msgstr "システム設定値を文字列で返します。 *name* には取得したい設定名を指定します ; この値は定義済みのシステム値名を表す文字列にすることができます ; 名前は多くの標準 (POSIX.1 、 Unix 95 、 Unix 98 その他 ) で定義されています。ホストオペレーティングシステムの関知する名前は ``confstr_names`` 辞書のキーとして与えられています。このマップ型オブジェクトに入っていない設定変数については、 *name* に整数を渡してもかまいません。"
 
-#: ../../library/os.rst:2370
+#: ../../library/os.rst:2379
 msgid ""
 "If the configuration value specified by *name* isn't defined, ``None`` is "
 "returned."
 msgstr "*name* に指定された設定値が定義されていない場合、 ``None`` を返します。"
 
-#: ../../library/os.rst:2373
+#: ../../library/os.rst:2382
 msgid ""
 "If *name* is a string and is not known, :exc:`ValueError` is raised.  If a "
 "specific value for *name* is not supported by the host system, even if it is"
@@ -2320,25 +2332,25 @@ msgid ""
 ":const:`errno.EINVAL` for the error number."
 msgstr "*name* が文字列で、かつ不明の場合、 :exc:`ValueError` を送出します。 *name* の指定値がホストシステムでサポートされておらず、 ``confstr_names`` にも入っていない場合、 :const:`errno.EINVAL` をエラー番号として :exc:`OSError` を送出します。"
 
-#: ../../library/os.rst:2378
+#: ../../library/os.rst:2387
 msgid "Availability: Unix"
 msgstr "利用できる環境 : Unix"
 
-#: ../../library/os.rst:2383
+#: ../../library/os.rst:2392
 msgid ""
 "Dictionary mapping names accepted by :func:`confstr` to the integer values "
 "defined for those names by the host operating system. This can be used to "
 "determine the set of names known to the system."
 msgstr ":func:`confstr` が受理する名前を、ホストオペレーティングシステムで定義されている整数値に対応付けている辞書です。この辞書はシステムでどの設定名が定義されているかを決定するために利用できます。"
 
-#: ../../library/os.rst:2392
+#: ../../library/os.rst:2401
 msgid ""
 "Return the number of processes in the system run queue averaged over the "
 "last 1, 5, and 15 minutes or raises :exc:`OSError` if the load average was "
 "unobtainable."
 msgstr "過去 1 分、 5 分、および 15 分間の、システムの実行キューの平均プロセス数を返します。平均負荷が得られない場合には :exc:`OSError` を送出します。"
 
-#: ../../library/os.rst:2403
+#: ../../library/os.rst:2412
 msgid ""
 "Return integer-valued system configuration values. If the configuration "
 "value specified by *name* isn't defined, ``-1`` is returned.  The comments "
@@ -2347,40 +2359,40 @@ msgid ""
 "``sysconf_names``."
 msgstr "整数値のシステム設定値を返します。 *name* で指定された設定値が定義されていない場合、 ``-1`` が返されます。 *name* に関するコメントとしては、 :func:`confstr` で述べた内容が同様に当てはまります ; 既知の設定名についての情報を与える辞書は ``sysconf_names`` で与えられています。"
 
-#: ../../library/os.rst:2413
+#: ../../library/os.rst:2422
 msgid ""
 "Dictionary mapping names accepted by :func:`sysconf` to the integer values "
 "defined for those names by the host operating system. This can be used to "
 "determine the set of names known to the system."
 msgstr ":func:`sysconf` が受理する名前を、ホストオペレーティングシステムで定義されている整数値に対応付けている辞書です。この辞書はシステムでどの設定名が定義されているかを決定するために利用できます。"
 
-#: ../../library/os.rst:2419
+#: ../../library/os.rst:2428
 msgid ""
 "The following data values are used to support path manipulation operations."
 "  These are defined for all platforms."
 msgstr "以下のデータ値はパス名編集操作をサポートするために利用されます。これらの値はすべてのプラットフォームで定義されています。"
 
-#: ../../library/os.rst:2422
+#: ../../library/os.rst:2431
 msgid ""
 "Higher-level operations on pathnames are defined in the :mod:`os.path` "
 "module."
 msgstr "パス名に対する高レベルの操作は :mod:`os.path` モジュールで定義されています。"
 
-#: ../../library/os.rst:2427
+#: ../../library/os.rst:2436
 msgid ""
 "The constant string used by the operating system to refer to the current "
 "directory. This is ``'.'`` for Windows and POSIX. Also available via "
 ":mod:`os.path`."
 msgstr "現在のディレクトリ参照するためにオペレーティングシステムで使われる文字列定数です。 POSIX と Windows では ``'.'`` になります。 :mod:`os.path` からも利用できます。"
 
-#: ../../library/os.rst:2434
+#: ../../library/os.rst:2443
 msgid ""
 "The constant string used by the operating system to refer to the parent "
 "directory. This is ``'..'`` for Windows and POSIX. Also available via "
 ":mod:`os.path`."
 msgstr "親ディレクトリを参照するためにオペレーティングシステムで使われる文字列定数です。 POSIX と Windows では ``'..'`` になります。 :mod:`os.path` からも利用できます。"
 
-#: ../../library/os.rst:2441
+#: ../../library/os.rst:2450
 msgid ""
 "The character used by the operating system to separate pathname components. "
 "This is ``'/'`` for POSIX and ``'\\\\'`` for Windows.  Note that knowing "
@@ -2389,7 +2401,7 @@ msgid ""
 "useful. Also available via :mod:`os.path`."
 msgstr "パス名を要素に分割するためにオペレーティングシステムで利用されている文字です。例えば POSIX では ``'/'`` で、 Windows では ``'\\\\'`` です。しかし、このことを知っているだけではパス名を解析したり、パス名同士を結合したりするには不十分です --- こうした操作には :func:`os.path.split` や :func:`os.path.join` を使用してください --- が、たまに便利なこともあります。 :mod:`os.path` からも利用できます。"
 
-#: ../../library/os.rst:2450
+#: ../../library/os.rst:2459
 msgid ""
 "An alternative character used by the operating system to separate pathname "
 "components, or ``None`` if only one separator character exists.  This is set"
@@ -2397,27 +2409,27 @@ msgid ""
 "via :mod:`os.path`."
 msgstr "文字パス名を要素に分割する際にオペレーティングシステムで利用されるもう一つの文字で、分割文字が一つしかない場合には ``None`` になります。この値は ``sep`` がバックスラッシュとなっている DOS や Windows システムでは ``'/'`` に設定されています。 :mod:`os.path` からも利用できます。"
 
-#: ../../library/os.rst:2458
+#: ../../library/os.rst:2467
 msgid ""
 "The character which separates the base filename from the extension; for "
 "example, the ``'.'`` in :file:`os.py`. Also available via :mod:`os.path`."
 msgstr "ベースのファイル名と拡張子を分ける文字です。例えば、 :file:`os.py` であれば ``'.'`` です。 :mod:`os.path` からも利用できます。"
 
-#: ../../library/os.rst:2466
+#: ../../library/os.rst:2475
 msgid ""
 "The character conventionally used by the operating system to separate search"
 " path components (as in :envvar:`PATH`), such as ``':'`` for POSIX or "
 "``';'`` for Windows. Also available via :mod:`os.path`."
 msgstr "(:envvar:`PATH` のような ) サーチパス内の要素を分割するためにオペレーティングシステムが慣習的に用いる文字で、 POSIX における ``':'`` や DOS および Windows における ``';'`` に相当します。 :mod:`os.path` からも利用できます。"
 
-#: ../../library/os.rst:2473
+#: ../../library/os.rst:2482
 msgid ""
 "The default search path used by :func:`exec\\*p\\* <execl>` and "
 ":func:`spawn\\*p\\* <spawnl>` if the environment doesn't have a ``'PATH'`` "
 "key. Also available via :mod:`os.path`."
 msgstr ":func:`exec\\*p\\* <execl>` や :func:`spawn\\*p\\* <spawnl>` において、環境変数辞書内に ``'PATH'`` キーがない場合に使われる標準設定のサーチパスです。 :mod:`os.path` からも利用できます。"
 
-#: ../../library/os.rst:2480
+#: ../../library/os.rst:2489
 msgid ""
 "The string used to separate (or, rather, terminate) lines on the current "
 "platform.  This may be a single character, such as ``'\\n'`` for POSIX, or "
@@ -2426,21 +2438,21 @@ msgid ""
 "(the default); use a single ``'\\n'`` instead, on all platforms."
 msgstr "現在のプラットフォーム上で行を分割 ( あるいは終端 ) するために用いられている文字列です。この値は例えば POSIX での ``'\\n'`` や Mac OS での ``'\\r'`` のように、単一の文字にもなりますし、例えば Windows での ``'\\r\\n'`` のように複数の文字列にもなります。テキストモードで開いたファイルに書き込む時には、 *os.linesep* を利用しないでください。すべてのプラットフォームで、単一の ``'\\n'`` を使用してください。"
 
-#: ../../library/os.rst:2489
+#: ../../library/os.rst:2498
 msgid ""
 "The file path of the null device. For example: ``'/dev/null'`` for POSIX, "
 "``'nul'`` for Windows.  Also available via :mod:`os.path`."
 msgstr "ヌルデバイスのファイルパスです。例えば POSIX では ``'/dev/null'`` で、 Windows では ``'nul'`` です。この値は :mod:`os.path` からも利用できます。"
 
-#: ../../library/os.rst:2498
+#: ../../library/os.rst:2507
 msgid "Miscellaneous Functions"
 msgstr "雑多な関数"
 
-#: ../../library/os.rst:2503
+#: ../../library/os.rst:2512
 msgid "Return a string of *n* random bytes suitable for cryptographic use."
 msgstr "暗号に関する用途に適した *n* バイトからなるランダムな文字列を返します。"
 
-#: ../../library/os.rst:2505
+#: ../../library/os.rst:2514
 msgid ""
 "This function returns random bytes from an OS-specific randomness source.  "
 "The returned data should be unpredictable enough for cryptographic "
@@ -2450,7 +2462,7 @@ msgid ""
 ":exc:`NotImplementedError` will be raised."
 msgstr "この関数は OS 固有の乱数発生源からランダムなバイト列を生成して返します。この関数の返すデータは暗号を用いたアプリケーションで十分利用できる程度に予測不能ですが、実際のクオリティは OS の実装によって異なります。Unix系のシステムでは ``/dev/urandom`` への問い合わせを行い、Windows では ``CryptGenRandom()`` を使います。乱数発生源が見つからない場合、 :exc:`NotImplementedError` を送出します。"
 
-#: ../../library/os.rst:2512
+#: ../../library/os.rst:2521
 msgid ""
 "For an easy-to-use interface to the random number generator provided by your"
 " platform, please see :class:`random.SystemRandom`."

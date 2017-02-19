@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-04-15 20:23+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:52+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,10 +66,10 @@ msgid ""
 "i.e. ``From`` followed by a space at the beginning of the line.  This is the"
 " only guaranteed portable way to avoid having such lines be mistaken for a "
 "Unix mailbox format envelope header separator (see `WHY THE CONTENT-LENGTH "
-"FORMAT IS BAD <http://www.jwz.org/doc/content-length.html>`_ for details).  "
-"*mangle_from_* defaults to ``True``, but you might want to set this to "
+"FORMAT IS BAD <https://www.jwz.org/doc/content-length.html>`_ for details)."
+"  *mangle_from_* defaults to ``True``, but you might want to set this to "
 "``False`` if you are not writing Unix mailbox format files."
-msgstr "オプション引数 *mangle_from_* はフラグで、``True`` のときはメッセージ本体に現れる行頭のすべての ``From`` という文字列の最初に ``>`` という文字を追加します。これは、このような行が Unix の mailbox 形式のエンペローブヘッダ区切り文字列として誤認識されるのを防ぐための、移植性ある唯一の方法です (詳しくは `WHY THE CONTENT-LENGTH FORMAT IS BAD (なぜ Content-Length 形式が有害か) <http://www.jwz.org/doc/content-length.html>`_ を参照してください)。デフォルトでは *mangle_from_* は ``True`` になっていますが、Unix の mailbox 形式ファイルに出力しないのならばこれは ``False`` に設定してもかまいません。"
+msgstr ""
 
 #: ../../library/email.generator.rst:44
 msgid ""

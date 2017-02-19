@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-26 11:19+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:55+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -103,11 +102,11 @@ msgstr "``a == b`` を返します。この関数は、内容ベースの短絡�
 msgid ""
 "If *a* and *b* are of different lengths, or if an error occurs, a timing "
 "attack could theoretically reveal information about the types and lengths of"
-" *a* and *b*--but not their values."
-msgstr "*a* と *b* が異なる長さであったりエラーが発生すれば、タイミング攻撃で理論上 *a* と *b* の長さについての情報が暴露されますが、その値は明らかになりません。"
+" *a* and *b*—but not their values."
+msgstr "*a* と *b* が異なる長さであったりエラーが発生すれ場合には、タイミング攻撃で理論上 *a* と *b* の型と長さについての情報が暴露されますが、その値は明らかになりません。"
 
 #: ../../library/hmac.rst:90
-msgid "Module hashlib"
+msgid "Module :mod:`hashlib`"
 msgstr ":mod:`hashlib` モジュール"
 
 #: ../../library/hmac.rst:91

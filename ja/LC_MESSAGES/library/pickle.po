@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-06-23 13:10+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:00+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -874,15 +873,15 @@ msgid ""
 msgstr ":mod:`pickle` が Python プロセス間でうまく働くことを見たいなら、先に進む前に他の Python セッションを開始してください。以下の振る舞いは同じプロセスでも新たなプロセスでも起こります。 ::"
 
 #: ../../library/pickle.rst:802
-msgid "Module copy_reg"
-msgstr ":mod:`copy_reg` モジュール"
+msgid "Module :mod:`copy_reg`"
+msgstr ""
 
 #: ../../library/pickle.rst:802
 msgid "Pickle interface constructor registration for extension types."
 msgstr "拡張型を登録するための Pickle インタフェース構成機構。"
 
 #: ../../library/pickle.rst:805
-msgid "Module shelve"
+msgid "Module :mod:`shelve`"
 msgstr ":mod:`shelve` モジュール"
 
 #: ../../library/pickle.rst:805
@@ -890,7 +889,7 @@ msgid "Indexed databases of objects; uses :mod:`pickle`."
 msgstr "オブジェクトのインデクス付きデータベース; :mod:`pickle` を使います。"
 
 #: ../../library/pickle.rst:808
-msgid "Module copy"
+msgid "Module :mod:`copy`"
 msgstr ":mod:`copy` モジュール"
 
 #: ../../library/pickle.rst:808
@@ -898,7 +897,7 @@ msgid "Shallow and deep object copying."
 msgstr "オブジェクトの浅いコピーおよび深いコピー。"
 
 #: ../../library/pickle.rst:810
-msgid "Module marshal"
+msgid "Module :mod:`marshal`"
 msgstr ":mod:`marshal` モジュール"
 
 #: ../../library/pickle.rst:811

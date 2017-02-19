@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-06 01:08+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:37+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -97,8 +96,8 @@ msgid ""
 "Will first attempt to cast the object to a :c:type:`PyIntObject`, if it is "
 "not already one, and then return its value. If there is an error, ``-1`` is "
 "returned, and the caller should check ``PyErr_Occurred()`` to find out "
-"whether there was an error, or whether the value just happened to be -1."
-msgstr "オブジェクトがまだ :c:type:`PyIntObject` でなければまず型キャストを試み、次にその値を返します。エラーが発生した場合、 ``-1`` が返されます。その時呼び出し側は、 ``PyErr_Occurred()`` を使って、エラーが発生したのか、単に値が -1 だったのかを判断するべきです。"
+"whether there was an error, or whether the value just happened to be ``-1``."
+msgstr ""
 
 #: ../../c-api/int.rst:96
 msgid "Return the value of the object *io*.  No error checking is performed."

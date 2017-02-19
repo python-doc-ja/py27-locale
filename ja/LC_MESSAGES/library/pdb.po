@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-01 03:39+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:00+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -234,8 +233,8 @@ msgid ""
 msgstr "ファイル :file:`.pdbrc` はユーザのホームディレクトリか、またはカレントディレクトリにあります。それはまるでデバッガのプロンプトでタイプしたかのように読み込まれて実行されます。これは特にエイリアスのために便利です。両方のファイルが存在する場合、ホームディレクトリのものが最初に読まれ、そこに定義されているエイリアスはローカルファイルにより上書きされることがあります。"
 
 #: ../../library/pdb.rst:214
-msgid "h(elp) [command]"
-msgstr "h(elp) [command]"
+msgid "h(elp) [*command*]"
+msgstr ""
 
 #: ../../library/pdb.rst:209
 msgid ""
@@ -276,8 +275,8 @@ msgid ""
 msgstr "( より古いフレームに向かって ) スタックトレース内でカレントフレームを1レベル上げます。"
 
 #: ../../library/pdb.rst:239
-msgid "b(reak) [[filename:]lineno | function[, condition]]"
-msgstr "b(reak) [[filename:]lineno | function[, condition]]"
+msgid "b(reak) [[*filename*:]\\ *lineno* | *function*\\ [, *condition*]]"
+msgstr ""
 
 #: ../../library/pdb.rst:227
 msgid ""
@@ -303,8 +302,8 @@ msgid ""
 msgstr "引数なしの場合は、それぞれのブレークポイントに対して、そのブレークポイントに行き当たった回数、現在の通過カウント ( ignore count ) と、もしあれば関連条件を含めてすべてのブレークポイントをリストします。"
 
 #: ../../library/pdb.rst:243
-msgid "tbreak [[filename:]lineno | function[, condition]]"
-msgstr "tbreak [[filename:]lineno | function[, condition]]"
+msgid "tbreak [[*filename*:]\\ *lineno* | *function*\\ [, *condition*]]"
+msgstr ""
 
 #: ../../library/pdb.rst:242
 msgid ""
@@ -313,8 +312,8 @@ msgid ""
 msgstr "一時的なブレークポイントで、最初にそこに達したときに自動的に取り除かれます。引数は break と同じです。"
 
 #: ../../library/pdb.rst:248
-msgid "cl(ear) [filename:lineno | bpnumber [bpnumber ...]]"
-msgstr "cl(ear) [filename:lineno | bpnumber [bpnumber ...]]"
+msgid "cl(ear) [*filename:lineno* | *bpnumber* [*bpnumber ...*]]"
+msgstr ""
 
 #: ../../library/pdb.rst:246
 msgid ""
@@ -324,8 +323,8 @@ msgid ""
 msgstr "*filename:lineno* 引数を与えると、その行にある全てのブレークポイントを解除します。スペースで区切られたブレークポイントナンバーのリストを与えると、それらのブレークポイントを解除します。引数なしの場合は、すべてのブレークポイントを解除します ( が、はじめに確認します ) 。"
 
 #: ../../library/pdb.rst:254
-msgid "disable [bpnumber [bpnumber ...]]"
-msgstr "disable [bpnumber [bpnumber ...]]"
+msgid "disable [*bpnumber* [*bpnumber ...*]]"
+msgstr ""
 
 #: ../../library/pdb.rst:251
 msgid ""
@@ -336,16 +335,16 @@ msgid ""
 msgstr "スペースで区切られたブレークポイントナンバーのリストとして与えられるブレークポイントを無効にします。ブレークポイントを無効にすると、プログラムの実行を止めることができなくなりますが、ブレークポイントの解除と違いブレークポイントのリストに残ったままになり、 (再び)有効にすることができます。"
 
 #: ../../library/pdb.rst:257
-msgid "enable [bpnumber [bpnumber ...]]"
-msgstr "enable [bpnumber [bpnumber ...]]"
+msgid "enable [*bpnumber* [*bpnumber ...*]]"
+msgstr ""
 
 #: ../../library/pdb.rst:257
 msgid "Enables the breakpoints specified."
 msgstr "指定したブレークポイントを有効にします。"
 
 #: ../../library/pdb.rst:264
-msgid "ignore bpnumber [count]"
-msgstr "ignore bpnumber [count]"
+msgid "ignore *bpnumber* [*count*]"
+msgstr ""
 
 #: ../../library/pdb.rst:260
 msgid ""
@@ -357,8 +356,8 @@ msgid ""
 msgstr "与えられたブレークポイントナンバーに通過カウントを設定します。 count が省略されると、通過カウントは 0 に設定されます。通過カウントがゼロになったとき、ブレークポイントが機能する状態になります。ゼロでないときは、そのブレークポイントが無効にされず、どんな関連条件も真に評価されていて、ブレークポイントに来るたびに count が減らされます。"
 
 #: ../../library/pdb.rst:269
-msgid "condition bpnumber [condition]"
-msgstr "condition bpnumber [condition]"
+msgid "condition *bpnumber* [*condition*]"
+msgstr ""
 
 #: ../../library/pdb.rst:267
 msgid ""
@@ -368,8 +367,8 @@ msgid ""
 msgstr "condition はブレークポイントが取り上げられる前に真と評価されなければならない式です。 condition がない場合は、どんな既存の条件も取り除かれます。すなわち、ブレークポイントは無条件になります。"
 
 #: ../../library/pdb.rst:301
-msgid "commands [bpnumber]"
-msgstr "commands [bpnumber]"
+msgid "commands [*bpnumber*]"
+msgstr ""
 
 #: ../../library/pdb.rst:272
 msgid ""
@@ -401,9 +400,9 @@ msgid ""
 "return, jump, quit and their abbreviations) terminates the command list (as "
 "if that command was immediately followed by end). This is because any time "
 "you resume execution (even with a simple next or step), you may encounter "
-"another breakpoint--which could have its own command list, leading to "
+"another breakpoint—which could have its own command list, leading to "
 "ambiguities about which list to execute."
-msgstr "実行を再開するコマンド ( 現在のところ continue, step, next, return, jump, quit とそれらの省略形 ) によって、コマンドリストは終了するものと見なされます ( コマンドにすぐ end が続いているかのように ) 。というのも実行を再開すれば ( それが単純な next や step であっても ) 別のブレークポイントに到達するかもしれないからです。そのブレークポイントにさらにコマンドリストがあれば、どちらのリストを実行すべきか状況が曖昧になります。"
+msgstr "実行を再開するコマンド (現在のところ continue, step, next, return, jump, quit とそれらの省略形) によって、コマンドリストは終了するものと見なされます (コマンドにすぐ end が続いているかのように)。というのも実行を再開すれば (それが単純な next や step であっても) 別のブレークポイントに到達するかもしれないからです。そのブレークポイントにさらにコマンドリストがあれば、どちらのリストを実行すべきか状況が曖昧になります。"
 
 #: ../../library/pdb.rst:296
 msgid ""
@@ -464,8 +463,8 @@ msgid "Continue execution, only stop when a breakpoint is encountered."
 msgstr "ブレークポイントに出会うまで、実行を継続します。"
 
 #: ../../library/pdb.rst:332
-msgid "j(ump) lineno"
-msgstr "j(ump) lineno"
+msgid "j(ump) *lineno*"
+msgstr ""
 
 #: ../../library/pdb.rst:326
 msgid ""
@@ -482,8 +481,8 @@ msgid ""
 msgstr "ジャンプには制限があり、例えば :keyword:`for` ループの中には飛び込めませんし、 :keyword:`finally` 節の外にも飛ぶ事ができません。"
 
 #: ../../library/pdb.rst:338
-msgid "l(ist) [first[, last]]"
-msgstr "l(ist) [first[, last]]"
+msgid "l(ist) [*first*\\ [, *last*]]"
+msgstr ""
 
 #: ../../library/pdb.rst:335
 msgid ""
@@ -503,8 +502,8 @@ msgid "Print the argument list of the current function."
 msgstr "現在の関数の引数リストをプリントします。"
 
 #: ../../library/pdb.rst:349
-msgid "p expression"
-msgstr "p expression"
+msgid "p *expression*"
+msgstr ""
 
 #: ../../library/pdb.rst:344
 msgid "Evaluate the *expression* in the current context and print its value."
@@ -517,8 +516,8 @@ msgid ""
 msgstr "``print`` も使うことができますが、デバッガコマンドではありません --- これは Python の :keyword:`print` 文を実行します。"
 
 #: ../../library/pdb.rst:353
-msgid "pp expression"
-msgstr "pp expression"
+msgid "pp *expression*"
+msgstr ""
 
 #: ../../library/pdb.rst:352
 msgid ""
@@ -527,8 +526,8 @@ msgid ""
 msgstr ":mod:`pprint` モジュールを使って例外の値が整形されることを除いて ``p`` コマンドと同様です。"
 
 #: ../../library/pdb.rst:374
-msgid "alias [name [command]]"
-msgstr "alias [name [command]]"
+msgid "alias [*name* [command]]"
+msgstr ""
 
 #: ../../library/pdb.rst:356
 msgid ""
@@ -555,16 +554,16 @@ msgid ""
 msgstr "例として、二つの便利なエイリアスがあります (特に :file:`.pdbrc` ファイルに置かれたときに)::"
 
 #: ../../library/pdb.rst:377
-msgid "unalias name"
-msgstr "unalias name"
+msgid "unalias *name*"
+msgstr ""
 
 #: ../../library/pdb.rst:377
 msgid "Deletes the specified alias."
 msgstr "指定したエイリアスを削除します。"
 
 #: ../../library/pdb.rst:386
-msgid "[!]statement"
-msgstr "[!]statement"
+msgid "[!]\\ *statement*"
+msgstr ""
 
 #: ../../library/pdb.rst:380
 msgid ""
@@ -576,8 +575,8 @@ msgid ""
 msgstr "現在のスタックフレームのコンテキストにおいて(一行の) *statement* を実行します。文の最初の語がデバッガコマンドと共通でない場合は、感嘆符を省略することができます。グローバル変数を設定するために、同じ行に ``global`` コマンドとともに代入コマンドの前に付けることができます。::"
 
 #: ../../library/pdb.rst:393
-msgid "run [args ...]"
-msgstr "run [args ...]"
+msgid "run [*args* ...]"
+msgstr ""
 
 #: ../../library/pdb.rst:389
 msgid ""

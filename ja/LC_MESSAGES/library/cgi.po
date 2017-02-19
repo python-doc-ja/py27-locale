@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-04 00:02+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:47+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -349,14 +348,14 @@ msgstr "環境変数、またはファイルからからクエリを解釈しま
 #: ../../library/cgi.rst:297
 msgid ""
 "This function is deprecated in this module. Use :func:`urlparse.parse_qs` "
-"instead. It is maintained here only for backward compatiblity."
-msgstr "この関数はこのモジュールでは廃止予定です。代わりに :func:`urlparse.parse_qs` を利用してください。この関数は後方互換性のためだけに残されています。"
+"instead. It is maintained here only for backward compatibility."
+msgstr ""
 
 #: ../../library/cgi.rst:302
 msgid ""
 "This function is deprecated in this module. Use :func:`urlparse.parse_qsl` "
-"instead. It is maintained here only for backward compatiblity."
-msgstr "この関数はこのモジュールでは廃止予定です。代わりに :func:`urlparse.parse_qsl` を利用してください。この関数は後方互換性のためだけに残されています。"
+"instead. It is maintained here only for backward compatibility."
+msgstr ""
 
 #: ../../library/cgi.rst:307
 msgid ""
@@ -536,10 +535,10 @@ msgid ""
 "and the contents of the form in HTML form. Give it the right mode etc, and "
 "send it a request.  If it's installed in the standard :file:`cgi-bin` "
 "directory, it should be possible to send it a request by entering a URL into"
-" your browser of the form::"
-msgstr "何よりもまず、些細なインストール関連のエラーでないか確認してください --- 上の CGI スクリプトのインストールに関する節を注意深く読めば時間を大いに節約できます。もしインストールの手続きを正しく理解しているか不安なら、このモジュールのファイル (:file:`cgi.py`) をコピーして、CGI スクリプトとしてインストールしてみてください。このファイルはスクリプトとして呼び出すと、スクリプトの実行環境とフォームの内容を HTML フォームに出力します。正しいモードなどをフォームに与えて、リクエストを送ってみてください。標準的な :file:`cgi-bin` ディレクトリにインストールされていれば、以下のような URL をブラウザに入力してリクエストを送信できるはずです::"
+" your browser of the form:"
+msgstr "何よりもまず、些細なインストール関連のエラーでないか確認してください --- 上の CGI スクリプトのインストールに関する節を注意深く読めば時間を大いに節約できます。もしインストールの手続きを正しく理解しているか不安なら、このモジュールのファイル (:file:`cgi.py`) をコピーして、CGI スクリプトとしてインストールしてみてください。このファイルはスクリプトとして呼び出すと、スクリプトの実行環境とフォームの内容を HTML 形式で出力します。ファイルに正しいモードを設定するなどして、リクエストを送ってみてください。標準的な :file:`cgi-bin` ディレクトリにインストールされていれば、以下のような URL をブラウザに入力してリクエストを送信できるはずです:"
 
-#: ../../library/cgi.rst:457
+#: ../../library/cgi.rst:459
 msgid ""
 "If this gives an error of type 404, the server cannot find the script -- "
 "perhaps you need to install it in a different directory.  If it gives "
@@ -551,19 +550,19 @@ msgid ""
 "same procedure for your own script, you should now be able to debug it."
 msgstr "もしタイプ 404 のエラーになるなら、サーバはスクリプトを発見できないでいます -- おそらくあなたはスクリプトを別のディレクトリに入れる必要があるのでしょう。他のエラーになるなら、先に進む前に解決しなければならないインストール上の問題があります。もし実行環境の情報とフォーム内容 (この例では、各フィールドはフィールド名 \"addr\" に対して値 \"At Home\"、およびフィールド名 \"name\" に対して \"Joe Blow\") が綺麗にフォーマットされて表示されるなら、 :file:`cgi.py` スクリプトは正しくインストールされています。同じ操作をあなたの自作スクリプトに対して行えば、スクリプトをデバッグできるようになるはずです。"
 
-#: ../../library/cgi.rst:466
+#: ../../library/cgi.rst:468
 msgid ""
 "The next step could be to call the :mod:`cgi` module's :func:`test` function"
 " from your script: replace its main code with the single statement ::"
 msgstr "次のステップでは :mod:`cgi` モジュールの :func:`test` 関数を呼び出すことになります: メインプログラムコードを以下の 1 文と置き換えてください ::"
 
-#: ../../library/cgi.rst:471
+#: ../../library/cgi.rst:473
 msgid ""
 "This should produce the same results as those gotten from installing the "
 ":file:`cgi.py` file itself."
 msgstr "この操作で :file:`cgi.py` ファイル自体をインストールした時と同じ結果を出力するはずです。"
 
-#: ../../library/cgi.rst:474
+#: ../../library/cgi.rst:476
 msgid ""
 "When an ordinary Python script raises an unhandled exception (for whatever "
 "reason: of a typo in a module name, a file that can't be opened, etc.), the "
@@ -573,28 +572,28 @@ msgid ""
 " or be discarded altogether."
 msgstr "通常の Python スクリプトが例外を処理しきれずに送出した場合 (様々な理由: モジュール名のタイプミス、ファイルが開けなかった、など)、Python インタプリタはナイスなトレースバックを出力して終了します。Python インタプリタはあなたの CGI スクリプトが例外を送出した場合にも同様に振舞うので、トレースバックは大抵HTTP サーバのいずれかのログファイルに残るかまったく無視されるかです。"
 
-#: ../../library/cgi.rst:481
+#: ../../library/cgi.rst:483
 msgid ""
 "Fortunately, once you have managed to get your script to execute *some* "
 "code, you can easily send tracebacks to the Web browser using the "
 ":mod:`cgitb` module. If you haven't done so already, just add the lines::"
 msgstr "幸運なことに、あなたが自作のスクリプトで *何らかの* コードを実行できるようになったら、 :mod:`cgitb` モジュールを使って簡単にトレースバックをブラウザに送信できます。まだそうでないなら、以下の2行::"
 
-#: ../../library/cgi.rst:488
+#: ../../library/cgi.rst:490
 msgid ""
 "to the top of your script.  Then try running it again; when a problem "
 "occurs, you should see a detailed report that will likely make apparent the "
 "cause of the crash."
 msgstr "をスクリプトの先頭に追加してください。そしてスクリプトを再度走らせます; 問題が発生すれば、クラッシュの原因を見出せるような詳細な報告を読めます。"
 
-#: ../../library/cgi.rst:492
+#: ../../library/cgi.rst:494
 msgid ""
 "If you suspect that there may be a problem in importing the :mod:`cgitb` "
 "module, you can use an even more robust approach (which only uses built-in "
 "modules)::"
 msgstr ":mod:`cgitb` モジュールのインポートに問題がありそうだと思うなら、(組み込みモジュールだけを使った) もっと堅牢なアプローチを取れます::"
 
-#: ../../library/cgi.rst:501
+#: ../../library/cgi.rst:503
 msgid ""
 "This relies on the Python interpreter to print the traceback.  The content "
 "type of the output is set to plain text, which disables all HTML processing."
@@ -604,47 +603,47 @@ msgid ""
 "going on, the traceback will be readable."
 msgstr "このコードは Python インタプリタがトレースバックを出力することに依存しています。出力のコンテント型はプレーンテキストに設定されており、全ての HTML 処理を無効にしています。スクリプトがうまく動作する場合、生の HTML コードがクライアントに表示されます。スクリプトが例外を送出する場合、最初の 2 行が出力された後、トレースバックが表示されます。HTML の解釈は行われないので、トレースバックを読めるはずです。"
 
-#: ../../library/cgi.rst:510
+#: ../../library/cgi.rst:512
 msgid "Common problems and solutions"
 msgstr "よくある問題と解決法"
 
-#: ../../library/cgi.rst:512
+#: ../../library/cgi.rst:514
 msgid ""
 "Most HTTP servers buffer the output from CGI scripts until the script is "
 "completed.  This means that it is not possible to display a progress report "
 "on the client's display while the script is running."
 msgstr "ほとんどの HTTP サーバはスクリプトの実行が完了するまで CGI からの出力をバッファします。このことは、スクリプトの実行中にクライアントが進捗状況報告を表示できないことを意味します。"
 
-#: ../../library/cgi.rst:516
+#: ../../library/cgi.rst:518
 msgid "Check the installation instructions above."
 msgstr "上のインストールに関する説明を調べましょう。"
 
-#: ../../library/cgi.rst:518
+#: ../../library/cgi.rst:520
 msgid ""
 "Check the HTTP server's log files.  (``tail -f logfile`` in a separate "
 "window may be useful!)"
 msgstr "HTTP サーバのログファイルを調べましょう。(別のウィンドウで  ``tail -f logfile`` を実行すると便利かもしれません！)"
 
-#: ../../library/cgi.rst:521
+#: ../../library/cgi.rst:523
 msgid ""
 "Always check a script for syntax errors first, by doing something like "
 "``python script.py``."
 msgstr "常に ``python script.py`` などとして、スクリプトが構文エラーでないか調べましょう。"
 
-#: ../../library/cgi.rst:524
+#: ../../library/cgi.rst:526
 msgid ""
 "If your script does not have any syntax errors, try adding ``import cgitb; "
 "cgitb.enable()`` to the top of the script."
 msgstr "スクリプトに構文エラーがないなら、``import cgitb; cgitb.enable()`` をスクリプトの先頭に追加してみましょう。"
 
-#: ../../library/cgi.rst:527
+#: ../../library/cgi.rst:529
 msgid ""
 "When invoking external programs, make sure they can be found. Usually, this "
 "means using absolute path names --- :envvar:`PATH` is usually not set to a "
 "very useful value in a CGI script."
 msgstr "外部プログラムを起動するときには、スクリプトがそのプログラムを見つけられるようにしましょう。これは通常、絶対パス名を使うことを意味します --- :envvar:`PATH` は普通、あまり CGI スクリプトにとって便利でない値に設定されています。"
 
-#: ../../library/cgi.rst:531
+#: ../../library/cgi.rst:533
 msgid ""
 "When reading or writing external files, make sure they can be read or "
 "written by the userid under which your CGI script will be running: this is "
@@ -652,17 +651,17 @@ msgid ""
 "explicitly specified userid for a web server's ``suexec`` feature."
 msgstr "外部のファイルを読み書きする際には、CGI スクリプトを動作させるときに使われる userid でファイルを読み書きできるようになっているか確認しましょう: userid は通常、Web サーバを動作させている userid か、Web サーバの ``suexec`` 機能で明示的に指定している userid になります。"
 
-#: ../../library/cgi.rst:536
+#: ../../library/cgi.rst:538
 msgid ""
 "Don't try to give a CGI script a set-uid mode.  This doesn't work on most "
 "systems, and is a security liability as well."
 msgstr "CGI スクリプトを set-uid モードにしてはいけません。これはほとんどのシステムで動作せず、セキュリティ上の信頼性もありません。"
 
-#: ../../library/cgi.rst:540
+#: ../../library/cgi.rst:542
 msgid "Footnotes"
 msgstr "注記"
 
-#: ../../library/cgi.rst:541
+#: ../../library/cgi.rst:543
 msgid ""
 "Note that some recent versions of the HTML specification do state what order"
 " the field values should be supplied in, but knowing whether a request was "

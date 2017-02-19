@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-06-24 16:41+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:04+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -69,8 +68,9 @@ msgid ""
 "Usually your SQL operations will need to use values from Python variables.  "
 "You shouldn't assemble your query using Python's string operations because "
 "doing so is insecure; it makes your program vulnerable to an SQL injection "
-"attack (see http://xkcd.com/327/ for humorous example of what can go wrong)."
-msgstr "たいてい、SQL 操作は Python 変数の値を使う必要があります。この時、クエリーを Python の文字列操作を使って構築することは、安全とは言えないので、すべきではありません。そのようなことをするとプログラムが SQL インジェクション攻撃に対し脆弱になりかねません。(とうなっちまうのか知りたけりゃ http://xkcd.com/327/ に聞いてみ…てください)"
+"attack (see https://xkcd.com/327/ for humorous example of what can go "
+"wrong)."
+msgstr ""
 
 #: ../../library/sqlite3.rst:60
 msgid ""
@@ -104,8 +104,8 @@ msgid ""
 msgstr "pysqlite のウェブページ -- sqlite3 は「pysqlite」という名の下、外部で開発されています。"
 
 #: ../../library/sqlite3.rst:106
-msgid "http://www.sqlite.org"
-msgstr "http://www.sqlite.org"
+msgid "https://www.sqlite.org"
+msgstr "https://www.sqlite.org"
 
 #: ../../library/sqlite3.rst:105
 msgid ""
@@ -122,8 +122,8 @@ msgid "Tutorial, reference and examples for learning SQL syntax."
 msgstr "SQL 学習に効くチュートリアル、リファレンス、実例集。"
 
 #: ../../library/sqlite3.rst:111
-msgid "PEP 249 - Database API Specification 2.0"
-msgstr "PEP 249 - Database API Specification 2.0"
+msgid ":pep:`249` - Database API Specification 2.0"
+msgstr ":pep:`249` - Database API Specification 2.0"
 
 #: ../../library/sqlite3.rst:112
 msgid "PEP written by Marc-André Lemburg."
@@ -297,10 +297,10 @@ msgstr "現在の分離レベルを取得または設定します。 :const:`Non
 
 #: ../../library/sqlite3.rst:261
 msgid ""
-"The cursor method accepts a single optional parameter *cursorClass*. If "
-"supplied, this must be a custom cursor class that extends "
-":class:`sqlite3.Cursor`."
-msgstr "cursor メソッドはオプション引数 *cursorClass* を受け付けます。これを指定するならば、指定されたクラスは :class:`sqlite3.Cursor` を継承したカーソルクラスでなければなりません。"
+"The cursor method accepts a single optional parameter *factory*. If "
+"supplied, this must be a callable returning an instance of :class:`Cursor` "
+"or its subclasses."
+msgstr ""
 
 #: ../../library/sqlite3.rst:267
 msgid ""
@@ -355,8 +355,8 @@ msgstr "後から SQL 文中で *name* という名前の関数として使え�
 #: ../../library/sqlite3.rst:310
 msgid ""
 "The function can return any of the types supported by SQLite: unicode, str, "
-"int, long, float, buffer and None."
-msgstr "関数は SQLite でサポートされている任意の型を返すことができます。具体的には unicode, str, int, long, float, buffer および None です。"
+"int, long, float, buffer and ``None``."
+msgstr ""
 
 #: ../../library/sqlite3.rst:313 ../../library/sqlite3.rst:329
 #: ../../library/sqlite3.rst:425 ../../library/sqlite3.rst:531
@@ -377,8 +377,8 @@ msgstr "集計クラスにはパラメータ *num_params* で指定される個�
 #: ../../library/sqlite3.rst:326
 msgid ""
 "The ``finalize`` method can return any of the types supported by SQLite: "
-"unicode, str, int, long, float, buffer and None."
-msgstr "``finalize`` メソッドは SQLite でサポートされている任意の型を返すことができます。具体的には unicode, str, int, long, float, buffer および None です。"
+"unicode, str, int, long, float, buffer and ``None``."
+msgstr ""
 
 #: ../../library/sqlite3.rst:336
 msgid ""
@@ -402,8 +402,8 @@ msgstr "以下の例は「間違った方法で」ソートする自作の照合
 
 #: ../../library/sqlite3.rst:349
 msgid ""
-"To remove a collation, call ``create_collation`` with None as callable::"
-msgstr "照合順序を取り除くには ``create_collation`` を callable として None を渡して呼び出します::"
+"To remove a collation, call ``create_collation`` with ``None`` as callable::"
+msgstr ""
 
 #: ../../library/sqlite3.rst:356
 msgid ""
@@ -652,10 +652,10 @@ msgstr "SQLite のバージョン 3.6.5 以前は、条件なしで ``DELETE FRO
 #: ../../library/sqlite3.rst:585
 msgid ""
 "This read-only attribute provides the rowid of the last modified row. It is "
-"only set if you issued a ``INSERT`` statement using the :meth:`execute` "
+"only set if you issued an ``INSERT`` statement using the :meth:`execute` "
 "method. For operations other than ``INSERT`` or when :meth:`executemany` is "
 "called, :attr:`lastrowid` is set to :const:`None`."
-msgstr "この読み込み専用の属性は、最後に変更した row の rowid を提供します。この属性は、 :meth:`execute` メソッドを利用して ``INSERT`` 文を実行したときのみ設定されます。 ``INSERT`` 以外の操作や、 :meth:`executemany` メソッドを利用した場合は、 :attr:`lastrowid` は :const:`None` に設定されます。"
+msgstr "この読み込み専用の属性は、最後に変更した row の rowid を提供します。この属性は、 :meth:`execute` メソッドを利用して ``INSERT`` 文を実行したときのみ設定されます。 ``INSERT`` 以外の操作や、 :meth:`executemany` メソッドを呼び出した場合は、 :attr:`lastrowid` は :const:`None` に設定されます。"
 
 #: ../../library/sqlite3.rst:592
 msgid ""
@@ -668,138 +668,146 @@ msgstr "この読み込み専用の属性は、最後のクエリの結果のカ
 msgid "It is set for ``SELECT`` statements without any matching rows as well."
 msgstr "この属性は ``SELECT`` 文にマッチする row が1つもなかった場合でもセットされます。"
 
-#: ../../library/sqlite3.rst:601
+#: ../../library/sqlite3.rst:600
+msgid ""
+"This read-only attribute provides the SQLite database :class:`Connection` "
+"used by the :class:`Cursor` object.  A :class:`Cursor` object created by "
+"calling :meth:`con.cursor() <Connection.cursor>` will have a "
+":attr:`connection` attribute that refers to *con*::"
+msgstr "この読み込み専用の属性は、 :class:`Cursor` オブジェクトが使用する SQLite データベースの :class:`Connection` を提供します。:meth:`con.cursor() <Connection.cursor>` を呼び出すことにより作成される :class:`Cursor` オブジェクトは、 *con* を参照する :attr:`connection` 属性を持ちます::"
+
+#: ../../library/sqlite3.rst:613
 msgid "Row Objects"
 msgstr "Row オブジェクト"
 
-#: ../../library/sqlite3.rst:605
+#: ../../library/sqlite3.rst:617
 msgid ""
 "A :class:`Row` instance serves as a highly optimized "
 ":attr:`~Connection.row_factory` for :class:`Connection` objects. It tries to"
 " mimic a tuple in most of its features."
 msgstr ":class:`Row` インスタンスは、 :class:`Connection` オブジェクトの :attr:`~Connection.row_factory` として高度に最適化されています。タプルによく似た機能を持つ row を作成します。"
 
-#: ../../library/sqlite3.rst:609
+#: ../../library/sqlite3.rst:621
 msgid ""
 "It supports mapping access by column name and index, iteration, "
 "representation, equality testing and :func:`len`."
 msgstr "カラム名とインデックスによる要素へのアクセス, イテレーション, repr(), 同値テスト, :func:`len` をサポートしています。"
 
-#: ../../library/sqlite3.rst:612
+#: ../../library/sqlite3.rst:624
 msgid ""
 "If two :class:`Row` objects have exactly the same columns and their members "
 "are equal, they compare equal."
 msgstr "もし、2つの :class:`Row` オブジェクトが完全に同じカラムと値を持っていた場合、それらは同値になります。"
 
-#: ../../library/sqlite3.rst:615
+#: ../../library/sqlite3.rst:627
 msgid "Added iteration and equality (hashability)."
 msgstr "イテレーションと同値性、ハッシュ可能"
 
-#: ../../library/sqlite3.rst:620
+#: ../../library/sqlite3.rst:632
 msgid ""
 "This method returns a list of column names. Immediately after a query, it is"
 " the first member of each tuple in :attr:`Cursor.description`."
 msgstr "このメソッドはカラム名のリストを返します。クエリ直後から、これは :attr:`Cursor.description` の各タプルの最初のメンバになります。"
 
-#: ../../library/sqlite3.rst:625
+#: ../../library/sqlite3.rst:637
 msgid "Let's assume we initialize a table as in the example given above::"
 msgstr "Rowの例のために、まずサンプルのテーブルを初期化します::"
 
-#: ../../library/sqlite3.rst:637
+#: ../../library/sqlite3.rst:649
 msgid "Now we plug :class:`Row` in::"
 msgstr "そして、 :class:`Row` を使ってみます::"
 
-#: ../../library/sqlite3.rst:669
+#: ../../library/sqlite3.rst:681
 msgid "SQLite and Python types"
 msgstr "SQLite と Python の型"
 
-#: ../../library/sqlite3.rst:673
+#: ../../library/sqlite3.rst:685
 msgid "Introduction"
 msgstr "はじめに"
 
-#: ../../library/sqlite3.rst:675
+#: ../../library/sqlite3.rst:687
 msgid ""
 "SQLite natively supports the following types: ``NULL``, ``INTEGER``, "
 "``REAL``, ``TEXT``, ``BLOB``."
 msgstr "SQLite は以下の型をネイティブにサポートします: ``NULL``, ``INTEGER``, ``REAL``, ``TEXT``, ``BLOB``。"
 
-#: ../../library/sqlite3.rst:678
+#: ../../library/sqlite3.rst:690
 msgid ""
 "The following Python types can thus be sent to SQLite without any problem:"
 msgstr "したがって、次の Python の型は問題なく SQLite に送り込めます:"
 
-#: ../../library/sqlite3.rst:681 ../../library/sqlite3.rst:701
+#: ../../library/sqlite3.rst:693 ../../library/sqlite3.rst:713
 msgid "Python type"
 msgstr "Python の型"
 
-#: ../../library/sqlite3.rst:681 ../../library/sqlite3.rst:701
+#: ../../library/sqlite3.rst:693 ../../library/sqlite3.rst:713
 msgid "SQLite type"
 msgstr "SQLite の型"
 
-#: ../../library/sqlite3.rst:683 ../../library/sqlite3.rst:703
+#: ../../library/sqlite3.rst:695 ../../library/sqlite3.rst:715
 msgid ":const:`None`"
 msgstr ":const:`None`"
 
-#: ../../library/sqlite3.rst:683 ../../library/sqlite3.rst:703
+#: ../../library/sqlite3.rst:695 ../../library/sqlite3.rst:715
 msgid "``NULL``"
 msgstr "``NULL``"
 
-#: ../../library/sqlite3.rst:685
+#: ../../library/sqlite3.rst:697
 msgid ":class:`int`"
 msgstr ":class:`int`"
 
-#: ../../library/sqlite3.rst:685 ../../library/sqlite3.rst:687
-#: ../../library/sqlite3.rst:705
+#: ../../library/sqlite3.rst:697 ../../library/sqlite3.rst:699
+#: ../../library/sqlite3.rst:717
 msgid "``INTEGER``"
 msgstr "``INTEGER``"
 
-#: ../../library/sqlite3.rst:687
+#: ../../library/sqlite3.rst:699
 msgid ":class:`long`"
 msgstr ":class:`long`"
 
-#: ../../library/sqlite3.rst:689 ../../library/sqlite3.rst:708
+#: ../../library/sqlite3.rst:701 ../../library/sqlite3.rst:720
 msgid ":class:`float`"
 msgstr ":class:`float`"
 
-#: ../../library/sqlite3.rst:689 ../../library/sqlite3.rst:708
+#: ../../library/sqlite3.rst:701 ../../library/sqlite3.rst:720
 msgid "``REAL``"
 msgstr "``REAL``"
 
-#: ../../library/sqlite3.rst:691
+#: ../../library/sqlite3.rst:703
 msgid ":class:`str` (UTF8-encoded)"
 msgstr ":class:`str` (UTF8 でエンコードされたバイト文字列)"
 
-#: ../../library/sqlite3.rst:691 ../../library/sqlite3.rst:693
-#: ../../library/sqlite3.rst:710
+#: ../../library/sqlite3.rst:703 ../../library/sqlite3.rst:705
+#: ../../library/sqlite3.rst:722
 msgid "``TEXT``"
 msgstr "``TEXT``"
 
-#: ../../library/sqlite3.rst:693
+#: ../../library/sqlite3.rst:705
 msgid ":class:`unicode`"
 msgstr ":class:`unicode`"
 
-#: ../../library/sqlite3.rst:695 ../../library/sqlite3.rst:713
+#: ../../library/sqlite3.rst:707 ../../library/sqlite3.rst:725
 msgid ":class:`buffer`"
 msgstr ":class:`buffer`"
 
-#: ../../library/sqlite3.rst:695 ../../library/sqlite3.rst:713
+#: ../../library/sqlite3.rst:707 ../../library/sqlite3.rst:725
 msgid "``BLOB``"
 msgstr "``BLOB``"
 
-#: ../../library/sqlite3.rst:698
+#: ../../library/sqlite3.rst:710
 msgid "This is how SQLite types are converted to Python types by default:"
 msgstr "SQLite の型から Python の型へのデフォルトでの変換は以下の通りです:"
 
-#: ../../library/sqlite3.rst:705
+#: ../../library/sqlite3.rst:717
 msgid ":class:`int` or :class:`long`, depending on size"
 msgstr ":class:`int` または :class:`long` (サイズによる)"
 
-#: ../../library/sqlite3.rst:710
+#: ../../library/sqlite3.rst:722
 msgid ""
 "depends on :attr:`~Connection.text_factory`, :class:`unicode` by default"
 msgstr ":attr:`~Connection.text_factory` に依存する。デフォルトでは :class:`unicode` 。"
 
-#: ../../library/sqlite3.rst:716
+#: ../../library/sqlite3.rst:728
 msgid ""
 "The type system of the :mod:`sqlite3` module is extensible in two ways: you "
 "can store additional Python types in a SQLite database via object "
@@ -807,11 +815,11 @@ msgid ""
 "to different Python types via converters."
 msgstr ":mod:`sqlite3` モジュールの型システムは二つの方法で拡張できます。一つはオブジェクト適合(adaptation)を通じて追加された Python の型を SQLite に格納することです。もう一つは変換関数(converter)を通じて :mod:`sqlite3` モジュールに SQLite の型を違った Python の型に変換させることです。"
 
-#: ../../library/sqlite3.rst:723
+#: ../../library/sqlite3.rst:735
 msgid "Using adapters to store additional Python types in SQLite databases"
 msgstr "追加された Python の型を SQLite データベースに格納するために適合関数を使う"
 
-#: ../../library/sqlite3.rst:725
+#: ../../library/sqlite3.rst:737
 msgid ""
 "As described before, SQLite supports only a limited set of types natively. "
 "To use other Python types with SQLite, you must **adapt** them to one of the"
@@ -819,23 +827,23 @@ msgid ""
 "float, str, unicode, buffer."
 msgstr "既に述べたように、SQLite が最初からサポートする型は限られたものだけです。それ以外の Python の型を SQLite で使うには、その型を :mod:`sqlite3` モジュールがサポートしている型の一つに **適合** させなくてはなりません。サポートしている型というのは、 NoneType, int, long, float, str, unicode, buffer です。"
 
-#: ../../library/sqlite3.rst:730
+#: ../../library/sqlite3.rst:742
 msgid ""
 "There are two ways to enable the :mod:`sqlite3` module to adapt a custom "
 "Python type to one of the supported ones."
 msgstr ":mod:`sqlite3` モジュールで望みの Python の型をサポートされている型の一つに適合させる方法は二つあります。"
 
-#: ../../library/sqlite3.rst:735
+#: ../../library/sqlite3.rst:747
 msgid "Letting your object adapt itself"
 msgstr "オブジェクト自身で適合するようにする"
 
-#: ../../library/sqlite3.rst:737
+#: ../../library/sqlite3.rst:749
 msgid ""
 "This is a good approach if you write the class yourself. Let's suppose you "
 "have a class like this::"
 msgstr "自分でクラスを書いているならばこの方法が良いでしょう。次のようなクラスがあるとします::"
 
-#: ../../library/sqlite3.rst:744
+#: ../../library/sqlite3.rst:756
 msgid ""
 "Now you want to store the point in a single SQLite column.  First you'll "
 "have to choose one of the supported types first to be used for representing "
@@ -845,24 +853,24 @@ msgid ""
 "will be :class:`PrepareProtocol`."
 msgstr "さてこの点を SQLite の一つのカラムに収めたいと考えたとしましょう。最初にしなければならないのはサポートされている型の中から点を表現するのに使えるものを選ぶことです。ここでは単純に文字列を使うことにして、座標を区切るのにはセミコロンを使いましょう。次に必要なのはクラスに変換された値を返す ``__conform__(self, protocol)`` メソッドを追加することです。引数 *protocol* は :class:`PrepareProtocol` になります。"
 
-#: ../../library/sqlite3.rst:754
+#: ../../library/sqlite3.rst:766
 msgid "Registering an adapter callable"
 msgstr "適合関数を登録する"
 
-#: ../../library/sqlite3.rst:756
+#: ../../library/sqlite3.rst:768
 msgid ""
 "The other possibility is to create a function that converts the type to the "
 "string representation and register the function with "
 ":meth:`register_adapter`."
 msgstr "もう一つの可能性は型を文字列表現に変換する関数を作り :meth:`register_adapter` でその関数を登録することです。"
 
-#: ../../library/sqlite3.rst:761
+#: ../../library/sqlite3.rst:773
 msgid ""
 "The type/class to adapt must be a :term:`new-style class`, i. e. it must "
 "have :class:`object` as one of its bases."
 msgstr "適合させる型/クラスは新スタイルクラス (:term:`new-style class`) でなければなりません。すなわち、 :class:`object` を基底クラスの一つとしていなければなりません。"
 
-#: ../../library/sqlite3.rst:766
+#: ../../library/sqlite3.rst:778
 msgid ""
 "The :mod:`sqlite3` module has two default adapters for Python's built-in "
 ":class:`datetime.date` and :class:`datetime.datetime` types.  Now let's "
@@ -870,104 +878,104 @@ msgid ""
 "representation, but as a Unix timestamp."
 msgstr ":mod:`sqlite3` モジュールには二つの Python 標準型 :class:`datetime.date` と :class:`datetime.datetime` に対するデフォルト適合関数があります。いま :class:`datetime.datetime` オブジェクトを ISO 表現でなく Unix タイムスタンプとして格納したいとしましょう。"
 
-#: ../../library/sqlite3.rst:775
+#: ../../library/sqlite3.rst:787
 msgid "Converting SQLite values to custom Python types"
 msgstr "SQLite の値を好きな Python 型に変換する"
 
-#: ../../library/sqlite3.rst:777
+#: ../../library/sqlite3.rst:789
 msgid ""
 "Writing an adapter lets you send custom Python types to SQLite. But to make "
 "it really useful we need to make the Python to SQLite to Python roundtrip "
 "work."
 msgstr "適合関数を書くことで好きな Python 型を SQLite に送り込めるようになりました。しかし、本当に使い物になるようにするには Python から SQLite さらに Python へという往還(roundtrip)の変換ができる必要があります。"
 
-#: ../../library/sqlite3.rst:780
+#: ../../library/sqlite3.rst:792
 msgid "Enter converters."
 msgstr "そこで変換関数(converter)です。"
 
-#: ../../library/sqlite3.rst:782
+#: ../../library/sqlite3.rst:794
 msgid ""
 "Let's go back to the :class:`Point` class. We stored the x and y coordinates"
 " separated via semicolons as strings in SQLite."
 msgstr ":class:`Point` クラスの例に戻りましょう。x, y 座標をセミコロンで区切った文字列として SQLite に格納したのでした。"
 
-#: ../../library/sqlite3.rst:785
+#: ../../library/sqlite3.rst:797
 msgid ""
 "First, we'll define a converter function that accepts the string as a "
 "parameter and constructs a :class:`Point` object from it."
 msgstr "まず、文字列を引数として取り :class:`Point` オブジェクトをそれから構築する変換関数を定義します。"
 
-#: ../../library/sqlite3.rst:790
+#: ../../library/sqlite3.rst:802
 msgid ""
 "Converter functions **always** get called with a string, no matter under "
 "which data type you sent the value to SQLite."
 msgstr "変換関数は SQLite に送り込んだデータ型に関係なく **常に** 文字列を渡されます。"
 
-#: ../../library/sqlite3.rst:799
+#: ../../library/sqlite3.rst:811
 msgid ""
 "Now you need to make the :mod:`sqlite3` module know that what you select "
 "from the database is actually a point. There are two ways of doing this:"
 msgstr "次に :mod:`sqlite3` モジュールにデータベースから取得したものが本当に点であることを教えなければなりません。二つの方法があります:"
 
-#: ../../library/sqlite3.rst:802
+#: ../../library/sqlite3.rst:814
 msgid "Implicitly via the declared type"
 msgstr "宣言された型を通じて暗黙的に"
 
-#: ../../library/sqlite3.rst:804
+#: ../../library/sqlite3.rst:816
 msgid "Explicitly via the column name"
 msgstr "カラム名を通じて明示的に"
 
-#: ../../library/sqlite3.rst:806
+#: ../../library/sqlite3.rst:818
 msgid ""
 "Both ways are described in section :ref:`sqlite3-module-contents`, in the "
 "entries for the constants :const:`PARSE_DECLTYPES` and "
 ":const:`PARSE_COLNAMES`."
 msgstr "どちらの方法も :ref:`sqlite3-module-contents` 節の中で説明されています。それぞれ :const:`PARSE_DECLTYPES` 定数と :const:`PARSE_COLNAMES` 定数の項目です。"
 
-#: ../../library/sqlite3.rst:809
+#: ../../library/sqlite3.rst:821
 msgid "The following example illustrates both approaches."
 msgstr "以下の例で両方のアプローチを紹介します。"
 
-#: ../../library/sqlite3.rst:815
+#: ../../library/sqlite3.rst:827
 msgid "Default adapters and converters"
 msgstr "デフォルトの適合関数と変換関数"
 
-#: ../../library/sqlite3.rst:817
+#: ../../library/sqlite3.rst:829
 msgid ""
 "There are default adapters for the date and datetime types in the datetime "
 "module. They will be sent as ISO dates/ISO timestamps to SQLite."
 msgstr "datetime モジュールの date 型および datetime 型のためのデフォルト適合関数があります。これらの型は ISO 日付 / ISO タイムスタンプとして SQLite に送られます。"
 
-#: ../../library/sqlite3.rst:820
+#: ../../library/sqlite3.rst:832
 msgid ""
 "The default converters are registered under the name \"date\" for "
 ":class:`datetime.date` and under the name \"timestamp\" for "
 ":class:`datetime.datetime`."
 msgstr "デフォルトの変換関数は :class:`datetime.date` 用が \"date\" という名前で、 :class:`datetime.datetime` 用が \"timestamp\" という名前で登録されています。"
 
-#: ../../library/sqlite3.rst:824
+#: ../../library/sqlite3.rst:836
 msgid ""
 "This way, you can use date/timestamps from Python without any additional "
 "fiddling in most cases. The format of the adapters is also compatible with "
 "the experimental SQLite date/time functions."
 msgstr "これにより、多くの場合特別な細工無しに Python の日付 / タイムスタンプを使えます。適合関数の書式は実験的な SQLite の date/time 関数とも互換性があります。"
 
-#: ../../library/sqlite3.rst:828
+#: ../../library/sqlite3.rst:840
 msgid "The following example demonstrates this."
 msgstr "以下の例でこのことを確かめます。"
 
-#: ../../library/sqlite3.rst:832
+#: ../../library/sqlite3.rst:844
 msgid ""
 "If a timestamp stored in SQLite has a fractional part longer than 6 numbers,"
 " its value will be truncated to microsecond precision by the timestamp "
 "converter."
 msgstr "SQLite に格納されているタイムスタンプが6桁より長い小数部を持っている場合、タイムスタンプの変換関数によってマイクロ秒精度に丸められます。"
 
-#: ../../library/sqlite3.rst:840
+#: ../../library/sqlite3.rst:852
 msgid "Controlling Transactions"
 msgstr "トランザクション制御"
 
-#: ../../library/sqlite3.rst:842
+#: ../../library/sqlite3.rst:854
 msgid ""
 "By default, the :mod:`sqlite3` module opens transactions implicitly before a"
 " Data Modification Language (DML)  statement (i.e. "
@@ -976,7 +984,7 @@ msgid ""
 "``SELECT`` or the aforementioned)."
 msgstr "デフォルトでは、 :mod:`sqlite3` モジュールはデータ変更言語(DML)文(すなわち ``INSERT``/``UPDATE``/``DELETE``/``REPLACE``)の前に暗黙のうちにトランザクションを開始し、非DML、非クエリ文(すなわち ``SELECT`` や上記のいずれでもないもの。)の前にトランザクションをコミットします。"
 
-#: ../../library/sqlite3.rst:848
+#: ../../library/sqlite3.rst:860
 msgid ""
 "So if you are within a transaction and issue a command like ``CREATE TABLE "
 "...``, ``VACUUM``, ``PRAGMA``, the :mod:`sqlite3` module will commit "
@@ -986,7 +994,7 @@ msgid ""
 "transaction state (if a transaction is active or not)."
 msgstr "そのため、トランザクション内で ``CREATE TABLE ...``, ``VACUUM``, ``PRAGMA``  のようなコマンドを発行した場合、 :mod:`sqlite3` モジュールはそのコマンドを実行する前に暗黙にコミットします。これには2つの理由があります。 1番目は、これらのコマンドのうちのいくつかがトランザクション内では動かないということです。 2番目の理由は、 sqlite3 がトランザクション状態 (トランザクションがアクティブかどうか) を追跡する必要があるためです。"
 
-#: ../../library/sqlite3.rst:855
+#: ../../library/sqlite3.rst:867
 msgid ""
 "You can control which kind of ``BEGIN`` statements sqlite3 implicitly "
 "executes (or none at all) via the *isolation_level* parameter to the "
@@ -994,27 +1002,28 @@ msgid ""
 "connections."
 msgstr "sqlite3 が暗黙のうちに実行する ``BEGIN`` 文の種類(またはそういうものを使わないこと)を :func:`connect` 呼び出しの *isolation_level* パラメータを通じて、または接続の :attr:`isolation_level` プロパティを通じて、制御することができます。"
 
-#: ../../library/sqlite3.rst:859
+#: ../../library/sqlite3.rst:871
 msgid ""
-"If you want **autocommit mode**, then set :attr:`isolation_level` to None."
-msgstr "もし **自動コミットモード** が使いたければ、 :attr:`isolation_level` は None にしてください。"
+"If you want **autocommit mode**, then set :attr:`isolation_level` to "
+"``None``."
+msgstr ""
 
-#: ../../library/sqlite3.rst:861
+#: ../../library/sqlite3.rst:873
 msgid ""
 "Otherwise leave it at its default, which will result in a plain \"BEGIN\" "
 "statement, or set it to one of SQLite's supported isolation levels: "
 "\"DEFERRED\", \"IMMEDIATE\" or \"EXCLUSIVE\"."
 msgstr "そうでなければデフォルトのまま ``BEGIN`` 文を使い続けるか、SQLite がサポートする分離レベル \"DEFERRED\", \"IMMEDIATE\" または \"EXCLUSIVE\" を設定してください。"
 
-#: ../../library/sqlite3.rst:868
+#: ../../library/sqlite3.rst:880
 msgid "Using :mod:`sqlite3` efficiently"
 msgstr ":mod:`sqlite3` の効率的な使い方"
 
-#: ../../library/sqlite3.rst:872
+#: ../../library/sqlite3.rst:884
 msgid "Using shortcut methods"
 msgstr "ショートカットメソッドを使う"
 
-#: ../../library/sqlite3.rst:874
+#: ../../library/sqlite3.rst:886
 msgid ""
 "Using the nonstandard :meth:`execute`, :meth:`executemany` and "
 ":meth:`executescript` methods of the :class:`Connection` object, your code "
@@ -1026,42 +1035,42 @@ msgid ""
 ":class:`Connection` object."
 msgstr ":class:`Connection` オブジェクトの非標準的なメソッド :meth:`execute`, :meth:`executemany`, :meth:`executescript` を使うことで、 (しばしば余計な) :class:`Cursor` オブジェクトをわざわざ作り出さずに済むので、コードをより簡潔に書くことができます。 :class:`Cursor` オブジェクトは暗黙裡に生成されショートカットメソッドの戻り値として受け取ることができます。この方法を使えば、 ``SELECT`` 文を実行してその結果について反復することが、 :class:`Connection` オブジェクトに対する呼び出し一つで行なえます。"
 
-#: ../../library/sqlite3.rst:886
+#: ../../library/sqlite3.rst:898
 msgid "Accessing columns by name instead of by index"
 msgstr "位置ではなく名前でカラムにアクセスする"
 
-#: ../../library/sqlite3.rst:888
+#: ../../library/sqlite3.rst:900
 msgid ""
 "One useful feature of the :mod:`sqlite3` module is the built-in "
 ":class:`sqlite3.Row` class designed to be used as a row factory."
 msgstr ":mod:`sqlite3` モジュールの有用な機能の一つに、行生成関数として使われるための :class:`sqlite3.Row` クラスがあります。"
 
-#: ../../library/sqlite3.rst:891
+#: ../../library/sqlite3.rst:903
 msgid ""
 "Rows wrapped with this class can be accessed both by index (like tuples) and"
 " case-insensitively by name:"
 msgstr "このクラスでラップされた行は、位置インデクス(タプルのような)でも大文字小文字を区別しない名前でもアクセスできます:"
 
-#: ../../library/sqlite3.rst:898
+#: ../../library/sqlite3.rst:910
 msgid "Using the connection as a context manager"
 msgstr "コネクションをコンテキストマネージャーとして利用する"
 
-#: ../../library/sqlite3.rst:902
+#: ../../library/sqlite3.rst:914
 msgid ""
 "Connection objects can be used as context managers that automatically commit"
 " or rollback transactions.  In the event of an exception, the transaction is"
 " rolled back; otherwise, the transaction is committed:"
 msgstr "Connection オブジェクトはコンテキストマネージャーとして利用して、トランザクションを自動的にコミットしたりロールバックすることができます。例外が発生したときにトランザクションはロールバックされ、それ以外の場合、トランザクションはコミットされます:"
 
-#: ../../library/sqlite3.rst:911
+#: ../../library/sqlite3.rst:923
 msgid "Common issues"
 msgstr "既知の問題"
 
-#: ../../library/sqlite3.rst:914
+#: ../../library/sqlite3.rst:926
 msgid "Multithreading"
 msgstr "マルチスレッド"
 
-#: ../../library/sqlite3.rst:916
+#: ../../library/sqlite3.rst:928
 msgid ""
 "Older SQLite versions had issues with sharing connections between threads. "
 "That's why the Python module disallows sharing connections and cursors "
@@ -1069,17 +1078,17 @@ msgid ""
 "runtime."
 msgstr "古いバージョンの SQLite はスレッド間でのコネクションの共有に問題がありました。その理由は、Python のモジュールではスレッド間のコネクションとカーソルの共有ができないためです。依然としてそのようなことをしようとすると、実行時に例外を受け取るでしょう。"
 
-#: ../../library/sqlite3.rst:920
+#: ../../library/sqlite3.rst:932
 msgid ""
 "The only exception is calling the :meth:`~Connection.interrupt` method, "
 "which only makes sense to call from a different thread."
 msgstr "唯一の例外は :meth:`~Connection.interrupt` メソッドで、これだけが異なるスレッドから呼び出せます。"
 
-#: ../../library/sqlite3.rst:924
+#: ../../library/sqlite3.rst:936
 msgid "Footnotes"
 msgstr "注記"
 
-#: ../../library/sqlite3.rst:925
+#: ../../library/sqlite3.rst:937
 msgid ""
 "The sqlite3 module is not built with loadable extension support by default, "
 "because some platforms (notably Mac OS X) have SQLite libraries which are "

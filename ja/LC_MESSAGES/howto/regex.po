@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-03-04 01:42+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:43+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -127,10 +126,10 @@ msgstr "この規則には例外が存在します; いくつかの文字は特�
 #: ../../howto/regex.rst:81
 msgid ""
 "Here's a complete list of the metacharacters; their meanings will be "
-"discussed in the rest of this HOWTO. ::"
-msgstr "ここに特殊文字の完全な一覧があります; これらの意味はこの HOWTO の残りの部分で説明します。 ::"
+"discussed in the rest of this HOWTO."
+msgstr "ここに特殊文字の完全な一覧があります; これらの意味はこの HOWTO の残りの部分で説明します。"
 
-#: ../../howto/regex.rst:86
+#: ../../howto/regex.rst:88
 msgid ""
 "The first metacharacters we'll look at are ``[`` and ``]``. They're used for"
 " specifying a character class, which is a set of characters that you wish to"
@@ -142,7 +141,7 @@ msgid ""
 "would be ``[a-z]``."
 msgstr "最初に扱う特殊文字は ``[`` と ``]`` です。これらは文字クラスを指定します、文字クラスはマッチしたい文字の集合です。文字は個別にリストにしても構いませんし、二つの文字を ``'-'`` でつなげて文字を範囲で与えてもかまいません。たとえば ``[abc]`` は ``a``, ``b``, または ``c`` のどの文字列にもマッチします; これは ``[a-c]`` で同じ文字集合を範囲で表現しても全く同じです。小文字のアルファベットのみにマッチしたい場合、 ``[a-z]`` の正規表現をつかうことになるでしょう。"
 
-#: ../../howto/regex.rst:95
+#: ../../howto/regex.rst:97
 msgid ""
 "Metacharacters are not active inside classes.  For example, ``[akm$]`` will "
 "match any of the characters ``'a'``, ``'k'``, ``'m'``, or ``'$'``; ``'$'`` "
@@ -150,7 +149,7 @@ msgid ""
 "its special nature."
 msgstr "特殊文字は文字クラスの内部では有効になりません。例えば、 ``[akm$]`` は ``'a'``, ``'k'``, ``'m'`` または ``'$'`` にマッチします; ``'$'`` は通常は特殊文字ですが、文字クラス内部では特殊な性質は取り除かれます。"
 
-#: ../../howto/regex.rst:100
+#: ../../howto/regex.rst:102
 msgid ""
 "You can match the characters not listed within the class by "
 ":dfn:`complementing` the set.  This is indicated by including a ``'^'`` as "
@@ -159,7 +158,7 @@ msgid ""
 "character except ``'5'``."
 msgstr "文字クラス内のリストにない文字に対しても :dfn:`補集合` を使ってマッチすることができます。補集合はクラスの最初の文字として ``'^'`` を含めることで表すことができます; 文字クラスの外側の ``'^'`` は単に ``'^'`` 文字にマッチします。例えば、 ``[^5]`` は ``'5'`` を除く任意の文字にマッチします。"
 
-#: ../../howto/regex.rst:105
+#: ../../howto/regex.rst:107
 msgid ""
 "Perhaps the most important metacharacter is the backslash, ``\\``.   As in "
 "Python string literals, the backslash can be followed by various characters "
@@ -169,7 +168,7 @@ msgid ""
 "remove their special meaning: ``\\[`` or ``\\\\``."
 msgstr "おそらく最も重要な特殊文字はバックスラッシュ ``\\`` でしょう。 Python の文字列リテラルのようにバックスラッシュに続けていろいろな文字を入力することでいろいろな特殊シーケンスの合図を送ることができます。また、バックスラッシュはすべての特殊文字をエスケープするのにも利用されます、つまり、特殊文字をマッチさせることができます; 例えば、 ``[`` または ``\\`` にマッチさせたい場合、それらをバックスラッシュに続けることで特殊な意味を除きます: ``\\[`` または ``\\\\`` 。"
 
-#: ../../howto/regex.rst:112
+#: ../../howto/regex.rst:114
 msgid ""
 "Some of the special sequences beginning with ``'\\'`` represent predefined "
 "sets of characters that are often useful, such as the set of digits, the set"
@@ -180,71 +179,71 @@ msgid ""
 " :ref:`Regular Expression Syntax <re-syntax>`."
 msgstr "いくつかの ``'\\'`` で始まる特殊シーケンスはあらかじめ定義された文字集合を表していて、しばしば便利に使うことができます、例えば、10進数の集合、文字の集合、空白以外の任意の文字の集合。以下のあらかじめ定義された特殊シーケンスは利用可能なものの一部です。等価なクラスがバイト文字列パターンに対してもあります。ユニコード文字列パターンのためのシーケンスおよび拡張クラス定義の完全なリストについては、 :ref:`正規表現のシンタックス <re-syntax>` の最後の部分を見てください。"
 
-#: ../../howto/regex.rst:121
-msgid "\\d"
-msgstr "\\d"
+#: ../../howto/regex.rst:123
+msgid "``\\d``"
+msgstr "``\\d``"
 
-#: ../../howto/regex.rst:121
+#: ../../howto/regex.rst:123
 msgid "Matches any decimal digit; this is equivalent to the class ``[0-9]``."
 msgstr "任意の十進数とマッチします; これは集合 ``[0-9]`` と同じ意味です。"
 
-#: ../../howto/regex.rst:124
-msgid "\\D"
-msgstr "\\D"
+#: ../../howto/regex.rst:126
+msgid "``\\D``"
+msgstr "``\\D``"
 
-#: ../../howto/regex.rst:124
+#: ../../howto/regex.rst:126
 msgid ""
 "Matches any non-digit character; this is equivalent to the class ``[^0-9]``."
 msgstr "任意の非数字文字とマッチします; これは集合 ``[^0-9]`` と同じ意味です。"
 
-#: ../../howto/regex.rst:128
-msgid "\\s"
-msgstr "\\s"
+#: ../../howto/regex.rst:130
+msgid "``\\s``"
+msgstr "``\\s``"
 
-#: ../../howto/regex.rst:127
+#: ../../howto/regex.rst:129
 msgid ""
 "Matches any whitespace character; this is equivalent to the class ``[ "
 "\\t\\n\\r\\f\\v]``."
 msgstr "任意の空白文字とマッチします; これは集合 ``[ \\t\\n\\r\\f\\v]`` と同じ意味です。"
 
-#: ../../howto/regex.rst:132
-msgid "\\S"
-msgstr "\\S"
+#: ../../howto/regex.rst:134
+msgid "``\\S``"
+msgstr "``\\S``"
 
-#: ../../howto/regex.rst:131
+#: ../../howto/regex.rst:133
 msgid ""
 "Matches any non-whitespace character; this is equivalent to the class ``[^ "
 "\\t\\n\\r\\f\\v]``."
 msgstr "任意の非空白文字とマッチします; これは集合 ``[^ \\t\\n\\r\\f\\v]`` と同じ意味です。"
 
-#: ../../howto/regex.rst:136
-msgid "\\w"
-msgstr "\\w"
+#: ../../howto/regex.rst:138
+msgid "``\\w``"
+msgstr "``\\w``"
 
-#: ../../howto/regex.rst:135
+#: ../../howto/regex.rst:137
 msgid ""
 "Matches any alphanumeric character; this is equivalent to the class "
 "``[a-zA-Z0-9_]``."
 msgstr "任意の英数文字および下線とマッチします; これは、集合 ``[a-zA-Z0-9_]`` と同じ意味です。"
 
-#: ../../howto/regex.rst:140
-msgid "\\W"
-msgstr "\\W"
+#: ../../howto/regex.rst:142
+msgid "``\\W``"
+msgstr "``\\W``"
 
-#: ../../howto/regex.rst:139
+#: ../../howto/regex.rst:141
 msgid ""
 "Matches any non-alphanumeric character; this is equivalent to the class "
 "``[^a-zA-Z0-9_]``."
 msgstr "任意の非英数文字とマッチします; これは集合 ``[^a-zA-Z0-9_]`` と同じ意味です。"
 
-#: ../../howto/regex.rst:142
+#: ../../howto/regex.rst:144
 msgid ""
 "These sequences can be included inside a character class.  For example, "
 "``[\\s,.]`` is a character class that will match any whitespace character, "
 "or ``','`` or ``'.'``."
 msgstr "これらのシーケンスは文字クラス内に含めることができます。例えば、 ``[\\s,.]`` は空白文字や ``','`` または ``'.'`` にマッチする文字クラスです。"
 
-#: ../../howto/regex.rst:146
+#: ../../howto/regex.rst:148
 msgid ""
 "The final metacharacter in this section is ``.``.  It matches anything "
 "except a newline character, and there's an alternate mode (``re.DOTALL``) "
@@ -252,11 +251,11 @@ msgid ""
 " match \"any character\"."
 msgstr "この節での最後の特殊文字は ``.`` です。これは改行文字を除く任意の文字にマッチします、さらに改行文字に対してもマッチさせる代替モード (``re.DOTALL``) があります。 ``'.'`` は「任意の文字」にマッチさせたい場合に利用されます。"
 
-#: ../../howto/regex.rst:153
+#: ../../howto/regex.rst:155
 msgid "Repeating Things"
 msgstr "繰り返し"
 
-#: ../../howto/regex.rst:155
+#: ../../howto/regex.rst:157
 msgid ""
 "Being able to match varying sets of characters is the first thing regular "
 "expressions can do that isn't already possible with the methods available on"
@@ -265,7 +264,7 @@ msgid ""
 "specify that portions of the RE must be repeated a certain number of times."
 msgstr "さまざまな文字集合をマッチさせることは正規表現で最初にできるようになることで、これは文字列に対するメソッドですぐにできることではありません。しかし、正規表現がより力を発揮する場面がこれだけだとすると、正規表現はあまり先進的とはいえません。正規表現の力をもう一つの能力は、正規表現の一部が何度も繰り返されるようものを指定できることです。"
 
-#: ../../howto/regex.rst:161
+#: ../../howto/regex.rst:163
 msgid ""
 "The first metacharacter for repeating things that we'll look at is ``*``.  "
 "``*`` doesn't match the literal character ``*``; instead, it specifies that "
@@ -273,7 +272,7 @@ msgid ""
 " once."
 msgstr "最初にとりあげる繰り返しのための最初の特殊文字は ``*`` です。 ``*`` は文字リテラル ``*`` とはマッチしません; その代わりに前の文字が厳密に1回ではなく、0回以上繰り返されるパターンを指定します。"
 
-#: ../../howto/regex.rst:165
+#: ../../howto/regex.rst:167
 msgid ""
 "For example, ``ca*t`` will match ``ct`` (0 ``a`` characters), ``cat`` (1 "
 "``a``), ``caaat`` (3 ``a`` characters), and so forth.  The RE engine has "
@@ -283,15 +282,15 @@ msgid ""
 " run into that limit."
 msgstr "例えば ``ca*t`` は ``ct`` (``a`` が 0 文字), ``cat`` (1 つの ``a``), ``caaat`` (3 つの ``a``)、などにマッチします。RE エンジンには、C言語の ``int`` のサイズに起因する色々な内部的な制限があります。それは20億個の ``a`` を超えるマッチを許さないでしょうが、おそらくそれほど大きい文字列を構築するほどの十分なメモリはないので、その制限に達することはありません。"
 
-#: ../../howto/regex.rst:172
+#: ../../howto/regex.rst:174
 msgid ""
 "Repetitions such as ``*`` are :dfn:`greedy`; when repeating a RE, the "
 "matching engine will try to repeat it as many times as possible. If later "
 "portions of the pattern don't match, the matching engine will then back up "
-"and try again with few repetitions."
-msgstr "``*`` のような繰り返しは :dfn:`貪欲 (greedy)` です; 正規表現を繰り返したいとき、マッチングエンジンは可能な限り何度も繰り返そうと試みます。パターンの後ろの部分にマッチしない場合、マッチングエンジンは戻って少ない繰り返しを再び試みます。"
+"and try again with fewer repetitions."
+msgstr "``*`` のような繰り返しは :dfn:`貪欲 (greedy)` です; 正規表現を繰り返したいとき、マッチングエンジンは可能な限り何度も繰り返そうと試みます。パターンの後ろの部分にマッチしない場合、マッチングエンジンは戻ってより少ない繰り返しを再び試みます。"
 
-#: ../../howto/regex.rst:177
+#: ../../howto/regex.rst:179
 msgid ""
 "A step-by-step example will make this more obvious.  Let's consider the "
 "expression ``a[bcd]*b``.  This matches the letter ``'a'``, zero or more "
@@ -299,99 +298,99 @@ msgid ""
 "imagine matching this RE against the string ``abcbd``."
 msgstr "例をステップ、ステップで進めていくとより明確にわかります。正規表現 ``a[bcd]*b`` を考えましょう。この表現は文字 ``'a'`` と文字クラス ``[bcd]`` の0回以上の文字と最後の ``'b'`` にマッチします。この正規表現が文字列 ``abcbd`` に対してマッチする作業を想像してみましょう。"
 
-#: ../../howto/regex.rst:183
+#: ../../howto/regex.rst:185
 msgid "Step"
 msgstr "ステップ"
 
-#: ../../howto/regex.rst:183
+#: ../../howto/regex.rst:185
 msgid "Matched"
 msgstr "マッチした文字列"
 
-#: ../../howto/regex.rst:183
+#: ../../howto/regex.rst:185
 msgid "Explanation"
 msgstr "説明"
 
-#: ../../howto/regex.rst:185
+#: ../../howto/regex.rst:187
 msgid "1"
 msgstr "1"
 
-#: ../../howto/regex.rst:185
+#: ../../howto/regex.rst:187
 msgid "``a``"
 msgstr "``a``"
 
-#: ../../howto/regex.rst:185
+#: ../../howto/regex.rst:187
 msgid "The ``a`` in the RE matches."
 msgstr "``a`` が正規表現にマッチ。"
 
-#: ../../howto/regex.rst:187
+#: ../../howto/regex.rst:189
 msgid "2"
 msgstr "2"
 
-#: ../../howto/regex.rst:187
+#: ../../howto/regex.rst:189
 msgid "``abcbd``"
 msgstr "``abcbd``"
 
-#: ../../howto/regex.rst:187
+#: ../../howto/regex.rst:189
 msgid ""
 "The engine matches ``[bcd]*``, going as far as it can, which is to the end "
 "of the string."
 msgstr "正規表現エンジンが ``[bcd]*`` で文字列の最後まで可能な限り進む。"
 
-#: ../../howto/regex.rst:191
+#: ../../howto/regex.rst:193
 msgid "3"
 msgstr "3"
 
-#: ../../howto/regex.rst:191 ../../howto/regex.rst:199
+#: ../../howto/regex.rst:193 ../../howto/regex.rst:201
 msgid "*Failure*"
 msgstr "*失敗*"
 
-#: ../../howto/regex.rst:191
+#: ../../howto/regex.rst:193
 msgid ""
 "The engine tries to match ``b``, but the current position is at the end of "
 "the string, so it fails."
 msgstr "エンジンが ``b`` とのマッチを試みるが、現在の位置が文字列の最後なので、失敗する。"
 
-#: ../../howto/regex.rst:196
+#: ../../howto/regex.rst:198
 msgid "4"
 msgstr "4"
 
-#: ../../howto/regex.rst:196 ../../howto/regex.rst:207
+#: ../../howto/regex.rst:198 ../../howto/regex.rst:209
 msgid "``abcb``"
 msgstr "``abcb``"
 
-#: ../../howto/regex.rst:196
+#: ../../howto/regex.rst:198
 msgid "Back up, so that  ``[bcd]*`` matches one less character."
 msgstr "戻って ``[bcd]*`` は一文字少なくマッチ。"
 
-#: ../../howto/regex.rst:199
+#: ../../howto/regex.rst:201
 msgid "5"
 msgstr "5"
 
-#: ../../howto/regex.rst:199
+#: ../../howto/regex.rst:201
 msgid ""
 "Try ``b`` again, but the current position is at the last character, which is"
 " a ``'d'``."
 msgstr "再び ``b`` へのマッチを試みるが、現在の文字は最後の文字 ``'d'`` 。"
 
-#: ../../howto/regex.rst:203 ../../howto/regex.rst:207
+#: ../../howto/regex.rst:205 ../../howto/regex.rst:209
 msgid "6"
 msgstr "6"
 
-#: ../../howto/regex.rst:203
+#: ../../howto/regex.rst:205
 msgid "``abc``"
 msgstr "``abc``"
 
-#: ../../howto/regex.rst:203
+#: ../../howto/regex.rst:205
 msgid "Back up again, so that ``[bcd]*`` is only matching ``bc``."
 msgstr "再び戻る, ``[bcd]*`` は ``bc`` のみにマッチ。"
 
-#: ../../howto/regex.rst:207
+#: ../../howto/regex.rst:209
 msgid ""
 "Try ``b`` again.  This time the character at the current position is "
 "``'b'``, so it succeeds."
 msgstr "再び ``b`` を試みる。今回の現在位置の文字は ``'b'`` なので成功。"
 
-#: ../../howto/regex.rst:213
+#: ../../howto/regex.rst:215
 msgid ""
 "The end of the RE has now been reached, and it has matched ``abcb``.  This "
 "demonstrates how the matching engine goes as far as it can at first, and if "
@@ -401,7 +400,7 @@ msgid ""
 "the string doesn't match the RE at all."
 msgstr "正規表現の終端に達して、 ``abcd`` にマッチしました。この例はマッチングエンジンが最初に到達できるところまで進みマッチしなかった場合、逐次戻って再度残りの正規表現とのマッチを次々と試みること様子を示しています。エンジンは ``[bcd]*`` とマッチしなくなるまで戻ります、さらに続く正規表現とのマッチに失敗した場合にエンジンは正規表現と文字列が完全にマッチしないと結論づけることになります。"
 
-#: ../../howto/regex.rst:220
+#: ../../howto/regex.rst:222
 msgid ""
 "Another repeating metacharacter is ``+``, which matches one or more times.  "
 "Pay careful attention to the difference between ``*`` and ``+``; ``*`` "
@@ -411,7 +410,7 @@ msgid ""
 "``a``'s), but won't match ``ct``."
 msgstr "別の繰り返しの特殊文字は ``+`` です、この特殊文字は1回以上の繰り返しにマッチします。 ``*`` と ``+`` に違いに対しては十分注意して下さい; ``*`` は *0回* 以上の繰り返しにマッチします、つまり繰り返す部分が全くなくても問題ありません、一方で ``+`` は少なくとも *1回* は表われる必要があります。同様の例を使うと ``ca+t`` は ``cat`` (``a`` 1文字), ``caaat`` (``a`` 3文字), とマッチし、 ``ct`` とはマッチしません。"
 
-#: ../../howto/regex.rst:227
+#: ../../howto/regex.rst:229
 msgid ""
 "There are two more repeating qualifiers.  The question mark character, "
 "``?``, matches either once or zero times; you can think of it as marking "
@@ -419,7 +418,7 @@ msgid ""
 "``homebrew`` or ``home-brew``."
 msgstr "2回以上の繰り返しを制限する修飾子も存在します。クエスチョンマーク ``?`` は0か1回のどちらかにマッチします; これはオプションであることを示していると考えることもできます。例えば、 ``home-?brew`` は ``homebrew`` と ``home-brew`` のどちらにもマッチします。"
 
-#: ../../howto/regex.rst:232
+#: ../../howto/regex.rst:234
 msgid ""
 "The most complicated repeated qualifier is ``{m,n}``, where *m* and *n* are "
 "decimal integers.  This qualifier means there must be at least *m* "
@@ -428,7 +427,7 @@ msgid ""
 "``a////b``, which has four."
 msgstr "より複雑に繰り返しを制限するのは ``{m,n}`` です、ここで *m* と *n* は10進数の整数です。この修飾子は最低 *m* 回、最大で *n* 回の繰り返すことを意味しています。例えば、 ``a/{1,3}b`` は ``a/b`` と ``a//b`` そして ``a///b`` にマッチします。これはスラッシュの無い ``ab`` や4つのスラッシュを持つ ``a////b`` とはマッチしません。"
 
-#: ../../howto/regex.rst:238
+#: ../../howto/regex.rst:240
 msgid ""
 "You can omit either *m* or *n*; in that case, a reasonable value is assumed "
 "for the missing value.  Omitting *m* is interpreted as a lower limit of 0, "
@@ -437,7 +436,7 @@ msgid ""
 " be infinity."
 msgstr "*m* か *n* のどちらかは省略することができます; そうした場合省略された値はもっともらしい値と仮定されます。 *m* の省略は下限 0 と解釈され、 *n* の省略は無限の上限として解釈されます --- 実際には上限は前に述べたように20億ですが、無限大とみなしてもいいでしょう。"
 
-#: ../../howto/regex.rst:243
+#: ../../howto/regex.rst:245
 msgid ""
 "Readers of a reductionist bent may notice that the three other qualifiers "
 "can all be expressed using this notation.  ``{0,}`` is the same as ``*``, "
@@ -446,11 +445,11 @@ msgid ""
 "shorter and easier to read."
 msgstr "還元主義的素養のある読者は、3つの修飾子がこの表記で表現できることに気づくでしょう。 ``{0,}`` は ``*`` と同じで ``{1,}`` は ``+`` と、そして ``{0,1}`` は ``?`` と同じです。利用できる場合には ``*``, ``+`` または ``?`` を利用した方が賢明です、そうすることで単純に、短く読み易くすることができます。"
 
-#: ../../howto/regex.rst:251
+#: ../../howto/regex.rst:253
 msgid "Using Regular Expressions"
 msgstr "正規表現を使う"
 
-#: ../../howto/regex.rst:253
+#: ../../howto/regex.rst:255
 msgid ""
 "Now that we've looked at some simple regular expressions, how do we actually"
 " use them in Python?  The :mod:`re` module provides an interface to the "
@@ -458,25 +457,25 @@ msgid ""
 " perform matches with them."
 msgstr "これまででいくつかの単純な正規表現に触れてきました、実際に Python ではこれらをどう使えばいいのでしょう? :mod:`re` モジュールは正規表現エンジンに対するインターフェースを提供していて、それらを使うことで正規表現をオブジェクトにコンパイルし、マッチを実行することができます。"
 
-#: ../../howto/regex.rst:260
+#: ../../howto/regex.rst:262
 msgid "Compiling Regular Expressions"
 msgstr "正規表現をコンパイルする"
 
-#: ../../howto/regex.rst:262
+#: ../../howto/regex.rst:264
 msgid ""
 "Regular expressions are compiled into pattern objects, which have methods "
 "for various operations such as searching for pattern matches or performing "
 "string substitutions. ::"
 msgstr "正規表現はパターンオブジェクトにコンパイルされます、パターンオブジェクトは多くの操作、パターンマッチの検索や文字列の置換の実行などのメソッドを持っています。 ::"
 
-#: ../../howto/regex.rst:271
+#: ../../howto/regex.rst:273
 msgid ""
 ":func:`re.compile` also accepts an optional *flags* argument, used to enable"
 " various special features and syntax variations.  We'll go over the "
 "available settings later, but for now a single example will do::"
 msgstr ":func:`re.compile` はいくつかの *flags* 引数を受け付けることができます、この引数はさまざまな特別な機能を有効にしたり、構文を変化させたりします。利用できる設定に何があるかは後に飛ばすことにして、簡単な例をやることにしましょう::"
 
-#: ../../howto/regex.rst:277
+#: ../../howto/regex.rst:279
 msgid ""
 "The RE is passed to :func:`re.compile` as a string.  REs are handled as "
 "strings because regular expressions aren't part of the core Python language,"
@@ -487,17 +486,17 @@ msgid ""
 ":mod:`socket` or :mod:`zlib` modules."
 msgstr "正規表現は文字列として :func:`re.compile` に渡されます。正規表現は文字列として扱われますが、それは正規表現が Python 言語のコアシステムに含まれないためです、そのため正規表現を表わす特殊な構文はありません。 (正規表現を全く必要としないアプリケーションも存在します、そのためそれらを含めて言語仕様を無駄に大きくする必要はありません) その代わり、 :mod:`re` モジュールは :mod:`socket` や :mod:`zlib` モジュールのような通常の C 拡張モジュールとして Python に含まれています。"
 
-#: ../../howto/regex.rst:284
+#: ../../howto/regex.rst:286
 msgid ""
 "Putting REs in strings keeps the Python language simpler, but has one "
 "disadvantage which is the topic of the next section."
 msgstr "正規表現を文字列としておくことで Python 言語はより簡素に保たれていますが、そのため1つの欠点があります、これについては次の節で話題とします。"
 
-#: ../../howto/regex.rst:289
+#: ../../howto/regex.rst:291
 msgid "The Backslash Plague"
 msgstr "バックスラッシュ感染症"
 
-#: ../../howto/regex.rst:291
+#: ../../howto/regex.rst:293
 msgid ""
 "As stated earlier, regular expressions use the backslash character "
 "(``'\\'``) to indicate special forms or to allow special characters to be "
@@ -505,7 +504,7 @@ msgid ""
 "usage of the same character for the same purpose in string literals."
 msgstr "先に述べたように、正規表現は特別な形式や特殊な文字の特別な意味を意味を除くことを示すためにバックスラッシュ文字 (``'\\'``) を利用します。これは Python が文字列リテラルに対して、同じ文字を同じ目的で使うことと衝突します。"
 
-#: ../../howto/regex.rst:296
+#: ../../howto/regex.rst:298
 msgid ""
 "Let's say you want to write a RE that matches the string ``\\section``, "
 "which might be found in a LaTeX file.  To figure out what to write in the "
@@ -517,39 +516,39 @@ msgid ""
 "escaped *again*."
 msgstr "``\\section`` という文字列 (これは LaTeX ファイルでみかけます) にマッチする正規表現を書きたいとします。どんなプログラムを書くか考え、マッチして欲しい文字列をはじめに考えます。次に、バックスラッシュや他の特殊文字をバックスラッシュに続けて書くことでエスケープしなければいけません、その結果 ``\\\\section`` のような文字列となります。こうしてできた :func:`re.compile` に渡す文字列は ``\\\\section`` でなければいけません。しかし、これを Python の文字列リテラルとして扱うにはこの二つのバックスラッシュを *再び* エスケープする必要があります。"
 
-#: ../../howto/regex.rst:305
+#: ../../howto/regex.rst:307
 msgid "Characters"
 msgstr "文字"
 
-#: ../../howto/regex.rst:305
+#: ../../howto/regex.rst:307
 msgid "Stage"
 msgstr "段階"
 
-#: ../../howto/regex.rst:307
+#: ../../howto/regex.rst:309
 msgid "``\\section``"
 msgstr "``\\section``"
 
-#: ../../howto/regex.rst:307
+#: ../../howto/regex.rst:309
 msgid "Text string to be matched"
 msgstr "マッチさせるテキスト"
 
-#: ../../howto/regex.rst:309
+#: ../../howto/regex.rst:311
 msgid "``\\\\section``"
 msgstr "``\\\\section``"
 
-#: ../../howto/regex.rst:309
+#: ../../howto/regex.rst:311
 msgid "Escaped backslash for :func:`re.compile`"
 msgstr ":func:`re.compile` のためのバックスラッシュエスケープ"
 
-#: ../../howto/regex.rst:311 ../../howto/regex.rst:331
+#: ../../howto/regex.rst:313 ../../howto/regex.rst:333
 msgid "``\"\\\\\\\\section\"``"
 msgstr "``\"\\\\\\\\section\"``"
 
-#: ../../howto/regex.rst:311
+#: ../../howto/regex.rst:313
 msgid "Escaped backslashes for a string literal"
 msgstr "文字列リテラルのためのバックスラッシュエスケープ"
 
-#: ../../howto/regex.rst:314
+#: ../../howto/regex.rst:316
 msgid ""
 "In short, to match a literal backslash, one has to write ``'\\\\\\\\'`` as "
 "the RE string, because the regular expression must be ``\\\\``, and each "
@@ -559,7 +558,7 @@ msgid ""
 "understand."
 msgstr "要点だけをいえば、リテラルとしてのバックスラッシュにマッチさせるために、正規表現文字列として ``'\\\\\\\\'`` 書かなければいけません、なぜなら正規表現は ``\\\\`` であり、通常の Python の文字列リテラルとしてはそれぞれのバックスラッシュは ``\\\\`` で表現しなければいけないからです。正規表現に関してこのバックスラッシュの繰り返しの機能は、たくさんのバックスラッシュの繰り返しを生むことになり、その結果として作られる文字列は理解することが難しくなります。"
 
-#: ../../howto/regex.rst:320
+#: ../../howto/regex.rst:322
 msgid ""
 "The solution is to use Python's raw string notation for regular expressions;"
 " backslashes are not handled in any special way in a string literal prefixed"
@@ -569,39 +568,39 @@ msgid ""
 " raw string notation."
 msgstr "この問題の解決策としては正規表現に対しては Python の raw string 記法を使うことです; ``'r'`` を文字列リテラルの先頭に書くことでバックスラッシュは特別扱いされなくなります、つまり ``\"\\n\"`` は改行を含む1つの文字からなる文字列であるのに対して、 ``r\"\\n\"`` は2つの文字 ``'\\'`` と ``'n'`` を含む文字列となります。多くの場合 Python コードの中の正規表現はこの raw string 記法を使って書かれます。"
 
-#: ../../howto/regex.rst:327
+#: ../../howto/regex.rst:329
 msgid "Regular String"
 msgstr "通常の文字列"
 
-#: ../../howto/regex.rst:327
+#: ../../howto/regex.rst:329
 msgid "Raw string"
 msgstr "Raw string"
 
-#: ../../howto/regex.rst:329
+#: ../../howto/regex.rst:331
 msgid "``\"ab*\"``"
 msgstr "``\"ab*\"``"
 
-#: ../../howto/regex.rst:329
+#: ../../howto/regex.rst:331
 msgid "``r\"ab*\"``"
 msgstr "``r\"ab*\"``"
 
-#: ../../howto/regex.rst:331
+#: ../../howto/regex.rst:333
 msgid "``r\"\\\\section\"``"
 msgstr "``r\"\\\\section\"``"
 
-#: ../../howto/regex.rst:333
+#: ../../howto/regex.rst:335
 msgid "``\"\\\\w+\\\\s+\\\\1\"``"
 msgstr "``\"\\\\w+\\\\s+\\\\1\"``"
 
-#: ../../howto/regex.rst:333
+#: ../../howto/regex.rst:335
 msgid "``r\"\\w+\\s+\\1\"``"
 msgstr "``r\"\\w+\\s+\\1\"``"
 
-#: ../../howto/regex.rst:338
+#: ../../howto/regex.rst:340
 msgid "Performing Matches"
 msgstr "マッチの実行"
 
-#: ../../howto/regex.rst:340
+#: ../../howto/regex.rst:342
 msgid ""
 "Once you have an object representing a compiled regular expression, what do "
 "you do with it?  Pattern objects have several methods and attributes. Only "
@@ -609,51 +608,51 @@ msgid ""
 "for a complete listing."
 msgstr "一旦コンパイルした正規表現を表現するオブジェクトを作成したら、次に何をしますか? パターンオブジェクトはいくつかのメソッドや属性を持っています。ここでは、その中でも最も重要なものについて扱います; 完全なリストは :mod:`re` ドキュメントを参照して下さい。"
 
-#: ../../howto/regex.rst:346 ../../howto/regex.rst:407
-#: ../../howto/regex.rst:1039
+#: ../../howto/regex.rst:348 ../../howto/regex.rst:409
+#: ../../howto/regex.rst:1042
 msgid "Method/Attribute"
 msgstr "メソッド/属性"
 
-#: ../../howto/regex.rst:346 ../../howto/regex.rst:407
-#: ../../howto/regex.rst:1039
+#: ../../howto/regex.rst:348 ../../howto/regex.rst:409
+#: ../../howto/regex.rst:1042
 msgid "Purpose"
 msgstr "目的"
 
-#: ../../howto/regex.rst:348
+#: ../../howto/regex.rst:350
 msgid "``match()``"
 msgstr "``match()``"
 
-#: ../../howto/regex.rst:348
+#: ../../howto/regex.rst:350
 msgid "Determine if the RE matches at the beginning of the string."
 msgstr "文字列の先頭で正規表現とマッチするか判定します。"
 
-#: ../../howto/regex.rst:351
+#: ../../howto/regex.rst:353
 msgid "``search()``"
 msgstr "``search()``"
 
-#: ../../howto/regex.rst:351
+#: ../../howto/regex.rst:353
 msgid "Scan through a string, looking for any location where this RE matches."
 msgstr "文字列を操作して、正規表現がどこにマッチするか調べます。"
 
-#: ../../howto/regex.rst:354
+#: ../../howto/regex.rst:356
 msgid "``findall()``"
 msgstr "``findall()``"
 
-#: ../../howto/regex.rst:354
+#: ../../howto/regex.rst:356
 msgid "Find all substrings where the RE matches, and returns them as a list."
 msgstr "正規表現にマッチする部分文字列を全て探しだしリストとして返します。"
 
-#: ../../howto/regex.rst:357
+#: ../../howto/regex.rst:359
 msgid "``finditer()``"
 msgstr "``finditer()``"
 
-#: ../../howto/regex.rst:357
+#: ../../howto/regex.rst:359
 msgid ""
 "Find all substrings where the RE matches, and returns them as an "
 ":term:`iterator`."
 msgstr "正規表現にマッチする部分文字列を全て探しだし :term:`iterator` として返します。"
 
-#: ../../howto/regex.rst:361
+#: ../../howto/regex.rst:363
 msgid ""
 ":meth:`match` and :meth:`search` return ``None`` if no match can be found.  "
 "If they're successful, a :ref:`match object <match-objects>` instance is "
@@ -661,7 +660,7 @@ msgid ""
 "the substring it matched, and more."
 msgstr "マッチしない場合 :meth:`match` と :meth:`search` は ``None`` を返します。もしマッチに成功した場合、 :ref:`Match オブジェクト <match-objects>` インスタンスを返します、このインスタンスはマッチの情報を含んでいます: どこで始まりどこで終わったか、マッチした部分文字列や等々。"
 
-#: ../../howto/regex.rst:366
+#: ../../howto/regex.rst:368
 msgid ""
 "You can learn about this by interactively experimenting with the :mod:`re` "
 "module.  If you have Tkinter available, you may also want to look at "
@@ -673,13 +672,13 @@ msgid ""
 " and testing RE patterns."
 msgstr ":mod:`re` モジュールで対話的に実験することで学ぶこともできます。 Tkinter が利用できれば、Python に含まれるデモプログラム :source:`Tools/scripts/redemo.py` を見るといいかもしれません。このデモは正規表現と文字列を入力し、正規表現がマッチしたかどうかを表示します。 :file:`redemo.py` は複雑な正規表現のデバッグを試みるときにも便利に使うことができます。 Phil Schwartz の `Kodos <http://kodos.sourceforge.net/>`_ も正規表現パターンを使った開発とテストのための対話的なツールです。"
 
-#: ../../howto/regex.rst:375
+#: ../../howto/regex.rst:377
 msgid ""
 "This HOWTO uses the standard Python interpreter for its examples. First, run"
 " the Python interpreter, import the :mod:`re` module, and compile a RE::"
 msgstr "この HOWTO では例として標準の Python インタプリタを使います。最初に Python インタプリタを起動して、 :mod:`re` モジュールをインポートし、正規表現をコンパイルします::"
 
-#: ../../howto/regex.rst:384
+#: ../../howto/regex.rst:386
 msgid ""
 "Now, you can try matching various strings against the RE ``[a-z]+``.  An "
 "empty string shouldn't match at all, since ``+`` means 'one or more "
@@ -688,57 +687,57 @@ msgid ""
 "result of :meth:`match` to make this clear. ::"
 msgstr "さて、いろいろな文字列を使って正規表現 ``[a-z]+`` に対するマッチングを試してみましょう。空の文字列は全くマッチしません、なぜなら ``+`` は「1回以上の繰り返し」を意味するからです。この場合では :meth:`match` は ``None`` を返すべきで、インタプタは何も出力しません。明確にするために :meth:`match` の結果を明示的に出力することもできます。 ::"
 
-#: ../../howto/regex.rst:394
+#: ../../howto/regex.rst:396
 msgid ""
 "Now, let's try it on a string that it should match, such as ``tempo``.  In "
 "this case, :meth:`match` will return a :ref:`match object <match-objects>`, "
 "so you should store the result in a variable for later use. ::"
 msgstr "では、今度はマッチするはずの文字列、例えば ``tempo`` を試してみましょう。このケースでは、 :meth:`match` は :ref:`Match オブジェクト <match-objects>` を返すでしょうから、後で使うために結果を変数に記憶しておくべきです ::"
 
-#: ../../howto/regex.rst:402
+#: ../../howto/regex.rst:404
 msgid ""
 "Now you can query the :ref:`match object <match-objects>` for information "
 "about the matching string.  :ref:`match object <match-objects>` instances "
 "also have several methods and attributes; the most important ones are:"
 msgstr "これでマッチした文字列についての情報を :ref:`Match オブジェクト <match-objects>` に問い合わせることが出来ます。 :ref:`Match オブジェクト <match-objects>` インスタンスはいくつかのメソッドと属性も持っていて、最も重要なものは:"
 
-#: ../../howto/regex.rst:409
+#: ../../howto/regex.rst:411
 msgid "``group()``"
 msgstr "``group()``"
 
-#: ../../howto/regex.rst:409
+#: ../../howto/regex.rst:411
 msgid "Return the string matched by the RE"
 msgstr "正規表現にマッチした文字列を返す"
 
-#: ../../howto/regex.rst:411
+#: ../../howto/regex.rst:413
 msgid "``start()``"
 msgstr "``start()``"
 
-#: ../../howto/regex.rst:411
+#: ../../howto/regex.rst:413
 msgid "Return the starting position of the match"
 msgstr "マッチの開始位置を返す"
 
-#: ../../howto/regex.rst:413
+#: ../../howto/regex.rst:415
 msgid "``end()``"
 msgstr "``end()``"
 
-#: ../../howto/regex.rst:413
+#: ../../howto/regex.rst:415
 msgid "Return the ending position of the match"
 msgstr "マッチの終了位置を返す"
 
-#: ../../howto/regex.rst:415
+#: ../../howto/regex.rst:417
 msgid "``span()``"
 msgstr "``span()``"
 
-#: ../../howto/regex.rst:415
+#: ../../howto/regex.rst:417
 msgid "Return a tuple containing the (start, end) positions  of the match"
 msgstr "マッチの位置 (start, end) を含むタプルを返す"
 
-#: ../../howto/regex.rst:419
+#: ../../howto/regex.rst:421
 msgid "Trying these methods will soon clarify their meaning::"
 msgstr "これらのメソッドを試せば、その意味はすぐに理解できます::"
 
-#: ../../howto/regex.rst:428
+#: ../../howto/regex.rst:430
 msgid ""
 ":meth:`group` returns the substring that was matched by the RE.  "
 ":meth:`start` and :meth:`end` return the starting and ending index of the "
@@ -749,31 +748,31 @@ msgid ""
 "zero in that case. ::"
 msgstr ":meth:`group` は正規表現にマッチした部分文字列を返します。 :meth:`start` と :meth:`end` はマッチの開始と終了のインデクスを返します。 :meth:`span` は開始と終了のインデクスの両方をを1つのタプルとして返します。 :meth:`match` メソッドは正規表現が文字列の最初にマッチするかどうかを調べるので、 :meth:`start` は常に0です。ただし、 :meth:`search` メソッドは文字列に対してパターンを操作するのでその場合にはマッチが0から始まるとは限りません。::"
 
-#: ../../howto/regex.rst:445
+#: ../../howto/regex.rst:447
 msgid ""
 "In actual programs, the most common style is to store the :ref:`match object"
 " <match-objects>` in a variable, and then check if it was ``None``.  This "
 "usually looks like::"
 msgstr "実際のプログラムでは :ref:`Match オブジェクト <match-objects>` を変数に記憶しておき, その次に ``None`` なのか調べるのが一般的なスタイルです。普通このようにします::"
 
-#: ../../howto/regex.rst:456
+#: ../../howto/regex.rst:458
 msgid ""
 "Two pattern methods return all of the matches for a pattern. :meth:`findall`"
 " returns a list of matching strings::"
 msgstr "2つのパターンメソッドはパターンにマッチした全てを返します。 :meth:`findall` はマッチした文字列のリストを返します::"
 
-#: ../../howto/regex.rst:463
+#: ../../howto/regex.rst:465
 msgid ""
 ":meth:`findall` has to create the entire list before it can be returned as "
 "the result.  The :meth:`finditer` method returns a sequence of :ref:`match "
 "object <match-objects>` instances as an :term:`iterator`. [#]_ ::"
 msgstr ":meth:`findall` は結果が返される前に結果となるリスト全体を作成します。 :meth:`finditer` メソッドは :ref:`Match オブジェクト <match-objects>` インスタンスのシーケンスを :term:`iterator` として返します。 [#]_ ::"
 
-#: ../../howto/regex.rst:479
+#: ../../howto/regex.rst:481
 msgid "Module-Level Functions"
 msgstr "モジュールレベルの関数"
 
-#: ../../howto/regex.rst:481
+#: ../../howto/regex.rst:483
 msgid ""
 "You don't have to create a pattern object and call its methods; the "
 ":mod:`re` module also provides top-level functions called :func:`match`, "
@@ -783,14 +782,14 @@ msgid ""
 ":ref:`match object <match-objects>` instance. ::"
 msgstr "パターンオブジェクトを作成し、メソッドを呼び出す必要はありません; :mod:`re` モジュールはトップレベルの関数 :func:`match`, :func:`search`, :func:`findall`, :func:`sub` 続々、も提供しています。これらの関数は対応するパターンメソッドと同じ引数をとり、正規表現文字列を最初の引数として追加して使います、そして同じく ``None`` または :ref:`Match オブジェクト <match-objects>` インスタンスを返します::"
 
-#: ../../howto/regex.rst:493
+#: ../../howto/regex.rst:495
 msgid ""
 "Under the hood, these functions simply create a pattern object for you and "
 "call the appropriate method on it.  They also store the compiled object in a"
 " cache, so future calls using the same RE are faster."
 msgstr "内部では、これらの関数は単にパターンオブジェクトを生成し、その適切なメソッドを呼び出しています。それらは、コンパイル済みのオブジェクトもキャッシュとして記憶するので、同じ正規表現に対する将来の呼び出しは高速になります。"
 
-#: ../../howto/regex.rst:497
+#: ../../howto/regex.rst:499
 msgid ""
 "Should you use these module-level functions, or should you get the pattern "
 "and call its methods yourself?  That choice depends on how frequently the RE"
@@ -803,17 +802,17 @@ msgid ""
 " extract from the deprecated :mod:`xmllib` module::"
 msgstr "これらのモジュールレベル関数を使うべきでしょうか、それともパターンを取得し、メソッド自身を呼び出すべきでしょうか? この選択は利用する正規表現がどのくらい頻繁に利用されるかと個人のコーディングスタイルに依存します。正規表現がコード内で一度しか使われない場合、モジュール関数の方がより便利でしょう。プログラムが多くの正規表現を含んだり、同じ正規表現がいくつかの場所で再利用されるときは定義を一箇所にまとめ、使う前に全ての正規表現をコンパイルしておくことはやる価値があるはずです。標準ライブラリから例を挙げます、廃止された :mod:`xmllib` モジュールから抜粋で::"
 
-#: ../../howto/regex.rst:512
+#: ../../howto/regex.rst:514
 msgid ""
 "I generally prefer to work with the compiled object, even for one-time uses,"
 " but few people will be as much of a purist about this as I am."
 msgstr "私はたいていの場合、一回のみの利用であってもコンパイル済みオブジェクトを使うことを好みますが、そこまで厳格な人は少数派でしょう。"
 
-#: ../../howto/regex.rst:517
+#: ../../howto/regex.rst:519
 msgid "Compilation Flags"
 msgstr "コンパイルフラグ"
 
-#: ../../howto/regex.rst:519
+#: ../../howto/regex.rst:521
 msgid ""
 "Compilation flags let you modify some aspects of how regular expressions "
 "work. Flags are available in the :mod:`re` module under two names, a long "
@@ -825,72 +824,72 @@ msgid ""
 " example."
 msgstr "コンパイルフラグは正規表現の動作をいくつかの側面から変更します。フラグは :mod:`re` モジュール下で二つの名前で利用することができます、例えば長い名前は :const:`IGNORECASE` で短い名前は1文字で :const:`I` のようになっています。 (1文字形式は Perl のパターン修飾子と同じ形式を使います; 例えば :const:`re.VERBOSE` の短かい形式は :const:`re.X` です。) 複数のフラグが OR ビット演算で指定することができます; 例えば ``re.I | re.M`` は :const:`I` と :const:`M` フラグの両方を設定します。"
 
-#: ../../howto/regex.rst:527
+#: ../../howto/regex.rst:529
 msgid ""
 "Here's a table of the available flags, followed by a more detailed "
 "explanation of each one."
 msgstr "ここに利用可能なフラグの表があります、それぞれについてのより詳細な説明が後に続きます。"
 
-#: ../../howto/regex.rst:531
+#: ../../howto/regex.rst:533
 msgid "Flag"
 msgstr "フラグ"
 
-#: ../../howto/regex.rst:531
+#: ../../howto/regex.rst:533
 msgid "Meaning"
 msgstr "意味"
 
-#: ../../howto/regex.rst:533
+#: ../../howto/regex.rst:535
 msgid ":const:`DOTALL`, :const:`S`"
 msgstr ":const:`DOTALL`, :const:`S`"
 
-#: ../../howto/regex.rst:533
+#: ../../howto/regex.rst:535
 msgid "Make ``.`` match any character, including newlines"
 msgstr "``.`` を改行を含む任意の文字にマッチするようにします"
 
-#: ../../howto/regex.rst:536
+#: ../../howto/regex.rst:538
 msgid ":const:`IGNORECASE`, :const:`I`"
 msgstr ":const:`IGNORECASE`, :const:`I`"
 
-#: ../../howto/regex.rst:536
+#: ../../howto/regex.rst:538
 msgid "Do case-insensitive matches"
 msgstr "大文字小文字を区別しないマッチを行います"
 
-#: ../../howto/regex.rst:538
+#: ../../howto/regex.rst:540
 msgid ":const:`LOCALE`, :const:`L`"
 msgstr ":const:`LOCALE`, :const:`L`"
 
-#: ../../howto/regex.rst:538
+#: ../../howto/regex.rst:540
 msgid "Do a locale-aware match"
 msgstr "ロケールに対応したマッチを行います"
 
-#: ../../howto/regex.rst:540
+#: ../../howto/regex.rst:542
 msgid ":const:`MULTILINE`, :const:`M`"
 msgstr ":const:`MULTILINE`, :const:`M`"
 
-#: ../../howto/regex.rst:540
+#: ../../howto/regex.rst:542
 msgid "Multi-line matching, affecting ``^`` and ``$``"
 msgstr "``^`` や ``$`` に作用して、複数行にマッチング"
 
-#: ../../howto/regex.rst:543
+#: ../../howto/regex.rst:545
 msgid ":const:`VERBOSE`, :const:`X`"
 msgstr ":const:`VERBOSE`, :const:`X`"
 
-#: ../../howto/regex.rst:543
+#: ../../howto/regex.rst:545
 msgid ""
 "Enable verbose REs, which can be organized more cleanly and understandably."
 msgstr "冗長な正規表現を利用できるようにして、よりきれいで理解しやすくまとめることができます。"
 
-#: ../../howto/regex.rst:546
+#: ../../howto/regex.rst:548
 msgid ":const:`UNICODE`, :const:`U`"
 msgstr ":const:`UNICODE`, :const:`U`"
 
-#: ../../howto/regex.rst:546
+#: ../../howto/regex.rst:548
 msgid ""
 "Makes several escapes like ``\\w``, ``\\b``, ``\\s`` and ``\\d`` dependent "
 "on the Unicode character database."
 msgstr "``\\w``, ``\\W``, ``\\b``, そして ``\\B`` を Unicode 文字データベースに依存させます。"
 
-#: ../../howto/regex.rst:556
+#: ../../howto/regex.rst:558
 msgid ""
 "Perform case-insensitive matching; character class and literal strings will "
 "match letters by ignoring case.  For example, ``[A-Z]`` will match lowercase"
@@ -899,11 +898,11 @@ msgid ""
 "also set the :const:`LOCALE` flag."
 msgstr "大文字小文字を区別しないマッチングを実行します; 文字クラスや文字列リテラルは大文字小文字を無視してマッチします。例えば ``[A-Z]`` は小文字にもマッチします、また ``Spam`` は ``Spam``, ``spam``, または ``spAM`` にもマッチします。この小文字化は現在のロケールは考慮に入れません; ロケールの考慮は :const:`LOCALE` も設定することで行います。"
 
-#: ../../howto/regex.rst:567
+#: ../../howto/regex.rst:569
 msgid "Make ``\\w``, ``\\W``, ``\\b``, and ``\\B``, dependent on the current locale."
 msgstr "``\\w``, ``\\W``, ``\\b``, そして ``\\B`` を現在のロケールに依存させます。"
 
-#: ../../howto/regex.rst:569
+#: ../../howto/regex.rst:571
 msgid ""
 "Locales are a feature of the C library intended to help in writing programs "
 "that take account of language differences.  For example, if you're "
@@ -917,13 +916,13 @@ msgid ""
 "enables ``\\w+`` to match French words as you'd expect."
 msgstr "ロケールは C ライブラリの機能の一つで、言語の違いを考慮したプログラム作成を容易にするためのものです。例えば、フランス語の文書を処理したい場合、単語のマッチに ``\\w+`` を利用したくなります、しかし、 ``\\w`` は文字クラス ``[A-Za-z]`` のみとマッチします; ``'é'`` または ``'ç'`` にはマッチしません。システムが適切に設定されていて、ロケールがフランス語に設定されていれば、 C 関数がプログラムに ``'é'`` をアルファベットとして扱うべきだと伝えます。 :const:`LOCALE` フラグを正規表現のコンパイル時に設定することで、 ``\\w`` を使う C 関数を利用するコンパイル済みオブジェクトを生み出すことになります; これは速度は遅くなりますが、期待通りに ``\\w+`` をフランス語の単語にマッチさせることができます。"
 
-#: ../../howto/regex.rst:584
+#: ../../howto/regex.rst:586
 msgid ""
 "(``^`` and ``$`` haven't been explained yet;  they'll be introduced in "
 "section :ref:`more-metacharacters`.)"
 msgstr "(``^`` と ``$`` についてはまだ説明していません; これらは :ref:`more-metacharacters` の節で説明します。)"
 
-#: ../../howto/regex.rst:587
+#: ../../howto/regex.rst:589
 msgid ""
 "Usually ``^`` matches only at the beginning of the string, and ``$`` matches"
 " only at the end of the string and immediately before the newline (if any) "
@@ -934,19 +933,19 @@ msgid ""
 "(immediately preceding each newline)."
 msgstr "通常 ``^`` は文字列の先頭にマッチし、 ``$`` は文字列の末尾と文字列の末尾に改行(があれば)その直前にマッチします。このフラグが指定されると、 ``^`` は文字列の先頭と文字列の中の改行に続く各行の先頭にマッチします。同様に ``$`` 特殊文字は文字列の末尾と各行の末尾(各改行の直前)のどちらにもマッチします。"
 
-#: ../../howto/regex.rst:600
+#: ../../howto/regex.rst:602
 msgid ""
 "Makes the ``'.'`` special character match any character at all, including a "
 "newline; without this flag, ``'.'`` will match anything *except* a newline."
 msgstr "特別な文字 ``'.'`` を改行を含む全ての任意の文字とマッチするようにします; このフラグが無しでは、 ``'.'`` は改行 *以外* の全てにマッチします。"
 
-#: ../../howto/regex.rst:608
+#: ../../howto/regex.rst:610
 msgid ""
 "Make ``\\w``, ``\\W``, ``\\b``, ``\\B``, ``\\d``, ``\\D``, ``\\s`` and "
 "``\\S`` dependent on the Unicode character properties database."
 msgstr "``\\w``, ``\\W``, ``\\b``, ``\\B``, ``\\d``, ``\\D``, ``\\s`` and ``\\S`` を Unicode 文字特性データベースに依存させます。"
 
-#: ../../howto/regex.rst:616
+#: ../../howto/regex.rst:618
 msgid ""
 "This flag allows you to write regular expressions that are more readable by "
 "granting you more flexibility in how you can format them.  When this flag "
@@ -958,45 +957,45 @@ msgid ""
 "preceded by an unescaped backslash."
 msgstr "このフラグはより柔軟な形式で正規表現を読み易く書けるようにします。このフラグを指定すると、正規表現の中の空白は無視されます、ただし、文字クラス内やエスケープされていないバックスラッシュに続く空白の場合は例外として無視されません; これによって正規表現をまとめたり、インデントしてより明確にすることができます。このフラグはさらにエンジンが無視するコメントを追加することもできます; コメントは ``'#'`` で示します、これは文字クラスやエスケープされていないバックスラッシュに続くものであってはいけません。"
 
-#: ../../howto/regex.rst:625
+#: ../../howto/regex.rst:627
 msgid ""
 "For example, here's a RE that uses :const:`re.VERBOSE`; see how much easier "
 "it is to read? ::"
 msgstr "例えば、ここに :const:`re.VERBOSE` を利用した正規表現があります; 読み易いと思いませんか? ::"
 
-#: ../../howto/regex.rst:638
+#: ../../howto/regex.rst:640
 msgid "Without the verbose setting, the RE would look like this::"
 msgstr "冗長な表現を利用しない設定の場合、正規表現はこうなります::"
 
-#: ../../howto/regex.rst:644
+#: ../../howto/regex.rst:646
 msgid ""
 "In the above example, Python's automatic concatenation of string literals "
 "has been used to break up the RE into smaller pieces, but it's still more "
 "difficult to understand than the version using :const:`re.VERBOSE`."
 msgstr "上の例では、Python の文字列リテラルの自動結合によって正規表現を小さな部分に分割しています、それでも :const:`re.VERBOSE` を使った場合に比べるとまだ難しくなっています。"
 
-#: ../../howto/regex.rst:650
+#: ../../howto/regex.rst:652
 msgid "More Pattern Power"
 msgstr "パターンの能力をさらに"
 
-#: ../../howto/regex.rst:652
+#: ../../howto/regex.rst:654
 msgid ""
 "So far we've only covered a part of the features of regular expressions.  In"
 " this section, we'll cover some new metacharacters, and how to use groups to"
 " retrieve portions of the text that was matched."
 msgstr "ここまでで、正規表現の機能のほんの一部を扱ってきました。この節では、新たにいくつかの特殊文字とグループを使ってマッチしたテキストの一部をどう取得するかについて扱います。"
 
-#: ../../howto/regex.rst:660
+#: ../../howto/regex.rst:662
 msgid "More Metacharacters"
 msgstr "さらなる特殊文字"
 
-#: ../../howto/regex.rst:662
+#: ../../howto/regex.rst:664
 msgid ""
 "There are some metacharacters that we haven't covered yet.  Most of them "
 "will be covered in this section."
 msgstr "これまでで、まだ扱っていない特殊文字がいくつかありました。そのほとんどをこの節で扱っていきます。"
 
-#: ../../howto/regex.rst:665
+#: ../../howto/regex.rst:667
 msgid ""
 "Some of the remaining metacharacters to be discussed are :dfn:`zero-width "
 "assertions`.  They don't cause the engine to advance through the string; "
@@ -1008,11 +1007,11 @@ msgid ""
 "of times."
 msgstr "残りの特殊文字の内いくつかは :dfn:`ゼロ幅アサーション zero-width-assertions` に関するものです。これらは文字列に対してエンジンを進めません; 文字列を全く利用しない代わりに、単純に成功か失敗かを利用します。例えば、 ``\\b`` は現在位置が単語の境界であることを示します; ``\\b`` によってエンジンの読んでいる位置は全く変化しません。つまり、これはゼロ幅アサーションは繰り返し使うことがありません、一度ある位置でマッチしたら、明らかに無限回マッチできます。"
 
-#: ../../howto/regex.rst:681
-msgid "|"
-msgstr "|"
+#: ../../howto/regex.rst:683
+msgid "``|``"
+msgstr "``|``"
 
-#: ../../howto/regex.rst:674
+#: ../../howto/regex.rst:676
 msgid ""
 "Alternation, or the \"or\" operator.   If A and B are regular expressions, "
 "``A|B`` will match any string that matches either ``A`` or ``B``. ``|`` has "
@@ -1021,17 +1020,17 @@ msgid ""
 "``Crow`` or ``Servo``, not ``Cro``, a ``'w'`` or an ``'S'``, and ``ervo``."
 msgstr "代替 (alternation) または \"or\" 演算子。 A と B が正規表現の場合、 ``A|B`` は ``A`` または ``B`` のどちらの文字列にもマッチします。 ``|`` は複数の文字列をかわるがわる試す場合でもうまく動作するように優先度はとても低くなっています ``Crow|Servo`` は ``Crow`` または ``Servo`` のどちらにもマッチします、 ``Cro``, ``'w'`` または ``'S'``, ``ervo`` とはマッチしません。"
 
-#: ../../howto/regex.rst:680
+#: ../../howto/regex.rst:682
 msgid ""
 "To match a literal ``'|'``, use ``\\|``, or enclose it inside a character "
 "class, as in ``[|]``."
 msgstr "リテラル ``'|'`` にマッチするには、 ``\\|`` を利用するか、 ``[|]`` のように文字クラス内に収めて下さい。"
 
-#: ../../howto/regex.rst:697
-msgid "^"
-msgstr "^"
+#: ../../howto/regex.rst:699
+msgid "``^``"
+msgstr "``^``"
 
-#: ../../howto/regex.rst:684
+#: ../../howto/regex.rst:686
 msgid ""
 "Matches at the beginning of lines.  Unless the :const:`MULTILINE` flag has "
 "been set, this will only match at the beginning of the string.  In "
@@ -1039,33 +1038,33 @@ msgid ""
 "within the string."
 msgstr "行の先頭にマッチします。 :const:`MULTILINE` フラグが設定されない場合には、文字列の先頭にのみマッチします。 :const:`MULTILINE` モードでは文字列内の各改行の直後にマッチします。"
 
-#: ../../howto/regex.rst:688
+#: ../../howto/regex.rst:690
 msgid ""
 "For example, if you wish to match the word ``From`` only at the beginning of"
 " a line, the RE to use is ``^From``. ::"
 msgstr "例えば、行の先頭の ``From`` にのみマッチさせたい場合には ``^From`` 正規表現を利用します。 ::"
 
-#: ../../howto/regex.rst:711
-msgid "$"
-msgstr "$"
+#: ../../howto/regex.rst:713
+msgid "``$``"
+msgstr "``$``"
 
-#: ../../howto/regex.rst:700
+#: ../../howto/regex.rst:702
 msgid ""
 "Matches at the end of a line, which is defined as either the end of the "
 "string, or any location followed by a newline character.     ::"
 msgstr "行の末尾にマッチします、行の末尾は文字列の末尾と改行文字の直前として定義されます。 ::"
 
-#: ../../howto/regex.rst:710
+#: ../../howto/regex.rst:712
 msgid ""
 "To match a literal ``'$'``, use ``\\$`` or enclose it inside a character "
 "class, as in  ``[$]``."
 msgstr "リテラル ``'$'`` にマッチするには、 ``\\$`` を利用するか、 ``[$]`` のように文字クラス内に収めて下さい。"
 
-#: ../../howto/regex.rst:717
-msgid "\\A"
-msgstr "\\A"
+#: ../../howto/regex.rst:719
+msgid "``\\A``"
+msgstr "``\\A``"
 
-#: ../../howto/regex.rst:714
+#: ../../howto/regex.rst:716
 msgid ""
 "Matches only at the start of the string.  When not in :const:`MULTILINE` "
 "mode, ``\\A`` and ``^`` are effectively the same.  In :const:`MULTILINE` "
@@ -1074,19 +1073,19 @@ msgid ""
 " newline character."
 msgstr "文字列の先頭にのみマッチします。 :const:`MULTILINE` モードでない場合には ``\\A`` と ``^`` は実質的に同じです。 :const:`MULTILINE` モードでのこれらの違いは: ``\\A`` は依然として文字列の先頭にのみマッチしますが、 ``^`` は文字列内に改行文字に続く部分があればそこにマッチすることです。"
 
-#: ../../howto/regex.rst:720
-msgid "\\Z"
-msgstr "\\Z"
+#: ../../howto/regex.rst:722
+msgid "``\\Z``"
+msgstr "``\\Z``"
 
-#: ../../howto/regex.rst:720
+#: ../../howto/regex.rst:722
 msgid "Matches only at the end of the string."
 msgstr "文字列の末尾にのみマッチします。"
 
-#: ../../howto/regex.rst:755
-msgid "\\b"
-msgstr "\\b"
+#: ../../howto/regex.rst:757
+msgid "``\\b``"
+msgstr "``\\b``"
 
-#: ../../howto/regex.rst:723
+#: ../../howto/regex.rst:725
 msgid ""
 "Word boundary.  This is a zero-width assertion that matches only at the "
 "beginning or end of a word.  A word is defined as a sequence of alphanumeric"
@@ -1094,13 +1093,13 @@ msgid ""
 "alphanumeric character."
 msgstr "単語の境界。これはゼロ幅アサーションで、単語の始まりか終わりにのみマッチします。単語は英数文字のシーケンスとして定義されます、つまり単語の終わりは空白か非英数文字として表われます。"
 
-#: ../../howto/regex.rst:728
+#: ../../howto/regex.rst:730
 msgid ""
 "The following example matches ``class`` only when it's a complete word; it "
 "won't match when it's contained inside another word. ::"
 msgstr "以下の例では ``class`` がそのものの単語のときのみマッチします; 別の単語内に含まれている場合はマッチしません。 ::"
 
-#: ../../howto/regex.rst:739
+#: ../../howto/regex.rst:741
 msgid ""
 "There are two subtleties you should remember when using this special "
 "sequence. First, this is the worst collision between Python's string "
@@ -1111,28 +1110,28 @@ msgid ""
 " previous RE, but omits the ``'r'`` in front of the RE string. ::"
 msgstr "この特殊シーケンスを利用するときには二つの微妙な点を心にとめておく必要があります。まずひとつめは Python の文字列リテラルと表現の間の最悪の衝突を引き起すことです。Python の文字列リテラルでは ``\\b`` は ASCII 値8のバックスペース文字です。raw string を利用していない場合、Python は ``\\b`` をバックスペースに変換し、正規表現は期待するものとマッチしなくなります。以下の例はさきほどと同じ正規表現のように見えますが、正規表現文字列の前の ``'r'`` が省略されています。 ::"
 
-#: ../../howto/regex.rst:753
+#: ../../howto/regex.rst:755
 msgid ""
 "Second, inside a character class, where there's no use for this assertion, "
 "``\\b`` represents the backspace character, for compatibility with Python's "
 "string literals."
 msgstr "ふたつめはこのアサーションが利用できない文字列クラスの内部では Python の文字列リテラルとの互換性のために、 ``\\b`` はバックスペース文字を表わすことになるということです。"
 
-#: ../../howto/regex.rst:760
-msgid "\\B"
-msgstr "\\B"
+#: ../../howto/regex.rst:762
+msgid "``\\B``"
+msgstr "``\\B``"
 
-#: ../../howto/regex.rst:758
+#: ../../howto/regex.rst:760
 msgid ""
 "Another zero-width assertion, this is the opposite of ``\\b``, only matching"
 " when the current position is not at a word boundary."
 msgstr "別のゼロ幅アサーションで、 ``\\b`` と逆で、現在の位置が単語の境界でないときにのみマッチします。"
 
-#: ../../howto/regex.rst:763
+#: ../../howto/regex.rst:765
 msgid "Grouping"
 msgstr "グルーピング"
 
-#: ../../howto/regex.rst:765
+#: ../../howto/regex.rst:767
 msgid ""
 "Frequently you need to obtain more information than just whether the RE "
 "matched or not.  Regular expressions are often used to dissect strings by "
@@ -1141,14 +1140,14 @@ msgid ""
 "name and a value, separated by a ``':'``, like this::"
 msgstr "正規表現にマッチするかどうかだけでなく、より多くの情報を得なければいけない場合は多々あります。正規表現はしばしば、正規表現をいくつかのサブグループに分けて興味ある部分にマッチするようにして、文字列を分割するのに使われます。例えば、RFC-822 ヘッダ行は ``':'`` を挟んでこのようにヘッダ名と値に分割されます::"
 
-#: ../../howto/regex.rst:776
+#: ../../howto/regex.rst:778
 msgid ""
 "This can be handled by writing a regular expression which matches an entire "
 "header line, and has one group which matches the header name, and another "
 "group which matches the header's value."
 msgstr "これはヘッダ全体にマッチし、そしてヘッダ名にマッチするグループとヘッダの値にマッチする別のグループを持つように正規表現を書くことで扱うことができます。"
 
-#: ../../howto/regex.rst:780
+#: ../../howto/regex.rst:782
 msgid ""
 "Groups are marked by the ``'('``, ``')'`` metacharacters. ``'('`` and "
 "``')'`` have much the same meaning as they do in mathematical expressions; "
@@ -1158,7 +1157,7 @@ msgid ""
 "repetitions of ``ab``. ::"
 msgstr "グループは特殊文字 ``'('``, ``')'`` で表わされます。 ``'('`` と ``')'`` は数学での意味とほぼ同じ意味を持っています; その中に含まれた表現はまとめてグループ化され、グループの中身を ``*``, ``+``, ``?`` や ``{m,n}`` のような繰り返しの修飾子を使って繰り返すことができます。例えば、 ``(ab)*`` は ``ab`` の0回以上の繰り返しにマッチします。 ::"
 
-#: ../../howto/regex.rst:791
+#: ../../howto/regex.rst:793
 msgid ""
 "Groups indicated with ``'('``, ``')'`` also capture the starting and ending "
 "index of the text that they match; this can be retrieved by passing an "
@@ -1169,27 +1168,27 @@ msgid ""
 "capture the span of text that they match. ::"
 msgstr "``'('``, ``')'`` で指示されたグループは、マッチしたテキスト開始と終了位置もキャプチャします; :meth:`group`, :meth:`start`, :meth:`end`, :meth:`span` に引数を与えて取り出せます。グループはゼロ始まりの数値です。グループ 0 は常に使えます; それは RE でマッチした全体で、 :ref:`Match オブジェクト <match-objects>` メソッドの全てはグループ 0 をデフォルト引数にしています。マッチするテキストの範囲をキャプチャしないグループの書き方はのちほど見ることにします。 ::"
 
-#: ../../howto/regex.rst:806
+#: ../../howto/regex.rst:808
 msgid ""
 "Subgroups are numbered from left to right, from 1 upward.  Groups can be "
 "nested; to determine the number, just count the opening parenthesis "
 "characters, going from left to right. ::"
 msgstr "サブグループは左から右へ1づつ番号付けされます。グループはネストしてもかまいません; 番号を決めるには、単に開き括弧を左から右へ数え上げます。 ::"
 
-#: ../../howto/regex.rst:819
+#: ../../howto/regex.rst:821
 msgid ""
 ":meth:`group` can be passed multiple group numbers at a time, in which case "
 "it will return a tuple containing the corresponding values for those groups."
 " ::"
 msgstr ":meth:`group` には一回に複数の引数を渡してもかまいません、その場合にはそれらのグループに対応する値を含むタプルを返します。 ::"
 
-#: ../../howto/regex.rst:825
+#: ../../howto/regex.rst:827
 msgid ""
 "The :meth:`groups` method returns a tuple containing the strings for all the"
 " subgroups, from 1 up to however many there are. ::"
 msgstr ":meth:`groups` メソッドは 1 から全てのサブグループの文字列を含むタプルを返します。 ::"
 
-#: ../../howto/regex.rst:831
+#: ../../howto/regex.rst:833
 msgid ""
 "Backreferences in a pattern allow you to specify that the contents of an "
 "earlier capturing group must also be found at the current location in the "
@@ -1200,11 +1199,11 @@ msgid ""
 "when incorporating backreferences in a RE."
 msgstr "パターン中で後方参照を利用することで、前に取り出されたグループが文字列の中の現在位置で見つかるように指定できます。例えば、``\\1`` はグループ1の内容が現在位置で見つかった場合成功し、それ以外の場合に失敗します。Python の文字列リテラルでもバックスラッシュに続く数字は任意の文字を文字列に含めるために使われるということを心に留めておいて下さい、そのため正規表現で後方参照を含む場合には raw string を必ず利用して下さい。"
 
-#: ../../howto/regex.rst:839
+#: ../../howto/regex.rst:841
 msgid "For example, the following RE detects doubled words in a string. ::"
 msgstr "例えば、以下の正規表現は二重になった単語を検出します。 ::"
 
-#: ../../howto/regex.rst:845
+#: ../../howto/regex.rst:847
 msgid ""
 "Backreferences like this aren't often useful for just searching through a "
 "string --- there are few text formats which repeat data in this way --- but "
@@ -1212,11 +1211,11 @@ msgid ""
 "substitutions."
 msgstr "このような後方参照は文字列を検索するだけの用途では多くの場合役に立ちません。--- このように繰り返されるテキストフォーマットは少数です。--- しかし、文字列の置換をする場合には *とても* 有効であることに気づくでしょう。"
 
-#: ../../howto/regex.rst:851
+#: ../../howto/regex.rst:853
 msgid "Non-capturing and Named Groups"
 msgstr "取り出さないグループと名前つきグループ"
 
-#: ../../howto/regex.rst:853
+#: ../../howto/regex.rst:855
 msgid ""
 "Elaborate REs may use many groups, both to capture substrings of interest, "
 "and to group and structure the RE itself.  In complex REs, it becomes "
@@ -1225,7 +1224,7 @@ msgid ""
 "expression extensions, so we'll look at that first."
 msgstr "念入りに作られた正規表現は多くのグループを利用します、その利用法には対象となる部分文字列を取り出す、正規表現自身をグループ化したり構造化する、という二つの方法があります。複雑な正規表現では、グループ番号を追っていくことは困難になっていきます。この問題の解決を助ける二つの機能があります。その両方が正規表現を拡張するための一般的な構文を利用します、まずはそれらをみてみましょう。"
 
-#: ../../howto/regex.rst:859
+#: ../../howto/regex.rst:861
 msgid ""
 "Perl 5 added several additional features to standard regular expressions, "
 "and the Python :mod:`re` module supports most of them.   It would have been "
@@ -1237,7 +1236,7 @@ msgid ""
 "writing ``\\&`` or ``[&]``."
 msgstr "Perl 5 は標準の正規表現にいくつかの機能が追加されました、 Python の :mod:`re` モジュールもその内のほとんどをサポートしています。 Perl の正規表現が標準の正規表現の違いが混乱を招かないように、新たな一文字の特殊文字や ``\\`` で始まる新しい特殊シーケンスを選ぶことは困難でした。新しい特殊文字として ``&`` を選ぶとします。これは古い正規表現では ``&`` は通常の文字であり、 ``\\&`` や ``[&]`` とエスケープして書く必要がなかったはずのものです。"
 
-#: ../../howto/regex.rst:867
+#: ../../howto/regex.rst:869
 msgid ""
 "The solution chosen by the Perl developers was to use ``(?...)`` as the "
 "extension syntax.  ``?`` immediately after a parenthesis was a syntax error "
@@ -1248,7 +1247,7 @@ msgid ""
 "capturing group containing the subexpression ``foo``)."
 msgstr "解決策として Perl 開発者が選んだものは ``(?...)`` を正規表現構文として利用することでした。括弧の直後の ``?`` は構文エラーとなります、これは ``?`` で繰り返す対象がないためです、そのためこれは互換性の問題を持ち込みません。 ``?`` の直後の文字はどの拡張が利用されるかを示しています、つまり、 ``(?=foo)`` は一つの拡張を利用したもの (肯定先読みアサーション) となり、 ``(?:foo)`` は別の拡張を利用した表現(``foo`` を含む取り込まないグループ)となります。"
 
-#: ../../howto/regex.rst:875
+#: ../../howto/regex.rst:877
 msgid ""
 "Python adds an extension syntax to Perl's extension syntax.  If the first "
 "character after the question mark is a ``P``, you know that it's an "
@@ -1260,7 +1259,7 @@ msgid ""
 "compatibility's sake."
 msgstr "Python は Perl の拡張構文にさらに拡張構文を加えています。クエスチョンマークの後の最初の文字が ``P`` の場合、それが Python 特有の拡張であることを示しています。現在では二つの拡張が存在しています: ``(?P<name>...)`` は名前つきグループを定義し、 ``(?P=name)`` は名前つきグループに対する後方参照となります。 Perl 5 の将来のバージョンで同様の機能が別の構文を利用して追加された場合、 :mod:`re` モジュールは互換性のために Python 特有の構文を残しつつ、新しい構文をサポートするように変更されます。"
 
-#: ../../howto/regex.rst:883
+#: ../../howto/regex.rst:885
 msgid ""
 "Now that we've looked at the general extension syntax, we can return to the "
 "features that simplify working with groups in complex REs. Since groups are "
@@ -1270,7 +1269,7 @@ msgid ""
 "and you change the numbers of everything that follows it."
 msgstr "さて、ここまでで一般的な拡張構文を見てきたので、複雑な正規表現を単純化するための機能について話を戻しましょう。グループは左から右に番号づけされ、複雑な正規表現は多くの番号を利用することになるので、正確な番号づけを追い続けることは難しくなります。そのような複雑な正規表現を変更することは悩ましい問題となります: 正規表現の先頭に新しいグループを挿入すれば、それ以後の全ての番号を変更することにまります。"
 
-#: ../../howto/regex.rst:890
+#: ../../howto/regex.rst:892
 msgid ""
 "Sometimes you'll want to use a group to collect a part of a regular "
 "expression, but aren't interested in retrieving the group's contents. You "
@@ -1278,7 +1277,7 @@ msgid ""
 "where you can replace the ``...`` with any other regular expression. ::"
 msgstr "グループの内容を取得することなく、正規表現の一部を集めるために、グループを利用したくなることがよくあります。このことを、取り込まないグループを使うことで明示的に示すことができます: ``(?:...)``, ``...`` は任意の正規表現に置き換えることができます。::"
 
-#: ../../howto/regex.rst:902
+#: ../../howto/regex.rst:904
 msgid ""
 "Except for the fact that you can't retrieve the contents of what the group "
 "matched, a non-capturing group behaves exactly the same as a capturing "
@@ -1291,13 +1290,13 @@ msgid ""
 "groups; neither form is any faster than the other."
 msgstr "マッチしたグループの内容を取得しないということを除けば、取り込まないグループは厳密に取り込むグループと同様に振る舞います; この中に何を入れてもかまいません、 ``*`` のような繰り返しの特殊文字で繰り返したり、他のグループ (取り込むまたは取り込まない) の入れ子にすることもでいます。 ``(?:...)`` は特に、既にあるパターンを変更する際に便利です、なぜなら他の番号づけ新しいグループを変更することなく新しいグループを追加することができます。取り込むグループと取り込まないグループで検索のパフォーマンスに差がないことにも触れておくべきことです; どちらも同じ速度で動作します。"
 
-#: ../../howto/regex.rst:911
+#: ../../howto/regex.rst:913
 msgid ""
 "A more significant feature is named groups: instead of referring to them by "
 "numbers, groups can be referenced by a name."
 msgstr "より重要な機能は名前つきグループです: 番号で参照する代わりに、グループに対して名前で参照できます。"
 
-#: ../../howto/regex.rst:914
+#: ../../howto/regex.rst:916
 msgid ""
 "The syntax for a named group is one of the Python-specific extensions: "
 "``(?P<name>...)``.  *name* is, obviously, the name of the group.  Named "
@@ -1309,20 +1308,20 @@ msgid ""
 "group in two ways::"
 msgstr "名前つきグループのための構文は、 Python 固有拡張の一つ: ``(?P<name>...)`` を使います。 *name* は、もちろん、グループの名前です。名前つきグループは取り込むグループと完全に同じに振る舞い、加えて名前が関連付けられます。 :ref:`Match オブジェクト <match-objects>` の取りこむグループを扱うメソッドは全て、番号によるグループ参照のための整数、名前によるグループ参照のための文字列、ともに許容しています。名前つきグループにも番号が振られますので、グループについての情報を、2つの方法で取り出せます::"
 
-#: ../../howto/regex.rst:929
+#: ../../howto/regex.rst:931
 msgid ""
 "Named groups are handy because they let you use easily-remembered names, "
 "instead of having to remember numbers.  Here's an example RE from the "
 ":mod:`imaplib` module::"
 msgstr "名前つきグループは、番号を覚える代わりに、簡単に覚えられる名前を利用できるので、簡単に扱うことができます。これは :mod:`imaplib` モジュールから正規表現の例です::"
 
-#: ../../howto/regex.rst:940
+#: ../../howto/regex.rst:942
 msgid ""
 "It's obviously much easier to retrieve ``m.group('zonem')``, instead of "
 "having to remember to retrieve group 9."
 msgstr "取得する番号9を覚えるよりも、 ``m.group('zonem')`` で取得した方が明らかに簡単にすみます。"
 
-#: ../../howto/regex.rst:943
+#: ../../howto/regex.rst:945
 msgid ""
 "The syntax for backreferences in an expression such as ``(...)\\1`` refers "
 "to the number of the group.  There's naturally a variant that uses the group"
@@ -1333,22 +1332,22 @@ msgid ""
 "``(?P<word>\\b\\w+)\\s+(?P=word)``::"
 msgstr "後方参照のための構文 ``(...)\\1`` はグループ番号を参照します。グループ番号の代わりに、グループ名を利用する変種があるのは当然でしょう。これはもう一つの Python 拡張です: ``(?P=name)`` は *name* と呼ばれるグループの内容を表わし現在位置で再びマッチされます。二重になった単語を見つける正規表現 ``(\\b\\w+)\\s+\\1`` は ``(?P<word>\\b\\w+)\\s+(?P=word)`` のように書くことができます::"
 
-#: ../../howto/regex.rst:956
+#: ../../howto/regex.rst:958
 msgid "Lookahead Assertions"
 msgstr "先読みアサーション (Lookahead Assertions)"
 
-#: ../../howto/regex.rst:958
+#: ../../howto/regex.rst:960
 msgid ""
 "Another zero-width assertion is the lookahead assertion.  Lookahead "
 "assertions are available in both positive and negative form, and  look like "
 "this:"
 msgstr "他のゼロ幅アサーションは先読みアサーションです。先読みアサーションは肯定、否定の両方の形式が利用可能です、これを見てください:"
 
-#: ../../howto/regex.rst:966
-msgid "(?=...)"
-msgstr "(?=...)"
+#: ../../howto/regex.rst:968
+msgid "``(?=...)``"
+msgstr "``(?=...)``"
 
-#: ../../howto/regex.rst:962
+#: ../../howto/regex.rst:964
 msgid ""
 "Positive lookahead assertion.  This succeeds if the contained regular "
 "expression, represented here by ``...``, successfully matches at the current"
@@ -1357,18 +1356,18 @@ msgid ""
 "is tried right where the assertion started."
 msgstr "肯定先読みアサーション。 ``...`` で表わす正規表現が現在位置でマッチすれば成功し、それ以外の場合失敗します。しかし、表現が試行された場合でもエンジンは先に進みません; パターンの残りの部分はアサーションの開始時点から右に試行します。"
 
-#: ../../howto/regex.rst:971
-msgid "(?!...)"
-msgstr "(?!...)"
+#: ../../howto/regex.rst:973
+msgid "``(?!...)``"
+msgstr "``(?!...)``"
 
-#: ../../howto/regex.rst:969
+#: ../../howto/regex.rst:971
 msgid ""
 "Negative lookahead assertion.  This is the opposite of the positive "
 "assertion; it succeeds if the contained expression *doesn't* match at the "
 "current position in the string."
 msgstr "否定先読みアサーション。これは肯定アサーションの逆で、正規表現が文字列の現在位置にマッチ *しなかった* 場合に成功します。"
 
-#: ../../howto/regex.rst:973
+#: ../../howto/regex.rst:975
 msgid ""
 "To make this concrete, let's look at a case where a lookahead is useful. "
 "Consider a simple pattern to match a filename and split it apart into a base"
@@ -1376,15 +1375,15 @@ msgid ""
 "``news`` is the base name, and ``rc`` is the filename's extension."
 msgstr "より具体的にするため、先読みが便利な場合をみてみましょう。ファイル名にマッチし、 ``.`` で分けられた基本部分と拡張子に分離する単純なパターンを考えましょう。例えば、 ``news.rc`` は ``news`` が基本部分で ``rc`` がファイル名の拡張子です。"
 
-#: ../../howto/regex.rst:978
+#: ../../howto/regex.rst:980
 msgid "The pattern to match this is quite simple:"
 msgstr "マッチするパターンはとても単純です:"
 
-#: ../../howto/regex.rst:980
+#: ../../howto/regex.rst:982
 msgid "``.*[.].*$``"
 msgstr "``.*[.].*$``"
 
-#: ../../howto/regex.rst:982
+#: ../../howto/regex.rst:984
 msgid ""
 "Notice that the ``.`` needs to be treated specially because it's a "
 "metacharacter; I've put it inside a character class.  Also notice the "
@@ -1393,24 +1392,24 @@ msgid ""
 "and ``autoexec.bat`` and ``sendmail.cf`` and ``printers.conf``."
 msgstr "``.`` を特別に扱う必要があることに注意して下さい、なぜならこれは特殊文字だからです; 上では文字クラス内に入れました。また ``$`` が続いていることにも注意して下さい; これは文字列の残り全てが拡張子に含まれることを保障するために追加されています。この正規表現は ``foo.bar``, ``autoexec.bat``, ``sendmail.cf``, ``printers.conf`` にマッチします。"
 
-#: ../../howto/regex.rst:988
+#: ../../howto/regex.rst:990
 msgid ""
 "Now, consider complicating the problem a bit; what if you want to match "
 "filenames where the extension is not ``bat``? Some incorrect attempts:"
 msgstr "さて、問題を少し複雑にしてみましょう; 拡張子が ``bat`` でないファイル名にマッチしたい場合はどうでしょう？間違った試み:"
 
-#: ../../howto/regex.rst:991
+#: ../../howto/regex.rst:993
 msgid ""
 "``.*[.][^b].*$``  The first attempt above tries to exclude ``bat`` by "
 "requiring that the first character of the extension is not a ``b``.  This is"
 " wrong, because the pattern also doesn't match ``foo.bar``."
 msgstr "``.*[.][^b].*$`` この最初の ``bat`` を除く試みは、最初の文字が ``b`` でないことを要求します。これは誤っています、なぜなら ``foo.bar`` にもマッチしないからです。"
 
-#: ../../howto/regex.rst:995
+#: ../../howto/regex.rst:997
 msgid "``.*[.]([^b]..|.[^a].|..[^t])$``"
 msgstr "``.*[.]([^b]..|.[^a].|..[^t])$``"
 
-#: ../../howto/regex.rst:997
+#: ../../howto/regex.rst:999
 msgid ""
 "The expression gets messier when you try to patch up the first solution by "
 "requiring one of the following cases to match: the first character of the "
@@ -1421,18 +1420,18 @@ msgid ""
 "complicate the pattern again in an effort to fix it."
 msgstr "正規表現が混乱してきました。最初の解決策を取り繕って、以下の場合に合わせることを要求しています: 拡張子の最初の文字は ``b`` でなく; 二番目の文字は ``a`` でなく; 三番目の文字は ``t`` でない。これは ``foo.bar`` を受け付けますが、 ``autoexec.bat`` は拒否します。しかし、三文字の拡張子を要求し、 ``sendmail.cf`` のような二文字の拡張子を受け付けません。これを修正するのにパターンを再び複雑にすることになります。"
 
-#: ../../howto/regex.rst:1005
+#: ../../howto/regex.rst:1007
 msgid "``.*[.]([^b].?.?|.[^a]?.?|..?[^t]?)$``"
 msgstr "``.*[.]([^b].?.?|.[^a]?.?|..?[^t]?)$``"
 
-#: ../../howto/regex.rst:1007
+#: ../../howto/regex.rst:1009
 msgid ""
 "In the third attempt, the second and third letters are all made optional in "
 "order to allow matching extensions shorter than three characters, such as "
 "``sendmail.cf``."
 msgstr "三番目の試みでは、 ``sendmail.cf`` のように三文字より短い拡張子とマッチするために第二第三の文字を全てオプションにしています。"
 
-#: ../../howto/regex.rst:1011
+#: ../../howto/regex.rst:1013
 msgid ""
 "The pattern's getting really complicated now, which makes it hard to read "
 "and understand.  Worse, if the problem changes and you want to exclude both "
@@ -1440,74 +1439,75 @@ msgid ""
 "complicated and confusing."
 msgstr "パターンはさらに複雑さを増し、読みにくく、理解が難しくなりました。より悪いことに、問題が ``bat`` と ``exe`` 両方を拡張子から除きたい場合に変わった場合、パターンはより複雑で混乱しやすいものになります。"
 
-#: ../../howto/regex.rst:1016
+#: ../../howto/regex.rst:1018
 msgid "A negative lookahead cuts through all this confusion:"
 msgstr "否定先読みはこの混乱全てを取り除きます:"
 
-#: ../../howto/regex.rst:1018
+#: ../../howto/regex.rst:1020
 msgid ""
-"``.*[.](?!bat$).*$``  The negative lookahead means: if the expression "
+"``.*[.](?!bat$)[^.]*$``  The negative lookahead means: if the expression "
 "``bat`` doesn't match at this point, try the rest of the pattern; if "
 "``bat$`` does match, the whole pattern will fail.  The trailing ``$`` is "
 "required to ensure that something like ``sample.batch``, where the extension"
-" only starts with ``bat``, will be allowed."
-msgstr "``.*[.](?!bat$).*$`` 否定先読みは以下を意味します: この位置で拡張子 ``bat`` にマッチしない場合、残りのパターンが試行されます; もし ``bat$`` にマッチすればパターン全体が失敗します。 ``$`` を続けることで、 ``sample.batch`` にように ``bat`` で始まる拡張子を許容することを保証しています。"
+" only starts with ``bat``, will be allowed.  The ``[^.]*`` makes sure that "
+"the pattern works when there are multiple dots in the filename."
+msgstr "``.*[.](?!bat$)[^.]*$`` 否定先読みは以下を意味します: この位置で拡張子 ``bat`` にマッチしない場合、残りのパターンが試行されます; もし ``bat$`` にマッチすればパターン全体が失敗します。``$`` を続けることで、``sample.batch`` にように ``bat`` で始まる拡張子を許容することを保証しています。\nこのパターンで ``[^.]*`` を使うことで、ファイル名に複数のドットがあったときにも上手くいくようになります。"
 
-#: ../../howto/regex.rst:1024
+#: ../../howto/regex.rst:1027
 msgid ""
 "Excluding another filename extension is now easy; simply add it as an "
 "alternative inside the assertion.  The following pattern excludes filenames "
 "that end in either ``bat`` or ``exe``:"
 msgstr "他のファイル名の拡張子を除くことも簡単です; 単純にアサーション内に拡張子を代替 (or) で加えます。以下のパターンは ``bat`` や ``exe`` のどちらで終わるファイル名を除外します:"
 
-#: ../../howto/regex.rst:1028
-msgid "``.*[.](?!bat$|exe$).*$``"
-msgstr "``.*[.](?!bat$|exe$).*$``"
+#: ../../howto/regex.rst:1031
+msgid "``.*[.](?!bat$|exe$)[^.]*$``"
+msgstr "``.*[.](?!bat$|exe$)[^.]*$``"
 
-#: ../../howto/regex.rst:1032
+#: ../../howto/regex.rst:1035
 msgid "Modifying Strings"
 msgstr "文字列を変更する"
 
-#: ../../howto/regex.rst:1034
+#: ../../howto/regex.rst:1037
 msgid ""
 "Up to this point, we've simply performed searches against a static string. "
 "Regular expressions are also commonly used to modify strings in various "
 "ways, using the following pattern methods:"
 msgstr "ここまででは単純に静的な文字列に対する検索を実行してきました。正規表現は文字列を様々な方法で変更するのにもよく使われます。変更には以下のパターンメソッドが利用されます:"
 
-#: ../../howto/regex.rst:1041
+#: ../../howto/regex.rst:1044
 msgid "``split()``"
 msgstr "``split()``"
 
-#: ../../howto/regex.rst:1041
+#: ../../howto/regex.rst:1044
 msgid "Split the string into a list, splitting it wherever the RE matches"
 msgstr "文字列をリストに分割する、正規表現がマッチした全ての場所で分割を行う"
 
-#: ../../howto/regex.rst:1044
+#: ../../howto/regex.rst:1047
 msgid "``sub()``"
 msgstr "``sub()``"
 
-#: ../../howto/regex.rst:1044
+#: ../../howto/regex.rst:1047
 msgid ""
 "Find all substrings where the RE matches, and replace them with a different "
 "string"
 msgstr "正規表現にマッチした全ての文字列を発見し、別の文字列に置き換えます"
 
-#: ../../howto/regex.rst:1047
+#: ../../howto/regex.rst:1050
 msgid "``subn()``"
 msgstr "``subn()``"
 
-#: ../../howto/regex.rst:1047
+#: ../../howto/regex.rst:1050
 msgid ""
 "Does the same thing as :meth:`sub`,  but returns the new string and the "
 "number of replacements"
 msgstr ":meth:`sub` と同じことをしますが、新しい文字列と置き換えの回数を返します"
 
-#: ../../howto/regex.rst:1054
+#: ../../howto/regex.rst:1057
 msgid "Splitting Strings"
 msgstr "文字列の分割"
 
-#: ../../howto/regex.rst:1056
+#: ../../howto/regex.rst:1059
 msgid ""
 "The :meth:`split` method of a pattern splits a string apart wherever the RE "
 "matches, returning a list of the pieces. It's similar to the :meth:`split` "
@@ -1517,7 +1517,7 @@ msgid ""
 "function, too."
 msgstr "パターンの :meth:`split` メソッドは正規表現にマッチした全ての場所で文字列を分割し、各部分のリストを返します。これは文字列の :meth:`split` メソッドに似ていますが、より一般的なデリミタを提供します; :meth:`split` は空白や固定文字列による分割のみをサポートしてます。ご想像通り、モジュールレベルの :func:`re.split` 関数もあります。"
 
-#: ../../howto/regex.rst:1067
+#: ../../howto/regex.rst:1070
 msgid ""
 "Split *string* by the matches of the regular expression.  If capturing "
 "parentheses are used in the RE, then their contents will also be returned as"
@@ -1525,7 +1525,7 @@ msgid ""
 "splits are performed."
 msgstr "*string* を正規表現のマッチで分割します。正規表現内に取り込むための括弧が利用されている場合、その内容も結果のリストの一部として返されます。 *maxsplit* が非ゼロの場合、最大で *maxsplit* の分割が実行されます。"
 
-#: ../../howto/regex.rst:1072
+#: ../../howto/regex.rst:1075
 msgid ""
 "You can limit the number of splits made, by passing a value for *maxsplit*. "
 "When *maxsplit* is nonzero, at most *maxsplit* splits will be made, and the "
@@ -1534,7 +1534,7 @@ msgid ""
 "characters. ::"
 msgstr "*maxsplit* に値を渡すことで、分割される回数を制限することができます。 *maxsplit* が非ゼロの場合、最大で *maxsplit* の分割が行なわれ、文字列の残りがリストの最終要素として返されます。以下の例では、デリミタは任意の英数文字のシーケンスです。 ::"
 
-#: ../../howto/regex.rst:1084
+#: ../../howto/regex.rst:1087
 msgid ""
 "Sometimes you're not only interested in what the text between delimiters is,"
 " but also need to know what the delimiter was.  If capturing parentheses are"
@@ -1542,17 +1542,17 @@ msgid ""
 "Compare the following calls::"
 msgstr "興味の対象がデリミタの間のテキストだけでなく、デリミタが何なのかということを知りたい場合はよくあります。取りこみ用の括弧を正規表現に使った場合、その値もリストの一部として返されます。以下の呼び出しを比較してみましょう::"
 
-#: ../../howto/regex.rst:1096
+#: ../../howto/regex.rst:1099
 msgid ""
 "The module-level function :func:`re.split` adds the RE to be used as the "
 "first argument, but is otherwise the same.   ::"
 msgstr "モジュールレベル関数 :func:`re.split` は最初の引数に利用する正規表現を追加しますが、それ以外は同じです。 ::"
 
-#: ../../howto/regex.rst:1108
+#: ../../howto/regex.rst:1111
 msgid "Search and Replace"
 msgstr "検索と置換"
 
-#: ../../howto/regex.rst:1110
+#: ../../howto/regex.rst:1113
 msgid ""
 "Another common task is to find all the matches for a pattern, and replace "
 "them with a different string.  The :meth:`sub` method takes a replacement "
@@ -1560,39 +1560,39 @@ msgid ""
 "processed."
 msgstr "もう一つのよくある作用は、パターンにマッチする全てを探し、異なる文字列に置換します。 :meth:`sub` メソッドは置換する値をとります、文字列と関数の両方をとることができ、文字列を処理します。"
 
-#: ../../howto/regex.rst:1118
+#: ../../howto/regex.rst:1121
 msgid ""
 "Returns the string obtained by replacing the leftmost non-overlapping "
 "occurrences of the RE in *string* by the replacement *replacement*.  If the "
 "pattern isn't found, *string* is returned unchanged."
 msgstr "*string* 内で最も長く、他の部分と重複するところがない正規表現をを *replacement* に置換した文字列を返します。パターンが見つからなかった場合 *string* は変更されずに返されます。"
 
-#: ../../howto/regex.rst:1122
+#: ../../howto/regex.rst:1125
 msgid ""
 "The optional argument *count* is the maximum number of pattern occurrences "
 "to be replaced; *count* must be a non-negative integer.  The default value "
 "of 0 means to replace all occurrences."
 msgstr "オプション引数 *count* はパターンの出現の最大置換回数です; *count* は非負の整数でなければいけません。デフォルト値 0 は全ての出現で置換することを意味します。"
 
-#: ../../howto/regex.rst:1126
+#: ../../howto/regex.rst:1129
 msgid ""
 "Here's a simple example of using the :meth:`sub` method.  It replaces colour"
 " names with the word ``colour``::"
 msgstr "ここに :meth:`sub` メソッドを使った単純な例があります。これは色の名前を ``colour`` に置換します::"
 
-#: ../../howto/regex.rst:1135
+#: ../../howto/regex.rst:1138
 msgid ""
 "The :meth:`subn` method does the same work, but returns a 2-tuple containing"
 " the new string value and the number of replacements  that were performed::"
 msgstr ":meth:`subn` メソッドも同じ働きをします、ただ新しい文字列と置換の実行回数を含む 2-タプルを返します::"
 
-#: ../../howto/regex.rst:1144
+#: ../../howto/regex.rst:1147
 msgid ""
 "Empty matches are replaced only when they're not adjacent to a previous "
 "match. ::"
 msgstr "空文字列とのマッチは直前にマッチした部分と隣接していない場合にのみ置換されます。 ::"
 
-#: ../../howto/regex.rst:1151
+#: ../../howto/regex.rst:1154
 msgid ""
 "If *replacement* is a string, any backslash escapes in it are processed.  "
 "That is, ``\\n`` is converted to a single newline character, ``\\r`` is "
@@ -1603,13 +1603,13 @@ msgid ""
 "string."
 msgstr "*replacement* が文字列の場合、文字列内のバックスラッシュエスケープは処理されます。つまり、 ``\\n`` は改行文字に ``\\r`` はキャリッジリターンに、等となります。 ``\\j`` のような未知のエスケープシーケンスはそのまま残されます。 ``\\6`` のような後方参照は正規表現内の対応するグループにマッチする文字列に置換されます。これを使うことで元のテキストの一部を、置換後の文字列に組み込むことができます。"
 
-#: ../../howto/regex.rst:1158
+#: ../../howto/regex.rst:1161
 msgid ""
 "This example matches the word ``section`` followed by a string enclosed in "
 "``{``, ``}``, and changes ``section`` to ``subsection``::"
 msgstr "この例は単語 ``section`` に続く ``{`` と ``}`` で閉じられた文字列にマッチし、 ``section`` を ``subsection`` に変更します::"
 
-#: ../../howto/regex.rst:1165
+#: ../../howto/regex.rst:1168
 msgid ""
 "There's also a syntax for referring to named groups as defined by the "
 "``(?P<name>...)`` syntax.  ``\\g<name>`` will use the substring matched by "
@@ -1621,7 +1621,7 @@ msgid ""
 "equivalent, but use all three variations of the replacement string. ::"
 msgstr "``(?P<name>...)`` 構文で定義された名前つきグループを参照するための構文もあります。 ``\\g<name>`` は ``name`` で名前づけされたグループにマッチする文字列を利用し、 ``\\g<number>`` は対応するグループ番号を利用します。つまり ``\\g<2>`` は ``\\2`` と等価ですが、 ``\\g<2>0`` のような置換文字列に対しては明確に異なります。 (``\\20`` はグループ番号20への参照と解釈され、グループ2の後にリテラル文字 ``'0'`` が続くとは解釈されません。) 以下に示す置換は全て等価ですが、これらは文字列置換に全部で3種の変種を利用しています。 ::"
 
-#: ../../howto/regex.rst:1182
+#: ../../howto/regex.rst:1185
 msgid ""
 "*replacement* can also be a function, which gives you even more control.  If"
 " *replacement* is a function, the function is called for every non-"
@@ -1630,13 +1630,13 @@ msgid ""
 " information to compute the desired replacement string and return it."
 msgstr "より細かな制御を手中にするために *replacement* として関数を使うことが出来ます。 *replacement* が関数であれば、その関数は重なり合わない *pattern* の発生のたびに呼び出されます。それぞれの呼び出しで、マッチした :ref:`Match オブジェクト <match-objects>` が引数として渡されるので、望みの置換と返却のためにこの情報を利用出来ます。"
 
-#: ../../howto/regex.rst:1188
+#: ../../howto/regex.rst:1191
 msgid ""
 "In the following example, the replacement function translates decimals into "
 "hexadecimal::"
 msgstr "続く例では、置換関数は十進数文字列を十六進数文字列に変換しています::"
 
-#: ../../howto/regex.rst:1200
+#: ../../howto/regex.rst:1203
 msgid ""
 "When using the module-level :func:`re.sub` function, the pattern is passed "
 "as the first argument.  The pattern may be provided as an object or as a "
@@ -1646,11 +1646,11 @@ msgid ""
 "x'``."
 msgstr "モジュールレベルの :func:`re.sub` 関数を使うときには、パターンが最初の引数として渡されます。パターンはオブジェクトや文字列をとります; 正規表現フラグを指定する必要がある場合、パターンオブジェクトを最初の引数として使うか、修飾子を埋め込んだパターン文字列を使うかしなければいけません、例えば ``sub(\"(?i)b+\", \"x\", \"bbbb BBBB\")`` は ``'x x'`` を返します。"
 
-#: ../../howto/regex.rst:1208
+#: ../../howto/regex.rst:1211
 msgid "Common Problems"
 msgstr "よくある問題"
 
-#: ../../howto/regex.rst:1210
+#: ../../howto/regex.rst:1213
 msgid ""
 "Regular expressions are a powerful tool for some applications, but in some "
 "ways their behaviour isn't intuitive and at times they don't behave the way "
@@ -1658,11 +1658,11 @@ msgid ""
 " pitfalls."
 msgstr "正規表現はいくつかの応用に対して強力なツールですが、いくつかの部分でそれらの振る舞いは直感的ではなく、期待通りに振る舞わないことがあります。この節では最もよくある落とし穴を指摘します。"
 
-#: ../../howto/regex.rst:1216
+#: ../../howto/regex.rst:1219
 msgid "Use String Methods"
 msgstr "文字列メソッドを利用する"
 
-#: ../../howto/regex.rst:1218
+#: ../../howto/regex.rst:1221
 msgid ""
 "Sometimes using the :mod:`re` module is a mistake.  If you're matching a "
 "fixed string, or a single character class, and you're not using any "
@@ -1674,7 +1674,7 @@ msgid ""
 "expression engine."
 msgstr "いくつかの場合 :mod:`re` モジュールを利用することは間違いである場合があります。固定文字列や単一の文字クラスにマッチさせる場合や、 :const:`IGNORECASE` フラグのような :mod:`re` の機能を利用しない場合、正規表現の全ての能力は必要とされていなでしょう。文字列は固定文字列に対する操作を実行するメソッドを持っていて、大きな汎用化された正規表現エンジンではなく、目的のために最適化された単一の小さな C loop で実装されているため、大抵の場合高速です."
 
-#: ../../howto/regex.rst:1226
+#: ../../howto/regex.rst:1229
 msgid ""
 "One example might be replacing a single fixed string with another one; for "
 "example, you might replace ``word`` with ``deed``.  ``re.sub()`` seems like "
@@ -1687,7 +1687,7 @@ msgid ""
 ":meth:`replace`'s abilities.)"
 msgstr "一つの例としては、単一の固定文字列を別の固定文字列に置き換える作業がそうかもしれません; 例えば ``word`` を ``deed`` で置換したい場合です。 ``re.sub()`` はこのために使うことができるように見えますが、 :meth:`replace` メソッドを利用することを考えた方がいいでしょう。 :func:`replace` は単語内の ``word`` も置換します、 ``swordfish`` は ``sdeedfish`` に変わることに注意して下さい。しかし、単純な正規表現 ``word`` も同様に動作します。 (単語の一部に対する置換の実行を避けるには、パターンを ``\\bword\\b`` として、 ``word`` が両側に単語の境界を必要とするようにします。これは :meth:`replace` の能力を越えた仕事です。)"
 
-#: ../../howto/regex.rst:1235
+#: ../../howto/regex.rst:1238
 msgid ""
 "Another common task is deleting every occurrence of a single character from "
 "a string or replacing it with another single character.  You might do this "
@@ -1696,17 +1696,17 @@ msgid ""
 "operation can be."
 msgstr "別のよくある作業は、文字列の中に出現する文字を全て削除することと、別の文字で置換することです。この作業を ``re.sub('\\n', ' ', S)`` のようにして行うかもしれませんが、 :meth:`translate` は削除と置換の両方の作業をこなし、正規表現操作よりも高速に行うことができます。"
 
-#: ../../howto/regex.rst:1241
+#: ../../howto/regex.rst:1244
 msgid ""
 "In short, before turning to the :mod:`re` module, consider whether your "
 "problem can be solved with a faster and simpler string method."
 msgstr "要は、 :mod:`re` モジュールに向う前に問題が高速で単純な文字列メソッドで解決できるか考えましょうということです。"
 
-#: ../../howto/regex.rst:1246
+#: ../../howto/regex.rst:1249
 msgid "match() versus search()"
 msgstr "match() 対 search()"
 
-#: ../../howto/regex.rst:1248
+#: ../../howto/regex.rst:1251
 msgid ""
 "The :func:`match` function only checks if the RE matches at the beginning of"
 " the string while :func:`search` will scan forward through the string for a "
@@ -1715,13 +1715,13 @@ msgid ""
 "the match wouldn't start at zero,  :func:`match` will *not* report it. ::"
 msgstr ":func:`match` 関数は文字列の先頭に正規表現がマッチするかどうか調べるだけで、一方 :func:`search` はマッチするために文字列を進めて走査します。この違いを認識しておくことは重要なことです。 :func:`match` は開始位置0でマッチしたときのみ報告します; もし開始位置0でマッチしなければ、 :func:`match` はそれを報告 *しません* 。 ::"
 
-#: ../../howto/regex.rst:1259
+#: ../../howto/regex.rst:1262
 msgid ""
 "On the other hand, :func:`search` will scan forward through the string, "
 "reporting the first match it finds. ::"
 msgstr "一方 :func:`search` は文字列を先に進めて走査文字列を進めて走査し、最初にみつけたマッチを報告します。 ::"
 
-#: ../../howto/regex.rst:1267
+#: ../../howto/regex.rst:1270
 msgid ""
 "Sometimes you'll be tempted to keep using :func:`re.match`, and just add "
 "``.*`` to the front of your RE.  Resist this temptation and use "
@@ -1734,18 +1734,18 @@ msgid ""
 "is found."
 msgstr "しばしば、 :func:`re.match` を使い、 ``.*`` を正規表現の最初に付け加える誘惑にからされることがあるでしょう。この誘惑に打ち克って、代わりに :func:`re.search` を利用すべきです。正規表現コンパイラはマッチを探す処理の高速化のためにいくつかの解析を行います。そのような解析のうちのひとつはマッチの最初の文字が何であるか評価することです; 例えば、 ``Crow`` で始まるパターンは ``'C'`` から始まらなければいけません。解析によってエンジンは速やかに開始文字を探して走査します、 ``'C'`` が発見された場合にはじめて完全なマッチを試みます。"
 
-#: ../../howto/regex.rst:1276
+#: ../../howto/regex.rst:1279
 msgid ""
 "Adding ``.*`` defeats this optimization, requiring scanning to the end of "
 "the string and then backtracking to find a match for the rest of the RE.  "
 "Use :func:`re.search` instead."
 msgstr "``.*`` を追加することはこの最適化を無効にします、文字列の終端までの走査が必要となり、走査後には残りの正規表現とのマッチ部分を見つけるために引き返すことになります。代わりに :func:`re.search` を利用して下さい。"
 
-#: ../../howto/regex.rst:1282
+#: ../../howto/regex.rst:1285
 msgid "Greedy versus Non-Greedy"
 msgstr "貪欲 (greedy) 対非貪欲 (non-greedy)"
 
-#: ../../howto/regex.rst:1284
+#: ../../howto/regex.rst:1287
 msgid ""
 "When repeating a regular expression, as in ``a*``, the resulting action is "
 "to consume as much of the pattern as possible.  This fact often bites you "
@@ -1754,7 +1754,7 @@ msgid ""
 "HTML tag doesn't work because of the greedy nature of ``.*``. ::"
 msgstr "正規表現を繰り返す場合、たとえば ``a*`` のように、できるだけパターンの多くにマッチするように動作することになります。この動作は、例えば角括弧で囲まれた HTML タグのような左右対称のデリミタの対にマッチしようという場合に問題となります。単一の HTML タグにマッチする素朴な正規表現はうまく動作しません、なぜならば ``.*`` は貪欲に動作するからです。 ::"
 
-#: ../../howto/regex.rst:1298
+#: ../../howto/regex.rst:1301
 msgid ""
 "The RE matches the ``'<'`` in ``<html>``, and the ``.*`` consumes the rest "
 "of the string.  There's still more left in the RE, though, and the ``>`` "
@@ -1764,7 +1764,7 @@ msgid ""
 "``</title>``, which isn't what you want."
 msgstr "正規表現は ``<html>`` 内の ``'<'`` にマッチし、 ``.*`` は残りの文字列の全てにマッチします。しかし、正規表現は以前残っています、 ``>`` は文字列の終端にマッチしないので、正規表現は一文字ずつ ``>`` とマッチするまで引き返すことになります。最終的にマッチする領域は ``<html>`` の ``'<'`` から ``</title>`` の ``'>'`` にまで及ぶことになりますが、これは望んだ結果ではありません。"
 
-#: ../../howto/regex.rst:1305
+#: ../../howto/regex.rst:1308
 msgid ""
 "In this case, the solution is to use the non-greedy qualifiers ``*?``, "
 "``+?``, ``??``, or ``{m,n}?``, which match as *little* text as possible.  In"
@@ -1773,7 +1773,7 @@ msgid ""
 "retrying the ``'>'`` at every step.  This produces just the right result::"
 msgstr "この場合、解決法は非貪欲を示す修飾子 ``*?``, ``+?``, ``??`` または ``{m,n}?`` を利用することです、これらはテキストに可能な限り *少なく* マッチします。上の例では、 ``'>'`` は最初の ``'<'`` とのマッチ後すぐに ``'>'`` を試みま、失敗した場合にはエンジンが文字を先に進め、``'>'`` が毎ステップ再試行されます。この動作は正しい結果を生み出します::"
 
-#: ../../howto/regex.rst:1314
+#: ../../howto/regex.rst:1317
 msgid ""
 "(Note that parsing HTML or XML with regular expressions is painful. Quick-"
 "and-dirty patterns will handle common cases, but HTML and XML have special "
@@ -1783,11 +1783,11 @@ msgid ""
 "such tasks.)"
 msgstr "(HTML や XML を正規表現でパースすることは苦痛を伴うものであることは記憶に留めておいて下さい。素早く、汚いパターンは大抵の場合うまく動作しますが、HTML と XML は正規表現が破綻する特別な例です; 全ての可能な場合にうまく動作する正規表現を書き上げたときには、パターンは *非常に* 複雑なものになります。そのような作業をする場合には HTML や XML パーサを利用しましょう。)"
 
-#: ../../howto/regex.rst:1322
+#: ../../howto/regex.rst:1325
 msgid "Using re.VERBOSE"
 msgstr "re.VERBOSE の利用"
 
-#: ../../howto/regex.rst:1324
+#: ../../howto/regex.rst:1327
 msgid ""
 "By now you've probably noticed that regular expressions are a very compact "
 "notation, but they're not terribly readable.  REs of moderate complexity can"
@@ -1795,14 +1795,14 @@ msgid ""
 " making them difficult to read and understand."
 msgstr "ここまでで、正規表現がとても簡潔な表記であることに気づいたでしょう、また、正規表現は読みやすいものでもないということにも気づいたことでしょう。そこそこに入り組んだ正規表現ははバックスラッシュ、括弧、特殊文字が長く続いて、読みにくく、理解しづらいものになります。"
 
-#: ../../howto/regex.rst:1329
+#: ../../howto/regex.rst:1332
 msgid ""
 "For such REs, specifying the ``re.VERBOSE`` flag when compiling the regular "
 "expression can be helpful, because it allows you to format the regular "
 "expression more clearly."
 msgstr "そのような正規表現に対しては正規表現をコンパイルする時に ``re.VERBOSE`` フラグを指定することが助けになります、なぜなら、そうすることによって正規表現を明確にフォーマットすることができるからです。"
 
-#: ../../howto/regex.rst:1333
+#: ../../howto/regex.rst:1336
 msgid ""
 "The ``re.VERBOSE`` flag has several effects.  Whitespace in the regular "
 "expression that *isn't* inside a character class is ignored.  This means "
@@ -1813,15 +1813,15 @@ msgid ""
 "quoted strings, this enables REs to be formatted more neatly::"
 msgstr "``re.VERBOSE`` の効果はいくつかあります。正規表現内の文字クラス内に *無い* 空白は無視されます。これは、 ``dog | cat`` のような表現が少々可読性の落ちる ``dog|cat`` と等価となるということです、しかし、 ``[a b]`` は依然として ``'a'``, ``'b'``, または空白にマッチします。加えて、正規表現にコメントを入れることもできるようになります; ``#`` 文字から次の改行までがコメントの範囲です。三重クォートを利用することで、正規表現をきちんとフォーマットすることができます::"
 
-#: ../../howto/regex.rst:1350
+#: ../../howto/regex.rst:1353
 msgid "This is far more readable than::"
 msgstr "これは下よりはるかに読みやすいです::"
 
-#: ../../howto/regex.rst:1356
+#: ../../howto/regex.rst:1359
 msgid "Feedback"
 msgstr "フィードバック"
 
-#: ../../howto/regex.rst:1358
+#: ../../howto/regex.rst:1361
 msgid ""
 "Regular expressions are a complicated topic.  Did this document help you "
 "understand them?  Were there parts that were unclear, or Problems you "
@@ -1829,7 +1829,7 @@ msgid ""
 "improvements to the author."
 msgstr "正規表現は複雑な話題です。このドキュメントは助けになったでしょうか？わかりにくかったところや、あなたが遭遇した問題が扱われていない等なかったでしょうか？もしそんな問題があれば、著者に改善の提案を送って下さい。"
 
-#: ../../howto/regex.rst:1363
+#: ../../howto/regex.rst:1366
 msgid ""
 "The most complete book on regular expressions is almost certainly Jeffrey "
 "Friedl's Mastering Regular Expressions, published by O'Reilly.  "
@@ -1840,10 +1840,10 @@ msgid ""
 "you much.)  Consider checking it out from your library."
 msgstr "O'Reilly から出版されている Jeffrey Friedl の Mastering Regular Expressions は正規表現に関するほぼ完璧な書籍です (訳注　日本語訳「詳説　正規表現」が出版されています) 。不幸なことに、この本は Perl と Java の正規表現を集中して扱っていて、 Python の正規表現については全く扱っていません、そのため Python プログラミングのためのレファレンスとして使うことはできません。 (第一版はいまや削除された Python の :mod:`regex` モジュールについて扱っていましたが、これはあまり役に立たないでしょう。) 図書館で調べるのを検討してみましょう。"
 
-#: ../../howto/regex.rst:1373
+#: ../../howto/regex.rst:1376
 msgid "Footnotes"
 msgstr "注記"
 
-#: ../../howto/regex.rst:1374
+#: ../../howto/regex.rst:1377
 msgid "Introduced in Python 2.2.2."
 msgstr "Python 2.2.2 で導入されました。"

@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-06 08:57+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:36+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -94,8 +93,8 @@ msgstr "バッファを通してアクセスできる要素の形式を指定す
 #: ../../c-api/buffer.rst:76
 msgid ""
 "The number of dimensions the memory represents as a multi-dimensional array."
-"  If it is 0, :c:data:`strides` and :c:data:`suboffsets` must be *NULL*."
-msgstr "メモリが多次元配列を表している時の次元数。 0 の場合、 :c:data:`strides` と :c:data:`suboffsets` は *NULL* でなければなりません。"
+"  If it is ``0``, :c:data:`strides` and :c:data:`suboffsets` must be *NULL*."
+msgstr ""
 
 #: ../../c-api/buffer.rst:82
 msgid ""
@@ -156,8 +155,8 @@ msgid "Buffer related functions"
 msgstr "バッファ関連関数"
 
 #: ../../c-api/buffer.rst:146
-msgid "Return 1 if *obj* supports the buffer interface otherwise 0."
-msgstr "*obj* がバッファインタフェースをサポートしている場合に 1 を、それ以外の場合に 0 を返します。"
+msgid "Return ``1`` if *obj* supports the buffer interface otherwise ``0``."
+msgstr ""
 
 #: ../../c-api/buffer.rst:151
 msgid ""
@@ -182,8 +181,8 @@ msgid ""
 msgstr "バッファ提供側はすべての方法でメモリを共有できるとは限らず、呼び出し側に何かが不可能であることを伝えるためにエラーを発生させる必要があるかもしれません。その場合のエラーは、もしその問題を実際に引き起こしているのが別のエラーだったとしても、 :exc:`BufferError` でなければなりません。バッファ提供側は flag の情報を使って :c:data:`Py_buffer` 構造体のどのフィールドへの非デフォルト値の設定を省略したり、要求されたシンプルな view を提供できない場合はエラーを発生させたりすることができます。"
 
 #: ../../c-api/buffer.rst:167
-msgid "0 is returned on success and -1 on error."
-msgstr "成功したら 0 が、エラー時には -1 が返されます。"
+msgid "``0`` is returned on success and ``-1`` on error."
+msgstr ""
 
 #: ../../c-api/buffer.rst:169
 msgid "The following table gives possible values to the *flags* arguments."
@@ -367,10 +366,10 @@ msgstr ":c:data:`~Py_buffer.itemsize` の値を :c:data:`~PyBuffer.format` か�
 
 #: ../../c-api/buffer.rst:276
 msgid ""
-"Return 1 if the memory defined by the *view* is C-style (*fortran* is "
+"Return ``1`` if the memory defined by the *view* is C-style (*fortran* is "
 "``'C'``) or Fortran-style (*fortran* is ``'F'``) contiguous or either one "
-"(*fortran* is ``'A'``).  Return 0 otherwise."
-msgstr "*view* で定義されているメモリが、 C スタイル (*fortran* == ``'C'``) のときか、 Fortran スタイル (*fortran* == ``'F'``) のときか、そのいずれか (*fortran* == ``'A'``) であれば 1 を返します。それ以外の場合は 0 を返します。"
+"(*fortran* is ``'A'``).  Return ``0`` otherwise."
+msgstr ""
 
 #: ../../c-api/buffer.rst:283
 msgid ""
@@ -383,8 +382,9 @@ msgstr "*strides* 配列を、 *itemsize* の大きさの要素がバイト単�
 msgid ""
 "Fill in a buffer-info structure, *view*, correctly for an exporter that can "
 "only share a contiguous chunk of memory of \"unsigned bytes\" of the given "
-"length.  Return 0 on success and -1 (with raising an error) on error."
-msgstr "バッファ提供側が与えられた長さの \"unsigned bytes\" の連続した1つのメモリブロックしか提供できないものとして、 *view* バッファ情報構造体を正しく埋める。成功したら 0 を、エラー時には (例外を発生させつつ) -1 を返す。"
+"length.  Return ``0`` on success and ``-1`` (with raising an error) on "
+"error."
+msgstr ""
 
 #: ../../c-api/buffer.rst:296
 msgid "MemoryView objects"

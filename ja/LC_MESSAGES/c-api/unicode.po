@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -7,9 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2017-01-08 09:44+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
+"PO-Revision-Date: 2017-02-19 15:39+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -135,44 +134,54 @@ msgid ""
 msgstr "Unicode は数多くの異なる文字プロパティ (character property) を提供しています。よく使われる文字プロパティは、以下のマクロで利用できます。これらのマクロは Python の設定に応じて、各々 C の関数に対応付けられています。"
 
 #: ../../c-api/unicode.rst:119
-msgid "Return 1 or 0 depending on whether *ch* is a whitespace character."
-msgstr "*ch* が空白文字かどうかに応じて 1 または 0 を返します。"
+msgid ""
+"Return ``1`` or ``0`` depending on whether *ch* is a whitespace character."
+msgstr "*ch* が空白文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:124
-msgid "Return 1 or 0 depending on whether *ch* is a lowercase character."
-msgstr "*ch* が小文字かどうかに応じて 1 または 0 を返します。"
+msgid ""
+"Return ``1`` or ``0`` depending on whether *ch* is a lowercase character."
+msgstr "*ch* が小文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:129
-msgid "Return 1 or 0 depending on whether *ch* is an uppercase character."
-msgstr "*ch* が大文字かどうかに応じて 1 または 0 を返します。"
+msgid ""
+"Return ``1`` or ``0`` depending on whether *ch* is an uppercase character."
+msgstr "*ch* が大文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:134
-msgid "Return 1 or 0 depending on whether *ch* is a titlecase character."
-msgstr "*ch* がタイトルケース文字 (titlecase character) かどうかに応じて 1 または 0 を返します。"
+msgid ""
+"Return ``1`` or ``0`` depending on whether *ch* is a titlecase character."
+msgstr "*ch* がタイトルケース文字 (titlecase character) かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:139
-msgid "Return 1 or 0 depending on whether *ch* is a linebreak character."
-msgstr "*ch* が改行文字かどうかに応じて 1 または 0 を返します。"
+msgid ""
+"Return ``1`` or ``0`` depending on whether *ch* is a linebreak character."
+msgstr "*ch* が改行文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:144
-msgid "Return 1 or 0 depending on whether *ch* is a decimal character."
-msgstr "*ch* が 10 進の数字文字かどうかに応じて 1 または 0 を返します。"
+msgid ""
+"Return ``1`` or ``0`` depending on whether *ch* is a decimal character."
+msgstr "*ch* が decimal 文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:149
-msgid "Return 1 or 0 depending on whether *ch* is a digit character."
-msgstr "*ch* が 2 進の数字文字かどうかに応じて 1 または 0 を返します。"
+msgid "Return ``1`` or ``0`` depending on whether *ch* is a digit character."
+msgstr "*ch* が digit 文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:154
-msgid "Return 1 or 0 depending on whether *ch* is a numeric character."
-msgstr "*ch* が数字文字かどうかに応じて 1 または 0 を返します。"
+msgid ""
+"Return ``1`` or ``0`` depending on whether *ch* is a numeric character."
+msgstr "*ch* が数字 (numeric) 文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:159
-msgid "Return 1 or 0 depending on whether *ch* is an alphabetic character."
-msgstr "*ch* がアルファベット文字かどうかに応じて 1 または 0 を返します。"
+msgid ""
+"Return ``1`` or ``0`` depending on whether *ch* is an alphabetic character."
+msgstr "*ch* がアルファベット文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:164
-msgid "Return 1 or 0 depending on whether *ch* is an alphanumeric character."
-msgstr "*ch* が英数文字かどうかに応じて 1 または 0 を返します。"
+msgid ""
+"Return ``1`` or ``0`` depending on whether *ch* is an alphanumeric "
+"character."
+msgstr "*ch* が英数文字かどうかに応じて ``1`` または ``0`` を返します。"
 
 #: ../../c-api/unicode.rst:166
 msgid "These APIs can be used for fast direct character conversions:"
@@ -256,9 +265,9 @@ msgstr "char 型バッファ *u* から Unicode オブジェクトを生成し�
 
 #: ../../c-api/unicode.rst:237
 msgid ""
-"Create a Unicode object from an UTF-8 encoded null-terminated char buffer "
+"Create a Unicode object from a UTF-8 encoded null-terminated char buffer "
 "*u*."
-msgstr "UTF-8 エンコードされたNUL文字終端のchar 型バッファ *u* から Unicode オブジェクトを生成します。"
+msgstr "UTF-8 エンコードされたnull終端のchar 型バッファ *u* から Unicode オブジェクトを生成します。"
 
 #: ../../c-api/unicode.rst:245
 msgid ""
@@ -303,8 +312,8 @@ msgid "int"
 msgstr "int"
 
 #: ../../c-api/unicode.rst:262
-msgid "A single character, represented as an C int."
-msgstr "C のintで表現される1文字"
+msgid "A single character, represented as a C int."
+msgstr "C の整数型で表現される単一の文字。"
 
 #: ../../c-api/unicode.rst:265
 msgid ":attr:`%d`"
@@ -488,9 +497,9 @@ msgstr "Unicode オブジェクトの長さを返します。"
 
 #: ../../c-api/unicode.rst:350
 msgid ""
-"Coerce an encoded object *obj* to an Unicode object and return a reference "
+"Coerce an encoded object *obj* to a Unicode object and return a reference "
 "with incremented refcount."
-msgstr "あるエンコード方式でエンコードされたオブジェクト *obj* を Unicode オブジェクトに型強制して、参照カウントをインクリメントして返します。"
+msgstr ""
 
 #: ../../c-api/unicode.rst:353
 msgid ""
@@ -545,13 +554,13 @@ msgid ""
 "Copy the Unicode object contents into the :c:type:`wchar_t` buffer *w*.  At "
 "most *size* :c:type:`wchar_t` characters are copied (excluding a possibly "
 "trailing 0-termination character).  Return the number of :c:type:`wchar_t` "
-"characters copied or -1 in case of an error.  Note that the resulting "
+"characters copied or ``-1`` in case of an error.  Note that the resulting "
 ":c:type:`wchar_t` string may or may not be 0-terminated.  It is the "
 "responsibility of the caller to make sure that the :c:type:`wchar_t` string "
 "is 0-terminated in case this is required by the application. Also, note that"
 " the :c:type:`wchar_t*` string might contain null characters, which would "
 "cause the string to be truncated when used with most C functions."
-msgstr "Unicode オブジェクトの内容を :c:type:`wchar_t` バッファ *w* にコピーします。最大で *size* 個の :c:type:`wchar_t` 文字を (末尾の 0-終端文字を除いて) コピーします。コピーした :c:type:`wchar_t` 文字の個数を返します。エラーの時には -1 を返します。 :c:type:`wchar_t` 文字列は 0-終端されている場合も、されていない場合もあります。関数の呼び出し側の責任で、アプリケーションの必要に応じて :c:type:`wchar_t` 文字列を 0-終端してください。また、結果の :c:type:`wchar_t*` 文字列には文字列の途中にも nul 文字が含まれうることにも注意してください。これはほとんどの C 関数で文字列を切り捨ててしまう結果になります。"
+msgstr ""
 
 #: ../../c-api/unicode.rst:403
 msgid ""
@@ -807,7 +816,7 @@ msgstr "*s* 中の Unicode データを UTF-16 でエンコードした結果が
 msgid ""
 "If *Py_UNICODE_WIDE* is defined, a single :c:type:`Py_UNICODE` value may get"
 " represented as a surrogate pair. If it is not defined, each "
-":c:type:`Py_UNICODE` values is interpreted as an UCS-2 character."
+":c:type:`Py_UNICODE` values is interpreted as a UCS-2 character."
 msgstr "*Py_UNICODE_WIDE* が定義されている場合、単一の :c:type:`Py_UNICODE` 値はサロゲートペアとして表現されることがあります。 *Py_UNICODE_WIDE* が定義されていなければ、各 :c:type:`Py_UNICODE` 値は UCS-2 文字として表現されます。"
 
 #: ../../c-api/unicode.rst:677
@@ -986,15 +995,15 @@ msgstr "この codec は、多くの様々な codec を実装する際に使わ�
 msgid ""
 "Decoding mappings must map single string characters to single Unicode "
 "characters, integers (which are then interpreted as Unicode ordinals) or "
-"None (meaning \"undefined mapping\" and causing an error)."
-msgstr "デコード用のマップ型は、文字列型の字列一組みを、 Unicode 型の字列一組、整数 (Unicode 序数として解釈されます) または ``None`` (\"定義されていない対応付け (undefined mapping)\" を意味し、エラーを引き起こします) のいずれかに対応付けなければなりません。"
+"``None`` (meaning \"undefined mapping\" and causing an error)."
+msgstr "デコード用の対応表は、 string 型の文字を Unicode 型の文字、整数 (Unicode 序数として解釈されます)、 ``None`` (\"未定義の対応付け\" を意味し、エラーを引き起こします) のいずれかに対応付けなければなりません。"
 
 #: ../../c-api/unicode.rst:862
 msgid ""
 "Encoding mappings must map single Unicode characters to single string "
 "characters, integers (which are then interpreted as Latin-1 ordinals) or "
-"None (meaning \"undefined mapping\" and causing an error)."
-msgstr "エンコード用のマップ型は、Unicode 型の字列一組みを、 string 型の字列一組、整数 (Latin-1 序数として解釈されます) または ``None`` (\"定義されていない対応付け (undefined mapping)\" を意味し、エラーを引き起こします) のいずれかに対応付けなければなりません。"
+"``None`` (meaning \"undefined mapping\" and causing an error)."
+msgstr "エンコード用の対応表は、Unicode 型の文字を string 型の文字、整数 (Latin-1 序数として解釈されます)、 ``None`` (\"未定義の対応付け\" を意味し、エラーを引き起こします) のいずれかに対応付けなければなりません。"
 
 #: ../../c-api/unicode.rst:866
 msgid ""
@@ -1056,7 +1065,7 @@ msgstr "*size* で指定された長さを持つ :c:type:`Py_UNICODE` バッフ�
 #: ../../c-api/unicode.rst:919
 msgid ""
 "The *mapping* table must map Unicode ordinal integers to Unicode ordinal "
-"integers or None (causing deletion of the character)."
+"integers or ``None`` (causing deletion of the character)."
 msgstr "*mapping* テーブルは、Unicode 序数を表す整数を Unicode 序数を表す整数または ``None`` (その文字を削除する) に対応付けなければなりません。"
 
 #: ../../c-api/unicode.rst:922 ../../c-api/unicode.rst:1024
@@ -1147,9 +1156,9 @@ msgstr "この関数は以前は *maxsplit* の型に :c:type:`int` を利用し
 #: ../../c-api/unicode.rst:1011
 msgid ""
 "Split a Unicode string at line breaks, returning a list of Unicode strings. "
-"CRLF is considered to be one line break.  If *keepend* is 0, the Line break "
-"characters are not included in the resulting strings."
-msgstr "Unicode 文字列を改行文字で区切り、Unicode 文字列からなるリストを返します。CRLF は一個の改行文字とみなします。 *keepend* が 0 の場合、分割結果のリスト内に改行文字を含めません。"
+"CRLF is considered to be one line break.  If *keepend* is ``0``, the Line "
+"break characters are not included in the resulting strings."
+msgstr "Unicode 文字列を改行文字で区切り、Unicode 文字列からなるリストを返します。\nCRLF は一個の改行文字とみなします。\n*keepend* が ``0`` の場合、分割結果のリスト内に改行文字を含めません。"
 
 #: ../../c-api/unicode.rst:1018
 msgid ""
@@ -1160,8 +1169,8 @@ msgstr "文字列に文字変換マップ *table* を適用して変換し、変
 #: ../../c-api/unicode.rst:1021
 msgid ""
 "The mapping table must map Unicode ordinal integers to Unicode ordinal "
-"integers or None (causing deletion of the character)."
-msgstr "*mapping* テーブルは、Unicode 序数を表す整数を Unicode 序数を表す整数または ``None`` (その文字を削除する) に対応付けなければなりません。"
+"integers or ``None`` (causing deletion of the character)."
+msgstr "対応表は、Unicode 序数を表す整数を Unicode 序数を表す整数または ``None`` (その文字を削除する) に対応付けなければなりません。"
 
 #: ../../c-api/unicode.rst:1028
 msgid ""
@@ -1177,10 +1186,10 @@ msgstr "指定した *separator* で文字列からなるシーケンスを連�
 
 #: ../../c-api/unicode.rst:1040
 msgid ""
-"Return 1 if *substr* matches ``str[start:end]`` at the given tail end "
-"(*direction* == -1 means to do a prefix match, *direction* == 1 a suffix "
-"match), 0 otherwise. Return ``-1`` if an error occurred."
-msgstr "*substr* が ``str[start:end]`` の末端 (*direction* == -1 は先頭一致、 *direction* == 1 は末尾一致) でとマッチする場合に 1 を返し、それ以外の場合には 0 を返します。エラーが発生した時は ``-1`` を返します。"
+"Return ``1`` if *substr* matches ``str[start:end]`` at the given tail end "
+"(*direction* == ``-1`` means to do a prefix match, *direction* == ``1`` a "
+"suffix match), ``0`` otherwise. Return ``-1`` if an error occurred."
+msgstr "*substr* が ``str[start:end]`` の末端 (*direction* == ``-1`` は先頭一致、 *direction* == ``1`` は末尾一致) でとマッチする場合に ``1`` を返し、それ以外の場合には ``0`` を返します。\nエラーが発生した時は ``-1`` を返します。"
 
 #: ../../c-api/unicode.rst:1044 ../../c-api/unicode.rst:1058
 msgid ""
@@ -1191,11 +1200,11 @@ msgstr "この関数は以前は *start*, *end* の型に :c:type:`int` を利�
 #: ../../c-api/unicode.rst:1052
 msgid ""
 "Return the first position of *substr* in ``str[start:end]`` using the given "
-"*direction* (*direction* == 1 means to do a forward search, *direction* == "
-"-1 a backward search).  The return value is the index of the first match; a "
-"value of ``-1`` indicates that no match was found, and ``-2`` indicates that"
-" an error occurred and an exception has been set."
-msgstr "``str[start:end]`` 中に *substr* が最初に出現する場所を返します。このとき指定された検索方向 *direction* (*direction* == 1 は順方向検索、 *direction* == -1 は逆方向検索) で検索します。戻り値は最初にマッチが見つかった場所のインデクスです; 戻り値 ``-1`` はマッチが見つからなかったことを表し、 ``-2`` はエラーが発生して例外情報が設定されていることを表します。"
+"*direction* (*direction* == ``1`` means to do a forward search, *direction* "
+"== ``-1`` a backward search).  The return value is the index of the first "
+"match; a value of ``-1`` indicates that no match was found, and ``-2`` "
+"indicates that an error occurred and an exception has been set."
+msgstr "``str[start:end]`` 中に *substr* が最初に出現する場所を返します。\nこのとき指定された検索方向 *direction* (*direction* == ``1`` は順方向検索、 *direction* == ``-1`` は逆方向検索) で検索します。\n戻り値は最初にマッチが見つかった場所のインデックスです; 戻り値 ``-1`` はマッチが見つからなかったことを表し、 ``-2`` はエラーが発生して例外情報が設定されていることを表します。"
 
 #: ../../c-api/unicode.rst:1066
 msgid ""
@@ -1213,9 +1222,9 @@ msgstr "この関数は以前は *start*, *end* と戻り値の型に :c:type:`i
 #: ../../c-api/unicode.rst:1077
 msgid ""
 "Replace at most *maxcount* occurrences of *substr* in *str* with *replstr* "
-"and return the resulting Unicode object. *maxcount* == -1 means replace all "
-"occurrences."
-msgstr "*str* 中に出現する *substr* を最大で *maxcount* 個 *replstr* に置換し、置換結果を Unicode オブジェクトにして返します。 *maxcount* == -1 にすると、全ての *substr* を置換します。"
+"and return the resulting Unicode object. *maxcount* == ``-1`` means replace "
+"all occurrences."
+msgstr "*str* 中に出現する *substr* を最大で *maxcount* 個 *replstr* に置換し、置換結果である Unicode オブジェクトを返します。\n*maxcount* == ``-1`` にすると、文字列中に現れる全ての *substr* を置換します。"
 
 #: ../../c-api/unicode.rst:1081
 msgid ""
@@ -1225,9 +1234,9 @@ msgstr "この関数は以前は *maxcount* の型に :c:type:`int` を利用し
 
 #: ../../c-api/unicode.rst:1088
 msgid ""
-"Compare two strings and return -1, 0, 1 for less than, equal, and greater "
-"than, respectively."
-msgstr "二つの文字列を比較して、左引数が右引数より小さい場合、左右引数が等価の場合、左引数が右引数より大きい場合に対して、それぞれ -1, 0, 1 を返します。"
+"Compare two strings and return ``-1``, ``0``, ``1`` for less than, equal, "
+"and greater than, respectively."
+msgstr "二つの文字列を比較して、左引数が右引数より小さい場合、左右引数が等価の場合、左引数が右引数より大きい場合に対して、それぞれ ``-1``, ``0``, ``1`` を返します。"
 
 #: ../../c-api/unicode.rst:1094
 msgid "Rich compare two unicode strings and return one of the following:"

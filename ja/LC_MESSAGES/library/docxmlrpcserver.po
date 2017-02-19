@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -7,10 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-09-20 19:07+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:51+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -33,9 +32,9 @@ msgid ""
 "The :mod:`DocXMLRPCServer` module extends the classes found in "
 ":mod:`SimpleXMLRPCServer` to serve HTML documentation in response to HTTP "
 "GET requests. Servers can either be free standing, using "
-":class:`DocXMLRPCServer`, or embedded in a CGI environment, using "
-":class:`DocCGIXMLRPCRequestHandler`."
-msgstr ":mod:`DocXMLRPCServer` モジュールは :mod:`SimpleXMLRPCServer` クラスを拡張し、HTTP GET リクエストに対し HTML ドキュメントを返します。サーバは :class:`DocXMLRPCServer` を使ったスタンドアロン環境、 :class:`DocCGIXMLRPCRequestHandler` を使った CGI 環境の2つがあります。"
+":class:`~DocXMLRPCServer.DocXMLRPCServer`, or embedded in a CGI environment,"
+" using :class:`DocCGIXMLRPCRequestHandler`."
+msgstr ""
 
 #: ../../library/docxmlrpcserver.rst:25
 msgid ""
@@ -52,9 +51,9 @@ msgstr "CGI環境に XMR-RPC リクエスト・ハンドラの新たなインス
 msgid ""
 "Create a new request handler instance. This request handler supports XML-RPC"
 " POST requests, documentation GET requests, and modifies logging so that the"
-" *logRequests* parameter to the :class:`DocXMLRPCServer` constructor "
-"parameter is honored."
-msgstr "リクエスト・ハンドラの新たなインスタンスを生成します。このリクエスト・ハンドラは XML-RPC POST リクエスト、ドキュメントの GET、そして :class:`DocXMLRPCServer` コンストラクタに与えられた *logRequests* パラメータ設定を優先するため、ロギングの変更をサポートします。"
+" *logRequests* parameter to the :class:`~DocXMLRPCServer.DocXMLRPCServer` "
+"constructor parameter is honored."
+msgstr ""
 
 #: ../../library/docxmlrpcserver.rst:46
 msgid "DocXMLRPCServer Objects"
@@ -62,13 +61,13 @@ msgstr "DocXMLRPCServer オブジェクト"
 
 #: ../../library/docxmlrpcserver.rst:48
 msgid ""
-"The :class:`DocXMLRPCServer` class is derived from "
+"The :class:`~DocXMLRPCServer.DocXMLRPCServer` class is derived from "
 ":class:`SimpleXMLRPCServer.SimpleXMLRPCServer` and provides a means of "
 "creating self-documenting, stand alone XML-RPC servers. HTTP POST requests "
 "are handled as XML-RPC method calls. HTTP GET requests are handled by "
 "generating pydoc-style HTML documentation. This allows a server to provide "
 "its own web-based documentation."
-msgstr ":class:`DocXMLRPCServer` は :class:`SimpleXMLRPCServer.SimpleXMLRPCServer` の派生クラスで、セルフ- ドキュメンティングの手段と XML-RPC サーバ機能を提供します。HTTP POST リクエストは XML-RPC メソッドの呼び出しとして扱われます。HTTP GET リクエストは pydoc スタイルの HTML ドキュメント生成のリクエストとして扱われます。これはサーバが自分自身のドキュメントを Web ベースで提供可能であることを意味します。"
+msgstr ""
 
 #: ../../library/docxmlrpcserver.rst:58 ../../library/docxmlrpcserver.rst:87
 msgid ""

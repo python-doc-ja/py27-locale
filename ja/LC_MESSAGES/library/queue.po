@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-08-27 07:29+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:01+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,10 +36,11 @@ msgstr "**ソースコード:** :source:`Lib/Queue.py`"
 msgid ""
 "The :mod:`Queue` module implements multi-producer, multi-consumer queues. It"
 " is especially useful in threaded programming when information must be "
-"exchanged safely between multiple threads.  The :class:`Queue` class in this"
-" module implements all the required locking semantics.  It depends on the "
-"availability of thread support in Python; see the :mod:`threading` module."
-msgstr ":mod:`Queue` モジュールは、複数プロデューサ-複数コンシューマ(multi-producer, multi-consumer)キューを実装します。これは、複数のスレッドの間で情報を安全に交換しなければならないときのマルチスレッドプログラミングで特に有益です。このモジュールの :class:`Queue` クラスは、必要なすべてのロックセマンティクスを実装しています。これはPythonのスレッドサポートの状況に依存します。 :mod:`threading` モジュールを参照してください。"
+"exchanged safely between multiple threads.  The :class:`~Queue.Queue` class "
+"in this module implements all the required locking semantics.  It depends on"
+" the availability of thread support in Python; see the :mod:`threading` "
+"module."
+msgstr ""
 
 #: ../../library/queue.rst:23
 msgid ""
@@ -93,16 +93,16 @@ msgstr "最小の値を持つ要素が最初に検索されます (最小の値�
 #: ../../library/queue.rst:63
 msgid ""
 "Exception raised when non-blocking :meth:`~Queue.get` (or "
-":meth:`~Queue.get_nowait`) is called on a :class:`Queue` object which is "
-"empty."
-msgstr "空な :class:`Queue` オブジェクトで、非ブロックメソッドとして :meth:`~Queue.get` (または :meth:`~Queue.get_nowait`) が呼ばれたとき、送出される例外です。"
+":meth:`~Queue.get_nowait`) is called on a :class:`~Queue.Queue` object which"
+" is empty."
+msgstr ""
 
 #: ../../library/queue.rst:70
 msgid ""
 "Exception raised when non-blocking :meth:`~Queue.put` (or "
-":meth:`~Queue.put_nowait`) is called on a :class:`Queue` object which is "
-"full."
-msgstr "満杯な :class:`Queue` オブジェクトで、非ブロックメソッドとして :meth:`~Queue.put` (または :meth:`~Queue.put_nowait`) が呼ばれたとき、送出される例外です。"
+":meth:`~Queue.put_nowait`) is called on a :class:`~Queue.Queue` object which"
+" is full."
+msgstr ""
 
 #: ../../library/queue.rst:76
 msgid ""
@@ -117,9 +117,9 @@ msgstr "キューオブジェクト"
 
 #: ../../library/queue.rst:86
 msgid ""
-"Queue objects (:class:`Queue`, :class:`LifoQueue`, or "
+"Queue objects (:class:`~Queue.Queue`, :class:`LifoQueue`, or "
 ":class:`PriorityQueue`) provide the public methods described below."
-msgstr "キューオブジェクト(:class:`Queue`, :class:`LifoQueue`, :class:`PriorityQueue`)は、以下のpublicメソッドを提供しています。"
+msgstr ""
 
 #: ../../library/queue.rst:92
 msgid ""
@@ -147,13 +147,13 @@ msgstr "キューが一杯の場合は ``True`` を返し、そうでなけれ�
 #: ../../library/queue.rst:115
 msgid ""
 "Put *item* into the queue. If optional args *block* is true and *timeout* is"
-" None (the default), block if necessary until a free slot is available. If "
-"*timeout* is a positive number, it blocks at most *timeout* seconds and "
+" ``None`` (the default), block if necessary until a free slot is available. "
+"If *timeout* is a positive number, it blocks at most *timeout* seconds and "
 "raises the :exc:`Full` exception if no free slot was available within that "
 "time. Otherwise (*block* is false), put an item on the queue if a free slot "
 "is immediately available, else raise the :exc:`Full` exception (*timeout* is"
 " ignored in that case)."
-msgstr "*item* をキューに入れます。もしオプション引数 *block* がTrueで *timeout* がNone(デフォルト)ならば、フリースロットが利用可能になるまでブロックします。 *timeout* が正の値の場合、最大で *timeout* 秒間ブロックし、その時間内に空きスロットが利用可能にならなければ、例外 :exc:`Full` を送出します。他方(*block* がFalse)、直ちにフリースロットが利用できるならば、キューにアイテムを置きます。できないならば、例外 :exc:`Full` を送出します (この場合 *timeout* は無視されます)。"
+msgstr "*item* をキューに入れます。\nもしオプション引数 *block* が真で *timeout* が ``None`` (デフォルト) の場合は、必要であればフリースロットが利用可能になるまでブロックします。\n*timeout* が正の数の場合は、最大で *timeout* 秒間ブロックし、その時間内に空きスロットが利用可能にならなければ、例外 :exc:`Full` を送出します。\nそうでない場合 (*block* が偽) は、空きスロットが直ちに利用できるならば、キューにアイテムを置きます。\nできないならば、例外 :exc:`Full` を送出します (この場合 *timeout* は無視されます)。"
 
 #: ../../library/queue.rst:123 ../../library/queue.rst:141
 msgid "The *timeout* parameter."
@@ -166,13 +166,13 @@ msgstr "``put(item, False)`` と等価です。"
 #: ../../library/queue.rst:134
 msgid ""
 "Remove and return an item from the queue. If optional args *block* is true "
-"and *timeout* is None (the default), block if necessary until an item is "
-"available. If *timeout* is a positive number, it blocks at most *timeout* "
+"and *timeout* is ``None`` (the default), block if necessary until an item is"
+" available. If *timeout* is a positive number, it blocks at most *timeout* "
 "seconds and raises the :exc:`Empty` exception if no item was available "
 "within that time. Otherwise (*block* is false), return an item if one is "
 "immediately available, else raise the :exc:`Empty` exception (*timeout* is "
 "ignored in that case)."
-msgstr "キューからアイテムを取り除き、それを返します。もしオプション引数 *block* がTrueで *timeout* がNone(デフォルト)ならば、アイテムが利用可能になるまでブロックします。もし *timeout* が正の値の場合、最大で *timeout* 秒間ブロックし、その時間内でアイテムが利用可能にならなければ、例外 :exc:`Empty` を送出します。他方(*block* がFalse)、直ちにアイテムが利用できるならば、それを返します。できないならば、例外 :exc:`Empty` を送出します (この場合 *timeout* は無視されます)。"
+msgstr "キューからアイテムを取り除き、それを返します。\nオプション引数 *block* が真で *timeout* が ``None`` (デフォルト) の場合は、必要であればアイテムが取り出せるようになるまでブロックします。\nもし *timeout* が正の数の場合は、最大で *timeout* 秒間ブロックし、その時間内でアイテムが取り出せるようにならなければ、例外 :exc:`Empty` を送出します。\nそうでない場合 (*block* が偽) は、直ちにアイテムが取り出せるならば、それを返します。\nできないならば、例外 :exc:`Empty` を送出します (この場合 *timeout* は無視されます)。"
 
 #: ../../library/queue.rst:147
 msgid "Equivalent to ``get(False)``."

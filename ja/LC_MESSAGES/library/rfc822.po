@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-04-17 14:45+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:02+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -161,7 +160,7 @@ msgid ""
 msgstr ":func:`parsedata_tz` が返す 10 要素のタプルを UTC タイムスタンプに変換します。タプル内のタイムゾーン要素が ``None`` の場合、地域の時刻を表しているものと仮定します。些細な欠陥: この関数はまず最初の 8 要素を地域における時刻として変換し、次にタイムゾーンの違いに対する補償を行います; これにより、夏時間の切り替え日前後でちょっとしたエラーが生じるかもしれません。通常の利用に関しては心配ありません。"
 
 #: ../../library/rfc822.rst:131
-msgid "Module email"
+msgid "Module :mod:`email`"
 msgstr ":mod:`email` モジュール"
 
 #: ../../library/rfc822.rst:131
@@ -170,8 +169,8 @@ msgid ""
 msgstr "包括的な e-mail 処理パッケージです。 :mod:`rfc822` に取って代わります。"
 
 #: ../../library/rfc822.rst:134
-msgid "Module mailbox"
-msgstr ":mod:`mailbox` モジュール"
+msgid "Module :mod:`mailbox`"
+msgstr ""
 
 #: ../../library/rfc822.rst:134
 msgid ""
@@ -179,8 +178,8 @@ msgid ""
 msgstr "エンドユーザのメールプログラムによって生成される、様々な mailbox 形式を読み出すためのクラス群。"
 
 #: ../../library/rfc822.rst:136
-msgid "Module mimetools"
-msgstr ":mod:`mimetools` モジュール"
+msgid "Module :mod:`mimetools`"
+msgstr ""
 
 #: ../../library/rfc822.rst:137
 msgid ""

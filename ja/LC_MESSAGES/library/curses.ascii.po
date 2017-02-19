@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -7,10 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2015-11-28 19:35+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:49+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -350,12 +349,13 @@ msgid "Checks for a character value that fits in the 7-bit ASCII set."
 msgstr "文字が 7 ビット ASCII 文字に合致するかどうかを調べます。"
 
 #: ../../library/curses.ascii.rst:119
-msgid "Checks for an ASCII whitespace character."
-msgstr "ASCII 余白文字かどうかを調べます。"
+msgid "Checks for an ASCII whitespace character; space or horizontal tab."
+msgstr "ASCII 余白文字、すなわち空白または水平タブかどうかを調べます。"
 
 #: ../../library/curses.ascii.rst:124
-msgid "Checks for an ASCII control character (in the range 0x00 to 0x1f)."
-msgstr "ASCII 制御文字 (0x00 から 0x1f の範囲) かどうかを調べます。"
+msgid ""
+"Checks for an ASCII control character (in the range 0x00 to 0x1f or 0x7f)."
+msgstr "ASCII 制御文字 (0x00 から 0x1f の範囲または 0x7f) かどうかを調べます。"
 
 #: ../../library/curses.ascii.rst:129
 msgid ""
@@ -452,12 +452,12 @@ msgstr "以下の関数は 1 文字からなる文字列値または整数値を
 msgid ""
 "Return a string representation of the ASCII character *c*.  If *c* is "
 "printable, this string is the character itself.  If the character is a "
-"control character (0x00-0x1f) the string consists of a caret (``'^'``) "
+"control character (0x00--0x1f) the string consists of a caret (``'^'``) "
 "followed by the corresponding uppercase letter. If the character is an ASCII"
 " delete (0x7f) the string is ``'^?'``.  If the character has its meta bit "
 "(0x80) set, the meta bit is stripped, the preceding rules applied, and "
 "``'!'`` prepended to the result."
-msgstr "ASCII 文字 *c* の文字列表現を返します。もし *c* が印字可能文字であれば、返される文字列は *c* そのものになります。もし *c* が制御文字 (0x00-0x1f) であれば、キャレット (``'^'``) と、その後ろに続く *c* に対応した大文字からなる文字列になります。*c* が ASCII 削除文字 (0x7f) であれば、文字列は ``'^?'`` になります。*c* のメタビット (0x80) がセットされていれば、メタビットは取り去られ、前述のルールが適用され、``'!'`` が前につけられます。"
+msgstr "ASCII 文字 *c* の文字列表現を返します。\nもし *c* が印字可能文字であれば、返される文字列は *c* そのものになります。\nもし *c* が制御文字 (0x00--0x1f) であれば、キャレット (``'^'``) と、その後ろに続く *c* に対応した大文字からなる文字列になります。\n*c* が ASCII 削除文字 (0x7f) であれば、文字列は ``'^?'`` になります。\n*c* のメタビット (0x80) がセットされていれば、メタビットは取り去られ、前述のルールが適用され、``'!'`` が前につけられます。"
 
 #: ../../library/curses.ascii.rst:225
 msgid ""

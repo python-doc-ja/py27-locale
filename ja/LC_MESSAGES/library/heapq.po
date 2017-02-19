@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-08-15 03:16+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:55+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -169,10 +168,10 @@ msgstr "基本的な例"
 
 #: ../../library/heapq.rst:136
 msgid ""
-"A `heapsort <http://en.wikipedia.org/wiki/Heapsort>`_ can be implemented by "
-"pushing all values onto a heap and then popping off the smallest values one "
-"at a time::"
-msgstr "`ヒープソート <http://ja.wikipedia.org/wiki/%E3%83%92%E3%83%BC%E3%83%97%E3%82%BD%E3%83%BC%E3%83%88>`_ は、すべての値をヒープに push し、それから最小の値を一つづつ pop することで実装できます::"
+"A `heapsort <https://en.wikipedia.org/wiki/Heapsort>`_ can be implemented by"
+" pushing all values onto a heap and then popping off the smallest values one"
+" at a time::"
+msgstr "すべての値をヒープに push してから最小値を 1 つずつ pop することで、`ヒープソート <https://ja.wikipedia.org/wiki/%E3%83%92%E3%83%BC%E3%83%97%E3%82%BD%E3%83%BC%E3%83%88>`_ を実装できます::"
 
 #: ../../library/heapq.rst:149
 msgid ""
@@ -192,9 +191,9 @@ msgstr "優先度キュー実装の注釈"
 
 #: ../../library/heapq.rst:167
 msgid ""
-"A `priority queue <http://en.wikipedia.org/wiki/Priority_queue>`_ is common "
-"use for a heap, and it presents several implementation challenges:"
-msgstr "`優先度つきキュー <http://ja.wikipedia.org/wiki/%E5%84%AA%E5%85%88%E5%BA%A6%E3%81%A4%E3%81%8D%E3%82%AD%E3%83%A5%E3%83%BC>`_ は、ヒープの一般的な使い方で、実装にはいくつか困難な点があります:"
+"A `priority queue <https://en.wikipedia.org/wiki/Priority_queue>`_ is common"
+" use for a heap, and it presents several implementation challenges:"
+msgstr "`優先度つきキュー <https://ja.wikipedia.org/wiki/%E5%84%AA%E5%85%88%E5%BA%A6%E3%81%A4%E3%81%8D%E3%82%AD%E3%83%A5%E3%83%BC>`_ は、ヒープの一般的な使い方で、実装にはいくつか困難な点があります:"
 
 #: ../../library/heapq.rst:170
 msgid ""
@@ -266,7 +265,7 @@ msgstr "上記の奇妙な不変式は、勝ち抜き戦判定の際に効率的
 
 #: ../../library/heapq.rst:247
 msgid ""
-"In the tree above, each cell *k* is topping ``2*k+1`` and ``2*k+2``. In an "
+"In the tree above, each cell *k* is topping ``2*k+1`` and ``2*k+2``. In a "
 "usual binary tournament we see in sports, each cell is the winner over the "
 "two cells it tops, and we can trace the winner down the tree to see all "
 "opponents s/he had.  However, in many computer applications of such "

@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-01 03:39+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:12+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -511,8 +510,8 @@ msgid ""
 msgstr "Python 2.2 では、 ``generators`` 機能が有効になっている場合にのみ :keyword:`yield` 文を使えました。この機能を有効にするための ``__future__`` import 文は次のとおりでした。 ::"
 
 #: ../../reference/simple_stmts.rst:542
-msgid "PEP 0255 - Simple Generators"
-msgstr "PEP 0255 - 単純なジェネレータ"
+msgid ":pep:`255` - Simple Generators"
+msgstr ":pep:`255` - 単純なジェネレータ"
 
 #: ../../reference/simple_stmts.rst:542
 msgid ""
@@ -521,8 +520,8 @@ msgid ""
 msgstr "Python へのジェネレータと :keyword:`yield` 文の導入提案。"
 
 #: ../../reference/simple_stmts.rst:545
-msgid "PEP 0342 - Coroutines via Enhanced Generators"
-msgstr "PEP 0342 - 拡張されたジェネレータを用いたコルーチン"
+msgid ":pep:`342` - Coroutines via Enhanced Generators"
+msgstr ":pep:`0342` - 拡張されたジェネレータを用いたコルーチン"
 
 #: ../../reference/simple_stmts.rst:545
 msgid ""
@@ -936,8 +935,8 @@ msgid ""
 msgstr "対話的インタプリタのプロンプトでタイプ入力した future 文は、その後のインタプリタセッション中で有効になります。インタプリタを :option:`-i` オプションで起動して実行すべきスクリプト名を渡し、スクリプト中に future 文を入れておくと、新たな機能はスクリプトが実行された後に開始する対話セッションで有効になります。"
 
 #: ../../reference/simple_stmts.rst:934
-msgid "PEP 236 - Back to the __future__"
-msgstr "PEP 236 - バック・トゥ・ザ・ :mod:`__future__` "
+msgid ":pep:`236` - Back to the __future__"
+msgstr ":pep:`236` - Back to the __future__"
 
 #: ../../reference/simple_stmts.rst:935
 msgid "The original proposal for the __future__ mechanism."

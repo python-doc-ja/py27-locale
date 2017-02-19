@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,9 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-12-19 07:06+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
+"PO-Revision-Date: 2017-02-19 15:57+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -121,8 +120,8 @@ msgstr "アルゴリズムの正確性は IEEE-754 演算の保証と丸めモ�
 msgid ""
 "For further discussion and two alternative approaches, see the `ASPN "
 "cookbook recipes for accurate floating point summation "
-"<http://code.activestate.com/recipes/393090/>`_\\."
-msgstr "より詳しい議論と代替となる二つのアプローチについては、`ASPN cookbook recipes for accurate floating point summation <http://code.activestate.com/recipes/393090/>`_ をご覧下さい。"
+"<https://code.activestate.com/recipes/393090/>`_\\."
+msgstr "より詳細な議論と代替となる二つのアプローチについては、`ASPN cookbook recipes for accurate floating point summation <https://code.activestate.com/recipes/393090/>`_ をご覧下さい。"
 
 #: ../../library/math.rst:112
 msgid "Check if the float *x* is positive or negative infinity."
@@ -382,7 +381,7 @@ msgid ""
 msgstr "特別なケースにおける挙動は、 C99 Annex F に従おうとするようになりました。以前のバージョンの Python では、特別なケースでの挙動は曖昧にしか定義されていませんでした。"
 
 #: ../../library/math.rst:400
-msgid "Module cmath"
+msgid "Module :mod:`cmath`"
 msgstr ":mod:`cmath` モジュール"
 
 #: ../../library/math.rst:401

@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-06 00:50+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:35+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -99,12 +98,12 @@ msgstr "*name* と関数のテーブルに基づいて新たなモジュール�
 msgid ""
 "Create a new module object based on a name and table of functions, returning"
 " the new module object.  If *doc* is non-*NULL*, it will be used to define "
-"the docstring for the module.  If *self* is non-*NULL*, it will passed to "
-"the functions of the module as their (otherwise *NULL*) first parameter.  "
+"the docstring for the module.  If *self* is non-*NULL*, it will be passed to"
+" the functions of the module as their (otherwise *NULL*) first parameter.  "
 "(This was added as an experimental feature, and there are no known uses in "
 "the current version of Python.)  For *apiver*, the only value which should "
 "be passed is defined by the constant :const:`PYTHON_API_VERSION`."
-msgstr "*name* と関数のテーブルに基づいて新たなモジュールオブジェクトを生成し、生成されたモジュールオブジェクトを返します。 *doc* が *NULL* でない場合、モジュールの docstring として使われます。 *self* が *NULL* でない場合、モジュール内の各関数の第一引数として渡されます (*NULL* の時には第一引数も *NULL* になります)。 (この関数は実験的な機能のために追加されたもので、現在の Python のバージョンで使われてはいないはずです。) *apiver* に渡してよい値は、 :const:`PYTHON_API_VERSION` で定義されている定数だけです。"
+msgstr ""
 
 #: ../../c-api/allocation.rst:109
 msgid ""

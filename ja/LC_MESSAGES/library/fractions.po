@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-03 10:17+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:53+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -126,7 +125,7 @@ msgid ""
 msgstr "整数 *a* と *b* の最大公約数を返します。*a* も *b* もゼロでないとすると、``gcd(a, b)`` の絶対値は *a* と *b* の両方を割り切る最も大きな整数です。``gcd(a, b)`` は *b* がゼロでなければ *b* と同じ符号になります。そうでなければ *a* の符号を取ります。``gcd(0, 0)`` は ``0`` を返します。"
 
 #: ../../library/fractions.rst:140
-msgid "Module numbers"
+msgid "Module :mod:`numbers`"
 msgstr ":mod:`numbers` モジュール"
 
 #: ../../library/fractions.rst:141

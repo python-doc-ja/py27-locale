@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-23 14:55+0000\n"
-"Last-Translator: INADA Naoki <songofacandy@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:11+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -499,8 +498,8 @@ msgid ""
 msgstr "以下の簡単なサンプルはジェネレータとジェネレータ関数の振る舞いを実際に紹介します::"
 
 #: ../../reference/expressions.rst:512
-msgid "PEP 0342 - Coroutines via Enhanced Generators"
-msgstr "PEP 0342 - 拡張されたジェネレータを用いたコルーチン"
+msgid ":pep:`342` - Coroutines via Enhanced Generators"
+msgstr ":pep:`0342` - 拡張されたジェネレータを用いたコルーチン"
 
 #: ../../reference/expressions.rst:512
 msgid ""
@@ -1027,11 +1026,11 @@ msgid ""
 "type."
 msgstr "``|`` 演算子は、引数間でビット単位の OR (非排他的 OR) をとった値になります。引数は整数または長整数でなければなりません。引数は共通の型に変換されます。"
 
-#: ../../reference/expressions.rst:1067
+#: ../../reference/expressions.rst:1063
 msgid "Comparisons"
 msgstr "比較"
 
-#: ../../reference/expressions.rst:1073
+#: ../../reference/expressions.rst:1069
 msgid ""
 "Unlike C, all comparison operations in Python have the same priority, which "
 "is lower than that of any arithmetic, shifting or bitwise operation.  Also "
@@ -1039,11 +1038,11 @@ msgid ""
 "conventional in mathematics:"
 msgstr "C 言語と違って、Python における比較演算子は同じ優先順位をもっており、全ての算術演算子、シフト演算子、ビット単位演算子よりも低くなっています。また ``a < b < c`` が数学で伝統的に用いられているのと同じ解釈になる点も C 言語と違います:"
 
-#: ../../reference/expressions.rst:1083
+#: ../../reference/expressions.rst:1079
 msgid "Comparisons yield boolean values: ``True`` or ``False``."
 msgstr "比較演算の結果はブール値: ``True`` または ``False`` になります。"
 
-#: ../../reference/expressions.rst:1087
+#: ../../reference/expressions.rst:1083
 msgid ""
 "Comparisons can be chained arbitrarily, e.g., ``x < y <= z`` is equivalent "
 "to ``x < y and y <= z``, except that ``y`` is evaluated only once (but in "
@@ -1051,7 +1050,7 @@ msgid ""
 "false)."
 msgstr "比較はいくらでも連鎖することができます。例えば ``x < y <= z`` は ``x < y and y <= z`` と等価になります。ただしこの場合、前者では ``y`` はただ一度だけ評価される点が異なります (どちらの場合でも、 ``x < y`` が偽になると ``z`` の値はまったく評価されません)。"
 
-#: ../../reference/expressions.rst:1091
+#: ../../reference/expressions.rst:1087
 msgid ""
 "Formally, if *a*, *b*, *c*, ..., *y*, *z* are expressions and *op1*, *op2*, "
 "..., *opN* are comparison operators, then ``a op1 b op2 c ... y opN z`` is "
@@ -1059,32 +1058,66 @@ msgid ""
 "expression is evaluated at most once."
 msgstr "形式的には、 *a*, *b*, *c*, ..., *y*, *z* が式で *op1*, *op2*, ..., *opN* が比較演算子である場合、 ``a op1 b op2 c ... y opN z`` は ``a op1 b and b op2 c and ... y opN z`` と等価になります。ただし、前者では各式は多くても一度しか評価されません。"
 
-#: ../../reference/expressions.rst:1096
+#: ../../reference/expressions.rst:1092
 msgid ""
 "Note that ``a op1 b op2 c`` doesn't imply any kind of comparison between *a*"
 " and *c*, so that, e.g., ``x < y > z`` is perfectly legal (though perhaps "
 "not pretty)."
 msgstr "``a op1 b op2 c`` と書いた場合、 *a* から *c* までの範囲にあるかどうかのテストを指すのではないことに注意してください。例えば ``x < y > z`` は (きれいな書き方ではありませんが) 完全に正しい文法です。"
 
-#: ../../reference/expressions.rst:1100
+#: ../../reference/expressions.rst:1096
 msgid ""
 "The forms ``<>`` and ``!=`` are equivalent; for consistency with C, ``!=`` "
 "is preferred; where ``!=`` is mentioned below ``<>`` is also accepted.  The "
 "``<>`` spelling is considered obsolescent."
 msgstr "``<>`` と ``!=`` の二つの形式は等価です; C との整合性を持たせるためには ``!=`` を推奨します; 以下で ``!=`` について触れている部分では ``<>`` を使うこともできます。 ``<>`` のような書き方は、現在では古い書き方とみなされています。"
 
-#: ../../reference/expressions.rst:1104
+#: ../../reference/expressions.rst:1101
+msgid "Value comparisons"
+msgstr "値の比較"
+
+#: ../../reference/expressions.rst:1103
 msgid ""
 "The operators ``<``, ``>``, ``==``, ``>=``, ``<=``, and ``!=`` compare the "
-"values of two objects.  The objects need not have the same type. If both are"
-" numbers, they are converted to a common type.  Otherwise, objects of "
-"different types *always* compare unequal, and are ordered consistently but "
-"arbitrarily. You can control comparison behavior of objects of non-built-in "
-"types by defining a ``__cmp__`` method or rich comparison methods like "
-"``__gt__``, described in section :ref:`specialnames`."
-msgstr "演算子 ``<``, ``>``, ``==``, ``>=``, ``<=``, および ``!=`` は、二つのオブジェクト間の値を比較します。オブジェクトは同じ型である必要はありません。双方のオブジェクトが数値であれば、共通型への変換が行われます。それ以外の場合、異なる型のオブジェクトは *常に* 不等であるとみなされ、一貫してはいるが規定されていない方法で並べられます。組み込み型でないオブジェクト比較の振る舞いは ``__cmp__`` メソッドや ``__gt__`` といったリッチな比較メソッドを定義することでコントロールすることができます。これは :ref:`specialnames` セクションで説明されています。"
+"values of two objects.  The objects do not need to have the same type."
+msgstr "演算子 ``<``, ``>``, ``==``, ``>=``, ``<=``, および ``!=`` は2つのオブジェクトの値を比較します。\nオブジェクトが同じ型を持つ必要はりません。"
 
-#: ../../reference/expressions.rst:1112
+#: ../../reference/expressions.rst:1106
+msgid ""
+"Chapter :ref:`objects` states that objects have a value (in addition to type"
+" and identity).  The value of an object is a rather abstract notion in "
+"Python: For example, there is no canonical access method for an object's "
+"value.  Also, there is no requirement that the value of an object should be "
+"constructed in a particular way, e.g. comprised of all its data attributes. "
+"Comparison operators implement a particular notion of what the value of an "
+"object is.  One can think of them as defining the value of an object "
+"indirectly, by means of their comparison implementation."
+msgstr ""
+
+#: ../../reference/expressions.rst:1115
+msgid ""
+"Types can customize their comparison behavior by implementing a "
+":meth:`__cmp__` method or :dfn:`rich comparison methods` like "
+":meth:`__lt__`, described in :ref:`customization`."
+msgstr ""
+
+#: ../../reference/expressions.rst:1120
+msgid ""
+"The default behavior for equality comparison (``==`` and ``!=``) is based on"
+" the identity of the objects.  Hence, equality comparison of instances with "
+"the same identity results in equality, and equality comparison of instances "
+"with different identities results in inequality.  A motivation for this "
+"default behavior is the desire that all objects should be reflexive (i.e. "
+"``x is y`` implies ``x == y``)."
+msgstr ""
+
+#: ../../reference/expressions.rst:1127
+msgid ""
+"The default order comparison (``<``, ``>``, ``<=``, and ``>=``) gives a "
+"consistent but arbitrary order."
+msgstr ""
+
+#: ../../reference/expressions.rst:1130
 msgid ""
 "(This unusual definition of comparison was used to simplify the definition "
 "of operations like sorting and the :keyword:`in` and :keyword:`not in` "
@@ -1092,45 +1125,99 @@ msgid ""
 "types are likely to change.)"
 msgstr "(このような比較演算の変則的な定義は、ソートのような操作や :keyword:`in` および :keyword:`not in` といった演算子の定義を単純化するためのものです。将来、異なる型のオブジェクト間における比較規則は変更されるかもしれません。)"
 
-#: ../../reference/expressions.rst:1117
-msgid "Comparison of objects of the same type depends on the type:"
-msgstr "同じ型のオブジェクト間における比較は、型によって異なります:"
-
-#: ../../reference/expressions.rst:1119
-msgid "Numbers are compared arithmetically."
-msgstr "数値間の比較では、算術的な比較が行われます。"
-
-#: ../../reference/expressions.rst:1121
-msgid ""
-"Strings are compared lexicographically using the numeric equivalents (the "
-"result of the built-in function :func:`ord`) of their characters.  Unicode "
-"and 8-bit strings are fully interoperable in this behavior. [#]_"
-msgstr "文字列間の比較では、各文字に対する等価な数値型 (組み込み関数 :func:`ord` の結果) を使って辞書的な (lexicographically) 比較が行われます。Unicode および 8 ビット文字列は、この動作に関しては完全に互換です。 [#]_"
-
-#: ../../reference/expressions.rst:1125
-msgid ""
-"Tuples and lists are compared lexicographically using comparison of "
-"corresponding elements.  This means that to compare equal, each element must"
-" compare equal and the two sequences must be of the same type and have the "
-"same length."
-msgstr "タプルやリスト間の比較では、対応する各要素の比較結果を使って辞書的な比較が行われます。このため、二つのシーケンスを等価にするためには、各要素が完全に等価でなくてはならず、シーケンスは同じ型で同じ長さをもっていなければなりません。"
-
-#: ../../reference/expressions.rst:1130
-msgid ""
-"If not equal, the sequences are ordered the same as their first differing "
-"elements.  For example, ``cmp([1,2,x], [1,2,y])`` returns the same as "
-"``cmp(x,y)``.  If the corresponding element does not exist, the shorter "
-"sequence is ordered first (for example, ``[1,2] < [1,2,3]``)."
-msgstr "二つのシーケンスが等価でない場合、異なる値を持つ最初の要素間での比較に従った順序関係になります。例えば ``cmp([1,2,x], [1,2,y])`` は ``cmp(x,y)`` と等しい結果を返します。片方の要素に対応する要素が他方にない場合、より短いシーケンスが前に並びます (例えば、 ``[1,2] < [1,2,3]`` となります)。"
-
 #: ../../reference/expressions.rst:1135
 msgid ""
-"Mappings (dictionaries) compare equal if and only if their sorted (key, "
-"value) lists compare equal. [#]_ Outcomes other than equality are resolved "
-"consistently, but are not otherwise defined. [#]_"
-msgstr "マップ (辞書) 間の比較では、(key, value) からなるリストをソートしたものが等しい場合に等価になります。 [#]_ 等価性評価以外の結果は一貫したやりかたで解決されるか、定義されないかのいずれかです。 [#]_"
+"The behavior of the default equality comparison, that instances with "
+"different identities are always unequal, may be in contrast to what types "
+"will need that have a sensible definition of object value and value-based "
+"equality.  Such types will need to customize their comparison behavior, and "
+"in fact, a number of built-in types have done that."
+msgstr ""
 
-#: ../../reference/expressions.rst:1139
+#: ../../reference/expressions.rst:1141
+msgid ""
+"The following list describes the comparison behavior of the most important "
+"built-in types."
+msgstr ""
+
+#: ../../reference/expressions.rst:1144
+msgid ""
+"Numbers of built-in numeric types (:ref:`typesnumeric`) and of the standard "
+"library types :class:`fractions.Fraction` and :class:`decimal.Decimal` can "
+"be compared within and across their types, with the restriction that complex"
+" numbers do not support order comparison.  Within the limits of the types "
+"involved, they compare mathematically (algorithmically) correct without loss"
+" of precision."
+msgstr ""
+
+#: ../../reference/expressions.rst:1151
+msgid ""
+"Strings (instances of :class:`str` or :class:`unicode`) compare "
+"lexicographically using the numeric equivalents (the result of the built-in "
+"function :func:`ord`) of their characters. [#]_ When comparing an 8-bit "
+"string and a Unicode string, the 8-bit string is converted to Unicode.  If "
+"the conversion fails, the strings are considered unequal."
+msgstr ""
+
+#: ../../reference/expressions.rst:1158
+msgid ""
+"Instances of :class:`tuple` or :class:`list` can be compared only within "
+"each of their types.  Equality comparison across these types results in "
+"unequality, and ordering comparison across these types gives an arbitrary "
+"order."
+msgstr ""
+
+#: ../../reference/expressions.rst:1163
+msgid ""
+"These sequences compare lexicographically using comparison of corresponding "
+"elements, whereby reflexivity of the elements is enforced."
+msgstr ""
+
+#: ../../reference/expressions.rst:1166
+msgid ""
+"In enforcing reflexivity of elements, the comparison of collections assumes "
+"that for a collection element ``x``, ``x == x`` is always true.  Based on "
+"that assumption, element identity is compared first, and element comparison "
+"is performed only for distinct elements.  This approach yields the same "
+"result as a strict element comparison would, if the compared elements are "
+"reflexive.  For non-reflexive elements, the result is different than for "
+"strict element comparison."
+msgstr ""
+
+#: ../../reference/expressions.rst:1174
+msgid ""
+"Lexicographical comparison between built-in collections works as follows:"
+msgstr ""
+
+#: ../../reference/expressions.rst:1176
+msgid ""
+"For two collections to compare equal, they must be of the same type, have "
+"the same length, and each pair of corresponding elements must compare equal "
+"(for example, ``[1,2] == (1,2)`` is false because the type is not the same)."
+msgstr ""
+
+#: ../../reference/expressions.rst:1181
+msgid ""
+"Collections are ordered the same as their first unequal elements (for "
+"example, ``cmp([1,2,x], [1,2,y])`` returns the same as ``cmp(x,y)``).  If a "
+"corresponding element does not exist, the shorter collection is ordered "
+"first (for example, ``[1,2] < [1,2,3]`` is true)."
+msgstr ""
+
+#: ../../reference/expressions.rst:1187
+msgid ""
+"Mappings (instances of :class:`dict`) compare equal if and only if they have"
+" equal `(key, value)` pairs. Equality comparison of the keys and elements "
+"enforces reflexivity."
+msgstr ""
+
+#: ../../reference/expressions.rst:1191
+msgid ""
+"Outcomes other than equality are resolved consistently, but are not "
+"otherwise defined. [#]_"
+msgstr ""
+
+#: ../../reference/expressions.rst:1194
 msgid ""
 "Most other objects of built-in types compare unequal unless they are the "
 "same object; the choice whether one object is considered smaller or larger "
@@ -1138,7 +1225,98 @@ msgid ""
 "of a program."
 msgstr "その他のほとんどの組み込み型のオブジェクト比較では、同じオブジェクトでないかぎり等価にはなりません; あるオブジェクトの他のオブジェクトに対する大小関係は任意に決定され、一つのプログラムの実行中は一貫したものとなります。"
 
-#: ../../reference/expressions.rst:1146
+#: ../../reference/expressions.rst:1199
+msgid ""
+"User-defined classes that customize their comparison behavior should follow "
+"some consistency rules, if possible:"
+msgstr ""
+
+#: ../../reference/expressions.rst:1202
+msgid ""
+"Equality comparison should be reflexive. In other words, identical objects "
+"should compare equal:"
+msgstr "等価比較は反射的でなければなりません。\nつまり、同一のオブジェクトは等しくなければなりません:"
+
+#: ../../reference/expressions.rst:1205
+msgid "``x is y`` implies ``x == y``"
+msgstr "``x is y`` は暗黙的に ``x == y``"
+
+#: ../../reference/expressions.rst:1207
+msgid ""
+"Comparison should be symmetric. In other words, the following expressions "
+"should have the same result:"
+msgstr "比較は対称でなければなりません。\nつまり、以下の式の結果は同じでなければなりません:"
+
+#: ../../reference/expressions.rst:1210
+msgid "``x == y`` and ``y == x``"
+msgstr "``x == y`` と ``y == x``"
+
+#: ../../reference/expressions.rst:1212
+msgid "``x != y`` and ``y != x``"
+msgstr "``x != y`` と ``y != x``"
+
+#: ../../reference/expressions.rst:1214
+msgid "``x < y`` and ``y > x``"
+msgstr "``x < y`` と ``y > x``"
+
+#: ../../reference/expressions.rst:1216
+msgid "``x <= y`` and ``y >= x``"
+msgstr "``x <= y`` と ``y >= x``"
+
+#: ../../reference/expressions.rst:1218
+msgid ""
+"Comparison should be transitive. The following (non-exhaustive) examples "
+"illustrate that:"
+msgstr "比較は推移的でなければなりません。\n以下の (包括的でない) 例がその説明です:"
+
+#: ../../reference/expressions.rst:1221
+msgid "``x > y and y > z`` implies ``x > z``"
+msgstr "``x > y and y > z`` は暗黙的に ``x > z``"
+
+#: ../../reference/expressions.rst:1223
+msgid "``x < y and y <= z`` implies ``x < z``"
+msgstr "``x < y and y <= z`` は暗黙的に ``x < z``"
+
+#: ../../reference/expressions.rst:1225
+msgid ""
+"Inverse comparison should result in the boolean negation. In other words, "
+"the following expressions should have the same result:"
+msgstr "比較の逆はブールの否定でなければなりません。\nつまり、以下の式の結果は同じでなければなりません:"
+
+#: ../../reference/expressions.rst:1228
+msgid "``x == y`` and ``not x != y``"
+msgstr "``x == y`` と ``not x != y``"
+
+#: ../../reference/expressions.rst:1230
+msgid "``x < y`` and ``not x >= y`` (for total ordering)"
+msgstr "``x < y`` と ``not x >= y`` (全順序の場合)"
+
+#: ../../reference/expressions.rst:1232
+msgid "``x > y`` and ``not x <= y`` (for total ordering)"
+msgstr "``x > y`` と ``not x <= y`` (全順序の場合)"
+
+#: ../../reference/expressions.rst:1234
+msgid ""
+"The last two expressions apply to totally ordered collections (e.g. to "
+"sequences, but not to sets or mappings). See also the "
+":func:`~functools.total_ordering` decorator."
+msgstr "最後の2式は全順序の集まりに適用されます (たとえばシーケンスには適用されますがセットやマッピングには適用されません)。\n:func:`~functools.total_ordering` デコレータも参照してください。"
+
+#: ../../reference/expressions.rst:1238
+msgid ""
+"The :func:`hash` result should be consistent with equality. Objects that are"
+" equal should either have the same hash value, or be marked as unhashable."
+msgstr ""
+
+#: ../../reference/expressions.rst:1242
+msgid "Python does not enforce these consistency rules."
+msgstr ""
+
+#: ../../reference/expressions.rst:1250
+msgid "Membership test operations"
+msgstr "帰属検査演算"
+
+#: ../../reference/expressions.rst:1252
 msgid ""
 "The operators :keyword:`in` and :keyword:`not in` test for collection "
 "membership.  ``x in s`` evaluates to true if *x* is a member of the "
@@ -1151,13 +1329,13 @@ msgid ""
 "membership testing."
 msgstr "演算子 :keyword:`in` および :keyword:`not in` は、コレクション型の要素であるかどうか (メンバシップ、membership) を調べます。 ``x in s`` は、 *x* がコレクション型 *s* のメンバである場合には真となり、それ以外の場合には偽となります。 ``x not in s`` は ``x in s`` の否定 (negation) を返します。コレクション型のメンバシップテストは、伝統的にはシーケンス型に限定されてきました; すなわち、あるオブジェクトがコレクション型のメンバとなるのは、そのコレクション型がシーケンスであり、シーケンスがオブジェクトと等価な要素を含む場合でした。しかし、他の多くのオブジェクトのためにシーケンスでなくてもメンバシップテストをサポートしています。特に、辞書型では、(キーのための)メンバシップテストをサポートしています。"
 
-#: ../../reference/expressions.rst:1155
+#: ../../reference/expressions.rst:1261
 msgid ""
 "For the list and tuple types, ``x in y`` is true if and only if there exists"
-" an index *i* such that ``x == y[i]`` is true."
-msgstr "リストやタプル型について ``x in y`` は ``x == y[i]`` となるようなインデクス *i* が存在するとき、かつそのときに限り真になります。"
+" an index *i* such that either ``x is y[i]`` or ``x == y[i]`` is true."
+msgstr ""
 
-#: ../../reference/expressions.rst:1158
+#: ../../reference/expressions.rst:1264
 msgid ""
 "For the Unicode and string types, ``x in y`` is true if and only if *x* is a"
 " substring of *y*.  An equivalent test is ``y.find(x) != -1``.  Note, *x* "
@@ -1166,17 +1344,17 @@ msgid ""
 "any other string, so ``\"\" in \"abc\"`` will return ``True``."
 msgstr "Unicode 文字列または文字列型については、 ``x in y`` は *x* が *y* の部分文字列であるとき、かつそのときに限り真になります。この演算と等価なテストは ``y.find(x) != -1`` です。 *x* および *y* は同じ型である必要はないので注意してください。すなわち ``u'ab' in 'abc'`` は ``True`` を返すことになります。空文字列は、他のどんな文字列に対しても常に部分文字列とみなされます。従って ``\"\" in \"abc\"`` は ``True`` を返すことになります。"
 
-#: ../../reference/expressions.rst:1164
+#: ../../reference/expressions.rst:1270
 msgid "Previously, *x* was required to be a string of length ``1``."
 msgstr "以前は、 *x* は長さ ``1`` の文字列型でなければなりませんでした."
 
-#: ../../reference/expressions.rst:1167
+#: ../../reference/expressions.rst:1273
 msgid ""
 "For user-defined classes which define the :meth:`__contains__` method, ``x "
 "in y`` is true if and only if ``y.__contains__(x)`` is true."
 msgstr ":meth:`__contains__` メソッドの定義されたユーザ定義クラスでは、 ``x in y`` が真となるのは ``y.__contains__(x)`` が真となるとき、かつそのときに限ります。"
 
-#: ../../reference/expressions.rst:1170
+#: ../../reference/expressions.rst:1276
 msgid ""
 "For user-defined classes which do not define :meth:`__contains__` but do "
 "define :meth:`__iter__`, ``x in y`` is true if some value ``z`` with ``x == "
@@ -1184,7 +1362,7 @@ msgid ""
 "during the iteration, it is as if :keyword:`in` raised that exception."
 msgstr ":meth:`__contains__` を定義していないが :meth:`__iter__` は定義しているユーザ定義クラスでは、 ``x in y`` は ``x == z`` となるようなある値 ``z`` が ``y`` 内にわたる反復で生成された場合、 true となります。もし、反復の間に例外が発生すれば、 :keyword:`in` が例外を発生させたようにみえます。"
 
-#: ../../reference/expressions.rst:1175
+#: ../../reference/expressions.rst:1281
 msgid ""
 "Lastly, the old-style iteration protocol is tried: if a class defines "
 ":meth:`__getitem__`, ``x in y`` is true if and only if there is a non-"
@@ -1193,24 +1371,28 @@ msgid ""
 " raised, it is as if :keyword:`in` raised that exception)."
 msgstr "最終的には、旧式の反復プロトコルの実行を試みます、もし :meth:`__getitem__` を定義しているようなユーザ定義クラスでは、 ``x in y`` は ``x == y[i]`` となるような非負の整数インデクス *i* が存在するとき、かつそのときにかぎり真となります。インデクス *i* が負である場合に :exc:`IndexError` 例外が送出されることはありません。 (別の何らかの例外が送出された場合、例外は :keyword:`in` から送出されたかのようになります)。"
 
-#: ../../reference/expressions.rst:1187
+#: ../../reference/expressions.rst:1293
 msgid ""
 "The operator :keyword:`not in` is defined to have the inverse true value of "
 ":keyword:`in`."
 msgstr "演算子 :keyword:`not in` は :keyword:`in` の真値を反転した値として定義されています。"
 
-#: ../../reference/expressions.rst:1195
+#: ../../reference/expressions.rst:1306
+msgid "Identity comparisons"
+msgstr "同一性の比較"
+
+#: ../../reference/expressions.rst:1308
 msgid ""
 "The operators :keyword:`is` and :keyword:`is not` test for object identity: "
 "``x is y`` is true if and only if *x* and *y* are the same object.  ``x is "
 "not y`` yields the inverse truth value. [#]_"
 msgstr "演算子 :keyword:`is` および :keyword:`is not` は、オブジェクトのアイデンティティに対するテストを行います: ``x is y`` は、 *x* と *y* が同じオブジェクトを指すとき、かつそのときに限り真になります。 ``x is not y`` は :keyword:`is` の真値を反転したものになります。 [#]_"
 
-#: ../../reference/expressions.rst:1206
+#: ../../reference/expressions.rst:1319
 msgid "Boolean operations"
 msgstr "ブール演算 (boolean operation)"
 
-#: ../../reference/expressions.rst:1217
+#: ../../reference/expressions.rst:1330
 msgid ""
 "In the context of Boolean operations, and also when expressions are used by "
 "control flow statements, the following values are interpreted as false: "
@@ -1220,26 +1402,26 @@ msgid ""
 ":meth:`~object.__nonzero__` special method for a way to change this.)"
 msgstr "ブール演算のコンテキストや、式が制御フロー文中で使われる最には、以下の値: ``False`` 、 ``None`` 、すべての型における数値のゼロ、空の文字列とコンテナ (文字列、タプル、リスト、辞書、set、frozenset を含む) は偽 (false) であると解釈されます。それ以外の値は真 (true) であると解釈されます。 (この振る舞いを変更する方法については特殊メソッド :meth:`~object.__nonzero__` を参照してください)"
 
-#: ../../reference/expressions.rst:1226
+#: ../../reference/expressions.rst:1339
 msgid ""
 "The operator :keyword:`not` yields ``True`` if its argument is false, "
 "``False`` otherwise."
 msgstr "演算子 :keyword:`not` は、引数が偽である場合には ``True`` を、それ以外の場合には ``False`` になります。"
 
-#: ../../reference/expressions.rst:1231
+#: ../../reference/expressions.rst:1344
 msgid ""
 "The expression ``x and y`` first evaluates *x*; if *x* is false, its value "
 "is returned; otherwise, *y* is evaluated and the resulting value is "
 "returned."
 msgstr "式 ``x and y`` は、まず *x* を評価します; *x* が偽なら *x* の値を返します; それ以外の場合には、 *y* の値を評価し、その結果を返します。"
 
-#: ../../reference/expressions.rst:1236
+#: ../../reference/expressions.rst:1349
 msgid ""
 "The expression ``x or y`` first evaluates *x*; if *x* is true, its value is "
 "returned; otherwise, *y* is evaluated and the resulting value is returned."
 msgstr "式 ``x or y`` は、まず *x* を評価します; *x* が真なら *x* の値を返します; それ以外の場合には、 *y* の値を評価し、その結果を返します。"
 
-#: ../../reference/expressions.rst:1239
+#: ../../reference/expressions.rst:1352
 msgid ""
 "(Note that neither :keyword:`and` nor :keyword:`or` restrict the value and "
 "type they return to ``False`` and ``True``, but rather return the last "
@@ -1250,32 +1432,32 @@ msgid ""
 " as its argument, so e.g., ``not 'foo'`` yields ``False``, not ``''``.)"
 msgstr "(:keyword:`and` も :keyword:`not` も、返す値を ``False`` や ``True`` に制限するのではなく、最後に評価した引数の値を返すので注意してください。この仕様は、例えば ``s`` を文字列として ``s`` が空文字列の場合にデフォルトの値に置き換えるような場合に、 ``s or 'foo'`` と書くと期待通りの値になるために便利なことがあります。 :keyword:`not` は、式の値でなく独自に値を作成して返すので、引数と同じ型の値を返すような処理に煩わされることはありません。例えば、 ``not 'foo'`` は、 ``''`` ではなく ``False`` になります)"
 
-#: ../../reference/expressions.rst:1249
+#: ../../reference/expressions.rst:1362
 msgid "Conditional Expressions"
 msgstr "条件演算 (Conditional Expressions)"
 
-#: ../../reference/expressions.rst:1261
+#: ../../reference/expressions.rst:1374
 msgid ""
 "Conditional expressions (sometimes called a \"ternary operator\") have the "
 "lowest priority of all Python operations."
 msgstr "条件演算式 (しばしば、\"三項演算子\" と呼ばれます) は最も優先度が低いPython の操作です。"
 
-#: ../../reference/expressions.rst:1264
+#: ../../reference/expressions.rst:1377
 msgid ""
 "The expression ``x if C else y`` first evaluates the condition, *C* (*not* "
 "*x*); if *C* is true, *x* is evaluated and its value is returned; otherwise,"
 " *y* is evaluated and its value is returned."
 msgstr "``x if C else y`` という式は最初に条件 *C* (*x* では *ありません*) を評価します; *C* が true の場合 *x* が評価され値が返されます; それ以外の場合には *y* が評価され返されます。"
 
-#: ../../reference/expressions.rst:1268
+#: ../../reference/expressions.rst:1381
 msgid "See :pep:`308` for more details about conditional expressions."
 msgstr "条件演算に関してより詳しくは :pep:`308` を参照してください。"
 
-#: ../../reference/expressions.rst:1275
+#: ../../reference/expressions.rst:1388
 msgid "Lambdas"
 msgstr "ラムダ (lambda)"
 
-#: ../../reference/expressions.rst:1285
+#: ../../reference/expressions.rst:1398
 msgid ""
 "Lambda expressions (sometimes called lambda forms) have the same syntactic "
 "position as expressions.  They are a shorthand to create anonymous "
@@ -1283,24 +1465,24 @@ msgid ""
 " object.  The unnamed object behaves like a function object defined with ::"
 msgstr "ラムダ式 (lambda expression または lambda forms) は構文的には式と同じ位置づけになります。ラムダは無名関数を作成できる省略記法です; 式 ``lambda arguments: expression`` は関数オブジェクトになります。ラムダで表される無名オブジェクトは以下の関数オブジェクト同様に動作します。::"
 
-#: ../../reference/expressions.rst:1293
+#: ../../reference/expressions.rst:1406
 msgid ""
 "See section :ref:`function` for the syntax of parameter lists.  Note that "
 "functions created with lambda expressions cannot contain statements."
 msgstr "パラメータの構文の一覧は :ref:`関数定義 <function>` を参照してください。ラムダ式で作成された関数は命令文を含むことができない点に注意してください。"
 
-#: ../../reference/expressions.rst:1300
+#: ../../reference/expressions.rst:1413
 msgid "Expression lists"
 msgstr "式のリスト"
 
-#: ../../reference/expressions.rst:1309
+#: ../../reference/expressions.rst:1422
 msgid ""
 "An expression list containing at least one comma yields a tuple.  The length"
 " of the tuple is the number of expressions in the list.  The expressions are"
 " evaluated from left to right."
 msgstr "少なくとも一つのカンマを含む式のリストは、タプルになります。タプルの長さは、リスト中の式の数に等しくなります。リスト中の式は左から右へと順に評価されます。"
 
-#: ../../reference/expressions.rst:1315
+#: ../../reference/expressions.rst:1428
 msgid ""
 "The trailing comma is required only to create a single tuple (a.k.a. a "
 "*singleton*); it is optional in all other cases.  A single expression "
@@ -1309,28 +1491,28 @@ msgid ""
 "parentheses: ``()``.)"
 msgstr "単一要素のタプル (別名 *単集合 (singleton)* ) を作りたければ、末尾にカンマが必要です。単一の式だけで、末尾にカンマをつけない場合には、タプルではなくその式の値になります (空のタプルを作りたいなら、中身が空の丸括弧ペア: ``()`` を使います。)"
 
-#: ../../reference/expressions.rst:1325
+#: ../../reference/expressions.rst:1438
 msgid "Evaluation order"
 msgstr "評価順序"
 
-#: ../../reference/expressions.rst:1329
+#: ../../reference/expressions.rst:1442
 msgid ""
 "Python evaluates expressions from left to right. Notice that while "
 "evaluating an assignment, the right-hand side is evaluated before the left-"
 "hand side."
 msgstr "Python は、式を左から右へと順に評価してゆきます。ただし、代入式を評価する最には、代入演算子の右側項が左側項よりも先に評価されるので注意してください。"
 
-#: ../../reference/expressions.rst:1332
+#: ../../reference/expressions.rst:1445
 msgid ""
 "In the following lines, expressions will be evaluated in the arithmetic "
 "order of their suffixes::"
 msgstr "以下に示す実行文の各行での評価順序は、添え字の数字順序と同じになります::"
 
-#: ../../reference/expressions.rst:1346
+#: ../../reference/expressions.rst:1459
 msgid "Operator precedence"
 msgstr "演算子の優先順位"
 
-#: ../../reference/expressions.rst:1350
+#: ../../reference/expressions.rst:1463
 msgid ""
 "The following table summarizes the operator precedences in Python, from "
 "lowest precedence (least binding) to highest precedence (most binding). "
@@ -1341,160 +1523,160 @@ msgid ""
 ":ref:`comparisons` --- and exponentiation, which groups from right to left)."
 msgstr "以下の表は、Python における演算子を、優先順位の最も低い (結合度が最も低い) ものから最も高い (結合度が最も高い) ものの順に並べたものです。同じボックス内に示された演算子は同じ優先順位を持ちます。演算子の文法が示されていないかぎり、演算子は全て二項演算子です。同じボックス内の演算子は、左から右へとグループ化されます (値のテストを含む比較演算子を除きます。比較演算子は、左から右に連鎖します --- :ref:`comparisons` を参照してください。また、べき乗演算子も除きます。べき乗演算子は右から左にグループ化されます)。"
 
-#: ../../reference/expressions.rst:1359
+#: ../../reference/expressions.rst:1472
 msgid "Operator"
 msgstr "演算子"
 
-#: ../../reference/expressions.rst:1359
+#: ../../reference/expressions.rst:1472
 msgid "Description"
 msgstr "説明"
 
-#: ../../reference/expressions.rst:1361
+#: ../../reference/expressions.rst:1474
 msgid ":keyword:`lambda`"
 msgstr ":keyword:`lambda`"
 
-#: ../../reference/expressions.rst:1361
+#: ../../reference/expressions.rst:1474
 msgid "Lambda expression"
 msgstr "ラムダ式"
 
-#: ../../reference/expressions.rst:1363
+#: ../../reference/expressions.rst:1476
 msgid ":keyword:`if` -- :keyword:`else`"
 msgstr ":keyword:`if` -- :keyword:`else`"
 
-#: ../../reference/expressions.rst:1363
+#: ../../reference/expressions.rst:1476
 msgid "Conditional expression"
 msgstr "条件演算"
 
-#: ../../reference/expressions.rst:1365
+#: ../../reference/expressions.rst:1478
 msgid ":keyword:`or`"
 msgstr ":keyword:`or`"
 
-#: ../../reference/expressions.rst:1365
+#: ../../reference/expressions.rst:1478
 msgid "Boolean OR"
 msgstr "ブール演算 OR"
 
-#: ../../reference/expressions.rst:1367
+#: ../../reference/expressions.rst:1480
 msgid ":keyword:`and`"
 msgstr ":keyword:`and`"
 
-#: ../../reference/expressions.rst:1367
+#: ../../reference/expressions.rst:1480
 msgid "Boolean AND"
 msgstr "ブール演算 AND"
 
-#: ../../reference/expressions.rst:1369
+#: ../../reference/expressions.rst:1482
 msgid ":keyword:`not` ``x``"
 msgstr ":keyword:`not` ``x``"
 
-#: ../../reference/expressions.rst:1369
+#: ../../reference/expressions.rst:1482
 msgid "Boolean NOT"
 msgstr "ブール演算 NOT"
 
-#: ../../reference/expressions.rst:1371
+#: ../../reference/expressions.rst:1484
 msgid ""
 ":keyword:`in`, :keyword:`not in`, :keyword:`is`, :keyword:`is not`, ``<``, "
 "``<=``, ``>``, ``>=``, ``<>``, ``!=``, ``==``"
 msgstr ":keyword:`in`, :keyword:`not in`, :keyword:`is`, :keyword:`is not`, ``<``, ``<=``, ``>``, ``>=``, ``<>``, ``!=``, ``==``"
 
-#: ../../reference/expressions.rst:1371
+#: ../../reference/expressions.rst:1484
 msgid "Comparisons, including membership tests and identity tests"
 msgstr "帰属や同一性のテストを含む比較"
 
-#: ../../reference/expressions.rst:1375
+#: ../../reference/expressions.rst:1488
 msgid "``|``"
 msgstr "``|``"
 
-#: ../../reference/expressions.rst:1375
+#: ../../reference/expressions.rst:1488
 msgid "Bitwise OR"
 msgstr "ビット単位 OR"
 
-#: ../../reference/expressions.rst:1377
+#: ../../reference/expressions.rst:1490
 msgid "``^``"
 msgstr "``^``"
 
-#: ../../reference/expressions.rst:1377
+#: ../../reference/expressions.rst:1490
 msgid "Bitwise XOR"
 msgstr "ビット単位 XOR"
 
-#: ../../reference/expressions.rst:1379
+#: ../../reference/expressions.rst:1492
 msgid "``&``"
 msgstr "``&``"
 
-#: ../../reference/expressions.rst:1379
+#: ../../reference/expressions.rst:1492
 msgid "Bitwise AND"
 msgstr "ビット単位 AND"
 
-#: ../../reference/expressions.rst:1381
+#: ../../reference/expressions.rst:1494
 msgid "``<<``, ``>>``"
 msgstr "``<<``, ``>>``"
 
-#: ../../reference/expressions.rst:1381
+#: ../../reference/expressions.rst:1494
 msgid "Shifts"
 msgstr "シフト演算"
 
-#: ../../reference/expressions.rst:1383
+#: ../../reference/expressions.rst:1496
 msgid "``+``, ``-``"
 msgstr "``+``, ``-``"
 
-#: ../../reference/expressions.rst:1383
+#: ../../reference/expressions.rst:1496
 msgid "Addition and subtraction"
 msgstr "加算および減算"
 
-#: ../../reference/expressions.rst:1385
+#: ../../reference/expressions.rst:1498
 msgid "``*``, ``/``, ``//``, ``%``"
 msgstr "``*``, ``/``, ``//``, ``%``"
 
-#: ../../reference/expressions.rst:1385
+#: ../../reference/expressions.rst:1498
 msgid "Multiplication, division, remainder [#]_"
 msgstr "乗算、除算、剰余 [#]_"
 
-#: ../../reference/expressions.rst:1388
+#: ../../reference/expressions.rst:1501
 msgid "``+x``, ``-x``, ``~x``"
 msgstr "``+x``, ``-x``, ``~x``"
 
-#: ../../reference/expressions.rst:1388
+#: ../../reference/expressions.rst:1501
 msgid "Positive, negative, bitwise NOT"
 msgstr "正符号、負符号、ビット単位 NOT"
 
-#: ../../reference/expressions.rst:1390
+#: ../../reference/expressions.rst:1503
 msgid "``**``"
 msgstr "``**``"
 
-#: ../../reference/expressions.rst:1390
+#: ../../reference/expressions.rst:1503
 msgid "Exponentiation [#]_"
 msgstr "べき乗 [#]_"
 
-#: ../../reference/expressions.rst:1392
+#: ../../reference/expressions.rst:1505
 msgid "``x[index]``, ``x[index:index]``, ``x(arguments...)``, ``x.attribute``"
 msgstr "``x[index]``, ``x[index:index]``, ``x(arguments...)``, ``x.attribute``"
 
-#: ../../reference/expressions.rst:1392
+#: ../../reference/expressions.rst:1505
 msgid "Subscription, slicing, call, attribute reference"
 msgstr "添字指定、スライス操作属性参照"
 
-#: ../../reference/expressions.rst:1395
+#: ../../reference/expressions.rst:1508
 msgid ""
 "``(expressions...)``, ``[expressions...]``, ``{key: value...}``, "
 "```expressions...```"
 msgstr "``(expressions...)``, ``[expressions...]``, ``{key: value...}``, ```expressions...```"
 
-#: ../../reference/expressions.rst:1395
+#: ../../reference/expressions.rst:1508
 msgid ""
 "Binding or tuple display, list display, dictionary display, string "
 "conversion"
 msgstr "式結合またはタプル表現、リスト表現、辞書表現、文字列への型変換"
 
-#: ../../reference/expressions.rst:1402
+#: ../../reference/expressions.rst:1515
 msgid "Footnotes"
 msgstr "注記"
 
-#: ../../reference/expressions.rst:1403
+#: ../../reference/expressions.rst:1516
 msgid ""
 "In Python 2.3 and later releases, a list comprehension \"leaks\" the control"
 " variables of each ``for`` it contains into the containing scope.  However, "
 "this behavior is deprecated, and relying on it will not work in Python 3."
 msgstr "Python 2.3 以降のリスト内包は ``for`` の中で使う制御変数を内包表記内のスコープに「リーク」します。しかし、この挙動は廃止予定です。Python 3 ではこの挙動に依存したコードは動作しなくなります。"
 
-#: ../../reference/expressions.rst:1407
+#: ../../reference/expressions.rst:1520
 msgid ""
 "While ``abs(x%y) < abs(y)`` is true mathematically, for floats it may not be"
 " true numerically due to roundoff.  For example, and assuming a platform on "
@@ -1506,7 +1688,7 @@ msgid ""
 "approach is more appropriate depends on the application."
 msgstr "``abs(x%y) < abs(y)`` は数学的には真となりますが、浮動小数点に対する演算の場合には、値丸め (roundoff) のために数値計算的に真にならない場合があります。例えば、Python の浮動小数点型が IEEE754 倍精度数型になっているプラットフォームを仮定すると、 ``-1e-100 % 1e100`` は ``1e100`` と同じ符号になるはずなのに、計算結果は ``-1e-100 + 1e100`` となります。これは数値計算的には厳密に ``1e100`` と等価です。関数 :func:`math.fmod` は、最初の引数と符号が一致するような値を返すので、上記の場合には ``-1e-100`` を返します。どちらのアプローチが適切かは、アプリケーションに依存します。"
 
-#: ../../reference/expressions.rst:1416
+#: ../../reference/expressions.rst:1529
 msgid ""
 "If x is very close to an exact integer multiple of y, it's possible for "
 "``floor(x/y)`` to be one larger than ``(x-x%y)/y`` due to rounding.  In such"
@@ -1514,23 +1696,36 @@ msgid ""
 "``divmod(x,y)[0] * y + x % y`` be very close to ``x``."
 msgstr "x が y の整数倍に非常に近い場合、丸め誤差によって ``floor(x/y)`` は ``(x-x%y)/y`` よりも大きな値になる可能性があります。そのような場合、 Python は ``divmod(x,y)[0] * y + x % y`` が ``x`` に非常に近くなるという関係を保つために、後者の値を返します。"
 
-#: ../../reference/expressions.rst:1421
+#: ../../reference/expressions.rst:1534
 msgid ""
-"While comparisons between unicode strings make sense at the byte level, they"
-" may be counter-intuitive to users. For example, the strings "
-"``u\"\\u00C7\"`` and ``u\"\\u0043\\u0327\"`` compare differently, even "
-"though they both represent the same unicode character (LATIN CAPITAL LETTER "
-"C WITH CEDILLA). To compare strings in a human recognizable way, compare "
-"using :func:`unicodedata.normalize`."
-msgstr "ユニコード文字列間の比較はバイトレベルでは当然とはいえ、ユーザにとっては直感的ではないかもしれません。例えば、文字列 ``u\"\\u00C7\"`` と ``u\"\\u0043\\u0327\"`` の比較は、両方の文字列が同じユニコード文字(LATIN CAPITAL LETTER C WITH CEDILLA)で表されたとしても違います。人間が分かり易い方法で文字列を比較するために :func:`unicodedata.normalize` を使用して比較してください。"
+"The Unicode standard distinguishes between :dfn:`code points` (e.g. U+0041) "
+"and :dfn:`abstract characters` (e.g. \"LATIN CAPITAL LETTER A\"). While most"
+" abstract characters in Unicode are only represented using one code point, "
+"there is a number of abstract characters that can in addition be represented"
+" using a sequence of more than one code point.  For example, the abstract "
+"character \"LATIN CAPITAL LETTER C WITH CEDILLA\" can be represented as a "
+"single :dfn:`precomposed character` at code position U+00C7, or as a "
+"sequence of a :dfn:`base character` at code position U+0043 (LATIN CAPITAL "
+"LETTER C), followed by a :dfn:`combining character` at code position U+0327 "
+"(COMBINING CEDILLA)."
+msgstr ""
 
-#: ../../reference/expressions.rst:1428
+#: ../../reference/expressions.rst:1545
 msgid ""
-"The implementation computes this efficiently, without constructing lists or "
-"sorting."
-msgstr "実装では、この演算をリストを構築したりソートしたりすることなく効率的に行います。"
+"The comparison operators on unicode strings compare at the level of Unicode "
+"code points. This may be counter-intuitive to humans.  For example, "
+"``u\"\\u00C7\" == u\"\\u0043\\u0327\"`` is ``False``, even though both "
+"strings represent the same abstract character \"LATIN CAPITAL LETTER C WITH "
+"CEDILLA\"."
+msgstr ""
 
-#: ../../reference/expressions.rst:1431
+#: ../../reference/expressions.rst:1550
+msgid ""
+"To compare strings at the level of abstract characters (that is, in a way "
+"intuitive to humans), use :func:`unicodedata.normalize`."
+msgstr ""
+
+#: ../../reference/expressions.rst:1553
 msgid ""
 "Earlier versions of Python used lexicographic comparison of the sorted (key,"
 " value) lists, but this was very expensive for the common case of comparing "
@@ -1539,7 +1734,7 @@ msgid ""
 "to test a dictionary for emptiness by comparing it to ``{}``."
 msgstr "Python の初期のバージョンでは、ソートされた (key, value) のリストに対して辞書的な比較を行っていましたが、これは等価性の計算のようなよくある操作を実現するには非常にコストの高い操作でした。もっと以前のバージョンの Python では、辞書はアイデンティティだけで比較されていました。しかしこの仕様は、 ``{}`` との比較によって辞書が空であるか確かめられると期待していた人々を混乱させていました。"
 
-#: ../../reference/expressions.rst:1437
+#: ../../reference/expressions.rst:1559
 msgid ""
 "Due to automatic garbage-collection, free lists, and the dynamic nature of "
 "descriptors, you may notice seemingly unusual behaviour in certain uses of "
@@ -1547,13 +1742,13 @@ msgid ""
 "instance methods, or constants.  Check their documentation for more info."
 msgstr "自動的なガベージコレクション、フリーリスト、ディスクリプタの動的特性のために、インスタンスメソッドや定数の比較を行うようなときに :keyword:`is` 演算子の利用は、一見すると普通ではない振る舞いだと気付くかもしれません。詳細はそれぞれのドキュメントを確認してください。"
 
-#: ../../reference/expressions.rst:1442
+#: ../../reference/expressions.rst:1564
 msgid ""
 "The ``%`` operator is also used for string formatting; the same precedence "
 "applies."
 msgstr "``%`` 演算子は文字列フォーマットにも使われ、同じ優先順位が当てはまります。"
 
-#: ../../reference/expressions.rst:1445
+#: ../../reference/expressions.rst:1567
 msgid ""
 "The power operator ``**`` binds less tightly than an arithmetic or bitwise "
 "unary operator on its right, that is, ``2**-1`` is ``0.5``."

@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-09-03 10:34+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:39+0000\n"
+"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -402,9 +401,9 @@ msgstr "それぞれの簡単な説明を以下に記します。完全な説明
 
 #: ../../distutils/apiref.rst:169
 msgid ""
-"The Extension class describes a single C or C++extension module in a setup "
+"The Extension class describes a single C or C++ extension module in a setup "
 "script. It accepts the following keyword arguments in its constructor"
-msgstr "Extension クラスは、セットアップスクリプト中で C または C++拡張モジュールを表します。コンストラクタで以下のキーワード引数をとります。"
+msgstr ""
 
 #: ../../distutils/apiref.rst:177
 msgid ""
@@ -444,8 +443,8 @@ msgid ""
 "list of macros to define; each macro is defined using a 2-tuple ``(name, "
 "value)``, where *value* is either the string to define it to or ``None`` to "
 "define it without a particular value (equivalent of ``#define FOO`` in "
-"source or :option:`-DFOO` on Unix C compiler command line)"
-msgstr "定義するマクロのリスト; それぞれのマクロは2要素のタプル ``(name, value)`` で定義されます。 *value* には定義しようとしている文字列、または内容なしで定義する場合は ``None`` (ソースコード中で ``#define FOO`` と書く、または Unix Cコンパイラのコマンドラインで :option:`-DFOO` を指定するのと等価です)を指定します。"
+"source or :option:`!-DFOO` on Unix C compiler command line)"
+msgstr "定義するマクロのリスト; それぞれのマクロは2要素のタプル ``(name, value)`` で定義されます。 *value* には定義しようとしている文字列、または内容なしで定義する場合は ``None`` (ソースコード中で ``#define FOO`` と書く、または Unix Cコンパイラのコマンドラインで :option:`!-DFOO` を指定するのと等価です) を指定します"
 
 #: ../../distutils/apiref.rst:200
 msgid "a list of tuples"
@@ -594,15 +593,15 @@ msgstr "ライブラリを探索するディレクトリ、特定のライブラ
 
 #: ../../distutils/apiref.rst:317
 msgid ""
-"Generate C pre-processor options (:option:`-D`, :option:`-U`, :option:`-I`) "
-"as used by at least two types of compilers: the typical Unix compiler and "
-"Visual C++. *macros* is the usual thing, a list of 1- or 2-tuples, where "
-"``(name,)`` means undefine (:option:`-U`) macro *name*, and ``(name, "
-"value)`` means define (:option:`-D`) macro *name* to *value*.  "
+"Generate C pre-processor options (:option:`!-D`, :option:`!-U`, "
+":option:`!-I`) as used by at least two types of compilers: the typical Unix "
+"compiler and Visual C++. *macros* is the usual thing, a list of 1- or "
+"2-tuples, where ``(name,)`` means undefine (:option:`!-U`) macro *name*, and"
+" ``(name, value)`` means define (:option:`!-D`) macro *name* to *value*.  "
 "*include_dirs* is just a list of directory names to be added to the header "
-"file search path (:option:`-I`). Returns a list of command-line options "
+"file search path (:option:`!-I`). Returns a list of command-line options "
 "suitable for either Unix compilers or Visual C++."
-msgstr "Cプリプロセッサオプション(:option:`-D`, :option:`-U`, :option:`-I`)を生成します。これらは少なくとも2つのコンパイラで利用可能です。典型的な Unix のコンパイラと、VisualC++です。 *macros* は1または2要素のタプルで ``(name,)`` は *name* マクロの削除 (:option:`-U`)を意味し、 ``(name, value)`` は *name* マクロを *value* として定義(:option:`-D`)します。 *include_dirs* はディレクトリ名のリストで、ヘッダファイルのサーチパスに追加されます(:option:`-I`)。 Unix のコンパイラと、Visual C++で利用できるコマンドラインオプションのリストを返します。"
+msgstr "Cプリプロセッサオプション(:option:`!-D`, :option:`!-U`, :option:`!-I`)を生成します。これらは少なくとも2つのコンパイラで利用可能です。典型的な Unix のコンパイラと、VisualC++です。 *macros* は1または2要素のタプルで ``(name,)`` は *name* マクロの削除 (:option:`!-U`)を意味し、 ``(name, value)`` は *name* マクロを *value* として定義(:option:`!-D`)します。 *include_dirs* はディレクトリ名のリストで、ヘッダファイルのサーチパスに追加されます(:option:`!-I`)。 Unix のコンパイラと、Visual C++で利用できるコマンドラインオプションのリストを返します。"
 
 #: ../../distutils/apiref.rst:329
 msgid "Determine the default compiler to use for the given platform."
@@ -636,9 +635,9 @@ msgstr "指定されたプラットフォーム/コンパイラの組み合わ�
 
 #: ../../distutils/apiref.rst:357
 msgid ""
-"Print list of available compilers (used by the :option:`--help-compiler` "
+"Print list of available compilers (used by the :option:`!--help-compiler` "
 "options to :command:`build`, :command:`build_ext`, :command:`build_clib`)."
-msgstr "利用可能なコンパイラのリストを表示します(:command:`build`, :command:`build_ext`, :command:`build_clib` の、 :option:`--help-compiler` オプションで使われます。)"
+msgstr "利用可能なコンパイラのリストを表示します (:command:`build`, :command:`build_ext`, :command:`build_clib` の、 :option:`!--help-compiler` オプションで使われます)。"
 
 #: ../../distutils/apiref.rst:363
 msgid ""
@@ -1159,30 +1158,30 @@ msgid ""
 msgstr "このモジュールは :class:`UnixCCompiler` クラスを提供します。 :class:`CCompiler` クラスのサブクラスで、典型的なUnixスタイルのコマンドラインCコンパイラを扱います:"
 
 #: ../../distutils/apiref.rst:787
-msgid "macros defined with :option:`-Dname[=value]`"
-msgstr "マクロは :option:`-Dname[=value]` で定義されます。"
+msgid "macros defined with :option:`!-Dname[=value]`"
+msgstr "マクロは :option:`!-Dname[=value]` で定義されます"
 
 #: ../../distutils/apiref.rst:789
-msgid "macros undefined with :option:`-Uname`"
-msgstr "マクロは :option:`-Uname` で削除されます。"
+msgid "macros undefined with :option:`!-Uname`"
+msgstr "マクロは :option:`!-Uname` で削除されます"
 
 #: ../../distutils/apiref.rst:791
-msgid "include search directories specified with :option:`-Idir`"
-msgstr "インクルードファイルの探索ディレクトリは :option:`-Idir` で指定されます。"
+msgid "include search directories specified with :option:`!-Idir`"
+msgstr "インクルードファイルの探索ディレクトリは :option:`!-Idir` で指定されます"
 
 #: ../../distutils/apiref.rst:793
-msgid "libraries specified with :option:`-llib`"
-msgstr "ライブラリは :option:`-llib` で指定されます。"
+msgid "libraries specified with :option:`!-llib`"
+msgstr "ライブラリは :option:`!-llib` で指定されます"
 
 #: ../../distutils/apiref.rst:795
-msgid "library search directories specified with :option:`-Ldir`"
-msgstr "ライブラリの探索ディレクトリは :option:`-Ldir` で指定されます。"
+msgid "library search directories specified with :option:`!-Ldir`"
+msgstr "ライブラリの探索ディレクトリは :option:`!-Ldir` で指定されます"
 
 #: ../../distutils/apiref.rst:797
 msgid ""
-"compile handled by :program:`cc` (or similar) executable with :option:`-c` "
+"compile handled by :program:`cc` (or similar) executable with :option:`!-c` "
 "option: compiles :file:`.c` to :file:`.o`"
-msgstr "コンパイルは :program:`cc` (またはそれに似た) 実行ファイルに、 :option:`-c` オプションをつけて実行します: :file:`.c` を :file:`.o` にコンパイルします。"
+msgstr "コンパイルは :program:`cc` (またはそれに似た) 実行ファイルに、 :option:`!-c` オプションをつけて実行します: :file:`.c` を :file:`.o` にコンパイルします"
 
 #: ../../distutils/apiref.rst:800
 msgid ""
@@ -1191,8 +1190,8 @@ msgid ""
 msgstr "静的ライブラリは :program:`ar` コマンドで処理されます (:program:`ranlib` を使うかもしれません)"
 
 #: ../../distutils/apiref.rst:803
-msgid "link shared library handled by :program:`cc` :option:`-shared`"
-msgstr "共有ライブラリのリンクは :program:`cc` :option:`-shared` で処理されます。"
+msgid "link shared library handled by :program:`cc` :option:`!-shared`"
+msgstr "共有ライブラリのリンクは :program:`cc` :option:`!-shared` で処理されます"
 
 #: ../../distutils/apiref.rst:807
 msgid ":mod:`distutils.msvccompiler` --- Microsoft Compiler"
@@ -1226,7 +1225,7 @@ msgstr ":mod:`distutils.bcppcompiler` --- Borland コンパイラ"
 
 #: ../../distutils/apiref.rst:835
 msgid ""
-"This module provides :class:`BorlandCCompiler`, an subclass of the abstract "
+"This module provides :class:`BorlandCCompiler`, a subclass of the abstract "
 ":class:`CCompiler` class for the Borland C++ compiler."
 msgstr "このモジュールは :class:`BorlandCCompiler` クラスを提供します。抽象クラス :class:`CCompiler` の具象クラスでBorland C++ コンパイラ向けです。"
 
@@ -1528,14 +1527,14 @@ msgstr "Mac OS X システムでは、 OS バージョンは、現在のOSバー
 #: ../../distutils/apiref.rst:1108
 msgid ""
 "For universal binary builds on Mac OS X the architecture value reflects the "
-"univeral binary status instead of the architecture of the current processor."
-" For 32-bit universal binaries the architecture is ``fat``, for 64-bit "
-"universal binaries the architecture is ``fat64``, and for 4-way universal "
-"binaries the architecture is ``universal``. Starting from Python 2.7 and "
-"Python 3.2 the architecture ``fat3`` is used for a 3-way universal build "
-"(ppc, i386, x86_64) and ``intel`` is used for a univeral build with the i386"
-" and x86_64 architectures"
-msgstr "Mac OS X のユニバーサルバイナリビルドでは、アーキテクチャの値は現在のプロセッサではなく、ユニバーサルバイナリの状態を表しています。 32bit ユニバーサルバイナリではアーキテクチャは ``fat`` で、 64bit ユニバーサルバイナリではアーキテクチャは ``fat64`` で、 4-way ユニバーサルバイナリではアーキテクチャは ``universal`` になります。 Python 2.7 と Python 3.2 から 3-way ユニバーサルバイナリ (ppc, i386, x86_64) には ``fat3`` が i386 と x86_64 ユニバーサルバイナリには ``intel`` が使われるようになりました。"
+"universal binary status instead of the architecture of the current "
+"processor. For 32-bit universal binaries the architecture is ``fat``, for "
+"64-bit universal binaries the architecture is ``fat64``, and for 4-way "
+"universal binaries the architecture is ``universal``. Starting from Python "
+"2.7 and Python 3.2 the architecture ``fat3`` is used for a 3-way universal "
+"build (ppc, i386, x86_64) and ``intel`` is used for a universal build with "
+"the i386 and x86_64 architectures"
+msgstr "Mac OS X のユニバーサルバイナリビルドでは、アーキテクチャの値は現在のプロセッサではなく、ユニバーサルバイナリの状態を表しています。32bit ユニバーサルバイナリではアーキテクチャは ``fat`` で、64bit ユニバーサルバイナリではアーキテクチャは ``fat64`` で、4-way ユニバーサルバイナリではアーキテクチャは ``universal`` になります。Python 2.7 と Python 3.2 から 3-way ユニバーサルバイナリ (ppc, i386, x86_64) には ``fat3`` が i386 と x86_64 ユニバーサルバイナリには ``intel`` が使われるようになりました"
 
 #: ../../distutils/apiref.rst:1117
 msgid "Examples of returned values on Mac OS X:"
@@ -1772,10 +1771,10 @@ msgstr "オプションは渡されたオブジェクトの属性を設定しま
 
 #: ../../distutils/apiref.rst:1313
 msgid ""
-"boolean options can have \"negative aliases\" --- eg. if :option:`--quiet` "
-"is the \"negative alias\" of :option:`--verbose`, then :option:`--quiet` on "
-"the command line sets *verbose* to false."
-msgstr "真偽値をとるオプションは \"負のエイリアス\" を持ちます。--- たとえば :option:`--quiet` の \"負のエイリアス\" が :option:`--verbose` の場合、コマンドラインで :option:`--quiet` を指定すると *verbose* は偽になります。"
+"boolean options can have \"negative aliases\" --- eg. if :option:`!--quiet` "
+"is the \"negative alias\" of :option:`!--verbose`, then :option:`!--quiet` "
+"on the command line sets *verbose* to false."
+msgstr "真偽値をとるオプションは \"負のエイリアス\" を持ちます。--- たとえば :option:`!--quiet` の \"負のエイリアス\" が :option:`!--verbose` の場合、コマンドラインで :option:`!--quiet` を指定すると *verbose* は偽になります。"
 
 #: ../../distutils/apiref.rst:1320
 msgid ""

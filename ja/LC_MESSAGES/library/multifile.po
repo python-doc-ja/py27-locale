@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-28 05:44+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:58+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -66,7 +65,7 @@ msgid ""
 msgstr ":class:`MultiFile` の視点から見ると、テキストは三種類の行データ: データ、セクション分割子、終了マーカ、からなることを知っていると役に立つでしょう。 MultiFile は、多重入れ子構造になっている可能性のある、それぞれが独自のセクション分割子および終了マーカのパターンを持つメッセージパートをサポートするように設計されています。"
 
 #: ../../library/multifile.rst:43
-msgid "Module email"
+msgid "Module :mod:`email`"
 msgstr ":mod:`email` モジュール"
 
 #: ../../library/multifile.rst:44

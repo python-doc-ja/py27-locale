@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-03 11:29+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:49+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -198,7 +197,7 @@ msgid ""
 "learn more about :mod:`ctypes` data types."
 msgstr "他のパラメータ型をもつ関数呼び出しに移る前に、 :mod:`ctypes` データ型についてさらに学ぶ必要があります。"
 
-#: ../../library/ctypes.rst:216 ../../library/ctypes.rst:2141
+#: ../../library/ctypes.rst:216 ../../library/ctypes.rst:2142
 msgid "Fundamental data types"
 msgstr "基本データ型"
 
@@ -698,9 +697,9 @@ msgstr "推奨されている配列の作成方法はデータ型に正の整数
 
 #: ../../library/ctypes.rst:660
 msgid ""
-"Here is an example of an somewhat artificial data type, a structure "
+"Here is an example of a somewhat artificial data type, a structure "
 "containing 4 POINTs among other stuff::"
-msgstr "ややわざとらしいデータ型の例になりますが、他のものに混ざって 4 個の POINT がある構造体です。::"
+msgstr "ややわざとらしいデータ型の例になりますが、他のものに混ざって 4 個の POINT がある構造体です::"
 
 #: ../../library/ctypes.rst:676
 msgid "Instances are created in the usual way, by calling the class::"
@@ -728,9 +727,9 @@ msgstr "ポインタのインスタンスは :mod:`ctypes` 型に対して :func
 
 #: ../../library/ctypes.rst:711
 msgid ""
-"Pointer instances have a :attr:`contents` attribute which returns the object"
-" to which the pointer points, the ``i`` object above::"
-msgstr "ポインタインスタンスはポインタが指すオブジェクト (上の例では ``i`` ) を返す :attr:`contents` 属性を持ちます。::"
+"Pointer instances have a :attr:`~_Pointer.contents` attribute which returns "
+"the object to which the pointer points, the ``i`` object above::"
+msgstr "次のように、ポインタインスタンスは、ポインタが指すオブジェクト (上の例では ``i``) を返す :attr:`~_Pointer.contents` 属性を持ちます::"
 
 #: ../../library/ctypes.rst:718
 msgid ""
@@ -874,7 +873,7 @@ msgstr "コールバック関数"
 
 #: ../../library/ctypes.rst:937
 msgid ""
-":mod:`ctypes` allows to create C callable function pointers from Python "
+":mod:`ctypes` allows creating C callable function pointers from Python "
 "callables. These are sometimes called *callback functions*."
 msgstr ":mod:`ctypes` は C の呼び出し可能な関数ポインタを Python 呼び出し可能オブジェクトから作成できるようにします。これらは *コールバック関数* と呼ばれることがあります。"
 
@@ -1180,11 +1179,11 @@ msgstr ":mod:`ctypes.util` モジュールはロードするライブラリを�
 msgid ""
 "Try to find a library and return a pathname.  *name* is the library name "
 "without any prefix like *lib*, suffix like ``.so``, ``.dylib`` or version "
-"number (this is the form used for the posix linker option :option:`-l`).  If"
-" no library can be found, returns ``None``."
-msgstr "ライブラリを見つけてパス名を返そうと試みます。 *name* は ``lib`` のような接頭辞、 ``.so``, ``.dylib`` のような接尾辞、あるいは、バージョン番号が何も付いていないライブラリの名前です (これは posix リンカのオプション :option:`-l` に使われている形式です)。もしライブラリが見つからなければ、 ``None`` を返します。"
+"number (this is the form used for the posix linker option :option:`!-l`).  "
+"If no library can be found, returns ``None``."
+msgstr "ライブラリを見つけてパス名を返そうと試みます。 *name* は ``lib`` のような接頭辞、 ``.so``, ``.dylib`` のような接尾辞、あるいは、バージョン番号が何も付いていないライブラリの名前です (これは posix リンカのオプション :option:`!-l` に使われている形式です)。もしライブラリが見つからなければ、 ``None`` を返します。"
 
-#: ../../library/ctypes.rst:1308 ../../library/ctypes.rst:1902
+#: ../../library/ctypes.rst:1308 ../../library/ctypes.rst:1903
 msgid "The exact functionality is system dependent."
 msgstr "厳密な機能はシステムに依存します。"
 
@@ -1222,9 +1221,9 @@ msgstr "共有ライブラリをロードする"
 
 #: ../../library/ctypes.rst:1351
 msgid ""
-"There are several ways to loaded shared libraries into the Python process.  "
+"There are several ways to load shared libraries into the Python process.  "
 "One way is to instantiate one of the following classes:"
-msgstr "共有ライブラリを Python プロセスへロードする方法はいくつかあります。一つの方法は下記のクラスの一つをインスタンス化することです。:"
+msgstr "共有ライブラリを Python プロセスへロードする方法はいくつかあります。一つの方法は下記のクラスの一つをインスタンス化することです:"
 
 #: ../../library/ctypes.rst:1357
 msgid ""
@@ -1289,59 +1288,60 @@ msgstr "これらすべてのクラスは少なくとも一つの引数、すな
 #: ../../library/ctypes.rst:1402
 msgid ""
 "The *mode* parameter can be used to specify how the library is loaded.  For "
-"details, consult the :manpage:`dlopen(3)` manpage, on Windows, *mode* is "
-"ignored."
-msgstr "*mode* パラメータはライブラリがどうやってロードされたかを特定するために使うことができます。詳細は、 :manpage:`dlopen(3)` マニュアルページを参考にしてください。 Windows では *mode* は無視されます。"
+"details, consult the :manpage:`dlopen(3)` manpage.  On Windows, *mode* is "
+"ignored.  On posix systems, RTLD_NOW is always added, and is not "
+"configurable."
+msgstr "*mode* パラメータを使うと、ライブラリがどうやってロードされたかを特定できます。\n詳細は :manpage:`dlopen(3)` マニュアルページを参考にしてください。\nWindows では *mode* は無視されます。\nPOSIX システムでは RTLD_NOW が常に追加され、設定変更はできません。"
 
-#: ../../library/ctypes.rst:1406
+#: ../../library/ctypes.rst:1407
 msgid ""
-"The *use_errno* parameter, when set to True, enables a ctypes mechanism that"
-" allows to access the system :data:`errno` error number in a safe way. "
+"The *use_errno* parameter, when set to true, enables a ctypes mechanism that"
+" allows accessing the system :data:`errno` error number in a safe way. "
 ":mod:`ctypes` maintains a thread-local copy of the systems :data:`errno` "
 "variable; if you call foreign functions created with ``use_errno=True`` then"
 " the :data:`errno` value before the function call is swapped with the ctypes"
 " private copy, the same happens immediately after the function call."
-msgstr "*use_errno* 変数が True に設定されたとき、システムの :data:`errno` エラーナンバーに安全にアクセスする ctypes の仕組みが有効化されます。 :mod:`ctypes` はシステムの :data:`errno` 変数のスレッド限定のコピーを管理します。もし、 ``use_errno=True`` の状態で作られた外部関数を呼び出したなら、関数呼び出し前の :data:`errno` 変数は ctypes のプライベートコピーと置き換えられ、同じことが関数呼び出しの直後にも発生します。"
+msgstr "*use_errno* 変数が真に設定されたとき、システムの :data:`errno` エラーナンバーに安全にアクセスする ctypes の仕組みが有効化されます。 :mod:`ctypes` はシステムの :data:`errno` 変数のスレッド限定のコピーを管理します。もし、 ``use_errno=True`` の状態で作られた外部関数を呼び出したなら、関数呼び出し前の :data:`errno` 変数は ctypes のプライベートコピーと置き換えられ、同じことが関数呼び出しの直後にも発生します。"
 
-#: ../../library/ctypes.rst:1413
+#: ../../library/ctypes.rst:1414
 msgid ""
 "The function :func:`ctypes.get_errno` returns the value of the ctypes "
 "private copy, and the function :func:`ctypes.set_errno` changes the ctypes "
 "private copy to a new value and returns the former value."
 msgstr ":func:`ctypes.get_errno` 関数は ctypes のプライベートコピーの値を返します。そして、 :func:`ctypes.set_errno` 関数は ctypes のプライベートコピーを置き換え、以前の値を返します。"
 
-#: ../../library/ctypes.rst:1417
+#: ../../library/ctypes.rst:1418
 msgid ""
-"The *use_last_error* parameter, when set to True, enables the same mechanism"
+"The *use_last_error* parameter, when set to true, enables the same mechanism"
 " for the Windows error code which is managed by the :func:`GetLastError` and"
 " :func:`SetLastError` Windows API functions; :func:`ctypes.get_last_error` "
 "and :func:`ctypes.set_last_error` are used to request and change the ctypes "
 "private copy of the windows error code."
-msgstr "*use_last_error* パラメータは、 True に設定されたとき、 :func:`GetLastError` と :func:`SetLastError` Windows API によって管理される Windows エラーコードに対するのと同じ仕組みが有効化されます。 :func:`ctypes.get_last_error` と :func:`ctypes.set_last_error` は Windows エラーコードの ctypes プライベートコピーを変更したり要求したりするのに使われます。"
+msgstr "*use_last_error* パラメータは、真に設定されたとき、 :func:`GetLastError` と :func:`SetLastError` Windows API によって管理される Windows エラーコードに対するのと同じ仕組みが有効化されます。 :func:`ctypes.get_last_error` と :func:`ctypes.set_last_error` は Windows エラーコードの ctypes プライベートコピーを変更したり要求したりするのに使われます。"
 
-#: ../../library/ctypes.rst:1423
+#: ../../library/ctypes.rst:1424
 msgid "The *use_last_error* and *use_errno* optional parameters were added."
 msgstr "*use_last_error* と *use_errno* オプション変数が追加されました。"
 
-#: ../../library/ctypes.rst:1429
+#: ../../library/ctypes.rst:1430
 msgid ""
 "Flag to use as *mode* parameter.  On platforms where this flag is not "
 "available, it is defined as the integer zero."
 msgstr "*mode* パラメータとして使うフラグ。このフラグが利用できないプラットフォームでは、整数のゼロと定義されています。"
 
-#: ../../library/ctypes.rst:1436
+#: ../../library/ctypes.rst:1437
 msgid ""
 "Flag to use as *mode* parameter.  On platforms where this is not available, "
 "it is the same as *RTLD_GLOBAL*."
 msgstr "*mode* パラメータとして使うフラグ。これが利用できないプラットフォームでは、 *RTLD_GLOBAL* と同様です。"
 
-#: ../../library/ctypes.rst:1443
+#: ../../library/ctypes.rst:1444
 msgid ""
 "The default mode which is used to load shared libraries.  On OSX 10.3, this "
 "is *RTLD_GLOBAL*, otherwise it is the same as *RTLD_LOCAL*."
 msgstr "共有ライブラリをロードするために使われるデフォルトモード。 OSX 10.3 では *RTLD_GLOBAL* であり、そうでなければ *RTLD_LOCAL* と同じです。"
 
-#: ../../library/ctypes.rst:1446
+#: ../../library/ctypes.rst:1447
 msgid ""
 "Instances of these classes have no public methods.  Functions exported by "
 "the shared library can be accessed as attributes or by index.  Please note "
@@ -1350,21 +1350,21 @@ msgid ""
 " other hand, accessing it through an index returns a new object each time:"
 msgstr "これらのクラスのインスタンスには公開メソッドはありません。共有ライブラリからエクスポートされた関数は、属性として、もしくは添字でアクセスできます。属性を通した関数へのアクセスは結果がキャッシュされ、従って繰り返しアクセスされると毎回同じオブジェクトを返すことに注意してください。それとは反対に、添字を通したアクセスは毎回新しいオブジェクトを返します:"
 
-#: ../../library/ctypes.rst:1457
+#: ../../library/ctypes.rst:1458
 msgid ""
 "The following public attributes are available, their name starts with an "
 "underscore to not clash with exported function names:"
 msgstr "次に述べる公開属性が利用できます。それらの名前はエクスポートされた関数名に衝突しないように下線で始まります。:"
 
-#: ../../library/ctypes.rst:1463
+#: ../../library/ctypes.rst:1464
 msgid "The system handle used to access the library."
 msgstr "ライブラリへのアクセスに用いられるシステムハンドル。"
 
-#: ../../library/ctypes.rst:1468
+#: ../../library/ctypes.rst:1469
 msgid "The name of the library passed in the constructor."
 msgstr "コンストラクタに渡されたライブラリの名前。"
 
-#: ../../library/ctypes.rst:1470
+#: ../../library/ctypes.rst:1471
 msgid ""
 "Shared libraries can also be loaded by using one of the prefabricated "
 "objects, which are instances of the :class:`LibraryLoader` class, either by "
@@ -1372,52 +1372,52 @@ msgid ""
 "attribute of the loader instance."
 msgstr "共有ライブラリは (:class:`LibraryLoader` クラスのインスタンスである) 前もって作られたオブジェクトの一つを使うことによってロードすることもできます。それらの :meth:`LoadLibrary` メソッドを呼び出すか、ローダーインスタンスの属性としてライブラリを取り出すかのどちらかによりロードします。"
 
-#: ../../library/ctypes.rst:1478
+#: ../../library/ctypes.rst:1479
 msgid ""
 "Class which loads shared libraries.  *dlltype* should be one of the "
 ":class:`CDLL`, :class:`PyDLL`, :class:`WinDLL`, or :class:`OleDLL` types."
 msgstr "共有ライブラリをロードするクラス。 *dlltype* は :class:`CDLL` 、 :class:`PyDLL` 、 :class:`WinDLL` もしくは :class:`OleDLL` 型の一つであるべきです。"
 
-#: ../../library/ctypes.rst:1481
+#: ../../library/ctypes.rst:1482
 msgid ""
-":meth:`__getattr__` has special behavior: It allows to load a shared library"
+":meth:`__getattr__` has special behavior: It allows loading a shared library"
 " by accessing it as attribute of a library loader instance.  The result is "
 "cached, so repeated attribute accesses return the same library each time."
-msgstr ":meth:`__getattr__` は特別なはたらきをします: ライブラリローダーインスタンスの属性として共有ライブラリにアクセスするとそれがロードされるということを可能にします。結果はキャッシュされます。そのため、繰り返し属性アクセスを行うといつも同じライブラリが返されます。"
+msgstr ":meth:`__getattr__` は次のような特別なはたらきをします。ライブラリローダーインスタンスの属性として共有ライブラリにアクセスするとそれがロードされるということを可能にします。結果はキャッシュされます。そのため、繰り返し属性アクセスを行うといつも同じライブラリが返されます。"
 
-#: ../../library/ctypes.rst:1488
+#: ../../library/ctypes.rst:1489
 msgid ""
 "Load a shared library into the process and return it.  This method always "
 "returns a new instance of the library."
 msgstr "共有ライブラリをプロセスへロードし、それを返します。このメソッドはライブラリの新しいインスタンスを常に返します。"
 
-#: ../../library/ctypes.rst:1491
+#: ../../library/ctypes.rst:1492
 msgid "These prefabricated library loaders are available:"
 msgstr "これらの前もって作られたライブラリローダーを利用することができます。:"
 
-#: ../../library/ctypes.rst:1497
+#: ../../library/ctypes.rst:1498
 msgid "Creates :class:`CDLL` instances."
 msgstr ":class:`CDLL` インスタンスを作ります。"
 
-#: ../../library/ctypes.rst:1503
+#: ../../library/ctypes.rst:1504
 msgid "Windows only: Creates :class:`WinDLL` instances."
 msgstr "Windows 用: :class:`WinDLL` インスタンスを作ります。"
 
-#: ../../library/ctypes.rst:1509
+#: ../../library/ctypes.rst:1510
 msgid "Windows only: Creates :class:`OleDLL` instances."
 msgstr "Windows 用: :class:`OleDLL` インスタンスを作ります。"
 
-#: ../../library/ctypes.rst:1515
+#: ../../library/ctypes.rst:1516
 msgid "Creates :class:`PyDLL` instances."
 msgstr ":class:`PyDLL` インスタンスを作ります。"
 
-#: ../../library/ctypes.rst:1517
+#: ../../library/ctypes.rst:1518
 msgid ""
 "For accessing the C Python api directly, a ready-to-use Python shared "
 "library object is available:"
 msgstr "C Python api に直接アクセするために、すぐに使用できる Python 共有ライブラリオブジェクトが用意されています。:"
 
-#: ../../library/ctypes.rst:1524
+#: ../../library/ctypes.rst:1525
 msgid ""
 "An instance of :class:`PyDLL` that exposes Python C API functions as "
 "attributes.  Note that all these functions are assumed to return C "
@@ -1425,11 +1425,11 @@ msgid ""
 "assign the correct :attr:`restype` attribute to use these functions."
 msgstr "属性として Python C api 関数を公開する :class:`PyDLL` のインスタンス。これらすべての関数は C :c:type:`int` を返すと仮定されますが、もちろん常に正しいとは限りません。そのため、これらの関数を使うためには正しい :attr:`restype` 属性を代入しなければなりません。"
 
-#: ../../library/ctypes.rst:1533
+#: ../../library/ctypes.rst:1534
 msgid "Foreign functions"
 msgstr "外部関数"
 
-#: ../../library/ctypes.rst:1535
+#: ../../library/ctypes.rst:1536
 msgid ""
 "As explained in the previous section, foreign functions can be accessed as "
 "attributes of loaded shared libraries.  The function objects created in this"
@@ -1438,39 +1438,39 @@ msgid ""
 "library loader. They are instances of a private class:"
 msgstr "前節で説明した通り、外部関数はロードされた共有ライブラリの属性としてアクセスできます。デフォルトではこの方法で作成された関数オブジェクトはどんな数の引数でも受け取り、引数としてどんな ctypes データのインスタンスをも受け取り、そして、ライブラリローダーが指定したデフォルトの結果の値の型を返します。関数オブジェクトはプライベートクラスのインスタンスです。:"
 
-#: ../../library/ctypes.rst:1544
+#: ../../library/ctypes.rst:1545
 msgid "Base class for C callable foreign functions."
 msgstr "C の呼び出し可能外部関数のためのベースクラス。"
 
-#: ../../library/ctypes.rst:1546
+#: ../../library/ctypes.rst:1547
 msgid ""
 "Instances of foreign functions are also C compatible data types; they "
 "represent C function pointers."
 msgstr "外部関数のインスタンスも C 互換データ型です。それらは C の関数ポインタを表しています。"
 
-#: ../../library/ctypes.rst:1549
+#: ../../library/ctypes.rst:1550
 msgid ""
 "This behavior can be customized by assigning to special attributes of the "
 "foreign function object."
 msgstr "この振る舞いは外部関数オブジェクトの特別な属性に代入することによって、カスタマイズすることができます。"
 
-#: ../../library/ctypes.rst:1555
+#: ../../library/ctypes.rst:1556
 msgid ""
 "Assign a ctypes type to specify the result type of the foreign function. Use"
 " ``None`` for :c:type:`void`, a function not returning anything."
 msgstr "外部関数の結果の型を指定するために ctypes 型を代入する。何も返さない関数を表す :c:type:`void` に対しては ``None`` を使います。"
 
-#: ../../library/ctypes.rst:1558
+#: ../../library/ctypes.rst:1559
 msgid ""
 "It is possible to assign a callable Python object that is not a ctypes type,"
 " in this case the function is assumed to return a C :c:type:`int`, and the "
-"callable will be called with this integer, allowing to do further processing"
-" or error checking.  Using this is deprecated, for more flexible post "
-"processing or error checking use a ctypes data type as :attr:`restype` and "
-"assign a callable to the :attr:`errcheck` attribute."
+"callable will be called with this integer, allowing further processing or "
+"error checking.  Using this is deprecated, for more flexible post processing"
+" or error checking use a ctypes data type as :attr:`restype` and assign a "
+"callable to the :attr:`errcheck` attribute."
 msgstr "ctypes 型ではない呼び出し可能な Python オブジェクトを代入することは可能です。このような場合、関数が C :c:type:`int` を返すと仮定され、呼び出し可能オブジェクトはこの整数を引数に呼び出されます。さらに処理を行ったり、エラーチェックをしたりできるようにするためです。これの使用は推奨されません。より柔軟な後処理やエラーチェックのためには :attr:`restype` として ctypes 型を使い、 :attr:`errcheck` 属性へ呼び出し可能オブジェクトを代入してください。"
 
-#: ../../library/ctypes.rst:1568
+#: ../../library/ctypes.rst:1569
 msgid ""
 "Assign a tuple of ctypes types to specify the argument types that the "
 "function accepts.  Functions using the ``stdcall`` calling convention can "
@@ -1479,66 +1479,66 @@ msgid ""
 "unspecified arguments as well."
 msgstr "関数が受け取る引数の型を指定するために ctypes 型のタプルを代入します。 ``stdcall`` 呼び出し規約をつかう関数はこのタプルの長さと同じ数の引数で呼び出されます。その上、 C 呼び出し規約をつかう関数は追加の不特定の引数も取ります。"
 
-#: ../../library/ctypes.rst:1574
+#: ../../library/ctypes.rst:1575
 msgid ""
 "When a foreign function is called, each actual argument is passed to the "
 ":meth:`from_param` class method of the items in the :attr:`argtypes` tuple, "
-"this method allows to adapt the actual argument to an object that the "
+"this method allows adapting the actual argument to an object that the "
 "foreign function accepts.  For example, a :class:`c_char_p` item in the "
 ":attr:`argtypes` tuple will convert a unicode string passed as argument into"
-" an byte string using ctypes conversion rules."
-msgstr "外部関数が呼ばれたとき、それぞれの実引数は :attr:`argtypes` タプルの要素の :meth:`from_param` クラスメソッドへ渡されます。このメソッドは実引数を外部関数が受け取るオブジェクトに合わせて変えられるようにします。例えば、 :attr:`argtypes` タプルの :class:`c_char_p` 要素は、 ctypes 変換規則にしたがって引数として渡された Unicode 文字列をバイト文字列へ変換するでしょう。"
+" a byte string using ctypes conversion rules."
+msgstr ""
 
-#: ../../library/ctypes.rst:1581
+#: ../../library/ctypes.rst:1582
 msgid ""
 "New: It is now possible to put items in argtypes which are not ctypes types,"
 " but each item must have a :meth:`from_param` method which returns a value "
-"usable as argument (integer, string, ctypes instance).  This allows to "
-"define adapters that can adapt custom objects as function parameters."
-msgstr "新: ctypes 型でない要素を argtypes に入れることができますが、個々の要素は引数として使える値 ( 整数、文字列、 ctypes インスタンス ) を返す :meth:`from_param` メソッドを持っていなければなりません。これにより関数パラメータとしてカスタムオブジェクトを適合するように変更できるアダプタが定義可能となります。"
+"usable as argument (integer, string, ctypes instance).  This allows defining"
+" adapters that can adapt custom objects as function parameters."
+msgstr "新: ctypes 型でない要素を argtypes に入れることができますが、個々の要素は引数として使える値 (整数、文字列、 ctypes インスタンス) を返す :meth:`from_param` メソッドを持っていなければなりません。これにより関数パラメータとしてカスタムオブジェクトを適合するように変更できるアダプタが定義可能となります。"
 
-#: ../../library/ctypes.rst:1589
+#: ../../library/ctypes.rst:1590
 msgid ""
 "Assign a Python function or another callable to this attribute. The callable"
 " will be called with three or more arguments:"
 msgstr "Python 関数または他の呼び出し可能オブジェクトをこの属性に代入します。呼び出し可能オブジェクトは三つ以上の引数とともに呼び出されます。"
 
-#: ../../library/ctypes.rst:1595
+#: ../../library/ctypes.rst:1596
 msgid ""
 "*result* is what the foreign function returns, as specified by the "
 ":attr:`restype` attribute."
 msgstr "*result* は外部関数が返すもので、 :attr:`restype` 属性で指定されます。"
 
-#: ../../library/ctypes.rst:1598
+#: ../../library/ctypes.rst:1599
 msgid ""
-"*func* is the foreign function object itself, this allows to reuse the same "
+"*func* is the foreign function object itself, this allows reusing the same "
 "callable object to check or post process the results of several functions."
 msgstr "*func* は外部関数オブジェクト自身で、これにより複数の関数の処理結果をチェックまたは後処理するために、同じ呼び出し可能オブジェクトを再利用できるようになります。"
 
-#: ../../library/ctypes.rst:1602
+#: ../../library/ctypes.rst:1603
 msgid ""
 "*arguments* is a tuple containing the parameters originally passed to the "
-"function call, this allows to specialize the behavior on the arguments used."
-msgstr "*arguments* は関数呼び出しに最初に渡されたパラメータが入ったタプルです。これにより使われた引数に基づた特別な振る舞いをさせることができるようになります。"
+"function call, this allows specializing the behavior on the arguments used."
+msgstr "*arguments* は関数呼び出しに最初に渡されたパラメータが入ったタプルです。これにより使われた引数に基づいた特別な振る舞いをさせることができるようになります。"
 
-#: ../../library/ctypes.rst:1606
+#: ../../library/ctypes.rst:1607
 msgid ""
 "The object that this function returns will be returned from the foreign "
 "function call, but it can also check the result value and raise an exception"
 " if the foreign function call failed."
 msgstr "この関数が返すオブジェクトは外部関数呼び出しから返された値でしょう。しかし、戻り値をチェックして、外部関数呼び出しが失敗しているなら例外を送出させることもできます。"
 
-#: ../../library/ctypes.rst:1613
+#: ../../library/ctypes.rst:1614
 msgid ""
 "This exception is raised when a foreign function call cannot convert one of "
 "the passed arguments."
 msgstr "この例外は外部関数呼び出しが渡された引数を変換できなかったときに送出されます。"
 
-#: ../../library/ctypes.rst:1620
+#: ../../library/ctypes.rst:1621
 msgid "Function prototypes"
 msgstr "関数プロトタイプ"
 
-#: ../../library/ctypes.rst:1622
+#: ../../library/ctypes.rst:1623
 msgid ""
 "Foreign functions can also be created by instantiating function prototypes. "
 "Function prototypes are similar to function prototypes in C; they describe a"
@@ -1547,21 +1547,21 @@ msgid ""
 "result type and the argument types of the function."
 msgstr "外部関数は関数プロトタイプをインスタンス化することによって作成されます。関数プロトタイプは C の関数プロトタイプと似ています。実装を定義せずに、関数 (戻り値、引数の型、呼び出し規約) を記述します。ファクトリ関数は関数に要求する戻り値の型と引数の型とともに呼び出されます。"
 
-#: ../../library/ctypes.rst:1631
+#: ../../library/ctypes.rst:1632
 msgid ""
 "The returned function prototype creates functions that use the standard C "
 "calling convention.  The function will release the GIL during the call.  If "
-"*use_errno* is set to True, the ctypes private copy of the system "
+"*use_errno* is set to true, the ctypes private copy of the system "
 ":data:`errno` variable is exchanged with the real :data:`errno` value before"
 " and after the call; *use_last_error* does the same for the Windows error "
 "code."
-msgstr "返された関数プロトタイプは標準 C 呼び出し規約をつかう関数を作成します。関数は呼び出されている間 GIL を解放します。 *use_errno* が True に設定されれば、呼び出しの前後で System 変数 :data:`errno` の ctypesプライベートコピーは本当の :data:`errno` の値と交換されます。 *use_last_error* も Windows エラーコードに対するのと同様です。"
+msgstr "返された関数プロトタイプは標準 C 呼び出し規約をつかう関数を作成します。関数は呼び出されている間 GIL を解放します。 *use_errno* が真に設定されれば、呼び出しの前後で System 変数 :data:`errno` の ctypesプライベートコピーは本当の :data:`errno` の値と交換されます。 *use_last_error* も Windows エラーコードに対するのと同様です。"
 
-#: ../../library/ctypes.rst:1638
+#: ../../library/ctypes.rst:1639
 msgid "The optional *use_errno* and *use_last_error* parameters were added."
 msgstr "オプションの *use_errno* と *use_last_error* 変数が追加されました。"
 
-#: ../../library/ctypes.rst:1644
+#: ../../library/ctypes.rst:1645
 msgid ""
 "Windows only: The returned function prototype creates functions that use the"
 " ``stdcall`` calling convention, except on Windows CE where "
@@ -1570,32 +1570,32 @@ msgid ""
 "same meaning as above."
 msgstr "Windows 用: 返された関数プロトタイプは ``stdcall`` 呼び出し規約をつかう関数を作成します。ただし、 :func:`WINFUNCTYPE` が :func:`CFUNCTYPE` と同じである Windows CE を除きます。関数は呼び出されている間 GIL を解放します。 *use_errno* と *use_last_error* は前述と同じ意味を持ちます。"
 
-#: ../../library/ctypes.rst:1653
+#: ../../library/ctypes.rst:1654
 msgid ""
 "The returned function prototype creates functions that use the Python "
 "calling convention.  The function will *not* release the GIL during the "
 "call."
 msgstr "返された関数プロトタイプは Python 呼び出し規約をつかう関数を作成します。関数は呼び出されている間 GIL を解放 *しません* 。"
 
-#: ../../library/ctypes.rst:1656
+#: ../../library/ctypes.rst:1657
 msgid ""
 "Function prototypes created by these factory functions can be instantiated "
 "in different ways, depending on the type and number of the parameters in the"
 " call:"
 msgstr "ファクトリ関数によって作られた関数プロトタイプは呼び出しのパラメータの型と数に依存した別の方法でインスタンス化することができます。 :"
 
-#: ../../library/ctypes.rst:1664
+#: ../../library/ctypes.rst:1665
 msgid ""
 "Returns a foreign function at the specified address which must be an "
 "integer."
 msgstr "指定されたアドレス(整数でなくてはなりません)の外部関数を返します。"
 
-#: ../../library/ctypes.rst:1671
+#: ../../library/ctypes.rst:1672
 msgid ""
 "Create a C callable function (a callback function) from a Python *callable*."
 msgstr "Python の *callable* から C の呼び出し可能関数(コールバック関数) を作成します。"
 
-#: ../../library/ctypes.rst:1678
+#: ../../library/ctypes.rst:1679
 msgid ""
 "Returns a foreign function exported by a shared library. *func_spec* must be"
 " a 2-tuple ``(name_or_ordinal, library)``. The first item is the name of the"
@@ -1603,7 +1603,7 @@ msgid ""
 "small integer.  The second item is the shared library instance."
 msgstr "共有ライブラリがエクスポートしている外部関数を返します。 *func_spec* は 2 要素タプル ``(name_or_ordinal, library)`` でなければなりません。第一要素はエクスポートされた関数の名前である文字列、またはエクスポートされた関数の序数である小さい整数です。第二要素は共有ライブラリインスタンスです。"
 
-#: ../../library/ctypes.rst:1688
+#: ../../library/ctypes.rst:1689
 msgid ""
 "Returns a foreign function that will call a COM method. *vtbl_index* is the "
 "index into the virtual function table, a small non-negative integer. *name* "
@@ -1611,85 +1611,85 @@ msgid ""
 "identifier which is used in extended error reporting."
 msgstr "COM メソッドを呼び出す外部関数を返します。 *vtbl_index* は仮想関数テーブルのインデックスで、非負の小さい整数です。 *name* は COM メソッドの名前です。 *iid* はオプションのインターフェイス識別子へのポインタで、拡張されたエラー情報の提供のために使われます。"
 
-#: ../../library/ctypes.rst:1693
+#: ../../library/ctypes.rst:1694
 msgid ""
 "COM methods use a special calling convention: They require a pointer to the "
 "COM interface as first argument, in addition to those parameters that are "
 "specified in the :attr:`argtypes` tuple."
 msgstr "COM メソッドは特殊な呼び出し規約を用います。このメソッドは :attr:`argtypes` タプルに指定されたパラメータに加えて、第一引数として COM インターフェイスへのポインタを必要とします。"
 
-#: ../../library/ctypes.rst:1697
+#: ../../library/ctypes.rst:1698
 msgid ""
 "The optional *paramflags* parameter creates foreign function wrappers with "
 "much more functionality than the features described above."
 msgstr "オプションの *paramflags* パラメータは上述した機能より多機能な外部関数ラッパーを作成します。"
 
-#: ../../library/ctypes.rst:1700
+#: ../../library/ctypes.rst:1701
 msgid "*paramflags* must be a tuple of the same length as :attr:`argtypes`."
 msgstr "*paramflags* は :attr:`argtypes` と同じ長さのタプルでなければなりません。"
 
-#: ../../library/ctypes.rst:1702
+#: ../../library/ctypes.rst:1703
 msgid ""
 "Each item in this tuple contains further information about a parameter, it "
 "must be a tuple containing one, two, or three items."
 msgstr "このタプルの個々の要素はパラメータについてのより詳細な情報を持ち、 1 、 2 もしくは 3 要素を含むタプルでなければなりません。"
 
-#: ../../library/ctypes.rst:1705
+#: ../../library/ctypes.rst:1706
 msgid ""
 "The first item is an integer containing a combination of direction flags for"
 " the parameter:"
 msgstr "第一要素はパラメータについてのフラグの組み合わせを含んだ整数です。"
 
-#: ../../library/ctypes.rst:1709
+#: ../../library/ctypes.rst:1710
 msgid "1"
 msgstr "1"
 
-#: ../../library/ctypes.rst:1709
+#: ../../library/ctypes.rst:1710
 msgid "Specifies an input parameter to the function."
 msgstr "入力パラメータを関数に指定します。"
 
-#: ../../library/ctypes.rst:1712
+#: ../../library/ctypes.rst:1713
 msgid "2"
 msgstr "2"
 
-#: ../../library/ctypes.rst:1712
+#: ../../library/ctypes.rst:1713
 msgid "Output parameter.  The foreign function fills in a value."
 msgstr "出力パラメータ。外部関数が値を書き込みます。"
 
-#: ../../library/ctypes.rst:1715
+#: ../../library/ctypes.rst:1716
 msgid "4"
 msgstr "4"
 
-#: ../../library/ctypes.rst:1715
+#: ../../library/ctypes.rst:1716
 msgid "Input parameter which defaults to the integer zero."
 msgstr "デフォルトで整数ゼロになる入力パラメータ。"
 
-#: ../../library/ctypes.rst:1717
+#: ../../library/ctypes.rst:1718
 msgid ""
 "The optional second item is the parameter name as string.  If this is "
 "specified, the foreign function can be called with named parameters."
 msgstr "オプションの第二要素はパラメータ名の文字列です。これが指定された場合は、外部関数を名前付きパラメータで呼び出すことができます。"
 
-#: ../../library/ctypes.rst:1720
+#: ../../library/ctypes.rst:1721
 msgid "The optional third item is the default value for this parameter."
 msgstr "オプションの第三要素はこのパラメータのデフォルト値です。"
 
-#: ../../library/ctypes.rst:1722
+#: ../../library/ctypes.rst:1723
 msgid ""
 "This example demonstrates how to wrap the Windows ``MessageBoxA`` function "
 "so that it supports default parameters and named arguments. The C "
 "declaration from the windows header file is this::"
 msgstr "この例では、デフォルトパラメータと名前付き引数をサポートするために Windows ``MessageBoxA`` 関数をラップする方法を示します。 windowsヘッダファイルの C の宣言はこれです。::"
 
-#: ../../library/ctypes.rst:1733 ../../library/ctypes.rst:1758
+#: ../../library/ctypes.rst:1734 ../../library/ctypes.rst:1759
 msgid "Here is the wrapping with :mod:`ctypes`::"
 msgstr ":mod:`ctypes` を使ってラップします。::"
 
-#: ../../library/ctypes.rst:1742
+#: ../../library/ctypes.rst:1743
 msgid "The MessageBox foreign function can now be called in these ways::"
 msgstr "今は MessageBox 外部関数をこのような方法で呼び出すことができます。::"
 
-#: ../../library/ctypes.rst:1749
+#: ../../library/ctypes.rst:1750
 msgid ""
 "A second example demonstrates output parameters.  The win32 "
 "``GetWindowRect`` function retrieves the dimensions of a specified window by"
@@ -1697,7 +1697,7 @@ msgid ""
 "is the C declaration::"
 msgstr "二番目の例は出力パラメータについて説明します。 win32 の ``GetWindowRect`` 関数は、指定されたウィンドウの大きさを呼び出し側が与える ``RECT`` 構造体へコピーすることで取り出します。 C の宣言はこうです。::"
 
-#: ../../library/ctypes.rst:1767
+#: ../../library/ctypes.rst:1768
 msgid ""
 "Functions with output parameters will automatically return the output "
 "parameter value if there is a single one, or a tuple containing the output "
@@ -1705,7 +1705,7 @@ msgid ""
 " now returns a RECT instance, when called."
 msgstr "もし単一の値もしくは一つより多い場合には出力パラメータ値が入ったタプルがあるならば、出力パラメータを持つ関数は自動的に出力パラメータ値を返すでしょう。そのため、今は GetWindowRect 関数は呼び出されたときに RECT インスタンスを返します。"
 
-#: ../../library/ctypes.rst:1772
+#: ../../library/ctypes.rst:1773
 msgid ""
 "Output parameters can be combined with the :attr:`errcheck` protocol to do "
 "further output processing and error checking.  The win32 ``GetWindowRect`` "
@@ -1714,7 +1714,7 @@ msgid ""
 "call failed::"
 msgstr "さらに出力処理やエラーチェックを行うために、出力パラメータを :attr:`errcheck` プロトコルと組み合わせることができます。 win32 ``GetWindowRect`` api 関数は成功したか失敗したかを知らせるために ``BOOL`` を返します。そのため、この関数はエラーチェックを行って、 api 呼び出しが失敗した場合に例外を送出させることができます。::"
 
-#: ../../library/ctypes.rst:1785
+#: ../../library/ctypes.rst:1786
 msgid ""
 "If the :attr:`errcheck` function returns the argument tuple it receives "
 "unchanged, :mod:`ctypes` continues the normal processing it does on the "
@@ -1723,45 +1723,45 @@ msgid ""
 "and return them instead, the normal processing will no longer take place::"
 msgstr ":attr:`errcheck` 関数が変更なしに受け取った引数タプルを返したならば、 :mod:`ctypes` は出力パラメータに対して通常の処理を続けます。 ``RECT`` インスタンスの代わりに window 座標のタプルを返してほしいなら、関数のフィールドを取り出し、代わりにそれらを返すことができます。通常処理はもはや行われないでしょう。::"
 
-#: ../../library/ctypes.rst:1804
+#: ../../library/ctypes.rst:1805
 msgid "Utility functions"
 msgstr "ユーティリティ関数"
 
-#: ../../library/ctypes.rst:1809
+#: ../../library/ctypes.rst:1810
 msgid ""
 "Returns the address of the memory buffer as integer.  *obj* must be an "
 "instance of a ctypes type."
 msgstr "メモリバッファのアドレスを示す整数を返します。 *obj* は ctypes 型のインスタンスでなければなりません。"
 
-#: ../../library/ctypes.rst:1815
+#: ../../library/ctypes.rst:1816
 msgid ""
 "Returns the alignment requirements of a ctypes type. *obj_or_type* must be a"
 " ctypes type or instance."
 msgstr "ctypes 型のアライメントの必要条件を返します。 *obj_or_type* は ctypes 型またはインスタンスでなければなりません。"
 
-#: ../../library/ctypes.rst:1821
+#: ../../library/ctypes.rst:1822
 msgid ""
 "Returns a light-weight pointer to *obj*, which must be an instance of a "
 "ctypes type.  *offset* defaults to zero, and must be an integer that will be"
 " added to the internal pointer value."
 msgstr "*obj* (ctypes 型のインスタンスでなければならない) への軽量ポインタを返します。 *offset* はデフォルトでは 0 で、内部ポインターへ加算される整数です。"
 
-#: ../../library/ctypes.rst:1825
+#: ../../library/ctypes.rst:1826
 msgid "``byref(obj, offset)`` corresponds to this C code::"
 msgstr "``byref(obj, offset)`` は、 C コードとしては、以下のようにみなされます。::"
 
-#: ../../library/ctypes.rst:1829
+#: ../../library/ctypes.rst:1830
 msgid ""
 "The returned object can only be used as a foreign function call parameter.  "
 "It behaves similar to ``pointer(obj)``, but the construction is a lot "
 "faster."
 msgstr "返されるオブジェクトは外部関数呼び出しのパラメータとしてのみ使用できます。 ``pointer(obj)`` と似たふるまいをしますが、作成が非常に速く行えます。"
 
-#: ../../library/ctypes.rst:1833
+#: ../../library/ctypes.rst:1834
 msgid "The *offset* optional argument was added."
 msgstr "*offset* オプション引数が追加されました。"
 
-#: ../../library/ctypes.rst:1839
+#: ../../library/ctypes.rst:1840
 msgid ""
 "This function is similar to the cast operator in C.  It returns a new "
 "instance of *type* which points to the same memory block as *obj*.  *type* "
@@ -1769,162 +1769,162 @@ msgid ""
 "as a pointer."
 msgstr "この関数は C のキャスト演算子に似ています。 *obj* と同じメモリブロックを指している *type* の新しいインスタンスを返します。 *type* はポインタ型でなければならず、 *obj* はポインタとして解釈できるオブジェクトでなければなりません。"
 
-#: ../../library/ctypes.rst:1847
+#: ../../library/ctypes.rst:1848
 msgid ""
 "This function creates a mutable character buffer. The returned object is a "
 "ctypes array of :class:`c_char`."
 msgstr "この関数は変更可能な文字バッファを作成します。返されるオブジェクトは :class:`c_char` の ctypes 配列です。"
 
-#: ../../library/ctypes.rst:1850
+#: ../../library/ctypes.rst:1851
 msgid ""
 "*init_or_size* must be an integer which specifies the size of the array, or "
 "a string which will be used to initialize the array items."
 msgstr "*init_or_size* は配列のサイズを指定する整数もしくは配列要素を初期化するために使われる文字列である必要があります。"
 
-#: ../../library/ctypes.rst:1853
+#: ../../library/ctypes.rst:1854
 msgid ""
 "If a string is specified as first argument, the buffer is made one item "
 "larger than the length of the string so that the last element in the array "
 "is a NUL termination character. An integer can be passed as second argument "
-"which allows to specify the size of the array if the length of the string "
+"which allows specifying the size of the array if the length of the string "
 "should not be used."
 msgstr "第一引数として文字列が指定された場合は、バッファが文字列の長さより一要素分大きく作られます。配列の最後の要素が NUL 終端文字であるためです。文字列の長さを使うべきでない場合は、配列のサイズを指定するために整数を第二引数として渡すことができます。"
 
-#: ../../library/ctypes.rst:1858
+#: ../../library/ctypes.rst:1859
 msgid ""
 "If the first parameter is a unicode string, it is converted into an 8-bit "
 "string according to ctypes conversion rules."
 msgstr "第一引数が Unicode 文字列ならば、 ctypes 変換規則にしたがい 8 ビット文字列へ変換されます。"
 
-#: ../../library/ctypes.rst:1864
+#: ../../library/ctypes.rst:1865
 msgid ""
 "This function creates a mutable unicode character buffer. The returned "
 "object is a ctypes array of :class:`c_wchar`."
 msgstr "この関数は変更可能な Unicode 文字バッファを作成します。返されるオブジェクトは :class:`c_wchar` の ctypes 配列です。"
 
-#: ../../library/ctypes.rst:1867
+#: ../../library/ctypes.rst:1868
 msgid ""
 "*init_or_size* must be an integer which specifies the size of the array, or "
 "a unicode string which will be used to initialize the array items."
 msgstr "*init_or_size* は配列のサイズを指定する整数もしくは配列要素を初期化するために使われる Unicode 文字列です。"
 
-#: ../../library/ctypes.rst:1870
+#: ../../library/ctypes.rst:1871
 msgid ""
 "If a unicode string is specified as first argument, the buffer is made one "
 "item larger than the length of the string so that the last element in the "
 "array is a NUL termination character. An integer can be passed as second "
-"argument which allows to specify the size of the array if the length of the "
+"argument which allows specifying the size of the array if the length of the "
 "string should not be used."
-msgstr "第一引数として Unicode 文字列が指定された場合は、バッファが文字列の長さより一要素分大きく作られます。配列の最後の要素が NUL 終端文字であるためです。文字列の長さを使うべきでない場合は、配列のサイズを指定するために整数を第二引数として渡すことができます。"
+msgstr ""
 
-#: ../../library/ctypes.rst:1876
+#: ../../library/ctypes.rst:1877
 msgid ""
-"If the first parameter is a 8-bit string, it is converted into an unicode "
+"If the first parameter is an 8-bit string, it is converted into a unicode "
 "string according to ctypes conversion rules."
-msgstr "第一引数が 8 ビット文字列ならば、 ctypes 変換規則にしたがい Unicode 文字列へ変換されます。"
+msgstr ""
 
-#: ../../library/ctypes.rst:1882
+#: ../../library/ctypes.rst:1883
 msgid ""
-"Windows only: This function is a hook which allows to implement in-process "
+"Windows only: This function is a hook which allows implementing in-process "
 "COM servers with ctypes.  It is called from the DllCanUnloadNow function "
 "that the _ctypes extension dll exports."
-msgstr "Windows用: この関数は ctypes をつかってインプロセス COM サーバーを実装できるようにするためのフックです。 _ctypes 拡張 dll がエクスポートしている DllCanUnloadNow 関数から呼び出されます。"
+msgstr "Windows 用: この関数は ctypes をつかってインプロセス COM サーバーを実装できるようにするためのフックです。_ctypes 拡張 dll がエクスポートしている DllCanUnloadNow 関数から呼び出されます。"
 
-#: ../../library/ctypes.rst:1889
+#: ../../library/ctypes.rst:1890
 msgid ""
-"Windows only: This function is a hook which allows to implement in-process "
+"Windows only: This function is a hook which allows implementing in-process "
 "COM servers with ctypes.  It is called from the DllGetClassObject function "
 "that the ``_ctypes`` extension dll exports."
-msgstr "Windows用: この関数は ctypes をつかってインプロセス COM サーバーを実装できるようにするためのフックです。 ``_ctypes`` 拡張 dll がエクスポートしている DllGetClassObject 関数から呼び出されます。"
+msgstr "Windows 用: この関数は ctypes をつかってインプロセス COM サーバーを実装できるようにするためのフックです。``_ctypes`` 拡張 dll がエクスポートしている DllGetClassObject 関数から呼び出されます。"
 
-#: ../../library/ctypes.rst:1897
+#: ../../library/ctypes.rst:1898
 msgid ""
 "Try to find a library and return a pathname.  *name* is the library name "
 "without any prefix like ``lib``, suffix like ``.so``, ``.dylib`` or version "
-"number (this is the form used for the posix linker option :option:`-l`).  If"
-" no library can be found, returns ``None``."
-msgstr "ライブラリを検索し、パス名を返します。 *name* は ``lib`` のような接頭辞、 ``.so`` や ``.dylib`` のような接尾辞、そして、バージョンナンバーを除くライブラリ名です (これは posix のリンカーオプション :option:`-l` で使われる書式です) 。もしライブラリが見つからなければ、 ``None`` を返します。"
+"number (this is the form used for the posix linker option :option:`!-l`).  "
+"If no library can be found, returns ``None``."
+msgstr "ライブラリを検索し、パス名を返します。 *name* は ``lib`` のような接頭辞、 ``.so`` や ``.dylib`` のような接尾辞、そして、バージョンナンバーを除くライブラリ名です (これは posix のリンカーオプション :option:`!-l` で使われる書式です) 。もしライブラリが見つからなければ、 ``None`` を返します。"
 
-#: ../../library/ctypes.rst:1904
+#: ../../library/ctypes.rst:1905
 msgid ""
 "Windows only: ``find_library(\"m\")`` or ``find_library(\"c\")`` return the "
 "result of a call to ``find_msvcrt()``."
 msgstr "Windows 用: ``find_library(\"m\")`` もしくは ``find_library(\"c\")`` は ``find_msvcrt()`` の呼び出し結果を返します。"
 
-#: ../../library/ctypes.rst:1912
+#: ../../library/ctypes.rst:1913
 msgid ""
 "Windows only: return the filename of the VC runtime library used by Python, "
 "and by the extension modules.  If the name of the library cannot be "
 "determined, ``None`` is returned."
 msgstr "Windows 用: Python と拡張モジュールで使われる VC ランタイムライブラリのファイル名を返します。もしライブラリ名が同定できなければ、 ``None`` を返します。"
 
-#: ../../library/ctypes.rst:1916
+#: ../../library/ctypes.rst:1917
 msgid ""
 "If you need to free memory, for example, allocated by an extension module "
 "with a call to the ``free(void *)``, it is important that you use the "
 "function in the same library that allocated the memory."
 msgstr "もし、例えば拡張モジュールにより割り付けられたメモリを ``free(void *)`` で解放する必要があるなら、メモリ割り付けを行ったのと同じライブラリの関数を使うことが重要です。"
 
-#: ../../library/ctypes.rst:1925
+#: ../../library/ctypes.rst:1926
 msgid ""
 "Windows only: Returns a textual description of the error code *code*.  If no"
 " error code is specified, the last error code is used by calling the Windows"
 " api function GetLastError."
 msgstr "Windows 用: エラーコード *code* の説明文を返します。エラーコードが指定されない場合は、 Windows api 関数 GetLastError を呼び出して、もっとも新しいエラーコードが使われます。"
 
-#: ../../library/ctypes.rst:1932
+#: ../../library/ctypes.rst:1933
 msgid ""
 "Windows only: Returns the last error code set by Windows in the calling "
 "thread. This function calls the Windows `GetLastError()` function directly, "
 "it does not return the ctypes-private copy of the error code."
 msgstr "Windows 用: 呼び出し側のスレッド内で Windows によって設定された最新のエラーコードを返します。この関数は Windows の `GetLastError()` 関数を直接実行します。 ctypes のプライベートなエラーコードのコピーを返したりはしません。"
 
-#: ../../library/ctypes.rst:1938
+#: ../../library/ctypes.rst:1939
 msgid ""
 "Returns the current value of the ctypes-private copy of the system "
 ":data:`errno` variable in the calling thread."
 msgstr "システムの :data:`errno` 変数の、スレッドローカルなプライベートコピーを返します。"
 
-#: ../../library/ctypes.rst:1945
+#: ../../library/ctypes.rst:1946
 msgid ""
 "Windows only: returns the current value of the ctypes-private copy of the "
 "system :data:`LastError` variable in the calling thread."
 msgstr "Windows 用: システムの :data:`LastError` 変数の、スレッドローカルなプライベートコピーを返します。"
 
-#: ../../library/ctypes.rst:1952
+#: ../../library/ctypes.rst:1953
 msgid ""
 "Same as the standard C memmove library function: copies *count* bytes from "
 "*src* to *dst*. *dst* and *src* must be integers or ctypes instances that "
 "can be converted to pointers."
 msgstr "標準 C の memmove ライブラリ関数と同じものです。: *count* バイトを *src* から *dst* へコピーします。 *dst* と *src* はポインタへ変換可能な整数または ctypes インスタンスでなければなりません。"
 
-#: ../../library/ctypes.rst:1959
+#: ../../library/ctypes.rst:1960
 msgid ""
 "Same as the standard C memset library function: fills the memory block at "
 "address *dst* with *count* bytes of value *c*. *dst* must be an integer "
 "specifying an address, or a ctypes instance."
 msgstr "標準 C の memset ライブラリ関数と同じものです。: アドレス *dst* のメモリブロックを値 *c* を *count* バイト分書き込みます。 *dst* はアドレスを指定する整数または ctypes インスタンスである必要があります。"
 
-#: ../../library/ctypes.rst:1966
+#: ../../library/ctypes.rst:1967
 msgid ""
 "This factory function creates and returns a new ctypes pointer type. Pointer"
-" types are cached an reused internally, so calling this function repeatedly "
-"is cheap. *type* must be a ctypes type."
-msgstr "このファクトリ関数は新しい ctypes ポインタ型を作成して返します。ポインタ型はキャッシュされ、内部で再利用されます。したがって、この関数を繰り返し呼び出してもコストは小さいです。 *type* は ctypes 型でなければなりません。"
+" types are cached and reused internally, so calling this function repeatedly"
+" is cheap. *type* must be a ctypes type."
+msgstr "このファクトリ関数は新しい ctypes ポインタ型を作成して返します。ポインタ型はキャッシュされ、内部で再利用されます。したがって、この関数を繰り返し呼び出してもコストは小さいです。*type* は ctypes 型でなければなりません。"
 
-#: ../../library/ctypes.rst:1973
+#: ../../library/ctypes.rst:1974
 msgid ""
 "This function creates a new pointer instance, pointing to *obj*. The "
 "returned object is of the type ``POINTER(type(obj))``."
 msgstr "この関数は *obj* を指す新しいポインタインスタンスを作成します。戻り値は ``POINTER(type(obj))`` 型のオブジェクトです。"
 
-#: ../../library/ctypes.rst:1976
+#: ../../library/ctypes.rst:1977
 msgid ""
 "Note: If you just want to pass a pointer to an object to a foreign function "
 "call, you should use ``byref(obj)`` which is much faster."
 msgstr "注意: 外部関数呼び出しへオブジェクトへのポインタを渡したいだけなら、はるかに高速な ``byref(obj)`` を使うべきです。"
 
-#: ../../library/ctypes.rst:1982
+#: ../../library/ctypes.rst:1983
 msgid ""
 "This function resizes the internal memory buffer of *obj*, which must be an "
 "instance of a ctypes type.  It is not possible to make the buffer smaller "
@@ -1932,7 +1932,7 @@ msgid ""
 " but it is possible to enlarge the buffer."
 msgstr "この関数は *obj* の内部メモリバッファのサイズを変更します。 *obj* は ctypes 型のインスタンスでなければなりません。バッファを ``sizeof(type(obj))`` で与えられるオブジェクト型の本来のサイズより小さくすることはできませんが、バッファを拡大することはできます。"
 
-#: ../../library/ctypes.rst:1990
+#: ../../library/ctypes.rst:1991
 msgid ""
 "This function sets the rules that ctypes objects use when converting between"
 " 8-bit strings and unicode strings.  *encoding* must be a string specifying "
@@ -1941,40 +1941,40 @@ msgid ""
 "possible values are ``\"strict\"``, ``\"replace\"``, or ``\"ignore\"``."
 msgstr "この関数は 8 ビット文字列と Unicode 文字列の間で変換するときに使われる規則を設定します。 *encoding* は ``'utf-8'`` や ``'mbcs'`` のようなエンコーディングを指定する文字列でなければなりません。 *errors* はエンコーディング/デコーディングエラーについてのエラー処理を指定する文字列でなければなりません。指定可能な値の例としては、 ``\"strict\"``, ``\"replace\"``, ``\"ignore\"`` があります。"
 
-#: ../../library/ctypes.rst:1996
+#: ../../library/ctypes.rst:1997
 msgid ""
 ":func:`set_conversion_mode` returns a 2-tuple containing the previous "
 "conversion rules.  On windows, the initial conversion rules are ``('mbcs', "
 "'ignore')``, on other systems ``('ascii', 'strict')``."
 msgstr ":func:`set_conversion_mode` は以前の変換規則を含む 2 要素タプルを返します。 windows では初期の変換規則は ``('mbcs', 'ignore')`` であり、他のシステムでは ``('ascii', 'strict')`` です。"
 
-#: ../../library/ctypes.rst:2003
+#: ../../library/ctypes.rst:2004
 msgid ""
 "Set the current value of the ctypes-private copy of the system :data:`errno`"
 " variable in the calling thread to *value* and return the previous value."
 msgstr "システム変数 :data:`errno` の、呼び出し元スレッドでの ctypes のプライベートコピーの現在値を *value* に設定し、前の値を返します。"
 
-#: ../../library/ctypes.rst:2011
+#: ../../library/ctypes.rst:2012
 msgid ""
 "Windows only: set the current value of the ctypes-private copy of the system"
 " :data:`LastError` variable in the calling thread to *value* and return the "
 "previous value."
 msgstr "Windows 用: システム変数 :data:`LastError` の、呼び出し元スレッドでの ctypes のプライベートコピーの現在値を *value* に設定し、前の値を返します。"
 
-#: ../../library/ctypes.rst:2020
+#: ../../library/ctypes.rst:2021
 msgid ""
 "Returns the size in bytes of a ctypes type or instance memory buffer. Does "
 "the same as the C ``sizeof`` operator."
 msgstr "ctypes の型やインスタンスのメモリバッファのサイズをバイト数で返します。C の ``sizeof`` 演算子と同様の動きをします。"
 
-#: ../../library/ctypes.rst:2026
+#: ../../library/ctypes.rst:2027
 msgid ""
 "This function returns the string starting at memory address *address*. If "
 "size is specified, it is used as size, otherwise the string is assumed to be"
 " zero-terminated."
 msgstr "この関数はメモリアドレス *address* から始まる文字列を返します。 size が指定された場合はサイズとして使われます。指定されなければ、文字列がゼロ終端されていると仮定します。"
 
-#: ../../library/ctypes.rst:2033
+#: ../../library/ctypes.rst:2034
 msgid ""
 "Windows only: this function is probably the worst-named thing in ctypes.  It"
 " creates an instance of WindowsError.  If *code* is not specified, "
@@ -1983,7 +1983,7 @@ msgid ""
 "the error."
 msgstr "Windows 用: この関数は ctypes の中でもおそらく最悪な名前がつけられたものです。 WindowsError のインスタンスを作成します。 *code* が指定されないならば、エラーコードを決めるために ``GetLastError`` が呼び出されます。 *descr* が指定されないならば、 :func:`FormatError` がエラーの説明文を得るために呼び出されます。"
 
-#: ../../library/ctypes.rst:2042
+#: ../../library/ctypes.rst:2043
 msgid ""
 "This function returns the wide character string starting at memory address "
 "*address* as unicode string.  If *size* is specified, it is used as the "
@@ -1991,11 +1991,11 @@ msgid ""
 "zero-terminated."
 msgstr "この関数は Unicode 文字列としてメモリアドレス *address* から始まるワイドキャラクタ文字列を返します。 *size* が指定されたならば、文字列の文字数として使われます。指定されなければ、文字列がゼロ終端されていると仮定します。"
 
-#: ../../library/ctypes.rst:2051
+#: ../../library/ctypes.rst:2052
 msgid "Data types"
 msgstr "データ型"
 
-#: ../../library/ctypes.rst:2056
+#: ../../library/ctypes.rst:2057
 msgid ""
 "This non-public class is the common base class of all ctypes data types. "
 "Among other things, all ctypes type instances contain a memory block that "
@@ -2005,13 +2005,13 @@ msgid ""
 "alive in case the memory block contains pointers."
 msgstr "この非公開クラスはすべての ctypes データ型の共通のベースクラスです。他のことはさておき、すべての ctypes 型インスタンスは C 互換データを保持するメモリブロックを内部に持ちます。このメモリブロックのアドレスは :func:`addressof` ヘルパー関数が返します。別のインスタンス変数が :attr:`_objects` として公開されます。これはメモリブロックがポインタを含む場合に存続し続ける必要のある他の Python オブジェクトを含んでいます。"
 
-#: ../../library/ctypes.rst:2063
+#: ../../library/ctypes.rst:2064
 msgid ""
 "Common methods of ctypes data types, these are all class methods (to be "
 "exact, they are methods of the :term:`metaclass`):"
 msgstr "ctypes データ型の共通メソッド、すべてのクラスメソッドが存在します (正確には、 :term:`メタクラス <metaclass>` のメソッドです):"
 
-#: ../../library/ctypes.rst:2069
+#: ../../library/ctypes.rst:2070
 msgid ""
 "This method returns a ctypes instance that shares the buffer of the *source*"
 " object.  The *source* object must support the writeable buffer interface.  "
@@ -2020,7 +2020,7 @@ msgid ""
 ":exc:`ValueError` is raised."
 msgstr "このメソッドは *source* オブジェクトのバッファを共有する ctypes のインスタンスを返します。 *source* オブジェクトは書き込み可能バッファインターフェースをサポートしている必要があります。オプションの *offset* 引数では *source* バッファのオフセットをバイト単位で指定します。デフォルトではゼロです。もし *source* バッファが十分に大きくなければ、 :exc:`ValueError` が送出されます。"
 
-#: ../../library/ctypes.rst:2080
+#: ../../library/ctypes.rst:2081
 msgid ""
 "This method creates a ctypes instance, copying the buffer from the *source* "
 "object buffer which must be readable.  The optional *offset* parameter "
@@ -2028,13 +2028,13 @@ msgid ""
 "If the source buffer is not large enough a :exc:`ValueError` is raised."
 msgstr "このメソッドは *source* オブジェクトの読み出し可能バッファをコピーすることで、ctypes のインスタンスを生成します。オプションの *offset* 引数では *source* バッファのオフセットをバイト単位で指定します。デフォルトではゼロです。もし *source* バッファが十分に大きくなければ、 :exc:`ValueError` が送出されます。"
 
-#: ../../library/ctypes.rst:2091
+#: ../../library/ctypes.rst:2092
 msgid ""
 "This method returns a ctypes type instance using the memory specified by "
 "*address* which must be an integer."
 msgstr "このメソッドは *address* で指定されたメモリを使って ctypes 型のインスタンスを返します。 *address* は整数でなければなりません。"
 
-#: ../../library/ctypes.rst:2097
+#: ../../library/ctypes.rst:2098
 msgid ""
 "This method adapts *obj* to a ctypes type.  It is called with the actual "
 "object used in a foreign function call when the type is present in the "
@@ -2042,25 +2042,25 @@ msgid ""
 " be used as a function call parameter."
 msgstr "このメソッドは *obj* を ctypes 型に適合させます。外部関数の :attr:`argtypes` タプルに、その型があるとき、外部関数呼び出しで実際に使われるオブジェクトと共に呼び出されます。"
 
-#: ../../library/ctypes.rst:2102
+#: ../../library/ctypes.rst:2103
 msgid ""
 "All ctypes data types have a default implementation of this classmethod that"
 " normally returns *obj* if that is an instance of the type.  Some types "
 "accept other objects as well."
 msgstr "すべての ctypes のデータ型は、それが型のインスタンスであれば、 *obj* を返すこのクラスメソッドのデフォルトの実装を持ちます。いくつかの型は、別のオブジェクトも受け付けます。"
 
-#: ../../library/ctypes.rst:2109
+#: ../../library/ctypes.rst:2110
 msgid ""
 "This method returns a ctypes type instance exported by a shared library. "
 "*name* is the name of the symbol that exports the data, *library* is the "
 "loaded shared library."
 msgstr "このメソッドは、共有ライブラリによってエクスポートされた ctypes 型のインスタンスを返します。 *name* はエクスポートされたデータの名前で、 *library* はロードされた共有ライブラリです。"
 
-#: ../../library/ctypes.rst:2114
+#: ../../library/ctypes.rst:2115
 msgid "Common instance variables of ctypes data types:"
 msgstr "ctypes データ型共通のインスタンス変数:"
 
-#: ../../library/ctypes.rst:2118
+#: ../../library/ctypes.rst:2119
 msgid ""
 "Sometimes ctypes data instances do not own the memory block they contain, "
 "instead they share part of the memory block of a base object.  The "
@@ -2068,13 +2068,13 @@ msgid ""
 "memory block."
 msgstr "ctypes 型データのインスタンスは、それ自身のメモリブロックを持たず、基底オブジェクトのメモリブロックの一部を共有することがあります。 :attr:`_b_base_` 読み出し専用属性は、メモリブロックを保持する ctypes の基底オブジェクトです。"
 
-#: ../../library/ctypes.rst:2126
+#: ../../library/ctypes.rst:2127
 msgid ""
 "This read-only variable is true when the ctypes data instance has allocated "
 "the memory block itself, false otherwise."
 msgstr "この読み出し専用の変数は、 ctypes データインスタンスが、それ自身に割り当てられたメモリブロックを持つとき true になります。それ以外の場合は false になります。"
 
-#: ../../library/ctypes.rst:2132
+#: ../../library/ctypes.rst:2133
 msgid ""
 "This member is either ``None`` or a dictionary containing Python objects "
 "that need to be kept alive so that the memory block contents is kept valid."
@@ -2082,7 +2082,7 @@ msgid ""
 "this dictionary."
 msgstr "このメンバは ``None`` 、または、メモリブロックの内容が正しく保つために、生存させておかなくてはならない Python オブジェクトを持つディクショナリです。このオブジェクトはデバッグでのみ使われます。決してディクショナリの内容を変更しないで下さい。"
 
-#: ../../library/ctypes.rst:2146
+#: ../../library/ctypes.rst:2147
 msgid ""
 "This non-public class is the base class of all fundamental ctypes data "
 "types. It is mentioned here because it contains the common attributes of the"
@@ -2090,17 +2090,17 @@ msgid ""
 ":class:`_CData`, so it inherits their methods and attributes."
 msgstr "この非公開クラスはすべての基本 ctypes データ型のベースクラスです。ここでこのクラスに触れたのは、基本 ctypes データ型の共通属性を含んでいるからです。 :class:`_SimpleCData` は :class:`_CData` のサブクラスですので、そのメソッドと属性を継承しています。"
 
-#: ../../library/ctypes.rst:2151
+#: ../../library/ctypes.rst:2152
 msgid ""
 "ctypes data types that are not and do not contain pointers can now be "
 "pickled."
 msgstr "ポインタと、ポインタを含まない ctypes データ型が pickle 化できるようになりました。"
 
-#: ../../library/ctypes.rst:2155
+#: ../../library/ctypes.rst:2156
 msgid "Instances have a single attribute:"
 msgstr "インスタンスは一つだけ属性を持ちます:"
 
-#: ../../library/ctypes.rst:2159
+#: ../../library/ctypes.rst:2160
 msgid ""
 "This attribute contains the actual value of the instance. For integer and "
 "pointer types, it is an integer, for character types, it is a single "
@@ -2108,7 +2108,7 @@ msgid ""
 "unicode string."
 msgstr "この属性は、インスタンスの実際の値を持ちます。整数型とポインタ型に対しては整数型、文字型に対しては一文字の文字列、文字へのポインタに対しては Python の文字列もしくは Unicode 文字列となります。"
 
-#: ../../library/ctypes.rst:2164
+#: ../../library/ctypes.rst:2165
 msgid ""
 "When the ``value`` attribute is retrieved from a ctypes instance, usually a "
 "new object is returned each time.  :mod:`ctypes` does *not* implement "
@@ -2116,7 +2116,7 @@ msgid ""
 "true for all other ctypes object instances."
 msgstr "``value`` 属性が ctypes インスタンスより参照されたとき、大抵の場合はそれぞれに対し新しいオブジェクトを返します。 :mod:`ctypes` はオリジナルのオブジェクトを返す実装にはなって *おらず* 新しいオブジェクトを構築します。同じことが他の ctypes オブジェクトインスタンスに対しても言えます。"
 
-#: ../../library/ctypes.rst:2170
+#: ../../library/ctypes.rst:2171
 msgid ""
 "Fundamental data types, when returned as foreign function call results, or, "
 "for example, by retrieving structure field members or array items, are "
@@ -2125,7 +2125,7 @@ msgid ""
 " receive a Python string, *not* a :class:`c_char_p` instance."
 msgstr "基本データ型は、外部関数呼び出しの結果として返されたときや、例えば構造体のフィールドメンバーや配列要素を取り出すときに、ネイティブの Python 型へ透過的に変換されます。言い換えると、外部関数が :class:`c_char_p` の :attr:`restype` を持つ場合は、 :class:`c_char_p` インスタンスでは *なく* 常に Python 文字列を受け取ることでしょう。"
 
-#: ../../library/ctypes.rst:2176
+#: ../../library/ctypes.rst:2177
 msgid ""
 "Subclasses of fundamental data types do *not* inherit this behavior. So, if "
 "a foreign functions :attr:`restype` is a subclass of :class:`c_void_p`, you "
@@ -2133,25 +2133,25 @@ msgid ""
 " you can get the value of the pointer by accessing the ``value`` attribute."
 msgstr "基本データ型のサブクラスはこの振る舞いを継承 *しません* 。したがって、外部関数の :attr:`restype` が :class:`c_void_p` のサブクラスならば、関数呼び出しからこのサブクラスのインスタンスを受け取ります。もちろん、 ``value`` 属性にアクセスしてポインタの値を得ることができます。"
 
-#: ../../library/ctypes.rst:2181
+#: ../../library/ctypes.rst:2182
 msgid "These are the fundamental ctypes data types:"
 msgstr "これらが基本 ctypes データ型です:"
 
-#: ../../library/ctypes.rst:2185
+#: ../../library/ctypes.rst:2186
 msgid ""
 "Represents the C :c:type:`signed char` datatype, and interprets the value as"
 " small integer.  The constructor accepts an optional integer initializer; no"
 " overflow checking is done."
 msgstr "C の :c:type:`signed char` データ型を表し、小整数として値を解釈します。コンストラクタはオプションの整数初期化子を受け取ります。オーバーフローのチェックは行われません。"
 
-#: ../../library/ctypes.rst:2192
+#: ../../library/ctypes.rst:2193
 msgid ""
 "Represents the C :c:type:`char` datatype, and interprets the value as a "
 "single character.  The constructor accepts an optional string initializer, "
 "the length of the string must be exactly one character."
 msgstr "C :c:type:`char` データ型を表し、単一の文字として値を解釈します。コンストラクタはオプションの文字列初期化子を受け取り、その文字列の長さちょうど一文字である必要があります。"
 
-#: ../../library/ctypes.rst:2199
+#: ../../library/ctypes.rst:2200
 msgid ""
 "Represents the C :c:type:`char *` datatype when it points to a zero-"
 "terminated string.  For a general character pointer that may also point to "
@@ -2159,178 +2159,178 @@ msgid ""
 "integer address, or a string."
 msgstr "C :c:type:`char *` データ型を表し、ゼロ終端文字列へのポインタでなければなりません。バイナリデータを指す可能性のある一般的なポインタに対しては ``POINTER(c_char)`` を使わなければなりません。コンストラクタは整数のアドレスもしくは文字列を受け取ります。"
 
-#: ../../library/ctypes.rst:2207
+#: ../../library/ctypes.rst:2208
 msgid ""
 "Represents the C :c:type:`double` datatype.  The constructor accepts an "
 "optional float initializer."
 msgstr "C :c:type:`double` データ型を表します。コンストラクタはオプションの浮動小数点数初期化子を受け取ります。"
 
-#: ../../library/ctypes.rst:2213
+#: ../../library/ctypes.rst:2214
 msgid ""
 "Represents the C :c:type:`long double` datatype.  The constructor accepts an"
 " optional float initializer.  On platforms where ``sizeof(long double) == "
 "sizeof(double)`` it is an alias to :class:`c_double`."
 msgstr "C :c:type:`long double` データ型を表します。コンストラクタはオプションで浮動小数点数初期化子を受け取ります。 ``sizeof(long double) == sizeof(double)`` であるプラットフォームでは :class:`c_double` の別名です。"
 
-#: ../../library/ctypes.rst:2221
+#: ../../library/ctypes.rst:2222
 msgid ""
 "Represents the C :c:type:`float` datatype.  The constructor accepts an "
 "optional float initializer."
 msgstr "C :c:type:`float` データ型を表します。コンストラクタはオプションの浮動小数点数初期化子を受け取ります。"
 
-#: ../../library/ctypes.rst:2227
+#: ../../library/ctypes.rst:2228
 msgid ""
 "Represents the C :c:type:`signed int` datatype.  The constructor accepts an "
 "optional integer initializer; no overflow checking is done.  On platforms "
 "where ``sizeof(int) == sizeof(long)`` it is an alias to :class:`c_long`."
 msgstr "C :c:type:`signed int` データ型を表します。コンストラクタはオプションの整数初期化子を受け取ります。オーバーフローのチェックは行われません。 ``sizeof(int) == sizeof(long)`` であるプラットフォームでは、 :class:`c_long` の別名です。"
 
-#: ../../library/ctypes.rst:2234
+#: ../../library/ctypes.rst:2235
 msgid ""
 "Represents the C 8-bit :c:type:`signed int` datatype.  Usually an alias for "
 ":class:`c_byte`."
 msgstr "C 8-bit :c:type:`signed int` データ型を表します。たいていは、 :class:`c_byte` の別名です。"
 
-#: ../../library/ctypes.rst:2240
+#: ../../library/ctypes.rst:2241
 msgid ""
 "Represents the C 16-bit :c:type:`signed int` datatype.  Usually an alias for"
 " :class:`c_short`."
 msgstr "C 16-bit :c:type:`signed int` データ型を表します。たいていは、 :class:`c_short` の別名です。"
 
-#: ../../library/ctypes.rst:2246
+#: ../../library/ctypes.rst:2247
 msgid ""
 "Represents the C 32-bit :c:type:`signed int` datatype.  Usually an alias for"
 " :class:`c_int`."
 msgstr "C 32-bit :c:type:`signed int` データ型を表します。たいていは、 :class:`c_int` の別名です。"
 
-#: ../../library/ctypes.rst:2252
+#: ../../library/ctypes.rst:2253
 msgid ""
 "Represents the C 64-bit :c:type:`signed int` datatype.  Usually an alias for"
 " :class:`c_longlong`."
 msgstr "C 64-bit :c:type:`signed int` データ型を表します。たいていは、 :class:`c_longlong` の別名です。"
 
-#: ../../library/ctypes.rst:2258
+#: ../../library/ctypes.rst:2259
 msgid ""
 "Represents the C :c:type:`signed long` datatype.  The constructor accepts an"
 " optional integer initializer; no overflow checking is done."
 msgstr "C :c:type:`signed long` データ型を表します。コンストラクタはオプションの整数初期化子を受け取ります。オーバーフローのチェックは行われません。"
 
-#: ../../library/ctypes.rst:2264
+#: ../../library/ctypes.rst:2265
 msgid ""
 "Represents the C :c:type:`signed long long` datatype.  The constructor "
 "accepts an optional integer initializer; no overflow checking is done."
 msgstr "C :c:type:`signed long long` データ型を表します。コンストラクタはオプションの整数初期化子を受け取ります。オーバーフローのチェックは行われません。"
 
-#: ../../library/ctypes.rst:2270
+#: ../../library/ctypes.rst:2271
 msgid ""
 "Represents the C :c:type:`signed short` datatype.  The constructor accepts "
 "an optional integer initializer; no overflow checking is done."
 msgstr "C :c:type:`signed short` データ型を表します。コンストラクタはオプションの整数初期化子を受け取ります。オーバーフローのチェックは行われません。"
 
-#: ../../library/ctypes.rst:2276
+#: ../../library/ctypes.rst:2277
 msgid "Represents the C :c:type:`size_t` datatype."
 msgstr "C :c:type:`size_t` データ型を表します。"
 
-#: ../../library/ctypes.rst:2281
+#: ../../library/ctypes.rst:2282
 msgid "Represents the C :c:type:`ssize_t` datatype."
 msgstr "C :c:type:`ssize_t` データ型を表します。"
 
-#: ../../library/ctypes.rst:2288
+#: ../../library/ctypes.rst:2289
 msgid ""
 "Represents the C :c:type:`unsigned char` datatype, it interprets the value "
 "as small integer.  The constructor accepts an optional integer initializer; "
 "no overflow checking is done."
 msgstr "C の :c:type:`unsigned char` データ型を表し、小さな整数として値を解釈します。コンストラクタはオプションの整数初期化子を受け取ります; オーバーフローのチェックは行われません。"
 
-#: ../../library/ctypes.rst:2295
+#: ../../library/ctypes.rst:2296
 msgid ""
 "Represents the C :c:type:`unsigned int` datatype.  The constructor accepts "
 "an optional integer initializer; no overflow checking is done.  On platforms"
 " where ``sizeof(int) == sizeof(long)`` it is an alias for :class:`c_ulong`."
 msgstr "C の  :c:type:`unsigned int` データ型を表します。コンストラクタはオプションの整数初期化子を受け取ります; オーバーフローのチェックは行われません。これは、 ``sizeof(int) == sizeof(long)`` であるプラットフォームでは :class:`c_ulong` の別名です。"
 
-#: ../../library/ctypes.rst:2302
+#: ../../library/ctypes.rst:2303
 msgid ""
 "Represents the C 8-bit :c:type:`unsigned int` datatype.  Usually an alias "
 "for :class:`c_ubyte`."
 msgstr "C 8-bit :c:type:`unsigned int` データ型を表します。たいていは、 :class:`c_ubyte` の別名です。"
 
-#: ../../library/ctypes.rst:2308
+#: ../../library/ctypes.rst:2309
 msgid ""
 "Represents the C 16-bit :c:type:`unsigned int` datatype.  Usually an alias "
 "for :class:`c_ushort`."
 msgstr "C 16-bit :c:type:`unsigned int` データ型を表します。たいていは、 :class:`c_ushort` の別名です。"
 
-#: ../../library/ctypes.rst:2314
+#: ../../library/ctypes.rst:2315
 msgid ""
 "Represents the C 32-bit :c:type:`unsigned int` datatype.  Usually an alias "
 "for :class:`c_uint`."
 msgstr "C 32-bit :c:type:`unsigned int` データ型を表します。たいていは、 :class:`c_uint` の別名です。"
 
-#: ../../library/ctypes.rst:2320
+#: ../../library/ctypes.rst:2321
 msgid ""
 "Represents the C 64-bit :c:type:`unsigned int` datatype.  Usually an alias "
 "for :class:`c_ulonglong`."
 msgstr "C 64-bit :c:type:`unsigned int` データ型を表します。たいていは、 :class:`c_ulonglong` の別名です。"
 
-#: ../../library/ctypes.rst:2326
+#: ../../library/ctypes.rst:2327
 msgid ""
 "Represents the C :c:type:`unsigned long` datatype.  The constructor accepts "
 "an optional integer initializer; no overflow checking is done."
 msgstr "C :c:type:`unsigned long` データ型を表します。コンストラクタはオプションの整数初期化子を受け取ります。オーバーフローのチェックは行われません。"
 
-#: ../../library/ctypes.rst:2332
+#: ../../library/ctypes.rst:2333
 msgid ""
 "Represents the C :c:type:`unsigned long long` datatype.  The constructor "
 "accepts an optional integer initializer; no overflow checking is done."
 msgstr "C :c:type:`unsigned long long` データ型を表します。コンストラクタはオプションの整数初期化子を受け取ります。オーバーフローのチェックは行われません。"
 
-#: ../../library/ctypes.rst:2338
+#: ../../library/ctypes.rst:2339
 msgid ""
 "Represents the C :c:type:`unsigned short` datatype.  The constructor accepts"
 " an optional integer initializer; no overflow checking is done."
 msgstr "C :c:type:`unsigned short` データ型を表します。コンストラクタはオプションの整数初期化子を受け取ります。オーバーフローのチェックは行われません。"
 
-#: ../../library/ctypes.rst:2344
+#: ../../library/ctypes.rst:2345
 msgid ""
 "Represents the C :c:type:`void *` type.  The value is represented as "
 "integer. The constructor accepts an optional integer initializer."
 msgstr "C :c:type:`void *` データ型を表します。値は整数として表されます。コンストラクタはオプションの整数初期化子を受け取ります。"
 
-#: ../../library/ctypes.rst:2350
+#: ../../library/ctypes.rst:2351
 msgid ""
 "Represents the C :c:type:`wchar_t` datatype, and interprets the value as a "
 "single character unicode string.  The constructor accepts an optional string"
 " initializer, the length of the string must be exactly one character."
 msgstr "C :c:type:`wchar_t` データ型を表し、値は Unicode 文字列の単一の文字として解釈されます。コンストラクタはオプションの文字列初期化子を受け取り、その文字列の長さはちょうど一文字である必要があります。"
 
-#: ../../library/ctypes.rst:2357
+#: ../../library/ctypes.rst:2358
 msgid ""
 "Represents the C :c:type:`wchar_t *` datatype, which must be a pointer to a "
 "zero-terminated wide character string.  The constructor accepts an integer "
 "address, or a string."
 msgstr "C :c:type:`wchar_t *` データ型を表し、ゼロ終端ワイド文字列へのポインタでなければなりません。コンストラクタは整数のアドレスもしくは文字列を受け取ります。"
 
-#: ../../library/ctypes.rst:2364
+#: ../../library/ctypes.rst:2365
 msgid ""
 "Represent the C :c:type:`bool` datatype (more accurately, :c:type:`_Bool` "
 "from C99).  Its value can be ``True`` or ``False``, and the constructor "
 "accepts any object that has a truth value."
 msgstr "C の :c:type:`bool` データ型 (より正確には、 C99 以降の  :c:type:`_Bool`) を表します。 ``True`` または ``False`` の値を持ち、コンストラクタは真偽値と解釈できるオブジェクトを受け取ります。"
 
-#: ../../library/ctypes.rst:2373
+#: ../../library/ctypes.rst:2374
 msgid ""
 "Windows only: Represents a :c:type:`HRESULT` value, which contains success "
 "or error information for a function or method call."
 msgstr "Windows用: :c:type:`HRESULT` 値を表し、関数またはメソッド呼び出しに対する成功またはエラーの情報を含んでいます。"
 
-#: ../../library/ctypes.rst:2379
+#: ../../library/ctypes.rst:2380
 msgid ""
 "Represents the C :c:type:`PyObject *` datatype.  Calling this without an "
 "argument creates a ``NULL`` :c:type:`PyObject *` pointer."
 msgstr "C :c:type:`PyObject *` データ型を表します。引数なしでこれを呼び出すと ``NULL`` :c:type:`PyObject *` ポインタを作成します。"
 
-#: ../../library/ctypes.rst:2382
+#: ../../library/ctypes.rst:2383
 msgid ""
 "The :mod:`ctypes.wintypes` module provides quite some other Windows specific"
 " data types, for example :c:type:`HWND`, :c:type:`WPARAM`, or "
@@ -2338,33 +2338,33 @@ msgid ""
 ":c:type:`RECT` are also defined."
 msgstr ":mod:`ctypes.wintypes` モジュールは他の Windows 固有のデータ型を提供します。例えば、 :c:type:`HWND`, :c:type:`WPARAM`, :c:type:`DWORD` です。 :c:type:`MSG` や :c:type:`RECT` のような有用な構造体も定義されています。"
 
-#: ../../library/ctypes.rst:2390
+#: ../../library/ctypes.rst:2391
 msgid "Structured data types"
 msgstr "構造化データ型"
 
-#: ../../library/ctypes.rst:2395
+#: ../../library/ctypes.rst:2396
 msgid "Abstract base class for unions in native byte order."
 msgstr "ネイティブのバイトオーダーでの共用体のための抽象ベースクラス。"
 
-#: ../../library/ctypes.rst:2400
+#: ../../library/ctypes.rst:2401
 msgid "Abstract base class for structures in *big endian* byte order."
 msgstr "*ビックエンディアン* バイトオーダーでの構造体のための抽象ベースクラス。"
 
-#: ../../library/ctypes.rst:2405
+#: ../../library/ctypes.rst:2406
 msgid "Abstract base class for structures in *little endian* byte order."
 msgstr "*リトルエンディアン* バイトオーダーでの構造体のための抽象ベースクラス。"
 
-#: ../../library/ctypes.rst:2407
+#: ../../library/ctypes.rst:2408
 msgid ""
 "Structures with non-native byte order cannot contain pointer type fields, or"
 " any other data types containing pointer type fields."
 msgstr "ネイティブではないバイトオーダーを持つ構造体にポインタ型フィールドあるいはポインタ型フィールドを含む他のどんなデータ型をも入れることはできません。"
 
-#: ../../library/ctypes.rst:2413
+#: ../../library/ctypes.rst:2414
 msgid "Abstract base class for structures in *native* byte order."
 msgstr "*ネイティブ* のバイトオーダーでの構造体のための抽象ベースクラス。"
 
-#: ../../library/ctypes.rst:2415
+#: ../../library/ctypes.rst:2416
 msgid ""
 "Concrete structure and union types must be created by subclassing one of "
 "these types, and at least define a :attr:`_fields_` class variable. "
@@ -2372,34 +2372,34 @@ msgid ""
 "writing the fields by direct attribute accesses.  These are the"
 msgstr "具象構造体型と具象共用体型はこれらの型の一つをサブクラス化することで作らなければなりません。少なくとも、 :attr:`_fields_` クラス変数を定義する必要があります。 :mod:`ctypes` は、属性に直接アクセスしてフィールドを読み書きできるようにする記述子 (:term:`descriptor`) を作成するでしょう。これらは、"
 
-#: ../../library/ctypes.rst:2423
+#: ../../library/ctypes.rst:2424
 msgid ""
 "A sequence defining the structure fields.  The items must be 2-tuples or "
 "3-tuples.  The first item is the name of the field, the second item "
 "specifies the type of the field; it can be any ctypes data type."
 msgstr "構造体のフィールドを定義するシーケンス。要素は2要素タプルか3要素タプルでなければなりません。第一要素はフィールドの名前です。第二要素はフィールドの型を指定します。それはどんな ctypes データ型でも構いません。"
 
-#: ../../library/ctypes.rst:2427
+#: ../../library/ctypes.rst:2428
 msgid ""
 "For integer type fields like :class:`c_int`, a third optional item can be "
 "given.  It must be a small positive integer defining the bit width of the "
 "field."
 msgstr ":class:`c_int` のような整数型のために、オプションの第三要素を与えることができます。フィールドのビット幅を定義する正の小整数である必要があります。"
 
-#: ../../library/ctypes.rst:2431
+#: ../../library/ctypes.rst:2432
 msgid ""
 "Field names must be unique within one structure or union.  This is not "
 "checked, only one field can be accessed when names are repeated."
 msgstr "一つの構造体と共用体の中で、フィールド名はただ一つである必要があります。これはチェックされません。名前が繰り返しでてきたときにアクセスできるのは一つのフィールドだけです。"
 
-#: ../../library/ctypes.rst:2434
+#: ../../library/ctypes.rst:2435
 msgid ""
 "It is possible to define the :attr:`_fields_` class variable *after* the "
-"class statement that defines the Structure subclass, this allows to create "
+"class statement that defines the Structure subclass, this allows creating "
 "data types that directly or indirectly reference themselves::"
-msgstr "Structure サブクラスを定義するクラス文の *後で* 、 :attr:`_fields_` クラス変数を定義することができます。これにより自身を直接または間接的に参照するデータ型を作成できるようになります。::"
+msgstr "Structure サブクラスを定義するクラス文の *後で* 、 :attr:`_fields_` クラス変数を定義することができます。これにより、次のように自身を直接または間接的に参照するデータ型を作成できるようになります::"
 
-#: ../../library/ctypes.rst:2444
+#: ../../library/ctypes.rst:2445
 msgid ""
 "The :attr:`_fields_` class variable must, however, be defined before the "
 "type is first used (an instance is created, ``sizeof()`` is called on it, "
@@ -2407,40 +2407,40 @@ msgid ""
 "raise an AttributeError."
 msgstr "しかし、 :attr:`_fields_` クラス変数はその型が最初に使われる ( インスタンスが作成される、それに対して ``sizeof()`` が呼び出されるなど ) より前に定義されていなければなりません。その後 :attr:`_fields_` クラス変数へ代入すると AttributeError が送出されます。"
 
-#: ../../library/ctypes.rst:2449
+#: ../../library/ctypes.rst:2450
 msgid ""
 "It is possible to defined sub-subclasses of structure types, they inherit "
 "the fields of the base class plus the :attr:`_fields_` defined in the sub-"
 "subclass, if any."
 msgstr "構造体型のサブクラスを定義することができ、もしあるならサブクラス内で定義された :attr:`_fields_` に加えて、ベースクラスのフィールドも継承します。"
 
-#: ../../library/ctypes.rst:2456
+#: ../../library/ctypes.rst:2457
 msgid ""
-"An optional small integer that allows to override the alignment of structure"
-" fields in the instance.  :attr:`_pack_` must already be defined when "
+"An optional small integer that allows overriding the alignment of structure "
+"fields in the instance.  :attr:`_pack_` must already be defined when "
 ":attr:`_fields_` is assigned, otherwise it will have no effect."
-msgstr "インスタンスの構造体フィールドのアライメントを上書きできるようにするオブションの小整数。 :attr:`_pack_` は :attr:`_fields_` が代入されたときすでに定義されていなければなりません。そうでなければ、何ら影響はありません。"
+msgstr "インスタンスの構造体フィールドのアライメントを上書きできるようにするオブションの小整数。 :attr:`_pack_` は :attr:`_fields_` が代入されたときすでに定義されていなければなりません。そうでなければ、何の効果もありません。"
 
-#: ../../library/ctypes.rst:2463
+#: ../../library/ctypes.rst:2464
 msgid ""
 "An optional sequence that lists the names of unnamed (anonymous) fields. "
 ":attr:`_anonymous_` must be already defined when :attr:`_fields_` is "
 "assigned, otherwise it will have no effect."
 msgstr "無名 (匿名) フィールドの名前が並べあげられたオプションのシーケンス。 :attr:`_fields_` が代入されたとき、 :attr:`_anonymous_` がすでに定義されていなければなりません。そうでなければ、何ら影響はありません。"
 
-#: ../../library/ctypes.rst:2467
+#: ../../library/ctypes.rst:2468
 msgid ""
 "The fields listed in this variable must be structure or union type fields. "
-":mod:`ctypes` will create descriptors in the structure type that allows to "
-"access the nested fields directly, without the need to create the structure "
-"or union field."
-msgstr "この変数に並べあげられたフィールドは構造体型もしくは共用体型フィールドである必要があります。構造体フィールドまたは共用体フィールドを作る必要なく、入れ子になったフィールドに直接アクセスできるようにするために、 :mod:`ctypes` は構造体型の中に記述子を作成します。"
+":mod:`ctypes` will create descriptors in the structure type that allow "
+"accessing the nested fields directly, without the need to create the "
+"structure or union field."
+msgstr ""
 
-#: ../../library/ctypes.rst:2472
+#: ../../library/ctypes.rst:2473
 msgid "Here is an example type (Windows)::"
 msgstr "型の例です (Windows)::"
 
-#: ../../library/ctypes.rst:2485
+#: ../../library/ctypes.rst:2486
 msgid ""
 "The ``TYPEDESC`` structure describes a COM data type, the ``vt`` field "
 "specifies which one of the union fields is valid.  Since the ``u`` field is "
@@ -2450,7 +2450,7 @@ msgid ""
 "temporary union instance::"
 msgstr "``TYPEDESC`` 構造体はCOMデータ型を表現しており、 ``vt`` フィールドは共用体フィールドのどれが有効であるかを指定します。 ``u`` フィールドは匿名フィールドとして定義されているため、 TYPEDESC インスタンスから取り除かれてそのメンバーへ直接アクセスできます。 ``td.lptdesc`` と ``td.u.lptdesc`` は同等ですが、前者がより高速です。なぜなら一時的な共用体インスタンスを作る必要がないためです。::"
 
-#: ../../library/ctypes.rst:2497
+#: ../../library/ctypes.rst:2498
 msgid ""
 "It is possible to defined sub-subclasses of structures, they inherit the "
 "fields of the base class.  If the subclass definition has a separate "
@@ -2458,7 +2458,7 @@ msgid ""
 "fields of the base class."
 msgstr "構造体のサブ-サブクラスを定義することができ、ベースクラスのフィールドを継承します。サブクラス定義に別の :attr:`_fields_` 変数がある場合は、この中で指定されたフィールドはベースクラスのフィールドへ追加されます。"
 
-#: ../../library/ctypes.rst:2502
+#: ../../library/ctypes.rst:2503
 msgid ""
 "Structure and union constructors accept both positional and keyword "
 "arguments.  Positional arguments are used to initialize member fields in the"
@@ -2468,12 +2468,66 @@ msgid ""
 " names not present in :attr:`_fields_`."
 msgstr "構造体と共用体のコンストラクタは位置引数とキーワード引数の両方を受け取ります。位置引数は :attr:`_fields_` の中に現れたのと同じ順番でメンバーフィールドを初期化するために使われます。コンストラクタのキーワード引数は属性代入として解釈され、そのため、同じ名前をもつ :attr:`_fields_` を初期化するか、 :attr:`_fields_` に存在しない名前に対しては新しい属性を作ります。"
 
-#: ../../library/ctypes.rst:2513
+#: ../../library/ctypes.rst:2514
 msgid "Arrays and pointers"
 msgstr "配列とポインタ"
 
-#: ../../library/ctypes.rst:2515
+#: ../../library/ctypes.rst:2518
+msgid "Abstract base class for arrays."
+msgstr "配列のための抽象基底クラスです。"
+
+#: ../../library/ctypes.rst:2520
 msgid ""
-"Not yet written - please see the sections :ref:`ctypes-pointers` and section"
-" :ref:`ctypes-arrays` in the tutorial."
-msgstr "未作成 - チュートリアルの節 :ref:`ctypes-pointers` と :ref:`ctypes-arrays` を参照してください。"
+"The recommended way to create concrete array types is by multiplying any "
+":mod:`ctypes` data type with a positive integer.  Alternatively, you can "
+"subclass this type and define :attr:`_length_` and :attr:`_type_` class "
+"variables. Array elements can be read and written using standard subscript "
+"and slice accesses; for slice reads, the resulting object is *not* itself an"
+" :class:`Array`."
+msgstr "具象配列型を作成するための推奨される方法は、任意の :mod:`ctypes` データ型に正の整数を乗算することです。代わりに、この型のサブクラスを作成し、 :attr:`_length_` と :attr:`_type_` のクラス変数を定義することもできます。配列の要素は、標準の添え字とスライスによるアクセスを使用して読み書きを行うことができます。スライスの読み込みでは、結果のオブジェクト自体は :class:`Array` ではありません。"
+
+#: ../../library/ctypes.rst:2530
+msgid ""
+"A positive integer specifying the number of elements in the array. Out-of-"
+"range subscripts result in an :exc:`IndexError`. Will be returned by "
+":func:`len`."
+msgstr "配列の要素数を指定する正の整数。範囲外の添え字を指定すると、 :exc:`IndexError` が送出されます。:func:`len` がこの整数を返します。"
+
+#: ../../library/ctypes.rst:2537
+msgid "Specifies the type of each element in the array."
+msgstr "配列内の各要素の型を指定します。"
+
+#: ../../library/ctypes.rst:2540
+msgid ""
+"Array subclass constructors accept positional arguments, used to initialize "
+"the elements in order."
+msgstr "配列のサブクラスのコンストラクタは、位置引数を受け付けて、配列を順番に初期化するために使用します。"
+
+#: ../../library/ctypes.rst:2546
+msgid "Private, abstract base class for pointers."
+msgstr "ポインタのためのプライベートな抽象基底クラスです。"
+
+#: ../../library/ctypes.rst:2548
+msgid ""
+"Concrete pointer types are created by calling :func:`POINTER` with the type "
+"that will be pointed to; this is done automatically by :func:`pointer`."
+msgstr "具象ポインタ型は、ポイント先の型を持つ :func:`POINTER` を呼び出すことで、作成できます。これは、 :func:`pointer` により自動的に行われます。"
+
+#: ../../library/ctypes.rst:2552
+msgid ""
+"If a pointer points to an array, its elements can be read and written using "
+"standard subscript and slice accesses.  Pointer objects have no size, so "
+":func:`len` will raise :exc:`TypeError`.  Negative subscripts will read from"
+" the memory *before* the pointer (as in C), and out-of-range subscripts will"
+" probably crash with an access violation (if you're lucky)."
+msgstr "ポインタが配列を指す場合、その配列の要素は、標準の添え字とスライスによるアクセスを使用して読み書きが行えます。ポインタオブジェクトには、サイズがないため、 :func:`len` 関数は :exc:`TypeError` を送出します。負の添え字は、(C と同様に) ポインタの *前* のメモリから読み込み、範囲外の添え字はおそらく (幸運な場合でも) アクセス違反によりクラッシュを起こします。"
+
+#: ../../library/ctypes.rst:2562
+msgid "Specifies the type pointed to."
+msgstr "ポイント先の型を指定します。"
+
+#: ../../library/ctypes.rst:2566
+msgid ""
+"Returns the object to which to pointer points.  Assigning to this attribute "
+"changes the pointer to point to the assigned object."
+msgstr "ポインタが指すオブジェクトを返します。この属性に割り当てると、ポインタが割り当てられたオブジェクトを指すようになります。"

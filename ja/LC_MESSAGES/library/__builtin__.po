@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-01-23 04:08+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:44+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,7 +42,7 @@ msgstr "通常このモジュールはほとんどのアプリケーションで
 msgid ""
 "Most modules have the name ``__builtins__`` (note the ``'s'``) made "
 "available as part of their globals.  The value of ``__builtins__`` is "
-"normally either this module or the value of this modules's :attr:`__dict__` "
-"attribute.  Since this is an implementation detail, it may not be used by "
-"alternate implementations of Python."
-msgstr "ほとんどのモジュールではグローバル変数の一部として ``__builtins__`` (``'s'`` に注意) が利用できるようになっています。 ``__builtins__`` の内容は通常 ``__builtin__`` モジュールそのものか、あるいは ``__builtin__`` モジュールの :attr:`__dict__` 属性です。これは実装の詳細部分なので、異なる Python の実装では ``__builtins__`` は使われていないこともあります。"
+"normally either this module or the value of this modules's "
+":attr:`~object.__dict__` attribute.  Since this is an implementation detail,"
+" it may not be used by alternate implementations of Python."
+msgstr ""

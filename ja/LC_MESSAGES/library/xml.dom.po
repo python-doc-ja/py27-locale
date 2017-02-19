@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-03 16:32+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:09+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -91,16 +90,20 @@ msgid ""
 msgstr "W3C から提供されている仕様は、 DOM API を Java、ECMAScript、および OMG IDL で定義しています。ここで定義されている Python での対応づけは、大部分がこの仕様の IDL 版に基づいていますが、厳密な準拠は必要とされていません (実装で IDL の厳密な対応付けをサポートするのは自由ですが)。API への対応付けに関する詳細な議論は :ref:`dom-conformance` を参照してください。"
 
 #: ../../library/xml.dom.rst:77
-msgid "Document Object Model (DOM) Level 2 Specification"
-msgstr "`Document Object Model (DOM) Level 2 Specification <http://www.w3.org/TR/DOM-Level-2-Core/>`_"
+msgid ""
+"`Document Object Model (DOM) Level 2 Specification <https://www.w3.org/TR"
+"/DOM-Level-2-Core/>`_"
+msgstr "`Document Object Model (DOM) Level 2 Specification <https://www.w3.org/TR/DOM-Level-2-Core/>`_"
 
 #: ../../library/xml.dom.rst:77
 msgid "The W3C recommendation upon which the Python DOM API is based."
 msgstr "Python DOM API が準拠している W3C 勧告。"
 
 #: ../../library/xml.dom.rst:80
-msgid "Document Object Model (DOM) Level 1 Specification"
-msgstr "`Document Object Model (DOM) Level 1 Specification <http://www.w3.org/TR/REC-DOM-Level-1/>`_"
+msgid ""
+"`Document Object Model (DOM) Level 1 Specification <https://www.w3.org/TR"
+"/REC-DOM-Level-1/>`_"
+msgstr "`Document Object Model (DOM) Level 1 Specification <https://www.w3.org/TR/REC-DOM-Level-1/>`_"
 
 #: ../../library/xml.dom.rst:80
 msgid ""
@@ -108,7 +111,9 @@ msgid ""
 msgstr ":mod:`xml.dom.minidom` でサポートされている W3C の DOM に関する勧告。"
 
 #: ../../library/xml.dom.rst:82
-msgid "Python Language Mapping Specification"
+msgid ""
+"`Python Language Mapping Specification "
+"<http://www.omg.org/spec/PYTH/1.2/PDF>`_"
 msgstr "`Python Language Mapping Specification <http://www.omg.org/spec/PYTH/1.2/PDF>`_"
 
 #: ../../library/xml.dom.rst:83
@@ -165,21 +170,21 @@ msgstr "DOM 内のノードに名前空間が何も関連づけられていな�
 #: ../../library/xml.dom.rst:129
 msgid ""
 "The namespace URI associated with the reserved prefix ``xml``, as defined by"
-" `Namespaces in XML <http://www.w3.org/TR/REC-xml-names/>`_ (section 4)."
-msgstr "`Namespaces in XML <http://www.w3.org/TR/REC-xml-names/>`_ (4 節) で定義されている、予約済接頭辞 (reserved prefix) ``xml`` に関連付けられた名前空間 URI です。"
+" `Namespaces in XML <https://www.w3.org/TR/REC-xml-names/>`_ (section 4)."
+msgstr "`Namespaces in XML <https://www.w3.org/TR/REC-xml-names/>`_ (4 節) で定義されている、予約済みプレフィクス (reserved prefix) ``xml`` に関連付けられた名前空間 URI です。"
 
 #: ../../library/xml.dom.rst:137
 msgid ""
 "The namespace URI for namespace declarations, as defined by `Document Object"
-" Model (DOM) Level 2 Core Specification <http://www.w3.org/TR/DOM-"
+" Model (DOM) Level 2 Core Specification <https://www.w3.org/TR/DOM-"
 "Level-2-Core/core.html>`_ (section 1.1.8)."
-msgstr "`Document Object Model (DOM) Level 2 Core Specification <http://www.w3.org/TR/DOM-Level-2-Core/core.html>`_ (1.1.8 節) で定義されている、名前空間宣言への名前空間 URI です。"
+msgstr "`Document Object Model (DOM) Level 2 Core Specification <https://www.w3.org/TR/DOM-Level-2-Core/core.html>`_ (1.1.8 節) で定義されている、名前空間宣言への名前空間 URI です。"
 
 #: ../../library/xml.dom.rst:146
 msgid ""
 "The URI of the XHTML namespace as defined by `XHTML 1.0: The Extensible "
-"HyperText Markup Language <http://www.w3.org/TR/xhtml1/>`_ (section 3.1.1)."
-msgstr "`XHTML 1.0: The Extensible HyperText Markup Language <http://www.w3.org/TR/xhtml1/>`_ (3.1.1 節) で定義されている、XHTML 名前空間 URI です。"
+"HyperText Markup Language <https://www.w3.org/TR/xhtml1/>`_ (section 3.1.1)."
+msgstr "`XHTML 1.0: The Extensible HyperText Markup Language <https://www.w3.org/TR/xhtml1/>`_ (3.1.1 節) で定義されている、XHTML 名前空間 URI です。"
 
 #: ../../library/xml.dom.rst:151
 msgid ""
@@ -559,11 +564,11 @@ msgstr "NodeList オブジェクト"
 #: ../../library/xml.dom.rst:421
 msgid ""
 "A :class:`NodeList` represents a sequence of nodes.  These objects are used "
-"in two ways in the DOM Core recommendation:  the :class:`Element` objects "
+"in two ways in the DOM Core recommendation:  an :class:`Element` object "
 "provides one as its list of child nodes, and the "
 ":meth:`getElementsByTagName` and :meth:`getElementsByTagNameNS` methods of "
 ":class:`Node` return objects with this interface to represent query results."
-msgstr ":class:`NodeList` は、ノードからなるシーケンスを表現します。これらのオブジェクトは DOM コア勧告 (DOM Core recommendation) において、二通りに使われています: :class:`Element` オブジェクトでは、子ノードのリストを提供するのに :class:`NodeList` を利用します。また、このインタフェースにおける :class:`Node` の :meth:`getElementsByTagName` および :meth:`getElementsByTagNameNS` メソッドは、クエリに対する結果を表現するのに :class:`NodeList` を利用します。"
+msgstr ":class:`NodeList` はノードのシーケンスを表現します。\nこれらのオブジェクトは DOM コア勧告 (DOM Core recommendation) において、二通りに使われています: :class:`Element` オブジェクトでは、子ノードのリストを提供するのに :class:`NodeList` を利用します。\nまた、このインタフェースにおける :class:`Node` の :meth:`getElementsByTagName` および :meth:`getElementsByTagNameNS` メソッドは、クエリに対する結果を表現するのに :class:`NodeList` を利用します。"
 
 #: ../../library/xml.dom.rst:427
 msgid ""
@@ -574,9 +579,9 @@ msgstr "DOM レベル 2 勧告では、これらのオブジェクトに対し�
 #: ../../library/xml.dom.rst:433
 msgid ""
 "Return the *i*'th item from the sequence, if there is one, or ``None``.  The"
-" index *i* is not allowed to be less then zero or greater than or equal to "
+" index *i* is not allowed to be less than zero or greater than or equal to "
 "the length of the sequence."
-msgstr "シーケンスに *i* 番目の要素がある場合にはその要素を、そうでない場合には ``None`` を返します。 *i* はゼロよりも小さくてはならず、シーケンスの長さ以上であってはなりません。"
+msgstr "存在する場合シークエンスの *i* 番目の要素を、そうでない場合 ``None`` を返します。*i* は 0 未満やシークエンスの長さ以上であってはなりません。"
 
 #: ../../library/xml.dom.rst:440
 msgid "The number of nodes in the sequence."
@@ -1053,9 +1058,9 @@ msgstr "定義されていないオブジェクトや、もはや利用できな
 #: ../../library/xml.dom.rst:897
 msgid ""
 "If an attempt is made to change any object in a way that is not permitted "
-"with regard to the `Namespaces in XML <http://www.w3.org/TR/REC-xml-"
+"with regard to the `Namespaces in XML <https://www.w3.org/TR/REC-xml-"
 "names/>`_ recommendation, this exception is raised."
-msgstr "`Namespaces in XML <http://www.w3.org/TR/REC-xml-names/>`_ に照らして許可されていない方法でオブジェクトを変更しようと試みた場合、この例外が送出されます。"
+msgstr "`Namespaces in XML <https://www.w3.org/TR/REC-xml-names/>`_ に照らして許可されていない方法でオブジェクトを変更しようと試みた場合、この例外が送出されます。"
 
 #: ../../library/xml.dom.rst:904
 msgid ""

@@ -1,18 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 # INADA Naoki <songofacandy@gmail.com>, 2015
-# tomo, 2017
+# cocoatomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2017-02-15 17:58+0000\n"
-"Last-Translator: tomo\n"
+"PO-Revision-Date: 2017-02-19 16:15+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -166,15 +165,14 @@ msgid ""
 "posted a call for issue trackers, asking volunteers to set up different "
 "products and import some of the bugs and patches from SourceForge.  Four "
 "different trackers were examined: `Jira "
-"<http://www.atlassian.com/software/jira/>`__, `Launchpad "
-"<http://www.launchpad.net>`__, `Roundup "
-"<http://roundup.sourceforge.net/>`__, and `Trac "
-"<http://trac.edgewall.org/>`__. The committee eventually settled on Jira and"
-" Roundup as the two candidates.  Jira is a commercial product that offers "
-"no-cost hosted instances to free-software projects; Roundup is an open-"
-"source project that requires volunteers to administer it and a server to "
-"host it."
-msgstr "そのようなわけで、Python Software Foundation のインフラ委員会はボランティアたちに課題トラッカーについて、異なるプロダクトのセットアップをし、SourceForge からバグ報告とパッチのインポートをする依頼の呼び掛けをしました。4 つのトラッカーが試されました: `Jira <http://www.atlassian.com/software/jira/>`__, `Launchpad <http://www.launchpad.net>`__, `Roundup <http://roundup.sourceforge.net/>`__, `Trac <http://trac.edgewall.org/>`__ です。委員会は結果として Jira と Roundup の 2 つを候補に据えました。Jira はフリーソフトウェアプロジェクトの無償でのホストが可能な商用製品です; Roundup はそれを運営するボランティアとそれをホストするサーバが必要なオープンソースプロダクトです。"
+"<https://www.atlassian.com/software/jira/>`__, `Launchpad "
+"<https://launchpad.net/>`__, `Roundup <http://roundup.sourceforge.net/>`__, "
+"and `Trac <https://trac.edgewall.org/>`__. The committee eventually settled "
+"on Jira and Roundup as the two candidates.  Jira is a commercial product "
+"that offers no-cost hosted instances to free-software projects; Roundup is "
+"an open-source project that requires volunteers to administer it and a "
+"server to host it."
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:164
 msgid ""
@@ -258,8 +256,8 @@ msgstr "こんにちにおいてもなお、印刷を命題とする出版にお
 msgid ""
 "During the 2.6 development cycle, Georg Brandl put a lot of effort into "
 "building a new toolchain for processing the documentation.  The resulting "
-"package is called Sphinx, and is available from http://sphinx.pocoo.org/."
-msgstr "2.6 の開発サイクルの間じゅう、Georg Brandl はドキュメンテーションの処理のための新たなツールチェインの構築に多大な労力を払いました。その結果のパッケージは Sphinx と呼ばれています。 http://sphinx.pocoo.org/ より入手出来ます。"
+"package is called Sphinx, and is available from http://sphinx-doc.org/."
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:220
 msgid ""
@@ -277,24 +275,25 @@ msgid ""
 msgstr "Sphinx は執筆に使えるスタンドアロンのパッケージです。そして 2 ダースに届かんばかりのプロジェクトが(`Sphinx ウェブサイトのリスト <http://sphinx-doc.org/examples.html>`__)、ドキュメンテーションツールとして Sphinx を採用しました。"
 
 #: ../../whatsnew/2.6.rst:234
-msgid "Documenting Python"
-msgstr "Documenting Python"
+msgid ""
+"`Documenting Python <https://docs.python.org/devguide/documenting.html>`__"
+msgstr "`Documenting Python <https://docs.python.org/devguide/documenting.html>`__"
 
 #: ../../whatsnew/2.6.rst:234
 msgid "Describes how to write for Python's documentation."
 msgstr "Python ドキュメントの書き方について書いています。"
 
 #: ../../whatsnew/2.6.rst:237
-msgid "Sphinx"
-msgstr "Sphinx"
+msgid "`Sphinx <http://sphinx-doc.org/>`__"
+msgstr "`Sphinx <http://sphinx-doc.org/>`__"
 
 #: ../../whatsnew/2.6.rst:237
 msgid "Documentation and code for the Sphinx toolchain."
 msgstr "Sphinx ツールチェインのドキュメントとコードです。"
 
 #: ../../whatsnew/2.6.rst:239
-msgid "Docutils"
-msgstr "Docutils"
+msgid "`Docutils <http://docutils.sourceforge.net>`__"
+msgstr "`Docutils <http://docutils.sourceforge.net>`__"
 
 #: ../../whatsnew/2.6.rst:240
 msgid "The underlying reStructuredText parser and toolset."
@@ -363,8 +362,8 @@ msgstr "いくつかの Python 標準オブジェクトが既にコンテキス�
 msgid ""
 "After this statement has executed, the file object in *f* will have been "
 "automatically closed, even if the :keyword:`for` loop raised an exception "
-"part- way through the block."
-msgstr "このステートメントが実行し終わったあかつきには、 *f* のファイルオブジェクトは、たとえ :keyword:`for` ループが道半ばにして例外と成り果てても、自動的にクローズされます。"
+"part-way through the block."
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:294
 msgid ""
@@ -545,8 +544,8 @@ msgid ""
 msgstr "最後になりますが、 :func:`closing` 関数はその与えた引数をそのまま返して変数に束縛出来るようにし、かつブロックの終了で、与えた引数が持つ ``.close()`` を呼び出します::"
 
 #: ../../whatsnew/2.6.rst:488
-msgid "PEP 343 - The \"with\" statement"
-msgstr "PEP 343 - \"with\" ステートメント"
+msgid ":pep:`343` - The \"with\" statement"
+msgstr ":pep:`343` - \"with\" ステートメント"
 
 #: ../../whatsnew/2.6.rst:485
 msgid ""
@@ -636,8 +635,8 @@ msgid ""
 msgstr "この機能は Python 起動時に :option:`-s` オプションを付けるか、環境変数 :envvar:`PYTHONNOUSERSITE` をセットすることで完全に無効に出来ます。"
 
 #: ../../whatsnew/2.6.rst:548
-msgid "PEP 370 - Per-user site-packages Directory"
-msgstr "PEP 370 - ユーザごとの ``site-packages`` ディレクトリ"
+msgid ":pep:`370` - Per-user ``site-packages`` Directory"
+msgstr ":pep:`370` - ユーザごとの ``site-packages`` ディレクトリ"
 
 #: ../../whatsnew/2.6.rst:549
 msgid "PEP written and implemented by Christian Heimes."
@@ -677,13 +676,13 @@ msgstr "ここに、サブプロセスが階乗を計算する例を示します
 
 #: ../../whatsnew/2.6.rst:612
 msgid ""
-"A :class:`Queue` is used to communicate the result of the factorial. The "
-":class:`Queue` object is stored in a global variable. The child process will"
-" use the value of the variable when the child was created; because it's a "
-":class:`Queue`, parent and child can use the object to communicate.  (If the"
-" parent were to change the value of the global variable, the child's value "
-"would be unaffected, and vice versa.)"
-msgstr ":class:`Queue` が階乗の結果を通信して返すのに使われています。 :class:`Queue` オブジェクトはグローバル変数に格納されています。子プロセスは、子プロセスが作成された時点のその変数の値を使うことになります; :class:`Queue` なので、親子はそのオブジェクトを通信のために使うことが出来ます。(プロセス作成後に親がグローバル変数 queue を差し替えても、子の値は左右されませんし、逆もしかりです。)"
+"A :class:`~Queue.Queue` is used to communicate the result of the factorial. "
+"The :class:`~Queue.Queue` object is stored in a global variable. The child "
+"process will use the value of the variable when the child was created; "
+"because it's a :class:`~Queue.Queue`, parent and child can use the object to"
+" communicate.  (If the parent were to change the value of the global "
+"variable, the child's value would be unaffected, and vice versa.)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:620
 msgid ""
@@ -722,8 +721,8 @@ msgid "The documentation for the :mod:`multiprocessing` module."
 msgstr ":mod:`multiprocessing` モジュールについてのドキュメント。"
 
 #: ../../whatsnew/2.6.rst:705
-msgid "PEP 371 - Addition of the multiprocessing package"
-msgstr "PEP 371 - multiprocessing パッケージの追加"
+msgid ":pep:`371` - Addition of the multiprocessing package"
+msgstr ":pep:`371` - multiprocessing パッケージの追加"
 
 #: ../../whatsnew/2.6.rst:705
 msgid ""
@@ -935,16 +934,16 @@ msgid ""
 msgstr "ビルトインの :func:`format` もあって、単一の値をフォーマット出来ます。これは型の :meth:`__format__` メソッドを与えられた指定子とともに呼び出します::"
 
 #: ../../whatsnew/2.6.rst:845
-msgid "formatstrings"
-msgstr "formatstrings"
+msgid ":ref:`formatstrings`"
+msgstr ":ref:`formatstrings`"
 
 #: ../../whatsnew/2.6.rst:845
 msgid "The reference documentation for format fields."
 msgstr "リファレンスドキュメント。"
 
 #: ../../whatsnew/2.6.rst:847
-msgid "PEP 3101 - Advanced String Formatting"
-msgstr "PEP 3101 - 進化版文字列フォーマッティング"
+msgid ":pep:`3101` - Advanced String Formatting"
+msgstr ":pep:`3101`: 進化版文字列フォーマッティング"
 
 #: ../../whatsnew/2.6.rst:848
 msgid "PEP written by Talin. Implemented by Eric Smith."
@@ -994,8 +993,8 @@ msgid "*file*: the file object to which the output will be sent."
 msgstr "*file*: 出力が送られるファイルオブジェクト。"
 
 #: ../../whatsnew/2.6.rst:882
-msgid "PEP 3105 - Make print a function"
-msgstr "PEP 3105 - print を関数にする"
+msgid ":pep:`3105` - Make print a function"
+msgstr ":pep:`3105` - print を関数にする"
 
 #: ../../whatsnew/2.6.rst:883
 msgid "PEP written by Georg Brandl."
@@ -1045,8 +1044,8 @@ msgid ""
 msgstr "Python 3.0 は \"as\" の使用のみをサポートするようになるので、最初の例は 2 つの異なる例外を捕捉するものとして翻訳されます。Python 2.6 ではカンマも \"as\" もサポートするので、既存のコードはそのまま動作します。新たに 2.6 で実行される Python コードを書くならば、 \"as\" の使用を勧めます。"
 
 #: ../../whatsnew/2.6.rst:933
-msgid "PEP 3110 - Catching Exceptions in Python 3000"
-msgstr "PEP 3110 - Python 3000 での例外の捕捉"
+msgid ":pep:`3110` - Catching Exceptions in Python 3000"
+msgstr ":pep:`3110` - Python 3000 での例外の捕捉"
 
 #: ../../whatsnew/2.6.rst:934
 msgid "PEP written and implemented by Collin Winter."
@@ -1122,8 +1121,8 @@ msgid ""
 msgstr "対応する C API もあります。 :c:func:`PyByteArray_FromObject`, :c:func:`PyByteArray_FromStringAndSize` や色々その他関数です。"
 
 #: ../../whatsnew/2.6.rst:1017
-msgid "PEP 3112 - Bytes literals in Python 3000"
-msgstr "PEP 3112 - Python 3000 でのバイトリテラル"
+msgid ":pep:`3112` - Bytes literals in Python 3000"
+msgstr ":pep:`3112` - Python 3000 でのバイトリテラル"
 
 #: ../../whatsnew/2.6.rst:1018
 msgid "PEP written by Jason Orendorff; backported to 2.6 by Christian Heimes."
@@ -1198,9 +1197,9 @@ msgid ""
 "There are two concrete implementations.  :class:`TextIOWrapper` wraps a "
 "buffered I/O object, supporting all of the methods for text I/O and adding a"
 " :attr:`buffer` attribute for access to the underlying object.  "
-":class:`StringIO` simply buffers everything in memory without ever writing "
-"anything to disk."
-msgstr "2 つの具象実装があります。 :class:`TextIOWrapper` はバッファ化 I/O オブジェクトをラップし、テキスト I/O の全てのメソッドをサポートし、追加で元となるオブジェクトへのアクセスのための :attr:`buffer` 属性を持ちます。 :class:`StringIO` はディスクへの一切の書き込みをせずに単純にメモリ内に全てをバッファします。"
+":class:`~StringIO.StringIO` simply buffers everything in memory without ever"
+" writing anything to disk."
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1083
 msgid ""
@@ -1221,8 +1220,8 @@ msgid ""
 msgstr "Python 2.6 では根底にある実装が :mod:`io` モジュールのクラスの上に組み立てられるようには再構築されていません (訳注: Python HowTo の移植ガイドにも触れられている通り、2.7 も同じです)。このモジュールは 3.0 への前方互換のコードを書くのを容易にするために、また、開発者たちがバッファリング I/O とテキスト I/O を自身で書く労力を省くために提供されています。"
 
 #: ../../whatsnew/2.6.rst:1099
-msgid "PEP 3116 - New I/O"
-msgstr "PEP 3116 - 新しい I/O"
+msgid ":pep:`3116` - New I/O"
+msgstr ":pep:`3116` - 新しい I/O"
 
 #: ../../whatsnew/2.6.rst:1098
 msgid ""
@@ -1294,8 +1293,8 @@ msgid ""
 msgstr ":c:func:`PyArg_ParseTuple` のための 2 つの新しい書式化コード ``s*`` と ``z*`` は、パラメータとしてロックされたバッファオブジェクトを返します。"
 
 #: ../../whatsnew/2.6.rst:1151
-msgid "PEP 3118 - Revising the buffer protocol"
-msgstr "PEP 3118 - 改訂版バッファプロトコル"
+msgid ":pep:`3118` - Revising the buffer protocol"
+msgstr ":pep:`3118` - 改訂版バッファプロトコル"
 
 #: ../../whatsnew/2.6.rst:1151
 msgid ""
@@ -1423,8 +1422,8 @@ msgid "Subclasses must then define a :meth:`readonly` property."
 msgstr "この場合サブクラスは :meth:`readonly` プロパティを定義することが必須です。"
 
 #: ../../whatsnew/2.6.rst:1299
-msgid "PEP 3119 - Introducing Abstract Base Classes"
-msgstr "PEP 3119 - 抽象基底クラスの導入"
+msgid ":pep:`3119` - Introducing Abstract Base Classes"
+msgstr ":pep:`3119` - 抽象基底クラスの導入"
 
 #: ../../whatsnew/2.6.rst:1298
 msgid ""
@@ -1465,8 +1464,8 @@ msgid ""
 msgstr "ビルトイン :func:`int`, :func:`long` が、基数 8 か 0 を要求された場合の \"0o\" プレフィクス、基数 2 か 0 を要求された場合の \"0b\" プレフィクスをそれぞれ許容するようになりました(基数 *base* = 0 は文字列から基数を決めるべきであることを指示します)::"
 
 #: ../../whatsnew/2.6.rst:1351
-msgid "PEP 3127 - Integer Literal Support and Syntax"
-msgstr "PEP 3127 - 整数リテラルのサポートと文法"
+msgid ":pep:`3127` - Integer Literal Support and Syntax"
+msgstr ":pep:`3127` - 整数リテラルのサポートと文法"
 
 #: ../../whatsnew/2.6.rst:1351
 msgid "PEP written by Patrick Maupin; backported to 2.6 by Eric Smith."
@@ -1487,8 +1486,8 @@ msgid "This is equivalent to::"
 msgstr "これは次のと等価です::"
 
 #: ../../whatsnew/2.6.rst:1378
-msgid "PEP 3129 - Class Decorators"
-msgstr "PEP 3129 - クラスデコレータ"
+msgid ":pep:`3129` - Class Decorators"
+msgstr ":pep:`3129` - クラスデコレータ"
 
 #: ../../whatsnew/2.6.rst:1379
 msgid "PEP written by Collin Winter."
@@ -1555,8 +1554,8 @@ msgid ""
 msgstr "Python 3.0 では、その PEP は少し既存のビルトイン :func:`round`, :func:`math.floor`, :func:`math.ceil` を再定義していて、また、Python 2.6 にバックポートされている新しい :func:`math.trunc` を追加しています。 :func:`math.trunc` はゼロに向かう方向の丸めで、引数とゼロの間で一番近い :class:`Integral` を返します。"
 
 #: ../../whatsnew/2.6.rst:1428
-msgid "PEP 3141 - A Type Hierarchy for Numbers"
-msgstr "PEP 3141 - 数値の型階層"
+msgid ":pep:`3141` - A Type Hierarchy for Numbers"
+msgstr ":pep:`3141` - 数値の型階層"
 
 #: ../../whatsnew/2.6.rst:1428
 msgid "PEP written by Jeffrey Yasskin."
@@ -1565,9 +1564,9 @@ msgstr "PEP 著: Jeffrey Yasskin."
 #: ../../whatsnew/2.6.rst:1430
 msgid ""
 "`Scheme's numerical tower "
-"<http://www.gnu.org/software/guile/manual/html_node/Numerical-Tower.html"
+"<https://www.gnu.org/software/guile/manual/html_node/Numerical-Tower.html"
 "#Numerical-Tower>`__, from the Guile manual."
-msgstr "Guile マニュアルの `Scheme's numerical tower <http://www.gnu.org/software/guile/manual/html_node/Numerical-Tower.html#Numerical-Tower>`__ 。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1432
 msgid ""
@@ -1973,10 +1972,10 @@ msgid ""
 "The :mod:`bsddb` module also has a new maintainer, Jesús Cea Avion, and the "
 "package is now available as a standalone package.  The web page for the "
 "package is `www.jcea.es/programacion/pybsddb.htm "
-"<http://www.jcea.es/programacion/pybsddb.htm>`__. The plan is to remove the "
-"package from the standard library in Python 3.0, because its pace of "
+"<https://www.jcea.es/programacion/pybsddb.htm>`__. The plan is to remove the"
+" package from the standard library in Python 3.0, because its pace of "
 "releases is much more frequent than Python's."
-msgstr ":mod:`bsddb` モジュールは新しいメンテナ Jesús Cea Avion を得て、パッケージは今ではスタンドアロンのパッケージとして入手可能です。パッケージのウェブページは `www.jcea.es/programacion/pybsddb.htm <http://www.jcea.es/programacion/pybsddb.htm>`__ です。このモジュールは Python 3.0 では標準ライブラリからは削除される予定です。というのも、これの更新ペースは Python のそれよりも遥かに頻繁だからです。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1800
 msgid ""
@@ -2117,11 +2116,10 @@ msgstr ":mod:`datetime` モジュールの :meth:`strftime` メソッドが ``%f
 #: ../../whatsnew/2.6.rst:1924
 msgid ""
 "The :mod:`decimal` module was updated to version 1.66 of `the General "
-"Decimal Specification "
-"<http://www2.hursley.ibm.com/decimal/decarith.html>`__.  New features "
-"include some methods for some basic mathematical functions such as "
-":meth:`exp` and :meth:`log10`::"
-msgstr ":mod:`decimal` モジュールが `the General Decimal Specification <http://www2.hursley.ibm.com/decimal/decarith.html>`__ のバージョン 1.55 に更新されました。新しい機能には :meth:`exp` や :meth:`log10` のようないくつかの基礎的な数学関数が含まれます::"
+"Decimal Specification <http://speleotrove.com/decimal/decarith.html>`__.  "
+"New features include some methods for some basic mathematical functions such"
+" as :meth:`exp` and :meth:`log10`::"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:1936
 msgid ""
@@ -2366,11 +2364,11 @@ msgstr "(Contributed by Christian Heimes and Mark Dickinson.)"
 
 #: ../../whatsnew/2.6.rst:2130
 msgid ""
-":class:`mmap` objects now have a :meth:`rfind` method that searches for a "
-"substring beginning at the end of the string and searching backwards.  The "
-":meth:`find` method also gained an *end* parameter giving an index at which "
-"to stop searching. (Contributed by John Lenton.)"
-msgstr ":class:`mmap` オブジェクトに :meth:`rfind` メソッドが追加されています。部分文字列の検索を、末尾から後ろ向きに検索します。 :meth:`find` には新しい引数 *end* パラメータが追加されていて、検索対象の終了位置を指定することが出来ます。 (Contributed by John Lenton.)"
+":class:`~mmap.mmap` objects now have a :meth:`rfind` method that searches "
+"for a substring beginning at the end of the string and searching backwards."
+"  The :meth:`find` method also gained an *end* parameter giving an index at "
+"which to stop searching. (Contributed by John Lenton.)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2136
 msgid ""
@@ -2977,25 +2975,26 @@ msgstr "新しい関数 :func:`catch_warnings` はコンテキストマネージ
 
 #: ../../whatsnew/2.6.rst:2608
 msgid ""
-"The XML-RPC :class:`SimpleXMLRPCServer` and :class:`DocXMLRPCServer` classes"
-" can now be prevented from immediately opening and binding to their socket "
-"by passing True as the ``bind_and_activate`` constructor parameter.  This "
-"can be used to modify the instance's :attr:`allow_reuse_address` attribute "
-"before calling the :meth:`server_bind` and :meth:`server_activate` methods "
-"to open the socket and begin listening for connections. (Contributed by "
-"Peter Parente; :issue:`1599845`.)"
-msgstr "XML-RPC の :class:`SimpleXMLRPCServer` と :class:`DocXMLRPCServer` では、コンストラクタパラメータ ``bind_and_activate`` を変更することで、そのソケットが即座にバインドしてアクティベートするのを避けることが出来るようになりました。これは :meth:`server_bind` と :meth:`server_activate` メソッドを呼び出す前にインスタンスの :attr:`allow_reuse_address` 属性を変更するのに使えます。(---訳注: この一節、原文は間違っています。原文では ``bind_and_activate=True`` とすると opening and binding するのを防ぐ、となっていますが逆です。また、open して bind、open して listen、というふうに用語使いも間違っています。  ``bind_and_activate=False`` しない限り「bind, listen」がコンストラクタで行われる、のです。False ならばあとから自分で「bind, listen」するのです。---) (Contributed by Peter Parente; :issue:`1599845`.)"
+"The XML-RPC :class:`~SimpleXMLRPCServer.SimpleXMLRPCServer` and "
+":class:`~DocXMLRPCServer.DocXMLRPCServer` classes can now be prevented from "
+"immediately opening and binding to their socket by passing True as the "
+"``bind_and_activate`` constructor parameter.  This can be used to modify the"
+" instance's :attr:`allow_reuse_address` attribute before calling the "
+":meth:`server_bind` and :meth:`server_activate` methods to open the socket "
+"and begin listening for connections. (Contributed by Peter Parente; "
+":issue:`1599845`.)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2617
 msgid ""
-":class:`SimpleXMLRPCServer` also has a :attr:`_send_traceback_header` "
-"attribute; if true, the exception and formatted traceback are returned as "
-"HTTP headers \"X-Exception\" and \"X-Traceback\".  This feature is for "
-"debugging purposes only and should not be used on production servers because"
-" the tracebacks might reveal passwords or other sensitive information.  "
-"(Contributed by Alan McIntyre as part of his project for Google's Summer of "
-"Code 2007.)"
-msgstr ":class:`SimpleXMLRPCServer` はさらに :attr:`_send_traceback_header` 属性を持つようになりました。真の場合、例外とフォーマットされたトレースバックが HTTP ヘッダ \"X-Exception\" と \"X-Traceback\" として返ります。この機能はデバッグのみに使い、製品のサーバには使ってはなりません。トレースバックには剥き出しのパスワードが含まれるかもしれず、あるいはほかの何か企業秘密だったり国家秘密だったりするような繊細な情報満載かもしれないのです。 (Contributed by Alan McIntyre as part of his project for Google's Summer of Code 2007.)"
+":class:`~SimpleXMLRPCServer.SimpleXMLRPCServer` also has a "
+":attr:`_send_traceback_header` attribute; if true, the exception and "
+"formatted traceback are returned as HTTP headers \"X-Exception\" and "
+"\"X-Traceback\".  This feature is for debugging purposes only and should not"
+" be used on production servers because the tracebacks might reveal passwords"
+" or other sensitive information.  (Contributed by Alan McIntyre as part of "
+"his project for Google's Summer of Code 2007.)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2625
 msgid ""
@@ -3003,11 +3002,11 @@ msgid ""
 ":class:`datetime.date` and :class:`datetime.time` to the "
 ":class:`xmlrpclib.DateTime` type; the conversion semantics were not "
 "necessarily correct for all applications.  Code using :mod:`xmlrpclib` "
-"should convert :class:`date` and :class:`time` instances. (:issue:`1330538`)"
-"  The code can also handle dates before 1900 (contributed by Ralf Schmitt; "
-":issue:`2014`) and 64-bit integers represented by using ``<i8>`` in XML-RPC "
-"responses (contributed by Riku Lindblad; :issue:`2985`)."
-msgstr ":mod:`xmlrpclib` モジュールが自動的に :class:`datetime.date` と :class:`datetime.time` を :class:`xmlrpclib.DateTime` 型に変換することは、もう二度としません; 変換のセマンティクスは必ずしも全てのアプリケーションで正しいわけではなかったのです。 (:issue:`1330538`)  :mod:`xmlrpclib` を使うコードは自分で :class:`date` と :class:`time` インスタンスを変換すべきです。コードは 1900 年以前の日付を処理出来(contributed by Ralf Schmitt; :issue:`2014`) 、XML-RPC レスポンス内で ``<i8>`` を使った 64 ビット整数表現を処理出来ます (contributed by Riku Lindblad; :issue:`2985`)。"
+"should convert :class:`date` and :class:`~datetime.time` instances. "
+"(:issue:`1330538`)  The code can also handle dates before 1900 (contributed "
+"by Ralf Schmitt; :issue:`2014`) and 64-bit integers represented by using "
+"``<i8>`` in XML-RPC responses (contributed by Riku Lindblad; :issue:`2985`)."
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2635
 msgid ""
@@ -3233,12 +3232,12 @@ msgstr "SSL サポートの改善"
 msgid ""
 "Bill Janssen made extensive improvements to Python 2.6's support for the "
 "Secure Sockets Layer by adding a new module, :mod:`ssl`, that's built atop "
-"the `OpenSSL <http://www.openssl.org/>`__ library. This new module provides "
-"more control over the protocol negotiated, the X.509 certificates used, and "
-"has better support for writing SSL servers (as opposed to clients) in "
+"the `OpenSSL <https://www.openssl.org/>`__ library. This new module provides"
+" more control over the protocol negotiated, the X.509 certificates used, and"
+" has better support for writing SSL servers (as opposed to clients) in "
 "Python.  The existing SSL support in the :mod:`socket` module hasn't been "
 "removed and continues to work, though it will be removed in Python 3.0."
-msgstr "Bill Janssen は Python 2.6 の Secure Sockets Layer サポートを大掛かりに改善しました。行われたのは新モジュール :mod:`ssl` の追加です。これは `OpenSSL <http://www.openssl.org/>`__ ライブラリの上に構築されています。この新しいモジュールはプロトコルのネゴシエイトのさらなる制御、X.509 証明書の使用、そして SSL サーバ (クライアントの対語としての) を Python で書くためのより良いサポートを提供しています。既存の :mod:`socket` モジュールにある SSL サポートは削除されずにそのまま使えますが、Python 3.0 では削除されます。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2895
 msgid ""
@@ -3356,11 +3355,11 @@ msgstr "Python 2.6 は Microsoft Visual Studio 2008 (version 9.0) でビルド�
 #: ../../whatsnew/2.6.rst:2989
 msgid ""
 "On Mac OS X, Python 2.6 can be compiled as a 4-way universal build. The "
-":program:`configure` script can take a :option:`--with-universal-"
+":program:`configure` script can take a :option:`!--with-universal-"
 "archs=[32-bit|64-bit|all]` switch, controlling whether the binaries are "
 "built for 32-bit architectures (x86, PowerPC), 64-bit (x86-64 and PPC-64), "
 "or both. (Contributed by Ronald Oussoren.)"
-msgstr "Mac OS X では、Python 2.6 は 4 種類のユニバーサルビルドでコンパイル出来ます。 :program:`configure` スクリプトは :option:`--with-universal-archs=[32-bit|64-bit|all]` スイッチを取って、32-bit アーキテクチャ (x86, PowerPC), 64-bit (x86-64 and PPC-64), あるいは両方のバイナリをビルド出来ます。 (Contributed by Ronald Oussoren.)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:2996
 msgid ""
@@ -3558,9 +3557,9 @@ msgstr "ポート特有の変更: Mac OS X"
 #: ../../whatsnew/2.6.rst:3144
 msgid ""
 "When compiling a framework build of Python, you can now specify the "
-"framework name to be used by providing the :option:`--with-framework-name=` "
-"option to the :program:`configure` script."
-msgstr "Python をフレームワークビルドでコンパイルする際に、 :program:`configure` スクリプトに :option:`--with-framework-name=` オプションでフレームワーク名を指定出来るようになりました。"
+"framework name to be used by providing the :option:`!--with-framework-name=`"
+" option to the :program:`configure` script."
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3149
 msgid ""
@@ -3571,8 +3570,8 @@ msgstr ":mod:`macfs` モジュールは削除されました。これは同様�
 
 #: ../../whatsnew/2.6.rst:3153
 msgid ""
-"Many other Mac OS modules have been deprecated and will removed in Python "
-"3.0: :mod:`_builtinSuites`, :mod:`aepack`, :mod:`aetools`, :mod:`aetypes`, "
+"Many other Mac OS modules have been deprecated and will be removed in Python"
+" 3.0: :mod:`_builtinSuites`, :mod:`aepack`, :mod:`aetools`, :mod:`aetypes`, "
 ":mod:`applesingle`, :mod:`appletrawmain`, :mod:`appletrunner`, "
 ":mod:`argvemulator`, :mod:`Audio_mac`, :mod:`autoGIL`, :mod:`Carbon`, "
 ":mod:`cfmfile`, :mod:`CodeWarrior`, :mod:`ColorPicker`, :mod:`EasyDialogs`, "
@@ -3582,7 +3581,7 @@ msgid ""
 ":mod:`Nav`, :mod:`Netscape`, :mod:`OSATerminology`, :mod:`pimp`, "
 ":mod:`PixMapWrapper`, :mod:`StdSuites`, :mod:`SystemEvents`, "
 ":mod:`Terminal`, and :mod:`terminalcommand`."
-msgstr "ほか多くの Mac OS モジュールが非推奨となり、 Python 3.0 では削除されます: :mod:`_builtinSuites`, :mod:`aepack`, :mod:`aetools`, :mod:`aetypes`, :mod:`applesingle`, :mod:`appletrawmain`, :mod:`appletrunner`, :mod:`argvemulator`, :mod:`Audio_mac`, :mod:`autoGIL`, :mod:`Carbon`, :mod:`cfmfile`, :mod:`CodeWarrior`, :mod:`ColorPicker`, :mod:`EasyDialogs`, :mod:`Explorer`, :mod:`Finder`, :mod:`FrameWork`, :mod:`findertools`, :mod:`ic`, :mod:`icglue`, :mod:`icopen`, :mod:`macerrors`, :mod:`MacOS`, :mod:`macfs`, :mod:`macostools`, :mod:`macresource`, :mod:`MiniAEFrame`, :mod:`Nav`, :mod:`Netscape`, :mod:`OSATerminology`, :mod:`pimp`, :mod:`PixMapWrapper`, :mod:`StdSuites`, :mod:`SystemEvents`, :mod:`Terminal`, :mod:`terminalcommand` 。"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3196
 msgid "Port-Specific Changes: IRIX"
@@ -3675,8 +3674,9 @@ msgid ""
 ":class:`datetime.date` and :class:`datetime.time` to the "
 ":class:`xmlrpclib.DateTime` type; the conversion semantics were not "
 "necessarily correct for all applications.  Code using :mod:`xmlrpclib` "
-"should convert :class:`date` and :class:`time` instances. (:issue:`1330538`)"
-msgstr ":mod:`xmlrpclib` モジュールが自動的に :class:`datetime.date` と :class:`datetime.time` を :class:`xmlrpclib.DateTime` 型に変換することは、もう二度としません; 変換のセマンティクスは必ずしも全てのアプリケーションで正しいわけではなかったのです。 :mod:`xmlrpclib` を使うコードは自分で :class:`date` と :class:`time` インスタンスを変換すべきです。(:issue:`1330538`)"
+"should convert :class:`date` and :class:`~datetime.time` instances. "
+"(:issue:`1330538`)"
+msgstr ""
 
 #: ../../whatsnew/2.6.rst:3285
 msgid ""

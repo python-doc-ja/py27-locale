@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-09-04 19:30+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:10+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -133,12 +132,12 @@ msgstr ":class:`XMLReader` は次のメソッドをサポートします:"
 msgid ""
 "Process an input source, producing SAX events. The *source* object can be a "
 "system identifier (a string identifying the input source -- typically a file"
-" name or an URL), a file-like object, or an :class:`InputSource` object. "
-"When :meth:`parse` returns, the input is completely processed, and the "
-"parser object can be discarded or reset. As a limitation, the current "
+" name or a URL), a file-like object, or an :class:`InputSource` object. When"
+" :meth:`parse` returns, the input is completely processed, and the parser "
+"object can be discarded or reset. As a limitation, the current "
 "implementation only accepts byte streams; processing of character streams is"
 " for further study."
-msgstr "入力ソースを処理し、SAX イベントを作成します。 *source* オブジェクトはシステム識別子 (入力ソースを特定する文字列 -- 一般にファイル名や URL)、ファイル様オブジェクト、または :class:`InputSource` オブジェクトです。 :meth:`parse` が return したとき、入力データの処理は完了し、パーサ・オブジェクトは破棄ないしリセットされます。制限として、現在の実装はバイト・ストリームのみをサポートしており、文字ストリームの処理は将来の課題になっています。"
+msgstr ""
 
 #: ../../library/xml.sax.reader.rst:112
 msgid "Return the current :class:`~xml.sax.handler.ContentHandler`."
@@ -260,12 +259,12 @@ msgid "Instances of :class:`Locator` provide these methods:"
 msgstr ":class:`Locator` のインスタンスは次のメソッドを提供します:"
 
 #: ../../library/xml.sax.reader.rst:232
-msgid "Return the column number where the current event ends."
-msgstr "現在のイベントが終了する列番号を返します。"
+msgid "Return the column number where the current event begins."
+msgstr "現在のイベントが開始する列番号を返します。"
 
 #: ../../library/xml.sax.reader.rst:237
-msgid "Return the line number where the current event ends."
-msgstr "現在のイベントが終了する行番号を返します。"
+msgid "Return the line number where the current event begins."
+msgstr "現在のイベントが開始する行番号を返します。"
 
 #: ../../library/xml.sax.reader.rst:242
 msgid "Return the public identifier for the current event."
@@ -341,8 +340,8 @@ msgstr "この入力ソースのバイトストリームを取得します。"
 #: ../../library/xml.sax.reader.rst:308
 msgid ""
 "The getEncoding method will return the character encoding for this byte "
-"stream, or None if unknown."
-msgstr "getEncoding メソッドは、このバイトストリームの文字エンコーディングを返します。不明なときは None を返します。"
+"stream, or ``None`` if unknown."
+msgstr "getEncoding メソッドは、このバイトストリームの文字エンコーディングを返します。不明なときは ``None`` を返します。"
 
 #: ../../library/xml.sax.reader.rst:314
 msgid ""

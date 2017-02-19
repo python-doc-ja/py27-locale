@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-03-18 20:27+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:07+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,11 +28,11 @@ msgstr "**ソースコード:** :source:`Lib/timeit.py`"
 #: ../../library/timeit.rst:18
 msgid ""
 "This module provides a simple way to time small bits of Python code. It has "
-"both a :ref:`command-line-interface` as well as a :ref:`callable <python-"
-"interface>` one.  It avoids a number of common traps for measuring execution"
-" times. See also Tim Peters' introduction to the \"Algorithms\" chapter in "
-"the *Python Cookbook*, published by O'Reilly."
-msgstr "このモジュールは小さい Python コードをの時間を計測するシンプルな手段を提供しています。:ref:`command-line-interface` の他 :ref:`呼び出しも可能 <python-interface>` です。このモジュールは実行時間を計測するときに共通するいくつかの罠を回避します。O'Reilly 出版の *Python Cookbook* にある、Tim Peter による \"Algorithms\" 章も参照してください。"
+"both a :ref:`timeit-command-line-interface` as well as a :ref:`callable "
+"<python-interface>` one.  It avoids a number of common traps for measuring "
+"execution times. See also Tim Peters' introduction to the \"Algorithms\" "
+"chapter in the *Python Cookbook*, published by O'Reilly."
+msgstr "このモジュールは小さい Python コードをの時間を計測するシンプルな手段を提供しています。:ref:`timeit-command-line-interface` の他 :ref:`呼び出しも可能 <python-interface>` です。このモジュールは実行時間を計測するときに共通するいくつかの罠を回避します。O'Reilly 出版の *Python Cookbook* にある、Tim Peter による \"Algorithms\" 章も参照してください。"
 
 #: ../../library/timeit.rst:26
 msgid "Basic Examples"
@@ -41,9 +40,9 @@ msgstr "基本的な例"
 
 #: ../../library/timeit.rst:28
 msgid ""
-"The following example shows how the :ref:`command-line-interface` can be "
-"used to compare three different expressions:"
-msgstr "次の例は :ref:`command-line-interface` を使って 3 つの異なる式の時間を測定する方法を示しています:"
+"The following example shows how the :ref:`timeit-command-line-interface` can"
+" be used to compare three different expressions:"
+msgstr "次の例は :ref:`timeit-command-line-interface` を使って 3 つの異なる式の時間を測定する方法を示しています。"
 
 #: ../../library/timeit.rst:40
 msgid "This can be achieved from the :ref:`python-interface` with::"
@@ -250,25 +249,25 @@ msgid ""
 "it.  The baseline overhead can be measured by invoking the program without "
 "arguments, and it might differ between Python versions.  Also, to fairly "
 "compare older Python versions to Python 2.3, you may want to use Python's "
-":option:`-O` option for the older versions to avoid timing ``SET_LINENO`` "
-"instructions."
-msgstr "pass 文の実行による基本的なオーバーヘッドが存在することに注意してください。ここにあるコードはこの事実を隠そうとはしていませんが、注意する必要があります。基本的なオーバーヘッドは引数なしでプログラムを起動することにより計測でき、それは Python のバージョンによって異なるでしょう。 Python 2.3 とそれ以前の Python の公平な比較をおこなう場合、古い Python では :option:`-O` オプションを付けて起動して ``SET_LINENO`` 命令の実行時間が含まれないようにする必要があります。"
+":option:`!-O` option (see :ref:`Optimizations <using-on-optimizations>`) for"
+" the older versions to avoid timing ``SET_LINENO`` instructions."
+msgstr ""
 
-#: ../../library/timeit.rst:242
+#: ../../library/timeit.rst:243
 msgid "Examples"
 msgstr "例"
 
-#: ../../library/timeit.rst:244
+#: ../../library/timeit.rst:245
 msgid ""
 "It is possible to provide a setup statement that is executed only once at "
 "the beginning:"
 msgstr "最初に 1 回だけ実行されるセットアップ文を指定することが可能です:"
 
-#: ../../library/timeit.rst:261
+#: ../../library/timeit.rst:262
 msgid "The same can be done using the :class:`Timer` class and its methods::"
 msgstr "同じことは :class:`Timer` クラスとそのメソッドを使用して行うこともできます::"
 
-#: ../../library/timeit.rst:271
+#: ../../library/timeit.rst:272
 msgid ""
 "The following examples show how to time expressions that contain multiple "
 "lines. Here we compare the cost of using :func:`hasattr` vs. "
@@ -276,7 +275,7 @@ msgid ""
 "attributes:"
 msgstr "以下の例は、複数行を含んだ式を計測する方法を示しています。ここでは、オブジェクトの存在する属性と存在しない属性に対してテストするために :func:`hasattr` と :keyword:`try`/:keyword:`except` を使用した場合のコストを比較しています:"
 
-#: ../../library/timeit.rst:316
+#: ../../library/timeit.rst:317
 msgid ""
 "To give the :mod:`timeit` module access to functions you define, you can "
 "pass a *setup* parameter which contains an import statement::"

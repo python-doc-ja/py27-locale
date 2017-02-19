@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2015-12-03 11:18+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:43+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -56,10 +55,10 @@ msgstr "単純な昇順のソートはとても簡単です: :func:`sorted` 関�
 #: ../../howto/sorting.rst:26
 msgid ""
 "You can also use the :meth:`list.sort` method of a list. It modifies the "
-"list in-place (and returns *None* to avoid confusion). Usually it's less "
+"list in-place (and returns ``None`` to avoid confusion). Usually it's less "
 "convenient than :func:`sorted` - but if you don't need the original list, "
 "it's slightly more efficient."
-msgstr "リストの :meth:`list.sort` メソッドを呼びだしても同じことができます。この方法はリストをインプレースに変更します (そして sorted との混乱を避けるため *None* を返します)。多くの場合、こちらの方法は :func:`sorted` と比べると不便です - ただし、元々のリストが不要な場合には、わずかですがより効率的です。"
+msgstr ""
 
 #: ../../howto/sorting.rst:36
 msgid ""
@@ -109,9 +108,9 @@ msgid ""
 "The key-function patterns shown above are very common, so Python provides "
 "convenience functions to make accessor functions easier and faster. The "
 "operator module has :func:`operator.itemgetter`, "
-":func:`operator.attrgetter`, and starting in Python 2.5 a "
+":func:`operator.attrgetter`, and starting in Python 2.5 an "
 ":func:`operator.methodcaller` function."
-msgstr "上述した key 関数のパターンはとても一般的です、そのため、Python は高速で扱いやすいアクセサ関数を提供しています。 operator モジュールには :func:`operator.itemgetter`, :func:`operator.attrgetter`, そして Python 2.5 から利用できるようになった :func:`operator.methodcaller` 関数があります。"
+msgstr ""
 
 #: ../../howto/sorting.rst:95
 msgid "Using those functions, the above examples become simpler and faster:"
@@ -131,98 +130,98 @@ msgid ""
 "exclamation marks in a message:"
 msgstr ":func:`operator.methodcaller` 関数は、オブジェクトが比較される際に呼ばれる固定パラメータでのメソッド呼び出しを作ります。例えば、エクスクラメーションマークの数でメッセージの重要度を計算するのに :meth:`str.count` を使えるでしょう:"
 
-#: ../../howto/sorting.rst:124
+#: ../../howto/sorting.rst:125
 msgid "Ascending and Descending"
 msgstr "昇順と降順"
 
-#: ../../howto/sorting.rst:126
+#: ../../howto/sorting.rst:127
 msgid ""
 "Both :meth:`list.sort` and :func:`sorted` accept a *reverse* parameter with "
 "a boolean value. This is used to flag descending sorts. For example, to get "
 "the student data in reverse *age* order:"
 msgstr ":meth:`list.sort` と :func:`sorted` の両方とも *reverse* パラメータを 真偽値として受け付けます。このパラメータは降順ソートを行うかどうかの フラグとして利用されます。 例えば、学生のデータを *age* の逆順で得たい場合:"
 
-#: ../../howto/sorting.rst:137
+#: ../../howto/sorting.rst:138
 msgid "Sort Stability and Complex Sorts"
 msgstr "ソートの安定性と複合的なソート"
 
-#: ../../howto/sorting.rst:139
+#: ../../howto/sorting.rst:140
 msgid ""
 "Starting with Python 2.2, sorts are guaranteed to be `stable "
-"<http://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`_\\. That means "
+"<https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`_\\. That means "
 "that when multiple records have the same key, their original order is "
 "preserved."
-msgstr "Python 2.2 からソートは、 `stable <http://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`_ であることが保証されるようになりました。これはレコードの中に同じキーがある場合、元々の順序が維持されるということを意味します。"
+msgstr ""
 
-#: ../../howto/sorting.rst:147
+#: ../../howto/sorting.rst:148
 msgid ""
 "Notice how the two records for *blue* retain their original order so that "
 "``('blue', 1)`` is guaranteed to precede ``('blue', 2)``."
 msgstr "二つの *blue* のレコートが元々の順序を維持して、 ``('blue', 1)`` が ``('blue', 2)`` の前にあること注意してください。"
 
-#: ../../howto/sorting.rst:150
+#: ../../howto/sorting.rst:151
 msgid ""
 "This wonderful property lets you build complex sorts in a series of sorting "
 "steps. For example, to sort the student data by descending *grade* and then "
 "ascending *age*, do the *age* sort first and then sort again using *grade*:"
 msgstr "この素晴しい性質によって複数のソートを段階的に組み合わせることができます。例えば、学生データを *grade* の降順にソートし、さらに *age* の昇順にソートしたい場合には、まず *age* でソートし、次に *grade* でもう一度ソートします:"
 
-#: ../../howto/sorting.rst:158
+#: ../../howto/sorting.rst:159
 msgid ""
-"The `Timsort <http://en.wikipedia.org/wiki/Timsort>`_ algorithm used in "
+"The `Timsort <https://en.wikipedia.org/wiki/Timsort>`_ algorithm used in "
 "Python does multiple sorts efficiently because it can take advantage of any "
 "ordering already present in a dataset."
-msgstr "Python では `Timsort <http://en.wikipedia.org/wiki/Timsort>`_ アルゴリズムが利用されていて、効率良く複数のソートを行うことができます、これは現在のデータセット中のあらゆる順序をそのまま利用できるからです。"
+msgstr "Python では `Timsort <https://en.wikipedia.org/wiki/Timsort>`_ アルゴリズムが利用されていて、効率良く複数のソートを行うことができます、これは現在のデータセット中のあらゆる順序をそのまま利用できるからです。"
 
-#: ../../howto/sorting.rst:163
+#: ../../howto/sorting.rst:164
 msgid "The Old Way Using Decorate-Sort-Undecorate"
 msgstr "デコレート-ソート-アンデコレートを利用した古いやり方"
 
-#: ../../howto/sorting.rst:165
+#: ../../howto/sorting.rst:166
 msgid "This idiom is called Decorate-Sort-Undecorate after its three steps:"
 msgstr "このイディオムは以下の3つのステップにちなんでデコレート-ソート-アンデコレート (Decorate-Sort-Undecorate) と呼ばれています:"
 
-#: ../../howto/sorting.rst:167
+#: ../../howto/sorting.rst:168
 msgid ""
 "First, the initial list is decorated with new values that control the sort "
 "order."
 msgstr "まず、元となるリストをソートしたい順序を制御する新しい値でデコレートします。"
 
-#: ../../howto/sorting.rst:169
+#: ../../howto/sorting.rst:170
 msgid "Second, the decorated list is sorted."
 msgstr "次に、デコレートしたリストをソートします。"
 
-#: ../../howto/sorting.rst:171
+#: ../../howto/sorting.rst:172
 msgid ""
 "Finally, the decorations are removed, creating a list that contains only the"
 " initial values in the new order."
 msgstr "最後に、デコレートを取り除き、新しい順序で元々の値のみを持つリストを作ります。"
 
-#: ../../howto/sorting.rst:174
+#: ../../howto/sorting.rst:175
 msgid ""
 "For example, to sort the student data by *grade* using the DSU approach:"
 msgstr "例えば、DSU アプローチを利用して学生データを *grade* でソートする場合:"
 
-#: ../../howto/sorting.rst:181
+#: ../../howto/sorting.rst:182
 msgid ""
 "This idiom works because tuples are compared lexicographically; the first "
 "items are compared; if they are the same then the second items are compared,"
 " and so on."
 msgstr "このイディオムはタブルが辞書編集的に比較されるため正しく動作します; 最初の要素が比較され、同じ場合には第二の要素が比較され、以下も同様に動きます。"
 
-#: ../../howto/sorting.rst:185
+#: ../../howto/sorting.rst:186
 msgid ""
 "It is not strictly necessary in all cases to include the index *i* in the "
 "decorated list, but including it gives two benefits:"
 msgstr "デコレートしたリストのインデクス *i* は全ての場合で含まれる必要はありませんが、そうすることで二つの利点があります:"
 
-#: ../../howto/sorting.rst:188
+#: ../../howto/sorting.rst:189
 msgid ""
 "The sort is stable -- if two items have the same key, their order will be "
 "preserved in the sorted list."
 msgstr "ソートが安定になります -- もし二つの要素が同じキーを持つ場合、それらの順序がソートされたリストでも維持されます。"
 
-#: ../../howto/sorting.rst:191
+#: ../../howto/sorting.rst:192
 msgid ""
 "The original items do not have to be comparable because the ordering of the "
 "decorated tuples will be determined by at most the first two items. So for "
@@ -230,14 +229,14 @@ msgid ""
 "sorted directly."
 msgstr "元々の要素が比較可能な要素を持つとは限りません、なぜならデコレートされたタブルの順序は多くの場合、最初の二つの要素で決定されるからです。例として元のリストは直接比較できない複素数を含むことができます。"
 
-#: ../../howto/sorting.rst:196
+#: ../../howto/sorting.rst:197
 msgid ""
 "Another name for this idiom is `Schwartzian transform "
-"<http://en.wikipedia.org/wiki/Schwartzian_transform>`_\\, after Randal L. "
+"<https://en.wikipedia.org/wiki/Schwartzian_transform>`_\\, after Randal L. "
 "Schwartz, who popularized it among Perl programmers."
-msgstr "このイディオムの別名に `Schwartzian transform <http://en.wikipedia.org/wiki/Schwartzian_transform>`_ があります。これは Perl プログラマの間で有名な Randal L. Schwartz にちなんでいます。"
+msgstr "このイディオムの別名に `Schwartzian transform <https://en.wikipedia.org/wiki/Schwartzian_transform>`_ があります。これは Perl プログラマの間で有名な Randal L. Schwartz にちなんでいます。"
 
-#: ../../howto/sorting.rst:200
+#: ../../howto/sorting.rst:201
 msgid ""
 "For large lists and lists where the comparison information is expensive to "
 "calculate, and Python versions before 2.4, DSU is likely to be the fastest "
@@ -245,11 +244,11 @@ msgid ""
 "functionality."
 msgstr "巨大なリストや比較の情報を得る計算が高くつくリストに対するソートや Python のバージョンが 2.4 より前の場合には、 DSU はリストをソートするのに最速な方法のようです。 2.4 以降では、key 関数が同じ機能を提供します。"
 
-#: ../../howto/sorting.rst:206
+#: ../../howto/sorting.rst:207
 msgid "The Old Way Using the *cmp* Parameter"
 msgstr "*cmp* パラメータを利用した古い方法"
 
-#: ../../howto/sorting.rst:208
+#: ../../howto/sorting.rst:209
 msgid ""
 "Many constructs given in this HOWTO assume Python 2.4 or later. Before that,"
 " there was no :func:`sorted` builtin and :meth:`list.sort` took no keyword "
@@ -257,14 +256,14 @@ msgid ""
 " handle user specified comparison functions."
 msgstr "この HOWTO の内容の多くは Python 2.4 以降を仮定しています。それ以前では組み込み関数 :func:`sorted` と :meth:`list.sort` はキーワード引数をとりませんでした。その代わりに Py2.x バージョンの全ては、ユーザが比較関数を指定するための *cmp* パラメーターをサポートしました。"
 
-#: ../../howto/sorting.rst:213
+#: ../../howto/sorting.rst:214
 msgid ""
 "In Python 3, the *cmp* parameter was removed entirely (as part of a larger "
 "effort to simplify and unify the language, eliminating the conflict between "
 "rich comparisons and the :meth:`__cmp__` magic method)."
 msgstr "Python 3 では *cmp* パラメータは完全に削除されました (ぜいたくな比較と :meth:`__cmp__` マジックメソッドの衝突を除き、言語を単純化しまとめるための多大な労力の一環として)。"
 
-#: ../../howto/sorting.rst:217
+#: ../../howto/sorting.rst:218
 msgid ""
 "In Python 2, :meth:`~list.sort` allowed an optional function which can be "
 "called for doing the comparisons. That function should take two arguments to"
@@ -273,38 +272,38 @@ msgid ""
 " can do:"
 msgstr "Python 2 では :meth:`~list.sort` にオプションとして比較に利用できる関数を与えることができます。関数は比較される二つの引数をとり、小さい場合には負の値を、等しい場合には 0 を、大きい場合には正の値を返さなければいけません。例えば、以下のようにできます:"
 
-#: ../../howto/sorting.rst:227
+#: ../../howto/sorting.rst:228
 msgid "Or you can reverse the order of comparison with:"
 msgstr "また、比較順を逆にすることもできます:"
 
-#: ../../howto/sorting.rst:234
+#: ../../howto/sorting.rst:235
 msgid ""
 "When porting code from Python 2.x to 3.x, the situation can arise when you "
 "have the user supplying a comparison function and you need to convert that "
 "to a key function. The following wrapper makes that easy to do::"
 msgstr "Python 2.x から 3.x にコードを移植する場合、比較関数を持っている場合には key 関数に比較しなければならないような状況に陥るかもしれません。以下のラッパーがそれを簡単にしてくれるでしょう::"
 
-#: ../../howto/sorting.rst:257
+#: ../../howto/sorting.rst:258
 msgid "To convert to a key function, just wrap the old comparison function:"
 msgstr "key 関数を変換するには、古い比較関数をラップするだけです:"
 
-#: ../../howto/sorting.rst:262
+#: ../../howto/sorting.rst:269
 msgid ""
 "In Python 2.7, the :func:`functools.cmp_to_key` function was added to the "
 "functools module."
 msgstr "Python 2.7 には、functools モジュールに :func:`functools.cmp_to_key` 関数が追加されました。"
 
-#: ../../howto/sorting.rst:266
+#: ../../howto/sorting.rst:273
 msgid "Odd and Ends"
 msgstr "残りいくつかとまとめ"
 
-#: ../../howto/sorting.rst:268
+#: ../../howto/sorting.rst:275
 msgid ""
 "For locale aware sorting, use :func:`locale.strxfrm` for a key function or "
 ":func:`locale.strcoll` for a comparison function."
 msgstr "ロケールに配慮したソートをするには、キー関数 :func:`locale.strxfrm` を利用するか、比較関数に :func:`locale.strcoll` を利用します。"
 
-#: ../../howto/sorting.rst:271
+#: ../../howto/sorting.rst:278
 msgid ""
 "The *reverse* parameter still maintains sort stability (so that records with"
 " equal keys retain their original order). Interestingly, that effect can be "
@@ -312,20 +311,20 @@ msgid ""
 "function twice:"
 msgstr "*reverse* パラメータはソートの安定性を保ちます (つまり、レコードのキーが等しい場合元々の順序が維持されます)。面白いことにこの影響はパラメータ無しで :func:`reversed` 関数を二回使うことで模倣することができます:"
 
-#: ../../howto/sorting.rst:279
+#: ../../howto/sorting.rst:290
 msgid ""
 "To create a standard sort order for a class, just add the appropriate rich "
 "comparison methods:"
 msgstr "あるクラスの標準のソート順を作るには、適切な拡張比較 (rich comparison)メソッドを追加するだけです:"
 
-#: ../../howto/sorting.rst:291
+#: ../../howto/sorting.rst:302
 msgid ""
 "For general purpose comparisons, the recommended approach is to define all "
 "six rich comparison operators.  The :func:`functools.total_ordering` class "
 "decorator makes this easy to implement."
 msgstr "汎用の目的のためには、推奨されるアプローチは、6つすべての拡張比較メソッドを定義することです。 :func:`functools.total_ordering` クラスのデコレータがこれの実装を楽にしてくれます。"
 
-#: ../../howto/sorting.rst:295
+#: ../../howto/sorting.rst:306
 msgid ""
 "Key functions need not depend directly on the objects being sorted. A key "
 "function can also access external resources. For instance, if the student "

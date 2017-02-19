@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015-2016
+# 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-09-04 23:16+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:14+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,11 +66,11 @@ msgstr "`Windows CE <http://pythonce.sourceforge.net/>`_ は今でもサポー�
 
 #: ../../using/windows.rst:34
 msgid ""
-"The `Cygwin <http://cygwin.com/>`_ installer offers to install the Python "
+"The `Cygwin <https://cygwin.com/>`_ installer offers to install the Python "
 "interpreter as well (cf. `Cygwin package source <ftp://ftp.uni-"
 "erlangen.de/pub/pc/gnuwin32/cygwin/mirrors/cygnus/ release/python>`_, "
 "`Maintainer releases <http://www.tishler.net/jason/software/python/>`_)"
-msgstr "`Cygwin <http://cygwin.com/>`_ インストーラも Python インタープリタのインストールを提供しています。(cf. `Cygwin package source <ftp://ftp.uni-erlangen.de/pub/pc/gnuwin32/cygwin/mirrors/cygnus/ release/python>`_, `Maintainer releases <http://www.tishler.net/jason/software/python/>`_)"
+msgstr "`Cygwin <https://cygwin.com/>`_ インストーラも Python インタープリタのインストールを提供しています。(cf. `Cygwin package source <ftp://ftp.uni-erlangen.de/pub/pc/gnuwin32/cygwin/mirrors/cygnus/ release/python>`_, `Maintainer releases <http://www.tishler.net/jason/software/python/>`_)"
 
 #: ../../using/windows.rst:40
 msgid ""
@@ -81,16 +80,20 @@ msgid ""
 msgstr "コンパイル済みインストーラが提供されているプラットフォームについての詳細な情報は `Python for Windows (and DOS) <https://www.python.org/download/windows/>`_ を参照してください。"
 
 #: ../../using/windows.rst:47
-msgid "Python on XP"
-msgstr "Python on XP"
+msgid ""
+"`Python on XP <http://dooling.com/index.php/2006/03/14/python-on-xp-7"
+"-minutes-to-hello-world/>`_"
+msgstr "`Python on XP <http://dooling.com/index.php/2006/03/14/python-on-xp-7-minutes-to-hello-world/>`_"
 
 #: ../../using/windows.rst:46
 msgid "\"7 Minutes to \"Hello World!\"\" by Richard Dooling, 2006"
 msgstr "\"7 Minutes to \"Hello World!\"\" by Richard Dooling, 2006"
 
 #: ../../using/windows.rst:53
-msgid "Installing on Windows"
-msgstr "Installing on Windows"
+msgid ""
+"`Installing on Windows "
+"<http://www.diveintopython.net/installing_python/windows.html>`_"
+msgstr "`Installing on Windows <http://www.diveintopython.net/installing_python/windows.html>`_"
 
 #: ../../using/windows.rst:50
 msgid ""
@@ -100,14 +103,16 @@ msgid ""
 msgstr "in \"`Dive into Python: Python from novice to pro <http://www.diveintopython.net/>`_\" by Mark Pilgrim, 2004, ISBN 1-59059-356-1"
 
 #: ../../using/windows.rst:57
-msgid "For Windows users"
-msgstr "For Windows users"
+msgid ""
+"`For Windows users <http://python.swaroopch.com/installation.html"
+"#installation-on-windows>`_"
+msgstr "`For Windows users <http://python.swaroopch.com/installation.html#installation-on-windows>`_"
 
 #: ../../using/windows.rst:56
 msgid ""
 "in \"Installing Python\" in \"`A Byte of Python "
-"<http://www.swaroopch.com/notes/python/>`_\" by Swaroop C H, 2003"
-msgstr "in \"Installing Python\" in \"`A Byte of Python <http://www.swaroopch.com/notes/python/>`_\" by Swaroop C H, 2003"
+"<http://python.swaroopch.com/>`_\" by Swaroop C H, 2003"
+msgstr "in \"Installing Python\" in \"`A Byte of Python <http://python.swaroopch.com/>`_\" by Swaroop C H, 2003"
 
 #: ../../using/windows.rst:62
 msgid "Alternative bundles"
@@ -121,16 +126,17 @@ msgid ""
 msgstr "標準の CPython の配布物の他に、追加の機能を持っている修正されたパッケージがあります。以下は人気のあるバージョンとそのキーとなる機能です:"
 
 #: ../../using/windows.rst:69
-msgid "ActivePython"
-msgstr "ActivePython"
+msgid "`ActivePython <https://www.activestate.com/activepython/>`_"
+msgstr "`ActivePython <https://www.activestate.com/activepython/>`_"
 
 #: ../../using/windows.rst:69
 msgid "Installer with multi-platform compatibility, documentation, PyWin32"
 msgstr "マルチプラットフォーム互換のインストーラー、ドキュメント、 PyWin32"
 
 #: ../../using/windows.rst:73
-msgid "Enthought Python Distribution"
-msgstr "Enthought Python Distribution"
+msgid ""
+"`Enthought Python Distribution <https://www.enthought.com/products/epd/>`_"
+msgstr "`Enthought Python Distribution <https://www.enthought.com/products/epd/>`_"
 
 #: ../../using/windows.rst:72
 msgid ""
@@ -208,24 +214,24 @@ msgid "Consult :command:`set /?` for details on this behaviour."
 msgstr "この動作についての詳細は :command:`set /?` を見てください。"
 
 #: ../../using/windows.rst:127
-msgid "http://support.microsoft.com/kb/100843"
-msgstr "http://support.microsoft.com/kb/100843"
+msgid "https://support.microsoft.com/kb/100843"
+msgstr "https://support.microsoft.com/kb/100843"
 
 #: ../../using/windows.rst:127
 msgid "Environment variables in Windows NT"
 msgstr "Windows NT の環境変数"
 
 #: ../../using/windows.rst:130
-msgid "http://support.microsoft.com/kb/310519"
-msgstr "http://support.microsoft.com/kb/310519"
+msgid "https://support.microsoft.com/kb/310519"
+msgstr "https://support.microsoft.com/kb/310519"
 
 #: ../../using/windows.rst:130
 msgid "How To Manage Environment Variables in Windows XP"
 msgstr "Windows XP での環境変数の管理方法"
 
 #: ../../using/windows.rst:132
-msgid "http://www.chem.gla.ac.uk/~louis/software/faq/q1.html"
-msgstr "http://www.chem.gla.ac.uk/~louis/software/faq/q1.html"
+msgid "https://www.chem.gla.ac.uk/~louis/software/faq/q1.html"
+msgstr "https://www.chem.gla.ac.uk/~louis/software/faq/q1.html"
 
 #: ../../using/windows.rst:133
 msgid "Setting Environment variables, Louis J. Farrugia"
@@ -395,14 +401,14 @@ msgstr "PyWin32"
 
 #: ../../using/windows.rst:245
 msgid ""
-"The `PyWin32 <http://python.net/crew/mhammond/win32/>`_ module by Mark "
-"Hammond is a collection of modules for advanced Windows-specific support.  "
-"This includes utilities for:"
-msgstr "Mark Hammond によって開発された `PyWin32 <http://python.net/crew/mhammond/win32/>`_ モジュールは、進んだ Windows 専用のサポートをするモジュール群です。このモジュールは以下のユーティリティを含んでいます:"
+"The `PyWin32 <https://pypi.python.org/pypi/pywin32>`_ module by Mark Hammond"
+" is a collection of modules for advanced Windows-specific support.  This "
+"includes utilities for:"
+msgstr "Mark Hammond によって開発された `PyWin32 <https://pypi.python.org/pypi/pywin32>`_ モジュールは、進んだ Windows 専用のサポートをするモジュール群です。このモジュールは以下のユーティリティを含んでいます:"
 
 #: ../../using/windows.rst:249
-msgid "`Component Object Model <http://www.microsoft.com/com/>`_ (COM)"
-msgstr "`Component Object Model <http://www.microsoft.com/com/>`_ (COM)"
+msgid "`Component Object Model <https://www.microsoft.com/com/>`_ (COM)"
+msgstr "`Component Object Model <https://www.microsoft.com/com/>`_ (COM)"
 
 #: ../../using/windows.rst:250
 msgid "Win32 API calls"
@@ -418,28 +424,29 @@ msgstr "イベントログ"
 
 #: ../../using/windows.rst:253
 msgid ""
-"`Microsoft Foundation Classes <http://msdn.microsoft.com/en-"
+"`Microsoft Foundation Classes <https://msdn.microsoft.com/en-"
 "us/library/fe1cf721%28VS.80%29.aspx>`_ (MFC) user interfaces"
-msgstr "`Microsoft Foundation Classes <http://msdn.microsoft.com/en-us/library/fe1cf721%28VS.80%29.aspx>`_ (MFC) ユーザーインターフェイス"
+msgstr "`Microsoft Foundation Classes <https://msdn.microsoft.com/en-us/library/fe1cf721%28VS.80%29.aspx>`_ (MFC) ユーザーインターフェイス"
 
 #: ../../using/windows.rst:256
 msgid ""
-"`PythonWin <http://web.archive.org/web/20060524042422/ "
+"`PythonWin <https://web.archive.org/web/20060524042422/ "
 "https://www.python.org/windows/pythonwin/>`_ is a sample MFC application "
 "shipped with PyWin32.  It is an embeddable IDE with a built-in debugger."
-msgstr "`PythonWin <http://web.archive.org/web/20060524042422/ https://www.python.org/windows/pythonwin/>`_ は PyWin32 に付属している、サンプルのMFCアプリケーションです。これはビルトインのデバッガを含む、組み込み可能なIDEです。"
+msgstr "`PythonWin <https://web.archive.org/web/20060524042422/ https://www.python.org/windows/pythonwin/>`_ は PyWin32 に付属している、サンプルのMFCアプリケーションです。これはビルトインのデバッガを含む、組み込み可能なIDEです。"
 
 #: ../../using/windows.rst:263
-msgid "Win32 How Do I...?"
-msgstr "Win32 How Do I...?"
+msgid ""
+"`Win32 How Do I...? <http://timgolden.me.uk/python/win32_how_do_i.html>`_"
+msgstr "`Win32 How Do I...? <http://timgolden.me.uk/python/win32_how_do_i.html>`_"
 
 #: ../../using/windows.rst:263
 msgid "by Tim Golden"
 msgstr "by Tim Golden"
 
 #: ../../using/windows.rst:265
-msgid "Python and COM"
-msgstr "Python and COM"
+msgid "`Python and COM <http://www.boddie.org.uk/python/COM.html>`_"
+msgstr "`Python and COM <http://www.boddie.org.uk/python/COM.html>`_"
 
 #: ../../using/windows.rst:266
 msgid "by David and Paul Boddie"
@@ -481,10 +488,10 @@ msgstr "Windows 上で Python をコンパイルする"
 #: ../../using/windows.rst:293
 msgid ""
 "If you want to compile CPython yourself, first thing you should do is get "
-"the `source <https://www.python.org/download/source/>`_. You can download "
+"the `source <https://www.python.org/downloads/source/>`_. You can download "
 "either the latest release's source or just grab a fresh `checkout "
 "<https://docs.python.org/devguide/setup.html#getting-the-source-code>`_."
-msgstr "CPython を自分でコンパイルしたい場合、最初にするべきことは `ソース <https://www.python.org/download/source/>`_ を取得することです。最新リリース版のソースか、新しい `チェックアウト <https://docs.python.org/devguide/setup.html#getting-the-source-code>`_ をダウンロードすることができます。"
+msgstr "CPython を自分でコンパイルしたい場合、最初にするべきことは `ソース <https://www.python.org/downloads/source/>`_ を取得することです。最新リリース版のソースか、新しい `チェックアウト <https://docs.python.org/devguide/setup.html#getting-the-source-code>`_ をダウンロードすることができます。"
 
 #: ../../using/windows.rst:298
 msgid ""
@@ -570,8 +577,10 @@ msgid "For extension modules, consult :ref:`building-on-windows`."
 msgstr "拡張モジュールについては、 :ref:`building-on-windows` を参照してください。"
 
 #: ../../using/windows.rst:328
-msgid "Python + Windows + distutils + SWIG + gcc MinGW"
-msgstr "Python + Windows + distutils + SWIG + gcc MinGW"
+msgid ""
+"`Python + Windows + distutils + SWIG + gcc MinGW "
+"<http://sebsauvage.net/python/mingw.html>`_"
+msgstr "`Python + Windows + distutils + SWIG + gcc MinGW <http://sebsauvage.net/python/mingw.html>`_"
 
 #: ../../using/windows.rst:326
 msgid ""
@@ -581,8 +590,10 @@ msgid ""
 msgstr "or \"Creating Python extensions in C/C++ with SWIG and compiling them with MinGW gcc under Windows\" or \"Installing Python extension with distutils and without Microsoft Visual C++\" by Sébastien Sauvage, 2003"
 
 #: ../../using/windows.rst:330
-msgid "MingW -- Python extensions"
-msgstr "MingW -- Python extensions"
+msgid ""
+"`MingW -- Python extensions "
+"<http://oldwiki.mingw.org/index.php/Python%20extensions>`_"
+msgstr "`MingW -- Python extensions <http://oldwiki.mingw.org/index.php/Python%20extensions>`_"
 
 #: ../../using/windows.rst:331
 msgid "by Trent Apted et al, 2007"
@@ -593,8 +604,10 @@ msgid "Other resources"
 msgstr "その他のリソース"
 
 #: ../../using/windows.rst:342
-msgid "Python Programming On Win32"
-msgstr "Python Programming On Win32"
+msgid ""
+"`Python Programming On Win32 "
+"<http://shop.oreilly.com/product/9781565926219.do>`_"
+msgstr "`Python Programming On Win32 <http://shop.oreilly.com/product/9781565926219.do>`_"
 
 #: ../../using/windows.rst:340
 msgid ""
@@ -603,8 +616,10 @@ msgid ""
 msgstr "\"Help for Windows Programmers\" by Mark Hammond and Andy Robinson, O'Reilly Media, 2000, ISBN 1-56592-621-8"
 
 #: ../../using/windows.rst:344
-msgid "A Python for Windows Tutorial"
-msgstr "A Python for Windows Tutorial"
+msgid ""
+"`A Python for Windows Tutorial "
+"<http://www.imladris.com/Scripts/PythonForWindows.html>`_"
+msgstr "`A Python for Windows Tutorial <http://www.imladris.com/Scripts/PythonForWindows.html>`_"
 
 #: ../../using/windows.rst:345
 msgid "by Amanda Birmingham, 2004"

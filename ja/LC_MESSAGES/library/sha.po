@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-02-02 08:08+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:03+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -92,8 +91,10 @@ msgid ""
 msgstr "sha オブジェクトのコピー (\" クローン \") を返します。冒頭の部分文字列が共通な複数の文字列のダイジェストを効率よく計算する際に使うことができます。"
 
 #: ../../library/sha.rst:83
-msgid "Secure Hash Standard"
-msgstr "`セキュアハッシュスタンダード <http://csrc.nist.gov/publications/fips/fips180-2/fips180-2withchangenotice.pdf>`_"
+msgid ""
+"`Secure Hash Standard "
+"<http://csrc.nist.gov/publications/fips/fips180-2/fips180-2withchangenotice.pdf>`_"
+msgstr "` セキュアハッシュスタンダード <http://csrc.nist.gov/publications/fips/fips180-2/fips180-2withchangenotice.pdf>`_"
 
 #: ../../library/sha.rst:80
 msgid ""
@@ -104,8 +105,10 @@ msgid ""
 msgstr "セキュアハッシュアルゴリズムは NIST のドキュメント FIPS PUB 180-2 で定義されています。 ` セキュアハッシュスタンダード <http://csrc.nist.gov/publications/fips/fips180-2/fips180-2withchangenotice.pdf>`_, 2002 年 8 月出版。"
 
 #: ../../library/sha.rst:85
-msgid "Cryptographic Toolkit (Secure Hashing)"
-msgstr "`暗号ツールキット (セキュアハッシュ) <http://csrc.nist.gov/CryptoToolkit/tkhash.html>`_"
+msgid ""
+"`Cryptographic Toolkit (Secure Hashing) "
+"<http://csrc.nist.gov/CryptoToolkit/tkhash.html>`_"
+msgstr "` 暗号ツールキット ( セキュアハッシュ ) <http://csrc.nist.gov/CryptoToolkit/tkhash.html>`_"
 
 #: ../../library/sha.rst:86
 msgid "Links from NIST to various information on secure hashing."

@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-07-16 13:31+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:07+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -738,19 +737,25 @@ msgstr "0, 1 または -1; 以下を参照してください"
 msgid ""
 "Note that unlike the C structure, the month value is a range of [1, 12], not"
 " [0, 11].  A year value will be handled as described under :ref:`Year 2000 "
-"(Y2K) issues <time-y2kissues>` above.  A ``-1`` argument as the daylight "
-"savings flag, passed to :func:`mktime` will usually result in the correct "
-"daylight savings state to be filled in."
-msgstr "C の構造体と違って、月の値が 0-11 でなく 1-12 であることに注意してください。西暦年の値は上の :ref:`2000年問題 (Y2K) <time-y2kissues>` で述べたように扱われます。夏時間フラグを ``-1`` にして :func:`mktime` に渡すと、たいていは正確な夏時間の状態を実現します。"
+"(Y2K) issues <time-y2kissues>` above."
+msgstr ""
 
-#: ../../library/time.rst:434
+#: ../../library/time.rst:432
+msgid ""
+"In calls to :func:`mktime`, :attr:`tm_isdst` may be set to 1 when daylight "
+"savings time is in effect, and 0 when it is not.  A value of -1 indicates "
+"that this is not known, and will usually result in the correct state being "
+"filled in."
+msgstr ":func:`mktime` の呼び出し時に、:attr:`tm_isdst` は夏時間が有効な場合は 1、そうでない場合は 0 に設定されることがあります。\n値が -1 の場合は夏時間について不明なことを表していて、普通 :attr:`tm_isdst` は正しい状態に設定されます。"
+
+#: ../../library/time.rst:437
 msgid ""
 "When a tuple with an incorrect length is passed to a function expecting a "
 ":class:`struct_time`, or having elements of the wrong type, a "
 ":exc:`TypeError` is raised."
 msgstr ":class:`struct_time` を引数とする関数に正しくない長さの :class:`struct_time` や要素の型が正しくない :class:`struct_time` を与えた場合には、 :exc:`TypeError` が送出されます。"
 
-#: ../../library/time.rst:441
+#: ../../library/time.rst:444
 msgid ""
 "Return the time in seconds since the epoch as a floating point number. Note "
 "that even though the time is always returned as a floating point number, not"
@@ -760,65 +765,70 @@ msgid ""
 "calls."
 msgstr "エポックからの秒数を浮動小数点数で返します。時刻は常に浮動小数点で返されますが、すべてのシステムが 1 秒より高い精度で時刻を提供するとは限らないので注意してください。この関数が返す値は通常減少していくことはありませんが、この関数を 2 回呼び出し、呼び出しの間にシステムクロックの時刻を巻き戻して設定した場合には、以前の呼び出しよりも低い値が返ることがあります。"
 
-#: ../../library/time.rst:451
+#: ../../library/time.rst:454
 msgid ""
 "The offset of the local (non-DST) timezone, in seconds west of UTC (negative"
 " in most of Western Europe, positive in the US, zero in the UK)."
 msgstr "(DST でない) ローカルタイムゾーンの UTC からの時刻オフセットで、西に行くほど増加する秒で表した値です (ほとんどの西ヨーロッパでは負になり、アメリカでは正、イギリスではゼロになります)。"
 
-#: ../../library/time.rst:457
+#: ../../library/time.rst:460
 msgid ""
 "A tuple of two strings: the first is the name of the local non-DST timezone,"
 " the second is the name of the local DST timezone.  If no DST timezone is "
 "defined, the second string should not be used."
 msgstr "二つの文字列からなるタプルです。最初の要素は DST でないローカルのタイムゾーン名です。ふたつめの要素は DST のタイムゾーンです。DST のタイムゾーンが定義されていない場合。二つ目の文字列を使うべきではありません。"
 
-#: ../../library/time.rst:464
+#: ../../library/time.rst:467
 msgid ""
-"Resets the time conversion rules used by the library routines. The "
-"environment variable :envvar:`TZ` specifies how this is done."
-msgstr "ライブラリで使われている時刻変換規則をリセットします。どのように行われるかは、環境変数 :envvar:`TZ` で指定されます。"
+"Reset the time conversion rules used by the library routines. The "
+"environment variable :envvar:`TZ` specifies how this is done. It will also "
+"set the variables ``tzname`` (from the :envvar:`TZ` environment variable), "
+"``timezone`` (non-DST seconds West of UTC), ``altzone`` (DST seconds west of"
+" UTC) and ``daylight`` (to 0 if this timezone does not have any daylight "
+"saving time rules, or to nonzero if there is a time, past, present or future"
+" when daylight saving time applies)."
+msgstr ""
 
-#: ../../library/time.rst:469
+#: ../../library/time.rst:477
 msgid "Availability: Unix."
 msgstr "利用できる環境: Unix。"
 
-#: ../../library/time.rst:473
+#: ../../library/time.rst:481
 msgid ""
 "Although in many cases, changing the :envvar:`TZ` environment variable may "
 "affect the output of functions like :func:`localtime` without calling "
 ":func:`tzset`, this behavior should not be relied on."
 msgstr "多くの場合、環境変数 :envvar:`TZ` を変更すると、 :func:`tzset` を呼ばない限り :func:`localtime` のような関数の出力に影響を及ぼすため、値が信頼できなくなってしまいます。"
 
-#: ../../library/time.rst:477
+#: ../../library/time.rst:485
 msgid "The :envvar:`TZ` environment variable should contain no whitespace."
 msgstr ":envvar:`TZ` 環境変数には空白文字を含めてはなりません。"
 
-#: ../../library/time.rst:479
+#: ../../library/time.rst:487
 msgid ""
 "The standard format of the :envvar:`TZ` environment variable is (whitespace "
 "added for clarity)::"
 msgstr "環境変数 :envvar:`TZ` の標準的な書式は以下の通りです (分かりやすいように空白を入れています)::"
 
-#: ../../library/time.rst:484
+#: ../../library/time.rst:492
 msgid "Where the components are:"
 msgstr "各値は以下のようになっています:"
 
-#: ../../library/time.rst:488
-msgid "std and dst"
+#: ../../library/time.rst:496
+msgid "``std`` and ``dst``"
 msgstr "``std`` と ``dst``"
 
-#: ../../library/time.rst:487
+#: ../../library/time.rst:495
 msgid ""
 "Three or more alphanumerics giving the timezone abbreviations. These will be"
 " propagated into time.tzname"
 msgstr "三文字またはそれ以上の英数字で、タイムゾーンの略称を与えます。この値は time.tzname になります。"
 
-#: ../../library/time.rst:494
-msgid "offset"
+#: ../../library/time.rst:502
+msgid "``offset``"
 msgstr "``offset``"
 
-#: ../../library/time.rst:491
+#: ../../library/time.rst:499
 msgid ""
 "The offset has the form: ``± hh[:mm[:ss]]``. This indicates the value added "
 "the local time to arrive at UTC.  If preceded by a '-', the timezone is east"
@@ -826,41 +836,41 @@ msgid ""
 "summer time is assumed to be one hour ahead of standard time."
 msgstr "オフセットは形式: ``± hh[:mm[:ss]]`` をとります。この表現は、UTC 時刻にするためにローカルな時間に加算する必要のある時間値を示します。'-' が先頭につく場合、そのタイムゾーンは本子午線 (Prime Meridian) より東側にあります; それ以外の場合は本子午線の西側です。オフセットが dst の後ろに続かない場合、夏時間は標準時より一時間先行しているものと仮定します。"
 
-#: ../../library/time.rst:516
-msgid "start[/time], end[/time]"
+#: ../../library/time.rst:524
+msgid "``start[/time], end[/time]``"
 msgstr "``start[/time], end[/time]``"
 
-#: ../../library/time.rst:497
+#: ../../library/time.rst:505
 msgid ""
 "Indicates when to change to and back from DST. The format of the start and "
 "end dates are one of the following:"
 msgstr "いつ DST に移動し、DST から戻ってくるかを示します。開始および終了日時の形式は以下のいずれかです:"
 
-#: ../../library/time.rst:502
-msgid "Jn"
+#: ../../library/time.rst:510
+msgid ":samp:`J{n}`"
 msgstr ":samp:`J{n}`"
 
-#: ../../library/time.rst:501
+#: ../../library/time.rst:509
 msgid ""
 "The Julian day *n* (1 <= *n* <= 365). Leap days are not counted, so in all "
 "years February 28 is day 59 and March 1 is day 60."
 msgstr "ユリウス日 (Julian day) *n* (1 <= *n* <= 365) を表します。うるう日は計算に含められないため、2 月 28 日は常に 59 で、3 月 1 日は 60 になります。"
 
-#: ../../library/time.rst:506
-msgid "n"
+#: ../../library/time.rst:514
+msgid ":samp:`{n}`"
 msgstr ":samp:`{n}`"
 
-#: ../../library/time.rst:505
+#: ../../library/time.rst:513
 msgid ""
 "The zero-based Julian day (0 <= *n* <= 365). Leap days are counted, and it "
 "is possible to refer to February 29."
 msgstr "ゼロから始まるユリウス日 (0 <= *n* <= 365) です。うるう日は計算に含められるため、2 月 29 日を参照することができます。"
 
-#: ../../library/time.rst:513
-msgid "Mm.n.d"
+#: ../../library/time.rst:521
+msgid ":samp:`M{m}.{n}.{d}`"
 msgstr ":samp:`M{m}.{n}.{d}`"
 
-#: ../../library/time.rst:509
+#: ../../library/time.rst:517
 msgid ""
 "The *d*'th day (0 <= *d* <= 6) or week *n* of month *m* of the year (1 <= "
 "*n* <= 5, 1 <= *m* <= 12, where week 5 means \"the last *d* day in month "
@@ -868,13 +878,13 @@ msgid ""
 " first week in which the *d*'th day occurs. Day zero is Sunday."
 msgstr "*m* 月の第 *n* 週における *d* 番目の日 (0 <= *d* <= 6, 1 <= *n* <= 5, 1 <= *m* <= 12) を表します。週 5 は月 *m* における最終週の *d* 番目の日を表し、第 4 週か第 5 週のどちらかになります。週 1 は日 *d* が最初に現れる日を指します。日 0 は日曜日です。"
 
-#: ../../library/time.rst:515
+#: ../../library/time.rst:523
 msgid ""
 "``time`` has the same format as ``offset`` except that no leading sign ('-' "
 "or '+') is allowed. The default, if time is not given, is 02:00:00."
 msgstr "``time`` は ``offset`` とほぼ同じで、先頭に符号 ('-' や '+') を付けてはいけないところだけが違います。時刻が指定されていなければ、デフォルトの値 02:00:00 になります。"
 
-#: ../../library/time.rst:529
+#: ../../library/time.rst:537
 msgid ""
 "On many Unix systems (including \\*BSD, Linux, Solaris, and Darwin), it is "
 "more convenient to use the system's zoneinfo (:manpage:`tzfile(5)`)  "
@@ -885,40 +895,40 @@ msgid ""
 "``'Australia/Melbourne'``, ``'Egypt'`` or  ``'Europe/Amsterdam'``. ::"
 msgstr "多くの Unix システム (\\*BSD, Linux, Solaris, および Darwin を含む) では、システムの zoneinfo (:manpage:`tzfile(5)`) データベースを使ったほうが、タイムゾーンごとの規則を指定する上で便利です。これを行うには、必要なタイムゾーンデータファイルへのパスをシステムの 'zoneinfo' タイムゾーンデータベースからの相対で表した値を環境変数 :envvar:`TZ` に設定します。システムの 'zoneinfo' は通常 :file:`/usr/share/zoneinfo` にあります。例えば、 ``'US/Eastern'`` 、 ``'Australia/Melbourne'`` 、 ``'Egypt'``  ないし ``'Europe/Amsterdam'`` と指定します。 ::"
 
-#: ../../library/time.rst:550
-msgid "Module datetime"
+#: ../../library/time.rst:558
+msgid "Module :mod:`datetime`"
 msgstr ":mod:`datetime` モジュール"
 
-#: ../../library/time.rst:550
+#: ../../library/time.rst:558
 msgid "More object-oriented interface to dates and times."
 msgstr "日付と時刻に対する、よりオブジェクト指向のインタフェースです。"
 
-#: ../../library/time.rst:554
-msgid "Module locale"
+#: ../../library/time.rst:562
+msgid "Module :mod:`locale`"
 msgstr ":mod:`locale` モジュール"
 
-#: ../../library/time.rst:553
+#: ../../library/time.rst:561
 msgid ""
 "Internationalization services.  The locale setting affects the "
 "interpretation of many format specifiers in :func:`strftime` and "
 ":func:`strptime`."
 msgstr "国際化サービスです。ロケールの設定は :func:`strftime` および :func:`strptime` の多くの書式指定子の解釈に影響を及ぼします。"
 
-#: ../../library/time.rst:557
-msgid "Module calendar"
-msgstr "カレンダーモジュール"
+#: ../../library/time.rst:565
+msgid "Module :mod:`calendar`"
+msgstr ":mod:`calendar` モジュール"
 
-#: ../../library/time.rst:557
+#: ../../library/time.rst:565
 msgid ""
 "General calendar-related functions.   :func:`~calendar.timegm` is the "
 "inverse of :func:`gmtime` from this module."
 msgstr "一般的なカレンダーに関する関数群です。:func:`~calendar.timegm` はこのモジュールの :func:`gmtime` の逆を行う関数です。"
 
-#: ../../library/time.rst:561
+#: ../../library/time.rst:569
 msgid "Footnotes"
 msgstr "注記"
 
-#: ../../library/time.rst:562
+#: ../../library/time.rst:570
 msgid ""
 "The use of ``%Z`` is now deprecated, but the ``%z`` escape that expands to "
 "the preferred  hour/minute offset is not supported by all ANSI C libraries. "

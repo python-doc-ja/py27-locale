@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-04-19 20:49+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 15:44+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -177,16 +176,16 @@ msgid ""
 msgstr "オプションの ``formodulename`` 引数は :mod:`gensuitemodule` より作成されるスタブパッケージにより利用され、オブジェクト指定子のための OSA クラスをモジュールの中で見つけられることを保証します。これは、例えば、ファインダがウィンドウに対してオブジェクト指定子を返す場合、 ``Finder.Window`` のインスタンスが得られ、 ``aetypes.Window`` が得られないことを保証します。前者は、ファインダ上のウィンドウが持っている、すべての特性および要素のことを知っています。一方、後者のものはそれらのことを知りません。"
 
 #: ../../library/aepack.rst:89
-msgid "Module Carbon.AE"
-msgstr "Module :mod:`Carbon.AE`"
+msgid "Module :mod:`Carbon.AE`"
+msgstr ""
 
 #: ../../library/aepack.rst:89
 msgid "Built-in access to Apple Event Manager routines."
 msgstr "Apple Event マネージャルーチンへの組み込みアクセス"
 
 #: ../../library/aepack.rst:91
-msgid "Module aetypes"
-msgstr "Module :mod:`aetypes`"
+msgid "Module :mod:`aetypes`"
+msgstr ""
 
 #: ../../library/aepack.rst:92
 msgid "Python definitions of codes for Apple Event descriptor types."

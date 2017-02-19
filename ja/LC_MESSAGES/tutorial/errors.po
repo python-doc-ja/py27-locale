@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2015-12-04 01:56+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:12+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -303,14 +302,14 @@ msgid ""
 "A *finally clause* is always executed before leaving the :keyword:`try` "
 "statement, whether an exception has occurred or not. When an exception has "
 "occurred in the :keyword:`try` clause and has not been handled by an "
-":keyword:`except` clause (or it has occurred in a :keyword:`except` or "
+":keyword:`except` clause (or it has occurred in an :keyword:`except` or "
 ":keyword:`else` clause), it is re-raised after the :keyword:`finally` clause"
 " has been executed.  The :keyword:`finally` clause is also executed \"on the"
 " way out\" when any other clause of the :keyword:`try` statement is left via"
 " a :keyword:`break`, :keyword:`continue` or :keyword:`return` statement.  A "
 "more complicated example (having :keyword:`except` and :keyword:`finally` "
 "clauses in the same :keyword:`try` statement works as of Python 2.5)::"
-msgstr "*finally 節 (finally clause)* は、例外が発生したかどうかに関わらず、 :keyword:`try` 文を抜ける前に常に実行されます。 :keyword:`try` 節の中で例外が発生して、 :keyword:`except` 節で処理されていない場合、または :keyword:`except` 節か :keyword:`else` 節で例外が発生した場合は、 :keyword:`finally` 節を実行した後、その例外を再送出します。 :keyword:`finally` 節はまた、 :keyword:`try` 節から :keyword:`break` 文や :keyword:`continue` 文、 :keyword:`return` 文経由で抜ける際にも、 \"抜ける途中で\" 実行されます。より複雑な例です (:keyword:`except` 節や :keyword:`finally` 節が同じ :keyword:`try` 文の中にあって、 Python 2.5 以降で動作します)。"
+msgstr ""
 
 #: ../../tutorial/errors.rst:379
 msgid ""

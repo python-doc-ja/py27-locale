@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
@@ -8,10 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-10-03 16:50+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:07+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -51,7 +50,7 @@ msgid ""
 msgstr ":mod:`Tix` モジュールは、Python 3 では :mod:`tkinter.tix` にリネームされました。 :term:`2to3` ツールが自動的にソースコードの import を修正します。"
 
 #: ../../library/tix.rst:35
-msgid "Tix Homepage"
+msgid "`Tix Homepage <http://tix.sourceforge.net/>`_"
 msgstr "`Tix Homepage <http://tix.sourceforge.net/>`_"
 
 #: ../../library/tix.rst:34
@@ -61,7 +60,7 @@ msgid ""
 msgstr ":mod:`Tix` のホームページ。ここには追加ドキュメントとダウンロードへのリンクがあります。"
 
 #: ../../library/tix.rst:38
-msgid "Tix Man Pages"
+msgid "`Tix Man Pages <http://tix.sourceforge.net/dist/current/man/>`_"
 msgstr "`Tix Man Pages <http://tix.sourceforge.net/dist/current/man/>`_"
 
 #: ../../library/tix.rst:38
@@ -69,7 +68,9 @@ msgid "On-line version of the man pages and reference material."
 msgstr "manページと参考資料のオンライン版。"
 
 #: ../../library/tix.rst:41
-msgid "Tix Programming Guide"
+msgid ""
+"`Tix Programming Guide <http://tix.sourceforge.net/dist/current/docs/tix-"
+"book/tix.book.html>`_"
 msgstr "`Tix Programming Guide <http://tix.sourceforge.net/dist/current/docs/tix-book/tix.book.html>`_"
 
 #: ../../library/tix.rst:41
@@ -77,8 +78,10 @@ msgid "On-line version of the programmer's reference material."
 msgstr "プログラマ用参考資料のオンライン版。"
 
 #: ../../library/tix.rst:45
-msgid "Tix Development Applications"
-msgstr "`Tix Development Applications <http://tix.sourceforge.net/Tide/>`_"
+msgid ""
+"`Tix Development Applications "
+"<http://tix.sourceforge.net/Tixapps/src/Tide.html>`_"
+msgstr "`Tix Development Applications <http://tix.sourceforge.net/Tixapps/src/Tide.html>`_"
 
 #: ../../library/tix.rst:44
 msgid ""
@@ -164,9 +167,9 @@ msgid ""
 "The `ComboBox "
 "<http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixComboBox.htm>`_ "
 "widget is similar to the combo box control in MS Windows. The user can "
-"select a choice by either typing in the entry subwdget or selecting from the"
-" listbox subwidget."
-msgstr "`ComboBox <http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixComboBox.htm>`_ ウィジェットはMS Windows のコンボボックスコントロールに似ています。ユーザはエントリ・サブウィジェットでタイプするか、リストボックス・サブウィジェットから選択するかのどちらかで選択肢を選びます。"
+"select a choice by either typing in the entry subwidget or selecting from "
+"the listbox subwidget."
+msgstr "`ComboBox <http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixComboBox.htm>`_ ウィジェットはMS Windowsのコンボボックスコントロールに似ています。ユーザはエントリ・サブウィジェットでタイプするか、リストボックス・サブウィジェットから選択するかのどちらかで選択肢を選びます。"
 
 #: ../../library/tix.rst:139
 msgid ""
@@ -183,7 +186,7 @@ msgid ""
 "The `LabelEntry "
 "<http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixLabelEntry.htm>`_"
 " widget packages an entry widget and a label into one mega widget. It can be"
-" used be used to simplify the creation of \"entry-form\" type of interface."
+" used to simplify the creation of \"entry-form\" type of interface."
 msgstr "`LabelEntry <http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixLabelEntry.htm>`_ ウィジェットはエントリウィジェットとラベルを一つのメガウィジェットにまとめたものです。\"記入形式\"型のインタフェースの作成を簡単に行うために使うことができます。"
 
 #: ../../library/tix.rst:163
@@ -278,8 +281,8 @@ msgstr ":class:`DirSelectBox` は標準 Motif(TM) ディレクトリ選択ボッ
 msgid ""
 "The `ExFileSelectBox "
 "<http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixExFileSelectBox.htm>`_"
-" widget is usually embedded in a tixExFileSelectDialog widget. It provides "
-"an convenient method for the user to select files. The style of the "
+" widget is usually embedded in a tixExFileSelectDialog widget. It provides a"
+" convenient method for the user to select files. The style of the "
 ":class:`ExFileSelectBox` widget is very similar to the standard file dialog "
 "on MS Windows 3.1."
 msgstr "`ExFileSelectBox <http://tix.sourceforge.net/dist/current/man/html/TixCmd/tixExFileSelectBox.htm>`_ ウィジェットは、たいてい tixExFileSelectDialog ウィジェット内に組み込まれます。ユーザがファイルを選択するのに便利なメソッドを提供します。 :class:`ExFileSelectBox` ウィジェットのスタイルは、MS Windows 3.1 の標準ファイルダイアログにとてもよく似ています。"

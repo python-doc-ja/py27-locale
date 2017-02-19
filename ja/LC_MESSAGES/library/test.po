@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2016
+# 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-07-26 15:28+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:06+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,7 +48,7 @@ msgid ""
 msgstr ":mod:`test` パッケージ内のモジュールのうち、名前が ``test_`` で始まるものは、特定のモジュールや機能に対するテストスイートです。新しいテストはすべて :mod:`unittest` か :mod:`doctest` モジュールを使って書くようにしてください。古いテストのいくつかは、 ``sys.stdout`` への出力を比較する「従来の」テスト形式になっていますが、この形式のテストは廃止予定です。"
 
 #: ../../library/test.rst:32
-msgid "Module unittest"
+msgid "Module :mod:`unittest`"
 msgstr ":mod:`unittest` モジュール"
 
 #: ../../library/test.rst:32
@@ -57,7 +56,7 @@ msgid "Writing PyUnit regression tests."
 msgstr "PyUnit 回帰テストを書く。"
 
 #: ../../library/test.rst:34
-msgid "Module doctest"
+msgid "Module :mod:`doctest`"
 msgstr ":mod:`doctest` モジュール"
 
 #: ../../library/test.rst:35
@@ -190,14 +189,14 @@ msgid ""
 "Running :mod:`test.regrtest` directly allows what resources are available "
 "for tests to use to be set. You do this by using the ``-u`` command-line "
 "option. Specifying ``all`` as the value for the ``-u`` option enables all "
-"possible resources: :program:`python -m test -uall`. If all but one resource"
-" is desired (a more common case), a comma-separated list of resources that "
-"are not desired may be listed after ``all``. The command :program:`python -m"
-" test.regrtest -uall,-audio,-largefile` will run :mod:`test.regrtest` with "
-"all resources except the ``audio`` and ``largefile`` resources. For a list "
-"of all resources and more command-line options, run :program:`python -m "
-"test.regrtest -h`."
-msgstr "直接 :mod:`test.regrtest` を実行すると、テストに利用するリソースを設定できます。これを行うには、 ``-u`` コマンドラインオプションを使います。 ``-u`` のオプションに ``all`` を指定すると、すべてのリソースを有効にします: :program:`python -m test -uall` 。(よくある場合ですが) 何か一つを除く全てが必要な場合、カンマで区切った不要なリソースのリストを ``all`` の後に並べます。コマンド :program:`python -m test.regrtest -uall,-audio,-largefile` とすると、 ``audio`` と ``largefile`` リソースを除く全てのリソースを使って :mod:`test.regrtest` を実行します。すべてのリソースのリストと追加のコマンドラインオプションを出力するには、 :program:`python -m test.regrtest -h` を実行してください。"
+"possible resources: :program:`python -m test.regrtest -uall`. If all but one"
+" resource is desired (a more common case), a comma-separated list of "
+"resources that are not desired may be listed after ``all``. The command "
+":program:`python -m test.regrtest -uall,-audio,-largefile` will run "
+":mod:`test.regrtest` with all resources except the ``audio`` and "
+"``largefile`` resources. For a list of all resources and more command-line "
+"options, run :program:`python -m test.regrtest -h`."
+msgstr ""
 
 #: ../../library/test.rst:182
 msgid ""
@@ -456,9 +455,9 @@ msgstr "指定されたモジュールと *fresh* や *blocked* 引数内のモ�
 
 #: ../../library/test.rst:421
 msgid ""
-"This function will raise :exc:`unittest.SkipTest` is the named module cannot"
+"This function will raise :exc:`unittest.SkipTest` if the named module cannot"
 " be imported."
-msgstr "この関数はモジュールを import できなかった場合に :exc:`unittest.SkipTest` 例外を発生させます。"
+msgstr ""
 
 #: ../../library/test.rst:436
 msgid "The :mod:`test.test_support` module defines the following classes:"

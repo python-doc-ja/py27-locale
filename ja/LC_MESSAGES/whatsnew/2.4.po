@@ -1,17 +1,16 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2016, Python Software Foundation
+# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# Hiroaki Itoh <xwhhsprings@gmail.com>, 2015
+# 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-01 17:54+0900\n"
-"PO-Revision-Date: 2016-04-12 16:26+0000\n"
-"Last-Translator: Hiroaki Itoh <xwhhsprings@gmail.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/python-doc-ja/python-27/language/ja/)\n"
+"PO-Revision-Date: 2017-02-19 16:14+0000\n"
+"Last-Translator: cocoatomo\n"
+"Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -66,8 +65,8 @@ msgstr "PEP 218: ビルトインの集合オブジェクト"
 msgid ""
 "Python 2.3 introduced the :mod:`sets` module.  C implementations of set data"
 " types have now been added to the Python core as two new built-in types, "
-":func:`set(iterable)` and :func:`frozenset(iterable)`.  They provide high "
-"speed operations for membership testing, for eliminating duplicates from "
+"``set(iterable)`` and ``frozenset(iterable)``.  They provide high speed "
+"operations for membership testing, for eliminating duplicates from "
 "sequences, and for mathematical operations like unions, intersections, "
 "differences, and symmetric differences. ::"
 msgstr "Python 2.3 では :mod:`sets` を導入しました。集合データ型の C 実装が Python コアに新たに、2 つの新しいビルトイン型 :func:`set(iterable)` と :func:`frozenset(iterable)` として追加されています。これらは要素が集合に属しているかのメンバシップテスト、シーケンスからの重複の削除、それに和集合 (union)、共通集合 (intersection)、 差 (difference)、対称差 (symmetric difference) といった数学演算を高速に行います::"
@@ -87,8 +86,8 @@ msgid ""
 msgstr "2.3 で追加された :mod:`sets` モジュールは標準ライブラリに残されていて、 :class:`Set` や :class:`ImmutableSet` をサブクラス化したければ便利かもしれません。今のところこれを撤廃する予定はありません。(---訳注: :mod:`sets` モジュールは 2.6 で非推奨となっています。---)"
 
 #: ../../whatsnew/2.4.rst:83
-msgid "PEP 218 - Adding a Built-In Set Object Type"
-msgstr "PEP 218 - ビルトインの集合オブジェクト"
+msgid ":pep:`218` - Adding a Built-In Set Object Type"
+msgstr ":pep:`218` - 集合オブジェクト型をビルトインに追加する"
 
 #: ../../whatsnew/2.4.rst:83
 msgid ""
@@ -120,8 +119,8 @@ msgid ""
 msgstr "問題を起こしうる式は主として左シフトで、そして長い 16 進リテラルと 8 進リテラルです。例えば ``2 << 32`` は 2.3 では警告とともに 32 ビットプラットフォームでは結果は 0 になります。Python 2.4 ではこの式は正しい答えの 8589934592 になります。"
 
 #: ../../whatsnew/2.4.rst:108
-msgid "PEP 237 - Unifying Long Integers and Integers"
-msgstr "PEP 237 - 長整数と整数を一体化していく"
+msgid ":pep:`237` - Unifying Long Integers and Integers"
+msgstr ":pep:`237` - 長整数と整数を一体化していく"
 
 #: ../../whatsnew/2.4.rst:108
 msgid ""
@@ -182,8 +181,8 @@ msgid ""
 msgstr "ジェネレータ式はリスト内包とは色々小さい点で違います。最も顕著なのはループ変数 (上の例での *obj*) がジェネレータ式の外からアクセス不能なことです。リスト内包はループの制御変数が最後に代入された値で残ります; 将来のバージョンの Python では、この振る舞いはリスト内包がこの点でジェネレータ式と同じになるように変更されます。 (---訳注: Python 2.7 でもリスト内包のこの振る舞いは変わっておらず、警告ともなりません。制御変数が内包のスコープ外で可視でなくなったのは Python 3.0 からです。---)"
 
 #: ../../whatsnew/2.4.rst:165
-msgid "PEP 289 - Generator Expressions"
-msgstr "PEP 289 - ジェネレータ式"
+msgid ":pep:`289` - Generator Expressions"
+msgstr ":pep:`289` - ジェネレータ式"
 
 #: ../../whatsnew/2.4.rst:165
 msgid ""
@@ -234,8 +233,8 @@ msgid ""
 msgstr "辞書にキーが見つからない場合、 :meth:`substitute` メソッドは :exc:`KeyError` を送出します。 :meth:`safe_substitute` メソッドもあり、これはキー不在を無視します::"
 
 #: ../../whatsnew/2.4.rst:211
-msgid "PEP 292 - Simpler String Substitutions"
-msgstr "PEP 292 - より単純な文字列置換 (string substitution)"
+msgid ":pep:`292` - Simpler String Substitutions"
+msgstr ":pep:`292` - より単純な文字列置換 (string substitution)"
 
 #: ../../whatsnew/2.4.rst:212
 msgid "Written and implemented  by Barry Warsaw."
@@ -349,8 +348,8 @@ msgid ""
 msgstr "デコレータに関係した小さな変更は、関数の :attr:`func_name` 属性が書き込み可能になったことです。この属性はトレースバックでの関数名表示に使われますので、デコレータは構築して返却する新しい関数の名前を変更すべきです。"
 
 #: ../../whatsnew/2.4.rst:338
-msgid "PEP 318 - Decorators for Functions, Methods and Classes"
-msgstr "PEP 318 - 関数とメソッドのためのデコレータ"
+msgid ":pep:`318` - Decorators for Functions, Methods and Classes"
+msgstr ":pep:`318` - 関数、メソッド、クラスのためのデコレータ"
 
 #: ../../whatsnew/2.4.rst:336
 msgid ""
@@ -360,8 +359,8 @@ msgid ""
 msgstr "Kevin D. Smith, Jim Jewett, Skip Montanaro により著されました。数多くの人々が関数デコレータ実装のパッチを書きましたが、実際にチェックインされたものは Mark Russell が書いた #979728 でした。"
 
 #: ../../whatsnew/2.4.rst:340
-msgid "https://www.python.org/moin/PythonDecoratorLibrary"
-msgstr "https://www.python.org/moin/PythonDecoratorLibrary"
+msgid "https://wiki.python.org/moin/PythonDecoratorLibrary"
+msgstr "https://wiki.python.org/moin/PythonDecoratorLibrary"
 
 #: ../../whatsnew/2.4.rst:341
 msgid "This Wiki page contains several examples of decorators."
@@ -373,9 +372,9 @@ msgstr "PEP 322: 逆順のイテレーション"
 
 #: ../../whatsnew/2.4.rst:349
 msgid ""
-"A new built-in function, :func:`reversed(seq)`, takes a sequence and returns"
-" an iterator that loops over the elements of the sequence  in reverse order."
-"   ::"
+"A new built-in function, ``reversed(seq)``, takes a sequence and returns an "
+"iterator that loops over the elements of the sequence  in reverse order.   "
+"::"
 msgstr "新しいビルトイン関数 ``reversed(seq)`` は、シーケンスを受け取って、シーケンスの要素を逆順にループするイテレータを返します::"
 
 #: ../../whatsnew/2.4.rst:359
@@ -392,8 +391,8 @@ msgid ""
 msgstr ":func:`reversed` は任意のイテレータは受け付けず、シーケンスのみ受け付けることに注意してください。イテレータを逆順にしたければ、最初に :func:`list` でリストに変換してください::"
 
 #: ../../whatsnew/2.4.rst:376
-msgid "PEP 322 - Reverse Iteration"
-msgstr "PEP 322 - 逆順のイテレーション"
+msgid ":pep:`322` - Reverse Iteration"
+msgstr ":pep:`322`  - 逆順のイテレーション"
 
 #: ../../whatsnew/2.4.rst:377
 msgid "Written and implemented by Raymond Hettinger."
@@ -407,14 +406,14 @@ msgstr "PEP 324: 新しい subprocess モジュール"
 msgid ""
 "The standard library provides a number of ways to execute a subprocess, "
 "offering different features and different levels of complexity. "
-":func:`os.system(command)` is easy to use, but slow (it runs a shell process"
-" which executes the command) and dangerous (you have to be careful about "
+"``os.system(command)`` is easy to use, but slow (it runs a shell process "
+"which executes the command) and dangerous (you have to be careful about "
 "escaping the shell's metacharacters).  The :mod:`popen2` module offers "
 "classes that can capture standard output and standard error from the "
 "subprocess, but the naming is confusing.  The :mod:`subprocess` module "
 "cleans  this up, providing a unified interface that offers all the features "
 "you might need."
-msgstr "標準ライブラリはサブプロセスを実行するのに数多くの手段を提供しています。これらは異なった機能、異なった複雑さのレベルを提供しています。 :func:`os.system(command)` の利用は簡単です。ですがこれは遅く (コマンドを実行するシェルを起動しますので)、危険でもあります (シェルのメタ文字を注意深くエスケープする必要があります)。 :mod:`popen2` モジュールが提供するクラス群はサブプロセスより標準出力、標準エラー出力をキャプチャ出来ますが、名前付けがややこしいです。 :mod:`subprocess` モジュールはこれを綺麗にし、必要とするであろう機能全てを与える一体化されたインターフェイスを提供しています。"
+msgstr "標準ライブラリはサブプロセスを実行するのに数多くの手段を提供しています。これらは異なった機能、異なった複雑さのレベルを提供しています。 ``os.system(command)`` の利用は簡単です。ですがこれは遅く (コマンドを実行するシェルを起動しますので)、危険でもあります (シェルのメタ文字を注意深くエスケープする必要があります)。 :mod:`popen2` モジュールが提供するクラス群はサブプロセスより標準出力、標準エラー出力をキャプチャ出来ますが、名前付けがややこしいです。 :mod:`subprocess` モジュールはこれを綺麗にし、必要とするであろう機能全てを与える一体化されたインターフェイスを提供しています。"
 
 #: ../../whatsnew/2.4.rst:394
 msgid ""
@@ -474,11 +473,11 @@ msgstr "*universal_newlines* で、子の入出力を、Python の :term:`univer
 msgid ""
 "Once you've created the :class:`Popen` instance,  you can call its "
 ":meth:`wait` method to pause until the subprocess has exited, :meth:`poll` "
-"to check if it's exited without pausing,  or :meth:`communicate(data)` to "
-"send the string *data* to the subprocess's standard input.   "
-":meth:`communicate(data)`  then reads any data that the subprocess has sent "
-"to its standard output  or standard error, returning a tuple ``(stdout_data,"
-" stderr_data)``."
+"to check if it's exited without pausing,  or ``communicate(data)`` to send "
+"the string *data* to the subprocess's standard input.   "
+"``communicate(data)``  then reads any data that the subprocess has sent to "
+"its standard output  or standard error, returning a tuple ``(stdout_data, "
+"stderr_data)``."
 msgstr ":class:`Popen` インスタンスを作ってしまえば、あとはサブプロセスが終了するまで停止するために :meth:`wait` メソッド呼び出すことが出来、停止することなく終了をチェックするのに :meth:`poll` メソッドを呼び出すことが出来、あるいは ``communicate(data)`` を呼び出して、子の標準入力に *data* を送信することが出来ます。 ``communicate(data)`` はサブプロセスが送信する標準出力と標準エラー出力を読み込み、タプル ``(stdout_data, stderr_data)`` を返します。"
 
 #: ../../whatsnew/2.4.rst:439
@@ -504,8 +503,8 @@ msgid ""
 msgstr "PEP にはシェルと Python コードの様々な例が採られていて、シェルスクリプトをいかにして :mod:`subprocess` を用いて Python コードに変換するかを示しています。PEP のこのセクションを読むことを強くお勧めします。"
 
 #: ../../whatsnew/2.4.rst:465
-msgid "PEP 324 - subprocess - New process module"
-msgstr "PEP 324 - 新しい subprocess モジュール"
+msgid ":pep:`324` - subprocess - New process module"
+msgstr ":pep:`324` - subprocess - プロセスのための新たなモジュール"
 
 #: ../../whatsnew/2.4.rst:465
 msgid ""
@@ -585,11 +584,11 @@ msgstr "ときどきあなたはこの不正確さを、数値を表示する際
 #: ../../whatsnew/2.4.rst:520
 msgid ""
 "The inaccuracy isn't always visible when you print the number because the "
-"FP-to- decimal-string conversion is provided by the C library, and most C "
+"FP-to-decimal-string conversion is provided by the C library, and most C "
 "libraries try to produce sensible output.  Even if it's not displayed, "
 "however, the inaccuracy is still there and subsequent operations can magnify"
 " the error."
-msgstr "この不正確さは数値を表示する際にいつでも目に見えるわけではありません。浮動小数点数から文字列への変換が C ライブラリによって提供されていて、C ライブラリのほとんどが賢明な出力を生成しようと頑張っているからです。それが表示されないにしても、不正確さはそれでも存在していて、後続の計算への誤差が大きくなりえます。"
+msgstr ""
 
 #: ../../whatsnew/2.4.rst:525
 msgid ""
@@ -659,8 +658,8 @@ msgstr "いったん :class:`Decimal` を手にしてしまえばあとは普通
 #: ../../whatsnew/2.4.rst:598
 msgid ""
 "You can combine :class:`Decimal` instances with integers, but not with "
-"floating- point numbers::"
-msgstr ":class:`Decimal` インスタンスと整数は混ぜて使えますが、浮動小数点数とは出来ません::"
+"floating-point numbers::"
+msgstr ""
 
 #: ../../whatsnew/2.4.rst:609
 msgid ""
@@ -735,8 +734,8 @@ msgid ""
 msgstr "さらに詳しく知りたければ :mod:`decimal` モジュールのドキュメントを読んで下さい。これには簡単に始められるチュートリアルとリファレンスが入っています。"
 
 #: ../../whatsnew/2.4.rst:684
-msgid "PEP 327 - Decimal Data Type"
-msgstr "PEP 327 - Decimal データ型"
+msgid ":pep:`327` - Decimal Data Type"
+msgstr ":pep:`327` - Decimal データ型"
 
 #: ../../whatsnew/2.4.rst:683
 msgid ""
@@ -751,12 +750,12 @@ msgstr "http://www.lahey.com/float.htm"
 #: ../../whatsnew/2.4.rst:687
 msgid ""
 "The article uses Fortran code to illustrate many of the problems that "
-"floating- point inaccuracy can cause."
-msgstr "この記事は浮動小数点数の不正確さが起こりうるたくさんの問題について、Fortran コードを使って解説しています。"
+"floating-point inaccuracy can cause."
+msgstr ""
 
 #: ../../whatsnew/2.4.rst:692
-msgid "http://www2.hursley.ibm.com/decimal/"
-msgstr "http://www2.hursley.ibm.com/decimal/"
+msgid "http://speleotrove.com/decimal/"
+msgstr "http://speleotrove.com/decimal/"
 
 #: ../../whatsnew/2.4.rst:691
 msgid ""
@@ -795,8 +794,8 @@ msgid ""
 msgstr "その PEP は、全ての :keyword:`import` 文が絶対インポートであること、相対インポートであることを示すには ``.`` 文字で開始すること、の提案もしています。PEP のこの部分は Python 2.4 では実装されていませんが、 Python 2.5 向けには完了しています。"
 
 #: ../../whatsnew/2.4.rst:728
-msgid "PEP 328 - Imports: Multi-Line and Absolute/Relative"
-msgstr "PEP 328  - マルチラインインポートと、絶対/相対インポート"
+msgid ":pep:`328` - Imports: Multi-Line and Absolute/Relative"
+msgstr ":pep:`328` - マルチラインインポートと、絶対/相対インポート"
 
 #: ../../whatsnew/2.4.rst:729
 msgid "Written by Aahz.  Multi-line imports were implemented by Dima Dorfman."
@@ -819,10 +818,10 @@ msgstr ":mod:`locale` モジュールにより、Python ソフトウェアは特
 #: ../../whatsnew/2.4.rst:744
 msgid ""
 "Not setting the numeric locale caused trouble for extensions that used "
-"third- party C libraries, however, because they wouldn't have the correct "
+"third-party C libraries, however, because they wouldn't have the correct "
 "locale set. The motivating example was GTK+, whose user interface widgets "
 "weren't displaying numbers in the current locale."
-msgstr "ところが、数値ロケールをセットしないことはサードパーティの C ライブラリを使う拡張で問題を起こしました。それらが正しいロケールをセットしようとしないからです。動機となった例が GTK+ でした。そのユーザインターフェイスウィジットが、数値を現在のロケールに従って表示していませんでした。"
+msgstr ""
 
 #: ../../whatsnew/2.4.rst:749
 msgid ""
@@ -832,28 +831,28 @@ msgstr "この PEP に記述された解法は、ロケール設定を無視し�
 
 #: ../../whatsnew/2.4.rst:752
 msgid ""
-":c:func:`PyOS_ascii_strtod(str, ptr)`  and :c:func:`PyOS_ascii_atof(str, "
-"ptr)` both convert a string to a C :c:type:`double`."
-msgstr ":c:func:`PyOS_ascii_strtod(str, ptr)`  と :c:func:`PyOS_ascii_atof(str, ptr)` はともに、文字列を C の :c:type:`double` に変換します。"
+"``PyOS_ascii_strtod(str, ptr)``  and ``PyOS_ascii_atof(str, ptr)`` both "
+"convert a string to a C :c:type:`double`."
+msgstr "``PyOS_ascii_strtod(str, ptr)``  と ``PyOS_ascii_atof(str, ptr)`` はともに、文字列を C の :c:type:`double` に変換します。"
 
 #: ../../whatsnew/2.4.rst:755
 msgid ""
-":c:func:`PyOS_ascii_formatd(buffer, buf_len, format, d)` converts a "
+"``PyOS_ascii_formatd(buffer, buf_len, format, d)`` converts a "
 ":c:type:`double` to an ASCII string."
-msgstr ":c:func:`PyOS_ascii_formatd(buffer, buf_len, format, d)`  は :c:type:`double` を ASCII 文字列に変換します。"
+msgstr "``PyOS_ascii_formatd(buffer, buf_len, format, d)``  は :c:type:`double` を ASCII 文字列に変換します。"
 
 #: ../../whatsnew/2.4.rst:758
 msgid ""
 "The code for these functions came from the GLib library "
-"(http://library.gnome.org/devel/glib/stable/), whose developers kindly "
+"(https://developer.gnome.org/glib/stable/), whose developers kindly "
 "relicensed the relevant functions and donated them to the Python Software "
 "Foundation.  The :mod:`locale` module  can now change the numeric locale, "
 "letting extensions such as GTK+  produce the correct results."
-msgstr "これら関数のコードは GLib ライブラリ (http://library.gnome.org/devel/glib/stable/) に由来しています。GLib ライブラリの開発者たちは気前よく関連する関数をライセンス変更の上で Python Software Foundation に寄贈してくれました。 :mod:`locale` モジュールは今では数値ロケールを変更することが出来るので、GTK+ を使うような拡張が正しい結果を生成します。"
+msgstr ""
 
 #: ../../whatsnew/2.4.rst:767
-msgid "PEP 331 - Locale-Independent Float/String Conversions"
-msgstr "PEP 331 - Locale に依存しない Float/String 変換"
+msgid ":pep:`331` - Locale-Independent Float/String Conversions"
+msgstr ":pep:`331` - Locale に依存しない Float/String 変換"
 
 #: ../../whatsnew/2.4.rst:768
 msgid "Written by Christian R. Reis, and implemented by Gustavo Carneiro."
@@ -876,7 +875,7 @@ msgstr "関数とメソッドのためのデコレータが追加されました
 #: ../../whatsnew/2.4.rst:780
 msgid ""
 "Built-in :func:`set` and :func:`frozenset` types were  added (:pep:`218`). "
-"Other new built-ins include the :func:`reversed(seq)` function (:pep:`322`)."
+"Other new built-ins include the ``reversed(seq)`` function (:pep:`322`)."
 msgstr "ビルトインの :func:`set` 型と :func:`frozenset` 型が追加されました (:pep:`218`)。ほか新たなビルトイン関数 ``reversed(seq)`` 関数が追加されました (:pep:`322`)。"
 
 #: ../../whatsnew/2.4.rst:783
@@ -977,8 +976,8 @@ msgstr "(All changes to :meth:`sort` contributed by Raymond Hettinger.)"
 
 #: ../../whatsnew/2.4.rst:860
 msgid ""
-"There is a new built-in function :func:`sorted(iterable)` that works like "
-"the in-place :meth:`list.sort` method but can be used in expressions.  The "
+"There is a new built-in function ``sorted(iterable)`` that works like the "
+"in-place :meth:`list.sort` method but can be used in expressions.  The "
 "differences are:"
 msgstr "新たに追加されたビルトイン関数 ``sorted(iterable)`` はインプレイスなメソッド :meth:`list.sort` と似た振る舞いをしますが、式内で使えます。違いは:"
 
@@ -999,7 +998,7 @@ msgstr "式として新しいソート済みコピーを返します。"
 msgid "(Contributed by Raymond Hettinger.)"
 msgstr "(Contributed by Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:893 ../../whatsnew/2.4.rst:1517
+#: ../../whatsnew/2.4.rst:893 ../../whatsnew/2.4.rst:1519
 msgid ""
 "Integer operations will no longer trigger an :exc:`OverflowWarning`. The "
 ":exc:`OverflowWarning` warning will disappear in Python 2.5."
@@ -1015,11 +1014,11 @@ msgstr "インタプリタに新たに :option:`-m` スイッチが加わりま�
 
 #: ../../whatsnew/2.4.rst:901
 msgid ""
-"The :func:`eval(expr, globals, locals)` and :func:`execfile(filename, "
-"globals, locals)` functions and the :keyword:`exec` statement now accept any"
-" mapping type for the *locals* parameter.  Previously this had to be a "
-"regular Python dictionary.  (Contributed by Raymond Hettinger.)"
-msgstr "``eval(expr, globals, locals)`` 関数と ``execfile(filename, globals, locals)`` 関数、 :keyword:`exec` 文が *locals* パラメータに任意のマッピング型を受け取れるようになりました。以前は正規の Python 辞書である必要がありました。 (Contributed by Raymond Hettinger.)"
+"The ``eval(expr, globals, locals)`` and ``execfile(filename, globals, "
+"locals)`` functions and the :keyword:`exec` statement now accept any mapping"
+" type for the *locals* parameter.  Previously this had to be a regular "
+"Python dictionary.  (Contributed by Raymond Hettinger.)"
+msgstr ""
 
 #: ../../whatsnew/2.4.rst:906
 msgid ""
@@ -1032,10 +1031,10 @@ msgstr "ビルトイン関数の :func:`zip` と :func:`itertools.izip` が引�
 #: ../../whatsnew/2.4.rst:921
 msgid ""
 "Encountering a failure while importing a module no longer leaves a "
-"partially- initialized module object in ``sys.modules``.  The incomplete "
+"partially-initialized module object in ``sys.modules``.  The incomplete "
 "module object left behind would fool further imports of the same module into"
 " succeeding, leading to confusing errors.   (Fixed by Tim Peters.)"
-msgstr "モジュールインポートが失敗した場合に ``sys.modules`` に部分的に初期化されてしまったモジュールオブジェクトを残さないように修正されました。その残ってしまった不完全モジュールは後続での同じモジュールのインポートを成功していると騙し、ややこしいエラーを引き起こしていました。 (Fixed by Tim Peters.)"
+msgstr ""
 
 #: ../../whatsnew/2.4.rst:926
 msgid ""
@@ -1195,10 +1194,10 @@ msgstr "UTF-8, UTF-16 コーデックが部分的な入力を受け取った場�
 #: ../../whatsnew/2.4.rst:1030
 msgid ""
 "There is a new :mod:`collections` module for  various specialized collection"
-" datatypes.   Currently it contains just one type, :class:`deque`,  a "
-"double- ended queue that supports efficiently adding and removing elements "
-"from either end::"
-msgstr "色々な特殊化されたコレクション型のために、モジュール :mod:`collections` が追加されました。現在のところこれには唯一つ、 :class:`deque` 型のみが含まれています。これは両端キュー (double- ended queue) で、両端への要素の追加、両端からの要素の削除を効率的にサポートします::"
+" datatypes.  Currently it contains just one type, :class:`deque`, a double-"
+"ended queue that supports efficiently adding and removing elements from "
+"either end::"
+msgstr ""
 
 #: ../../whatsnew/2.4.rst:1050
 msgid ""
@@ -1271,7 +1270,7 @@ msgstr ":mod:`imaplib` モジュールが IMAP の THREAD コマンドをサポ�
 
 #: ../../whatsnew/2.4.rst:1093
 msgid ""
-"The :mod:`itertools` module gained a :func:`groupby(iterable[, *func*])` "
+"The :mod:`itertools` module gained a ``groupby(iterable[, *func*])`` "
 "function. *iterable* is something that can be iterated over to return a "
 "stream of elements, and the optional *func* parameter is a function that "
 "takes an element and returns a key value; if omitted, the key is simply the "
@@ -1300,7 +1299,7 @@ msgstr "(Contributed by Hye-Shik Chang.)"
 
 #: ../../whatsnew/2.4.rst:1142
 msgid ""
-":mod:`itertools` also gained a function named :func:`tee(iterator, N)` that "
+":mod:`itertools` also gained a function named ``tee(iterator, N)`` that "
 "returns *N* independent iterators that replicate *iterator*.  If *N* is "
 "omitted, the default is 2. ::"
 msgstr ":mod:`itertools` には ``tee(iterator, N)`` という新たな関数も追加されています。これは *iterator* の、独立した *N* 個の複製イテレータを返します。 *N* は省略されればデフォルトは 2 です。::"
@@ -1336,12 +1335,12 @@ msgstr ":mod:`logging` パッケージの :func:`basicConfig` 関数に、ログ
 
 #: ../../whatsnew/2.4.rst:1180
 msgid ""
-"Other additions to the :mod:`logging` package include a :meth:`log(level, "
-"msg)` convenience method, as well as a :class:`TimedRotatingFileHandler` "
-"class that rotates its log files at a timed interval.  The module already "
-"had :class:`RotatingFileHandler`, which rotated logs once the file exceeded "
-"a certain size.  Both classes derive from a new :class:`BaseRotatingHandler`"
-" class that can be used to implement other rotating handlers."
+"Other additions to the :mod:`logging` package include a ``log(level, msg)`` "
+"convenience method, as well as a :class:`TimedRotatingFileHandler` class "
+"that rotates its log files at a timed interval.  The module already had "
+":class:`RotatingFileHandler`, which rotated logs once the file exceeded a "
+"certain size.  Both classes derive from a new :class:`BaseRotatingHandler` "
+"class that can be used to implement other rotating handlers."
 msgstr "ほかの :mod:`logging` パッケージへの追加としては、 便利メソッド ``log(level, msg)`` や、ログファイルを時間間隔でローテートするクラス :class:`TimedRotatingFileHandler` などがあります。モジュールには元々 :class:`RotatingFileHandler` が含まれており、こちらはファイルが特定のサイズを超過した場合にローテートするものです。両クラスとも新しく導出された :class:`BaseRotatingHandler` 基底クラスから派生していて、これはまた別のローテートするハンドラを実装するのに使えます。"
 
 #: ../../whatsnew/2.4.rst:1187
@@ -1366,10 +1365,10 @@ msgstr ":mod:`nntplib` モジュールの :class:`NNTP` クラスに :meth:`desc
 #: ../../whatsnew/2.4.rst:1198
 msgid ""
 "Two new functions were added to the :mod:`operator` module, "
-":func:`attrgetter(attr)` and :func:`itemgetter(index)`. Both functions "
-"return callables that take a single argument and return the corresponding "
-"attribute or item; these callables make excellent data extractors when used "
-"with :func:`map` or :func:`sorted`.  For example::"
+"``attrgetter(attr)`` and ``itemgetter(index)``. Both functions return "
+"callables that take a single argument and return the corresponding attribute"
+" or item; these callables make excellent data extractors when used with "
+":func:`map` or :func:`sorted`.  For example::"
 msgstr ":mod:`operator` モジュールに 2 つの関数 ``attrgetter(attr)`` と ``itemgetter(index)`` が追加されています。両関数ともに、単一引数を取ってそれに対応する属性かアイテムを返す呼び出し可能オブジェクトを返します。これら呼び出し可能オブジェクトは :func:`map` や :func:`sorted` とともに使う際の優れたデータ抽出器になります。例えば::"
 
 #: ../../whatsnew/2.4.rst:1214
@@ -1393,20 +1392,19 @@ msgstr "長期間の計画として、いつかの将来の Python バージョ�
 
 #: ../../whatsnew/2.4.rst:1226
 msgid ""
-"A new :func:`urandom(n)` function was added to the :mod:`os` module, "
-"returning a string containing *n* bytes of random data.  This function "
-"provides access to platform-specific sources of randomness such as "
-":file:`/dev/urandom` on Linux or the Windows CryptoAPI.  (Contributed by "
-"Trevor Perrin.)"
+"A new ``urandom(n)`` function was added to the :mod:`os` module, returning a"
+" string containing *n* bytes of random data.  This function provides access "
+"to platform-specific sources of randomness such as :file:`/dev/urandom` on "
+"Linux or the Windows CryptoAPI.  (Contributed by Trevor Perrin.)"
 msgstr ":mod:`os` モジュールに ``urandom(n)`` が追加されました。これは *n* バイトの乱数データを含む文字列を返します。この関数はプラットフォーム固有の乱数発生源にアクセスします。例えば Linux での :file:`/dev/urandom` や Windows での CryptoAPI です。 (Contributed by Trevor Perrin.)"
 
 #: ../../whatsnew/2.4.rst:1231
 msgid ""
-"Another new function: :func:`os.path.lexists(path)`  returns true if the "
-"file specified by *path* exists, whether or not it's a symbolic link.  This "
-"differs from the existing :func:`os.path.exists(path)` function, which "
-"returns false if *path* is a symlink that points to a destination that "
-"doesn't exist. (Contributed by Beni Cherniavsky.)"
+"Another new function: ``os.path.lexists(path)``  returns true if the file "
+"specified by *path* exists, whether or not it's a symbolic link.  This "
+"differs from the existing ``os.path.exists(path)`` function, which returns "
+"false if *path* is a symlink that points to a destination that doesn't "
+"exist. (Contributed by Beni Cherniavsky.)"
 msgstr "もう一つの新規関数 ``os.path.lexists(path)`` は *path* によって指定されたファイルがそれがシンボリックリンクかどうかによらず、存在している場合に真を返します。これは、既存の ``os.path.exists(path)`` 関数が *path* がシンボリックリンクでその指し先が存在しない場合に偽を返すのとは異なります。 (Contributed by Beni Cherniavsky.)"
 
 #: ../../whatsnew/2.4.rst:1237
@@ -1429,8 +1427,8 @@ msgstr ":mod:`profile` モジュールが C 拡張の関数をプロファイル
 
 #: ../../whatsnew/2.4.rst:1246
 msgid ""
-"The :mod:`random` module has a new method called :meth:`getrandbits(N)` that"
-" returns a long integer *N* bits in length.  The existing :meth:`randrange` "
+"The :mod:`random` module has a new method called ``getrandbits(N)`` that "
+"returns a long integer *N* bits in length.  The existing :meth:`randrange` "
 "method now uses :meth:`getrandbits` where appropriate, making generation of "
 "arbitrarily large random numbers more efficient.  (Contributed by Raymond "
 "Hettinger.)"
@@ -1473,8 +1471,8 @@ msgstr ":mod:`signal` モジュールで、 :func:`signal.signal` へのパラ�
 #: ../../whatsnew/2.4.rst:1274
 msgid ""
 "Two new functions were added to the :mod:`socket` module. :func:`socketpair`"
-" returns a pair of connected sockets and :func:`getservbyport(port)` looks "
-"up the service name for a given port number. (Contributed by Dave Cole and "
+" returns a pair of connected sockets and ``getservbyport(port)`` looks up "
+"the service name for a given port number. (Contributed by Dave Cole and "
 "Barry Warsaw.)"
 msgstr ":mod:`socket` モジュールに 2 つ新しい関数が追加されています。 :func:`socketpair` 関数は接続したソケットのペアを返し、 ``getservbyport(port)`` は与えたポート番号からサービス名を探して返します。(Contributed by Dave Cole and Barry Warsaw.)"
 
@@ -1626,51 +1624,51 @@ msgstr "もう一つの新機能は出力の diff スタイル出力で、オプ
 #: ../../whatsnew/2.4.rst:1427
 msgid ""
 "Running the above function's tests with :const:`doctest.REPORT_UDIFF` "
-"specified, you get the following output::"
-msgstr "この関数のテストを :const:`doctest.REPORT_UDIFF` フラグ指定で走らせると、以下のような出力を得ます::"
+"specified, you get the following output:"
+msgstr ""
 
-#: ../../whatsnew/2.4.rst:1446
+#: ../../whatsnew/2.4.rst:1448
 msgid "Build and C API Changes"
 msgstr "ビルドならびに C API の変更"
 
-#: ../../whatsnew/2.4.rst:1448
+#: ../../whatsnew/2.4.rst:1450
 msgid "Some of the changes to Python's build process and to the C API are:"
 msgstr "Python のビルド過程と C API の変更は以下の通りです:"
 
-#: ../../whatsnew/2.4.rst:1450
+#: ../../whatsnew/2.4.rst:1452
 msgid ""
 "Three new convenience macros were added for common return values from "
 "extension functions: :c:macro:`Py_RETURN_NONE`, :c:macro:`Py_RETURN_TRUE`, "
 "and :c:macro:`Py_RETURN_FALSE`. (Contributed by Brett Cannon.)"
 msgstr "拡張関数からの戻り値として一般的に使うための 3 つの便利なマクロが追加されています: :c:macro:`Py_RETURN_NONE`, :c:macro:`Py_RETURN_TRUE`, :c:macro:`Py_RETURN_FALSE` (Contributed by Brett Cannon.)"
 
-#: ../../whatsnew/2.4.rst:1454
+#: ../../whatsnew/2.4.rst:1456
 msgid ""
 "Another new macro, :c:macro:`Py_CLEAR(obj)`,  decreases the reference count "
 "of *obj* and sets *obj* to the null pointer.  (Contributed by Jim Fulton.)"
 msgstr "もう一つの新規マクロ :c:macro:`Py_CLEAR(obj)` は *obj* の参照カウントをデクリメントの上で *obj* をヌルポインタにセットします。 (Contributed by Jim Fulton.)"
 
-#: ../../whatsnew/2.4.rst:1457
+#: ../../whatsnew/2.4.rst:1459
 msgid ""
-"A new function, :c:func:`PyTuple_Pack(N, obj1, obj2, ..., objN)`, constructs"
-" tuples from a variable length argument list of Python objects.  "
-"(Contributed by Raymond Hettinger.)"
+"A new function, ``PyTuple_Pack(N, obj1, obj2, ..., objN)``, constructs "
+"tuples from a variable length argument list of Python objects.  (Contributed"
+" by Raymond Hettinger.)"
 msgstr "新規関数 ``PyTuple_Pack(N, obj1, obj2, ..., objN)`` は Python オブジェクトの可変長引数リストからタプルを構築します。 (Contributed by Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1461
+#: ../../whatsnew/2.4.rst:1463
 msgid ""
-"A new function, :c:func:`PyDict_Contains(d, k)`, implements fast dictionary "
+"A new function, ``PyDict_Contains(d, k)``, implements fast dictionary "
 "lookups without masking exceptions raised during the look-up process. "
 "(Contributed by Raymond Hettinger.)"
 msgstr "新規関数 ``PyDict_Contains(d, k)`` は、処理内で起こる例外のマスキングなしでの高速なルックアップを実装しています。 (Contributed by Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1465
+#: ../../whatsnew/2.4.rst:1467
 msgid ""
 "The :c:macro:`Py_IS_NAN(X)` macro returns 1 if  its float or double argument"
 " *X* is a NaN.   (Contributed by Tim Peters.)"
 msgstr ":c:macro:`Py_IS_NAN(X)` マクロは float または double の *X* が NaN の場合に 1 を返します。 (Contributed by Tim Peters.)"
 
-#: ../../whatsnew/2.4.rst:1468
+#: ../../whatsnew/2.4.rst:1470
 msgid ""
 "C code can avoid unnecessary locking by using the new "
 ":c:func:`PyEval_ThreadsInitialized` function to tell  if any thread "
@@ -1678,14 +1676,14 @@ msgid ""
 "operations are needed. (Contributed by Nick Coghlan.)"
 msgstr "C コードは新たに追加された :c:func:`PyEval_ThreadsInitialized` 関数を呼び出すことで、必要のないロックを避けることが出来ます。これは任意のスレッド操作が実行されているかどうかを教えてくれます。この関数が偽を返すなら、ロック操作は必要ありません。 (Contributed by Nick Coghlan.)"
 
-#: ../../whatsnew/2.4.rst:1473
+#: ../../whatsnew/2.4.rst:1475
 msgid ""
 "A new function, :c:func:`PyArg_VaParseTupleAndKeywords`, is the same as "
 ":c:func:`PyArg_ParseTupleAndKeywords` but takes a  :c:type:`va_list` instead"
 " of a number of arguments. (Contributed by Greg Chapman.)"
 msgstr "新規関数 :c:func:`PyArg_VaParseTupleAndKeywords` は :c:func:`PyArg_ParseTupleAndKeywords` と同じですが、たくさんの引数の代わりに :c:type:`va_list` を取ることだけが違います。(Contributed by Greg Chapman.)"
 
-#: ../../whatsnew/2.4.rst:1477
+#: ../../whatsnew/2.4.rst:1479
 msgid ""
 "A new method flag, :const:`METH_COEXISTS`, allows a function defined in "
 "slots to co-exist with a :c:type:`PyCFunction` having the same name.  This "
@@ -1693,104 +1691,104 @@ msgid ""
 "(Contributed by Raymond Hettinger.)"
 msgstr "新たなメソッドフラグ :const:`METH_COEXISTS` は、同じ名前を持っている :c:type:`PyCFunction` と共存する、スロット内で定義される関数を許します。これは :meth:`set.__contains__` のようなメソッドへのアクセス時間を半分にします。 (Contributed by Raymond Hettinger.)"
 
-#: ../../whatsnew/2.4.rst:1482
+#: ../../whatsnew/2.4.rst:1484
 msgid ""
 "Python can now be built with additional profiling for the interpreter "
 "itself, intended as an aid to people developing the Python core.  Providing "
-":option:`----enable-profiling` to the :program:`configure` script will let "
+":option:`!--enable-profiling` to the :program:`configure` script will let "
 "you profile the interpreter with :program:`gprof`, and providing the :option"
-":`----with-tsc` switch enables profiling using the Pentium's Time-Stamp- "
-"Counter register.  Note that the :option:`----with-tsc` switch is slightly "
+":`!--with-tsc` switch enables profiling using the Pentium's Time-Stamp-"
+"Counter register.  Note that the :option:`!--with-tsc` switch is slightly "
 "misnamed, because the profiling feature also works on the PowerPC platform, "
 "though that processor architecture doesn't call that register \"the TSC "
 "register\".  (Contributed by Jeremy Hylton.)"
-msgstr "Python を、追加的にインタプリタ自身をプロファイルするためのビルドが出来るようになっています。これは Python コアを開発する人々のためを意図したものです。 :program:`configure` スクリプトに :option:`----enable-profiling` スイッチを与えることによりインタプリタは :program:`gprof` を使ってプロファイル出来ます。また :option:`----with-tsc` では、 Pentium でのタイムスタンプカウンタ(TSC=Time-Stamp- Counter)レジスタを使ったプロファイルが出来ます。 :option:`----with-tsc` 名は少々名前が良くないです。このプロファイル機能は PowerPC プラットフォームでも動作しますが、こちらのアーキテクチャではレジスタを「TSC レジスタ」とは呼んでいません。 (Contributed by Jeremy Hylton.)"
+msgstr ""
 
-#: ../../whatsnew/2.4.rst:1492
+#: ../../whatsnew/2.4.rst:1494
 msgid ""
 "The :c:type:`tracebackobject` type has been renamed to "
 ":c:type:`PyTracebackObject`."
 msgstr ":c:type:`tracebackobject` 型は :c:type:`PyTracebackObject` にリネームされました。"
 
-#: ../../whatsnew/2.4.rst:1499
+#: ../../whatsnew/2.4.rst:1501
 msgid "Port-Specific Changes"
 msgstr "ポート特有の変更"
 
-#: ../../whatsnew/2.4.rst:1501
+#: ../../whatsnew/2.4.rst:1503
 msgid ""
 "The Windows port now builds under MSVC++ 7.1 as well as version 6. "
 "(Contributed by Martin von Löwis.)"
 msgstr "Windows ポートは MSVC++ 6 と 7.1 でビルド出来ます。 (Contributed by Martin von Löwis.)"
 
-#: ../../whatsnew/2.4.rst:1508
+#: ../../whatsnew/2.4.rst:1510
 msgid "Porting to Python 2.4"
 msgstr "Python 2.4 への移植"
 
-#: ../../whatsnew/2.4.rst:1510
+#: ../../whatsnew/2.4.rst:1512
 msgid ""
 "This section lists previously described changes that may require changes to "
 "your code:"
 msgstr "このセクションでは前述の変更により必要となるかもしれないコードの変更を列挙します:"
 
-#: ../../whatsnew/2.4.rst:1513
+#: ../../whatsnew/2.4.rst:1515
 msgid ""
 "Left shifts and hexadecimal/octal constants that are too  large no longer "
 "trigger a :exc:`FutureWarning` and return  a value limited to 32 or 64 bits;"
 " instead they return a long integer."
 msgstr "大き過ぎる値を持つ左シフトと 16 進/ 8 進定数が :exc:`FutureWarning` を引き起こした上で 32 ビットまたは 64 ビットに制限される、という振る舞いはもうしません。代わりに長整数を返します。"
 
-#: ../../whatsnew/2.4.rst:1520
+#: ../../whatsnew/2.4.rst:1522
 msgid ""
 "The :func:`zip` built-in function and :func:`itertools.izip` now return  an "
 "empty list instead of raising a :exc:`TypeError` exception if called with no"
 " arguments."
 msgstr "ビルトイン関数の :func:`zip` と :func:`itertools.izip` が引数なしで呼ばれた場合に、 :exc:`TypeError` 例外を起こすのではなく空リストを返すようになりました。"
 
-#: ../../whatsnew/2.4.rst:1524
+#: ../../whatsnew/2.4.rst:1526
 msgid ""
-"You can no longer compare the :class:`date` and :class:`datetime` instances "
-"provided by the :mod:`datetime` module.  Two  instances of different classes"
-" will now always be unequal, and  relative comparisons (``<``, ``>``) will "
-"raise a :exc:`TypeError`."
-msgstr ":mod:`datetime` モジュールの :class:`date` と :class:`datetime` のインスタンスどうしを比較することは出来なくなっています。異なるクラスの 2 つのインスタンスは今では常に不一致となり、相対比較 (``<``, ``>``) は :exc:`TypeError` を投げます。"
+"You can no longer compare the :class:`date` and :class:`~datetime.datetime` "
+"instances provided by the :mod:`datetime` module.  Two  instances of "
+"different classes will now always be unequal, and  relative comparisons "
+"(``<``, ``>``) will raise a :exc:`TypeError`."
+msgstr ""
 
-#: ../../whatsnew/2.4.rst:1529
+#: ../../whatsnew/2.4.rst:1531
 msgid ""
 ":func:`dircache.listdir` now passes exceptions to the caller instead of "
 "returning empty lists."
 msgstr ":func:`dircache.listdir` は空リストを返す代わりに呼び出し元に例外を投げます。"
 
-#: ../../whatsnew/2.4.rst:1532
+#: ../../whatsnew/2.4.rst:1534
 msgid ""
 ":func:`LexicalHandler.startDTD` used to receive the public and system IDs in"
 " the wrong order.  This has been corrected; applications relying on the "
 "wrong order need to be fixed."
 msgstr ":func:`LexicalHandler.startDTD` はパブリックでシステムの ID を間違った順序で受け取っていました。これは修正されました; この間違った順序に依存したアプリケーションは修正しなければなりません。"
 
-#: ../../whatsnew/2.4.rst:1536
+#: ../../whatsnew/2.4.rst:1538
 msgid ""
 ":func:`fcntl.ioctl` now warns if the *mutate*  argument is omitted and "
 "relevant."
 msgstr ":func:`fcntl.ioctl` は *mutate_flag* 引数が省略されて問題に関係がある場合は警告を出します。"
 
-#: ../../whatsnew/2.4.rst:1539
+#: ../../whatsnew/2.4.rst:1541
 msgid ""
 "The :mod:`tarfile` module now generates GNU-format tar files by default."
 msgstr ":mod:`tarfile` モジュールがデフォルトで GNU フォーマットを生成するようになっています。"
 
-#: ../../whatsnew/2.4.rst:1541
+#: ../../whatsnew/2.4.rst:1543
 msgid ""
 "Encountering a failure while importing a module no longer leaves a "
-"partially- initialized module object in ``sys.modules``."
-msgstr "モジュールインポートが失敗した場合に ``sys.modules`` に部分的に初期化されてしまったモジュールオブジェクトを残さないように修正されました。"
+"partially-initialized module object in ``sys.modules``."
+msgstr ""
 
-#: ../../whatsnew/2.4.rst:1544
+#: ../../whatsnew/2.4.rst:1546
 msgid ""
 ":const:`None` is now a constant; code that binds a new value to  the name "
 "``None`` is now a syntax error."
 msgstr ":const:`None` が定数になっています。 ``None`` という名前に新しい値を割り当てようとするコードは、今では構文エラーになります。"
 
-#: ../../whatsnew/2.4.rst:1547
+#: ../../whatsnew/2.4.rst:1549
 msgid ""
 "The :func:`signals.signal` function now raises a :exc:`RuntimeError` "
 "exception for certain illegal values; previously these errors would pass "
@@ -1798,11 +1796,11 @@ msgid ""
 ":const:`SIGKILL` signal."
 msgstr ":func:`signals.signal` 関数は、ある種の不正な値では :exc:`RuntimeError` を投げるようになっています。以前はこれらエラーは黙って通していました。例えばもう :const:`SIGKILL` へはハンドラは渡せません。"
 
-#: ../../whatsnew/2.4.rst:1557
+#: ../../whatsnew/2.4.rst:1559
 msgid "Acknowledgements"
 msgstr "謝辞"
 
-#: ../../whatsnew/2.4.rst:1559
+#: ../../whatsnew/2.4.rst:1561
 msgid ""
 "The author would like to thank the following people for offering "
 "suggestions, corrections and assistance with various drafts of this article:"
