@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:08+0000\n"
+"PO-Revision-Date: 2017-02-24 15:06+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1669,7 +1669,7 @@ msgid ""
 "suites. The class presents the interface needed by the test runner to allow "
 "it to be run as any other test case.  Running a :class:`TestSuite` instance "
 "is the same as iterating over the suite, running each test individually."
-msgstr ""
+msgstr "このクラスは、個々のテストケースやテストスイートの集約を示します。通常のテストケースと同じようにテストランナーで実行するためのインタフェースを備えています。 :class:`TestSuite` インスタンスを実行することはスイートの繰り返しを使って個々のテストを実行することと同じです。"
 
 #: ../../library/unittest.rst:1360
 msgid ""
@@ -1774,14 +1774,14 @@ msgstr ":class:`TestLoader` のオブジェクトには以下のメソッドが�
 msgid ""
 "Return a suite of all test cases contained in the :class:`TestCase`\\ "
 "-derived :class:`testCaseClass`."
-msgstr ""
+msgstr ":class:`TestCase` の派生クラス :class:`testCaseClass` に含まれる全テストケースのスイートを返します。"
 
 #: ../../library/unittest.rst:1446
 msgid ""
 "Return a suite of all test cases contained in the given module. This method "
 "searches *module* for classes derived from :class:`TestCase` and creates an "
 "instance of the class for each test method defined for the class."
-msgstr ""
+msgstr "指定したモジュールに含まれる全テストケースのスイートを返します。このメソッドは *module* 内の :class:`TestCase` 派生クラスを検索し、見つかったクラスのテストメソッドごとにクラスのインスタンスを作成します。"
 
 #: ../../library/unittest.rst:1453
 msgid ""
@@ -1805,7 +1805,7 @@ msgstr "``load_tests`` のサポートが追加されました。"
 
 #: ../../library/unittest.rst:1469
 msgid "Return a suite of all test cases given a string specifier."
-msgstr ""
+msgstr "文字列で指定される全テストケースを含むスイートを返します。"
 
 #: ../../library/unittest.rst:1471
 msgid ""
