@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2015-11-28 19:12+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2017-02-28 15:14+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -64,7 +65,7 @@ msgstr "その結果、これらのテーブルはデータ構造体ではなく
 msgid ""
 "Determine whether *code* is in tableA.1 (Unassigned code points in Unicode "
 "3.2)."
-msgstr "*code* がテーブル A.1 (Unicode 3.2 における未割り当てコード点: unassigned code point) かどうか判定します。"
+msgstr "*code* がテーブル A.1 (Unicode 3.2 における未割り当てコードポイント: unassigned code point) かどうか判定します。"
 
 #: ../../library/stringprep.rst:48
 msgid "Determine whether *code* is in tableB.1 (Commonly mapped to nothing)."
@@ -118,7 +119,7 @@ msgstr "*code* がテーブル C.3 (プライベート利用) かどうか判定
 
 #: ../../library/stringprep.rst:102
 msgid "Determine whether *code* is in tableC.4  (Non-character code points)."
-msgstr "*code* がテーブル C.4 (非文字コード点: non-character code points) かどうか判定します。"
+msgstr "*code* がテーブル C.4 (非文字コードポイント: non-character code points) かどうか判定します。"
 
 #: ../../library/stringprep.rst:107
 msgid "Determine whether *code* is in tableC.5  (Surrogate codes)."

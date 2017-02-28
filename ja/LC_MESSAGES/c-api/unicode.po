@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:39+0000\n"
+"PO-Revision-Date: 2017-02-28 15:18+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1017,7 +1018,7 @@ msgid ""
 "is meaning that its ordinal value will be interpreted as Unicode or Latin-1 "
 "ordinal resp. Because of this, mappings only need to contain those mappings "
 "which map characters to different code points."
-msgstr "ある文字の検索が LookupError によって失敗すると、その文字はそのままコピーされます。すなわち、その文字の序数値がそれぞれ Unicode または Latin-1 として解釈されます。このため、codec を実現するマップ型に入れる必要がある対応付け関係は、ある文字を別のコード点に対応付けるものだけです。"
+msgstr "ある文字の検索が LookupError によって失敗すると、その文字はそのままコピーされます。すなわち、その文字の序数値がそれぞれ Unicode または Latin-1 として解釈されます。このため、codec を実現するマップ型に入れる必要がある対応付け関係は、ある文字を別のコードポイントに対応付けるものだけです。"
 
 #: ../../c-api/unicode.rst:874
 msgid "These are the mapping codec APIs:"
