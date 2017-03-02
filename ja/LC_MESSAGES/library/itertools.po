@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:56+0000\n"
+"PO-Revision-Date: 2017-03-01 17:57+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -402,7 +402,7 @@ msgid ""
 "exhausted, then proceeds to the next iterable, until all of the iterables "
 "are exhausted.  Used for treating consecutive sequences as a single "
 "sequence. Roughly equivalent to::"
-msgstr ""
+msgstr "先頭の iterable の全要素を返し、次に2番目の iterable の全要素を返し、と全 iterable の要素を返すイテレータを作成します。連続したシーケンスを一つのシーケンスとして扱う場合に使用します。およそ次と等価です::"
 
 #: ../../library/itertools.rst:108
 msgid ""
@@ -502,7 +502,7 @@ msgid ""
 "Make an iterator returning elements from the iterable and saving a copy of "
 "each. When the iterable is exhausted, return elements from the saved copy.  "
 "Repeats indefinitely.  Roughly equivalent to::"
-msgstr ""
+msgstr "イテラブルから要素を取得し、そのコピーを保存するイテレータを作成します。イテラブルの全要素を返すと、セーブされたコピーから要素を返します。これを無限に繰り返します。およそ次と等価です::"
 
 #: ../../library/itertools.rst:268
 msgid ""
@@ -516,7 +516,7 @@ msgid ""
 "predicate is true; afterwards, returns every element.  Note, the iterator "
 "does not produce *any* output until the predicate first becomes false, so it"
 " may have a lengthy start-up time.  Roughly equivalent to::"
-msgstr ""
+msgstr "predicate (述語) が真である間は要素を飛ばし、その後は全ての要素を返すイテレータを作成します。このイテレータは、predicate が最初に偽になるまで *全く* 要素を返さないため、要素を返し始めるまでに長い時間がかかる場合があります。およそ次と等価です::"
 
 #: ../../library/itertools.rst:292
 msgid ""
@@ -546,7 +546,7 @@ msgstr "返されるグループはそれ自体がイテレータで、 :func:`g
 
 #: ../../library/itertools.rst:316
 msgid ":func:`groupby` is roughly equivalent to::"
-msgstr ""
+msgstr ":func:`groupby` はおよそ次と等価です::"
 
 #: ../../library/itertools.rst:346
 msgid ""
@@ -560,7 +560,7 @@ msgid ""
 "Make an iterator that filters elements from iterable returning only those "
 "for which the predicate is ``False``. If *predicate* is ``None``, return the"
 " items that are false. Roughly equivalent to::"
-msgstr ""
+msgstr "iteable から predicate が ``False`` となる要素だけを返すイテレータを作成します。*predicate* が ``None`` の場合、偽の要素だけを返します。およそ次と等価です::"
 
 #: ../../library/itertools.rst:376
 msgid ""
@@ -586,7 +586,7 @@ msgid ""
 "*step*.  Can be used to extract related fields from data where the internal "
 "structure has been flattened (for example, a multi-line report may list a "
 "name field on every third line).  Roughly equivalent to::"
-msgstr ""
+msgstr "iterable から要素を選択して返すイテレータを作成します。 *start* が0でない場合、iterable の要素は start に達するまでスキップされます。その後、\n要素が順に返されます。\n *step* が1以下なら連続した要素を返し、 1以上なら指定された値分の要素をスキップします。\n\n*stop* が ``None`` の場合、iterable が尽きるまでイテレーションは続きます。\nそれ以外の場合、指定された位置でイテレーションは停止します。\n通常のスライスとは異なり、:func:`islice` は負の *start*、*stop*、*step* をサポートしません。内部構造が平滑化されたデータから関連するフィールドを抽出するのにに使用できます (たとえば、三行ごとに名前フィールドを列挙している複数行のレポート)。およそ次と等価です::"
 
 #: ../../library/itertools.rst:421
 msgid ""
@@ -689,7 +689,7 @@ msgid ""
 "Roughly equivalent to nested for-loops in a generator expression. For "
 "example, ``product(A, B)`` returns the same as ``((x,y) for x in A for y in "
 "B)``."
-msgstr ""
+msgstr "ジェネレータ式の入れ子になった for ループとおよそ等価です。たとえば ``product(A, B)`` は ``((x,y) for x in A for y in B)`` と同じものを返します。"
 
 #: ../../library/itertools.rst:553
 msgid ""
@@ -710,7 +710,7 @@ msgstr "イテラブル自身との直積を計算するためには、オプシ
 msgid ""
 "This function is roughly equivalent to the following code, except that the "
 "actual implementation does not build up intermediate results in memory::"
-msgstr ""
+msgstr "この関数は以下のコードとおよそ等価ですが、実際の実装ではメモリ中に中間結果を作りません::"
 
 #: ../../library/itertools.rst:579
 msgid ""

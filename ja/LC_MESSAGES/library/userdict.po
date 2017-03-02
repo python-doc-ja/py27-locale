@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:08+0000\n"
+"PO-Revision-Date: 2017-03-02 00:32+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -42,13 +43,13 @@ msgid ""
 "the introduction of :class:`dict`, the :class:`~UserDict.UserDict` class was"
 " used to create dictionary-like sub-classes that obtained new behaviors by "
 "overriding existing methods or adding new ones."
-msgstr ""
+msgstr "このモジュールでは :class:`~UserDict.UserDict` クラスも定義しています。\nこれは辞書オブジェクトのラッパーとして動作します。\nこれの必要性については既に :class:`dict` を直接的にサブクラス化出来るようになった (Python 2.2 から利用可能な機能です) ことによって大幅に取って代わられています。\n:class:`dict` の導入以前には、 :class:`~UserDict.UserDict` クラスはメソッドをオーバライドしたり新しいメソッドを追加して、辞書風のサブクラスを作成するために使われていました。"
 
 #: ../../library/userdict.rst:25
 msgid ""
 "The :mod:`UserDict` module defines the :class:`~UserDict.UserDict` class and"
 " :class:`DictMixin`:"
-msgstr ""
+msgstr ":mod:`UserDict` モジュールは :class:`~UserDict.UserDict` クラスと :class:`DictMixin` を定義しています:"
 
 #: ../../library/userdict.rst:31
 msgid ""
@@ -57,32 +58,32 @@ msgid ""
 ":class:`~UserDict.UserDict` instances.  If *initialdata* is provided, "
 ":attr:`data` is initialized with its contents; note that a reference to "
 "*initialdata* will not be kept, allowing it be used for other purposes."
-msgstr ""
+msgstr "辞書をシミュレートするクラスです。\nインスタンスの内容は通常の辞書に保存され、 :class:`~UserDict.UserDict` インスタンスの :attr:`data` 属性を通してアクセスできます。\n*initialdata* が与えられた場合は、 :attr:`data` はその内容で初期化されます;\n他の目的のために使えるように、 *initialdata* への参照が保存されないことがあるということに注意してください。"
 
 #: ../../library/userdict.rst:39
 msgid ""
 "For backward compatibility, instances of :class:`~UserDict.UserDict` are not"
 " iterable."
-msgstr ""
+msgstr "後方互換性のために、 :class:`~UserDict.UserDict` のインスタンスはイテレート可能ではありません。"
 
 #: ../../library/userdict.rst:44
 msgid ""
 "Subclass of :class:`~UserDict.UserDict` that supports direct iteration (e.g."
 "  ``for key in myDict``)."
-msgstr ""
+msgstr ":class:`~UserDict.UserDict` のイテレーションをサポートするサブクラス (使用例: ``for key in myDict``)."
 
 #: ../../library/userdict.rst:47
 msgid ""
 "In addition to supporting the methods and operations of mappings (see "
 "section :ref:`typesmapping`), :class:`~UserDict.UserDict` and "
 ":class:`IterableUserDict` instances provide the following attribute:"
-msgstr ""
+msgstr "マッピングのメソッドと演算 (:ref:`typesmapping` を参照) に加えて、 :class:`~UserDict.UserDict` 、 :class:`IterableUserDict` インスタンスは次の属性を提供します:"
 
 #: ../../library/userdict.rst:54
 msgid ""
 "A real dictionary used to store the contents of the "
 ":class:`~UserDict.UserDict` class."
-msgstr ""
+msgstr ":class:`~UserDict.UserDict` クラスの内容を保存するために使われる実際の辞書です。"
 
 #: ../../library/userdict.rst:59
 msgid ""
@@ -121,7 +122,7 @@ msgstr "Python 2.6 からは、 :class:`DictMixin` の代わりに、 :class:`co
 msgid ""
 "Note that DictMixin does not implement the :meth:`~dict.viewkeys`, "
 ":meth:`~dict.viewvalues`, or :meth:`~dict.viewitems` methods."
-msgstr ""
+msgstr "DictMixin は :meth:`~dict.viewkeys`, :meth:`~dict.viewvalues`, :meth:`~dict.viewitems` メソッドを実装していないことに注意してください。"
 
 #: ../../library/userdict.rst:81
 msgid ":mod:`UserList` --- Class wrapper for list objects"
@@ -148,7 +149,7 @@ msgid ""
 "from :class:`~UserList.UserList` and :class:`str` at the same time.  That "
 "would not be possible with both a real :class:`list` and a real "
 ":class:`str`."
-msgstr ""
+msgstr "加えて、このクラスは多重継承を使って、組み込みクラスに mixin できます。\nこれが役に立つときがあって、例えば :class:`~UserList.UserList` と :class:`str` の両方を同時に継承できます。\n本物の :class:`list` と本物の :class:`str` ではこれはできないでしょう。"
 
 #: ../../library/userdict.rst:102
 msgid ""
@@ -161,7 +162,7 @@ msgstr "このモジュールはリストオブジェクトのラッパーとし
 #: ../../library/userdict.rst:107
 msgid ""
 "The :mod:`UserList` module defines the :class:`~UserList.UserList` class:"
-msgstr ""
+msgstr ":mod:`UserList` モジュールは :class:`~UserList.UserList` クラスを定義しています:"
 
 #: ../../library/userdict.rst:112
 msgid ""
@@ -171,27 +172,27 @@ msgid ""
 "initially set to a copy of *list*, defaulting to the empty list ``[]``.  "
 "*list* can be any iterable, e.g. a real Python list or a "
 ":class:`~UserList.UserList` object."
-msgstr ""
+msgstr "リストをシミュレートするクラスです。\nインスタンスの内容は通常のリストに保存され、 :class:`~UserList.UserList` インスタンスの :attr:`data` 属性を通してアクセスできます。\nインスタンスの内容は最初に *list* のコピーに設定されますが、デフォルトでは空リスト ``[]`` です。\n*list* は何らかのイテラブル、例えば通常の Python リストや :class:`~UserList.UserList` オブジェクトです。"
 
 #: ../../library/userdict.rst:119
 msgid ""
 "The :class:`~UserList.UserList` class has been moved to the "
 ":mod:`collections` module in Python 3. The :term:`2to3` tool will "
 "automatically adapt imports when converting your sources to Python 3."
-msgstr ""
+msgstr ":class:`~UserList.UserList` モジュールは、Python 3 では :mod:`collections` に移動しました。\n:term:`2to3` ツールは、ソースコードの import を自動的に Python 3 向けに修正します。"
 
 #: ../../library/userdict.rst:124
 msgid ""
 "In addition to supporting the methods and operations of mutable sequences "
 "(see section :ref:`typesseq`), :class:`~UserList.UserList` instances provide"
 " the following attribute:"
-msgstr ""
+msgstr "可変シーケンスのメソッドと演算 (:ref:`typesseq` を参照) に加えて、 :class:`~UserList.UserList` インスタンスは次の属性を提供します:"
 
 #: ../../library/userdict.rst:131
 msgid ""
 "A real Python list object used to store the contents of the "
 ":class:`~UserList.UserList` class."
-msgstr ""
+msgstr ":class:`~UserList.UserList` クラスの内容を保存するために使われる実際の Python リストオブジェクト。"
 
 #: ../../library/userdict.rst:134
 msgid ""
@@ -201,7 +202,7 @@ msgid ""
 "create an instance of the actual implementation class.  To do so, it assumes"
 " that the constructor can be called with a single parameter, which is a "
 "sequence object used as a data source."
-msgstr ""
+msgstr "**サブクラス化の要件:** :class:`~UserList.UserList` のサブクラスは引数なしか、あるいは一つの引数のどちらかとともに呼び出せるコンストラクタを提供することが期待されています。\n新しいシーケンスを返すリスト演算は現在の実装クラスのインスタンスを作成しようとします。\nそのために、データ元として使われるシーケンスオブジェクトである一つのパラメータとともにコンストラクタを呼び出せると想定しています。"
 
 #: ../../library/userdict.rst:141
 msgid ""
@@ -230,7 +231,7 @@ msgid ""
 "subclassing directly from the built-in :class:`str` type instead of using "
 ":class:`~UserString.UserString` (there is no built-in equivalent to "
 ":class:`MutableString`)."
-msgstr ""
+msgstr "このモジュールの :class:`~UserString.UserString` クラスは後方互換性のためだけに残されています。\n書いているコードが Python 2.2 より前のバージョンの Python で動作する必要が無いのならば、 :class:`~UserString.UserString` を使う代わりに組み込み :class:`str` 型から直接サブクラス化することを検討してください (組み込みの :class:`MutableString` と等価なものはありません)。"
 
 #: ../../library/userdict.rst:169
 msgid ""
@@ -261,14 +262,14 @@ msgid ""
 "string, an instance of :class:`~UserString.UserString` (or a subclass) or an"
 " arbitrary sequence which can be converted into a string using the built-in "
 ":func:`str` function."
-msgstr ""
+msgstr "文字列または Unicode 文字列オブジェクトをシミュレートするクラスです。\nインスタンスの内容は通常の文字列または Unicode 文字列オブジェクトに保存され、 :class:`~UserString.UserString` インスタンスの :attr:`data` 属性を通してアクセスできます。\nインスタンスの内容は最初に *sequence* のコピーに設定されます。\n*sequence* は通常の Python 文字列または Unicode 文字列、 :class:`~UserString.UserString` (またはサブクラス) のインスタンス、あるいは組み込み :func:`str` 関数を使って文字列に変換できる任意のシーケンスのいずれかです。"
 
 #: ../../library/userdict.rst:192
 msgid ""
 "The :class:`~UserString.UserString` class has been moved to the "
 ":mod:`collections` module in Python 3. The :term:`2to3` tool will "
 "automatically adapt imports when converting your sources to Python 3."
-msgstr ""
+msgstr ":class:`~UserString.UserString` クラスは、Python 3 では :mod:`collections` に移動しました。\n:term:`2to3` ツールは、ソースコードの import を自動的に Python 3 向けに修正します。"
 
 #: ../../library/userdict.rst:200
 msgid ""
@@ -279,7 +280,7 @@ msgid ""
 "inheritance and necessity to remove (override) the :meth:`__hash__` method "
 "in order to trap attempts to use a mutable object as dictionary key, which "
 "would be otherwise very error prone and hard to track down."
-msgstr ""
+msgstr "このクラスは上の :class:`~UserString.UserString` から派生し、 *可変に* なるように文字列を再定義します。\n可変な文字列は辞書のキーとして使うことができません。\nなぜなら、辞書はキーとして *不変な* オブジェクトを要求するからです。\nこのクラスの主な目的は、辞書のキーとして可変なオブジェクトを使うという試みを捕捉するために、継承と :meth:`__hash__` メソッドを取り除く (オーバーライドする) 必要があることを示す教育的な例を提供することです。\nそうしなければ、非常にエラーになりやすく、その原因を突き止めることが困難でしょう。"
 
 #: ../../library/userdict.rst:208
 msgid "The :class:`MutableString` class has been removed in Python 3."
@@ -290,10 +291,10 @@ msgid ""
 "In addition to supporting the methods and operations of string and Unicode "
 "objects (see section :ref:`string-methods`), :class:`~UserString.UserString`"
 " instances provide the following attribute:"
-msgstr ""
+msgstr "文字列および Unicode オブジェクトのメソッドと演算 (:ref:`string-methods` を参照) に加えて、 :class:`~UserString.UserString` インスタンスは次の属性を提供します:"
 
 #: ../../library/userdict.rst:218
 msgid ""
 "A real Python string or Unicode object used to store the content of the "
 ":class:`~UserString.UserString` class."
-msgstr ""
+msgstr ":class:`~UserString.UserString` クラスの内容を保存するために使われる実際の Python 文字列または Unicode オブジェクト。"
