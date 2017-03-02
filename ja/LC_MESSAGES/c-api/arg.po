@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:38+0000\n"
+"PO-Revision-Date: 2017-03-02 01:36+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -59,7 +60,7 @@ msgstr "以下のフォーマットはオブジェクトに連続したメモリ
 
 #: ../../c-api/arg.rst:39
 msgid "``s`` (string or Unicode) [const char \\*]"
-msgstr ""
+msgstr "``s`` (文字列型または Unicode 型) [const char \\*]"
 
 #: ../../c-api/arg.rst:33
 msgid ""
@@ -76,7 +77,7 @@ msgstr "Python の文字列または Unicode オブジェクトを、キャラ�
 msgid ""
 "``s#`` (string, Unicode or any read buffer compatible object) [const char "
 "\\*, int (or :c:type:`Py_ssize_t`, see below)]"
-msgstr ""
+msgstr "``s#`` (文字列型、Unicode 型または任意の読み出しバッファ互換型) [const char \\*, int (または :c:type:`Py_ssize_t`, 下記参照)]"
 
 #: ../../c-api/arg.rst:42
 msgid ""
@@ -98,7 +99,7 @@ msgstr "Python 2.5 から、長さの引数の型を、 :file:`Python.h` を inc
 
 #: ../../c-api/arg.rst:61
 msgid "``s*`` (string, Unicode, or any buffer compatible object) [Py_buffer]"
-msgstr ""
+msgstr "``s*`` (文字列型、Unicode 型、または任意のバッファ互換オブジェクト) [Py_buffer]"
 
 #: ../../c-api/arg.rst:55
 msgid ""
@@ -111,7 +112,7 @@ msgstr "``s#`` と似ていますが、呼び出し元から渡された Py_buff
 
 #: ../../c-api/arg.rst:65
 msgid "``z`` (string, Unicode  or ``None``) [const char \\*]"
-msgstr ""
+msgstr "``z`` (文字列型または Unicode 型または ``None``) [const char \\*]"
 
 #: ../../c-api/arg.rst:64
 msgid ""
@@ -123,7 +124,7 @@ msgstr "``s`` に似ていますが、Python オブジェクトは ``None`` で�
 msgid ""
 "``z#`` (string, Unicode, ``None`` or any read buffer compatible object) "
 "[const char \\*, int]"
-msgstr ""
+msgstr "``z#`` (文字列型、 ``None`` 、または任意の読み出しバッファ互換型) [const char \\*, int]"
 
 #: ../../c-api/arg.rst:68
 msgid "This is to ``s#`` as ``z`` is to ``s``."
@@ -133,7 +134,7 @@ msgstr "``s#`` の ``s`` を ``z`` にしたような意味です。"
 msgid ""
 "``z*`` (string, Unicode, ``None`` or any buffer compatible object) "
 "[Py_buffer]"
-msgstr ""
+msgstr "``z*`` (文字列型、Unicode型、 ``None`` または任意のバッファ互換型) [Py_buffer]"
 
 #: ../../c-api/arg.rst:71
 msgid "This is to ``s*`` as ``z`` is to ``s``."
@@ -141,7 +142,7 @@ msgstr "``s*`` の ``s`` を ``z`` にしたような意味です。"
 
 #: ../../c-api/arg.rst:80
 msgid "``u`` (Unicode) [Py_UNICODE \\*]"
-msgstr ""
+msgstr "``u`` (Unicode 型) [Py_UNICODE \\*]"
 
 #: ../../c-api/arg.rst:76
 msgid ""
@@ -154,7 +155,7 @@ msgstr "Python の Unicode オブジェクトを、NUL で終端された 16 ビ
 
 #: ../../c-api/arg.rst:86
 msgid "``u#`` (Unicode) [Py_UNICODE \\*, int]"
-msgstr ""
+msgstr "``u#`` (Unicode 型) [Py_UNICODE \\*, int]"
 
 #: ../../c-api/arg.rst:83
 msgid ""
@@ -168,7 +169,7 @@ msgstr "これは ``u`` の変化形で、値を二つの変数に記録しま�
 msgid ""
 "``es`` (string, Unicode or character buffer compatible object) [const char "
 "\\*encoding, char \\*\\*buffer]"
-msgstr ""
+msgstr "``es`` (文字列型、Unicode 型またはキャラクタバッファ互換型) [const char \\*encoding, char \\*\\*buffer]"
 
 #: ../../c-api/arg.rst:89
 msgid ""
@@ -201,7 +202,7 @@ msgstr ":c:func:`PyArg_ParseTuple` を使うと、必要なサイズのバッフ
 msgid ""
 "``et`` (string, Unicode or character buffer compatible object) [const char "
 "\\*encoding, char \\*\\*buffer]"
-msgstr ""
+msgstr "``et`` (文字列型、Unicode 型またはキャラクタバッファ互換型) [const char \\*encoding, char \\*\\*buffer]"
 
 #: ../../c-api/arg.rst:108
 msgid ""
@@ -214,7 +215,7 @@ msgstr "``es`` と同じです。ただし、8 ビット幅の文字列オブジ
 msgid ""
 "``es#`` (string, Unicode or character buffer compatible object) [const char "
 "\\*encoding, char \\*\\*buffer, int \\*buffer_length]"
-msgstr ""
+msgstr "``es#`` (文字列型、Unicode 型またはキャラクタバッファ互換型) [const char \\*encoding, char \\*\\*buffer, int \\*buffer_length]"
 
 #: ../../c-api/arg.rst:113
 msgid ""
@@ -269,7 +270,7 @@ msgstr "どちらの場合も、 *\\*buffer_length* は終端の NUL バイト�
 msgid ""
 "``et#`` (string, Unicode or character buffer compatible object) [const char "
 "\\*encoding, char \\*\\*buffer, int \\*buffer_length]"
-msgstr ""
+msgstr "``et#`` (文字列型、Unicode 型またはキャラクタバッファ互換型) [const char \\*encoding, char \\*\\*buffer, int \\*buffer_length]"
 
 #: ../../c-api/arg.rst:146
 msgid ""
@@ -280,7 +281,7 @@ msgstr "``es#`` と同じです。ただし、文字列オブジェクトをエ�
 
 #: ../../c-api/arg.rst:152
 msgid "``b`` (integer) [unsigned char]"
-msgstr ""
+msgstr "``b`` (整数型) [unsigned char]"
 
 #: ../../c-api/arg.rst:151
 msgid ""
@@ -290,7 +291,7 @@ msgstr "Python の非負の整数を、 C の :c:type:`unsigned char` 型の小�
 
 #: ../../c-api/arg.rst:158 ../../c-api/arg.rst:485
 msgid "``B`` (integer) [unsigned char]"
-msgstr ""
+msgstr "``B`` (整数型) [unsigned char]"
 
 #: ../../c-api/arg.rst:155
 msgid ""
@@ -300,7 +301,7 @@ msgstr "Python の整数を、オーバフローチェックを行わずに、 C
 
 #: ../../c-api/arg.rst:161 ../../c-api/arg.rst:479
 msgid "``h`` (integer) [short int]"
-msgstr ""
+msgstr "``h`` (整数型) [short int]"
 
 #: ../../c-api/arg.rst:161
 msgid "Convert a Python integer to a C :c:type:`short int`."
@@ -308,7 +309,7 @@ msgstr "Python の整数を、 C の :c:type:`short int` 型に変換します�
 
 #: ../../c-api/arg.rst:167 ../../c-api/arg.rst:488
 msgid "``H`` (integer) [unsigned short int]"
-msgstr ""
+msgstr "``H`` (整数型) [unsigned short int]"
 
 #: ../../c-api/arg.rst:164
 msgid ""
@@ -318,7 +319,7 @@ msgstr "Python の整数を、オーバフローチェックを行わずに、 C
 
 #: ../../c-api/arg.rst:170 ../../c-api/arg.rst:473
 msgid "``i`` (integer) [int]"
-msgstr ""
+msgstr "``i`` (整数型) [int]"
 
 #: ../../c-api/arg.rst:170
 msgid "Convert a Python integer to a plain C :c:type:`int`."
@@ -326,7 +327,7 @@ msgstr "Python の整数を、 C の :c:type:`int` 型に変換します。"
 
 #: ../../c-api/arg.rst:176
 msgid "``I`` (integer) [unsigned int]"
-msgstr ""
+msgstr "``I`` (整数型) [unsigned int]"
 
 #: ../../c-api/arg.rst:173
 msgid ""
@@ -336,7 +337,7 @@ msgstr "Python の整数を、オーバフローチェックを行わずに、 C
 
 #: ../../c-api/arg.rst:179 ../../c-api/arg.rst:482
 msgid "``l`` (integer) [long int]"
-msgstr ""
+msgstr "``l`` (整数型) [long int]"
 
 #: ../../c-api/arg.rst:179
 msgid "Convert a Python integer to a C :c:type:`long int`."
@@ -344,7 +345,7 @@ msgstr "Python の整数を、 C の :c:type:`long int` 型に変換します。
 
 #: ../../c-api/arg.rst:185
 msgid "``k`` (integer) [unsigned long]"
-msgstr ""
+msgstr "``k`` (整数型) [unsigned long]"
 
 #: ../../c-api/arg.rst:182
 msgid ""
@@ -354,7 +355,7 @@ msgstr "Python の整数もしくは長整数を、オーバフローチェッ�
 
 #: ../../c-api/arg.rst:190
 msgid "``L`` (integer) [PY_LONG_LONG]"
-msgstr ""
+msgstr "``L`` (整数型) [PY_LONG_LONG]"
 
 #: ../../c-api/arg.rst:188
 msgid ""
@@ -365,7 +366,7 @@ msgstr "Python の整数を、 C の :c:type:`long long` 型に変換します�
 
 #: ../../c-api/arg.rst:198
 msgid "``K`` (integer) [unsigned PY_LONG_LONG]"
-msgstr ""
+msgstr "``K`` (整数型) [unsigned PY_LONG_LONG]"
 
 #: ../../c-api/arg.rst:193
 msgid ""
@@ -377,7 +378,7 @@ msgstr "Python の整数もしくは長整数を、オーバフローチェッ�
 
 #: ../../c-api/arg.rst:203
 msgid "``n`` (integer) [Py_ssize_t]"
-msgstr ""
+msgstr "``n`` (整数型) [Py_ssize_t]"
 
 #: ../../c-api/arg.rst:201
 msgid "Convert a Python integer or long integer to a C :c:type:`Py_ssize_t`."
@@ -385,7 +386,7 @@ msgstr "Python の整数もしくは長整数を C の :c:type:`Py_ssize_t` 型�
 
 #: ../../c-api/arg.rst:207 ../../c-api/arg.rst:513
 msgid "``c`` (string of length 1) [char]"
-msgstr ""
+msgstr "``c`` (長さ 1 の文字列型) [char]"
 
 #: ../../c-api/arg.rst:206
 msgid ""
@@ -395,7 +396,7 @@ msgstr "長さ 1 の文字列として表現されている Python キャラク�
 
 #: ../../c-api/arg.rst:210 ../../c-api/arg.rst:519
 msgid "``f`` (float) [float]"
-msgstr ""
+msgstr "``f`` (浮動小数点数型) [float]"
 
 #: ../../c-api/arg.rst:210
 msgid "Convert a Python floating point number to a C :c:type:`float`."
@@ -403,7 +404,7 @@ msgstr "Python の浮動小数点型を、 C の :c:type:`float` 型に変換し
 
 #: ../../c-api/arg.rst:213 ../../c-api/arg.rst:516
 msgid "``d`` (float) [double]"
-msgstr ""
+msgstr "``d`` (浮動小数点数型) [double]"
 
 #: ../../c-api/arg.rst:213
 msgid "Convert a Python floating point number to a C :c:type:`double`."
@@ -411,7 +412,7 @@ msgstr "Python の浮動小数点型を、 C の :c:type:`double` 型に変換�
 
 #: ../../c-api/arg.rst:216
 msgid "``D`` (complex) [Py_complex]"
-msgstr ""
+msgstr "``D`` (複素数型) [Py_complex]"
 
 #: ../../c-api/arg.rst:216
 msgid "Convert a Python complex number to a C :c:type:`Py_complex` structure."
@@ -465,7 +466,7 @@ msgstr "ここで *object* は変換対象の Python オブジェクトで、 *a
 
 #: ../../c-api/arg.rst:248
 msgid "``S`` (string) [PyStringObject \\*]"
-msgstr ""
+msgstr "``S`` (文字列型) [PyStringObject \\*]"
 
 #: ../../c-api/arg.rst:246
 msgid ""
@@ -476,7 +477,7 @@ msgstr "``O`` に似ていますが、Python オブジェクトは文字列オ�
 
 #: ../../c-api/arg.rst:253
 msgid "``U`` (Unicode string) [PyUnicodeObject \\*]"
-msgstr ""
+msgstr "``U`` (Unicode 型) [PyUnicodeObject \\*]"
 
 #: ../../c-api/arg.rst:251
 msgid ""
@@ -487,7 +488,7 @@ msgstr "``O`` に似ていますが、Python オブジェクトは Unicode オ�
 
 #: ../../c-api/arg.rst:260
 msgid "``t#`` (read-only character buffer) [char \\*, int]"
-msgstr ""
+msgstr "``t#`` (読み出し専用キャラクタバッファ) [char \\*, int]"
 
 #: ../../c-api/arg.rst:256
 msgid ""
@@ -500,7 +501,7 @@ msgstr "``s#`` に似ていますが、読み出し専用バッファインタ�
 
 #: ../../c-api/arg.rst:266
 msgid "``w`` (read-write character buffer) [char \\*]"
-msgstr ""
+msgstr "``w`` (読み書き可能なキャラクタバッファ) [char \\*]"
 
 #: ../../c-api/arg.rst:263
 msgid ""
@@ -512,7 +513,7 @@ msgstr "``s`` と同様ですが、読み書き可能なバッファインタフ
 
 #: ../../c-api/arg.rst:273
 msgid "``w#`` (read-write character buffer) [char \\*, Py_ssize_t]"
-msgstr ""
+msgstr "``w#`` (読み書き可能なキャラクタバッファ) [char \\*, Py_ssize_t]"
 
 #: ../../c-api/arg.rst:269
 msgid ""
@@ -525,7 +526,7 @@ msgstr "``s#`` に似ていますが、読み書き可能なバッファイン�
 
 #: ../../c-api/arg.rst:278
 msgid "``w*`` (read-write byte-oriented buffer) [Py_buffer]"
-msgstr ""
+msgstr "``w*`` (読み書き可能なバイト列バッファ) [Py_buffer]"
 
 #: ../../c-api/arg.rst:276
 msgid "This is to ``w`` what ``s*`` is to ``s``."
@@ -533,7 +534,7 @@ msgstr "``s`` に対する ``s*`` と同じ、 ``w`` のバージョンです。
 
 #: ../../c-api/arg.rst:291 ../../c-api/arg.rst:548
 msgid "``(items)`` (tuple) [*matching-items*]"
-msgstr ""
+msgstr "``(items)`` (タプル型) [*matching-items*]"
 
 #: ../../c-api/arg.rst:281
 msgid ""
@@ -715,7 +716,7 @@ msgid ""
 "string is empty, it returns ``None``; if it contains exactly one format "
 "unit, it returns whatever object is described by that format unit.  To force"
 " it to return a tuple of size ``0`` or one, parenthesize the format string."
-msgstr ""
+msgstr ":c:func:`Py_BuildValue` は常にタプルを生成するとは限りません。\nこの関数がタプルを生成するのは、書式化文字列に二つ以上の書式化単位が入っているときだけです。\n書式化文字列が空の場合、 ``None``  を返します; 書式化単位が厳密に一つだけ入っている場合、書式化単位で指定されている何らかのオブジェクト単体を返します。\nサイズが ``0`` や ``1`` のタプルを返すように強制するには、丸括弧で囲われた書式化文字列を使います。"
 
 #: ../../c-api/arg.rst:431
 msgid ""
@@ -745,7 +746,7 @@ msgstr "書式化文字列内では、(``s#`` のような書式化単位を除�
 
 #: ../../c-api/arg.rst:450
 msgid "``s`` (string) [char \\*]"
-msgstr ""
+msgstr "``s`` (文字列型) [char \\*]"
 
 #: ../../c-api/arg.rst:449
 msgid ""
@@ -755,7 +756,7 @@ msgstr "null 終端された C 文字列から Python オブジェクトに変�
 
 #: ../../c-api/arg.rst:454
 msgid "``s#`` (string) [char \\*, int]"
-msgstr ""
+msgstr "``s#`` (文字列型) [char \\*, int]"
 
 #: ../../c-api/arg.rst:453
 msgid ""
@@ -765,7 +766,7 @@ msgstr "C 文字列とその長さから Python オブジェクトに変換し�
 
 #: ../../c-api/arg.rst:457
 msgid "``z`` (string or ``None``) [char \\*]"
-msgstr ""
+msgstr "``z`` (文字列型または ``None``) [char \\*]"
 
 #: ../../c-api/arg.rst:457
 msgid "Same as ``s``."
@@ -773,7 +774,7 @@ msgstr "``s`` と同じです。"
 
 #: ../../c-api/arg.rst:460
 msgid "``z#`` (string or ``None``) [char \\*, int]"
-msgstr ""
+msgstr "``z#`` (文字列型または ``None``) [char \\*, int]"
 
 #: ../../c-api/arg.rst:460
 msgid "Same as ``s#``."
@@ -781,7 +782,7 @@ msgstr "``s#`` と同じです。"
 
 #: ../../c-api/arg.rst:465
 msgid "``u`` (Unicode string) [Py_UNICODE \\*]"
-msgstr ""
+msgstr "``u`` (Unicode 文字列型) [Py_UNICODE \\*]"
 
 #: ../../c-api/arg.rst:463
 msgid ""
@@ -792,7 +793,7 @@ msgstr "null 終端された Unicode (UCS-2 または UCS-4) データのバッ�
 
 #: ../../c-api/arg.rst:470
 msgid "``u#`` (Unicode string) [Py_UNICODE \\*, int]"
-msgstr ""
+msgstr "``u#`` (Unicode 文字列型) [Py_UNICODE \\*, int]"
 
 #: ../../c-api/arg.rst:468
 msgid ""
@@ -807,7 +808,7 @@ msgstr "通常の C の :c:type:`int` を Python の整数オブジェクトに�
 
 #: ../../c-api/arg.rst:476
 msgid "``b`` (integer) [char]"
-msgstr ""
+msgstr "``b`` (整数型) [char]"
 
 #: ../../c-api/arg.rst:476
 msgid "Convert a plain C :c:type:`char` to a Python integer object."
@@ -831,7 +832,7 @@ msgstr "C の :c:type:`unsigned short int` を Python の整数オブジェク�
 
 #: ../../c-api/arg.rst:492
 msgid "``I`` (integer/long) [unsigned int]"
-msgstr ""
+msgstr "``I`` (整数型/長整数型) [unsigned int]"
 
 #: ../../c-api/arg.rst:491
 msgid ""
@@ -841,7 +842,7 @@ msgstr "C の :c:type:`unsigned int` を Python の整数オブジェクト、�
 
 #: ../../c-api/arg.rst:496
 msgid "``k`` (integer/long) [unsigned long]"
-msgstr ""
+msgstr "``k`` (整数型/長整数型) [unsigned long]"
 
 #: ../../c-api/arg.rst:495
 msgid ""
@@ -851,7 +852,7 @@ msgstr "C の :c:type:`unsigned long` を Python の整数オブジェクト、�
 
 #: ../../c-api/arg.rst:500
 msgid "``L`` (long) [PY_LONG_LONG]"
-msgstr ""
+msgstr "``L`` (長整数型) [PY_LONG_LONG]"
 
 #: ../../c-api/arg.rst:499
 msgid ""
@@ -861,7 +862,7 @@ msgstr "C の :c:type:`long long` を Python の長整数オブジェクトに�
 
 #: ../../c-api/arg.rst:504
 msgid "``K`` (long) [unsigned PY_LONG_LONG]"
-msgstr ""
+msgstr "``K`` (長整数型) [unsigned PY_LONG_LONG]"
 
 #: ../../c-api/arg.rst:503
 msgid ""
@@ -871,7 +872,7 @@ msgstr "C の :c:type:`unsigned long long` を Python の長整数オブジェ�
 
 #: ../../c-api/arg.rst:509
 msgid "``n`` (int) [Py_ssize_t]"
-msgstr ""
+msgstr "``n`` (整数型) [Py_ssize_t]"
 
 #: ../../c-api/arg.rst:507
 msgid "Convert a C :c:type:`Py_ssize_t` to a Python integer or long integer."
@@ -893,7 +894,7 @@ msgstr "``d`` と同じです。"
 
 #: ../../c-api/arg.rst:522
 msgid "``D`` (complex) [Py_complex \\*]"
-msgstr ""
+msgstr "``D`` (複素数型) [Py_complex \\*]"
 
 #: ../../c-api/arg.rst:522
 msgid "Convert a C :c:type:`Py_complex` structure to a Python complex number."
@@ -944,7 +945,7 @@ msgstr "C の値からなる配列を、同じ要素数を持つ Python のタ�
 
 #: ../../c-api/arg.rst:552
 msgid "``[items]`` (list) [*matching-items*]"
-msgstr ""
+msgstr "``[items]`` (リスト型) [*matching-items*]"
 
 #: ../../c-api/arg.rst:551
 msgid ""
@@ -954,7 +955,7 @@ msgstr "C の値からなる配列を、同じ要素数を持つ Python のリ�
 
 #: ../../c-api/arg.rst:557
 msgid "``{items}`` (dictionary) [*matching-items*]"
-msgstr ""
+msgstr "``{items}`` (辞書型) [*matching-items*]"
 
 #: ../../c-api/arg.rst:555
 msgid ""

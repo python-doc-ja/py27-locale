@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:05+0000\n"
+"PO-Revision-Date: 2017-03-02 00:43+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +28,7 @@ msgid ""
 "reads and writes a string buffer (also known as *memory files*).  See the "
 "description of file objects for operations (section :ref:`bltin-file-"
 "objects`). (For standard strings, see :class:`str` and :class:`unicode`.)"
-msgstr ""
+msgstr "このモジュールは、(*メモリファイル* としても知られている) 文字列のバッファに対して読み書きを行うファイルのようなクラス、 :class:`~StringIO.StringIO` を実装しています。\n操作方法についてはファイルオブジェクトの説明を参照してください (:ref:`bltin-file-objects` )。\n(通常の文字列については :class:`str` と :class:`unicode` を参照してください)"
 
 #: ../../library/stringio.rst:17
 msgid ""
@@ -35,7 +36,7 @@ msgid ""
 "to an existing string by passing the string to the constructor. If no string"
 " is given, the :class:`~StringIO.StringIO` will start empty. In both cases, "
 "the initial file position starts at zero."
-msgstr ""
+msgstr ":class:`~StringIO.StringIO` オブジェクトを作る際に、コンストラクタに文字列を渡してオブジェクトを初期化できます。\n文字列を渡さない場合、最初は :class:`~StringIO.StringIO` は空です。\nどちらの場合でも最初のファイル位置は 0 から始まります。"
 
 #: ../../library/stringio.rst:22
 msgid ""
@@ -44,13 +45,13 @@ msgid ""
 "strings that cannot be interpreted as 7-bit ASCII (that use the 8th bit) "
 "will cause a :exc:`UnicodeError` to be raised when :meth:`getvalue` is "
 "called."
-msgstr ""
+msgstr ":class:`~StringIO.StringIO` オブジェクトは Unicode も 8 ビットの文字列も受け付けますが、この 2 つを混ぜることには少し注意が必要です。\nこの 2 つが一緒に使われると、 (8  ビット目を使っていて) 7-bit ASCII として解釈できない 8-bit の文字列は、 :meth:`getvalue` が呼ばれたときに :exc:`UnicodeError` を引き起こします。"
 
 #: ../../library/stringio.rst:27
 msgid ""
 "The following methods of :class:`~StringIO.StringIO` objects require special"
 " mention:"
-msgstr ""
+msgstr "次にあげる :class:`~StringIO.StringIO` オブジェクトのメソッドには特別な説明が必要です:"
 
 #: ../../library/stringio.rst:32
 msgid ""
@@ -58,13 +59,13 @@ msgid ""
 ":class:`~StringIO.StringIO` object's :meth:`close` method is called.  See "
 "the note above for information about mixing Unicode and 8-bit strings; such "
 "mixing can cause this method to raise :exc:`UnicodeError`."
-msgstr ""
+msgstr ":class:`~StringIO.StringIO` オブジェクトの :meth:`close` メソッドが呼ばれる前ならいつでも、 \"file\" の中身全体を返します。\nUnicode と 8 ビット文字列を混ぜることの説明は、上の注意を参照してください;\nこの 2 つの文字コードを混ぜると、このメソッドは :exc:`UnicodeError` を引き起こす可能性があります。"
 
 #: ../../library/stringio.rst:40
 msgid ""
 "Free the memory buffer.  Attempting to do further operations with a closed "
 ":class:`~StringIO.StringIO` object will raise a :exc:`ValueError`."
-msgstr ""
+msgstr "メモリバッファを解放します。\nclose された後の :class:`~StringIO.StringIO` オブジェクトを操作しようとすると :exc:`ValueError` が送出されます。"
 
 #: ../../library/stringio.rst:43 ../../library/stringio.rst:112
 msgid "Example usage::"
