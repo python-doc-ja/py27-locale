@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:58+0000\n"
+"PO-Revision-Date: 2017-03-03 00:09+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -201,7 +202,7 @@ msgid ""
 ":class:`Semaphore`, :class:`BoundedSemaphore`, :class:`Condition`, "
 ":class:`Event`, :class:`~multiprocessing.Queue`, :class:`Value` and "
 ":class:`Array`.  For example, ::"
-msgstr ""
+msgstr ":func:`Manager` 関数が返すマネージャは :class:`list` 、 :class:`dict` 、 :class:`~managers.Namespace` 、 :class:`Lock` 、 :class:`RLock` 、 :class:`Semaphore` 、 :class:`BoundedSemaphore` 、 :class:`Condition` 、 :class:`Event` 、 :class:`~multiprocessing.Queue` 、 :class:`Value` 、 :class:`Array` をサポートします。以下にサンプルコードを示します。 ::"
 
 #: ../../library/multiprocessing.rst:249
 msgid ""
@@ -2195,7 +2196,7 @@ msgstr "*authenticate* が ``True`` (デフォルトでは ``False``) か *authk
 msgid ""
 "If *authkey* is a string then it will be used as the authentication key; "
 "otherwise it must be ``None``."
-msgstr ""
+msgstr "*authkey* が文字列の場合、認証キーとして使用されます。そうでない場合は ``None`` でなければいけません。"
 
 #: ../../library/multiprocessing.rst:2022
 msgid ""

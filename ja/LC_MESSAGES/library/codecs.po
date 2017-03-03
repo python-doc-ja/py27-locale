@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:47+0000\n"
+"PO-Revision-Date: 2017-03-02 16:42+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1065,7 +1066,7 @@ msgid ""
 ":exc:`UnicodeEncodeError` that looks like this: ``UnicodeEncodeError: "
 "'latin-1' codec can't encode character u'\\u1234' in position 3: ordinal not"
 " in range(256)``."
-msgstr ""
+msgstr "Unicode 文字列は内部的にはコードポイントのシーケンスとして格納されます (正確に言えば :c:type:`Py_UNICODE` 配列です)。 Python がどのようにコンパイルされたか (デフォルトである ``--enable-unicode=ucs2`` かまたは ``--enable-unicode=ucs4`` のどちらか) によって、 :c:type:`Py_UNICODE` は16ビットまたは32ビットのデータ型です。 Unicode オブジェクトが CPU とメモリの外で使われることになると、 CPU のエンディアンやこれらの配列がバイト列としてどのように格納されるかが問題になってきます。 Unicode オブジェクトをバイト列に変換することをエンコーディングと呼び、バイト列から Unicode オブジェクトを再生することをデコーディングと呼びます。どのようにこの変換を行うかには多くの異なった方法があります (これらの方法のこともエンコーディングと言います) 。最も単純な方法はコードポイント 0--255 をバイト ``0x0``--``0xff`` に写すことです。これは ``U+00FF`` より上のコードポイントを持つ Unicode オブジェクトはこの方法ではエンコードできないということを意味します (この方法を ``'latin-1'`` とか ``'iso-8859-1'`` と呼びます)。 :func:`unicode.encode` は次のような :exc:`UnicodeEncodeError` を送出することになります: ``UnicodeEncodeError: 'latin-1' codec can't encode character u'\\u1234' in position 3: ordinal not in range(256)``"
 
 #: ../../library/codecs.rst:807
 msgid ""
@@ -1075,7 +1076,7 @@ msgid ""
 "simply open e.g. :file:`encodings/cp1252.py` (which is an encoding that is "
 "used primarily on Windows). There's a string constant with 256 characters "
 "that shows you which character is mapped to which byte value."
-msgstr ""
+msgstr "他のエンコーディングの一群 (charmap エンコーディングと呼ばれます) がありますが、 Unicode コードポイントの別の部分集合とこれらがどのように ``0x0``--``0xff`` のバイトに写されるかを選んだものです。これがどのように行なわれるかを知るには、単にたとえば :file:`encodings/cp1252.py` (主に Windows で使われるエンコーディングです) を開いてみてください。256 文字のひとつの文字列定数がありどの文字がどのバイト値に写されるかを示しています。"
 
 #: ../../library/codecs.rst:814
 msgid ""

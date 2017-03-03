@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:00+0000\n"
+"PO-Revision-Date: 2017-03-02 16:33+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1208,7 +1209,7 @@ msgid ""
 "Create a directory named *path* with numeric mode *mode*. The default *mode*"
 " is ``0777`` (octal).  If the directory already exists, :exc:`OSError` is "
 "raised."
-msgstr ""
+msgstr "数値で指定されたモード *mode* をもつディレクトリ *path* を作成します。\n*mode* の標準の値は ``0777`` (8 進) です。\n指定されたディレクトリがすでに存在する場合は :exc:`OSError` 例外が送出されます。"
 
 #: ../../library/os.rst:1230
 msgid ""
@@ -1231,7 +1232,7 @@ msgid ""
 "intermediate-level directories needed to contain the leaf directory.  Raises"
 " an :exc:`error` exception if the leaf directory already exists or cannot be"
 " created.  The default *mode* is ``0777`` (octal)."
-msgstr ""
+msgstr "再帰的なディレクトリ作成関数です。 :func:`mkdir` に似ていますが、末端 (leaf) となるディレクトリを作成するために必要な中間の全てのディレクトリを作成します。末端ディレクトリがすでに存在する場合や、作成ができなかった場合には :exc:`error` 例外を送出します。 *mode* の標準の値は ``0777`` (8 進) です。"
 
 #: ../../library/os.rst:1253
 msgid ""

@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:42+0000\n"
+"PO-Revision-Date: 2017-03-02 15:08+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1638,7 +1639,7 @@ msgid ""
 "the elements of a list by a metric which maps each element to its \"sort "
 "value\". In Python, use the ``key`` argument for the :func:`sort()` "
 "function::"
-msgstr ""
+msgstr "Perl コミュニティの Randal Schwartz の作とされるこのテクニックは、それぞれの要素に「ソート値」を対応付けるある尺度によって、リストの要素をソートします。\nPython では、 :func:`sort()` 関数で ``key`` 引数を使ってください::"
 
 #: ../../faq/programming.rst:1470
 msgid "How can I sort one list by values from another list?"

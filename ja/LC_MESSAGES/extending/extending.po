@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:40+0000\n"
+"PO-Revision-Date: 2017-03-02 15:44+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -841,7 +842,7 @@ msgid ""
 "(including Mac OS X) or by removing the definition of ``WITH_CYCLE_GC`` in "
 "the :file:`pyconfig.h` header on other platforms.  If the cycle detector is "
 "disabled in this way, the :mod:`gc` module will not be available."
-msgstr ""
+msgstr "循環参照検出機構は、ごみとなった循環参照を検出し、Python で実装されたファイナライザ (finalizer、 :meth:`__del__` メソッド) が定義されていないかぎり、それらのメモリを再利用できます。後始末関数がある場合、検出機構は検出した循環参照を :mod:`gc` モジュールに (具体的にはこのモジュールの :attr:`~gc.garbage` 変数内) に公開します。 :mod:`gc` モジュールではまた、検出機構 (:func:`~gc.collect` 関数) を実行する方法や設定用のインタフェース、実行時に検出機構を無効化する機能も公開しています。循環参照検出機構はオプションの機構とみなされています; デフォルトで入ってはいますが、Unix プラットフォーム (Mac OS X も含みます) ではビルド時に :program:`configure` スクリプトの :option:`!--without-cycle-gc` オプションを使って、他のプラットフォームでは :file:`pyconfig.h` ヘッダの ``WITH_CYCLE_GC`` 定義をはずして無効にできます。こうして循環参照検出機構を無効化すると、 :mod:`gc` モジュールは利用できなくなります。"
 
 #: ../../extending/extending.rst:871
 msgid "Reference Counting in Python"

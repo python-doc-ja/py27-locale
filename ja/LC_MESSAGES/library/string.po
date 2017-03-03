@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:05+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
+"PO-Revision-Date: 2017-03-02 16:20+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -131,7 +132,7 @@ msgid ""
 ":mod:`string` module allows you to create and customize your own string "
 "formatting behaviors using the same implementation as the built-in "
 ":meth:`~str.format` method."
-msgstr ""
+msgstr "組み込みの str 、および、 unicode クラスは、 :pep:`3101` に記載される :meth:`str.format` メソッドによる、複雑な変数置換と値の書式指定を提供します。 :mod:`string` モジュールの :class:`Formatter` クラスは組み込みの :meth:`~str.format` メソッドと同じ実装で、文字列の書式指定の作成とカスタマイズを可能にします。"
 
 #: ../../library/string.rst:122
 msgid "The :class:`Formatter` class has the following public methods:"

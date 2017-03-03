@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:37+0000\n"
+"PO-Revision-Date: 2017-03-02 15:23+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -308,7 +309,7 @@ msgstr "2.6.6 より前のバージョンでは、 :c:func:`PySys_SetArgv` の�
 msgid ""
 "This function works like :c:func:`PySys_SetArgvEx` with *updatepath* set to "
 "``1``."
-msgstr ""
+msgstr ":c:func:`PySys_SetArgvEx` の *updatepath* に ``1`` を設定したのと同じように動作します。"
 
 #: ../../c-api/init.rst:321
 msgid ""

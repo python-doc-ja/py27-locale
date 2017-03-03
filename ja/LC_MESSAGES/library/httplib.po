@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:55+0000\n"
+"PO-Revision-Date: 2017-03-02 16:16+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -43,7 +44,7 @@ msgstr "このモジュールでは HTTP および HTTPS プロトコルのク�
 msgid ""
 "The `Requests package <http://requests.readthedocs.org/>`_ is recommended "
 "for a higher-level HTTP client interface."
-msgstr ""
+msgstr "より高水準の HTTP クライアントインターフェイスとしては `Requests package <http://requests.readthedocs.org/>`_ がお奨めです。"
 
 #: ../../library/httplib.rst:34
 msgid ""
@@ -77,7 +78,7 @@ msgid ""
 "timeout setting is used). The optional *source_address* parameter may be a "
 "tuple of a (host, port) to use as the source address the HTTP connection is "
 "made from."
-msgstr ""
+msgstr ":class:`HTTPConnection` インスタンスは、HTTP サーバとの一回のトランザクションを表現します。インスタンスの生成はホスト名とオプションのポート番号を与えて行います。ポート番号を指定しなかった場合、ホスト名文字列が ``host:port`` の形式であれば、ホスト名からポート番号を導き、そうでない場合には標準の HTTP ポート番号 (80) を使います。オプションパラメータ *strict* (デフォルトは偽) を真にすると、ステータス行が HTTP/1.0 あるいは HTTP/1.1 として解釈出来ない場合に ``BadStatusLine`` を送出します。オプションの引数 *timeout* が渡された場合、ブロックする処理 (コネクション接続など) のタイムアウト時間 (秒数) として利用されます (渡されなかった場合は、グローバルのデフォルトタイムアウト設定が利用されます)。オプションの引数 *source_address* を (host, port) という形式のタプルにすると HTTP 接続の接続元アドレスとして使用します。"
 
 #: ../../library/httplib.rst:61
 msgid ""

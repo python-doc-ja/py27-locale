@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:08+0000\n"
+"PO-Revision-Date: 2017-03-02 16:12+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -38,7 +38,7 @@ msgstr ":mod:`urllib2` モジュールは基本的な認証、暗号化認証、
 msgid ""
 "The `Requests package <http://requests.readthedocs.org/>`_ is recommended "
 "for a higher-level HTTP client interface."
-msgstr ""
+msgstr "より高水準の HTTP クライアントインターフェイスとしては `Requests package <http://requests.readthedocs.org/>`_ がお奨めです。"
 
 #: ../../library/urllib2.rst:27
 msgid "The :mod:`urllib2` module defines the following functions:"
