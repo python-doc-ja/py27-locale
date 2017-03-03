@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-25 13:13+0000\n"
+"PO-Revision-Date: 2017-03-03 15:19+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1487,7 +1488,7 @@ msgid ""
 "foreign function accepts.  For example, a :class:`c_char_p` item in the "
 ":attr:`argtypes` tuple will convert a unicode string passed as argument into"
 " a byte string using ctypes conversion rules."
-msgstr ""
+msgstr "外部関数が呼ばれたとき、それぞれの実引数は :attr:`argtypes` タプルの要素の :meth:`from_param` クラスメソッドへ渡されます。このメソッドは実引数を外部関数が受け取るオブジェクトに合わせて変えられるようにします。例えば、 :attr:`argtypes` タプルの :class:`c_char_p` 要素は、 ctypes 変換規則にしたがって引数として渡された Unicode 文字列をバイト文字列へ変換します。"
 
 #: ../../library/ctypes.rst:1582
 msgid ""
@@ -1815,13 +1816,13 @@ msgid ""
 "array is a NUL termination character. An integer can be passed as second "
 "argument which allows specifying the size of the array if the length of the "
 "string should not be used."
-msgstr ""
+msgstr "第一引数として Unicode 文字列が指定された場合は、バッファが文字列の長さより一要素分大きく作られます。それは配列の最後の要素が NUL 終端文字であるためです。文字列の長さを使うべきでない場合は、配列のサイズを指定するために整数を第二引数として渡すことができます。"
 
 #: ../../library/ctypes.rst:1877
 msgid ""
 "If the first parameter is an 8-bit string, it is converted into a unicode "
 "string according to ctypes conversion rules."
-msgstr ""
+msgstr "第一引数が 8 ビット文字列ならば、 ctypes 変換規則にしたがい Unicode 文字列へ変換されます。"
 
 #: ../../library/ctypes.rst:1883
 msgid ""
@@ -2434,7 +2435,7 @@ msgid ""
 ":mod:`ctypes` will create descriptors in the structure type that allow "
 "accessing the nested fields directly, without the need to create the "
 "structure or union field."
-msgstr ""
+msgstr "この変数に並べあげられたフィールドは構造体型もしくは共用体型フィールドでなければなりません。構造体フィールドまたは共用体フィールドを作る必要なく、入れ子になったフィールドに直接アクセスできるようにするために、 :mod:`ctypes` は構造体型の中に記述子を作成します。"
 
 #: ../../library/ctypes.rst:2473
 msgid "Here is an example type (Windows)::"

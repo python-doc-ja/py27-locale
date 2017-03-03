@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:39+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
+"PO-Revision-Date: 2017-03-03 15:24+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -403,7 +404,7 @@ msgstr "それぞれの簡単な説明を以下に記します。完全な説明
 msgid ""
 "The Extension class describes a single C or C++ extension module in a setup "
 "script. It accepts the following keyword arguments in its constructor"
-msgstr ""
+msgstr "Extension クラスは、セットアップスクリプト中で C または C++ 拡張モジュールを表します。\nコンストラクタで以下のキーワード引数をとります"
 
 #: ../../distutils/apiref.rst:177
 msgid ""
