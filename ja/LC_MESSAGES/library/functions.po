@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:53+0000\n"
+"PO-Revision-Date: 2017-03-05 03:18+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -956,7 +957,7 @@ msgstr "(任意のサイズの) 整数を、先頭に \"0x\" が付いた小文�
 msgid ""
 "If x is not a Python :class:`int` or :class:`long` object, it has to define "
 "a __hex__() method that returns a string."
-msgstr ""
+msgstr "x が Python の :class:`int` オブジェクトでも :class:`long` オブジェクトでもない場合、文字列を返す :meth:`__hex__()` メソッドを定義していなければなりません。"
 
 #: ../../library/functions.rst:622
 msgid ""
@@ -1025,7 +1026,7 @@ msgid ""
 "``0b``/``0B``, ``0o``/``0O``/``0``, or ``0x``/``0X``, as with integer "
 "literals in code. Base 0 means to interpret the string exactly as an integer"
 " literal, so that the actual base is 2, 8, 10, or 16."
-msgstr ""
+msgstr "*x* が数値でない場合、あるいは *base* が与えられた場合、 *x* は基数 *base* の :ref:`integer literal <integers>` で表された、バイト文字列または Unicode 文字列、 のインスタンスでなければなりません。オプションで、リテラルの前に ``+`` あるいは ``-`` を (中間のスペースなしで) 付けることができます。また、リテラルは余白で囲むことができます。基数 n のリテラルの各桁は 0 から n-1 の数を、値 10-35 を持つ ``a`` から ``z`` (または ``A`` から ``Z``) を含んで表現します。デフォルトの *base* は 10 です。許される値は 0 と 2-36 です。基数 2, 8, 16 のリテラルは、オプションでコード中の整数リテラルのように  ``0b``/``0B``, ``0o``/``0O``/``0``, ``0x``/``0X`` を前に付けることができます。基数 0 を渡すと、文字列を、実際の基数 2, 8, 10, 16 のどれかで整数リテラルとして正確に解釈します。"
 
 #: ../../library/functions.rst:679
 msgid "The integer type is described in :ref:`typesnumeric`."
@@ -1884,7 +1885,7 @@ msgid ""
 "namespace containing definitions for class body and becomes the "
 ":attr:`~object.__dict__`  attribute.  For example, the following two "
 "statements create identical :class:`type` objects:"
-msgstr ""
+msgstr "引数が 3 つの場合、新しい型オブジェクトを返します。本質的には :keyword:`class` 文の動的な形式です。 *name* 文字列はクラス名で、 :attr:`~definition.__name__` 属性になります。 *bases* タプルは基底クラスの羅列で、 :attr:`~class.__bases__` 属性になります。 *dict* 辞書はクラス本体の定義を含む名前空間で、 :attr:`~object.__dict__` 属性になります。たとえば、以下の二つの文は同じ :class:`type` オブジェクトを作ります:"
 
 #: ../../library/functions.rst:1496
 msgid ""
@@ -1960,7 +1961,7 @@ msgid ""
 ":attr:`~object.__dict__` attribute; however, other objects may have write "
 "restrictions on their :attr:`~object.__dict__` attributes (for example, new-"
 "style classes use a dictproxy to prevent direct dictionary updates)."
-msgstr ""
+msgstr "モジュールやインスタンスのようなオブジェクトには、更新可能な :attr:`~object.__dict__` 属性があります。しかし、それ以外のオブジェクトでは :attr:`~object.__dict__` 属性への書き込みに制限があるかもしれません。(例えば新スタイルクラスは、辞書を直接更新されることを防ぐために dictproxy を使っています。)"
 
 #: ../../library/functions.rst:1555
 msgid ""

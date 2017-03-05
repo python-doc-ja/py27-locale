@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:59+0000\n"
+"PO-Revision-Date: 2017-03-05 04:21+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -296,7 +297,7 @@ msgid ""
 "Return ``True`` if both pathname arguments refer to the same file or "
 "directory (as indicated by device number and i-node number). Raise an "
 "exception if an :func:`os.stat` call on either pathname fails."
-msgstr ""
+msgstr "2 つの引数であるパス名が同じファイルあるいはディレクトリを指していれば (同じデバイスナンバーと i-node ナンバーで示されていれば ) 、 ``True`` を返します。どちらかのパス名で :func:`os.stat` の呼び出しに失敗した場合には、例外が発生します。"
 
 #: ../../library/os.path.rst:262 ../../library/os.path.rst:269
 #: ../../library/os.path.rst:279

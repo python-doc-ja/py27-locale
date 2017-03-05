@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:10+0000\n"
+"PO-Revision-Date: 2017-03-05 02:55+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -137,7 +138,7 @@ msgid ""
 "object can be discarded or reset. As a limitation, the current "
 "implementation only accepts byte streams; processing of character streams is"
 " for further study."
-msgstr ""
+msgstr "入力ソースを処理し、SAX イベントを作成します。 *source* オブジェクトはシステム識別子 (入力ソースを特定する文字列 -- 一般にファイル名や URL)、ファイル様オブジェクト、または :class:`InputSource` オブジェクトです。 :meth:`parse` が return したとき、入力データの処理は完了し、パーサ・オブジェクトは破棄ないしリセットされます。制限として、現在の実装はバイト・ストリームのみをサポートしており、文字ストリームの処理は将来の課題になっています。"
 
 #: ../../library/xml.sax.reader.rst:112
 msgid "Return the current :class:`~xml.sax.handler.ContentHandler`."

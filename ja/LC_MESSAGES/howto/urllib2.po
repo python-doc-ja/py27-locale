@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:44+0000\n"
+"PO-Revision-Date: 2017-03-05 02:32+0000\n"
 "Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -497,7 +497,7 @@ msgstr "現在 ``urllib2`` はプロキシ経由で ``https`` ロケーション
 msgid ""
 "``HTTP_PROXY`` will be ignored if a variable ``REQUEST_METHOD`` is set; see "
 "the documentation on :func:`~urllib.getproxies`."
-msgstr ""
+msgstr "変数 ``REQUEST_METHOD`` が設定されている場合、 ``HTTP_PROXY`` は無視されます; :func:`~urllib.getproxies` のドキュメンテーションを参照してください。"
 
 #: ../../howto/urllib2.rst:535
 msgid "Sockets and Layers"
