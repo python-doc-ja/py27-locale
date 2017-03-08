@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:05+0000\n"
+"PO-Revision-Date: 2017-03-08 01:37+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -370,7 +371,7 @@ msgid ""
 "yields an imaginary number (a complex number with a zero real part) which "
 "you can add to an integer or float to get a complex number with real and "
 "imaginary parts."
-msgstr ""
+msgstr "数値は、数値リテラルや組み込み関数や演算子の戻り値として生成されます。\n修飾のない整数リテラル ( 2 進表現や、 16 進表現や 8 進表現の値も含みます) は、通常の整数値を表します。\n値が通常の整数で表すには大きすぎる場合、 ``'L'`` または ``'l'`` が末尾につく整数リテラルは長整数型を表します (``'L'`` が望ましいです。というのは ``1l`` は 11 と非常に紛らわしいからです!)。\n小数点または指数表記のある数値リテラルは浮動小数点数を表します。\n数値リテラルに ``'j'`` または ``'J'`` をつけると虚数 (実数部がゼロの複素数) を表し、それと整数や浮動小数点数を足すと実部と虚部を持つ複素数が得られます。"
 
 #: ../../library/stdtypes.rst:287
 msgid ""
@@ -617,7 +618,7 @@ msgstr ":func:`round(x[, n]) <round>`"
 msgid ""
 "*x* rounded to *n* digits, rounding ties away from zero. If *n* is omitted, "
 "it defaults to 0."
-msgstr ""
+msgstr "*x* を *n* 桁に丸めます。丸め方は四捨五入です。 *n* が省略されれば 0 がデフォルトとなります。(--訳注: Python 3 と仕様が違うので注意してください。1.5 と 2.5 の round は、Python 2 ではそれぞれ 2、3 となり、Python 3 では 2、2 となります。後者の丸めは .5 を丸める際に偶数になる方へ丸めるので、「偶数丸め」と言います。--)"
 
 #: ../../library/stdtypes.rst:406
 msgid ":func:`math.floor(\\ x) <math.floor>`"
@@ -625,7 +626,7 @@ msgstr ":func:`math.floor(\\ x) <math.floor>`"
 
 #: ../../library/stdtypes.rst:406
 msgid "the greatest integer as a float <= *x*"
-msgstr ""
+msgstr "*x* 以下の最大の整数を浮動小数点数として返します"
 
 #: ../../library/stdtypes.rst:409
 msgid ":func:`math.ceil(x) <math.ceil>`"
@@ -633,7 +634,7 @@ msgstr ":func:`math.ceil(x) <math.ceil>`"
 
 #: ../../library/stdtypes.rst:409
 msgid "the least integer as a float >= *x*"
-msgstr ""
+msgstr "*x* 以上の最小の整数を浮動小数点数として返します"
 
 #: ../../library/stdtypes.rst:419
 msgid "Bitwise Operations on Integer Types"
@@ -1141,7 +1142,7 @@ msgid ""
 "If *i* or *j* is negative, the index is relative to the end of sequence *s*:"
 " ``len(s) + i`` or ``len(s) + j`` is substituted.  But note that ``-0`` is "
 "still ``0``."
-msgstr ""
+msgstr "*i* または *j* が負の数の場合、インデクスはシーケンスの末端からの相対インデクスになります: ``len(s) + i`` または ``len(s) + j`` が代わりに使われます。\nただし ``-0`` はやはり ``0`` であることに注意してください。"
 
 #: ../../library/stdtypes.rst:827
 msgid ""
@@ -1525,7 +1526,7 @@ msgstr "文字列を改行部分で分解し、各行からなるリストを返
 msgid ""
 "Python recognizes ``\"\\r\"``, ``\"\\n\"``, and ``\"\\r\\n\"`` as line "
 "boundaries for 8-bit strings."
-msgstr ""
+msgstr "Python は ``\"\\r\"``, ``\"\\n\"``, ``\"\\r\\n\"`` を 8-bit 文字列の行の境界として認識します。"
 
 #: ../../library/stdtypes.rst:1225
 msgid "For example::"
@@ -2208,7 +2209,7 @@ msgstr "``s.extend(t)`` または ``s += t``"
 
 #: ../../library/stdtypes.rst:1673
 msgid "for the most part the same as ``s[len(s):len(s)] = t``"
-msgstr ""
+msgstr "``s[len(s):len(s)] = t`` とほとんど同じです"
 
 #: ../../library/stdtypes.rst:1676
 msgid "``s *= n``"
@@ -2232,7 +2233,7 @@ msgstr "``s.index(x[, i[, j]])``"
 
 #: ../../library/stdtypes.rst:1682
 msgid "return smallest *k* such that ``s[k] == x`` and ``i <= k < j``"
-msgstr "``s[k] == x`` かつ ``i <= k < j`` となる最小の *k* を返します。"
+msgstr "``s[k] == x`` かつ ``i <= k < j`` となる最小の *k* を返します"
 
 #: ../../library/stdtypes.rst:1686
 msgid "``s.insert(i, x)``"
@@ -2291,7 +2292,7 @@ msgstr "かつての Python の C 実装では、複数パラメタを受理し�
 
 #: ../../library/stdtypes.rst:1711
 msgid "*t* can be any iterable object."
-msgstr ""
+msgstr "*x* は任意のイテラブルオブジェクトにできます。"
 
 #: ../../library/stdtypes.rst:1714
 msgid ""
@@ -2645,7 +2646,7 @@ msgstr "また、:meth:`__contains__`, :meth:`remove`, および :meth:`discard`
 
 #: ../../library/stdtypes.rst:2013
 msgid ":ref:`comparison-to-builtin-set`"
-msgstr ""
+msgstr ":ref:`comparison-to-builtin-set`"
 
 #: ../../library/stdtypes.rst:2014
 msgid "Differences between the :mod:`sets` module and the built-in set types."
@@ -3833,7 +3834,7 @@ msgstr "クラスオブジェクトの基底クラスのタプルです。"
 msgid ""
 "The name of the class, type, function, method, descriptor, or generator "
 "instance."
-msgstr ""
+msgstr "クラス、型、関数、メソッド、デスクリプタ、ジェネレータインスタンスの名前です。"
 
 #: ../../library/stdtypes.rst:3166
 msgid ""
