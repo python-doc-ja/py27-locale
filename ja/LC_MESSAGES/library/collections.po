@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:47+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
+"PO-Revision-Date: 2017-03-09 08:29+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -227,7 +228,7 @@ msgid ""
 "`Counter class <https://code.activestate.com/recipes/576611/>`_ adapted for "
 "Python 2.5 and an early `Bag recipe "
 "<https://code.activestate.com/recipes/259174/>`_ for Python 2.4."
-msgstr ""
+msgstr "Python 2.5 向けの `Counter class <https://code.activestate.com/recipes/576611/>`_ と、それより前の Python 2.4 向けの `Bag recipe <https://code.activestate.com/recipes/259174/>`_ 。"
 
 #: ../../library/collections.rst:203
 msgid "in Smalltalk."
