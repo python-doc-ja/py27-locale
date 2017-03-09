@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:47+0000\n"
+"PO-Revision-Date: 2017-03-09 06:59+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -349,13 +350,13 @@ msgstr "環境変数、またはファイルからからクエリを解釈しま
 msgid ""
 "This function is deprecated in this module. Use :func:`urlparse.parse_qs` "
 "instead. It is maintained here only for backward compatibility."
-msgstr ""
+msgstr "この関数はこのモジュールでは廃止予定です。代わりに :func:`urlparse.parse_qs` を利用してください。この関数は後方互換性のためだけに残されています。"
 
 #: ../../library/cgi.rst:302
 msgid ""
 "This function is deprecated in this module. Use :func:`urlparse.parse_qsl` "
 "instead. It is maintained here only for backward compatibility."
-msgstr ""
+msgstr "この関数はこのモジュールでは廃止予定です。代わりに :func:`urlparse.parse_qsl` を利用してください。この関数は後方互換性のためだけに残されています。"
 
 #: ../../library/cgi.rst:307
 msgid ""

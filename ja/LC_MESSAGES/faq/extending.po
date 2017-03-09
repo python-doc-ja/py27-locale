@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:41+0000\n"
+"PO-Revision-Date: 2017-03-09 05:30+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -74,7 +75,7 @@ msgid ""
 " that accept a slightly modified form of Python and generate the "
 "corresponding C code.  Pyrex makes it possible to write an extension without"
 " having to learn Python's C API."
-msgstr ""
+msgstr "`Cython <http://cython.org>`_ とその親戚 `Pyrex <https://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/>`_ は、わずかに修正された Python を受け取り、対応する C コードを生成します。\nPyrex を使えば Python の C API を習得することなしに拡張を書けます。"
 
 #: ../../faq/extending.rst:53
 msgid ""

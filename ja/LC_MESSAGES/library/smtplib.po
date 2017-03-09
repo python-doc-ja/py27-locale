@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:04+0000\n"
+"PO-Revision-Date: 2017-03-09 06:02+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -47,7 +48,7 @@ msgid ""
 "like the connection attempt (if not specified, the global default timeout "
 "setting will be used).  If the timeout expires, :exc:`socket.timeout` is "
 "raised."
-msgstr ""
+msgstr ":class:`SMTP` インスタンスはSMTPコネクションをカプセル化し、 SMTPとESMTPの命令をサポートをします。オプションであるhostとportを与えた場合は、 SMTPクラスのインスタンスが作成されると同時に、 :meth:`connect` メソッドを呼び出し初期化されます。:meth:`connect` 呼び出しが成功コード以外を返した場合、 :exc:`SMTPConnectError` 例外が送出されます。*local_hostname* を指定する場合、これは HELO/EHLO コマンドでのローカルホストの FQDN として使われます。指定しない場合はローカルホスト名は :func:`socket.getfqdn` が使われます。オプションの *timeout* 引数を与える場合、コネクションの接続時などのブロックする操作におけるタイムアウト時間を秒数で設定します。(指定されなかった場合は、グローバルのデフォルトタイムアウト設定が利用されます)。タイムアウトに達すると :exc:`socket.timeout` 例外が送出されます。"
 
 #: ../../library/smtplib.rst:38
 msgid ""
@@ -74,7 +75,7 @@ msgid ""
 "operations like the connection attempt (if not specified, the global default"
 " timeout setting will be used).  If the timeout expires, "
 ":exc:`socket.timeout` is raised."
-msgstr ""
+msgstr ":class:`SMTP_SSL` のインスタンスは :class:`SMTP` のインスタンスと全く同じように動作します。 :class:`SMTP_SSL` は、接続の最初の段階からSSLが要求され、 :meth:`starttls` では対応できない場合にのみ利用されるべきです。 *host* が指定されなかった場合は、localhostが利用されます。 *port* が指定されなかった場合は、標準の SMTP-over-SSL ポート(465) が利用されます。 *local_hostname* は :class:`SMTP` クラスのものと同じです。 *keyfile* と *certfile* もオプションで、SSL接続のための、PEMフォーマットのプライベートキーと、証明パス (certificate chain) ファイルを指定することができます。オプションの *timeout* 引数を与える場合、コネクションの接続時などのブロックする操作におけるタイムアウト時間を秒数で設定します (指定されなかった場合は、グローバルのデフォルトタイムアウト設定が利用されます)。タイムアウトに達すると :exc:`socket.timeout` 例外が送出されます。"
 
 #: ../../library/smtplib.rst:66
 msgid ""

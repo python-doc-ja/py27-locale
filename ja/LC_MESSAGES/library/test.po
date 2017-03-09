@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:06+0000\n"
+"PO-Revision-Date: 2017-03-09 07:38+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -196,7 +197,7 @@ msgid ""
 ":mod:`test.regrtest` with all resources except the ``audio`` and "
 "``largefile`` resources. For a list of all resources and more command-line "
 "options, run :program:`python -m test.regrtest -h`."
-msgstr ""
+msgstr "直接 :mod:`test.regrtest` を実行すると、テストに利用するリソースを設定できます。これを行うには、 ``-u`` コマンドラインオプションを使います。 ``-u`` のオプションに ``all`` を指定すると、すべてのリソースを有効にします: :program:`python -m test.regrtest -uall` 。(よくある場合ですが) 何か一つを除く全てが必要な場合、カンマで区切った不要なリソースのリストを ``all`` の後に並べます。コマンド :program:`python -m test.regrtest -uall,-audio,-largefile` とすると、 ``audio`` と ``largefile`` リソースを除く全てのリソースを使って :mod:`test.regrtest` を実行します。すべてのリソースのリストと追加のコマンドラインオプションを出力するには、 :program:`python -m test.regrtest -h` を実行してください。"
 
 #: ../../library/test.rst:182
 msgid ""
@@ -457,7 +458,7 @@ msgstr "指定されたモジュールと *fresh* や *blocked* 引数内のモ�
 msgid ""
 "This function will raise :exc:`unittest.SkipTest` if the named module cannot"
 " be imported."
-msgstr ""
+msgstr "この関数はモジュールを import できなかった場合に :exc:`unittest.SkipTest` 例外を送出します。"
 
 #: ../../library/test.rst:436
 msgid "The :mod:`test.test_support` module defines the following classes:"

@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:06+0000\n"
+"PO-Revision-Date: 2017-03-09 06:26+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -170,7 +171,7 @@ msgid ""
 "For modes ``'w:gz'``, ``'r:gz'``, ``'w:bz2'``, ``'r:bz2'``, "
 ":func:`tarfile.open` accepts the keyword argument *compresslevel* (default "
 "``9``) to specify the compression level of the file."
-msgstr ""
+msgstr "``'w:gz'``、``'r:gz'``、``'w:bz2'``、``'r:bz2'`` モードの場合、:func:`tarfile.open` はファイルの圧縮レベルを指定するキーワード引数 *compresslevel* (デフォルトは ``9``) を受け付けます。"
 
 #: ../../library/tarfile.rst:85
 msgid ""
@@ -184,7 +185,7 @@ msgid ""
 "file object or a tape device. However, such a :class:`TarFile` object is "
 "limited in that it does not allow random access, see :ref:`tar-examples`.  "
 "The currently possible modes:"
-msgstr ""
+msgstr "特別な目的のために、*mode* には 2 番目の形式: ``'ファイルモード|[圧縮方式]'`` があります。この形式を使うと、:func:`tarfile.open` が返すのは、データをブロックからなるストリームとして扱う :class:`TarFile` オブジェクトになります。この場合、ファイルに対してランダムなシークが行えなくなります。*fileobj* を指定する場合、 :meth:`read` および :meth:`write` メソッドを持つ (*mode* に依存した) 任意のオブジェクトにできます。*bufsize* にはブロックサイズを指定します。デフォルトは ``20 * 512`` バイトです。``sys.stdin``、ソケットファイルオブジェクト、あるいはテープデバイスと組み合わせる場合にはこの形式を使ってください。ただし、このような :class:`TarFile` オブジェクトにはランダムアクセスを行えないという制限があります。:ref:`tar-examples` 節を参照してください。現在可能なモードは以下のとおりです。"
 
 #: ../../library/tarfile.rst:97
 msgid "Mode"
@@ -626,7 +627,7 @@ msgid ""
 "given, ``tarinfo.size`` bytes are read from it and added to the archive.  "
 "You can create :class:`TarInfo` objects directly, or by using "
 ":meth:`gettarinfo`."
-msgstr ""
+msgstr ":class:`TarInfo` オブジェクト *tarinfo* をアーカイブに追加します。\n*fileobj* が与えられている場合は、``tarinfo.size`` バイトがそれから読まれ、アーカイブに追加されます。\n:class:`TarInfo` オブジェクトは直接もしくは :meth:`gettarinfo` を使って作成することができます。"
 
 #: ../../library/tarfile.rst:444
 msgid ""
@@ -642,7 +643,7 @@ msgid ""
 "*arcname* specifies an alternative name for the file in the archive, "
 "otherwise, the name is taken from *fileobj*’s :attr:`~file.name` attribute, "
 "or the *name* argument."
-msgstr ""
+msgstr ":func:`os.stat` の結果か、既存のファイルに相当するものから、:class:`TarInfo` オブジェクトを作成します。このファイルは、*name* で名付けられるか、ファイル記述子を持つ :term:`file object` *fileobj* として指定されます。*arcname* が与えられた場合、アーカイブ内のファイルに対して代替名を指定します。与えられない場合、名前は *fileobj* の :attr:`~file.name` 属性、もしくは *name* 引数から取られます。"
 
 #: ../../library/tarfile.rst:457
 msgid ""

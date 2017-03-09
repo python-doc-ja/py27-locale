@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:40+0000\n"
+"PO-Revision-Date: 2017-03-09 04:31+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -337,7 +338,7 @@ msgid ""
 "*after* the standard include set, so you can exclude files from the standard"
 " set with explicit instructions in the manifest template.  (Or, you can use "
 "the :option:`!--no-defaults` option to disable the standard set entirely.)"
-msgstr ""
+msgstr "各行はかなり明確に意味を取れるはずです: 上の指定では、 :file:`*.txt` にマッチする配布物ルート下の全てのファイル、 :file:`examples` ディレクトリ下にある :file:`*.txt` か :file:`*.py` にマッチする全てのファイルを含め、 :file:`examples/sample?/build` にマッチする全てのファイルを除外します。これらの処理はすべて、標準的に含められるファイルセットの評価よりも *後に* 行われるので、マニフェストテンプレートに明示的に指示をしておけば、標準セット中のファイルも除外できます。 (:option:`!--no-defaults` オプションを設定して、標準セット自体を無効にもできます。)"
 
 #: ../../distutils/sourcedist.rst:194
 msgid ""
