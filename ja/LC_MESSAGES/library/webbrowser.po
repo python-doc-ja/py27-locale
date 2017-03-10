@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 # INADA Naoki <songofacandy@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:09+0000\n"
+"PO-Revision-Date: 2017-03-10 00:51+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +51,7 @@ msgid ""
 "a literal browser command line to be used with the argument URL substituted "
 "for ``%s``; if the part does not contain ``%s``, it is simply interpreted as"
 " the name of the browser to launch. [1]_"
-msgstr ""
+msgstr "環境変数 :envvar:`BROWSER` が存在する場合、プラットフォームのデフォルトであるブラウザのリストをオーバーライドし、 :data:`os.pathsep` で区切られたリストの順にブラウザの起動を試みます。リストの中の値に ``%s`` が含まれていたら、テキストモードのブラウザのコマンドラインとして ``%s`` の代わりにURLが引数として解釈されます; もし ``%s`` が含まれなければ、起動するブラウザの名前として単純に解釈されます。 [1]_"
 
 #: ../../library/webbrowser.rst:29
 msgid ""
@@ -372,7 +373,7 @@ msgstr "Mac OS X プラットフォームのみ。"
 
 #: ../../library/webbrowser.rst:172
 msgid "Support for Chrome/Chromium has been added in version 2.7.5."
-msgstr ""
+msgstr "Chrome/Chromium のサポートがバージョン 2.7.5 で追加されました。"
 
 #: ../../library/webbrowser.rst:174
 msgid "Here are some simple examples::"

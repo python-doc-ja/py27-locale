@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-09 08:29+0000\n"
+"PO-Revision-Date: 2017-03-10 00:48+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -697,7 +697,7 @@ msgstr "列挙型定数は名前付きタプルでも実装できますが、ク
 msgid ""
 "`Named tuple recipe <https://code.activestate.com/recipes/500261/>`_ adapted"
 " for Python 2.4."
-msgstr ""
+msgstr "Python 2.4 向けの `Named tuple recipe <https://code.activestate.com/recipes/500261/>`_ 。"
 
 #: ../../library/collections.rst:794
 msgid ":class:`OrderedDict` objects"
@@ -754,7 +754,7 @@ msgid ""
 "`Equivalent OrderedDict recipe "
 "<https://code.activestate.com/recipes/576693/>`_ that runs on Python 2.4 or "
 "later."
-msgstr ""
+msgstr "Python 2.4 以降で動作する、 `Equivalent OrderedDict recipe <https://code.activestate.com/recipes/576693/>`_ 。"
 
 #: ../../library/collections.rst:836
 msgid ":class:`OrderedDict` Examples and Recipes"
