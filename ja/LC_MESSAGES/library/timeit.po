@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:07+0000\n"
+"PO-Revision-Date: 2017-03-10 15:56+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -251,7 +252,7 @@ msgid ""
 "compare older Python versions to Python 2.3, you may want to use Python's "
 ":option:`!-O` option (see :ref:`Optimizations <using-on-optimizations>`) for"
 " the older versions to avoid timing ``SET_LINENO`` instructions."
-msgstr ""
+msgstr "pass 文の実行による基本的なオーバーヘッドが存在することに注意してください。ここにあるコードはこの事実を隠そうとはしていませんが、注意する必要があります。基本的なオーバーヘッドは引数なしでプログラムを起動することにより計測でき、それは Python のバージョンによって異なるでしょう。 Python 2.3 とそれ以前の Python の公平な比較をおこなう場合、古い Python では :option:`!-O` オプション (:ref:`最適化 <using-on-optimizations>` を参照) を付けて起動して ``SET_LINENO`` 命令の実行時間が含まれないようにする必要があります。"
 
 #: ../../library/timeit.rst:243
 msgid "Examples"

@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 # INADA Naoki <songofacandy@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:50+0000\n"
+"PO-Revision-Date: 2017-03-10 15:36+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -67,7 +68,7 @@ msgid ""
 " whatever level of detail is required is up to the application.  The rules "
 "for time adjustment across the world are more political than rational, and "
 "there is no standard suitable for every application."
-msgstr ""
+msgstr "aware オブジェクトを必要とするアプリケーションのために、 :class:`.datetime` と :class:`.time` オブジェクトは追加のタイムゾーン情報の属性 :attr:`!tzinfo` を持ちます。 :attr:`tzinfo` には抽象クラス :class:`tzinfo` のサブクラスのインスタンスを設定することができます。これらの :class:`tzinfo` オブジェクトは UTC 時間からのオフセットやタイムゾーンの名前、夏時間が実施されるかの情報を保持しています。 :mod:`datetime` モジュールには :class:`tzinfo` の具象クラスは提供されていないので注意してください。より深く詳細までタイムゾーンをサポートするかはアプリケーションに依存します。世界中の時刻の調整を決めるルールは合理的というよりかは政治的なもので、頻繁に変わり、都合のよい基準というものはありません。"
 
 #: ../../library/datetime.rst:46
 msgid "The :mod:`datetime` module exports the following constants:"
@@ -766,7 +767,7 @@ msgid ""
 "Same as :meth:`.date.strftime`. This makes it possible to specify a format "
 "string for a :class:`.date` object when using :meth:`str.format`. See "
 "section :ref:`strftime-strptime-behavior`."
-msgstr ""
+msgstr ":meth:`.date.strftime` と同等です。これのおかげで :meth:`str.format` を使うときに、 :class:`.date` のための書式文字列を指定できます。完全な書式化ディレクティブのリストについては :ref:`strftime-strptime-behavior` を参照してください。"
 
 #: ../../library/datetime.rst:567
 msgid "Example of counting days to an event::"
@@ -846,7 +847,7 @@ msgid ""
 "Return the current UTC date and time, with :attr:`.tzinfo` ``None``. This is"
 " like :meth:`now`, but returns the current UTC date and time, as a naive "
 ":class:`.datetime` object. See also :meth:`now`."
-msgstr ""
+msgstr ":attr:`.tzinfo` が ``None`` である現在の UTC の日付および時刻を返します。これは :meth:`now` と似ていますが、 naive な :class:`.datetime` オブジェクトとして現在の UTC 日付および時刻を返します。  :meth:`now` も参照してください。"
 
 #: ../../library/datetime.rst:682
 msgid ""
@@ -883,7 +884,7 @@ msgid ""
 "timestamp is out of the range of values supported by the platform C "
 ":c:func:`gmtime` function. It's common for this to be restricted to years in"
 " 1970 through 2038. See also :meth:`fromtimestamp`."
-msgstr ""
+msgstr "POSIX タイムスタンプに対応する、:attr:`.tzinfo` が ``None`` の UTC での :class:`.datetime` を返します。タイムスタンプがプラットフォームにおける C 関数 :c:func:`localtime` でサポートされている範囲を超えている場合には :exc:`ValueError` を送出します。これはたいてい 1970 年から 2038 年に制限されています。 :meth:`fromtimestamp` も参照してください。"
 
 #: ../../library/datetime.rst:712
 msgid ""
@@ -1043,7 +1044,7 @@ msgid ""
 "comparands are aware and have different :attr:`~.datetime.tzinfo` "
 "attributes, the comparands are first adjusted by subtracting their UTC "
 "offsets (obtained from ``self.utcoffset()``)."
-msgstr ""
+msgstr "native と aware を比較しようとすると :exc:`TypeError` が送出されます。比較対象が両方とも aware であり、同じ :attr:`~.datetime.tzinfo` 属性を持つ場合、 :attr:`~.datetime.tzinfo` は無視され datetime だけで比較が行われます。比較対象が両方とも aware であり、異なる :attr:`~.datetime.tzinfo` 属性を持つ場合、まず最初に (``self.utcoffset()`` で取得できる) それぞれの UTC オフセットを引く調整が行われます。"
 
 #: ../../library/datetime.rst:863
 msgid ""
@@ -1257,7 +1258,7 @@ msgid ""
 "Same as :meth:`.datetime.strftime`.  This makes it possible to specify a "
 "format string for a :class:`.datetime` object when using :meth:`str.format`."
 " See section :ref:`strftime-strptime-behavior`."
-msgstr ""
+msgstr ":meth:`.datetime.strftime` と同等です。これのおかげで :meth:`str.format` を使うときに、 :class:`.datetime` のための書式文字列を指定できます。完全な書式化ディレクティブのリストについては :ref:`strftime-strptime-behavior` を参照してください。"
 
 #: ../../library/datetime.rst:1067
 msgid "Examples of working with datetime objects:"
@@ -1329,7 +1330,7 @@ msgid ""
 "when a :class:`.time` object is compared to an object of a different type, "
 ":exc:`TypeError` is raised unless the comparison is ``==`` or ``!=``.  The "
 "latter cases return :const:`False` or :const:`True`, respectively."
-msgstr ""
+msgstr "*a* が時間的に *b* に先行している場合に *a* は *b* より小さいとみなす、 :class:`.time` と :class:`.time` の比較。 native と aware を比較しようとすると :exc:`TypeError` が送出されます。比較対象が両方とも aware であり、同じ :attr:`~time.tzinfo` 属性を持つ場合、 :attr:`~time.tzinfo` は無視され datetime だけで比較が行われます。比較対象が両方とも aware であり、異なる :attr:`~time.tzinfo` 属性を持つ場合、まず最初に (``self.utcoffset()`` で取得できる) それぞれの UTC オフセットを引く調整が行われます。型混合の比較がデフォルトのオブジェクトアドレス比較となってしまうのを抑止するために、 :class:`.time` オブジェクトと異なる型のオブジェクトが比較されると、比較演算子が ``==`` または ``!=`` でないかぎり :exc:`TypeError` が送出されます。後者の場合、それぞれ :const:`False` または :const:`True` を返します。"
 
 #: ../../library/datetime.rst:1255
 msgid "hash, use as dict key"
@@ -1379,7 +1380,7 @@ msgid ""
 "Same as :meth:`.time.strftime`. This makes it possible to specify a format "
 "string for a :class:`.time` object when using :meth:`str.format`. See "
 "section :ref:`strftime-strptime-behavior`."
-msgstr ""
+msgstr ":meth:`.time.strftime` と同等です。これのおかげで :meth:`str.format` を使うときに、 :class:`.time` のための書式文字列を指定できます。完全な書式化ディレクティブのリストについては :ref:`strftime-strptime-behavior` を参照してください。"
 
 #: ../../library/datetime.rst:1303
 msgid ""
@@ -1419,7 +1420,7 @@ msgid ""
 "least) supply implementations of the standard :class:`tzinfo` methods needed"
 " by the :class:`.datetime` methods you use.  The :mod:`datetime` module does"
 " not supply any concrete subclasses of :class:`tzinfo`."
-msgstr ""
+msgstr "これは抽象基底クラスです。つまり、このクラスは直接インスタンス化して利用しません。具体的なサブクラスを派生し、 (少なくとも) 利用したい :class:`datetime` のメソッドが必要とする :class:`tzinfo` の標準メソッドを実装してやる必要があります。 :mod:`datetime` モジュールでは、 :class:`tzinfo` の具体的なサブクラスは何ら提供していません。"
 
 #: ../../library/datetime.rst:1364
 msgid ""

@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:04+0000\n"
+"PO-Revision-Date: 2017-03-10 15:48+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -583,7 +584,7 @@ msgstr "ソケットオブジェクトの型を示す型オブジェクト。 ``
 
 #: ../../library/socket.rst:525
 msgid "Module :mod:`SocketServer`"
-msgstr ""
+msgstr ":mod:`SocketServer` モジュール"
 
 #: ../../library/socket.rst:525
 msgid "Classes that simplify writing network servers."
@@ -839,7 +840,7 @@ msgid ""
 " they can proceed. ``s.setblocking(0)`` is equivalent to "
 "``s.settimeout(0.0)``; ``s.setblocking(1)`` is equivalent to "
 "``s.settimeout(None)``."
-msgstr ""
+msgstr "ソケットのブロッキング・非ブロッキングモードを指定します。 *flag* が0 の場合は非ブロッキングモード、0以外の場合はブロッキングモードとなります。全てのソケットは、初期状態ではブロッキングモードです。非ブロッキングモードでは、 :meth:`recv` メソッド呼び出し時に読み込みデータが無かったり :meth:`send` メソッド呼び出し時にデータを処理する事ができないような場合に :exc:`error` 例外が発生します。しかし、ブロッキングモードでは呼び出しは処理が行われるまでブロックされます。 ``s.setblocking(0)`` は ``s.settimeout(0.0)`` と、 ``s.setblocking(1)`` は ``s.settimeout(None)`` とそれぞれ同じ意味を持ちます。"
 
 #: ../../library/socket.rst:770
 msgid ""
@@ -924,7 +925,7 @@ msgstr ":meth:`read` メソッドと :meth:`write` メソッドは存在しま�
 msgid ""
 "Socket objects also have these (read-only) attributes that correspond to the"
 " values given to the :class:`~socket.socket` constructor."
-msgstr ""
+msgstr "ソケットオブジェクトには以下の :class:`~socket.socket` コンストラクタに渡された値に対応した (読み出し専用) 属性があります。"
 
 #: ../../library/socket.rst:843
 msgid "The socket family."
