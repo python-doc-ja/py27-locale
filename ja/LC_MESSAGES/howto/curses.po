@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:42+0000\n"
+"PO-Revision-Date: 2017-03-12 15:15+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -71,7 +72,7 @@ msgid ""
 "in various ways---adding text, erasing it, changing its appearance---and the"
 " curses library will automagically figure out what control codes need to be "
 "sent to the terminal to produce the right output."
-msgstr ""
+msgstr "curses ライブラリは異なる端末の詳細を全て隠蔽し、プログラマに対して、重なり合わない複数のウィンドウを持つ抽象化されたディスプレイを提供します。ウィンドウの内容は様々な方法で変更されます --- テキストの追加、消去、外観の変更 --- そして curses ライブラリは送るべき制御コードを自動的に理解し、正しい出力を生成してくれます。"
 
 #: ../../howto/curses.rst:42
 msgid ""

@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:11+0000\n"
+"PO-Revision-Date: 2017-03-12 14:59+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -354,7 +355,7 @@ msgid ""
 "ASCII values, but the interpretation of values is up to the program.  The "
 "string data type is also used to represent arrays of bytes, e.g., to hold "
 "data read from a file."
-msgstr ""
+msgstr "文字列の各要素は文字 (character) です。文字型 (character type) は存在しません。単一の文字は、要素が一つだけの文字列として表現されます。各文字は(少なくとも)8-bit の 1 byte を表現します。組み込み関数 :func:`chr` および :func:`ord` を使うと、文字と非負の整数で表されたバイト値の間で変換を行えます。0--127 の値を持つバイト値は、通常同じ ASCII 値をもつ文字を表現していますが、値をどう解釈するかはプログラムにゆだねられています。文字列データ型はまた、例えばファイルから読み出されたデータを記憶するといった用途で、バイト値のアレイを表現するために用いられます。"
 
 #: ../../reference/datamodel.rst:316
 msgid ""
@@ -584,7 +585,7 @@ msgstr "書き込み可能"
 
 #: ../../reference/datamodel.rst:509
 msgid ":attr:`~definition.\\ __name__` :attr:`func_name`"
-msgstr ""
+msgstr ":attr:`~definition.\\ __name__` :attr:`func_name`"
 
 #: ../../reference/datamodel.rst:509
 msgid "The function's name"
@@ -634,7 +635,7 @@ msgstr "読み込み専用"
 
 #: ../../reference/datamodel.rst:533
 msgid ":attr:`~object.\\ __dict__` :attr:`func_dict`"
-msgstr ""
+msgstr ":attr:`~object.\\ __dict__` :attr:`func_dict`"
 
 #: ../../reference/datamodel.rst:533
 msgid "The namespace supporting arbitrary function attributes."
@@ -703,7 +704,7 @@ msgid ""
 "``im_func.__doc__``); :attr:`~definition.__name__` is the method name (same "
 "as ``im_func.__name__``); :attr:`__module__` is the name of the module the "
 "method was defined in, or ``None`` if unavailable."
-msgstr ""
+msgstr "読み出し専用の特殊属性: :attr:`im_self` はクラスインスタンスオブジェクトで、 :attr:`im_func` は関数オブジェクトです; :attr:`im_class` は結合メソッド (bound method) において :attr:`im_self` が属しているクラスか、あるいは非結合メソッド (unbound method) において、要求されたメソッドを定義しているクラスです; :attr:`__doc__` はメソッドのドキュメンテーション文字列 (``im_func.__doc__`` と同じ) です; :attr:`~definition.__name__` はメソッドの名前 (``im_func.__name__`` と同じ) です; :attr:`__module__` はメソッドが定義されているモジュールの名前になるか、モジュール名がない場合は ``None`` になります。"
 
 #: ../../reference/datamodel.rst:579
 msgid ":attr:`im_self` used to refer to the class that defined the method."
@@ -966,7 +967,7 @@ msgid ""
 "attributes retrieved from a class may differ from those actually contained "
 "in its :attr:`~object.__dict__` (note that only new-style classes support "
 "descriptors)."
-msgstr ""
+msgstr "クラス (:class:`C` とします) への属性参照で、要求している属性がユーザ定義関数オブジェクトや、 :class:`C` やその基底クラスに関連付けられている非結合のユーザ定義メソッドオブジェクトである場合、 :attr:`im_class` 属性が :class:`C` であるような非結合ユーザ定義メソッドオブジェクトに変換されます。要求している属性がクラスメソッドオブジェクトの場合、その :attr:`im_self` 属性が :class:`C` であるようなユーザ定義メソッドオブジェクトに変換されます。要求している属性が静的メソッドオブジェクトの場合、静的メソッドオブジェクトでラップされたオブジェクトに変換されます。クラスから取り出した属性と実際に :attr:`~object.__dict__` に入っているものが異なるような他の場合については、 :ref:`descriptors` を参照してください (新スタイルクラスだけがディスクリプタをサポートしていることに注意してください)。"
 
 #: ../../reference/datamodel.rst:814
 msgid ""
@@ -1010,7 +1011,7 @@ msgid ""
 "objects actually stored in the class's :attr:`~object.__dict__`. If no class"
 " attribute is found, and the object's class has a :meth:`__getattr__` "
 "method, that is called to satisfy the lookup."
-msgstr ""
+msgstr "クラスインスタンスはクラスオブジェクト (上記参照) を呼び出して生成します。クラスインスタンスは辞書で実装された名前空間を持っており、属性参照の時にはこの辞書が最初に検索されます。辞書内に属性が見つからず、かつインスタンスのクラスに該当する属性名がある場合、検索はクラス属性にまで広げられます。見つかったクラス属性がユーザ定義関数オブジェクトや、インスタンスのクラス (:class:`C` とします) やその基底クラスに関連付けられている非結合のユーザ定義メソッドオブジェクトの場合、 :attr:`im_class` 属性が :class:`C` で :attr:`im_self` 属性がインスタンスになっている結合ユーザ定義メソッドオブジェクトに変換されます。静的メソッドやクラスメソッドオブジェクトもまた、 :class:`C` から取り出した場合と同様に変換されます; 上記の \"クラス\" を参照してください。クラスから取り出した属性と実際に :attr:`~object.__dict__` に入っているものが異なるような他の場合については、 :ref:`descriptors` 節を参照してください。クラス属性が見つからず、かつオブジェクトのクラスが :meth:`__getattr__` メソッドを持っている場合、このメソッドを呼び出して属性名の検索を充足させます。"
 
 #: ../../reference/datamodel.rst:861
 msgid ""
@@ -1159,7 +1160,7 @@ msgid ""
 "writing to this from within a trace function jumps to the given line (only "
 "for the bottom-most frame).  A debugger can implement a Jump command (aka "
 "Set Next Statement) by writing to f_lineno."
-msgstr ""
+msgstr "書き込み可能な特殊属性: :attr:`f_trace` が ``None`` でない場合、各ソースコード行の先頭で呼び出される関数になります; :attr:`f_exc_type`, :attr:`f_exc_value`, :attr:`f_exc_traceback` は、現在のフレームが以前に引き起こした例外が提供する親フレーム内でもっとも最近捕捉された例外を表します (それ以外の場合は、これらは ``None`` になります); :attr:`f_lineno` はフレーム中における現在の行番号です --- トレース関数 (trace function) 側でこの値に書き込みを行うと、指定した行にジャンプします (最下段の実行フレームにいるときのみ) 。デバッガでは、 f_fileno を書き込むことで、ジャンプ命令 (Set Next Statement 命令とも呼ばれます) を実装できます。"
 
 #: ../../reference/datamodel.rst:1061
 msgid "Traceback objects"
@@ -1571,7 +1572,7 @@ msgid ""
 "value; it is advised to mix together the hash values of the components of "
 "the object that also play a part in comparison of objects by packing them "
 "into a tuple and hashing the tuple. Example::"
-msgstr ""
+msgstr "組み込みの :func:`hash` 関数や、 :class:`set`, :class:`frozenset`, :class:`dict` のようなハッシュを使ったコレクション型の要素に対する操作から呼び出されます。\n:meth:`__hash__` は整数を返さなければなりません。\nこのメソッドに必要な性質は、比較結果が等しいオブジェクトは同じハッシュ値を持つということです;\nオブジェクトを比較するときでも利用される要素をタプルに詰めてハッシュ値を計算することで、それぞれの要素のハッシュ値を混合することをおすすめします。"
 
 #: ../../reference/datamodel.rst:1419
 msgid ""
@@ -1583,7 +1584,7 @@ msgid ""
 " not implement :meth:`__hash__`, since hashable collection implementations "
 "require that an object's hash value is immutable (if the object's hash value"
 " changes, it will be in the wrong hash bucket)."
-msgstr ""
+msgstr "クラスが :meth:`__cmp__` や :meth:`__eq__` メソッドを定義していない場合、 :meth:`__hash__` メソッドも定義してはなりません; クラスが :meth:`__cmp__` または :meth:`__eq__` を定義しているが、 :meth:`__hash__` を定義していない場合、インスタンスを辞書のキーとして使うことはできません。クラスが変更可能なオブジェクトを定義しており、 :meth:`__cmp__` または :meth:`__eq__` メソッドを実装している場合、 :meth:`__hash__` を定義してはなりません。これは、辞書の実装においてハッシュ値が変更不能であることが要求されているからです (オブジェクトのハッシュ値が変化すると、キーが誤ったハッシュバケツ (hash bucket) に入っていることになってしまいます)。"
 
 #: ../../reference/datamodel.rst:1428
 msgid ""

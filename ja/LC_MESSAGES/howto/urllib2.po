@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-05 02:32+0000\n"
-"Last-Translator: 秘湯 <xwhhsprings@gmail.com>\n"
+"PO-Revision-Date: 2017-03-12 15:14+0000\n"
+"Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -99,7 +100,7 @@ msgid ""
 "URL we could have used a URL starting with 'ftp:', 'file:', etc.).  However,"
 " it's the purpose of this tutorial to explain the more complicated cases, "
 "concentrating on HTTP."
-msgstr ""
+msgstr "多くの urllib2 の利用法はこのように簡単です ('http:' の代わりに URL を 'ftp:' や 'file:' 等で始めればできます。)。しかし、このチュートリアルの目的は、得に HTTP に絞って、より複雑な状況を説明することです。"
 
 #: ../../howto/urllib2.rst:64
 msgid ""
@@ -569,4 +570,4 @@ msgstr "私の場合は仕事中にインターネットにアクセスするに
 msgid ""
 "urllib2 opener for SSL proxy (CONNECT method): `ASPN Cookbook Recipe "
 "<https://code.activestate.com/recipes/456195/>`_."
-msgstr ""
+msgstr "urllib2 opener for SSL proxy (CONNECT method): `ASPN Cookbook Recipe <https://code.activestate.com/recipes/456195/>`_."

@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:12+0000\n"
+"PO-Revision-Date: 2017-03-12 15:01+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -309,7 +310,7 @@ msgid ""
 " a :keyword:`break`, :keyword:`continue` or :keyword:`return` statement.  A "
 "more complicated example (having :keyword:`except` and :keyword:`finally` "
 "clauses in the same :keyword:`try` statement works as of Python 2.5)::"
-msgstr ""
+msgstr "*finally 節 (finally clause)* は、例外が発生したかどうかに関わらず、 :keyword:`try` 文を抜ける前に常に実行されます。 :keyword:`try` 節の中で例外が発生して、 :keyword:`except` 節で処理されていない場合、または :keyword:`except` 節か :keyword:`else` 節で例外が発生した場合は、 :keyword:`finally` 節を実行した後、その例外を再送出します。 :keyword:`finally` 節はまた、 :keyword:`try` 節から :keyword:`break` 文や :keyword:`continue` 文、 :keyword:`return` 文経由で抜ける際にも、 \"抜ける途中で\" 実行されます。より複雑な例です (:keyword:`except` 節や :keyword:`finally` 節が同じ :keyword:`try` 文の中にあって、 Python 2.5 以降で動作します)。"
 
 #: ../../tutorial/errors.rst:379
 msgid ""
