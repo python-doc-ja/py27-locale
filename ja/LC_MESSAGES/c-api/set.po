@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:38+0000\n"
+"PO-Revision-Date: 2017-03-13 23:28+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -158,7 +159,7 @@ msgid ""
 ":exc:`TypeError` if the *key* is unhashable. Raise a :exc:`MemoryError` if "
 "there is no room to grow. Raise a :exc:`SystemError` if *set* is not an "
 "instance of :class:`set` or its subtype."
-msgstr ""
+msgstr ":class:`set` のインスタンスに *key* を追加します。 :class:`frozenset` のインスタンスに使わないで下さい。成功したら ``0`` を、失敗したら ``-1`` を返します。 *key* がハッシュ可能でないなら、 :exc:`TypeError` を送出します。 set を大きくする余裕が無い場合は、 :exc:`MemoryError` を送出します。 *set* が :class:`set` とそのサブタイプのインスタンスで無い場合は、 :exc:`SystemError` を送出します。"
 
 #: ../../c-api/set.rst:146
 msgid ""
