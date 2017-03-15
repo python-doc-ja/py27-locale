@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:04+0000\n"
+"PO-Revision-Date: 2017-03-15 13:40+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -70,7 +71,7 @@ msgid ""
 "doing so is insecure; it makes your program vulnerable to an SQL injection "
 "attack (see https://xkcd.com/327/ for humorous example of what can go "
 "wrong)."
-msgstr ""
+msgstr "たいてい、SQL 操作では Python 変数の値を使う必要があります。この時、クエリーを Python の文字列操作を使って構築することは安全とは言えないので、すべきではありません。そのようなことをするとプログラムが SQL インジェクション攻撃に対し脆弱になります (https://xkcd.com/327/ ではどうなってしまうかをユーモラスに描いています)。"
 
 #: ../../library/sqlite3.rst:60
 msgid ""
@@ -300,7 +301,7 @@ msgid ""
 "The cursor method accepts a single optional parameter *factory*. If "
 "supplied, this must be a callable returning an instance of :class:`Cursor` "
 "or its subclasses."
-msgstr ""
+msgstr "cursor メソッドはオション引数 *factory* を 1 つだけ受け付けます。\n渡された場合は、 :class:`Cursor` またはそのサブクラスのインスタンスを返す呼び出し可能オブジェクトでなければなりません。"
 
 #: ../../library/sqlite3.rst:267
 msgid ""
@@ -356,7 +357,7 @@ msgstr "後から SQL 文中で *name* という名前の関数として使え�
 msgid ""
 "The function can return any of the types supported by SQLite: unicode, str, "
 "int, long, float, buffer and ``None``."
-msgstr ""
+msgstr "関数は SQLite でサポートされている任意の型を返すことができます。具体的には unicode, str, int, long, float, buffer, ``None`` です。"
 
 #: ../../library/sqlite3.rst:313 ../../library/sqlite3.rst:329
 #: ../../library/sqlite3.rst:425 ../../library/sqlite3.rst:531
@@ -378,7 +379,7 @@ msgstr "集計クラスにはパラメータ *num_params* で指定される個�
 msgid ""
 "The ``finalize`` method can return any of the types supported by SQLite: "
 "unicode, str, int, long, float, buffer and ``None``."
-msgstr ""
+msgstr "``finalize`` メソッドは SQLite でサポートされている任意の型を返すことができます。具体的には unicode, str, int, long, float, buffer, ``None`` です。"
 
 #: ../../library/sqlite3.rst:336
 msgid ""
@@ -403,7 +404,7 @@ msgstr "以下の例は「間違った方法で」ソートする自作の照合
 #: ../../library/sqlite3.rst:349
 msgid ""
 "To remove a collation, call ``create_collation`` with ``None`` as callable::"
-msgstr ""
+msgstr "照合順序を取り除くには callable に ``None`` を指定して ``create_collation`` を呼び出します::"
 
 #: ../../library/sqlite3.rst:356
 msgid ""
@@ -1006,7 +1007,7 @@ msgstr "sqlite3 が暗黙のうちに実行する ``BEGIN`` 文の種類(また�
 msgid ""
 "If you want **autocommit mode**, then set :attr:`isolation_level` to "
 "``None``."
-msgstr ""
+msgstr "**自動コミットモード** を使いたい場合は、 :attr:`isolation_level` は ``None`` にしてください。"
 
 #: ../../library/sqlite3.rst:873
 msgid ""

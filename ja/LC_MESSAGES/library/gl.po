@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:54+0000\n"
+"PO-Revision-Date: 2017-03-15 14:14+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -158,7 +159,7 @@ msgstr "小さいですが完全な Python の GL プログラムの例をここ
 #: ../../library/gl.rst:157
 msgid ""
 "`PyOpenGL: The Python OpenGL Binding <http://pyopengl.sourceforge.net/>`_"
-msgstr ""
+msgstr "`PyOpenGL: The Python OpenGL Binding <http://pyopengl.sourceforge.net/>`_"
 
 #: ../../library/gl.rst:156
 msgid ""

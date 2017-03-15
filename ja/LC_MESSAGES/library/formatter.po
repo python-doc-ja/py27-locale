@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:53+0000\n"
+"PO-Revision-Date: 2017-03-15 14:18+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +28,7 @@ msgid ""
 "implementations.  The *formatter* interface is used by the "
 ":class:`~HTMLParser.HTMLParser` class of the :mod:`htmllib` module, and the "
 "*writer* interface is required by the formatter interface."
-msgstr ""
+msgstr "このモジュールでは、二つのインタフェース定義を提供しており、それらの各インタフェースについて複数の実装を提供しています。 *formatter* インタフェースは :mod:`htmllib` モジュールの :class:`~HTMLParser.HTMLParser` クラスで使われており、 *writer*  インタフェースは formatter インタフェースを使う上で必要です。"
 
 #: ../../library/formatter.rst:16
 msgid ""
@@ -378,4 +379,4 @@ msgid ""
 "*file* or, if *file* is ``None``, on standard output.  The output is simply "
 "word-wrapped to the number of columns specified by *maxcol*.  This class is "
 "suitable for reflowing a sequence of paragraphs."
-msgstr ""
+msgstr "単純な writer クラスで *file* に渡されたファイルオブジェクトか *file* が ``None`` の場合には標準出力に出力を書き込みます。出力は *maxcol* で指定されたカラム数で単純な行端折り返しが行われます。このクラスは連続した段落を再割り付けするのに適しています。"

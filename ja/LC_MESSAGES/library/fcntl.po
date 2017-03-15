@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:52+0000\n"
+"PO-Revision-Date: 2017-03-15 14:26+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +28,7 @@ msgid ""
 " an interface to the :c:func:`fcntl` and :c:func:`ioctl` Unix routines.  For"
 " a complete description of these calls, see :manpage:`fcntl(2)` and "
 ":manpage:`ioctl(2)` Unix manual pages."
-msgstr ""
+msgstr "このモジュールでは、ファイル記述子 (file descriptor) に基づいたファイル制御および I/O 制御を実現します。\nこのモジュールは、 Unix のルーチンである :c:func:`fcntl` および :c:func:`ioctl` へのインタフェースです。\nこれらのシステムコールの完全な説明は、 :manpage:`fcntl(2)` と :manpage:`ioctl(2)` のUnix マニュアルページを参照してください。"
 
 #: ../../library/fcntl.rst:19
 msgid ""
