@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 # INADA Naoki <songofacandy@gmail.com>, 2015
 # cocoatomo, 2017
@@ -10,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:15+0000\n"
+"PO-Revision-Date: 2017-03-22 20:00+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -172,7 +173,7 @@ msgid ""
 "that offers no-cost hosted instances to free-software projects; Roundup is "
 "an open-source project that requires volunteers to administer it and a "
 "server to host it."
-msgstr ""
+msgstr "そのようなわけで、Python Software Foundation のインフラ委員会はボランティアたちに課題トラッカーについて、異なるプロダクトのセットアップをし、SourceForge からバグ報告とパッチのインポートをする依頼の呼び掛けをしました。4 つのトラッカーが試されました: `Jira <https://www.atlassian.com/software/jira/>`__, `Launchpad <https://launchpad.net/>`__, `Roundup <http://roundup.sourceforge.net/>`__, `Trac <https://trac.edgewall.org/>`__ です。委員会は結果として Jira と Roundup の 2 つを候補に据えました。Jira はフリーソフトウェアプロジェクトの無償でのホストが可能な商用製品です; Roundup はそれを運営するボランティアとそれをホストするサーバが必要なオープンソースプロダクトです。"
 
 #: ../../whatsnew/2.6.rst:164
 msgid ""
@@ -257,7 +258,7 @@ msgid ""
 "During the 2.6 development cycle, Georg Brandl put a lot of effort into "
 "building a new toolchain for processing the documentation.  The resulting "
 "package is called Sphinx, and is available from http://sphinx-doc.org/."
-msgstr ""
+msgstr "2.6 の開発サイクルの期間に、Georg Brandl はドキュメンテーションの処理のための新たなツールチェインの構築に多大な労力を払いました。\nその成果であるパッケージは Sphinx と呼ばれ、 http://sphinx-doc.org/ で入手出来ます。"
 
 #: ../../whatsnew/2.6.rst:220
 msgid ""
@@ -363,7 +364,7 @@ msgid ""
 "After this statement has executed, the file object in *f* will have been "
 "automatically closed, even if the :keyword:`for` loop raised an exception "
 "part-way through the block."
-msgstr ""
+msgstr "このステートメントが実行し終わったあかつきには、 *f* のファイルオブジェクトは、たとえ :keyword:`for` ループが道半ばにして例外と成り果てても、自動的にクローズされます。"
 
 #: ../../whatsnew/2.6.rst:294
 msgid ""
@@ -682,7 +683,7 @@ msgid ""
 "because it's a :class:`~Queue.Queue`, parent and child can use the object to"
 " communicate.  (If the parent were to change the value of the global "
 "variable, the child's value would be unaffected, and vice versa.)"
-msgstr ""
+msgstr ":class:`~Queue.Queue` が階乗の結果を通信して返すのに使われています。 :class:`~Queue.Queue` オブジェクトはグローバル変数に格納されています。子プロセスは、子プロセスが作成された時点のその変数の値を使うことになります; :class:`~Queue.Queue` なので、親子はそのオブジェクトを通信のために使うことが出来ます。(プロセス作成後に親がグローバル変数 queue を差し替えても、子の値は左右されませんし、逆もしかりです。)"
 
 #: ../../whatsnew/2.6.rst:620
 msgid ""
@@ -1199,7 +1200,7 @@ msgid ""
 " :attr:`buffer` attribute for access to the underlying object.  "
 ":class:`~StringIO.StringIO` simply buffers everything in memory without ever"
 " writing anything to disk."
-msgstr ""
+msgstr "2 つの具象実装があります。 :class:`TextIOWrapper` はバッファ化 I/O オブジェクトをラップし、テキスト I/O の全てのメソッドをサポートし、追加で元となるオブジェクトへのアクセスのための :attr:`buffer` 属性を持ちます。 :class:`~StringIO.StringIO` はディスクへの一切の書き込みをせずに単純にメモリ内に全てをバッファします。"
 
 #: ../../whatsnew/2.6.rst:1083
 msgid ""
@@ -1566,7 +1567,7 @@ msgid ""
 "`Scheme's numerical tower "
 "<https://www.gnu.org/software/guile/manual/html_node/Numerical-Tower.html"
 "#Numerical-Tower>`__, from the Guile manual."
-msgstr ""
+msgstr "Guile マニュアルの `Scheme's numerical tower <https://www.gnu.org/software/guile/manual/html_node/Numerical-Tower.html#Numerical-Tower>`__ 。"
 
 #: ../../whatsnew/2.6.rst:1432
 msgid ""
@@ -1975,7 +1976,7 @@ msgid ""
 "<https://www.jcea.es/programacion/pybsddb.htm>`__. The plan is to remove the"
 " package from the standard library in Python 3.0, because its pace of "
 "releases is much more frequent than Python's."
-msgstr ""
+msgstr ":mod:`bsddb` モジュールは新しいメンテナ Jesús Cea Avion を得て、パッケージは今ではスタンドアロンのパッケージとして入手可能です。パッケージのウェブページは `www.jcea.es/programacion/pybsddb.htm <https://www.jcea.es/programacion/pybsddb.htm>`__ です。このモジュールは Python 3.0 では標準ライブラリからは削除される予定です。というのも、これの更新ペースは Python のそれよりも遥かに頻繁だからです。"
 
 #: ../../whatsnew/2.6.rst:1800
 msgid ""
@@ -2119,7 +2120,7 @@ msgid ""
 "Decimal Specification <http://speleotrove.com/decimal/decarith.html>`__.  "
 "New features include some methods for some basic mathematical functions such"
 " as :meth:`exp` and :meth:`log10`::"
-msgstr ""
+msgstr ":mod:`decimal` モジュールが `the General Decimal Specification <http://speleotrove.com/decimal/decarith.html>`__ のバージョン 1.66 に更新されました。新しい機能には :meth:`exp` や :meth:`log10` のようないくつかの基礎的な数学関数が含まれます::"
 
 #: ../../whatsnew/2.6.rst:1936
 msgid ""
@@ -2368,7 +2369,7 @@ msgid ""
 "for a substring beginning at the end of the string and searching backwards."
 "  The :meth:`find` method also gained an *end* parameter giving an index at "
 "which to stop searching. (Contributed by John Lenton.)"
-msgstr ""
+msgstr ":class:`~mmap.mmap` オブジェクトに :meth:`rfind` メソッドが追加されています。部分文字列の検索を、末尾から後ろ向きに検索します。 :meth:`find` には新しい引数 *end* パラメータが追加されていて、検索対象の終了位置を指定することが出来ます。 (Contributed by John Lenton.)"
 
 #: ../../whatsnew/2.6.rst:2136
 msgid ""

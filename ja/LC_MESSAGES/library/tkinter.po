@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:07+0000\n"
+"PO-Revision-Date: 2017-03-22 18:25+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -168,7 +169,7 @@ msgstr "Tk をサポートしているモジュールには、他にも以下の
 
 #: ../../library/tkinter.rst:97
 msgid ":mod:`ScrolledText`"
-msgstr ""
+msgstr ":mod:`ScrolledText`"
 
 #: ../../library/tkinter.rst:97
 msgid "Text widget with a vertical scroll bar built in."
@@ -176,7 +177,7 @@ msgstr "垂直スクロールバー付きのテキストウィジェットです
 
 #: ../../library/tkinter.rst:100
 msgid ":mod:`tkColorChooser`"
-msgstr ""
+msgstr ":mod:`tkColorChooser`"
 
 #: ../../library/tkinter.rst:100
 msgid "Dialog to let the user choose a color."
@@ -184,7 +185,7 @@ msgstr "ユーザに色を選択させるためのダイアログです。"
 
 #: ../../library/tkinter.rst:103
 msgid ":mod:`tkCommonDialog`"
-msgstr ""
+msgstr ":mod:`tkCommonDialog`"
 
 #: ../../library/tkinter.rst:103
 msgid "Base class for the dialogs defined in the other modules listed here."
@@ -192,7 +193,7 @@ msgstr "このリストの他のモジュールが定義しているダイアロ
 
 #: ../../library/tkinter.rst:106
 msgid ":mod:`tkFileDialog`"
-msgstr ""
+msgstr ":mod:`tkFileDialog`"
 
 #: ../../library/tkinter.rst:106
 msgid "Common dialogs to allow the user to specify a file to open or save."
@@ -200,7 +201,7 @@ msgstr "ユーザが開きたいファイルや保存したいファイルを指
 
 #: ../../library/tkinter.rst:109
 msgid ":mod:`tkFont`"
-msgstr ""
+msgstr ":mod:`tkFont`"
 
 #: ../../library/tkinter.rst:109
 msgid "Utilities to help work with fonts."
@@ -208,7 +209,7 @@ msgstr "フォントの扱いを補助するためのユーティリティです
 
 #: ../../library/tkinter.rst:112
 msgid ":mod:`tkMessageBox`"
-msgstr ""
+msgstr ":mod:`tkMessageBox`"
 
 #: ../../library/tkinter.rst:112
 msgid "Access to standard Tk dialog boxes."
@@ -216,7 +217,7 @@ msgstr "標準的な Tk のダイアログボックスにアクセスします�
 
 #: ../../library/tkinter.rst:115
 msgid ":mod:`tkSimpleDialog`"
-msgstr ""
+msgstr ":mod:`tkSimpleDialog`"
 
 #: ../../library/tkinter.rst:115
 msgid "Basic dialogs and convenience functions."
@@ -224,7 +225,7 @@ msgstr "基本的なダイアログと便宜関数 (convenience function) です
 
 #: ../../library/tkinter.rst:119
 msgid ":mod:`Tkdnd`"
-msgstr ""
+msgstr ":mod:`Tkdnd`"
 
 #: ../../library/tkinter.rst:118
 msgid ""

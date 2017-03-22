@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-04 08:26+0000\n"
+"PO-Revision-Date: 2017-03-22 19:25+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -553,7 +554,7 @@ msgid ""
 "Make an iterator that filters elements from iterable returning only those "
 "for which the predicate is ``True``. If *predicate* is ``None``, return the "
 "items that are true. Roughly equivalent to::"
-msgstr ""
+msgstr "iteable から predicate が ``True`` となる要素だけを返すイテレータを作成します。*predicate* が ``None`` の場合、真の要素だけを返します。およそ次と等価です::"
 
 #: ../../library/itertools.rst:361
 msgid ""
@@ -572,7 +573,7 @@ msgid ""
 "typically an error for :func:`map` (because the output is fully evaluated) "
 "but represent a common and useful way of supplying arguments to "
 ":func:`imap`. Roughly equivalent to::"
-msgstr ""
+msgstr "iterables の各要素を引数として funtion を呼び出すイテレータを作成します。\n*function* が ``None`` の場合、 :func:`imap` は引数のタプルを返します。\n:func:`map` に似ていますが、最短の iterable の末尾まで到達した後はそこで終了します。短い iterable のところを ``None`` で補ったりはしません。\nこの違いは、 :func:`map` に無限長のイテレータを指定するのはたいていは誤り (全出力が評価されてしまうため) なのですが、 :func:`imap` の場合には一般的で役に立つ方法であるためです。\nこの関数はおよそ以下のスクリプトと同等です::"
 
 #: ../../library/itertools.rst:398
 msgid ""
@@ -604,7 +605,7 @@ msgid ""
 ":func:`zip` except that it returns an iterator instead of a list.  Used for "
 "lock-step iteration over several iterables at a time.  Roughly equivalent "
 "to::"
-msgstr ""
+msgstr "各 iterable の要素をまとめるイテレータを作成します。 :func:`zip` に似ていますが、リストではなくイテレータを返します。複数のイテレート可能オブジェクトに対して、一度に lock-step (横並び) イテレーションを行う場合に使用します。この関数はおよそ以下のスクリプトと同等です::"
 
 #: ../../library/itertools.rst:440
 msgid ""
@@ -718,7 +719,7 @@ msgid ""
 "indefinitely unless the *times* argument is specified. Used as argument to "
 ":func:`imap` for invariant function parameters.  Also used with :func:`izip`"
 " to create constant fields in a tuple record.  Roughly equivalent to::"
-msgstr ""
+msgstr "繰り返し *object* を返すイテレータを作成します。 *times* を指定しない場合、無限に値を返し続けます。 :func:`imap` で常に同じオブジェクトを関数の引数として指定する場合に使用します。また、 :func:`izip` で作成するタプルの定数部分を指定する場合にも使用することもできます。この関数はおよそ以下のスクリプトと同等です::"
 
 #: ../../library/itertools.rst:593
 msgid ""
@@ -734,7 +735,7 @@ msgid ""
 "zipped\").  The difference between :func:`imap` and :func:`starmap` "
 "parallels the distinction between ``function(a,b)`` and ``function(*c)``. "
 "Roughly equivalent to::"
-msgstr ""
+msgstr "iterable の要素を引数として function を計算するイテレータを作成します。\nfunction の引数が一つの iterable からタプルに既にグループ化されている (データが \"zip済み\") 場合、:func:`imap` の代わりに使用します。\n:func:`imap` と :func:`starmap` の違いは ``function(a,b)`` と ``function(*c)`` の差に似ています。およそ次と等価です::"
 
 #: ../../library/itertools.rst:612
 msgid ""
@@ -752,7 +753,7 @@ msgstr "predicate が真である限り iterable から要素を返すイテレ�
 msgid ""
 "Return *n* independent iterators from a single iterable.  Roughly equivalent"
 " to::"
-msgstr ""
+msgstr "一つの *iterable* から *n* 個の独立したイテレータを生成して返します。以下のコードとおよそ等価になります::"
 
 #: ../../library/itertools.rst:646
 msgid ""

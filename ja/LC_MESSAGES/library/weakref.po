@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:09+0000\n"
+"PO-Revision-Date: 2017-03-22 18:33+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -34,7 +35,7 @@ msgstr ":mod:`weakref` モジュールは、Pythonプログラマがオブジェ
 msgid ""
 "In the following, the term :dfn:`referent` means the object which is "
 "referred to by a weak reference."
-msgstr "以下では、用語リファレント(:dfn:`referent`) は弱参照が参照するオブジェクトを意味します。"
+msgstr "以下では、リファレント (:dfn:`referent`) という用語は弱参照が参照するオブジェクトを意味します。"
 
 #: ../../library/weakref.rst:27
 msgid ""
@@ -240,7 +241,7 @@ msgid ""
 ":class:`WeakValueDictionary` objects have the following additional methods. "
 "These methods have the same issues as the :meth:`iterkeyrefs` and "
 ":meth:`keyrefs` methods of :class:`WeakKeyDictionary` objects."
-msgstr ""
+msgstr ":class:`WeakValueDictionary` オブジェクトは次のメソッドも備えています。\nこれらのメソッドは、 :class:`WeakKeyDictionary` オブジェクトの :meth:`iterkeyrefs` メソッドや :meth:`keyrefs` メソッドと同じ問題を抱えています。"
 
 #: ../../library/weakref.rst:198
 msgid "Return an iterable of the weak references to the values."

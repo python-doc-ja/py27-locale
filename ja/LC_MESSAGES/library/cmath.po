@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:47+0000\n"
+"PO-Revision-Date: 2017-03-22 19:28+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -223,12 +224,12 @@ msgstr "類別関数"
 msgid ""
 "Return ``True`` if the real or the imaginary part of x is positive or "
 "negative infinity."
-msgstr ""
+msgstr "*x* の実数部または虚数部が正または負の無限大であれば ``True`` を返します。"
 
 #: ../../library/cmath.rst:218
 msgid ""
 "Return ``True`` if the real or imaginary part of x is not a number (NaN)."
-msgstr ""
+msgstr "*x* の実数部または虚数部が非数 (NaN) であれば ``True`` を返します。"
 
 #: ../../library/cmath.rst:224
 msgid "Constants"

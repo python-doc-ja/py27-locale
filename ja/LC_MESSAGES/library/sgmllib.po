@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:03+0000\n"
+"PO-Revision-Date: 2017-03-22 18:55+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -186,7 +187,7 @@ msgid ""
 "using the :meth:`convert_codepoint` method. If *ref* is invalid or out of "
 "range, this method returns ``None``.  This method is called by the default "
 ":meth:`handle_charref` implementation and by the attribute value parser."
-msgstr ""
+msgstr "文字参照を文字列に変換するか、 ``None`` を返します。 *ref* は文字列として渡される参照です。基底クラスでは *ref* は 0--255 の範囲の十進数でなければなりません。そしてコードポイントをメソッド :meth:`convert_codepoint` を使って変換します。もし *ref* が不正もしくは範囲外ならば、 ``None`` を返します。このメソッドはデフォルト実装の :meth:`handle_charref` と属性値パーザから呼び出されます。"
 
 #: ../../library/sgmllib.rst:156
 msgid ""
@@ -204,7 +205,7 @@ msgid ""
 "calls the method ``unknown_entityref(ref)``. The default :attr:`entitydefs` "
 "defines translations for ``&amp;``, ``&apos``, ``&gt;``, ``&lt;``, and "
 "``&quot;``."
-msgstr ""
+msgstr "このメソッドは *ref* を一般エンティティ参照として、 ``&ref;`` 形式のエンティティ参照を処理するために呼び出されます。\nこのメソッドは、 *ref* を :meth:`convert_entityref` に渡して変換します。\n変換結果が返ってきた場合、変換された文字を引数にして :meth:`handle_data` を呼び出します; そうでない場合、 ``unknown_entityref(ref)`` を呼び出します。\n標準では :attr:`entitydefs` は ``&amp;`` 、 ``&apos;`` 、 ``&gt;`` 、 ``&lt;`` 、および ``&quot;`` の変換を定義しています。"
 
 #: ../../library/sgmllib.rst:171
 msgid "Use :meth:`convert_entityref` instead of hard-coding the conversion."

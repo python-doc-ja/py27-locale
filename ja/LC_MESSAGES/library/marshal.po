@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:57+0000\n"
+"PO-Revision-Date: 2017-03-22 19:27+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -96,7 +97,7 @@ msgid ""
 ":func:`open` or :func:`os.popen`.  It may not be a wrapper such as "
 "TemporaryFile on Windows. It must be opened in binary mode (``'wb'`` or "
 "``'w+b'``)."
-msgstr ""
+msgstr "開かれたファイルに値を書き込みます。値はサポートされている型でなくてはなりません。ファイルは ``sys.stdout`` か、 :func:`open` や :func:`os.popen` が返すようなファイルオブジェクトでなくてはなりません。Windows では TemporaryFile のようなラッパーは使えません。またファイルはバイナリモード (``'wb'`` または ``'w+b'``) で開かれていなければなりません。"
 
 #: ../../library/marshal.rst:75
 msgid ""

@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:55+0000\n"
+"PO-Revision-Date: 2017-03-22 19:36+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +20,7 @@ msgstr ""
 
 #: ../../library/ic.rst:2
 msgid ":mod:`ic` --- Access to the Mac OS X Internet Config"
-msgstr ":mod:`ic` --- Mac OS X インターネット設定へのアクセス"
+msgstr ":mod:`ic` --- Mac OS X のインターネット設定へのアクセス"
 
 #: ../../library/ic.rst:10
 msgid ""
@@ -118,7 +119,7 @@ msgid ""
 "text field and the click-position in *start* and this routine will return "
 "the whole URL in which the user clicked.  As above, *hint* is an optional "
 "scheme used to complete incomplete URLs."
-msgstr ""
+msgstr "*data* の中から URL を検索し、 URL の開始位置、終了位置、 URL そのものを返します。オプションの引数 *start* と *end* を使うと検索範囲を制限できます。例えば、ユーザーが長いテキストフィールドをクリックした場合に、このルーチンにテキストフィールド全体とクリック位置 *start* を渡すことで、ユーザーがクリックした場所にある URL 全体を返させられます。先に述べたように、 *hint* はオプションで、不完全な URL を補完するためのスキームです。"
 
 #: ../../library/ic.rst:96
 msgid ""

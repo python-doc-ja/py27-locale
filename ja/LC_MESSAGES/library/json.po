@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:56+0000\n"
+"PO-Revision-Date: 2017-03-22 19:34+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -90,7 +91,7 @@ msgid ""
 " basic type (:class:`str`, :class:`unicode`, :class:`int`, :class:`long`, "
 ":class:`float`, :class:`bool`, ``None``) will be skipped instead of raising "
 "a :exc:`TypeError`."
-msgstr ""
+msgstr "*skipkeys* が真 (デフォルトは ``False``) ならば、基本型 (:class:`str`, :class:`unicode`, :class:`int`, :class:`long`, :class:`float`, :class:`bool`, ``None``) 以外の辞書のキーは :exc:`TypeError` を送出せずに読み飛ばされます。"
 
 #: ../../library/json.rst:138
 msgid ""
@@ -102,7 +103,7 @@ msgid ""
 " or the *encoding* parameter is used.  Unless ``fp.write()`` explicitly "
 "understands :class:`unicode` (as in :func:`codecs.getwriter`) this is likely"
 " to cause an error."
-msgstr ""
+msgstr "*ensure_ascii* が真 (これがデフォルトです) ならば全ての非 ASCII 文字は出力において ``\\uXXXX`` エスケープされて、結果は ASCII 文字のみからなる :class:`str` インスタンスになります。 *ensure_ascii* が偽の場合、 *fp* へ書き込まれるチャンクは :class:`unicode` インスタンスになることがあります。これは普通は入力に Unicode 文字列を含むか、 *encoding* パラメータを使う場合に起こります。 ``fp.write()`` が (:func:`codecs.getwriter` でのように)  :class:`unicode` であると明示的に理解していない限り、これはエラーを引き起こすかもしれません。"
 
 #: ../../library/json.rst:147
 msgid ""
@@ -140,7 +141,7 @@ msgid ""
 "If specified, *separators* should be an ``(item_separator, key_separator)`` "
 "tuple.  By default, ``(', ', ': ')`` are used.  To get the most compact JSON"
 " representation, you should specify ``(',', ':')`` to eliminate whitespace."
-msgstr ""
+msgstr "*separators* を指定する場合は、 ``(item_separator, key_separator)`` というタプルでなければなりません。\nデフォルトでは ``(', ', ': ')`` が使われます。\n最もコンパクトな JSON の表現を得たければ空白を削った ``(',', ':')`` を指定すればいいでしょう。"
 
 #: ../../library/json.rst:172
 msgid ""
@@ -181,7 +182,7 @@ msgid ""
 " table <py-to-json-table>`.  If *ensure_ascii* is false, the result may "
 "contain non-ASCII characters and the return value may be a :class:`unicode` "
 "instance."
-msgstr ""
+msgstr "この :ref:`変換表 <py-to-json-table>` を使って、 *obj* を JSON 形式の :class:`str` オブジェクトに直列化します。\n*ensure_ascii* が偽の場合は、結果は非 ASCII を含むかもしれず、戻り値が :class:`unicode` のインスタンスになることがあります。"
 
 #: ../../library/json.rst:202
 msgid "The arguments have the same meaning as in :func:`dump`."
@@ -482,7 +483,7 @@ msgid ""
 "If *skipkeys* is false (the default), then it is a :exc:`TypeError` to "
 "attempt encoding of keys that are not str, int, long, float or ``None``.  If"
 " *skipkeys* is true, such items are simply skipped."
-msgstr ""
+msgstr "*skipkeys* が偽 (デフォルト) ならば、str, int, long, float, ``None`` 以外のキーをエンコードする試みは :exc:`TypeError` に終わります。 *skipkeys* が真の場合は、それらのアイテムは単に読み飛ばされます。"
 
 #: ../../library/json.rst:409
 msgid ""
@@ -492,7 +493,7 @@ msgid ""
 "*ensure_ascii* is false, a result may be a :class:`unicode` instance. This "
 "usually happens if the input contains unicode strings or the *encoding* "
 "parameter is used."
-msgstr ""
+msgstr "*ensure_ascii* が真 (これがデフォルトです) の場合、全ての非 ASCII 文字は出力において ``\\uXXXX`` エスケープされて、結果は ASCII 文字のみからなる :class:`str` インスタンスになります。\n*ensure_ascii* が偽の場合、 結果は :class:`unicode` インスタンスになることがあります。\nこれは普通は入力に Unicode 文字列を含むか、 *encoding* パラメータを使う場合に起こります。"
 
 #: ../../library/json.rst:416
 msgid ""
