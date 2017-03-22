@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:08+0000\n"
+"PO-Revision-Date: 2017-03-22 15:11+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -372,7 +373,7 @@ msgid ""
 "conform to this. Certain deviations could be observed, which are mostly for "
 "backward compatibility purposes and for certain de-facto parsing "
 "requirements as commonly observed in major browsers."
-msgstr ""
+msgstr "これが現在の標準規格 (STD66) です。urlparse モジュールに対するすべての変更はこの規格に準拠していなければなりませんが、若干の逸脱はありえます。これは主には後方互換性のため、また主要なブラウザで一般的に見られる、URL を解析する上でのいくつかの事実上の要件を満たすためです。"
 
 #: ../../library/urlparse.rst:286
 msgid ":rfc:`2732` - Format for Literal IPv6 Addresses in URL's."
@@ -452,8 +453,8 @@ msgstr "以下のクラスが解析結果の実装を提供します:"
 
 #: ../../library/urlparse.rst:342
 msgid "Concrete class for :func:`urlparse` results."
-msgstr ""
+msgstr ":func:`urlparse` の返り値の具象クラス。"
 
 #: ../../library/urlparse.rst:347
 msgid "Concrete class for :func:`urlsplit` results."
-msgstr ""
+msgstr ":func:`urlsplit` の返り値の具象クラス。"

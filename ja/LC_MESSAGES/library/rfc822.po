@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:02+0000\n"
+"PO-Revision-Date: 2017-03-22 15:12+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -170,7 +171,7 @@ msgstr "包括的な e-mail 処理パッケージです。 :mod:`rfc822` に取�
 
 #: ../../library/rfc822.rst:134
 msgid "Module :mod:`mailbox`"
-msgstr ""
+msgstr ":mod:`mailbox` モジュール"
 
 #: ../../library/rfc822.rst:134
 msgid ""
@@ -179,7 +180,7 @@ msgstr "エンドユーザのメールプログラムによって生成される
 
 #: ../../library/rfc822.rst:136
 msgid "Module :mod:`mimetools`"
-msgstr ""
+msgstr ":mod:`mimetools` モジュール"
 
 #: ../../library/rfc822.rst:137
 msgid ""
