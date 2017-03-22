@@ -145,11 +145,11 @@ msgid "Retrieve a file or directory listing in ASCII transfer mode.  *command* s
 msgstr ""
 
 #: ../../library/ftplib.rst:248
-msgid "Enable \"passive\" mode if *boolean* is true, other disable passive mode.  (In Python 2.0 and before, passive mode was off by default; in Python 2.1 and later, it is on by default.)"
+msgid "Enable \"passive\" mode if *val* is true, otherwise disable passive mode.  (In Python 2.0 and before, passive mode was off by default; in Python 2.1 and later, it is on by default.)"
 msgstr ""
 
 #: ../../library/ftplib.rst:255
-msgid "Store a file in binary transfer mode.  *command* should be an appropriate ``STOR`` command: ``\"STOR filename\"``. *file* is an open file object which is read until EOF using its :meth:`read` method in blocks of size *blocksize* to provide the data to be stored.  The *blocksize* argument defaults to 8192. *callback* is an optional single parameter callable that is called on each block of data after it is sent. *rest* means the same thing as in the :meth:`transfercmd` method."
+msgid "Store a file in binary transfer mode.  *command* should be an appropriate ``STOR`` command: ``\"STOR filename\"``. *fp* is an open file object which is read until EOF using its :meth:`read` method in blocks of size *blocksize* to provide the data to be stored.  The *blocksize* argument defaults to 8192. *callback* is an optional single parameter callable that is called on each block of data after it is sent. *rest* means the same thing as in the :meth:`transfercmd` method."
 msgstr ""
 
 #: ../../library/ftplib.rst:263
@@ -166,7 +166,7 @@ msgid "*rest* parameter added."
 msgstr ""
 
 #: ../../library/ftplib.rst:274
-msgid "Store a file in ASCII transfer mode.  *command* should be an appropriate ``STOR`` command (see :meth:`storbinary`).  Lines are read until EOF from the open file object *file* using its :meth:`~file.readline` method to provide the data to be stored.  *callback* is an optional single parameter callable that is called on each line after it is sent."
+msgid "Store a file in ASCII transfer mode.  *command* should be an appropriate ``STOR`` command (see :meth:`storbinary`).  Lines are read until EOF from the open file object *fp* using its :meth:`~file.readline` method to provide the data to be stored.  *callback* is an optional single parameter callable that is called on each line after it is sent."
 msgstr ""
 
 #: ../../library/ftplib.rst:286

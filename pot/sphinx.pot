@@ -15,6 +15,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../../tools/templates/indexsidebar.html:1
+msgid "Docs for other versions"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:4
+msgid "Python 3.6 (stable)"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:5
+msgid "Old versions"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:8
+msgid "Other resources"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:12
+msgid "PEP Index"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:13
+msgid "Beginner's Guide"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:14
+msgid "Book List"
+msgstr ""
+
+#: ../../tools/templates/indexsidebar.html:15
+msgid "Audio/Visual Talks"
+msgstr ""
+
 #: ../../tools/templates/indexcontent.html:8
 msgid "Welcome! This is the documentation for Python %(release)s."
 msgstr ""
@@ -172,74 +204,6 @@ msgstr ""
 msgid "Copyright"
 msgstr ""
 
-#: ../../tools/templates/indexsidebar.html:1
-msgid "Docs for other versions"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:4
-msgid "Python 3.6 (stable)"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:5
-msgid "Old versions"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:8
-msgid "Other resources"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:12
-msgid "PEP Index"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:13
-msgid "Beginner's Guide"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:14
-msgid "Book List"
-msgstr ""
-
-#: ../../tools/templates/indexsidebar.html:15
-msgid "Audio/Visual Talks"
-msgstr ""
-
-#: ../../tools/templates/layout.html:9
-msgid "Documentation"
-msgstr ""
-
-#: ../../tools/templates/layout.html:36
-msgid "The Python Software Foundation is a non-profit corporation."
-msgstr ""
-
-#: ../../tools/templates/layout.html:37
-msgid "Please donate."
-msgstr ""
-
-#: ../../tools/templates/layout.html:39
-msgid "Last updated on %(last_update)s."
-msgstr ""
-
-#: ../../tools/templates/layout.html:40
-msgid "<a href=\"%(pathto_bugs)s\">Found a bug</a>?"
-msgstr ""
-
-#: ../../tools/templates/layout.html:42
-msgid "Created using <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> %(sphinx_version)s."
-msgstr ""
-
-#: ../../tools/templates/layout.html:47
-msgid "This Page"
-msgstr ""
-
-#: ../../tools/templates/layout.html:49
-msgid "Report a Bug"
-msgstr ""
-
-#: ../../tools/templates/layout.html:51
-msgid "Show Source"
-msgstr ""
-
 #: ../../tools/templates/download.html:10
 msgid "Download Python %(release)s Documentation"
 msgstr ""
@@ -355,5 +319,41 @@ msgstr ""
 msgid "If you have comments or suggestions for the Python\n"
 "documentation, please send email to\n"
 "<a href=\"mailto:docs@python.org\">docs@python.org</a>."
+msgstr ""
+
+#: ../../tools/templates/layout.html:9
+msgid "Documentation"
+msgstr ""
+
+#: ../../tools/templates/layout.html:36
+msgid "The Python Software Foundation is a non-profit corporation."
+msgstr ""
+
+#: ../../tools/templates/layout.html:37
+msgid "Please donate."
+msgstr ""
+
+#: ../../tools/templates/layout.html:39
+msgid "Last updated on %(last_update)s."
+msgstr ""
+
+#: ../../tools/templates/layout.html:40
+msgid "<a href=\"%(pathto_bugs)s\">Found a bug</a>?"
+msgstr ""
+
+#: ../../tools/templates/layout.html:42
+msgid "Created using <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> %(sphinx_version)s."
+msgstr ""
+
+#: ../../tools/templates/layout.html:47
+msgid "This Page"
+msgstr ""
+
+#: ../../tools/templates/layout.html:49
+msgid "Report a Bug"
+msgstr ""
+
+#: ../../tools/templates/layout.html:51
+msgid "Show Source"
 msgstr ""
 
