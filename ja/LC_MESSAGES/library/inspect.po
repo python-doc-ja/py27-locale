@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-21 04:03+0000\n"
+"PO-Revision-Date: 2017-03-22 03:14+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -632,7 +632,7 @@ msgid ""
 ":meth:`~object.__set__` method, but beyond that the set of attributes "
 "varies.  A :attr:`~definition.__name__` attribute is usually sensible, and "
 ":attr:`__doc__` often is."
-msgstr ""
+msgstr "この機能は Python 2.2 から新たに追加されたもので、例えば ``int.__add__`` は真になります。\nこのテストをパスするオブジェクトは :meth:`~object.__get__` メソッドを持ちますが :meth:`~object.__set__`  メソッドを持ちません。\nそれ以外の属性を持っているかもしれません。\n通常 :attr:`~definition.__name__` 属性を持っていますし、たいていは :attr:`__doc__` も持っています。"
 
 #: ../../library/inspect.rst:345
 msgid ""
@@ -656,7 +656,7 @@ msgid ""
 ":attr:`~definition.__name__` and :attr:`__doc__` attributes (properties, "
 "getsets, and members have both of these attributes), but this is not "
 "guaranteed."
-msgstr ""
+msgstr "データデスクリプタは :attr:`~object.__get__` および :attr:`~object.__set__` 属性の両方を持ちます。データデスクリプタの例は (Python 上で定義された) プロパティや getset やメンバーです。後者のふたつは C で定義されており、個々の型に特有のテストも行います。そのため、Python の実装よりもより確実です。通常、データデスクリプタは :attr:`~definition.__name__` や :attr:`__doc__`  属性を持ちます (プロパティ、 getset 、メンバーは両方の属性を持っています) が、保証されているわけではありません。"
 
 #: ../../library/inspect.rst:368
 msgid "Return true if the object is a getset descriptor."
@@ -737,7 +737,7 @@ msgstr "オブジェクトのソースコードテキストを返します。引
 msgid ""
 "Clean up indentation from docstrings that are indented to line up with "
 "blocks of code."
-msgstr ""
+msgstr "コードブロックと位置を合わせるためのインデントを docstring から削除します。"
 
 #: ../../library/inspect.rst:451
 msgid ""
@@ -745,7 +745,7 @@ msgid ""
 "whitespace that can be uniformly removed from the second line onwards is "
 "removed.  Empty lines at the beginning and end are subsequently removed.  "
 "Also, all tabs are expanded to spaces."
-msgstr ""
+msgstr "先頭行の行頭の空白文字は全て削除されます。\n2行目以降では全行で同じ数の行頭の空白文字が、削除できるだけ削除されます。\nその後、先頭と末尾の空白行が削除され、全てのタブが空白に展開されます。"
 
 #: ../../library/inspect.rst:462
 msgid "Classes and functions"
