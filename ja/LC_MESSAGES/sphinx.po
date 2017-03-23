@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-21 00:38+0000\n"
+"PO-Revision-Date: 2017-03-23 13:43+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -17,9 +17,41 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: ../../tools/templates/indexsidebar.html:1
+msgid "Docs for other versions"
+msgstr "他のバージョンのドキュメント"
+
+#: ../../tools/templates/indexsidebar.html:4
+msgid "Python 3.6 (stable)"
+msgstr "Python 3.6 (stable)"
+
+#: ../../tools/templates/indexsidebar.html:5
+msgid "Old versions"
+msgstr "古いバージョン"
+
+#: ../../tools/templates/indexsidebar.html:8
+msgid "Other resources"
+msgstr "その他のリソース"
+
+#: ../../tools/templates/indexsidebar.html:12
+msgid "PEP Index"
+msgstr "PEP 一覧"
+
+#: ../../tools/templates/indexsidebar.html:13
+msgid "Beginner's Guide"
+msgstr "初心者向けガイド"
+
+#: ../../tools/templates/indexsidebar.html:14
+msgid "Book List"
+msgstr "本の一覧"
+
+#: ../../tools/templates/indexsidebar.html:15
+msgid "Audio/Visual Talks"
+msgstr "発表の音声／映像"
+
 #: ../../tools/templates/indexcontent.html:8
 msgid "Welcome! This is the documentation for Python %(release)s."
-msgstr ""
+msgstr "ようこそ! Python  %(release)s ドキュメントへ。"
 
 #: ../../tools/templates/indexcontent.html:10
 msgid "Parts of the documentation:"
@@ -174,83 +206,13 @@ msgstr "Python の歴史とライセンス"
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../../tools/templates/indexsidebar.html:1
-msgid "Docs for other versions"
-msgstr "他のバージョンのドキュメント"
-
-#: ../../tools/templates/indexsidebar.html:4
-msgid "Python 3.6 (stable)"
-msgstr "Python 3.6 (stable)"
-
-#: ../../tools/templates/indexsidebar.html:5
-msgid "Old versions"
-msgstr "古いバージョン"
-
-#: ../../tools/templates/indexsidebar.html:8
-msgid "Other resources"
-msgstr "その他のリソース"
-
-#: ../../tools/templates/indexsidebar.html:12
-msgid "PEP Index"
-msgstr "PEP 一覧"
-
-#: ../../tools/templates/indexsidebar.html:13
-msgid "Beginner's Guide"
-msgstr "初心者向けガイド"
-
-#: ../../tools/templates/indexsidebar.html:14
-msgid "Book List"
-msgstr "本の一覧"
-
-#: ../../tools/templates/indexsidebar.html:15
-msgid "Audio/Visual Talks"
-msgstr "発表の音声／映像"
-
-#: ../../tools/templates/layout.html:9
-msgid "Documentation"
-msgstr "ドキュメント"
-
-#: ../../tools/templates/layout.html:36
-msgid "The Python Software Foundation is a non-profit corporation."
-msgstr "Python Software Foundation は非営利団体です。"
-
-#: ../../tools/templates/layout.html:37
-msgid "Please donate."
-msgstr "寄付"
-
-#: ../../tools/templates/layout.html:39
-msgid "Last updated on %(last_update)s."
-msgstr ""
-
-#: ../../tools/templates/layout.html:40
-msgid "<a href=\"%(pathto_bugs)s\">Found a bug</a>?"
-msgstr "<a href=\"%(pathto_bugs)s\">バグを見つけたら</a>?"
-
-#: ../../tools/templates/layout.html:42
-msgid ""
-"Created using <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> "
-"%(sphinx_version)s."
-msgstr "このドキュメントは <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> %(sphinx_version)s を使って作成されました。"
-
-#: ../../tools/templates/layout.html:47
-msgid "This Page"
-msgstr "このページ"
-
-#: ../../tools/templates/layout.html:49
-msgid "Report a Bug"
-msgstr "バグ報告"
-
-#: ../../tools/templates/layout.html:51
-msgid "Show Source"
-msgstr "ソースの表示"
-
 #: ../../tools/templates/download.html:10
 msgid "Download Python %(release)s Documentation"
-msgstr ""
+msgstr "Python %(release)s ドキュメントのダウンロード"
 
 #: ../../tools/templates/download.html:13
 msgid "Last updated on: %(last_updated)s."
-msgstr ""
+msgstr "最終更新日時 %(last_updated)s"
 
 #: ../../tools/templates/download.html:16
 msgid ""
@@ -258,7 +220,7 @@ msgid ""
 "this version of Python in one of various formats, follow one of links\n"
 "in this table. The numbers in the table are the size of the download\n"
 "files in megabytes."
-msgstr ""
+msgstr "このバージョンの Python のドキュメントを全て含んだアーカイブを様々な形式でダウンロードするには、この表にあるリンクを辿っていってください。\n表にある数字はダウンロードファイルのメガバイト単位のサイズです。"
 
 #: ../../tools/templates/download.html:22
 msgid "Format"
@@ -266,15 +228,15 @@ msgstr "フォーマット"
 
 #: ../../tools/templates/download.html:23
 msgid "Packed as .zip"
-msgstr ""
+msgstr ".zip 圧縮"
 
 #: ../../tools/templates/download.html:24
 msgid "Packed as .tar.bz2"
-msgstr ""
+msgstr ".tar.bz2 圧縮"
 
 #: ../../tools/templates/download.html:26
 msgid "PDF (US-Letter paper size)"
-msgstr ""
+msgstr "PDF (US-Letter paper size)"
 
 #: ../../tools/templates/download.html:29
 #: ../../tools/templates/download.html:34
@@ -292,11 +254,11 @@ msgstr "ダウンロード"
 #: ../../tools/templates/download.html:42
 #: ../../tools/templates/download.html:46
 msgid "(ca. 8 MB)"
-msgstr ""
+msgstr "(約 8 MB)"
 
 #: ../../tools/templates/download.html:38
 msgid "PDF (A4 paper size)"
-msgstr ""
+msgstr "PDF (A4 paper size)"
 
 #: ../../tools/templates/download.html:48
 msgid "HTML"
@@ -304,29 +266,29 @@ msgstr "HTML"
 
 #: ../../tools/templates/download.html:52
 msgid "(ca. 6 MB)"
-msgstr ""
+msgstr "(約 6 MB)"
 
 #: ../../tools/templates/download.html:57
 msgid "(ca. 4 MB)"
-msgstr ""
+msgstr "(約 4 MB)"
 
 #: ../../tools/templates/download.html:61
 msgid "Plain Text"
-msgstr ""
+msgstr "プレーンテキスト"
 
 #: ../../tools/templates/download.html:65
 msgid "(ca. 2 MB)"
-msgstr ""
+msgstr "(約 2 MB)"
 
 #: ../../tools/templates/download.html:70
 msgid "(ca. 1.5 MB)"
-msgstr ""
+msgstr "(約 1.5 MB)"
 
 #: ../../tools/templates/download.html:75
 msgid ""
 "These archives contain all the content in the\n"
 "documentation."
-msgstr ""
+msgstr "これらのアーカイブはドキュメントの全てのコンテンツを含んでいます。"
 
 #: ../../tools/templates/download.html:78
 msgid ""
@@ -366,3 +328,41 @@ msgid ""
 "documentation, please send email to\n"
 "<a href=\"mailto:docs@python.org\">docs@python.org</a>."
 msgstr ""
+
+#: ../../tools/templates/layout.html:9
+msgid "Documentation"
+msgstr "ドキュメント"
+
+#: ../../tools/templates/layout.html:36
+msgid "The Python Software Foundation is a non-profit corporation."
+msgstr "Python Software Foundation は非営利団体です。"
+
+#: ../../tools/templates/layout.html:37
+msgid "Please donate."
+msgstr "寄付"
+
+#: ../../tools/templates/layout.html:39
+msgid "Last updated on %(last_update)s."
+msgstr ""
+
+#: ../../tools/templates/layout.html:40
+msgid "<a href=\"%(pathto_bugs)s\">Found a bug</a>?"
+msgstr "<a href=\"%(pathto_bugs)s\">バグを見つけたら</a>?"
+
+#: ../../tools/templates/layout.html:42
+msgid ""
+"Created using <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> "
+"%(sphinx_version)s."
+msgstr "このドキュメントは <a href=\"http://sphinx.pocoo.org/\">Sphinx</a> %(sphinx_version)s を使って作成されました。"
+
+#: ../../tools/templates/layout.html:47
+msgid "This Page"
+msgstr "このページ"
+
+#: ../../tools/templates/layout.html:49
+msgid "Report a Bug"
+msgstr "バグ報告"
+
+#: ../../tools/templates/layout.html:51
+msgid "Show Source"
+msgstr "ソースの表示"

@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:15+0000\n"
+"PO-Revision-Date: 2017-03-23 12:58+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -106,7 +107,7 @@ msgid ""
 "remain supported by the core development team (receiving security updates "
 "and other bug fixes) until at least 2020 (10 years after its initial "
 "release, compared to the more typical support period of 18--24 months)."
-msgstr ""
+msgstr "上述のように、 2.7 リリースは以前の 2.x バージョンに較べて遥かに長期間のメンテナンスとなります。Python 2.7 は現在では、最低でも 2020 年までコア開発チームによって(セキュリティアップデートやほかのバグフィックスの)サポートがなされ続けることが求められています(最初のリリースから 10 年後です。普通であれば 18--24 ヶ月なのに)。"
 
 #: ../../whatsnew/2.7.rst:109
 msgid ""
@@ -315,7 +316,7 @@ msgid ""
 "argument that defaults to ``True``.  If *last* is true, the most recently "
 "added key is returned and removed; if it's false, the oldest key is "
 "selected::"
-msgstr ""
+msgstr ":meth:`~collections.OrderedDict.popitem` メソッドは、オプションの *last* 引数を持ち、でフォルトで ``True`` になっています。 *last* が真の場合、一番最近に追加された key が返され、削除されます。偽の場合、最も古い key が選ばれます::"
 
 #: ../../whatsnew/2.7.rst:262
 msgid ""
@@ -460,7 +461,7 @@ msgstr "以下はこの使用例です::"
 msgid ""
 "Unless you override it, :option:`!-h` and :option:`!--help` switches are "
 "automatically added, and produce neatly formatted output::"
-msgstr ""
+msgstr "オーバーライドしない限り、 :option:`!-h` と :option:`!--help` スイッチが自動的に追加され、綺麗にフォーマットした出力を生成します。 ::"
 
 #: ../../whatsnew/2.7.rst:410
 msgid ""
@@ -1004,7 +1005,7 @@ msgid ""
 "machines and base 2**15 on 32-bit machines; on Unix, there's a new configure"
 " option :option:`!--enable-big-digits` that can be used to override this "
 "default."
-msgstr ""
+msgstr "多倍長整数の内部格納方式が、 2**15 ベースと 2**30 ベースのどちらかをビルド時に選択するようになりました。以前は常に 2**15 ベースで格納していました。 2**30 ベースにすると 64bit マシンに置いては確実にパフォーマンスが向上しますが、 32bit マシンではパフォーマンスが向上する場合も低下する場合もあります。なので、デフォルトでは 64bit マシンでは 2**30 ベースで、 32bit マシンでは 2**15 ベースになるようになります。 Unix では新しい configure オプションとして :option:`!--enable-big-digits` が追加され、このデフォルトの選択をオーバーライドできるようになっています。"
 
 #: ../../whatsnew/2.7.rst:950
 msgid ""
@@ -1042,7 +1043,7 @@ msgid ""
 "string and special-cases it; this results in a 1--3% performance increase "
 "for applications that frequently use ``%`` with strings, such as templating "
 "libraries. (Implemented by Collin Winter; :issue:`5176`.)"
-msgstr ""
+msgstr "``%`` の実装が、左側のオペランドが文字列型かどうかをチェックしてその場合の処理を特殊化しました。これにより文字列に対して ``%`` を頻繁に使う、テンプレートライブラリなどのアプリケーションのパフォーマンスが1--3%向上します。 (Implemented by Collin Winter; :issue:`5176`.)"
 
 #: ../../whatsnew/2.7.rst:982
 msgid ""
@@ -1707,7 +1708,7 @@ msgid ""
 ":meth:`~SocketServer.BaseServer.handle_timeout` will be called and "
 ":meth:`~SocketServer.BaseServer.handle_request` will return. (Contributed by"
 " Kristján Valur Jónsson; :issue:`6192` and :issue:`6267`.)"
-msgstr ""
+msgstr ":mod:`SocketServer` モジュールの :class:`~SocketServer.TCPServer` クラスは、ソケットタイムアウトと Nagle アルゴリズムの無効化をサポートするようになりました。 :attr:`~SocketServer.TCPServer.disable_nagle_algorithm` クラス属性は、デフォルトで ``False`` です。上書きされて真になると、新しいリクエスト接続は、TCP_NODELAY オプションを設定され、一つの TCP パケットにたくさんの小さな送信がバッファリングされることを防ぎます。 :attr:`~SocketServer.BaseServer.timeout` クラス属性は、リクエストソケットに適用されるタイムアウトを秒で保持できます。その時間内にリクエストが受け付けられなければ、 :meth:`~SocketServer.BaseServer.handle_timeout` が呼び出され、 :meth:`~SocketServer.BaseServer.handle_request` が返されます。(Contributed by Kristján Valur Jónsson; :issue:`6192` and :issue:`6267`.)"
 
 #: ../../whatsnew/2.7.rst:1515
 msgid ""
@@ -2108,7 +2109,7 @@ msgid ""
 "output and standard error streams during each test.  If the test passes, any"
 " resulting output will be discarded; on failure, the buffered output will be"
 " displayed."
-msgstr ""
+msgstr ":option:`-b <unittest -b>` や :option:`!--buffer` は、標準出力や標準エラーストリームをそれぞれのテストの間バッファに入れます。テストが通れば、結果の出力は全て捨てられます。失敗したら、バッファに入れられた出力が表示されます。"
 
 #: ../../whatsnew/2.7.rst:1828
 msgid ""
@@ -2117,7 +2118,7 @@ msgid ""
 "process immediately, the currently running test will be completed and then "
 "the partial results up to the interruption will be reported. If you're "
 "impatient, a second press of control-C will cause an immediate interruption."
-msgstr ""
+msgstr ":option:`-c <unittest -c>` や :option:`!--catch` は、control-C による中断をより上品にします。テストプロセスを即座に中断するのではなく、現在実行中のテストは完了させ、中断までの部分的な結果は報告されます。待ちきれなければ、control-C をもう一度押せば、即座に中断されます。"
 
 #: ../../whatsnew/2.7.rst:1835
 msgid ""
@@ -2135,7 +2136,7 @@ msgid ""
 "stop immediately when a test fails instead of continuing to execute further "
 "tests.  (Suggested by Cliff Dyer and implemented by Michael Foord; "
 ":issue:`8074`.)"
-msgstr ""
+msgstr ":option:`-f <unittest -f>` や :option:`!--failfast` は、テストが失敗したとき、他のテストを続けるのではなく、テストの実行を即座に停止します。 (Suggested by Cliff Dyer and implemented by Michael Foord; :issue:`8074`.)"
 
 #: ../../whatsnew/2.7.rst:1847
 msgid ""
@@ -2159,7 +2160,7 @@ msgid ""
 "attribute of your :class:`~unittest.TestCase` classes to true, both the "
 "standard error message and any additional message you provide will be "
 "printed for failures.  (Added by Michael Foord; :issue:`5663`.)"
-msgstr ""
+msgstr ":meth:`~unittest.TestCase.assertEqual`, :meth:`~unittest.TestCase.assertTrue`, および :meth:`~unittest.TestCase.assertFalse` 失敗のメッセージは、提供する情報量が増えました。 :class:`~unittest.TestCase` クラスの :attr:`~unittest.TestCase.longMessage` 属性を真に設定すると、失敗時に、標準のエラーメッセージと追加して提供したメッセージの両方が表示されます。(Added by Michael Foord; :issue:`5663`.)"
 
 #: ../../whatsnew/2.7.rst:1861
 msgid ""
@@ -2331,7 +2332,7 @@ msgid ""
 ":func:`~unittest.main` doesn't call :func:`sys.exit`, allowing "
 ":func:`~unittest.main` to be used from the interactive interpreter. "
 "(Contributed by J. Pablo Fernández; :issue:`3379`.)"
-msgstr ""
+msgstr ":func:`unittest.main` はオプションの ``exit`` 引数を取るようになりました。偽の場合、 :func:`~unittest.main` は :func:`sys.exit` を呼び出さず、これにより対話型インタプリタから :func:`~unittest.main` が使えるようになります。(Contributed by J. Pablo Fernández; :issue:`3379`.)"
 
 #: ../../whatsnew/2.7.rst:1969
 msgid ""
@@ -2645,7 +2646,7 @@ msgid ""
 "New configure option: the :option:`!--with-system-expat` switch allows "
 "building the :mod:`pyexpat` module to use the system Expat library. "
 "(Contributed by Arfrever Frehtes Taifersar Arahesis; :issue:`7609`.)"
-msgstr ""
+msgstr "新しい設定オプション: :option:`!--with-system-expat` スイッチにより、 :mod:`pyexpat` モジュールをビルドして、システム Expat ライブラリを使えます。 (Contributed by Arfrever Frehtes Taifersar Arahesis; :issue:`7609`.)"
 
 #: ../../whatsnew/2.7.rst:2221
 msgid ""
@@ -2654,14 +2655,14 @@ msgid ""
 "detector to analyze correctly. Valgrind will therefore be better at "
 "detecting memory leaks and overruns. (Contributed by James Henstridge; "
 ":issue:`2422`.)"
-msgstr ""
+msgstr "新しい設定オプション: :option:`!--with-valgrind` オプションは、 Valgrind メモリエラー検出器が正しく分析するのが難しい pymalloc アロケータを無効にするようになりました。ですから Valgrind は、メモリリークやオーバーランをより検出できます。 (Contributed by James Henstridge; :issue:`2422`.)"
 
 #: ../../whatsnew/2.7.rst:2228
 msgid ""
 "New configure option: you can now supply an empty string to :option"
 ":`!--with-dbmliborder=` in order to disable all of the various DBM modules."
 "  (Added by Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
-msgstr ""
+msgstr "新しい設定オプション: :option:`!--with-dbmliborder=` に空の文字列を与えて様々な DBM モジュールを全て無効にできます。 (Added by Arfrever Frehtes Taifersar Arahesis; :issue:`6491`.)"
 
 #: ../../whatsnew/2.7.rst:2233
 msgid ""
@@ -2864,7 +2865,7 @@ msgid ""
 "that takes an integer that will be used as the random seed for the "
 ":option:`!-r` option that executes tests in random order. The :option:`!-r` "
 "option also reports the seed that was used (Added by Collin Winter.)"
-msgstr ""
+msgstr ":file:`regrtest.py` スクリプトは、テストを乱順に実行する :option:`!-r` オプションの、ランダムシードに使われる整数を取る :option:`!--randseed=` スイッチを取るようになりました。 :option:`!-r` オプションは、使われたシードも報告します。 (Added by Collin Winter.)"
 
 #: ../../whatsnew/2.7.rst:2394
 msgid ""
@@ -2875,7 +2876,7 @@ msgid ""
 "runtimes. (Added by Antoine Pitrou, :issue:`6152`.)  This can also be used "
 "with a new :option:`!-F` switch that runs selected tests in a loop until "
 "they fail.  (Added by Antoine Pitrou; :issue:`7312`.)"
-msgstr ""
+msgstr "もう一つの :file:`regrtest.py` スイッチは :option:`!-j` で、いくつのテストを並行して実行するかを指定する整数です。これにより、マルチコア機での合計実行時間を短縮できます。このオプションは、実行時間を長くすることで知られている :option:`!-R` スイッチなど、いくつかの他のオプションと互換です。 (Added by Antoine Pitrou, :issue:`6152`.) これはまた、選ばれたテストを失敗するまでループして実行する :option:`!-F` スイッチとも同時に使えます。(Added by Antoine Pitrou; :issue:`7312`.)"
 
 #: ../../whatsnew/2.7.rst:2403
 msgid ""
@@ -3127,7 +3128,7 @@ msgid ""
 ":pep:`477` approves the inclusion of the :pep:`453` ensurepip module and the"
 " improved documentation that was enabled by it in the Python 2.7 maintenance"
 " releases, appearing first in the Python 2.7.9 release."
-msgstr ""
+msgstr ":pep:`477` が Python 2.7 メンテナンスリリースに :pep:`453` ensurepip モジュール, それによって可能になるドキュメンテーションの改善を含めることを認め、Python 2.7.9 リリースではじめてお披露目されました。"
 
 #: ../../whatsnew/2.7.rst:2609
 msgid "Bootstrapping pip By Default"
