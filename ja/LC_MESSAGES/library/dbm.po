@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:50+0000\n"
+"PO-Revision-Date: 2017-03-23 04:16+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -129,7 +129,7 @@ msgstr "``dbm`` データベースをクローズします。"
 
 #: ../../library/dbm.rst:79
 msgid "Module :mod:`anydbm`"
-msgstr ""
+msgstr ":mod:`anydbm` モジュール"
 
 #: ../../library/dbm.rst:79
 msgid "Generic interface to ``dbm``\\ -style databases."
@@ -145,7 +145,7 @@ msgstr "GNU GDBM ライブラリに対する同様のインタフェース。"
 
 #: ../../library/dbm.rst:84
 msgid "Module :mod:`whichdb`"
-msgstr ""
+msgstr ":mod:`whichdb` モジュール"
 
 #: ../../library/dbm.rst:85
 msgid "Utility module used to determine the type of an existing database."

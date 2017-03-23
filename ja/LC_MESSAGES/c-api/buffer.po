@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:36+0000\n"
+"PO-Revision-Date: 2017-03-23 04:13+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -94,7 +95,7 @@ msgstr "バッファを通してアクセスできる要素の形式を指定す
 msgid ""
 "The number of dimensions the memory represents as a multi-dimensional array."
 "  If it is ``0``, :c:data:`strides` and :c:data:`suboffsets` must be *NULL*."
-msgstr ""
+msgstr "メモリが多次元配列を表している時の次元数。 ``0`` の場合、 :c:data:`strides` と :c:data:`suboffsets` は *NULL* でなければなりません。"
 
 #: ../../c-api/buffer.rst:82
 msgid ""
@@ -156,7 +157,7 @@ msgstr "バッファ関連関数"
 
 #: ../../c-api/buffer.rst:146
 msgid "Return ``1`` if *obj* supports the buffer interface otherwise ``0``."
-msgstr ""
+msgstr "*obj* がバッファインタフェースをサポートしている場合に ``1`` を、それ以外の場合に ``0`` を返します。"
 
 #: ../../c-api/buffer.rst:151
 msgid ""
@@ -182,7 +183,7 @@ msgstr "バッファ提供側はすべての方法でメモリを共有できる
 
 #: ../../c-api/buffer.rst:167
 msgid "``0`` is returned on success and ``-1`` on error."
-msgstr ""
+msgstr "成功したら ``0`` が、エラー時には ``-1`` が返されます。"
 
 #: ../../c-api/buffer.rst:169
 msgid "The following table gives possible values to the *flags* arguments."
@@ -369,7 +370,7 @@ msgid ""
 "Return ``1`` if the memory defined by the *view* is C-style (*fortran* is "
 "``'C'``) or Fortran-style (*fortran* is ``'F'``) contiguous or either one "
 "(*fortran* is ``'A'``).  Return ``0`` otherwise."
-msgstr ""
+msgstr "*view* で定義されているメモリが、 C スタイル (*fortran* == ``'C'``) のときか、 Fortran スタイル (*fortran* == ``'F'``) のときか、そのいずれか (*fortran* == ``'A'``) であれば ``1`` を返します。それ以外の場合は ``0`` を返します。"
 
 #: ../../c-api/buffer.rst:283
 msgid ""
@@ -384,7 +385,7 @@ msgid ""
 "only share a contiguous chunk of memory of \"unsigned bytes\" of the given "
 "length.  Return ``0`` on success and ``-1`` (with raising an error) on "
 "error."
-msgstr ""
+msgstr "バッファ提供側が与えられた長さの \"unsigned bytes\" の連続した1つのメモリブロックしか提供できないものとして、 *view* バッファ情報構造体を正しく埋める。成功したら ``0`` を、エラー時には (例外を発生させつつ) ``-1`` を返す。"
 
 #: ../../c-api/buffer.rst:296
 msgid "MemoryView objects"

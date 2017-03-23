@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:37+0000\n"
+"PO-Revision-Date: 2017-03-23 04:14+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -97,7 +98,7 @@ msgid ""
 "not already one, and then return its value. If there is an error, ``-1`` is "
 "returned, and the caller should check ``PyErr_Occurred()`` to find out "
 "whether there was an error, or whether the value just happened to be ``-1``."
-msgstr ""
+msgstr "オブジェクトがまだ :c:type:`PyIntObject` でなければまず型キャストを試み、次にその値を返します。エラーが発生した場合、 ``-1`` が返されます。その時呼び出し側は、 ``PyErr_Occurred()`` を使って、エラーが発生したのか、単に値が ``-1`` だったのかを判断するべきです。"
 
 #: ../../c-api/int.rst:96
 msgid "Return the value of the object *io*.  No error checking is performed."

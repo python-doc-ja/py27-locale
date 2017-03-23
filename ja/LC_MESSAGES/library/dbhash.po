@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:50+0000\n"
+"PO-Revision-Date: 2017-03-23 04:16+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -108,7 +108,7 @@ msgstr "オプションの *mode* 引数は、新たにデータベースを作�
 
 #: ../../library/dbhash.rst:61
 msgid "Module :mod:`anydbm`"
-msgstr ""
+msgstr ":mod:`anydbm` モジュール"
 
 #: ../../library/dbhash.rst:61
 msgid "Generic interface to ``dbm``\\ -style databases."
@@ -124,7 +124,7 @@ msgstr "BSD ``db`` ライブラリへの低レベルインタフェース。"
 
 #: ../../library/dbhash.rst:66
 msgid "Module :mod:`whichdb`"
-msgstr ""
+msgstr ":mod:`whichdb` モジュール"
 
 #: ../../library/dbhash.rst:67
 msgid "Utility module used to determine the type of an existing database."

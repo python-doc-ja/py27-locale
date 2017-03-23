@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-22 15:15+0000\n"
+"PO-Revision-Date: 2017-03-23 04:16+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -201,7 +201,7 @@ msgstr "インタフェースは以下のコードに集約されています (`
 
 #: ../../library/shelve.rst:189
 msgid "Module :mod:`anydbm`"
-msgstr ""
+msgstr ":mod:`anydbm` モジュール"
 
 #: ../../library/shelve.rst:189
 msgid "Generic interface to ``dbm``\\ -style databases."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:51+0000\n"
+"PO-Revision-Date: 2017-03-23 04:16+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -91,7 +91,7 @@ msgstr "``dumbdm`` データベースをクローズします。"
 
 #: ../../library/dumbdbm.rst:64
 msgid "Module :mod:`anydbm`"
-msgstr ""
+msgstr ":mod:`anydbm` モジュール"
 
 #: ../../library/dumbdbm.rst:64
 msgid "Generic interface to ``dbm``\\ -style databases."
@@ -123,7 +123,7 @@ msgstr "非文字列データを記録する永続化モジュール。"
 
 #: ../../library/dumbdbm.rst:75
 msgid "Module :mod:`whichdb`"
-msgstr ""
+msgstr ":mod:`whichdb` モジュール"
 
 #: ../../library/dumbdbm.rst:76
 msgid "Utility module used to determine the type of an existing database."

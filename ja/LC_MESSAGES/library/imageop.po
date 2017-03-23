@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:55+0000\n"
+"PO-Revision-Date: 2017-03-23 04:15+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -75,7 +76,7 @@ msgid ""
 "Convert an 8-bit deep greyscale image to a 1-bit deep image by thresholding "
 "all the pixels.  The resulting image is tightly packed and is probably only "
 "useful as an argument to :func:`mono2grey`."
-msgstr ""
+msgstr "全ピクセルを二値化することによって、深さ 8 ビットのグレースケール画像を深さ 1 ビットの画像へ変換します。処理後の画像は隙間なく詰め込まれ、おそらく :func:`mono2grey` の引数としてしか使い道がないでしょう。"
 
 #: ../../library/imageop.rst:59
 msgid ""
