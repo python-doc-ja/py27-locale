@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-23 13:43+0000\n"
+"PO-Revision-Date: 2017-03-24 03:11+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -299,7 +299,7 @@ msgstr ""
 
 #: ../../tools/templates/download.html:83
 msgid "Unpacking"
-msgstr ""
+msgstr "展開"
 
 #: ../../tools/templates/download.html:85
 msgid ""
@@ -309,7 +309,7 @@ msgid ""
 "program can be used to handle the ZIP archives if desired. The\n"
 ".tar.bz2 archives provide the best compression and fastest download\n"
 "times."
-msgstr ""
+msgstr "Unix ユーザーは .tar.bz2 アーカイブをダウンロードする方が良いです;\nこれは bzip 圧縮された tar アーカイブで、 tar と bzip2 プログラムを使って通常のやり方で扱えます。\n使いたければ <a href=\"http://www.info-zip.org\">InfoZIP</a> の unzip プログラムでも ZIP アーカイブを扱えます。\n.tar.bz2 アーカイブが圧縮率が最も良く、ダウンロード時間が最短となります。"
 
 #: ../../tools/templates/download.html:92
 msgid ""
@@ -320,7 +320,7 @@ msgstr ""
 
 #: ../../tools/templates/download.html:97
 msgid "Problems"
-msgstr ""
+msgstr "問題"
 
 #: ../../tools/templates/download.html:99
 msgid ""
@@ -343,7 +343,7 @@ msgstr "寄付"
 
 #: ../../tools/templates/layout.html:39
 msgid "Last updated on %(last_update)s."
-msgstr ""
+msgstr "最終更新日時: %(last_update)s"
 
 #: ../../tools/templates/layout.html:40
 msgid "<a href=\"%(pathto_bugs)s\">Found a bug</a>?"
