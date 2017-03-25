@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:13+0000\n"
+"PO-Revision-Date: 2017-03-25 06:19+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -172,22 +172,22 @@ msgstr "デフォルトでは、Python のソースコードは UTF-8 でエン�
 msgid ""
 "To declare an encoding other than the default one, a special comment line "
 "should be added as the *first* line of the file.  The syntax is as follows::"
-msgstr ""
+msgstr "デフォルトエンコーディング以外のエンコーディングを使用するには\nファイルの *先頭*の行に特別なコメントを追加しなければなりません。書式は以下の通りです::"
 
 #: ../../tutorial/interpreter.rst:142
 msgid ""
 "where *encoding* is one of the valid :mod:`codecs` supported by Python."
-msgstr ""
+msgstr "*encoding* には、Python が :mod:`codecs` でサポートしている有効なエンコーディングを指定します。"
 
 #: ../../tutorial/interpreter.rst:144
 msgid ""
 "For example, to declare that Windows-1252 encoding is to be used, the first "
 "line of your source code file should be::"
-msgstr ""
+msgstr "例えば、Windows-1252 エンコーディングを使用するには、ソースコードファイルの先頭行は下記のとおりとなります::"
 
 #: ../../tutorial/interpreter.rst:149
 msgid ""
 "One exception to the *first line* rule is when the source code starts with a"
 " :ref:`UNIX \"shebang\" line <tut-scripts>`.  In this case, the encoding "
 "declaration should be added as the second line of the file.  For example::"
-msgstr ""
+msgstr "*先頭行* のルールは、:ref:`UNIX \"shebang\" line <tut-script>` でソースコードが始まる場合には当てはまりません。\nこの場合には、エンコーディングの宣言はファイルの２行目に追加します。\n例えば以下のようになります::"
