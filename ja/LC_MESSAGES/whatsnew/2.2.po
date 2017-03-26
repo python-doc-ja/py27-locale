@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:14+0000\n"
+"PO-Revision-Date: 2017-03-26 15:20+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -79,7 +80,7 @@ msgid ""
 "supports all of the methods of lists and that can be subclassed further, but"
 " there's lots of C code that expects a regular Python list and won't accept "
 "a :class:`~UserList.UserList` instance."
-msgstr ""
+msgstr "昔々、あるところにいた私は、Python 設計の欠点を列挙するウェブページを書きました。その中でも最も重大な欠陥と思われたのが、C で実装された Python 型をサブクラス化出来ないことでした。特に、組み込み型をサブクラス化できません。ですからあなたは、そう、一つの便利メソッドを追加したくてリストをサブクラス化することも出来ないのです。 :mod:`UserList` モジュールがリストの全てのメソッドをサポートし、さらにサブクラス化も出来ますが、大量の通常 Python リストを期待する C コードがあり、それらは :class:`~UserList.UserList` のインスタンスを受け付けないでしょう。"
 
 #: ../../whatsnew/2.2.rst:61
 msgid ""
@@ -876,7 +877,7 @@ msgid ""
 "by the change and fix it.  By default, Python 2.2 will simply perform "
 "classic division without a warning; the warning will be turned on by default"
 " in Python 2.3."
-msgstr ""
+msgstr "Python 2.2 は、コードが変更後の除算セマンティクスで動作するかどうかをテストするコマンドライン引数をサポートします。 :option:`-Q warn <-Q>` で python を実行すると、除算が二つの整数に適用されている箇所全てで警告します。除算の意味変更の影響を受ける箇所の特定と修正に使えるでしょう。デフォルトでは、Python 2.2 は警告なしで単純に classic division を実行します; その警告がデフォルトになるのは Python 2.3 からです。"
 
 #: ../../whatsnew/2.2.rst:770
 msgid ":pep:`238` - Changing the Division Operator"
@@ -900,7 +901,7 @@ msgid ""
 "encoding by supplying :option:`!--enable-unicode=ucs4` to the configure "
 "script.   (It's also possible to specify :option:`!--disable-unicode` to "
 "completely disable Unicode support.)"
-msgstr ""
+msgstr "Python の Unicode サポートが 2.2 で少し拡張されています。Unicode 文字列は普通は 16 ビット符号なし整数としての UCS-2 で格納されます。Python 2.2 は内部エンコーディングとして 32 ビット符号なし整数の UCS-4 を使うようにもコンパイル出来ます。これは :program:`configure` スクリプトに :option:`!--enable-unicode=ucs4` オプションを与えることで行います。(:option:`!--disable-unicode` を与えることで完全に Unicode サポートを無効にすることも出来ます。)"
 
 #: ../../whatsnew/2.2.rst:786
 msgid ""
@@ -1093,7 +1094,7 @@ msgid ""
 ":func:`stat`, :func:`fstat`, :func:`statvfs`, and :func:`fstatvfs` in the "
 ":mod:`os` module, and :func:`localtime`, :func:`gmtime`, and "
 ":func:`strptime` in the :mod:`time` module."
-msgstr ""
+msgstr "元々が長ったらしいタプルを返していたいくつもの関数が、擬似シーケンスを返すように変更されています。変更後もそれはタプルとして振舞いますが、例えば memberst_mtime や :attr:`tm_year` といった記憶しやすい属性も持ちます。この変更が行われたものには :mod:`os` モジュールの :func:`stat`, :func:`fstat`, :func:`statvfs`, :func:`fstatvfs` や :mod:`time` モジュールの :func:`localtime`, :func:`gmtime`, :func:`strptime` が含まれます。"
 
 #: ../../whatsnew/2.2.rst:972
 msgid ""
@@ -1119,7 +1120,7 @@ msgid ""
 "The :mod:`socket` module can be compiled to support IPv6; specify the "
 ":option:`!--enable-ipv6` option to Python's configure script.  (Contributed "
 "by Jun-ichiro \"itojun\" Hagino.)"
-msgstr ""
+msgstr ":mod:`socket` モジュールを IPv6 サポート付きでコンパイル可能になりました。Python の :program:`configure` スクリプトに :option:`!--enable-ipv6` オプションを与えてください。(Contributed by Jun-ichiro \"itojun\" Hagino.)"
 
 #: ../../whatsnew/2.2.rst:985
 msgid ""

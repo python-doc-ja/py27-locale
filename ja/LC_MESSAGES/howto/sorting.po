@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:43+0000\n"
+"PO-Revision-Date: 2017-03-26 15:21+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -58,7 +59,7 @@ msgid ""
 "list in-place (and returns ``None`` to avoid confusion). Usually it's less "
 "convenient than :func:`sorted` - but if you don't need the original list, "
 "it's slightly more efficient."
-msgstr ""
+msgstr "リストの :meth:`list.sort` メソッドを呼びだしても同じことができます。この方法はリストをインプレースに変更します (そして sorted との混乱を避けるため ``None`` を返します)。多くの場合、こちらの方法は :func:`sorted` と比べると不便です - ただし、元々のリストが不要な場合には、わずかですがより効率的です。"
 
 #: ../../howto/sorting.rst:36
 msgid ""
@@ -110,7 +111,7 @@ msgid ""
 "operator module has :func:`operator.itemgetter`, "
 ":func:`operator.attrgetter`, and starting in Python 2.5 an "
 ":func:`operator.methodcaller` function."
-msgstr ""
+msgstr "上述した key 関数のパターンはとても一般的です、そのため、Python は高速で扱いやすいアクセサ関数を提供しています。 operator モジュールには :func:`operator.itemgetter`, :func:`operator.attrgetter`, そして Python 2.5 から利用できるようになった :func:`operator.methodcaller` 関数があります。"
 
 #: ../../howto/sorting.rst:95
 msgid "Using those functions, the above examples become simpler and faster:"
@@ -151,7 +152,7 @@ msgid ""
 "<https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`_\\. That means "
 "that when multiple records have the same key, their original order is "
 "preserved."
-msgstr ""
+msgstr "Python 2.2 からソートは、 `stable <https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`_ であることが保証されるようになりました。これはレコードの中に同じキーがある場合、元々の順序が維持されるということを意味します。"
 
 #: ../../howto/sorting.rst:148
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-23 04:16+0000\n"
+"PO-Revision-Date: 2017-03-26 15:10+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -235,7 +235,7 @@ msgstr "標準の Unix データベースインタフェース。"
 
 #: ../../library/shelve.rst:202
 msgid "Module :mod:`dumbdbm`"
-msgstr ""
+msgstr ":mod:`dumbdbm` モジュール"
 
 #: ../../library/shelve.rst:202
 msgid "Portable implementation of the ``dbm`` interface."
@@ -243,7 +243,7 @@ msgstr "``dbm`` インタフェースの移植性のある実装。"
 
 #: ../../library/shelve.rst:205
 msgid "Module :mod:`gdbm`"
-msgstr ""
+msgstr ":mod:`gdbm` モジュール"
 
 #: ../../library/shelve.rst:205
 msgid "GNU database interface, based on the ``dbm`` interface."

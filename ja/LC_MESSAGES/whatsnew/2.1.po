@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015-2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:14+0000\n"
+"PO-Revision-Date: 2017-03-26 15:13+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -218,7 +219,7 @@ msgid ""
 "given comparison for each element.  If the two matrices are of different "
 "sizes, then the compare has to be able to raise an exception to signal the "
 "error."
-msgstr ""
+msgstr "以前のバージョンでは、ユーザ定義クラスや拡張型の比較を実装するための Python のサポートはとても単純なものでした。クラスは 2 つのインスタンスを与えられる :meth:`__cmp__` メソッドを実装でき、実際の値がどうあれ、同値の場合には 0 、そうでないなら +1 か -1 を返せるだけでした; メソッドは例外を上げることも、ブール値以外のものを返すこともできませんでした。Numeric Python が使われるような複雑な計算プログラムでは、要素ごとに与えられた比較結果を含む行列を返し、2 つの行列を要素単位で比較できることがより便利なので、Numeric Python のユーザはこのモデルがとても脆弱で限定的であることにしばしば気付きました。もし 2 つの行列サイズが異なる場合、この比較はエラー通知の例外を上げられなければなりません。"
 
 #: ../../whatsnew/2.1.rst:174
 msgid ""
@@ -585,7 +586,7 @@ msgid ""
 "Python dictionary; you *can't* be tricky and set it to a "
 ":class:`~UserDict.UserDict` instance, or any other random object that "
 "behaves like a mapping."
-msgstr ""
+msgstr "属性を含んだ辞書に、関数の属性 :attr:`~object.__dict__` としてアクセス出来ます。クラスインスタンスの :attr:`~object.__dict__` 属性とは違って、関数では実際には、 :attr:`~object.__dict__` に別の辞書を代入出来ます。ですが、新しい値は普通の Python 辞書に制限されています; ズルは *出来ません* し、 :class:`~UserDict.UserDict` インスタンスやなにかほかのマッピングのように振舞うデタラメなオブジェクトはセット出来ません。"
 
 #: ../../whatsnew/2.1.rst:454
 msgid ":pep:`232` - Function Attributes"
@@ -616,7 +617,7 @@ msgid ""
 "``FILE.PY``. Case-insensitive matching can be requested by setting the "
 ":envvar:`PYTHONCASEOK` environment variable before starting the Python "
 "interpreter."
-msgstr ""
+msgstr "Python 2.1 では :keyword:`import` 文が、case-insensitive (大小文字に無関心)なプラットフォームで case-sensitivity (大小文字への繊細さ)をシミュレートして動作します。Python は今や、まずはデフォルトで case-sensitive なマッチによる検索をし、それで見つからなければ :exc:`ImportError` を投げます。ですから ``import file`` は ``FILE.PY`` をインポートしません。case-insensitive マッチングは Python インタプリタ開始前に環境変数 :envvar:`PYTHONCASEOK` をセットすることで要求出来ます。"
 
 #: ../../whatsnew/2.1.rst:479
 msgid "PEP 217: Interactive Display Hook"
@@ -629,7 +630,7 @@ msgid ""
 "variable :func:`sys.displayhook` can be set to a callable object which will "
 "be called instead of :func:`repr`. For example, you can set it to a special "
 "pretty-printing function::"
-msgstr ""
+msgstr "Python インタプリタを対話的に使う際には、コマンドの出力結果表示にはビルトインの :func:`repr` 関数が使われます。Python 2.1 ではこの :func:`repr` の代わりに呼び出される呼び出し可能オブジェクトを、 :func:`sys.displayhook` 変数にセット出来ます。たとえば特別な pretty- printing 関数をセット出来ます::"
 
 #: ../../whatsnew/2.1.rst:502
 msgid ":pep:`217` - Display Hook for Interactive Use"

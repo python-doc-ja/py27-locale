@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-01 17:09+0000\n"
+"PO-Revision-Date: 2017-03-26 16:25+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -76,7 +77,7 @@ msgid ""
 " a new generator can supply a :meth:`~Random.getrandbits` method --- this "
 "allows :meth:`randrange` to produce selections over an arbitrarily large "
 "range."
-msgstr ""
+msgstr "自分で考案した基本乱数生成器を使いたい場合、クラス :class:`Random` をサブクラス化することもできます。\nこの場合、メソッド :meth:`~Random.random` 、 :meth:`~Random.seed` 、 :meth:`~Random.getstate` 、 :meth:`~Random.setstate` 、 :meth:`~Random.jumpahead` をオーバライドしてください。\nオプションとして、新しいジェネレータは :meth:`~Random.getrandbits` メソッドを提供することができます。\nこれにより :meth:`randrange` メソッドが任意に大きな範囲から選択を行えるようになります。"
 
 #: ../../library/random.rst:45
 msgid "the :meth:`getrandbits` method."
@@ -118,21 +119,21 @@ msgstr "保守(bookkeeping)関数:"
 
 #: ../../library/random.rst:76
 msgid "Initialize internal state of the random number generator."
-msgstr ""
+msgstr "乱数生成器の内部状態を初期化します。"
 
 #: ../../library/random.rst:78
 msgid ""
 "``None`` or no argument seeds from current time or from an operating system "
 "specific randomness source if available (see the :func:`os.urandom` function"
 " for details on availability)."
-msgstr ""
+msgstr "引数が ``None`` または無い場合は、現在時刻もしくは利用可能ならオペレーティングシステム固有の乱数発生源をシードとします (利用可能かどうかについての詳細は :func:`os.urandom` 関数を参照してください)。"
 
 #: ../../library/random.rst:82
 msgid ""
 "If *a* is not ``None`` or an :class:`int` or a :class:`long`, then "
 "``hash(a)`` is used instead.  Note that the hash values for some types are "
 "nondeterministic when :envvar:`PYTHONHASHSEED` is enabled."
-msgstr ""
+msgstr "*a* が ``None`` や :class:`int` や :class:`long` でない場合は ``hash(a)`` を代わりに使います。\n:envvar:`PYTHONHASHSEED` が有効なときは、ある型のハッシュ値は非決定的であることに注意してください。"
 
 #: ../../library/random.rst:86
 msgid "formerly, operating system resources were not used."

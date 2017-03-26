@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:38+0000\n"
+"PO-Revision-Date: 2017-03-26 15:24+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -41,7 +42,7 @@ msgid ""
 "strings in the file, and upon unmarshalling.  Version 2 (new in Python 2.5) "
 "uses a binary format for floating point numbers.  *Py_MARSHAL_VERSION* "
 "indicates the current file format (currently 2)."
-msgstr ""
+msgstr "このモジュールでは、3つのバージョンのデータ形式をサポートしています。バージョン ``0`` は従来のもので、(Python 2.4 で新たに追加された) バージョン ``1`` は intern 化された文字列をファイル内で共有し、逆マーシャル化の時にも共有されるようにします。 (Python 2.5 で新たに追加された) バージョン2は、浮動小数点数に対してバイナリフォーマットを利用します。 *PY_MARSHAL_VERSION* は現在のバージョン (バージョン 2) を示します。"
 
 #: ../../c-api/marshal.rst:25
 msgid ""
