@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:14+0000\n"
+"PO-Revision-Date: 2017-03-27 03:04+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -588,7 +589,7 @@ msgid ""
 "libraries try to produce sensible output.  Even if it's not displayed, "
 "however, the inaccuracy is still there and subsequent operations can magnify"
 " the error."
-msgstr ""
+msgstr "この不正確さは数値を表示する際にいつでも目に見えるわけではありません。浮動小数点数から文字列への変換が C ライブラリによって提供されていて、C ライブラリのほとんどが賢明な出力を生成しようと頑張っているからです。それが表示されないにしても、不正確さはそれでも存在していて、後続の計算への誤差が大きくなりえます。"
 
 #: ../../whatsnew/2.4.rst:525
 msgid ""
@@ -659,7 +660,7 @@ msgstr "いったん :class:`Decimal` を手にしてしまえばあとは普通
 msgid ""
 "You can combine :class:`Decimal` instances with integers, but not with "
 "floating-point numbers::"
-msgstr ""
+msgstr ":class:`Decimal` インスタンスと整数は混ぜて使えますが、浮動小数点数とは出来ません::"
 
 #: ../../whatsnew/2.4.rst:609
 msgid ""
@@ -751,7 +752,7 @@ msgstr "http://www.lahey.com/float.htm"
 msgid ""
 "The article uses Fortran code to illustrate many of the problems that "
 "floating-point inaccuracy can cause."
-msgstr ""
+msgstr "この記事は浮動小数点数の不正確さが起こりうるたくさんの問題について、Fortran コードを使って解説しています。"
 
 #: ../../whatsnew/2.4.rst:692
 msgid "http://speleotrove.com/decimal/"

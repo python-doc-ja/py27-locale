@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:57+0000\n"
+"PO-Revision-Date: 2017-03-27 03:00+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -95,7 +96,7 @@ msgstr "包括的な e-mail 処理パッケージです。 :mod:`mimetools` に�
 
 #: ../../library/mimetools.rst:72
 msgid "Module :mod:`rfc822`"
-msgstr ""
+msgstr ":mod:`rfc822` モジュール"
 
 #: ../../library/mimetools.rst:72
 msgid "Provides the base class for :class:`mimetools.Message`."
@@ -103,7 +104,7 @@ msgstr ":class:`mimetools.Message` のベースクラスを提供しています
 
 #: ../../library/mimetools.rst:75
 msgid "Module :mod:`multifile`"
-msgstr ""
+msgstr ":mod:`multifile` モジュール"
 
 #: ../../library/mimetools.rst:75
 msgid ""

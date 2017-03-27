@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:35+0000\n"
+"PO-Revision-Date: 2017-03-27 02:58+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -103,7 +104,7 @@ msgid ""
 "(This was added as an experimental feature, and there are no known uses in "
 "the current version of Python.)  For *apiver*, the only value which should "
 "be passed is defined by the constant :const:`PYTHON_API_VERSION`."
-msgstr ""
+msgstr "*name* と関数のテーブルに基づいて新たなモジュールオブジェクトを生成し、生成されたモジュールオブジェクトを返します。 *doc* が *NULL* でない場合、モジュールの docstring として使われます。 *self* が *NULL* でない場合、モジュール内の各関数の第一引数として渡されます (*NULL* の時には第一引数も *NULL* になります)。 (この関数は実験的な機能のために追加されたもので、現在の Python のバージョンで使われてはいないはずです。) *apiver* に渡してよい値は、 :const:`PYTHON_API_VERSION` で定義されている定数だけです。"
 
 #: ../../c-api/allocation.rst:109
 msgid ""

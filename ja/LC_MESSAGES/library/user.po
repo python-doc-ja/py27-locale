@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:08+0000\n"
+"PO-Revision-Date: 2017-03-27 02:58+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -101,7 +102,7 @@ msgstr "汎用のモジュールではこのモジュールを import  *しな�
 
 #: ../../library/user.rst:70
 msgid "Module :mod:`site`"
-msgstr ""
+msgstr ":mod:`site` モジュール"
 
 #: ../../library/user.rst:71
 msgid "Site-wide customization mechanism."
