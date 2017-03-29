@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:56+0000\n"
+"PO-Revision-Date: 2017-03-29 03:22+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -71,7 +72,7 @@ msgid ""
 ":class:`unicode` strings.  :class:`TextIOWrapper`, which extends it, is a "
 "buffered text interface to a buffered raw stream (:class:`BufferedIOBase`). "
 "Finally, :class:`~io.StringIO` is an in-memory stream for unicode text."
-msgstr ""
+msgstr ":class:`IOBase` のもう一つのサブクラスである :class:`TextIOBase` は、テキストを表すバイトストリームを扱い、 :class:`unicode` エンコードやデコードといった処理を行います。 :class:`TextIOWrapper` はその拡張で、バッファ付き生ストリーム (:class:`BufferedIOBase`) へのバッファされたテキストインタフェースです。最後に :class:`~io.StringIO` は Unicode テキストに対するインメモリストリームです。"
 
 #: ../../library/io.rst:53
 msgid ""
@@ -247,7 +248,7 @@ msgid ""
 "``'backslashreplace'`` (replace with backslashed escape sequences) can be "
 "used.  Any other error handling name that has been registered with "
 ":func:`codecs.register_error` is also valid."
-msgstr ""
+msgstr "*errors* はエンコードやデコードの際のエラーをどのように扱うかを指定する文字列で、バイナリモードでは使えません。 ``'strict'`` を指定すると、エンコードエラーがあった場合 :exc:`ValueError` 例外が発生します (デフォルトである ``None`` は同様の処理を行います)。 ``'ignore'`` を指定した場合はエラーを無視します。 ``'replace'`` を指定した場合は正常に変換されなかった文字の代わりにマーカ (例えば ``'?'`` のような文字) を挿入します。書き込みの際には ``'xmlcharrefreplace'`` (適切なXML文字参照に置き換える) か ``'backslashreplace'`` (バックスラッシュによるエスケープシーケンスに置き換える) のどちらかが使用できます。 :func:`codecs.register_error` に登録されている他のエラー処理名も指定できます。"
 
 #: ../../library/io.rst:147
 msgid ""
@@ -305,7 +306,7 @@ msgid ""
 ":class:`~io.StringIO` can be used like a file opened in text mode, and for "
 ":class:`bytes` a :class:`BytesIO` can be used like a file opened in a binary"
 " mode."
-msgstr ""
+msgstr ":class:`unicode` 文字列や :class:`bytes` 文字列をファイルとして読み書きすることも可能です。 :class:`unicode` 文字列では :class:`~io.StringIO` を使えばテキストモードで開いたファイルのように扱えます。 :class:`bytes` では :class:`BytesIO` を使えばバイナリモードで開いたファイルのように扱えます。"
 
 #: ../../library/io.rst:190
 msgid ""
@@ -355,7 +356,7 @@ msgid ""
 "clients should consider those methods part of the interface.  Also, "
 "implementations may raise an :exc:`IOError` when operations they do not "
 "support are called."
-msgstr ""
+msgstr ":class:`IOBase` では :meth:`read`, :meth:`readinto`, :meth:`write` が宣言されていませんが、これはシグナチャが変化するためで、実装やクライアントはこれらのメソッドをインタフェースの一部として考えるべきです。また、実装はサポートしていない操作を呼び出されたときは :exc:`IOError` を発生させるかもしれません。"
 
 #: ../../library/io.rst:227
 msgid ""
@@ -365,11 +366,11 @@ msgid ""
 " such as :meth:`~RawIOBase.readinto`, a writable object such as "
 ":class:`bytearray` is required. Text I/O classes work with :class:`unicode` "
 "data."
-msgstr ""
+msgstr "ファイルへのバイナリデータの読み書きに用いられる基本型は (:class:`str` としても知られる) :class:`bytes` です。\nメソッドの引数によっては :class:`bytearray` や bytes 配列の :class:`memoryview` のこともあります。\n:meth:`~RawIOBase.readinto` などのケースでは、 :class:`bytearray` のような書き込み可能オブジェクトが必要です。\nテキスト I/O クラスは :class:`unicode` データを扱います。"
 
 #: ../../library/io.rst:234
 msgid "Implementations should support :class:`memoryview` arguments."
-msgstr ""
+msgstr "実装は :class:`memoryview` 引数をサポートする必要があります。"
 
 #: ../../library/io.rst:237
 msgid ""
