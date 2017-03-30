@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-29 03:22+0000\n"
+"PO-Revision-Date: 2017-03-30 03:11+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -583,7 +583,7 @@ msgid ""
 "object *b* should be a pre-allocated, writable array of bytes, either "
 ":class:`bytearray` or :class:`memoryview`. If the object is in non-blocking "
 "mode and no bytes are available, ``None`` is returned."
-msgstr ""
+msgstr "*b* に最大 len(b) バイト分読み込み、読み込んだバイト数を返します。\nオブジェクト *b* はメモリ確保済みの書き込み可能なバイト配列、 :class:`bytearray` もしくは :class:`memoryview` である必要があります。\nオブジェクトがノンブロッキングモードで、 1 バイトも読み込めなければ、 ``None`` が返されます。"
 
 #: ../../library/io.rst:399
 msgid ""
@@ -694,7 +694,7 @@ msgid ""
 "Read up to len(b) bytes into *b*, and return the number of bytes read. The "
 "object *b* should be a pre-allocated, writable array of bytes, either "
 ":class:`bytearray` or :class:`memoryview`."
-msgstr ""
+msgstr "*b* に最大 len(b) バイト分読み込み、読み込んだバイト数を返します。\nオブジェクト *b* はメモリ確保済みの書き込み可能なバイト配列、 :class:`bytearray` もしくは :class:`memoryview` である必要があります。"
 
 #: ../../library/io.rst:483
 msgid ""
@@ -802,7 +802,7 @@ msgstr "インメモリの bytes バッファを利用したストリームの�
 msgid ""
 "The optional argument *initial_bytes* is a :class:`bytes` object that "
 "contains initial data."
-msgstr ""
+msgstr "省略可能な引数 *initial_bytes* は、初期データを含んだ :class:`bytes` オブジェクトです。"
 
 #: ../../library/io.rst:558
 msgid ""
@@ -983,7 +983,7 @@ msgid ""
 "line based interface to stream I/O.  There is no :meth:`readinto` method "
 "because Python's :class:`unicode` strings are immutable. It inherits "
 ":class:`IOBase`.  There is no public constructor."
-msgstr ""
+msgstr "テキストストリームの基底クラスです。このクラスはストリーム I/O への Unicode 文字と行に基づいたインタフェースを提供します。 Python の :class:`unicode` 文字列は変更不可能なので、 :meth:`readinto` メソッドは存在しません。 :class:`IOBase` を継承します。パブリックなコンストラクタはありません。"
 
 #: ../../library/io.rst:689
 msgid ""
@@ -1032,7 +1032,7 @@ msgid ""
 "Some :class:`TextIOBase` implementations, like :class:`~io.StringIO`, may "
 "not have the concept of an underlying buffer and calling this method will "
 "raise :exc:`UnsupportedOperation`."
-msgstr ""
+msgstr ":class:`TextIOBase` 実装には、 :class:`~io.StringIO` など、根底のバッファという概念を持たないものがあります。これらを呼び出すと :exc:`UnsupportedOperation` を送出します。"
 
 #: ../../library/io.rst:729
 msgid ""
@@ -1180,7 +1180,7 @@ msgstr "*newline* 引数は :class:`TextIOWrapper` のものと同じように�
 msgid ""
 ":class:`~io.StringIO` provides this method in addition to those from "
 ":class:`TextIOWrapper` and its parents:"
-msgstr ""
+msgstr ":class:`~io.StringIO` およびその親クラスから継承したメソッドに加えて :class:`StringIO` は以下のメソッドを提供しています:"
 
 #: ../../library/io.rst:842
 msgid ""
@@ -1188,7 +1188,7 @@ msgid ""
 "time before the :class:`~io.StringIO` object's :meth:`close` method is "
 "called.  Newlines are decoded as if by :meth:`~TextIOBase.read`, although "
 "the stream position is not changed."
-msgstr ""
+msgstr ":class:`~io.StringIO` オブジェクトの :meth:`close` メソッドが呼び出される前の、任意の時点でのバッファの全内容を含む ``unicode`` を返します。改行コードのデコードは :meth:`~TextIOBase.read` によって行われますが、これによるストリーム位置の変更は起こりません。"
 
 #: ../../library/io.rst:847
 msgid "Example usage::"
@@ -1245,7 +1245,7 @@ msgstr "(ファイルなどの) バイナリストレージ上のテキスト I/
 msgid ""
 ":class:`~io.StringIO`, however, is a native in-memory unicode container and "
 "will exhibit similar speed to :class:`BytesIO`."
-msgstr ""
+msgstr "しかし :class:`~io.StringIO` は、ネイティブなインメモリ Unicode コンテナで、 :class:`BytesIO` と同程度の速度を示します。"
 
 #: ../../library/io.rst:909
 msgid "Multi-threading"

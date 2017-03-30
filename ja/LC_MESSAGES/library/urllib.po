@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:08+0000\n"
+"PO-Revision-Date: 2017-03-30 03:14+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -51,13 +52,13 @@ msgstr "より高水準の HTTP クライアントインターフェイスとし
 msgid ""
 "For HTTPS URIs, :mod:`urllib` performs all the neccessary certificate and "
 "hostname checks by default."
-msgstr ""
+msgstr "HTTPS URI の場合、 :mod:`urllib` は必要な証明書検証とホスト名チェックを全てデフォルトで行います。"
 
 #: ../../library/urllib.rst:38
 msgid ""
 "For Python versions earlier than 2.7.9, urllib does not attempt to validate "
 "the server certificates of HTTPS URIs. Use at your own risk!"
-msgstr ""
+msgstr "Python の 2.7.9 より前のバージョンでは urllib は HTTPS URI のサーバ証明書を検証しようとはしません。自己責任でお使いください!"
 
 #: ../../library/urllib.rst:42
 msgid "High-level interface"
