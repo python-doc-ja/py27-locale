@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:03+0000\n"
+"PO-Revision-Date: 2017-03-30 14:36+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +43,7 @@ msgid ""
 "*localaddr* and *remoteaddr* should be a :ref:`(host, port) <host_port>` "
 "tuple.  The object inherits from :class:`asyncore.dispatcher`, and so will "
 "insert itself into :mod:`asyncore`'s event loop on instantiation."
-msgstr ""
+msgstr "新たな :class:`SMTPServer` オブジェクトを作成し、それをローカルのアドレス *localaddr* に bind します。\nこのオブジェクトは *remoteaddr* を上流の SMTP リレー先とします。\n*localaddr* と *remoteaddr* のどちらも :ref:`(host, port) <host_port>` タプルである必要があります。\nこのクラスは :class:`asyncore.dispatcher` を継承しており、インスタンス化時に自身を :mod:`asyncore` のイベントループに登録します。"
 
 #: ../../library/smtpd.rst:34
 msgid ""

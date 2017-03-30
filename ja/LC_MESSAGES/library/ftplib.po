@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-22 01:22+0000\n"
+"PO-Revision-Date: 2017-03-30 16:08+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -33,7 +34,7 @@ msgid ""
 "jobs, such as mirroring other FTP servers.  It is also used by the module "
 ":mod:`urllib` to handle URLs that use FTP.  For more information on FTP "
 "(File Transfer Protocol), see Internet :rfc:`959`."
-msgstr ""
+msgstr "このモジュールでは :class:`FTP` クラスと、それに関連するいくつかの項目を定義しています。 :class:`FTP` クラスは、FTPプロトコルのクライアント側の機能を備えています。このクラスを使うとFTPのいろいろな機能の自動化、例えば他のFTPサーバのミラーリングといったことを実行するPythonプログラムを書くことができます。また、 :mod:`urllib` モジュールもFTPを使うURLを操作するのにこのクラスを使っています。 FTP (File Transfer Protocol)についての詳しい情報はInternet :rfc:`959` を参照して下さい。"
 
 #: ../../library/ftplib.rst:23
 msgid "Here's a sample session using the :mod:`ftplib` module::"
@@ -246,7 +247,7 @@ msgid ""
 "Enable \"passive\" mode if *val* is true, otherwise disable passive mode.  "
 "(In Python 2.0 and before, passive mode was off by default; in Python 2.1 "
 "and later, it is on by default.)"
-msgstr ""
+msgstr "*val* が真なら\"パッシブモード\"をオンにし、そうでないならパッシブモードをオフにします。(Python 2.0以前ではデフォルトでパッシブモードはオフにされていましたが、 Python 2.1以後ではデフォルトでオンになっています。)"
 
 #: ../../library/ftplib.rst:255
 msgid ""
@@ -257,7 +258,7 @@ msgid ""
 "defaults to 8192. *callback* is an optional single parameter callable that "
 "is called on each block of data after it is sent. *rest* means the same "
 "thing as in the :meth:`transfercmd` method."
-msgstr ""
+msgstr "バイナリ転送モードでファイルを転送します。 *command* は適切な ``STOR`` コマンド： ``\"STOR filename\"`` でなければなりません。 *fp* は開かれたファイルオブジェクトで、 :meth:`read` メソッドで EOFまで読み込まれ、ブロックサイズ *blocksize* でデータが転送されます。引数 *blocksize* のデフォルト値は8192です。 *callback* はオプションの引数で、引数を1つとる呼び出し可能オブジェクトを渡します。各データブロックが送信された後に、そのブロックを引数にして呼び出されます。 *rest* は、 :meth:`transfercmd` メソッドにあるものと同じ意味です。"
 
 #: ../../library/ftplib.rst:263
 msgid "default for *blocksize* added."
@@ -278,7 +279,7 @@ msgid ""
 "the open file object *fp* using its :meth:`~file.readline` method to provide"
 " the data to be stored.  *callback* is an optional single parameter callable"
 " that is called on each line after it is sent."
-msgstr ""
+msgstr "ASCII転送モードでファイルを転送します。 *command* は適切な ``STOR`` コマンドでなければなりません (:meth:`storbinary` を参照)。 *fp* は開かれたファイルオブジェクトで、 :meth:`~file.readline` メソッドでEOFまで読み込まれ、各行がデータが転送されます。 *callback* はオプションの引数で、引数を1つとる呼び出し可能オブジェクトを渡します。各行が送信された後に、その行数を引数にして呼び出されます。"
 
 #: ../../library/ftplib.rst:286
 msgid ""
@@ -287,7 +288,7 @@ msgid ""
 "*cmd*, and accept the connection.  If the server is passive, send an "
 "``EPSV`` or ``PASV`` command, connect to it, and start the transfer command."
 "  Either way, return the socket for the connection."
-msgstr ""
+msgstr "データ接続中に転送を初期化します。もし転送中なら、``EPRT`` あるいは ``PORT`` コマンドと、*cmd* で指定したコマンドを送信し、接続を続けます。サーバがパッシブなら、``EPSV`` あるいは ``PASV`` コマンドを送信して接続し、転送コマンドを開始します。どちらの場合も、接続のためのソケットを返します。"
 
 #: ../../library/ftplib.rst:292
 msgid ""

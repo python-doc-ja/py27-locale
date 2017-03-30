@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-30 03:14+0000\n"
+"PO-Revision-Date: 2017-03-30 14:30+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -194,7 +194,7 @@ msgstr "結果オブジェクトに :meth:`getcode` を追加し、 :envvar:`no_
 msgid ""
 "The *context* parameter was added. All the neccessary certificate and "
 "hostname checks are done by default."
-msgstr ""
+msgstr "*context* パラメータが追加されました。\n全ての必要な証明書とホスト名のチェックをデフォルトで行います。"
 
 #: ../../library/urllib.rst:152
 msgid ""
@@ -336,7 +336,7 @@ msgid ""
 " :mod:`urlparse` module provides the functions :func:`parse_qs` and "
 ":func:`parse_qsl` which are used to parse query strings into Python data "
 "structures."
-msgstr ""
+msgstr "マップ型オブジェクト、または 2要素のタプルからなるシーケンスを、 \"パーセントエンコードされた (percent-encoded)\" 文字列に変換して、上述の :func:`urlopen` のオプション引数 *data* に適した形式にします。この関数はフォームのフィールド値でできた辞書を ``POST`` 型のリクエストに渡すときに便利です。返される文字列は ``key=value`` のペアを ``'&'`` で区切ったシーケンスで、 *key* と *value* の双方は上の :func:`quote_plus` でクォートされます。 2つの要素をもったタプルからなるシーケンスが引数 *query* として使われた場合、各タプルの最初の値が key で、2 番目の値が value になります。どちらのケースでも *value* にはシーケンスを入れることができ、その場合オプションのパラメタ *doseq* の評価結果が ``True`` であったなら、その *key* の各々の *value* に対して ``'&'`` で区切られた ``key=value`` のペアが生成されます。このときエンコードされた文字列中のパラメタの順番はシーケンス中のタプルの順番と同じになります。 :mod:`urlparse` モジュールでは、関数 :func:`parse_qs` および :func:`parse_qsl` を提供しており、クエリ文字列を解析して Python のデータ構造にするのに利用できます。"
 
 #: ../../library/urllib.rst:281
 msgid ""
@@ -350,7 +350,7 @@ msgid ""
 "Convert the path component *path* from a percent-encoded URL to the local "
 "syntax for a path.  This does not accept a complete URL.  This function uses"
 " :func:`unquote` to decode *path*."
-msgstr ""
+msgstr "URL のパスの部分 *path* をパーセントエンコードされた URL の形式からローカルシステムにおけるパス記法に変換します。この関数は *path* をデコードするために :func:`unquote` を使います。"
 
 #: ../../library/urllib.rst:295
 msgid ""
@@ -361,7 +361,7 @@ msgid ""
 "Mac OS X and Windows Systems Registry for Windows. If both lowercase and "
 "uppercase environment variables exist (and disagree), lowercase is "
 "preferred."
-msgstr ""
+msgstr "このヘルパー関数はスキーマからプロキシサーバーのURLへのマッピングを行う辞書を返します。この関数はまず、どのOSでも最初に ``<scheme>_proxy`` という名前の環境変数を大文字小文字を区別せずにスキャンします。そこで見つからなかった場合、 Max OS X の場合は Mac OSX システム環境設定を、 Windows の場合はシステムレジストリを参照します。もし小文字と大文字の環境変数が両方存在する (そして値が一致しない) なら、小文字の環境変数が優先されます。"
 
 #: ../../library/urllib.rst:305
 msgid ""
@@ -381,7 +381,7 @@ msgid ""
 ":mod:`urlparse` for parsing URLs rather than using these functions directly."
 " Python 3 does not expose these helper functions from :mod:`urllib.parse` "
 "module."
-msgstr ""
+msgstr "urllib はある種のユーティリティ関数、 splittype, splithost やその他 URL をパースしてコンポーネントに分解するようなものを剥き出しにしておりますが、これらを使うのではなくて、URL のパースには :mod:`urlparse` を使ってください。Python 3 では :mod:`urllib.parse` でこれらヘルパ関数は曝していません。"
 
 #: ../../library/urllib.rst:322
 msgid "URL Opener objects"
