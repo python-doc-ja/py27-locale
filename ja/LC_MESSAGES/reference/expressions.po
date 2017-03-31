@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-30 17:22+0000\n"
+"PO-Revision-Date: 2017-03-31 03:26+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1110,7 +1110,7 @@ msgid ""
 "with different identities results in inequality.  A motivation for this "
 "default behavior is the desire that all objects should be reflexive (i.e. "
 "``x is y`` implies ``x == y``)."
-msgstr "等価性比較 (``==`` および ``!=``) のデフォルトの振る舞いは、オブジェクトの同一性に基づいています。\n従って、同一のインスタンスの等価性比較の結果は等しいとなり、同一でないインスタンスの等価性比較の結果は等しくないとなります。\nデフォルトの振る舞いをこのようにしたのは、全てのオブジェクトを反射的 (reflexive つまり ``x is y`` ならば ``x == y``) なものにしたかったからです。"
+msgstr "等価性比較 (``==`` および ``!=``) のデフォルトの振る舞いは、オブジェクトの同一性に基づいています。\n従って、同一のインスタンスの等価性比較は等価となり、同一でないインスタンスの等価性比較は等価でないとなります。\nデフォルトの振る舞いをこのようにしたのは、全てのオブジェクトを反射的 (reflexive つまり ``x is y`` ならば ``x == y``) なものにしたかったからです。"
 
 #: ../../reference/expressions.rst:1127
 msgid ""
@@ -1133,13 +1133,13 @@ msgid ""
 "will need that have a sensible definition of object value and value-based "
 "equality.  Such types will need to customize their comparison behavior, and "
 "in fact, a number of built-in types have done that."
-msgstr ""
+msgstr "同一でないインスタンスは常に等価でないとする等価性比較のデフォルトの振る舞いは、型が必要とするオブジェクトの値や値に基づいた等価性の実用的な定義とは対照的に思えるでしょう。\nそのような型では比較の振る舞いをカスタマイズする必要が出てきて、実際にたくさんの組み込み型でそれが行われています。"
 
 #: ../../reference/expressions.rst:1141
 msgid ""
 "The following list describes the comparison behavior of the most important "
 "built-in types."
-msgstr ""
+msgstr "次のリストでは、最重要の組み込み型の比較の振る舞いを解説しています。"
 
 #: ../../reference/expressions.rst:1144
 msgid ""
@@ -1149,7 +1149,7 @@ msgid ""
 " numbers do not support order comparison.  Within the limits of the types "
 "involved, they compare mathematically (algorithmically) correct without loss"
 " of precision."
-msgstr ""
+msgstr "いくつかの組み込みの数値型 (:ref:`typesnumeric`) と標準ライブラリの型 :class:`fractions.Fraction` および :class:`decimal.Decimal` は、同じ型や別の型どうしで比較できますが、複素数では順序比較がサポートされていないという制限があります。\n関わる型の制限の範囲内では、精度のロス無しに数学的に (アルゴリズム的に) 正しい比較が行われます。"
 
 #: ../../reference/expressions.rst:1151
 msgid ""
@@ -1158,7 +1158,7 @@ msgid ""
 "function :func:`ord`) of their characters. [#]_ When comparing an 8-bit "
 "string and a Unicode string, the 8-bit string is converted to Unicode.  If "
 "the conversion fails, the strings are considered unequal."
-msgstr ""
+msgstr "文字列 (:class:`str` もしくは :class:`unicode` のインスタンス) では、数値的な同等性 (組み込み関数 :func:`ord` の結果) を使い、辞書式の比較を行います。 [#]_\n8 bit 文字列と Unicode 文字列を比較するときは、8 bit 文字列は Unicode へ変換されます。\n変換が失敗した場合は、その文字列は等価でないと見なされます。"
 
 #: ../../reference/expressions.rst:1158
 msgid ""
@@ -1166,13 +1166,13 @@ msgid ""
 "each of their types.  Equality comparison across these types results in "
 "unequality, and ordering comparison across these types gives an arbitrary "
 "order."
-msgstr ""
+msgstr ":class:`tuple` や :class:`list` のインスタンスは同じ型どうしでしか比較できません。\n異なる型どうしでの等価性比較は等価でないとなり、異なる型どうしでの順序比較はいい加減な順序になります。"
 
 #: ../../reference/expressions.rst:1163
 msgid ""
 "These sequences compare lexicographically using comparison of corresponding "
 "elements, whereby reflexivity of the elements is enforced."
-msgstr ""
+msgstr "これらのシーケンスでは、要素の反射性があるものとして、個々の対応する要素の比較を使って辞書式の比較が行われます。"
 
 #: ../../reference/expressions.rst:1166
 msgid ""
@@ -1183,19 +1183,19 @@ msgid ""
 "result as a strict element comparison would, if the compared elements are "
 "reflexive.  For non-reflexive elements, the result is different than for "
 "strict element comparison."
-msgstr ""
+msgstr "要素の反射性があるものとされると、コレクションの比較では、コレクションの要素 ``x`` に対して ``x == x`` が常に真だと仮定します。\nこの仮定に基づいて、最初に要素の同一性が比較され、同一でない要素どうしに対してのみ要素の比較が行われます。\nこの手法は、比較される要素が反射的な場合、厳密な要素比較と同じ結果をもたらします。\n反射的でない要素では、厳密な要素比較と異なる結果になります。"
 
 #: ../../reference/expressions.rst:1174
 msgid ""
 "Lexicographical comparison between built-in collections works as follows:"
-msgstr ""
+msgstr "組み込みのコレクションどうしの辞書式比較は次のように動作します:"
 
 #: ../../reference/expressions.rst:1176
 msgid ""
 "For two collections to compare equal, they must be of the same type, have "
 "the same length, and each pair of corresponding elements must compare equal "
 "(for example, ``[1,2] == (1,2)`` is false because the type is not the same)."
-msgstr ""
+msgstr "比較の結果が等価となる2つのコレクションは、同じ型、同じ長さ、対応する要素どうしの比較の結果が等価でなければなりません (例えば、 ``[1,2] == (1,2)`` は型が同じでないので偽です)。"
 
 #: ../../reference/expressions.rst:1181
 msgid ""
@@ -1203,14 +1203,14 @@ msgid ""
 "example, ``cmp([1,2,x], [1,2,y])`` returns the same as ``cmp(x,y)``).  If a "
 "corresponding element does not exist, the shorter collection is ordered "
 "first (for example, ``[1,2] < [1,2,3]`` is true)."
-msgstr ""
+msgstr "コレクションの順序は、最初の等価でない要素の順序と同じになります (例えば、 ``cmp([1,2,x], [1,2,y])`` は ``cmp(x,y)`` と同じ返り値になります)。\n対応する要素が存在しない場合、短い方のコレクションが順序として先となります (例えば、 ``[1,2] < [1,2,3]`` は真です)。"
 
 #: ../../reference/expressions.rst:1187
 msgid ""
 "Mappings (instances of :class:`dict`) compare equal if and only if they have"
 " equal `(key, value)` pairs. Equality comparison of the keys and elements "
 "enforces reflexivity."
-msgstr ""
+msgstr "マッピング (:class:`dict` のインスタンス) の比較の結果が等価となるのは、同じ `(key, value)` を持っているときかつそのときに限ります。\nキーと値の等価性比較では反射性が強制されます。"
 
 #: ../../reference/expressions.rst:1191
 msgid ""
