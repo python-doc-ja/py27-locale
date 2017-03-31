@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:48+0000\n"
+"PO-Revision-Date: 2017-03-31 17:03+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -139,7 +140,7 @@ msgid ""
 "Netscape cookies, by setting the :attr:`version` attribute of the "
 ":class:`~cookielib.Cookie` instance to 0. :class:`DefaultCookiePolicy` also "
 "provides some parameters to allow some fine-tuning of policy."
-msgstr ""
+msgstr ":class:`DefaultCookiePolicy` は Netscape および RFC 2965 クッキーの標準的な許可 / 拒絶のルールを実装しています。デフォルトでは、RFC 2109 のクッキー (:mailheader:`Set-Cookie` の version クッキー属性が 1 で受けとられるもの) は RFC 2965 のルールで扱われます。しかし、RFC 2965 処理が無効に設定されているか :attr:`rfc2109_as_netscape` が ``True`` の場合、RFC 2109 クッキーは :class:`CookieJar` インスタンスによって :class:`~cookielib.Cookie` のインスタンスの :attr:`version` 属性を 0 に設定する事で Netscapeクッキーに「ダウングレード」されます。また :class:`DefaultCookiePolicy` にはいくつかの細かいポリシー設定をおこなうパラメータが用意されています。"
 
 #: ../../library/cookielib.rst:110
 msgid ""
@@ -147,11 +148,11 @@ msgid ""
 "expected that users of :mod:`cookielib` construct their own "
 ":class:`~cookielib.Cookie` instances.  Instead, if necessary, call "
 ":meth:`make_cookies` on a :class:`CookieJar` instance."
-msgstr ""
+msgstr "このクラスは Netscape クッキー、RFC 2109 のクッキー、および RFC 2965 のクッキーを表現します。 :mod:`cookielib` のユーザが自分で :class:`~cookielib.Cookie` インスタンスを作成することは想定されていません。かわりに、必要に応じて :class:`CookieJar` インスタンスの :meth:`make_cookies` を呼ぶことになっています。"
 
 #: ../../library/cookielib.rst:119
 msgid "Module :mod:`urllib2`"
-msgstr ""
+msgstr ":mod:`urllib2` モジュール"
 
 #: ../../library/cookielib.rst:119
 msgid "URL opening with automatic cookie handling."
@@ -159,7 +160,7 @@ msgstr "クッキーの自動処理をおこない URL を開くモジュール�
 
 #: ../../library/cookielib.rst:123
 msgid "Module :mod:`Cookie`"
-msgstr ""
+msgstr ":mod:`Cookie` モジュール"
 
 #: ../../library/cookielib.rst:122
 msgid ""
@@ -169,7 +170,7 @@ msgstr "HTTP のクッキークラスで、基本的にはサーバサイドの�
 
 #: ../../library/cookielib.rst:129
 msgid "https://curl.haxx.se/rfc/cookie_spec.html"
-msgstr ""
+msgstr "https://curl.haxx.se/rfc/cookie_spec.html"
 
 #: ../../library/cookielib.rst:126
 msgid ""
@@ -189,7 +190,7 @@ msgstr "RFC 2965 によって過去の遺物になりました。 :mailheader:`S
 
 #: ../../library/cookielib.rst:136
 msgid ":rfc:`2965` - HTTP State Management Mechanism"
-msgstr ""
+msgstr ":rfc:`2965` - HTTP State Management Mechanism"
 
 #: ../../library/cookielib.rst:135
 msgid ""
@@ -217,7 +218,7 @@ msgstr "CookieJar および FileCookieJar オブジェクト"
 msgid ""
 ":class:`CookieJar` objects support the :term:`iterator` protocol for "
 "iterating over contained :class:`~cookielib.Cookie` objects."
-msgstr ""
+msgstr ":class:`CookieJar` オブジェクトは保管されている :class:`~cookielib.Cookie` オブジェクトをひとつずつ取り出すための、イテレータ(:term:`iterator`)・プロトコルをサポートしています。"
 
 #: ../../library/cookielib.rst:151
 msgid ":class:`CookieJar` has the following methods:"
@@ -283,7 +284,7 @@ msgstr "使用する :class:`CookiePolicy` インスタンスを指定します�
 msgid ""
 "Return sequence of :class:`~cookielib.Cookie` objects extracted from "
 "*response* object."
-msgstr ""
+msgstr "*response* オブジェクトから得られた :class:`~cookielib.Cookie` オブジェクトからなるシーケンスを返します。"
 
 #: ../../library/cookielib.rst:199
 msgid ""
@@ -293,13 +294,13 @@ msgstr "*response* および *request* 引数で要求されるインスタン�
 
 #: ../../library/cookielib.rst:205
 msgid "Set a :class:`~cookielib.Cookie` if policy says it's OK to do so."
-msgstr ""
+msgstr "ポリシーが許すのであれば、与えられた :class:`~cookielib.Cookie` を設定します。"
 
 #: ../../library/cookielib.rst:210
 msgid ""
 "Set a :class:`~cookielib.Cookie`, without checking with policy to see "
 "whether or not it should be set."
-msgstr ""
+msgstr "与えられた :class:`~cookielib.Cookie` を、それが設定されるべきかどうかのポリシーのチェックを行わずに設定します。"
 
 #: ../../library/cookielib.rst:216
 msgid "Clear some cookies."
@@ -525,7 +526,7 @@ msgid ""
 "cookie domain.  If :meth:`path_return_ok` returns true, :meth:`return_ok` is"
 " called with the :class:`~cookielib.Cookie` object itself for a full check."
 "  Otherwise, :meth:`return_ok` is never called for that cookie path."
-msgstr ""
+msgstr "もし、このクッキードメインに対して :meth:`domain_return_ok` が true を返すと、つぎにそのクッキーのパス名に対して :meth:`path_return_ok` が呼ばれます。そうでない場合、そのクッキードメインに対する :meth:`path_return_ok` および :meth:`return_ok` は決して呼ばれることはありません。 :meth:`path_return_ok` が true を返すと、 :meth:`return_ok` がその :class:`~cookielib.Cookie` オブジェクト自身の全チェックのために呼ばれます。そうでない場合、そのクッキーパス名に対する :meth:`return_ok` は決して呼ばれることはありません。"
 
 #: ../../library/cookielib.rst:389
 msgid ""
@@ -683,7 +684,7 @@ msgid ""
 "value is :const:`None`, in which case RFC 2109 cookies are downgraded if and"
 " only if RFC 2965 handling is turned off.  Therefore, RFC 2109 cookies are "
 "downgraded by default."
-msgstr ""
+msgstr "Trueの場合、 :class:`CookieJar` のインスタンスに RFC 2109 クッキー (即ち :mailheader:`Set-Cookie` ヘッダのVersion cookie属性の値が1のクッキー)を Netscapeクッキーへ、 :class:`~cookielib.Cookie` インスタンスのversion属性を0に設定する事でダウングレードするように要求します。デフォルトの値は :const:`None` であり、この場合 RFC 2109 クッキーは RFC 2965 処理が無効に設定されている場合に限りダウングレードされます。それ故に RFC 2109 クッキーはデフォルトではダウングレードされます。"
 
 #: ../../library/cookielib.rst:525
 msgid "General strictness switches:"
@@ -787,7 +788,7 @@ msgid ""
 "``expires`` cookie-attributes contain equivalent information, and because "
 "RFC 2109 cookies may be 'downgraded' by :mod:`cookielib` from version 1 to "
 "version 0 (Netscape) cookies."
-msgstr ""
+msgstr ":class:`~cookielib.Cookie` インスタンスは、さまざまなクッキーの標準で規定されている標準的なクッキー属性とおおまかに対応する Python 属性をもっています。しかしデフォルト値を決める複雑なやり方が存在しており、また ``max-age`` および ``expires`` クッキー属性は同じ値をもつことになっているので、また RFC 2109 クッキーは :mod:`cookielib` によって version 1 から version 0 (Netscape) クッキーへ 'ダウングレード' される場合があるため、この対応は 1 対 1 ではありません。"
 
 #: ../../library/cookielib.rst:619
 msgid ""
@@ -896,7 +897,7 @@ msgstr "指定された名前のクッキー属性を設定します。"
 #: ../../library/cookielib.rst:727
 msgid ""
 "The :class:`~cookielib.Cookie` class also defines the following method:"
-msgstr ""
+msgstr ":class:`~cookielib.Cookie` クラスは以下のメソッドも定義しています:"
 
 #: ../../library/cookielib.rst:732
 msgid ""

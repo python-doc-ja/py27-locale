@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-23 04:16+0000\n"
+"PO-Revision-Date: 2017-03-31 17:38+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -116,7 +116,7 @@ msgstr "``dbm`` スタイルの汎用的なインタフェース"
 
 #: ../../library/dbhash.rst:64
 msgid "Module :mod:`bsddb`"
-msgstr ""
+msgstr ":mod:`bsddb` モジュール"
 
 #: ../../library/dbhash.rst:64
 msgid "Lower-level interface to the BSD ``db`` library."

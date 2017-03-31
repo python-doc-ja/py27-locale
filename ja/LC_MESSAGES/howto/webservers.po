@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:44+0000\n"
+"PO-Revision-Date: 2017-03-31 18:09+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -392,7 +393,7 @@ msgid ""
 "original one, but it has some licensing issues, which is why it is sometimes"
 " considered non-free. ``mod_fcgid`` is a smaller, compatible alternative.  "
 "One of these modules needs to be loaded by Apache."
-msgstr ""
+msgstr "Apache には `mod_fastcgi <http://www.fastcgi.com/drupal/>`_ と `mod_fcgid <https://httpd.apache.org/mod_fcgid/>`_ の両方があります。``mod_fastcgi`` が最初に作られましたが、非フリーとして扱われるという、いくつかのライセンスの問題があります。``mod_fcgid`` はより小さく、前者と互換性があります。このうちのどちらかを Apache から読み込む必要があります。"
 
 #: ../../howto/webservers.rst:275
 msgid ""
@@ -406,7 +407,7 @@ msgstr "lighttpd は自身に `FastCGI module <http://redmine.lighttpd.net/proje
 msgid ""
 "`nginx <http://nginx.org/>`_ also supports `FastCGI "
 "<https://www.nginx.com/resources/wiki/start/topics/examples/simplepythonfcgi/>`_."
-msgstr ""
+msgstr "`nginx <http://nginx.org/>`_ も `FastCGI <https://www.nginx.com/resources/wiki/start/topics/examples/simplepythonfcgi/>`_ をサポートしています。"
 
 #: ../../howto/webservers.rst:282
 msgid ""
@@ -428,7 +429,7 @@ msgid ""
 "which can be reused for other WSGI-compliant frameworks and libraries. Only "
 "the ``manage.py`` part has to be changed, the example used here can be used "
 "instead.  Django does more or less the exact same thing."
-msgstr ""
+msgstr "`setting up Django with WSGI <https://docs.djangoproject.com/en/dev/howto/deployment/wsgi/>`_ にドキュメントがあります、この内の多くは WSGI 互換フレームワークやライブラリで再利用できます。代わりに ``manage.py`` の部分を変更するだけで、ここで使った例を利用できます。Django もほとんど同様のことを行います。"
 
 #: ../../howto/webservers.rst:317
 msgid "mod_wsgi"

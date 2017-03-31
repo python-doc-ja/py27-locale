@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
+# cocoatomo, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-04 17:50+0000\n"
+"PO-Revision-Date: 2017-03-31 16:50+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -152,7 +153,7 @@ msgid ""
 "a backward-compatible way. This behaviour is to disable any existing loggers"
 " unless they or their ancestors are explicitly named in the logging "
 "configuration."
-msgstr ""
+msgstr "``False`` が指定された場合は、この呼び出しが行われたときに存在するロガーは有効のまま残されます。後方互換性のあるやり方で古い振る舞いを保つので、デフォルト値は ``True`` になっています。そのような振る舞いでは、既存のロガーまたはそれらのロガーの先祖がロギング設定の中で明示的に名付けられていない限り、既存のロガーを無効にします。"
 
 #: ../../library/logging.config.rst:102
 msgid ""
@@ -307,7 +308,7 @@ msgstr "``filters`` (任意)。このハンドラへのフィルタの id のリ
 msgid ""
 "All *other* keys are passed through as keyword arguments to the handler's "
 "constructor.  For example, given the snippet:"
-msgstr ""
+msgstr "その他の *すべての* キーは、ハンドラのコンストラクタにキーワード引数として渡されます。例えば、以下のコード片が与えられたとすると:"
 
 #: ../../library/logging.config.rst:230
 msgid ""
@@ -440,7 +441,7 @@ msgstr "このスキーマは、ロギングオブジェクトの一揃い - ロ
 
 #: ../../library/logging.config.rst:323
 msgid "So, for example, consider the following YAML snippet:"
-msgstr ""
+msgstr "ですから、例えば、以下の YAML のコード片を例にとると:"
 
 #: ../../library/logging.config.rst:344
 msgid ""
@@ -490,7 +491,7 @@ msgid ""
 "called with a configuration dictionary and which returns the instantiated "
 "object. This is signalled by an absolute import path to the factory being "
 "made available under the special key ``'()'``.  Here's a concrete example:"
-msgstr ""
+msgstr "設定されるオブジェクトは、それらの設定を詳述する辞書によって記述されます。場所によっては、あるオブジェクトがどのようにインスタンス化されるかというコンテキストを、ロギングシステムが推測できます。しかし、ユーザ定義オブジェクトがインスタンス化されるとき、システムはどのようにこれを行うかを知りません。ユーザ定義オブジェクトのインスタンス化を完全に柔軟なものにするため、ユーザは 'ファクトリ' - 設定辞書を引数として呼ばれ、インスタンス化されたオブジェクトを返す呼び出し可能オブジェクト - を提供する必要があります。これは特殊キー ``'()'`` で利用できる、ファクトリへの絶対インポートパスによって合図されます。ここに具体的な例を挙げます:"
 
 #: ../../library/logging.config.rst:398
 msgid ""
@@ -688,13 +689,13 @@ msgstr ":func:`fileConfig` API は :func:`dictConfig` API よりも古く、ロ�
 
 #: ../../library/logging.config.rst:601
 msgid "Examples of these sections in the file are given below."
-msgstr ""
+msgstr "ファイルにおけるこれらのセクションの例を以下に示します。"
 
 #: ../../library/logging.config.rst:614
 msgid ""
 "The root logger must specify a level and a list of handlers. An example of a"
 " root logger section is given below."
-msgstr ""
+msgstr "ルートロガーでは、レベルとハンドラのリストを指定しなければなりません。ルートロガーのセクションの例を以下に示します。"
 
 #: ../../library/logging.config.rst:623
 msgid ""
@@ -716,7 +717,7 @@ msgstr "``handlers`` エントリはコンマで区切られたハンドラ名�
 msgid ""
 "For loggers other than the root logger, some additional information is "
 "required. This is illustrated by the following example."
-msgstr ""
+msgstr "ルートロガー以外のロガーでは、いくつか追加の情報が必要になります。これは以下の例のように表されます。"
 
 #: ../../library/logging.config.rst:644
 msgid ""
@@ -735,7 +736,7 @@ msgstr "``level`` および ``handlers`` エントリはルートロガーのエ
 msgid ""
 "Sections which specify handler configuration are exemplified by the "
 "following."
-msgstr ""
+msgstr "ハンドラの環境設定を指定しているセクションは以下の例のようになります。"
 
 #: ../../library/logging.config.rst:663
 msgid ""
@@ -765,13 +766,13 @@ msgid ""
 "``logging`` package's namespace, is the list of arguments to the constructor"
 " for the handler class. Refer to the constructors for the relevant handlers,"
 " or to the examples below, to see how typical entries are constructed."
-msgstr ""
+msgstr "``args`` エントリは、 ``logging`` パッケージの名前空間のコンテキストで :func:`eval` される際、ハンドラクラスのコンストラクタに対する引数からなるリストになります。典型的なエントリがどうやって作成されるかについては、対応するハンドラのコンストラクタか、以下の例を参照してください。"
 
 #: ../../library/logging.config.rst:732
 msgid ""
 "Sections which specify formatter configuration are typified by the "
 "following."
-msgstr ""
+msgstr "フォーマッタの環境設定を指定しているセクションは以下のような形式です。"
 
 #: ../../library/logging.config.rst:741
 msgid ""
