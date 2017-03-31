@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-31 03:26+0000\n"
+"PO-Revision-Date: 2017-03-31 16:32+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1216,7 +1216,7 @@ msgstr "マッピング (:class:`dict` のインスタンス) の比較の結果
 msgid ""
 "Outcomes other than equality are resolved consistently, but are not "
 "otherwise defined. [#]_"
-msgstr ""
+msgstr "等価性評価以外の結果は一貫したやりかたで解決されるか、定義されないかのいずれかです。 [#]_"
 
 #: ../../reference/expressions.rst:1194
 msgid ""
@@ -1230,7 +1230,7 @@ msgstr "その他のほとんどの組み込み型のオブジェクト比較で
 msgid ""
 "User-defined classes that customize their comparison behavior should follow "
 "some consistency rules, if possible:"
-msgstr ""
+msgstr "比較の振る舞いをカスタマイズしたユーザ定義クラスは、可能なら次の一貫性の規則に従う必要があります:"
 
 #: ../../reference/expressions.rst:1202
 msgid ""
@@ -1307,11 +1307,11 @@ msgstr "最後の2式は全順序の集まりに適用されます (たとえば
 msgid ""
 "The :func:`hash` result should be consistent with equality. Objects that are"
 " equal should either have the same hash value, or be marked as unhashable."
-msgstr ""
+msgstr ":func:`hash` の結果は等価性と一貫している必要があります。\n等価なオブジェクトどうしは同じハッシュ値を持つか、ハッシュ値が計算できないものとされる必要があります。"
 
 #: ../../reference/expressions.rst:1242
 msgid "Python does not enforce these consistency rules."
-msgstr ""
+msgstr "Python はこれらの一貫性の規則を強制しません。"
 
 #: ../../reference/expressions.rst:1250
 msgid "Membership test operations"
@@ -1334,7 +1334,7 @@ msgstr "演算子 :keyword:`in` および :keyword:`not in` は、コレクシ�
 msgid ""
 "For the list and tuple types, ``x in y`` is true if and only if there exists"
 " an index *i* such that either ``x is y[i]`` or ``x == y[i]`` is true."
-msgstr ""
+msgstr "リストやタプル型について ``x in y`` が真になるのは、 ``x is y[i]`` または ``x == y[i]`` となるようなインデクス *i* が存在するときかつそのときに限ります。"
 
 #: ../../reference/expressions.rst:1264
 msgid ""
@@ -1709,7 +1709,7 @@ msgid ""
 "sequence of a :dfn:`base character` at code position U+0043 (LATIN CAPITAL "
 "LETTER C), followed by a :dfn:`combining character` at code position U+0327 "
 "(COMBINING CEDILLA)."
-msgstr ""
+msgstr "Unicode 標準では、 :dfn:`コードポイント (code point)` (例えば、U+0041) と :dfn:`抽象文字 (abstract character)` (例えば、\"LATIN CAPITAL LETTER A\") を区別します。\nUnicode のほとんどの抽象文字は 1 つのコードポイントだけを使って表現されますが、複数のコードポイントの列を使っても表現できる抽象文字もたくさんあります。\n例えば、抽象文字 \"LATIN CAPITAL LETTER C WITH CEDILLA\" はコード位置 U+00C7 にある :dfn:`合成済み文字 (precomposed character)` 1 つだけでも表現できますし、コード位置 U+0043 (LATIN CAPITAL LETTER C) にある :dfn:`基底文字 (base character)` の後ろに、コード位置 U+0327 (COMBINING CEDILLA) にある :dfn:`結合文字 (combining character)` が続く列としても表現できます。"
 
 #: ../../reference/expressions.rst:1545
 msgid ""
@@ -1718,7 +1718,7 @@ msgid ""
 "``u\"\\u00C7\" == u\"\\u0043\\u0327\"`` is ``False``, even though both "
 "strings represent the same abstract character \"LATIN CAPITAL LETTER C WITH "
 "CEDILLA\"."
-msgstr ""
+msgstr "Unicode 文字列の比較操作は Unicode のコードポイントのレベルで行われます。\nこれは人間にとっては直感的ではないかもしれません。\n例えば、 ``u\"\\u00C7\" == u\"\\u0043\\u0327\"`` は、どちらの文字も同じ抽象文字 \"LATIN CAPITAL LETTER C WITH CEDILLA\" を表現しているにもかかわらず、その結果は ``False`` となります。"
 
 #: ../../reference/expressions.rst:1550
 msgid ""
