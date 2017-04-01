@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-04-01 11:27+0000\n"
+"PO-Revision-Date: 2017-04-01 15:41+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -246,7 +246,7 @@ msgid ""
 "running it and sending the output to the user.  For CGI scripts to run "
 "properly on Unix-like operating systems, the ``+x`` bit needs to be set. "
 "Using ``chmod a+x your_script.py`` may solve this problem."
-msgstr "Python スクリプトが実行可能でない。\nCGI スクリプトが実行可能でないとき、多くの web サーバは実行しユーザに出力を送る代わりに、ユーザがダウンロードできるようにします。\nCGI スクリプトに対しては適切に実行するために ``+x`` ビットが設定される必要があります。\n``chmod a+x your_script.py`` を使うことで問題は解決するでしょう。"
+msgstr "Python スクリプトが実行可能でない。\nCGI スクリプトが実行可能でないとき、多くの web サーバは実行しユーザに出力を送る代わりに、ユーザがダウンロードできるようにします。\nCGI スクリプトが Unix 系 OS で適切に実行されるために ``+x`` ビットが設定される必要があります。\n``chmod a+x your_script.py`` を使うことで問題は解決するでしょう。"
 
 #: ../../howto/webservers.rst:168
 msgid ""
@@ -259,7 +259,7 @@ msgid ""
 "uploading the file via FTP in text mode instead of binary mode, but the "
 "preferred way is just telling your editor to save the files with Unix line "
 "endings.  Most editors support this."
-msgstr "Unix システムでは、プログラムファイルの行末は Unix 形式でなければなりません。\nweb サーバはスクリプト最初の行 (shebang と呼ばれます) を調べ、そこで指定されたプログラムを実行しようとするため、ここが重要なのです。\nこれは Windows の行末 (Carriage Return & Line Feed、または CRLF) によって簡単に混乱させられるので、ファイルの行末を Unix の行末 (Line Feed, LF のみ) に変換する必要があります。\nこれは FTP 経由でバイナリモードではなくテキストモードでファイルをアップロードすると自動的に行なわれますが、単に Unix 行末で保存するようテキストエディタに指示する方が望ましいです。\nほとんどのエディタはこの機能をサポートしています。"
+msgstr "Unix 系システムでは、プログラムファイルの行末は Unix 形式でなければなりません。\nweb サーバはスクリプト最初の行 (shebang と呼ばれます) を調べ、そこで指定されたプログラムを実行しようとするため、ここが重要なのです。\nこれは Windows の行末 (Carriage Return & Line Feed、または CRLF) によって簡単に混乱させられるので、ファイルの行末を Unix の行末 (Line Feed, LF のみ) に変換する必要があります。\nこれは FTP 経由でバイナリモードではなくテキストモードでファイルをアップロードすると自動的に行なわれますが、単に Unix 行末で保存するようテキストエディタに指示する方が望ましいです。\nほとんどのエディタはこの機能をサポートしています。"
 
 #: ../../howto/webservers.rst:178
 msgid ""
@@ -268,14 +268,14 @@ msgid ""
 "user and group ``www-data``, so it might be worth a try to change the file "
 "ownership, or making the file world readable by using ``chmod a+r "
 "your_script.py``."
-msgstr "web サーバはファイルを読めるようにしなければいけないので、パーミッションが適切になっているか確認してください。しばしば、サーバは ``www-data`` ユーザ、グループとして実行します、そのためファイルのオーナーシップを変更するか、``chmod a+r your_script.py`` を使いファイルを全世界から読み込み可能にするといったことは試す価値があります。"
+msgstr "web サーバはファイルが読めなければならないので、パーミッションが適切になっているか確認する必要があります。\nUnix 系システムでは、サーバはしばしば ``www-data`` ユーザ、 ``www-data`` グループのパーミッションで実行されているので、ファイルの所有権を変更したり、 ``chmod a+r your_script.py`` を使いファイルを誰からでも読み込み可能にしたりするのは試す価値があります。"
 
 #: ../../howto/webservers.rst:184
 msgid ""
 "The web server must know that the file you're trying to access is a CGI "
 "script. Check the configuration of your web server, as it may be configured "
 "to expect a specific file extension for CGI scripts."
-msgstr "web サーバはアクセスを試みているファイルが CGI スクリプトであるということを知っていなければいけません。web サーバの設定を確認して下さい、おそらくそこに間違いがあります。"
+msgstr "web サーバはアクセスを試みているファイルが CGI スクリプトであるということを知っていなければなりません。\nweb サーバが CGI スクリプトに対し、ある特定のファイル拡張子を持つことを要求するよう設定されていないか設定を確認して下さい。"
 
 #: ../../howto/webservers.rst:188
 msgid ""
@@ -287,7 +287,7 @@ msgid ""
 "commands ``whereis python`` and ``type -p python`` could help you find where"
 " it is installed.  Once you know the path, you can change the shebang "
 "accordingly: ``#!/usr/bin/python``."
-msgstr "shebang 内のインタプリタへのパス (``#!/usr/bin/env python``) は正確でないといけません。この行は Python を見つけるために ``/usr/bin/env`` を呼び出しますが、``/usr/bin/env`` が無い場合失敗します。Python がどこにインストールされているか知っている場合、そのパスを使うこともできます。``whereis python`` と ``type -p python`` なども python がどこにインストールされたかを探すのに役立つでしょう。一旦わかってしまえば、shebang 行をそれに応じて変更できます: ``#!/usr/bin/python``。"
+msgstr "Unix 系システムでは、 shebang にあるインタプリタへのパス (``#!/usr/bin/env python``) は正確でなければなりません。\nこの行は Python を見つけるために ``/usr/bin/env`` を呼び出しますが、``/usr/bin/env`` が無いか Python が web サーバのパスに無い場合は失敗します。\nPython がどこにインストールされているか分かっている場合、そのフルパスを使うこともできます。\n``whereis python`` コマンドと ``type -p python`` コマンドも Python がどこにインストールされたかを探すのに役立つでしょう。\n一旦パスが分かれば、shebang 行をそれに応じて変更できます: ``#!/usr/bin/python``。"
 
 #: ../../howto/webservers.rst:197
 msgid ""
@@ -295,14 +295,14 @@ msgid ""
 "determining the byte order of UTF-16 and UTF-32 encodings, but some editors "
 "write this also into UTF-8 files.  The BOM interferes with the shebang line,"
 " so be sure to tell your editor not to write the BOM."
-msgstr "ファイルは BOM (Byte Order Mark) を含んでいてはいけません。BOM は UTF-16 エンコーディングのバイト順を決定するのに利用されます、しかしいくつかのエディタは UTF-8 ファイルに対してもそれを書き込むことがあります。BOM は shebang 行に影響するので、エディタが BOM を書かないようにしてください。"
+msgstr "ファイルは BOM (Byte Order Mark) を含んでいてはいけません。\nBOM は UTF-16 と UTF-32 エンコーディングのバイト順を決定するのに利用されますが、あるエディタは UTF-8 ファイルにも BOM を書き込むことがあります。\nBOM は shebang 行に影響するので、エディタが BOM を書き込まないようにしてください。"
 
 #: ../../howto/webservers.rst:202
 msgid ""
 "If the web server is using :ref:`mod-python`, ``mod_python`` may be having "
 "problems.  ``mod_python`` is able to handle CGI scripts by itself, but it "
 "can also be a source of issues."
-msgstr ":ref:`mod-python` が問題となることがあります。``mod_python`` はそれ自身で CGI スクリプトを扱うことができますが、そのことが問題の原因となることがあります。利用できないようにして下さい。"
+msgstr "web サーバが :ref:`mod-python` を使っている場合、 ``mod_python`` が問題となることがあります。\n``mod_python`` はそれ自身で CGI スクリプトを扱うことができますが、そのことが問題の原因となることがあります。"
 
 #: ../../howto/webservers.rst:210
 msgid "mod_python"
@@ -323,7 +323,7 @@ msgid ""
 "mode (similar to JSP) which is \"HTML intermingled with Python\", and it has"
 " a \"Publisher\" which designates one file to accept all requests and decide"
 " what to do with them."
-msgstr "PHP から来た人達はしばしば、Python を web 上で利用する方法を把握するのに苦労します。彼らはたいてい最初に `mod_python <http://modpython.org/>`_ が ``mod_php`` と等価だと考えて、利用しようとします。しかし実際にはそうではありません。``mod_python`` が行なうことは Apache プロセスへのインタプリタの埋め込みです、そのため、毎回のリクエストで Python インタプリタが起動しないのでリクエストに対する速度が向上します。一方で PHP でよくやるような「HTML への Python の埋め込み」とはかけ離れています。Python でそれと等価なことをするのはテンプレートエンジンです。``mod_python`` 自身はより強力で Apache 内部に対してより多くのアクセスを提供します。CGI をエミュレートし、JSP に似た「HTML への Python 埋め込み」である \"Python Server Pages\" モードで動作でき、全てのリクエストを一つのファイルで受け付けて何を実行するを決める \"Publisher\" を持っています。"
+msgstr "PHP から来た人達はしばしば、Python を web 上で利用する方法を把握するのに苦労します。\n彼らが最初に考えるのはたいてい `mod_python <http://modpython.org/>`_ のことで、それは ``mod_python`` が ``mod_php`` と同等のものだと考えるからです。\nしかし実際にはたくさんの相違点があります。\n``mod_python`` が行なうことは Apache プロセスへのインタプリタの埋め込みで、そのためリクエストごとに Python インタプリタを起動させる必要が無いので、リクエストに対する速度が向上します。\n一方で PHP でよくやるような「HTML への Python の埋め込み」とはかけ離れています。\nPython でそれと同等なことをするのはテンプレートエンジンです。\n``mod_python`` 自身はより強力で Apache 内部に対してより多くのアクセスを提供します。\nCGI をエミュレートし、JSP に似た「HTML への Python 埋め込み」である \"Python Server Pages\" モードで動作でき、全てのリクエストを一つのファイルで受け付けて何を実行するを決める \"Publisher\" を持っています。"
 
 #: ../../howto/webservers.rst:225
 msgid ""
@@ -338,7 +338,7 @@ msgid ""
 "version to a newer (e.g. 2.4 to 2.5) without recompiling ``mod_python``.  "
 "``mod_python`` is also bound to the Apache web server, so programs written "
 "for ``mod_python`` cannot easily run on other web servers."
-msgstr "しかし、``mod_python`` はいくつかの問題も抱えています。PHP インタプリタと違い Python インタプリタはファイル実行時にキャッシュを利用するため、ファイルの変更時にはアップデートするには web サーバ全体を再起動する必要があります。もう一つの問題は基本的なコンセプトにあります -- Apache はリクエストを扱うためにいくつかの子プロセスを開始し、不幸にも全ての子プロセスが Python インタプリタ全体を、利用しない場合であっても、読み込む必要があるのです。このため web サーバ全体が遅くなります。別の問題は ``mod_python`` は ``libpython`` が特定のバージョンに対してリンクされることです、``mod_python`` を再コンパイルせずに古いバージョンから新しいバージョンに切り替える (例えば 2.4 から 2.5) ことはできません。さらに ``mod_python`` は Apache web サーバに制限されるため ``mod_python`` 用に書かれたプログラムは他の web サーバで簡単に動かすことはできません。"
+msgstr "しかし、``mod_python`` はいくつかの問題も抱えています。\nPHP インタプリタと違い Python インタプリタはファイル実行時にキャッシュを利用するため、ファイルの変更時にはアップデートするには web サーバ全体を再起動する必要があります。\nもう一つの問題は基本的なコンセプトにあります -- Apache はリクエストを扱うためにいくつかの子プロセスを起動し、不幸にも全ての子プロセスが Python インタプリタ全体を、利用しない場合であっても、読み込む必要があるのです。\nこのせいで web サーバ全体が遅くなります。\n別の問題は ``mod_python`` は特定のバージョンの ``libpython`` に対してリンクされるため、``mod_python`` を再コンパイルせずに古いバージョンから新しいバージョンに切り替える (例えば 2.4 から 2.5) ことはできません。\nさらに ``mod_python`` は Apache web サーバとも結び付いているため ``mod_python`` 用に書かれたプログラムは他の web サーバで簡単に動かすことはできません。"
 
 #: ../../howto/webservers.rst:237
 msgid ""
@@ -361,7 +361,7 @@ msgid ""
 "process.  As the background process is independent of the server, it can be "
 "written in any language, including Python.  The language just needs to have "
 "a library which handles the communication with the webserver."
-msgstr "FastCGI と SCGI は CGI のパフォーマンス上の問題を別の方法で解決しようという試みです。web サーバにインタプリタを組み込む代わりに、それらはバックグラウンドで長時間実行されるプロセスを生成します。さらに web サーバ上にはいくつかのモジュールがあり、それらは web サーバとバックグラウンドプロセスが「話す」ことを可能にします。バックグラウンドプロセスはサーバと独立しているため、もちろん Python を含んだ、任意の言語で書くことができます。言語は web サーバとの通信を扱うライブラリを持っている必要があるだけです。"
+msgstr "FastCGI と SCGI は CGI のパフォーマンス上の問題を別の方法で解決しようという試みです。\nweb サーバにインタプリタを組み込む代わりに、バックグラウンドで長時間実行されるプロセスを生成します。\nさらに web サーバ上にはいくつかのモジュールがあり、それらは web サーバとバックグラウンドプロセスが「話す」ことを可能にします。\nバックグラウンドプロセスはサーバと独立しているため、 Python を含んだ、任意の言語で書くことができます。\n言語に必要なのは web サーバとの通信を扱うライブラリだけです。"
 
 #: ../../howto/webservers.rst:254
 msgid ""
@@ -370,13 +370,13 @@ msgid ""
 "is limited, most people use FastCGI instead, which works the same way.  "
 "Almost everything that applies to SCGI also applies to FastCGI as well, so "
 "we'll only cover the latter."
-msgstr "FastCGI と SCGI の違いはささいなもので、SCGI は基本的に \"simpler FastCGI\" です。しかし、SCGI をサポートする web サーバは限定されているため、多くの人々は代わりに同様に動作する FastCGI を利用します。SCGI に適用されるほとんど全てのものは FastCGI にも適用できます、そのため後者のみを書くことになるでしょう。"
+msgstr "FastCGI と SCGI の違いはささいなもので、SCGI は基本的に \"simpler FastCGI\" です。しかし、SCGI をサポートする web サーバは限定されているため、多くの人々は代わりに同様に動作する FastCGI を利用します。SCGI に適用されるほとんど全てのものは FastCGI にも適用できるので、 FastCGI だけについて解説します。"
 
 #: ../../howto/webservers.rst:260
 msgid ""
 "These days, FastCGI is never used directly.  Just like ``mod_python``, it is"
 " only used for the deployment of WSGI applications."
-msgstr "最近では FastCGI を直接呼ぶことはありません。``mod_python`` のように WSGI アプリケーションのみが利用されてます。"
+msgstr "最近では FastCGI を直接使うことはありません。\n``mod_python`` のように WSGI アプリケーションの配置のためだけに FastCGI が利用されています。"
 
 #: ../../howto/webservers.rst:265
 msgid "Setting up FastCGI"
