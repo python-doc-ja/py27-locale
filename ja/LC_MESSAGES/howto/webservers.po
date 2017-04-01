@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-04-01 08:01+0000\n"
+"PO-Revision-Date: 2017-04-01 11:27+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -204,7 +204,7 @@ msgid ""
 "alternative and is said to have better performance.  On many systems this "
 "server can also be installed using the package management tool, so manually "
 "compiling the web server may not be needed."
-msgstr "あなた自身が管理者であるか、自身のコンピュータで試すためにインストールしたい場合には自分自身で設定する必要があります。異なる設定オプションを持つ web サーバがたくさんあるため、CGI の設定法はひとつではありません、現在最も広く使われている web サーバは  `Apache HTTPd <http://httpd.apache.org/>`_ です、Apache を簡単に説明すると -- 最も多くの人が利用しているもので、ほとんど全てのシステムでシステムのパッケージ管理ソフトを利用して簡単にインストールできます。ただし `lighttpd <http://www.lighttpd.net>`_ も注目を集め始めていて、さらにパフォーマンスの面でより優れているといわれています。多くのシステムでこのサーバはパッケージ管理ソフトを利用してインストールできるので、web サーバを手動でコンパイルする必要は全くありません。"
+msgstr "あなた自身が管理者であるか、自身のコンピュータで試すためにインストールしたい場合には自分自身で設定する必要があります。\n異なる設定オプションを持つ web サーバがたくさんあるため、CGI の設定法はひとつではありません。\n現在最も広く使われている web サーバは  `Apache HTTPd <http://httpd.apache.org/>`_ 、略して Apache です。\nApache はほぼ全てのシステムにパッケージ管理ツールを使って簡単にインストールできます。\n`lighttpd <http://www.lighttpd.net>`_ はもう一つの選択肢で、パフォーマンスがより優れているといわれています。\n多くのシステムでこのサーバはパッケージ管理ツールを利用してインストールできるので、web サーバを手動でコンパイルする必要はないでしょう。"
 
 #: ../../howto/webservers.rst:143
 msgid ""
@@ -213,7 +213,7 @@ msgid ""
 "everything is described.  Most of the time it is enough just to set "
 "``+ExecCGI``.  The tutorial also describes the most common gotchas that "
 "might arise."
-msgstr "Apache ではチュートリアル `Dynamic Content with CGI <http://httpd.apache.org/docs/2.2/howto/cgi.html>`_ を参照できます、これには全てが書かれています。多くの場合には ``+ExecCGI`` を設定すれば十分です。このチュートリアルはよくでくわす可能性のある落し穴についても書かれています。"
+msgstr "Apache ではチュートリアル `Dynamic Content with CGI <http://httpd.apache.org/docs/2.2/howto/cgi.html>`_ を参照でき、これには全てが解説されています。\nほとんど場合には ``+ExecCGI`` を設定すれば十分です。\nこのチュートリアルはよくでくわす可能性のある落し穴についても書かれています。"
 
 #: ../../howto/webservers.rst:148
 msgid ""
@@ -221,7 +221,7 @@ msgid ""
 "<http://redmine.lighttpd.net/projects/lighttpd/wiki/Docs_ModCGI>`_\\ , which"
 " can be configured in a straightforward way.  It boils down to setting "
 "``cgi.assign`` properly."
-msgstr "lighttpd では `CGI module <http://redmine.lighttpd.net/projects/lighttpd/wiki/Docs_ModCGI>`_ を使う必要があります、これは直接的な方法で設定できます。結局のところ、``cgi.assign`` を適切に設定することになります。"
+msgstr "lighttpd では `CGI module <http://redmine.lighttpd.net/projects/lighttpd/wiki/Docs_ModCGI>`_ を使う必要があり、この設定は分かりやすいです。\n結局のところ、``cgi.assign`` を適切に設定することになります。"
 
 #: ../../howto/webservers.rst:154
 msgid "Common problems with CGI scripts"
@@ -233,11 +233,11 @@ msgid ""
 "scripts to run.  Sometimes a seemingly correct script does not work as "
 "expected, the cause being some small hidden problem that's difficult to "
 "spot."
-msgstr "CGI を利用しようとすると、しばしば小さないらいらを生むことになります、その中でおそらく経験するものの一つは実行時するためにこれらのスクリプトの取得を試みるときに起きます。これによって一見正しいスクリプトが期待どおりに動かないことはよくあります、これにはいくつかの小さな隠れた理由があるので、突き止めるのが困難です。"
+msgstr "CGI を利用していると、スクリプトを走らせようとするときにちょっといらいらすることがときどきあります。\nあるときは一見正しいスクリプトが期待どおりに動かないことがあり、気付くのが難しい小さな隠れた問題が原因だったりします。"
 
 #: ../../howto/webservers.rst:160
 msgid "Some of these potential problems are:"
-msgstr "いくつかの理由:"
+msgstr "いくつかの潜在的な問題は次の通りです:"
 
 #: ../../howto/webservers.rst:162
 msgid ""
@@ -246,7 +246,7 @@ msgid ""
 "running it and sending the output to the user.  For CGI scripts to run "
 "properly on Unix-like operating systems, the ``+x`` bit needs to be set. "
 "Using ``chmod a+x your_script.py`` may solve this problem."
-msgstr "Python スクリプトが実行可能であると示されていない。CGI スクリプトが実行不可能な場合、多くの web サーバは実行しユーザに出力を送る代わりに、ユーザがダウンロードできるようにします。CGI スクリプトに対しては適切に実行するために ``+x`` ビットが設定される必要があります。``chmod a+x your_script.py`` を使うことで問題は解決します。"
+msgstr "Python スクリプトが実行可能でない。\nCGI スクリプトが実行可能でないとき、多くの web サーバは実行しユーザに出力を送る代わりに、ユーザがダウンロードできるようにします。\nCGI スクリプトに対しては適切に実行するために ``+x`` ビットが設定される必要があります。\n``chmod a+x your_script.py`` を使うことで問題は解決するでしょう。"
 
 #: ../../howto/webservers.rst:168
 msgid ""
@@ -259,7 +259,7 @@ msgid ""
 "uploading the file via FTP in text mode instead of binary mode, but the "
 "preferred way is just telling your editor to save the files with Unix line "
 "endings.  Most editors support this."
-msgstr "行末は Unix 形式である必要があります。これは、web サーバがスクリプト最初の行 (shebang と呼ばれます) を調べ、そこで指定されたプログラムの実行を試みるため重要となります。これは Windows の行末 (Carriage Return & Line Feed、または CRLF) とよく混同されます、そのためファイルを Unix 行末 (Line Feed のみ LF) に変換する必要があります。これは FTP 経由でテキストモードではなくバイナリモードでファイルをアップロードすると自動的に行なわれますが、より望ましい方法は単にテキストエディタで Unix 行末で保存することです。多くの適切なエディタはこれをサポートしています。"
+msgstr "Unix システムでは、プログラムファイルの行末は Unix 形式でなければなりません。\nweb サーバはスクリプト最初の行 (shebang と呼ばれます) を調べ、そこで指定されたプログラムを実行しようとするため、ここが重要なのです。\nこれは Windows の行末 (Carriage Return & Line Feed、または CRLF) によって簡単に混乱させられるので、ファイルの行末を Unix の行末 (Line Feed, LF のみ) に変換する必要があります。\nこれは FTP 経由でバイナリモードではなくテキストモードでファイルをアップロードすると自動的に行なわれますが、単に Unix 行末で保存するようテキストエディタに指示する方が望ましいです。\nほとんどのエディタはこの機能をサポートしています。"
 
 #: ../../howto/webservers.rst:178
 msgid ""
