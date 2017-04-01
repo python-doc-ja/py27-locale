@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-31 18:09+0000\n"
+"PO-Revision-Date: 2017-04-01 08:01+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../howto/webservers.rst:3
 msgid "HOWTO Use Python in the web"
-msgstr "Python を Web 上で使うには HOWTO"
+msgstr "Python を Web 上で使うには"
 
 #: ../../howto/webservers.rst:5
 msgid "Marek Kubica"
@@ -35,7 +35,7 @@ msgid ""
 "This document shows how Python fits into the web.  It presents some ways to "
 "integrate Python with a web server, and general practices useful for "
 "developing web sites."
-msgstr "このドキュメントは Python を web 向けに組み込む方法を示します。Python を web サーバとともに利用するためのいくつかの方法や web サイトを開発する際の一般的なプラクティスを示します。"
+msgstr "このドキュメントは Python を web 向けに使う方法を示します。\nPython を web サーバとともに利用するためのいくつかの方法や web サイトを開発する際の一般的なプラクティスを示します。"
 
 #: ../../howto/webservers.rst:14
 msgid ""
@@ -48,7 +48,7 @@ msgid ""
 "create dynamic content.  It is not meant as a complete introduction, as this"
 " topic is far too broad to be covered in one single document.  However, a "
 "short overview of the most popular libraries is provided."
-msgstr "web サイトのコンテンツをユーザが作るということに焦点を当てた \"Web 2.0\" の提起以来 Web プログラミングは人気の話題となっています。web サイトを作るのに Python を利用することは可能でしたが、それは退屈な作業でした。そのため、開発者がサイトを速く、頑強に作るのを助けるために多くの「フレームワーク」と補助ツールが作成されました。この HOWTO では動的なコンテンツを作成するために Python と web サーバを結合させるいくつかの方法について述べます。この話題に対する一般的な入門はこのドキュメントだけで扱いきれないほど広いわけではありませんが、ここでは最も人気のあるライブラリの簡単な概要のみを扱います。"
+msgstr "web サイトのコンテンツをユーザが作るということに焦点を当てた \"Web 2.0\" の提起以来 Web プログラミングは人気の話題となっています。\nPython を使って web サイトを作れましたが、それはやや退屈な作業でした。\nそのため、開発者がサイトを速く、頑強に作るのを助けるために多くのフレームワークと補助ツールが作成されました。\nこの HOWTO では動的なコンテンツを作成するために Python と web サーバを結合させるいくつかの方法について述べます。\nこの話題は非常に広過ぎてドキュメント 1 つだけでは網羅しきれないため、この HOWTO を完全な入門書とするつもりはありません。\nここでは最も人気のあるライブラリの簡単な概要を述べます。"
 
 #: ../../howto/webservers.rst:26
 msgid ""
@@ -57,7 +57,7 @@ msgid ""
 "moving forward, so the wiki page on `Web Programming "
 "<https://wiki.python.org/moin/WebProgramming>`_ may be more in sync with "
 "recent development."
-msgstr "この HOWTO は Python を web 上で使う方法の概要を扱おうとしていますが、HOWTO が常に望みどおりに最新の状況を伝えているとは限りません。Python での web 開発は急速に発展しています、そのため Wiki ページ `Web Programming <https://wiki.python.org/moin/WebProgramming>`_ に多くの最新の開発に関する内容があるでしょう。"
+msgstr "この HOWTO は Python を web 上で使う方法の概要を扱おうとしていますが、HOWTO が常に望みどおりに最新の状況を伝えられるわけではありません。\nPython での web 開発は急速に発展しています、そのため Wiki ページ `Web Programming <https://wiki.python.org/moin/WebProgramming>`_ に多くの最新の開発に関する内容があるでしょう。"
 
 #: ../../howto/webservers.rst:34
 msgid "The Low-Level View"
@@ -82,7 +82,7 @@ msgid ""
 " can be written in any programming language the server supports.  Since most"
 " servers support Python, it is easy to use Python to create dynamic web "
 "sites."
-msgstr "さて、動的な web サイトはファイルシステム上のファイルではなく、リクエストが来たときに web サーバが実行するプログラムです。それらは掲示板の投稿を表示したり、メールを表示したり、ソフトウェアの設定や現在時刻の表示などの様々な便利なことができます。これらのプログラムはサーバがサポートするあらゆる言語で書くことができます、そのため動的な web サイトを作成するのに Python を利用することは簡単です。"
+msgstr "さて、動的な web サイトはファイルシステム上のファイルではなく、リクエストが来たときに web サーバが実行するプログラムの上に作られていて、このプログラムがユーザへ返すコンテンツを *生成* します。\nそれらは掲示板の投稿を表示したり、メールを表示したり、ソフトウェアの設定や現在時刻の表示などの様々な便利なことができます。\nこれらのプログラムはサーバがサポートするあらゆる言語で書くことができます。\nほとんどのサーバが Python をサポートしているので、動的な web サイトを作成するのに Python を利用することは簡単です。"
 
 #: ../../howto/webservers.rst:49
 msgid ""
@@ -91,14 +91,14 @@ msgid ""
 "These bridges, or rather interfaces, define how programs interact with the "
 "server. There have been numerous attempts to create the best possible "
 "interface, but there are only a few worth mentioning."
-msgstr "ほとんどの HTTP サーバは C や C++ で書かれていて、これらは Python コードを単純な方法で実行できません -- サーバとプログラムの間にブリッジが必要です。これらのブリッジやインターフェースはプログラムがサーバとどうやりとりするかを定めます。これまでに最良のインターフェースを決めるために膨大な数の試みがなされてきましたが、言及すべきものはわずかです。"
+msgstr "ほとんどの HTTP サーバは C や C++ で書かれていて、これらは Python コードを直接は実行できず、サーバとプログラムの間にブリッジが必要です。\nこれらのブリッジやインターフェースはプログラムがサーバとどうやりとりするかを定めます。\nこれまでに最良のインターフェースを作成するために膨大な数の試みがなされてきましたが、触れる価値のあるものはわずかです。"
 
 #: ../../howto/webservers.rst:55
 msgid ""
 "Not every web server supports every interface.  Many web servers only "
 "support old, now-obsolete interfaces; however, they can often be extended "
 "using third-party modules to support newer ones."
-msgstr "全ての web サーバが全てのインターフェースをサポートしているわけではありません。多くの web サーバは古い、現在では撤廃されたインターフェースのみをサポートしています。しかし、多くの場合にはサードパーティーモジュールを利用して新しいインターフェースをサポートするように拡張できます。"
+msgstr "全ての web サーバが全てのインターフェースをサポートしているわけではありません。多くの web サーバは古い、現在では撤廃されたインターフェースのみをサポートしています; しかし、多くの場合にはサードパーティーモジュールを利用して新しいインターフェースをサポートするように拡張できます。"
 
 #: ../../howto/webservers.rst:61
 msgid "Common Gateway Interface"
@@ -112,7 +112,7 @@ msgid ""
 " request.  So, every request starts a new Python interpreter -- which takes "
 "some time to start up -- thus making the whole interface only usable for low"
 " load situations."
-msgstr "このインターフェースは最も古く、ほとんどの web サーバでサポートされ、すぐに使うことができます。CGI を利用して web サーバと通信するプログラムはリクエスト毎に起動される必要があります。そのため毎回のリクエストは新しい Python インタプリタを起動します -- このため起動にいくらか時間がかかります -- そのためこのインターフェースは負荷が少ない状況にのみ向いています。"
+msgstr "一般に \"CGI\" と呼ばれるこのインターフェースは最も古く、ほとんどの web サーバでサポートされ、すぐに使うことができます。\nCGI を利用して web サーバと通信するプログラムはリクエスト毎に起動される必要があります。\nそのため毎回のリクエストは新しい Python インタプリタを起動します -- このため起動にいくらか時間がかかります -- そしてこのインターフェースは負荷が低い状況にのみ向いています。"
 
 #: ../../howto/webservers.rst:70
 msgid ""
@@ -127,7 +127,7 @@ msgid ""
 ":ref:`WSGI <WSGI>`, a topic covered later in this document, it is possible "
 "to write programs that emulate CGI, so they can be run as CGI if no better "
 "option is available."
-msgstr "CGI プログラムを書くことは可能ではありますが、もはや推奨されません。 :ref:`WSGI <WSGI>` (詳しくは後で述べます) では CGI をエミュレートするプログラムを書くことができます、そのため、よりよい選択肢が選べない場合には CGI としてプログラムを実行できます。"
+msgstr "CGI プログラムを書くことは可能ではありますが、もはや推奨されません。\n:ref:`WSGI <WSGI>` (詳しくは後で述べます) では CGI をエミュレートするプログラムを書くことができるので、よりよい選択肢が選べない場合には CGI としてプログラムを実行できます。"
 
 #: ../../howto/webservers.rst:81
 msgid ""
@@ -150,7 +150,7 @@ msgid ""
 "The Python wiki features a page on `CGI scripts "
 "<https://wiki.python.org/moin/CgiScripts>`_ with some additional information"
 " about CGI in Python."
-msgstr "Python wiki では `CGI scripts <https://wiki.python.org/moin/CgiScripts>`_ ページに Python での CGI に関した追加情報を取り上げています。"
+msgstr "Python wiki では `CGI scripts <https://wiki.python.org/moin/CgiScripts>`_ にあるページに Python での CGI に関して追加情報を取り上げています。"
 
 #: ../../howto/webservers.rst:94
 msgid "Simple script for testing CGI"
@@ -160,14 +160,14 @@ msgstr "CGI をテストするための単純なスクリプト"
 msgid ""
 "To test whether your web server works with CGI, you can use this short and "
 "simple CGI program::"
-msgstr "CGI が web サーバで動くかどうかを調べるのに、この短かく単純な CGI プログラムが利用できます::"
+msgstr "CGI が web サーバで動くかどうかを調べるのに、この短く単純な CGI プログラムが利用できます::"
 
 #: ../../howto/webservers.rst:111
 msgid ""
 "Depending on your web server configuration, you may need to save this code "
 "with a ``.py`` or ``.cgi`` extension.  Additionally, this file may also need"
 " to be in a ``cgi-bin`` folder, for security reasons."
-msgstr "このコードは ``.py`` または ``.cgi`` 拡張子をつけたファイルに書く必要があります、どちらを使うかは web サーバの設定に依存します。web サーバの設定によっては、ファイルは ``cgi-bin`` フォルダ内にある必要があるかもしれません、これはセキュリティ上の理由のためです。"
+msgstr "web サーバの設定に依存して、このコードを ``.py`` もしくは ``.cgi`` 拡張子をつけたファイルに書く必要があります。\nそれに加えて、セキュリティ上の理由のため、ファイルは ``cgi-bin`` フォルダ内に置く必要があるかもしれません。"
 
 #: ../../howto/webservers.rst:115
 msgid ""
@@ -178,7 +178,7 @@ msgid ""
 "You should not use ``cgitb`` in production code for this reason.  You should"
 " *always* catch exceptions, and display proper error pages -- end-users "
 "don't like to see nondescript \"Internal Server Errors\" in their browsers."
-msgstr "``cgitb`` 行が何なのか疑問に思うかもしれません。この行は、クラッシュしてブラウザで \"Internal Server Error\" と表示する代わりに、親切なトレースバックを表示できるようにします。これはデバッグの際に便利ですが、いくつかの重要なデータをユーザにさらけ出すリスクにもなりえます。スクリプトを完成品として利用する準備ができたら ``cgitb`` は使ってはいけません。さらに、*常に* 例外を捕捉し、適切なエラーページを表示するようにしなければいけません -- エンドユーザは漠然とした \"Internal Server Errors\" をブラウザで見ることを好みません。"
+msgstr "``cgitb`` 行が何なのか疑問に思うかもしれません。\nこの行は、クラッシュしてブラウザで \"Internal Server Error\" と表示する代わりに、親切なトレースバックを表示できるようにします。\nこれはデバッグの際に便利ですが、いくつかの機密データをユーザにさらけ出すリスクにもなりえます。\nそういった理由で、スクリプトを完成品として利用する準備ができたら ``cgitb`` は使ってはいけません。\nさらに、*常に* 例外を捕捉し、適切なエラーページを表示するようにしなければいけません -- エンドユーザは得体の知れない \"Internal Server Errors\" をブラウザで見ることを好みません。"
 
 #: ../../howto/webservers.rst:125
 msgid "Setting up CGI on your own server"
@@ -190,7 +190,7 @@ msgid ""
 "check whether it works as-is, and if not you will need to talk to the "
 "administrator of your web server. If it is a big host, you can try filing a "
 "ticket asking for Python support."
-msgstr "自身の web サーバを持っていない場合には、この内容は当てはまらないでしょ。そのままで動作するか調べることは可能です、もし動作しない場合、とにかく web サーバの管理者と話し合う必要があります。大きなホストである場合、チケットを埋めて Python サポートを得るということができるでしょう。"
+msgstr "自身の web サーバを持っていない場合には、この内容は当てはまりません。\nそのままで動作するか調べることは可能で、もし動作しない場合は、とにかく web サーバの管理者と話し合う必要があります。\n大きなホストである場合、チケットに記入して Python サポートを求められるでしょう。"
 
 #: ../../howto/webservers.rst:132
 msgid ""
@@ -502,7 +502,7 @@ msgid ""
 "compressing your HTML using gzip to save on your server's bandwidth.  "
 "Authentication is another problem that is easily solved using existing "
 "middleware."
-msgstr ""
+msgstr "WSGI の本当に卓越している機能はミドルウェアです。ミドルウェアとはプログラムに様々な機能性を加えるためのレイヤーのことを指します。`無数のミドルウェア <https://wsgi.readthedocs.org/en/latest/libraries.html>`_ が利用可能になっています。例えばセッション管理(連続したリクエストの中でユーザを同定を行います、HTTP は状態を維持しないので、リクエストが同じユーザのものであるということがわかります)を書く代わりに、ミドルウェアを取ってきて繋ぐだけで、既存の機能を当てにできます。圧縮についても同じです -- HTML を gzip で圧縮してサーバの帯域を節約したい場合。ミドルウェアを組み込むだけで行うことができます。認証もミドルウェアで簡単に解決できる問題です。"
 
 #: ../../howto/webservers.rst:370
 msgid ""
@@ -523,7 +523,7 @@ msgid ""
 "<https://en.wikipedia.org/wiki/Apache_JServ_Protocol>`_.  Some of these "
 "servers are written in Python, as ``flup`` is, but there also exist others "
 "which are written in C and can be used as drop-in replacements."
-msgstr ""
+msgstr "CGI や mod_python などに様々な低レベルゲートウェイに接続するためのコードを *WSGI サーバ* と呼びます。これらのサーバの一つに ``flup`` があります、これは前に述べましたが FastCGI、SCGI と `AJP <https://en.wikipedia.org/wiki/Apache_JServ_Protocol>`_ をサポートしています。これらのサーバのいくつかは ``flup`` のように Python で書かれていますが、C で書かれたものもあります、それらは気軽に置き換えることができます。"
 
 #: ../../howto/webservers.rst:385
 msgid ""
@@ -538,7 +538,7 @@ msgid ""
 "<https://wsgi.readthedocs.org/>`_, which contains an extensive list of `WSGI"
 " servers <https://wsgi.readthedocs.org/en/latest/servers.html>`_ which can "
 "be used by *any* application supporting WSGI."
-msgstr ""
+msgstr "`WSGI homepage <https://wsgi.readthedocs.org/>`_ は全ての WSGI に関連したコードに対して素晴しい概観を与えてくれます、ここには WSGI をサポートするアプリケーション *全て* が利用できるサーバの広大なリスト `WSGI servers <https://wsgi.readthedocs.org/en/latest/servers.html>`_ が含まれています。"
 
 #: ../../howto/webservers.rst:396
 msgid ""
@@ -567,7 +567,7 @@ msgid ""
 "<https://moinmo.in/>`_.  It was created in 2000, so it predates WSGI by "
 "about three years.  Older versions needed separate code to run on CGI, "
 "mod_python, FastCGI and standalone."
-msgstr ""
+msgstr "最も広く使われている wiki ソフトウェアの一つに `MoinMoin <https://moinmo.in/>`_ があります。これは2000年に作られたため、WSGI より3年ほど先行していました。古いバージョンでは CGI、mod_python、FastCGI、スタンドアロンで動作するためには別々のコードが必要でした。"
 
 #: ../../howto/webservers.rst:414
 msgid ""
@@ -641,7 +641,7 @@ msgid ""
 "pattern "
 "<https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_.  It"
 " includes a long list of web frameworks for various programming languages."
-msgstr ""
+msgstr "Wikipedia の英語版には `Model-View-Controller pattern <https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_ の記事があります、この記事には様々な言語での web フレームワークの長大なリストが含まれています。"
 
 #: ../../howto/webservers.rst:467
 msgid "Ingredients for Websites"
@@ -762,7 +762,7 @@ msgid ""
 "Relational Mapping).  ORM translates all object-oriented access into SQL "
 "code under the hood, so the developer does not need to think about it.  Most"
 " `frameworks`_ use ORMs, and it works quite well."
-msgstr ""
+msgstr "関係データベースには `SQL <https://en.wikipedia.org/wiki/SQL>`_ と呼ばれる言語を利用して *問い合わせ (query)* ます。\n一般的に Python プログラマは SQL があまり好きではなく、オブジェクトで動作する方を好みます。\n`ORM <https://en.wikipedia.org/wiki/Object-relational_mapping>`_ (Object Relational Mapping) と呼ばれる技術を使うことで、 Python オブジェクトをデータベースに保存できます。\nORM は内部でオブジェクト指向的アクセスを SQL コードに変換するので、ユーザはそのことを意識せずに済みます。\nほとんどの `framework`_ は ORMs を利用し、とてもうまくいっています."
 
 #: ../../howto/webservers.rst:558
 msgid ""
@@ -810,7 +810,7 @@ msgid ""
 "`SQLAlchemy <http://www.sqlalchemy.org/>`_, the most powerful OR-Mapper for "
 "Python, and `Elixir <https://pypi.python.org/pypi/Elixir>`_, which makes "
 "SQLAlchemy easier to use"
-msgstr ""
+msgstr "`SQLAlchemy <http://www.sqlalchemy.org/>`_ は Python 用の最も強力な OR マッパーで、`Elixir <https://pypi.python.org/pypi/Elixir>`_ は SQLAlchemy を使いやすくします"
 
 #: ../../howto/webservers.rst:589
 msgid "`SQLObject <http://www.sqlobject.org/>`_, another popular OR-Mapper"
@@ -820,7 +820,7 @@ msgstr "`SQLObject <http://www.sqlobject.org/>`_ は別の人気のある OR マ
 msgid ""
 "`ZODB <https://launchpad.net/zodb>`_ and `Durus <https://www.mems-"
 "exchange.org/software/>`_, two object oriented databases"
-msgstr ""
+msgstr "`ZODB <https://launchpad.net/zodb>`_ と `Durus <https://www.mems-exchange.org/software/>`_ の二つはオブジェクト指向データベースです"
 
 #: ../../howto/webservers.rst:599
 msgid "Frameworks"
@@ -938,7 +938,7 @@ msgid ""
 "most related questions.  There is also a `TurboGears book "
 "<http://turbogears.org/1.0/docs/TGBooks.html>`_ published, which is a good "
 "starting point."
-msgstr ""
+msgstr "ドキュメントが `TurboGears documentation <https://turbogears.readthedocs.org/>`_ にあり、スクリーンキャストへのリンクもあります。TurboGears には関連した質問のほとんどに答えられる、活動的なユーザコミュニティがあります。入門に向いた `TurboGears book <http://turbogears.org/1.0/docs/TGBooks.html>`_ も出版されています。"
 
 #: ../../howto/webservers.rst:684
 msgid ""
