@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-02 22:50+0200\n"
-"PO-Revision-Date: 2017-04-04 02:47+0000\n"
+"PO-Revision-Date: 2017-04-04 16:23+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -503,14 +503,14 @@ msgid ""
 "compressing your HTML using gzip to save on your server's bandwidth.  "
 "Authentication is another problem that is easily solved using existing "
 "middleware."
-msgstr "WSGI の本当に卓越している機能はミドルウェアです。ミドルウェアとはプログラムに様々な機能性を加えるためのレイヤーのことを指します。`無数のミドルウェア <https://wsgi.readthedocs.org/en/latest/libraries.html>`_ が利用可能になっています。例えばセッション管理(連続したリクエストの中でユーザを同定を行います、HTTP は状態を維持しないので、リクエストが同じユーザのものであるということがわかります)を書く代わりに、ミドルウェアを取ってきて繋ぐだけで、既存の機能を当てにできます。圧縮についても同じです -- HTML を gzip で圧縮してサーバの帯域を節約したい場合。ミドルウェアを組み込むだけで行うことができます。認証もミドルウェアで簡単に解決できる問題です。"
+msgstr "WSGI の本当に卓越している機能はミドルウェアです。\nミドルウェアとはプログラムに様々な機能性を加えられるレイヤーのことを指します。\n無数の `ミドルウェア <https://wsgi.readthedocs.org/en/latest/libraries.html>`_ が利用可能になっています。\n例えば自前でセッション管理を書く (HTTP はステートレスなプロトコルなので、複数の HTTP リクエストを単一のユーザに関連付けるために、アプリケーションがセッションによって状態を作成し管理しなければなりません) 代わりに、セッション管理をしてくれるミドルウェアをダウンロードし、動作させ、アプリケーション独自の部分をコーディングするだけです。\n圧縮についても同じです -- HTML の gzip 圧縮をする既存のミドルウェアがあって、これでサーバの帯域を節約できます。\n認証も既存のミドルウェアで簡単に解決できる問題です。"
 
 #: ../Doc/howto/webservers.rst:370
 msgid ""
 "Although WSGI may seem complex, the initial phase of learning can be very "
 "rewarding because WSGI and the associated middleware already have solutions "
 "to many problems that might arise while developing web sites."
-msgstr "一般的には -- WSGI は複雑に思えるかもしれませんが、WSGI は web サイトを書く際に起きうる多くの問題の解決法を持っているため、学習の初期段階を実りあるものにしてくれます。"
+msgstr "WSGI は複雑に思えるかもしれませんが、学習の始めの段階は非常に価値ものになります。\nというのも WSGI とそれに関連したミドルウェアには、 web サイトを開発している中で起きる多くの問題の解決策が備わっています。"
 
 #: ../Doc/howto/webservers.rst:376
 msgid "WSGI Servers"
@@ -524,14 +524,14 @@ msgid ""
 "<https://en.wikipedia.org/wiki/Apache_JServ_Protocol>`_.  Some of these "
 "servers are written in Python, as ``flup`` is, but there also exist others "
 "which are written in C and can be used as drop-in replacements."
-msgstr "CGI や mod_python などに様々な低レベルゲートウェイに接続するためのコードを *WSGI サーバ* と呼びます。これらのサーバの一つに ``flup`` があります、これは前に述べましたが FastCGI、SCGI と `AJP <https://en.wikipedia.org/wiki/Apache_JServ_Protocol>`_ をサポートしています。これらのサーバのいくつかは ``flup`` のように Python で書かれていますが、C で書かれたものもあります、それらは気軽に置き換えることができます。"
+msgstr "CGI や mod_python などの様々な低レベルゲートウェイに接続するためのコードを *WSGI サーバ* と呼びます。\nこういったサーバの一つに ``flup`` があり、これは FastCGI、SCGI に加えて `AJP <https://en.wikipedia.org/wiki/Apache_JServ_Protocol>`_ もサポートしています。\nこれらのサーバのいくつかは ``flup`` のように Python で書かれていますが、C で書かれたものもあり、それらは気軽に置き換えることができます。"
 
 #: ../Doc/howto/webservers.rst:385
 msgid ""
 "There are many servers already available, so a Python web application can be"
 " deployed nearly anywhere.  This is one big advantage that Python has "
 "compared with other web technologies."
-msgstr "いくつものサーバが利用可能ですから、Python の web アプリケーションはほとんどどこでも利用できます。これは他の web テクニックと比べたときの Python の大きな利点です。"
+msgstr "多くのサーバが既に利用可能なので、 Python の web アプリケーションはほとんどどこにでも配置できます。\nこれは他の web テクノロジーと比べたときの Python の大きな利点の 1 つです。"
 
 #: ../Doc/howto/webservers.rst:391
 msgid ""
