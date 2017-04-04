@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-02 22:50+0200\n"
-"PO-Revision-Date: 2017-04-04 16:23+0000\n"
+"PO-Revision-Date: 2017-04-04 17:34+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -539,13 +539,13 @@ msgid ""
 "<https://wsgi.readthedocs.org/>`_, which contains an extensive list of `WSGI"
 " servers <https://wsgi.readthedocs.org/en/latest/servers.html>`_ which can "
 "be used by *any* application supporting WSGI."
-msgstr "`WSGI homepage <https://wsgi.readthedocs.org/>`_ は全ての WSGI に関連したコードに対して素晴しい概観を与えてくれます、ここには WSGI をサポートするアプリケーション *全て* が利用できるサーバの広大なリスト `WSGI servers <https://wsgi.readthedocs.org/en/latest/servers.html>`_ が含まれています。"
+msgstr "`WSGI homepage <https://wsgi.readthedocs.org/>`_ では WSGI 関係のコードの素晴しい概要が読め、 WSGI をサポートする *全ての* アプリケーションが利用できる `WSGI サーバ <https://wsgi.readthedocs.org/en/latest/servers.html>`_ の広大なリストがあります。"
 
 #: ../Doc/howto/webservers.rst:396
 msgid ""
 "You might be interested in some WSGI-supporting modules already contained in"
 " the standard library, namely:"
-msgstr "標準ライブラリに含まれる WSGI をサポートするモジュールに興味が湧いたかもしれません:"
+msgstr "標準ライブラリに含まれる WSGI をサポートするモジュールに興味が湧いたかもしれません、すなわちこのモジュールのことです:"
 
 #: ../Doc/howto/webservers.rst:399
 msgid ":mod:`wsgiref` -- some tiny utilities and servers for WSGI"
@@ -560,7 +560,7 @@ msgid ""
 "What does WSGI give the web application developer?  Let's take a look at an "
 "application that's been around for a while, which was written in Python "
 "without using WSGI."
-msgstr "WSGI は web アプリケーションプログラマに何をもたらしてくれるのでしょうか? 長く存在しているWSGI を使わない、Python で書かれた web アプリケーションをみてみましょう。"
+msgstr "WSGI は web アプリケーションプログラマに何をもたらしてくれるのでしょうか?\nWSGI を使わずに Python で書かれた昔からある web アプリケーションをみてみましょう。"
 
 #: ../Doc/howto/webservers.rst:409
 msgid ""
