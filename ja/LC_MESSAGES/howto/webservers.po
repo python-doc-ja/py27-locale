@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-02 22:50+0200\n"
-"PO-Revision-Date: 2017-04-04 17:34+0000\n"
+"PO-Revision-Date: 2017-04-04 23:19+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -568,7 +568,7 @@ msgid ""
 "<https://moinmo.in/>`_.  It was created in 2000, so it predates WSGI by "
 "about three years.  Older versions needed separate code to run on CGI, "
 "mod_python, FastCGI and standalone."
-msgstr "最も広く使われている wiki ソフトウェアの一つに `MoinMoin <https://moinmo.in/>`_ があります。これは2000年に作られたため、WSGI より3年ほど先行していました。古いバージョンでは CGI、mod_python、FastCGI、スタンドアロンで動作するためには別々のコードが必要でした。"
+msgstr "最も広く使われている wiki ソフトウェアパッケージの一つに `MoinMoin <https://moinmo.in/>`_ があります。\nこれは2000年に作られたため、WSGI より3年ほど先行していました。\n古いバージョンでは CGI、mod_python、FastCGI、スタンドアロンで動作するためには別々のコードが必要でした。"
 
 #: ../Doc/howto/webservers.rst:414
 msgid ""
@@ -576,11 +576,11 @@ msgid ""
 "MoinMoin on any WSGI compliant server, with no additional glue code. Unlike "
 "the pre-WSGI versions, this could include WSGI servers that the authors of "
 "MoinMoin know nothing about."
-msgstr "現在では WSGI をサポートしていますが、いまやこれら全ては WSGI と既存のゲートウェイを使って可能になりました。FastCGI 上では ``flup`` を使って実行できますし、スタンドアロンサーバとして実行するには :mod:`wsgiref` を使うことになります。"
+msgstr "現在では WSGI をサポートしています。\nWSGI を使うことで、グルーコードを追加せずに WSGI に準拠したサーバに MoinMoin を配置できるようになりました。\nWSGI 対応前のバージョンとは違って、 MoinMoin の開発者が全く知らない WSGI サーバを MoinMoin に含めることができます。"
 
 #: ../Doc/howto/webservers.rst:421
 msgid "Model-View-Controller"
-msgstr "モデル・ビュー・コントローラ(Model-View-Controller)"
+msgstr "モデル・ビュー・コントローラ (Model-View-Controller)"
 
 #: ../Doc/howto/webservers.rst:423
 msgid ""
