@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-02 22:50+0200\n"
-"PO-Revision-Date: 2017-04-04 23:19+0000\n"
+"PO-Revision-Date: 2017-04-05 05:58+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -592,24 +592,24 @@ msgid ""
 " from the beginning. That way, even users of other frameworks (or even other"
 " languages, since MVC is not Python-specific) can easily understand the "
 "code, given that they are already familiar with the MVC structure."
-msgstr "*MVC* という用語は「フレームワーク *foo* は MVC をサポートしています」というような文句でよく聞きます。MVC は技術的なものというよりかは、構造的なものです、多くの web フレームワークはこのモデルを使って開発者がプログラムに構造を持ちこむことを助けています。大きな web アプリケーションはたくさんのコードを持っているので、最初からプログラムに構造を持たせることはよい考えです。そうすることで、他のフレームワーク(他の言語でもかまいません、MVC は Python 特有のものではないので)のユーザであっても、構造に既に馴染んでいるため、存在しているコードを簡単に理解できるようになります。"
+msgstr "*MVC* という用語は「フレームワーク *foo* は MVC をサポートしています」というような文句でよく聞きます。\nMVC は特定の API というよりは、コードの総合的な構造についての話です。\n多くの web フレームワークはこのモデルを使い、開発者がプログラムに構造を与えることを助けています。\n大きな web アプリケーションはコード量が増えるので、最初からプログラムによい構造を持たせることはよい考えです。\nそうすることで、他のフレームワークのユーザであっても (MVC は Python 特有のものではないので、他の言語であっても)、既に MVC 構造に馴染んでいるため、コードを簡単に理解できます。"
 
 #: ../Doc/howto/webservers.rst:432
 msgid "MVC stands for three components:"
-msgstr "MVC は三要素からできています:"
+msgstr "MVC は 3 つの構成要素からできています:"
 
 #: ../Doc/howto/webservers.rst:434
 msgid ""
 "The *model*.  This is the data that will be displayed and modified.  In "
 "Python frameworks, this component is often represented by the classes used "
 "by an object-relational mapper."
-msgstr "*model* これは変更されるデータのことです。たいていの Python のフレームワークでこの要素は object-relational マッパーを利用したクラスで表現されます。つまり宣言部分はここに集約されます。"
+msgstr "*モデル* (model) 。\nこれは表示したり変更されたりするデータのことです。\nPython のフレームワークでは、この要素は object-relational マッパーが利用するクラスで表現されます。"
 
 #: ../Doc/howto/webservers.rst:438
 msgid ""
 "The *view*.  This component's job is to display the data of the model to the"
 " user.  Typically this component is implemented via templates."
-msgstr "*view* この要素はモデルのデータをユーザに表示する仕事を行います。典型的にはこの要素はテンプレートで表現されます。"
+msgstr "*ビュー* (view) 。\nこの構成要素の仕事は、モデルのデータをユーザに表示することです。\n典型的にはこの要素はテンプレートで実装されます。"
 
 #: ../Doc/howto/webservers.rst:441
 msgid ""
@@ -617,7 +617,7 @@ msgid ""
 "controller reacts to user actions (like opening some specific URL), tells "
 "the model to modify the data if necessary, and tells the view code what to "
 "display,"
-msgstr "*controller* これはユーザとモデルの間のレイヤーです。controller はユーザの動作(特定の URL を開く等)に反応して、必要に応じてモデルにデータを変更するよう伝えます。"
+msgstr "*コントローラ* (controller) 。\nこれはユーザとモデルの間にあるレイヤーです。\nコントローラは (ある特定の URL を開くというような) ユーザの動作に反応し、必要に応じてモデルにデータを変更するよう伝え、ビューのコードに何を表示するかを伝えます。"
 
 #: ../Doc/howto/webservers.rst:446
 msgid ""
@@ -634,7 +634,7 @@ msgid ""
 "templates (the view).  That's why it is important not to write unnecessary "
 "Python code in the templates -- it works against the MVC model and creates "
 "chaos in the code base, making it harder to understand and modify."
-msgstr "全ての Python フレームワークが明示的に MVC をサポートしているわけではありませんが、MVC パターンを使った、データロジック (model) とインタラクションロジック (controller) とテンプレート (view) を分離した web サイトを作成することはありふれています。その理由はテンプレートに不必要な Python コードを書かないことが重要なことだからです --  MVC に反すると大混乱を生むことになります。"
+msgstr "全ての Python フレームワークが明示的に MVC をサポートしているわけではありませんが、データロジック (モデル) とユーザとのインタラクションロジック (コントローラ) とテンプレート (ビュー) を分離して、 MVC パターンを使っている web サイトを作成することは普通のことです。\nその理由はテンプレートに不必要な Python コードを書かないことが重要なことだからです --  そのようなコードは MVC に反する動作をして大混乱を生み、それを理解して修正することがいっそう難しくなります。"
 
 #: ../Doc/howto/webservers.rst:461
 msgid ""
@@ -642,11 +642,11 @@ msgid ""
 "pattern "
 "<https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_.  It"
 " includes a long list of web frameworks for various programming languages."
-msgstr "Wikipedia の英語版には `Model-View-Controller pattern <https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_ の記事があります、この記事には様々な言語での web フレームワークの長大なリストが含まれています。"
+msgstr "Wikipedia の英語版には `Model-View-Controller pattern <https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller>`_ についての記事があります。\nこの記事には様々なプログラミング言語での web フレームワークの長大なリストが載っています。"
 
 #: ../Doc/howto/webservers.rst:467
 msgid "Ingredients for Websites"
-msgstr "web サイトの構成要素"
+msgstr "web サイトの要素"
 
 #: ../Doc/howto/webservers.rst:469
 msgid ""
@@ -656,14 +656,14 @@ msgid ""
 "not forced to use these tools, and often there is no \"best\" tool.  It is "
 "worth learning about the available tools because they can greatly simplify "
 "the process of developing a web site."
-msgstr "web サイトは複雑な構造物です、そのため web サイト開発者の保守作業を助けるためにツールが作られました。それらのツールは Python 固有のものではないので、他のプログラミング言語に対しても存在します。もちろん、開発者はそれらのツールを使うことを強制されることはありませんし、たいていの場合において「最良」のツールも存在しません、しかし、開発者が利用できる道具は膨大にあるので、どれかを選ぶ前に情報を得ておくことは価値のあることです。"
+msgstr "web サイトは複雑な構造物なので、 web 開発者がコードを書きやすく、保守しやすくする助けとなるツールが作られてきました。\nこのようなツールは、全ての言語の全ての web フレームワークについて存在します。\n開発者はこれらのツールを強制的に使わされるわけではないし、「最良の」ツールはたいていは存在しません。\nしかし、これらの利用可能なツールは web サイトの開発プロセスを非常に単純にしてくれるので、学ぶ価値はあります。"
 
 #: ../Doc/howto/webservers.rst:479
 msgid ""
 "There are far more components than can be presented here.  The Python wiki "
 "has a page about these components, called `Web Components "
 "<https://wiki.python.org/moin/WebComponents>`_."
-msgstr "ここで述べたものよりも多くの組み合わせ可能な要素が書かれています。Python wiki にはこれらの要素についてのページ `Web Components <https://wiki.python.org/moin/WebComponents>`_ があります。"
+msgstr "このドキュメントで述べられるよりも多くの要素があります。\nPython wiki には `Web Components <https://wiki.python.org/moin/WebComponents>`_ と呼ばれる、これらの要素についてのページがあります。"
 
 #: ../Doc/howto/webservers.rst:485
 msgid "Templates"
@@ -676,7 +676,7 @@ msgid ""
 "templates exist.  Templates are, in the simplest case, just HTML files with "
 "placeholders.  The HTML is sent to the user's browser after filling in the "
 "placeholders."
-msgstr "HTML と Python コードを混在させることは、いくつかのライブラリを利用することで可能になります。最初は便利ですが、そうすることでコードが保守不可能となる恐れがあります。これがテンプレートが存在する理由です。テンプレートは、最も単純な場合には、単にプレースホルダーを持つ HTML ファイルとなります。プレースホルダーを埋めた後に HTML はユーザのブラウザに送信されます。"
+msgstr "HTML と Python コードを混在させることは、いくつかのライブラリを利用することで可能になります。\n最初は便利なのですが、こうしてしまうとコードが恐ろしく保守不可能となります。\nこれがテンプレートが存在する理由です。\nテンプレートは、最も単純な場合には、単にプレースホルダーを持つ HTML ファイルとなります。\nプレースホルダーを埋めた後に HTML はユーザのブラウザに送信されます。"
 
 #: ../Doc/howto/webservers.rst:493
 msgid "Python already includes two ways to build simple templates::"
@@ -687,7 +687,7 @@ msgid ""
 "To generate complex HTML based on non-trivial model data, conditional and "
 "looping constructs like Python's *for* and *if* are generally needed. "
 "*Template engines* support templates of this complexity."
-msgstr "Python の標準ライブラリには、:class:`string.Template` を通して利用できるより高度なテンプレートも含まれています、しかし、HTML テンプレートには Python の *for* や *if* のような条件やループなどが使えることが必要です。そのため、*テンプレートエンジン* が必要になります。"
+msgstr "単純でないモデルのデータに基づいて複雑な HTML を生成するために、たいてい Python の *for* や *if* のような条件分岐や反復といった構造が必要とされます。\n*テンプレートエンジン* はこのような複雑さを持つテンプレートをサポートします。"
 
 #: ../Doc/howto/webservers.rst:508
 msgid ""
@@ -696,18 +696,18 @@ msgid ""
 "programming language which is easy to learn, partly because it is limited in"
 " scope. Others use XML, and the template output is guaranteed to be always "
 "be valid XML.  There are many other variations."
-msgstr "いまや、Python には多くのテンプレートエンジンがあり、`framework`_ とともに、または独立に利用できます。いくつかのテンプレートエンジンは平文のプログラミング言語を利用します、この言語はとても限定的なので簡単に学ぶことができます、一方で他のものには XML を利用し、テンプレートの出力が正当な XML であることが保証されているものがあります。いくつかの `framework`_ は独自のテンプレートエンジンを含んでいたり、特定のエンジンを使うことを推奨しています。もしどれがいいかわからない場合には、使ってみるといいでしょう。"
+msgstr "Python には多くのテンプレートエンジンがあり、`framework`_ とともに、または独立に利用できます。\nいくつかのテンプレートエンジンでは、利用用途を狭めて学びやすくしてあるプレーンテキストのプログラミング言語を定義しています。\n他のテンプレートエンジンでは XML を利用しているものもあり、テンプレートの出力が常に有効な XML になるよう保証されています。\nこれ以外にも非常に多くの種類があります。"
 
 #: ../Doc/howto/webservers.rst:514
 msgid ""
 "Some `frameworks`_ ship their own template engine or recommend one in "
 "particular.  In the absence of a reason to use a different template engine, "
 "using the one provided by or recommended by the framework is a good idea."
-msgstr "Python はほんとうに様々なテンプレートエンジンを持っていますが、たいていの場合に手製のテンプレートシステムを使うことは理にかないません。全てのテンプレートシステムを評価するのは不毛ですから、最も人気のあるものを探すのに時間を割いた方がよいでしょう。いくつかのフレームワークは独自のテンプレートエンジンを持っていたり、推奨しているものがあります。これらを選ぶのが賢いでしょう。"
+msgstr "独自のテンプレートエンジンを提供する `frameworks`_ もあれば、ある特定のテンプレートエンジンを推奨するものもあります。\n別のテンプレートエンジンを使う理由が無ければ、フレームワークが提供もしくは推奨するものを使うのがよい考えです。"
 
 #: ../Doc/howto/webservers.rst:518
 msgid "Popular template engines include:"
-msgstr "人気のあるテンプレートエンジンに含まれるものは:"
+msgstr "人気のあるテンプレートエンジンには次のようなものがあります:"
 
 #: ../Doc/howto/webservers.rst:520
 msgid "`Mako <http://www.makotemplates.org/>`_"
