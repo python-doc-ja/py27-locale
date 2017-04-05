@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-02 22:50+0200\n"
-"PO-Revision-Date: 2017-04-05 12:05+0000\n"
+"PO-Revision-Date: 2017-04-05 15:22+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -771,7 +771,7 @@ msgid ""
 " called \"flat files\").  This is very easy for simple sites, but can be "
 "difficult to get right if the web site is performing many updates to the "
 "stored data."
-msgstr "第2の可能性はハードディスクに保存されたファイルを利用することです (しばしば、フラットファイルと呼ばれます)。これはとても簡単ですが、高速ではありません。このデータベースは ORM 経由でオブジェクトを保存するのに利用できて、ただ、データをファイルシステムに保存する方法はこれだけではありません。普通の平文のテキストファイルで十分な場合もあります。"
+msgstr "第2の可能性は通常のプレーンテキストのファイル (しばしば \"フラットファイル\" と呼ばれます) で保存することです。\nこの方法は単純なサイトでは非常に簡単ですが、 web サイトが保存されたデータへの更新がたくさん行われる場合、ちゃんと動くようにするのは難しくなってきます。"
 
 #: ../Doc/howto/webservers.rst:563
 msgid ""
@@ -783,7 +783,7 @@ msgid ""
 "the advantage that nearly all objects can be saved in a straightforward way,"
 " unlike in relational databases where some objects are very hard to "
 "represent."
-msgstr "第3の最も利用されない方法はオブジェクト指向データベースと呼ばれています。このデータベースは、OR マッピングによって行との間に作成されるリレーションの代わりに、*実際のオブジェクト* を保存します。この方法にはほとんど全てのオブジェクトを直接的な方法で保存できるという利点があります、これはリレーショナルデータベースでいくつかのオブジェクトが ORMs で表現するのが困難であるのと対照的です。"
+msgstr "第3の可能性はオブジェクト指向データベースです (\"オブジェクトデータベース\" とも呼ばれます)。\nこのデータベースは、プログラムの実行中のメモリ上での構成とほぼ同じ形式でオブジェクトのデータを保存します。\n(対照的に、 ORM はオブジェクトデータをテーブルの行と行どうしの関係として保存します。)\nオブジェクトを直接保存することには、ほぼ全てのオブジェクトを単純な方法で保存できるという優位点があり、これは表現するのが非常に難しいオブジェクトがある関係データベースには無い特徴です。"
 
 #: ../Doc/howto/webservers.rst:571
 msgid ""
@@ -791,14 +791,14 @@ msgid ""
 "is usually a good idea to stick to the data store recommended by the "
 "framework unless the application has special requirements better satisfied "
 "by an alternate storage mechanism."
-msgstr "`framework`_ はしばしばユーザにどの方法を選べばいいか、ヒントを与えてくれます。たいていの場合、一つだけの方法を必要とする特別な条件がある場合がない限りは、それに従うことはいい考えです。"
+msgstr "`framework`_ はしばしばどのデータストレージ方法を選べばよいかのヒントを与えてくれます。\n代わりとなるストレージ機構を使った方がアプリケーションの特別な要件によりよく合うのでない限り、普通はフレームワークが推奨しているデータストアを使い続けるのがよい考えです。"
 
 #: ../Doc/howto/webservers.rst:578
 msgid ""
 "`Persistence Tools <https://wiki.python.org/moin/PersistenceTools>`_ lists "
 "possibilities on how to save data in the file system.  Some of these modules"
 " are part of the standard library"
-msgstr "`Persistence Tools <https://wiki.python.org/moin/PersistenceTools>`_ はファイルシステムにデータを保存する方法が列挙されています、これらのモジュールの内のいくつかは標準ライブラリの一部です"
+msgstr "`Persistence Tools <https://wiki.python.org/moin/PersistenceTools>`_ にはファイルシステムにデータを保存する方法が列挙されています、これらのモジュールの内のいくつかは標準ライブラリの一部です"
 
 #: ../Doc/howto/webservers.rst:582
 msgid ""
