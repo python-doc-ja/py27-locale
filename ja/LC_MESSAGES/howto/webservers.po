@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-02 22:50+0200\n"
-"PO-Revision-Date: 2017-04-05 15:22+0000\n"
+"PO-Revision-Date: 2017-04-06 14:14+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -837,7 +837,7 @@ msgid ""
 "known framework for web development is Ruby on Rails, but Python has its own"
 " frameworks.  Some of these were partly inspired by Rails, or borrowed ideas"
 " from Rails, but many existed a long time before Rails."
-msgstr "web サイトは簡単に大きくなりうるので、開発者がそれらのサイトを簡単に扱えるよう助けるものはフレームワークと呼ばれます。最も知られたフレームワークは Ruby on Rails ですが、Python も独自のフレームワークを持っていて、それらは Rails からヒントを得たものであったり、Rails より以前から存在していたものであったりします。"
+msgstr "web サイトを動かずコードを作成するプロセスは様々なサービスを提供するコードを書く作業を伴います。\nあるサービスを提供するコードは、当該の web サイトの複雑さや目的に関わらず、たいてい同じような動作をします。\n共通のソリューションを抽象化し再利用可能なコードにすると、 web 開発で \"フレームワーク\" と呼ばれるものが生み出されます。\nおそらく最も知られている web 開発のフレームワークは Ruby on Rails ですが、 Python には独自のフレームワークがあります。\nその中には部分的に Rails にインスパイアされたり、アイディアを拝借したものもありましたが、多くのものは Rails よりずっと前から存在していました。"
 
 #: ../Doc/howto/webservers.rst:610
 msgid ""
@@ -851,7 +851,7 @@ msgid ""
 " standards were developed that allowed for limited interoperability between "
 "frameworks, such as a standard that allowed different template engines to be"
 " used interchangeably."
-msgstr "web フレームワークのアプローチには二つの方法があります: 最小主義アプローチと全てを含む包括的アプーチ (しばしば *full-stack* と呼ばれます) です。包括的なフレームワークは作業を始めるのに必要なもの全てが揃っています、テンプレートエンジン、いくつかのデータベースへの保存、アクセス方法やその他の機能。それらは他の多くユーザによって広く利用されていて、本やチュートリアルといった形式で詳細なドキュメントが準備されているので、多くのユーザはそれらを利用して順調に進めることができます、他の web フレームワークは最小主義アプローチをとり、できるだけ自由に変えられるようにして、ユーザがどれが最良かを選ぶ自由を残せるようにしています。"
+msgstr "もともと Python の web フレームワークには、 web サイトを開発するのに必要な全てのサービスを1つにまとめて、巨大な集約されたツールの集まりを作る傾向がありました。\nどの2つの web フレームワークも互換性はありませんでした:\nあるフレームワーク用に開発したプログラムは、かなりの再設計作業をしないと他のフレームワークには配置できませんでした。\nこの状況が \"ミニマリスト\" web フレームワークの開発につながり、そういったフレームワークは Python コードと http プロトコルの間のやり取りをするツールだけを提供し、他の全てのサービスを別々のコンポーネントとしてフレームワーク上に追加するものでした。\n場当たり的な標準が開発され、制限はあるものの、異なるテンプレートエンジンを交換可能にする標準のような、フレームワークどうしの互換性も生まれました。"
 
 #: ../Doc/howto/webservers.rst:621
 msgid ""
@@ -861,7 +861,7 @@ msgid ""
 "deploy the most complex web sites) or minimalist, or anything in between, "
 "are built from collections of reusable components that can be used with more"
 " than one framework."
-msgstr "ユーザの多数は包括的フレームワークを利用することで順調に進めることができます。それらのフレームワークは全てを備えているので、ユーザは単に飛び乗ってコートを書くことができます。それらには制限がある一方で、申し分なくやりたいと思った内容の 80% は埋めてくれます。それらは多様な要素から成っていて、それぞれの要素ができるだけうまく協調できるようにデザインされています。"
+msgstr "WSGI の出現から Python の web フレームワークの世界は、 WSGI 標準に基づいた互換性に向かって進化していきました。\n(最も複雑な web サイトを配置するのに必要な全てのツールを提供する) \"フルスタック\" であれ、ミニマリストであれ、その中間であれ、今や多くの web フレームワークが複数のフレームワークで使える再利用可能なコンポーネントで構築されています。"
 
 #: ../Doc/howto/webservers.rst:628
 msgid ""
@@ -869,17 +869,17 @@ msgid ""
 "framework that has an active community.  These frameworks tend to be well "
 "documented, and provide the easiest path to producing a fully functional web"
 " site in minimal time."
-msgstr "Python で書かれた web フレームワークが大多数存在することは、実際にそれらを書くことが容易だということを実証しています。Python で書かれた web アプリケーションで最も知られているものは `Zope <http://www.zope.org/>`_ で、これは大きなフレームワークの一種とみなすことができます。しかし、いまではほとんど忘れられていますが、Zope は単なるフレームワークではありません、利用者の多くが新しいものに移行したため、それらについてこれ以上記述する必要はないでしょう。"
+msgstr "大多数のユーザはおそらくコミュニティが活発な \"フルスタック\" フレームワークを選びたいでしょう。\nこれらのフレームワークはきちんとドキュメントが書かれ、機能を完全に揃えた web サイトを最小の時間で作る簡単な道が提供されている傾向があります。"
 
 #: ../Doc/howto/webservers.rst:635
 msgid "Some notable frameworks"
-msgstr "いくつかの著名なフレームワーク"
+msgstr "いくつかの注目に値するフレームワーク"
 
 #: ../Doc/howto/webservers.rst:637
 msgid ""
 "There are an incredible number of frameworks, so they cannot all be covered "
 "here.  Instead we will briefly touch on some of the most popular."
-msgstr "膨大な数のフレームワークがあるので、全てについて記述することは不可能ですし、その必要さえありません、なぜならほとんどのフレームワークは特別なものではありませんし、それらにできることは人気のあるものでできます。"
+msgstr "膨大な数のフレームワークがあるので、全てについて記述することは不可能です。\nその代わりに最も人気のあるもののいくつかに簡単に触れます。"
 
 #: ../Doc/howto/webservers.rst:642
 msgid "Django"
@@ -980,7 +980,7 @@ msgstr "Zope は `Plone <https://plone.org/>`_ によって利用されている
 
 #: ../Doc/howto/webservers.rst:714
 msgid "Other notable frameworks"
-msgstr "他の著名なフレームワーク"
+msgstr "他の注目に値するフレームワーク"
 
 #: ../Doc/howto/webservers.rst:716
 msgid ""
