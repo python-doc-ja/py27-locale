@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-02 22:50+0200\n"
-"PO-Revision-Date: 2017-04-07 15:42+0000\n"
+"PO-Revision-Date: 2017-04-08 02:51+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -929,7 +929,7 @@ msgid ""
 "seamless experience.  TurboGears gives the user flexibility in choosing "
 "components. For example the ORM and template engine can be changed to use "
 "packages different from those used by default."
-msgstr "Python の他に人気あるフレームワークは `TurboGears <http://www.turbogears.org/>`_ です。これは既存の要素と継ぎ目ををなくすためグルーコードを使ってそれらを組み合わせるアプローチをとっています。TurboGears はユーザが自由に要素を選べるようにしていて、ORM は制限が多い代わり使いやすいもの、複雑だが強力なもの、に切り替えて使うことができます。テンプレートエンジンにも同様のことがいえます。TurboGears の強力な点は、構成要素が他のプロジェクトでも TurboGears への依存無しに簡単に利用できるということです、例えば TurboGears を支えている web サーバ CherryPy もそうです。"
+msgstr "他の人気がある Python のフレームワークは `TurboGears <http://www.turbogears.org/>`_ です。\nTurboGears は、既存のコンポーネントをグルーコードで組み合わせ、無理なく連携する使い勝手を持たせるという手法をとっています。\nTurboGeers にはユーザがコンポーネントを選べる柔軟性があります。\n例えば、 ORM とテンプレートエンジンはデフォルトとは異なるパッケージに変えられます。"
 
 #: ../Doc/howto/webservers.rst:678
 msgid ""
@@ -939,7 +939,7 @@ msgid ""
 "most related questions.  There is also a `TurboGears book "
 "<http://turbogears.org/1.0/docs/TGBooks.html>`_ published, which is a good "
 "starting point."
-msgstr "ドキュメントが `TurboGears documentation <https://turbogears.readthedocs.org/>`_ にあり、スクリーンキャストへのリンクもあります。TurboGears には関連した質問のほとんどに答えられる、活動的なユーザコミュニティがあります。入門に向いた `TurboGears book <http://turbogears.org/1.0/docs/TGBooks.html>`_ も出版されています。"
+msgstr "ドキュメントが `TurboGears documentation <https://turbogears.readthedocs.org/>`_ にあり、スクリーンキャストへのリンクもあります。\nTurboGears にも活発なユーザコミュニティがあり、関連した質問のほとんどに答えてくれます。\n入門に向いた `TurboGears book <http://turbogears.org/1.0/docs/TGBooks.html>`_ も出版されています。"
 
 #: ../Doc/howto/webservers.rst:684
 msgid ""
@@ -947,7 +947,7 @@ msgid ""
 "direction of WSGI support and a component-based architecture.  TurboGears 2 "
 "is based on the WSGI stack of another popular component-based web framework,"
 " `Pylons <http://www.pylonsproject.org/>`_."
-msgstr "次の TurboGears のメジャーバージョン version 2.0 での計画では、`Pylons <http://www.pylonsproject.org/>`_ と呼ばれる別の柔軟なフレームワークによって提供される、より柔軟な基本要素に切り替えることになっています。"
+msgstr "TurboGears の最新版の version 2.0 では、よりいっそう WSGI サポートとコンポーネントに基づくアーキテクチャに向けて進んでいます。\nTurboGears 2 は `Pylons <http://www.pylonsproject.org/>`_ というコンポーネントに基づく人気の web フレームワークの WSGI スタックを基礎としています。"
 
 #: ../Doc/howto/webservers.rst:691
 msgid "Zope"
@@ -969,14 +969,14 @@ msgid ""
 "production use behind them, and the Zope 3 project gives access to these "
 "components to the wider Python community.  There is even a separate "
 "framework based on the Zope components: `Grok <http://grok.zope.org/>`_."
-msgstr "そのうちの一つは既に言及しましたが Zope です、このフレームワークはずいぶんと長い期間にわたって存在しています。Zope 2.x はどちらかというと Pythonic でないとされてきましたが、新しい Zope 3.x ではその変更を試みて、Python プログラマから受け入れられ始めています。これらの努力は既に結果をみせ始めていて、`Repoze <http://repoze.org/>`_ と呼ばれる Zope と WSGI を結びつけるプロジェクトや `Grok <http://grok.zope.org/>`_ と呼ばれる Zope の熟慮された要素を「普通の」Python プログラマが使えるようにするためのプロジェクトがあります。"
+msgstr "Zope フレームワークは \"古い原始の\" フレームワークの1つです。\nZope2 の現在の姿は、固く結合されたフルスタックなフレームワークです。\nZope の最も興味深い機能の1つは、本体に固く結合されている `ZODB <https://launchpad.net/zodb>`_ (Zope Object Database) と呼ばれる強力なオブジェクトデータベースです。\nこの固く結合されている性質のために、 Zope はいくぶん孤立したエコシステムが形成されることとなりました: Zope 用に書かれたコードは Zope 以外の場所ではあまり使えず、逆向きも同様です。\nこの問題を解決するために Zope 3 への取り組みが始まりました。\nZope 3 では、より綺麗に分離されたコンポーネントの集合体として Zope を再設計します。\nこの取り組みは WSGI 標準が考案されるより前に始まりましたが、 `Repoze <http://repoze.org/>`_ プロジェクトによって Zope 3 のための WSGI サポートが提供されています。\nZope のコンポーネントはそれまで何年もプロダクションで使われていて、 Zope 3 プロジェクトではそれまでより広い Python コミュニティに向けて、それらのコンポーネントが利用できるようになります。\nZope コンポーネントに基づく Zope とは別の `Grok <http://grok.zope.org/>`_ というフレームワークさえあります。"
 
 #: ../Doc/howto/webservers.rst:708
 msgid ""
 "Zope is also the infrastructure used by the `Plone <https://plone.org/>`_ "
 "content management system, one of the most powerful and popular content "
 "management systems available."
-msgstr "Zope は `Plone <https://plone.org/>`_ によって利用されているインフラストラクチャでもあります。Plone は利用可能な中でもっとも強力で人気のあるコンテンツ管理システムの一つです。"
+msgstr "Zope は `Plone <https://plone.org/>`_ によって利用されているインフラストラクチャでもあります。Plone は利用可能な中でもっとも強力で人気のあるコンテンツ管理システム (content management system, CMS) の一つです。"
 
 #: ../Doc/howto/webservers.rst:714
 msgid "Other notable frameworks"
@@ -986,7 +986,7 @@ msgstr "他の注目に値するフレームワーク"
 msgid ""
 "Of course these are not the only frameworks that are available.  There are "
 "many other frameworks worth mentioning."
-msgstr "もちろんこれらの二つだけが利用できるフレームワーク全てではありません、人気では少し劣りますが、言及するに値するフレームワークがいくつかあります。"
+msgstr "もちろんこれらの二つだけが利用できるフレームワークの全てではありません。\nここで触れておく価値のあるフレームワークは他にもたくさんあります。"
 
 #: ../Doc/howto/webservers.rst:719
 msgid ""
@@ -997,22 +997,22 @@ msgid ""
 "documentation of every single component, of which there are many.  Pylons "
 "builds upon `Paste <http://pythonpaste.org/>`_, an extensive set of tools "
 "which are handy for WSGI."
-msgstr "既に述べた別のフレームワークに `Pylons`_ がありました。Pylons は TurboGears とよく似ていますが、柔軟性に磨きがかかっていて、利用するコストが少々高くつきます。ほとんど全ての要素は交換することができるため、それぞれの要素について、ドキュメントを利用するこが避けられません、なぜなら各必要条件を満す Pylons の組み合わせの可能性は本当にたくさんあるのです。Pylons は WSGI を扱いやすくするための広範囲なツールである、`Paste <http://pythonpaste.org/>`_ を基にして組まれています。"
+msgstr "既に述べた別のフレームワークに `Pylons`_ がありました。\nPylons は TurboGears とよく似ていますが、柔軟性に磨きがかかっていて、利用するコストが少々高くつきます。\nほぼ全ての要素は交換することができるため、個々のコンポーネント全てについてドキュメントを利用する必要があり、そしてコンポーネントはたくさんあります。\nPylons は `Paste <http://pythonpaste.org/>`_ という WSGI を扱いやすい大量のツールの集合体に基づいて構築されています。"
 
 #: ../Doc/howto/webservers.rst:726
 msgid ""
 "And that's still not everything.  The most up-to-date information can always"
 " be found in the Python wiki."
-msgstr "これで全てが述べられたわけではありません。最新の情報の多くは Python wiki で見つけることができます。"
+msgstr "これで全てが述べられたわけではありません。最新の情報は Python wiki で見つけることができます。"
 
 #: ../Doc/howto/webservers.rst:731
 msgid ""
 "The Python wiki contains an extensive list of `web frameworks "
 "<https://wiki.python.org/moin/WebFrameworks>`_."
-msgstr "Python wiki には広大な `web frameworks <https://wiki.python.org/moin/WebFrameworks>`_ のリストがあります。"
+msgstr "Python wiki には広大な `web フレームワーク <https://wiki.python.org/moin/WebFrameworks>`_ のリストがあります。"
 
 #: ../Doc/howto/webservers.rst:734
 msgid ""
 "Most frameworks also have their own mailing lists and IRC channels, look out"
 " for these on the projects' web sites."
-msgstr "多くのフレームワークは独自のメーリングリストや IRC チャンネルを持っています、プロジェクトの web サイトからそれらを探して下さい。"
+msgstr "ほとんどのフレームワークは自身のメーリングリストや IRC チャンネルを持っているので、プロジェクトの web サイトからそれらを探して下さい。"
