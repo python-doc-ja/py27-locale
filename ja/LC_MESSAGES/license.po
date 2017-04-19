@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-04-02 22:50+0200\n"
-"PO-Revision-Date: 2017-04-06 00:27+0000\n"
+"PO-Revision-Date: 2017-04-19 00:05+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -238,45 +238,45 @@ msgstr "CWI LICENSE AGREEMENT FOR PYTHON 0.9.0 THROUGH 1.2"
 
 #: ../Doc/license.rst:262
 msgid "Licenses and Acknowledgements for Incorporated Software"
-msgstr "Licenses and Acknowledgements for Incorporated Software"
+msgstr "取り入れられているソフトウェアのライセンスと謝辞"
 
 #: ../Doc/license.rst:264
 msgid ""
 "This section is an incomplete, but growing list of licenses and "
 "acknowledgements for third-party software incorporated in the Python "
 "distribution."
-msgstr "This section is an incomplete, but growing list of licenses and acknowledgements for third-party software incorporated in the Python distribution."
+msgstr "この節では、 Python 配布物に取り入れられているサードパーティソフトウェアのライセンスと謝辞の、不完全だが成長し続けるリストを記述します。"
 
 #: ../Doc/license.rst:269
 msgid "Mersenne Twister"
-msgstr "Mersenne Twister"
+msgstr "メルセンヌツイスター (Mersenne Twister)"
 
 #: ../Doc/license.rst:271
 msgid ""
 "The :mod:`_random` module includes code based on a download from "
 "http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/emt19937ar.html. The "
 "following are the verbatim comments from the original code::"
-msgstr "The :mod:`_random` module includes code based on a download from http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/emt19937ar.html. The following are the verbatim comments from the original code::"
+msgstr ":mod:`_random` モジュールは、 http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/emt19937ar.html からダウンロードしたコードに基づいたコードベースを含んでいます。\nオリジナルのコードのコメントをそのまま次に示します::"
 
 #: ../Doc/license.rst:318
 msgid "Sockets"
-msgstr "Sockets"
+msgstr "ソケット"
 
 #: ../Doc/license.rst:320
 msgid ""
 "The :mod:`socket` module uses the functions, :func:`getaddrinfo`, and "
 ":func:`getnameinfo`, which are coded in separate source files from the WIDE "
 "Project, http://www.wide.ad.jp/. ::"
-msgstr "The :mod:`socket` module uses the functions, :func:`getaddrinfo`, and :func:`getnameinfo`, which are coded in separate source files from the WIDE Project, http://www.wide.ad.jp/. ::"
+msgstr ":mod:`socket` モジュールは、 WIDE プロジェクト http://www.wide.ad.jp/. の別々のソースファイルにコーディングされていた :func:`getaddrinfo` 関数と :func:`getnameinfo` 関数を使っています::"
 
 #: ../Doc/license.rst:352
 msgid "Floating point exception control"
-msgstr "Floating point exception control"
+msgstr "浮動小数点数例外の制御"
 
 #: ../Doc/license.rst:354
 msgid ""
 "The source for the :mod:`fpectl` module includes the following notice::"
-msgstr "The source for the :mod:`fpectl` module includes the following notice::"
+msgstr ":mod:`fpectl` モジュールのソースコードは次の告知を含んでいます::"
 
 #: ../Doc/license.rst:394
 msgid "MD5 message digest algorithm"
@@ -285,49 +285,49 @@ msgstr "MD5 メッセージダイジェストアルゴリズム"
 #: ../Doc/license.rst:396
 msgid ""
 "The source code for the :mod:`md5` module contains the following notice::"
-msgstr ""
+msgstr ":mod:`md5` モジュールのソースコードは次の告知を含んでいます::"
 
 #: ../Doc/license.rst:444
 msgid "Asynchronous socket services"
-msgstr "Asynchronous socket services"
+msgstr "非同期ソケットサービス"
 
 #: ../Doc/license.rst:446
 msgid ""
 "The :mod:`asynchat` and :mod:`asyncore` modules contain the following "
 "notice::"
-msgstr "The :mod:`asynchat` and :mod:`asyncore` modules contain the following notice::"
+msgstr ":mod:`asynchat` モジュールと :mod:`asyncore` モジュールは次の告知を含んでいます::"
 
 #: ../Doc/license.rst:471
 msgid "Cookie management"
-msgstr "Cookie management"
+msgstr "Cookie の管理"
 
 #: ../Doc/license.rst:473
 msgid "The :mod:`Cookie` module contains the following notice::"
-msgstr ""
+msgstr ":mod:`Cookie` モジュールは次の告知を含んでいます::"
 
 #: ../Doc/license.rst:499
 msgid "Execution tracing"
-msgstr "Execution tracing"
+msgstr "実行の追跡"
 
 #: ../Doc/license.rst:501
 msgid "The :mod:`trace` module contains the following notice::"
-msgstr "The :mod:`trace` module contains the following notice::"
+msgstr ":mod:`trace` モジュールは次の告知を含んでいます::"
 
 #: ../Doc/license.rst:532
 msgid "UUencode and UUdecode functions"
-msgstr "UUencode and UUdecode functions"
+msgstr "UUencode 関数と UUdecode 関数"
 
 #: ../Doc/license.rst:534
 msgid "The :mod:`uu` module contains the following notice::"
-msgstr "The :mod:`uu` module contains the following notice::"
+msgstr ":mod:`uu` モジュールは次の告知を含んでいます::"
 
 #: ../Doc/license.rst:562
 msgid "XML Remote Procedure Calls"
-msgstr "XML Remote Procedure Calls"
+msgstr "XML リモートプロシージャコール"
 
 #: ../Doc/license.rst:564
 msgid "The :mod:`xmlrpclib` module contains the following notice::"
-msgstr ""
+msgstr ":mod:`xmlrpclib` モジュールは次の告知を含んでいます::"
 
 #: ../Doc/license.rst:595
 msgid "test_epoll"
@@ -335,7 +335,7 @@ msgstr "test_epoll"
 
 #: ../Doc/license.rst:597
 msgid "The :mod:`test_epoll` contains the following notice::"
-msgstr "The :mod:`test_epoll` contains the following notice::"
+msgstr ":mod:`test_epoll` は次の告知を含んでいます::"
 
 #: ../Doc/license.rst:621
 msgid "Select kqueue"
@@ -345,7 +345,7 @@ msgstr "Select kqueue"
 msgid ""
 "The :mod:`select` and contains the following notice for the kqueue "
 "interface::"
-msgstr "The :mod:`select` and contains the following notice for the kqueue interface::"
+msgstr ":mod:`select` は kqueue インターフェースについての次の告知を含んでいます::"
 
 #: ../Doc/license.rst:651
 msgid "strtod and dtoa"
