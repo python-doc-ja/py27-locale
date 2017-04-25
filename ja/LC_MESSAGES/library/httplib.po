@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-02 16:16+0000\n"
+"PO-Revision-Date: 2017-04-25 02:24+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -944,8 +944,8 @@ msgstr "デバッグレベル (印字されるデバッグ出力の量) を設�
 #: ../../library/httplib.rst:475
 msgid ""
 "Set the host and the port for HTTP Connect Tunnelling. Normally used when it"
-" is required to do HTTPS Conection through a proxy server."
-msgstr "HTTP トンネリング接続のホスト名とポート番号を設定します。通常はプロキシサーバを通して HTTPS 接続を行うときに必要になります。"
+" is required to do HTTPS Connection through a proxy server."
+msgstr ""
 
 #: ../../library/httplib.rst:478
 msgid ""

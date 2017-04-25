@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:38+0000\n"
+"PO-Revision-Date: 2017-04-25 02:04+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -88,3 +88,14 @@ msgid ""
 " type for *start*, *stop*, *step*, and *slicelength*. This might require "
 "changes in your code for properly supporting 64-bit systems."
 msgstr "この関数は以前は *length* の型に :c:type:`int` を、 *start*, *stop*, *step*, *slicelength* の型に :c:type:`int *` を利用していました。この変更により、 64bit システムを正しくサポートするには修正が必要になります。"
+
+#: ../../c-api/slice.rst:72
+msgid "Ellipsis Object"
+msgstr ""
+
+#: ../../c-api/slice.rst:77
+msgid ""
+"The Python ``Ellipsis`` object.  This object has no methods.  It needs to be"
+" treated just like any other object with respect to reference counts.  Like "
+":c:data:`Py_None` it is a singleton object."
+msgstr ""

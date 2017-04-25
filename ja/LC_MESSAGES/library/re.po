@@ -4,13 +4,13 @@
 # 
 # Translators:
 # cocoatomo, 2017
-# INADA Naoki <songofacandy@gmail.com>, 2015-2016
+# Naoki INADA <songofacandy@gmail.com>, 2015-2016
 # cocoatomo, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-22 14:58+0000\n"
+"PO-Revision-Date: 2017-04-25 02:29+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1001,16 +1001,16 @@ msgstr ":func:`sub` と同じ操作を行いますが、タプル ``(new_string�
 
 #: ../../library/re.rst:700
 msgid ""
-"Return *string* with all non-alphanumerics backslashed; this is useful if "
-"you want to match an arbitrary literal string that may have regular "
-"expression metacharacters in it."
-msgstr "バックスラッシュにすべての非英数字をつけた *string* を返します；これはもし、その中に正規表現のメタ文字を持つかもしれない任意のリテラル文字列とマッチしたいとき、役に立ちます。"
+"Escape all the characters in *pattern* except ASCII letters and numbers. "
+"This is useful if you want to match an arbitrary literal string that may "
+"have regular expression metacharacters in it.  For example::"
+msgstr ""
 
-#: ../../library/re.rst:707
+#: ../../library/re.rst:718
 msgid "Clear the regular expression cache."
 msgstr "正規表現キャッシュをクリアします。"
 
-#: ../../library/re.rst:712
+#: ../../library/re.rst:723
 msgid ""
 "Exception raised when a string passed to one of the functions here is not a "
 "valid regular expression (for example, it might contain unmatched "
@@ -1018,17 +1018,17 @@ msgid ""
 "  It is never an error if a string contains no match for a pattern."
 msgstr "ここでの関数の一つに渡された文字列が、正しい正規表現ではない時 (例えば、その括弧が対になっていなかった)、あるいはコンパイルやマッチングの間になんらかのエラーが発生したとき、発生する例外です。たとえ文字列がパターンとマッチしなくても、決してエラーではありません。"
 
-#: ../../library/re.rst:721
+#: ../../library/re.rst:732
 msgid "Regular Expression Objects"
 msgstr "正規表現オブジェクト"
 
-#: ../../library/re.rst:725
+#: ../../library/re.rst:736
 msgid ""
 "The :class:`RegexObject` class supports the following methods and "
 "attributes:"
 msgstr ":class:`RegexObject` クラスは以下のメソッドと属性をサポートします:"
 
-#: ../../library/re.rst:729
+#: ../../library/re.rst:740
 msgid ""
 "Scan through *string* looking for a location where this regular expression "
 "produces a match, and return a corresponding :class:`MatchObject` instance. "
@@ -1037,7 +1037,7 @@ msgid ""
 "string."
 msgstr "*string* を走査して、この正規表現がマッチする場所を探し、対応する :class:`MatchObject` インスタンスを返します。 string のどこにもマッチしない場合は ``None`` を返します。これは、 string 内のどこかで長さ0でマッチした場合と異なることに注意してください。"
 
-#: ../../library/re.rst:734
+#: ../../library/re.rst:745
 msgid ""
 "The optional second parameter *pos* gives an index in the string where the "
 "search is to start; it defaults to ``0``.  This is not completely equivalent"
@@ -1046,7 +1046,7 @@ msgid ""
 "necessarily at the index where the search is to start."
 msgstr "省略可能な、2つ目の引数 *pos* は、 string のどこから探し始めるかを指定する index で、デフォルトでは 0 です。これは、文字列をスライスしてから検索するのと、完全には同じではありません。パターン文字 ``'^'`` は本当の文字列の先頭と、改行の直後にマッチしますが、検索を開始する index がマッチするとは限りません。"
 
-#: ../../library/re.rst:740
+#: ../../library/re.rst:751
 msgid ""
 "The optional parameter *endpos* limits how far the string will be searched; "
 "it will be as if the string is *endpos* characters long, so only the "
@@ -1056,7 +1056,7 @@ msgid ""
 "equivalent to ``rx.search(string[:50], 0)``."
 msgstr "省略可能な引数 *endpos* は string のどこまでを検索するかを制限します。これは string の長さが *endpos* 文字だった場合と同じように動作します。つまり、 *pos* から ``endpos - 1`` の範囲の文字に対してパターンマッチします。 *endpos* が *pos* よりも小さい場合は、マッチは見つかりません。それ以外の場合は、 *rx* がコンパイルされた正規表現として、 ``rx.search(string, 0, 50)`` は ``rx.search(string[:50], 0)`` と同じです。"
 
-#: ../../library/re.rst:755
+#: ../../library/re.rst:766
 msgid ""
 "If zero or more characters at the *beginning* of *string* match this regular"
 " expression, return a corresponding :class:`MatchObject` instance.  Return "
@@ -1064,70 +1064,70 @@ msgid ""
 "different from a zero-length match."
 msgstr "もし *string* の **先頭の** 0 個以上の文字がこの正規表現とマッチすれば、対応する :class:`MatchObject` インスタンスを返します。もし文字列がパタンーとマッチしなければ、 ``None`` を返します。これは長さゼロのマッチとは異なることに注意して下さい。"
 
-#: ../../library/re.rst:760
+#: ../../library/re.rst:771
 msgid ""
 "The optional *pos* and *endpos* parameters have the same meaning as for the "
 ":meth:`~RegexObject.search` method."
 msgstr "省略可能な引数 *pos* と *endpos* 引数は、 :meth:`~RegexObject.search` メソッドと同じ意味を持ちます。"
 
-#: ../../library/re.rst:768
+#: ../../library/re.rst:779
 msgid ""
 "If you want to locate a match anywhere in *string*, use "
 ":meth:`~RegexObject.search` instead (see also :ref:`search-vs-match`)."
 msgstr "*string* のどこにでもマッチさせたければ、代わりに :meth:`~RegexObject.search` を使って下さい( :ref:`search-vs-match`) も参照してください)。"
 
-#: ../../library/re.rst:774
+#: ../../library/re.rst:785
 msgid "Identical to the :func:`split` function, using the compiled pattern."
 msgstr ":func:`split` 関数と同様で、コンパイルしたパターンを使います。ただし、 :meth:`match` と同じように、省略可能な *pos*, *endpos* 引数で検索範囲を指定することができます。"
 
-#: ../../library/re.rst:779
+#: ../../library/re.rst:790
 msgid ""
 "Similar to the :func:`findall` function, using the compiled pattern, but "
 "also accepts optional *pos* and *endpos* parameters that limit the search "
 "region like for :meth:`match`."
 msgstr ":func:`findall` 関数と同様で、コンパイルしたパターンを使います。ただし、 :meth:`match` と同じように、省略可能な *pos*, *endpos* 引数で検索範囲を指定することができます。"
 
-#: ../../library/re.rst:786
+#: ../../library/re.rst:797
 msgid ""
 "Similar to the :func:`finditer` function, using the compiled pattern, but "
 "also accepts optional *pos* and *endpos* parameters that limit the search "
 "region like for :meth:`match`."
 msgstr ":func:`finditer` 関数と同様で、コンパイルしたパターンを使います。ただし、 :meth:`match` と同じように、省略可能な *pos*, *endpos* 引数で検索範囲を指定することができます。"
 
-#: ../../library/re.rst:793
+#: ../../library/re.rst:804
 msgid "Identical to the :func:`sub` function, using the compiled pattern."
 msgstr ":func:`sub` 関数と同様で、コンパイルしたパターンを使います。"
 
-#: ../../library/re.rst:798
+#: ../../library/re.rst:809
 msgid "Identical to the :func:`subn` function, using the compiled pattern."
 msgstr ":func:`subn` 関数と同様で、コンパイルしたパターンを使います。"
 
-#: ../../library/re.rst:803
+#: ../../library/re.rst:814
 msgid ""
 "The regex matching flags.  This is a combination of the flags given to "
 ":func:`.compile` and any ``(?...)`` inline flags in the pattern."
 msgstr "正規表現のマッチングフラグです。これは :func:`.compile` で指定されたフラグ、およびパターン内の ``(?...)`` インラインフラグとの組み合わせになりなす。"
 
-#: ../../library/re.rst:809
+#: ../../library/re.rst:820
 msgid "The number of capturing groups in the pattern."
 msgstr "パターンにあるキャプチャグループの数です。"
 
-#: ../../library/re.rst:814
+#: ../../library/re.rst:825
 msgid ""
 "A dictionary mapping any symbolic group names defined by ``(?P<id>)`` to "
 "group numbers.  The dictionary is empty if no symbolic groups were used in "
 "the pattern."
 msgstr "``(?P<id>)`` で定義された任意の記号グループ名の、グループ番号への辞書マッピングです。もし記号グループがパターン内で何も使われていなければ、辞書は空です。"
 
-#: ../../library/re.rst:821
+#: ../../library/re.rst:832
 msgid "The pattern string from which the RE object was compiled."
 msgstr "RE オブジェクトがそれからコンパイルされたパターン文字列です。"
 
-#: ../../library/re.rst:827
+#: ../../library/re.rst:838
 msgid "Match Objects"
 msgstr "MatchObject オブジェクト"
 
-#: ../../library/re.rst:831
+#: ../../library/re.rst:842
 msgid ""
 "Match objects always have a boolean value of ``True``. Since "
 ":meth:`~regex.match` and :meth:`~regex.search` return ``None`` when there is"
@@ -1135,11 +1135,11 @@ msgid ""
 "statement::"
 msgstr "マッチオブジェクトは常にブール値 ``True`` を持ちます。 :meth:`~regex.match` と :meth:`~regex.search` はマッチしなかった場合に ``None`` を返すので、単純な ``if`` ステートメントによってマッチしたかどうかをテストできます::"
 
-#: ../../library/re.rst:840
+#: ../../library/re.rst:851
 msgid "Match objects support the following methods and attributes:"
 msgstr "マッチオブジェクトは以下のメソッドと属性をサポートしています:"
 
-#: ../../library/re.rst:845
+#: ../../library/re.rst:856
 msgid ""
 "Return the string obtained by doing backslash substitution on the template "
 "string *template*, as done by the :meth:`~RegexObject.sub` method.  Escapes "
@@ -1148,7 +1148,7 @@ msgid ""
 "``\\g<name>``) are replaced by the contents of the corresponding group."
 msgstr "テンプレート文字列 *template* に、 :meth:`~RegexObject.sub` メソッドがするようなバックスラッシュ置換をして得られる文字列を返します。 ``\\n`` のようなエスケープは適当な文字に変換され、数値の後方参照 (``\\1``, ``\\2``) と名前付きの後方参照 (``\\g<1>``, ``\\g<name>``) は、対応するグループの内容で置き換えられます。"
 
-#: ../../library/re.rst:854
+#: ../../library/re.rst:865
 msgid ""
 "Returns one or more subgroups of the match.  If there is a single argument, "
 "the result is a single string; if there are multiple arguments, the result "
@@ -1163,7 +1163,7 @@ msgid ""
 "the pattern that matched multiple times, the last match is returned."
 msgstr "マッチした1個以上のサブグループを返します。もし引数で一つであれば、その結果は一つの文字列です。複数の引数があれば、その結果は、引数ごとに一項目を持つタプルです。引数がなければ、 *group1* はデフォールトでゼロです(マッチしたものすべてが返されます)。もし *groupN* 引数がゼロであれば、対応する戻り値は、マッチする文字列全体です。もしそれが範囲 [1..99] 内であれば、それは、対応する丸括弧つきグループとマッチする文字列です。もしグループ番号が負であるか、あるいはパターンで定義されたグループの数より大きければ、 :exc:`IndexError` 例外が発生します。グループがマッチしなかったパターンの一部に含まれていれば、対応する結果は ``None`` です。グループが、複数回マッチしたパターンの一部に含まれていれば、最後のマッチが返されます。"
 
-#: ../../library/re.rst:876
+#: ../../library/re.rst:887
 msgid ""
 "If the regular expression uses the ``(?P<name>...)`` syntax, the *groupN* "
 "arguments may also be strings identifying groups by their group name.  If a "
@@ -1171,19 +1171,19 @@ msgid ""
 ":exc:`IndexError` exception is raised."
 msgstr "もし正規表現が ``(?P<name>...)`` シンタックスを使うならば、 *groupN* 引数は、それらのグループ名によってグループを識別する文字列であっても構いません。もし文字列引数がパターンのグループ名として使われていないものであれば、 :exc:`IndexError` 例外が発生します。"
 
-#: ../../library/re.rst:881
+#: ../../library/re.rst:892
 msgid "A moderately complicated example:"
 msgstr "適度に複雑な例題:"
 
-#: ../../library/re.rst:889
+#: ../../library/re.rst:900
 msgid "Named groups can also be referred to by their index:"
 msgstr "名前の付けられたグループは、そのインデックスによっても参照できます。"
 
-#: ../../library/re.rst:896
+#: ../../library/re.rst:907
 msgid "If a group matches multiple times, only the last match is accessible:"
 msgstr "もし、グループが複数回マッチする場合、最後のマッチだけが利用可能となります。"
 
-#: ../../library/re.rst:905
+#: ../../library/re.rst:916
 msgid ""
 "Return a tuple containing all the subgroups of the match, from 1 up to "
 "however many groups are in the pattern.  The *default* argument is used for "
@@ -1193,25 +1193,25 @@ msgid ""
 "(from 1.5.1 on), a singleton tuple is returned in such cases.)"
 msgstr "マッチの、1からパターン内にある全グループ数までのすべてのサブグループを含むタプルを返します。 *default* 引数は、マッチに加わらなかったグループ用に使われ、デフォールトでは ``None`` です。 (非互換性ノート：オリジナルの Python 1.5 リリースでは、たとえタプルが一要素長であっても、その代わりに文字列を返していました。 (1.5.1 以降の)後のバージョンでは、そのような場合には、要素がひとつのタプルが返されます。)"
 
-#: ../../library/re.rst:912
+#: ../../library/re.rst:923
 msgid "For example:"
 msgstr "例えば:"
 
-#: ../../library/re.rst:918
+#: ../../library/re.rst:929
 msgid ""
 "If we make the decimal place and everything after it optional, not all "
 "groups might participate in the match.  These groups will default to "
 "``None`` unless the *default* argument is given:"
 msgstr "もし、整数部にのみ着目し、あとの部分をオプションとした場合、マッチの中に現れないグループがあるかも知れません。それらのグループは、 *default* 引数が与えられていない場合、デフォルトでは ``None`` になります。"
 
-#: ../../library/re.rst:931
+#: ../../library/re.rst:942
 msgid ""
 "Return a dictionary containing all the *named* subgroups of the match, keyed"
 " by the subgroup name.  The *default* argument is used for groups that did "
 "not participate in the match; it defaults to ``None``.  For example:"
 msgstr "マッチの、すべての *名前つきの* サブグループを含む、サブグループ名でキー付けされた辞書を返します。 *default* 引数はマッチに加わらなかったグループに使われ、デフォールトでは ``None`` です。例えば、"
 
-#: ../../library/re.rst:943
+#: ../../library/re.rst:954
 msgid ""
 "Return the indices of the start and end of the substring matched by *group*;"
 " *group* defaults to zero (meaning the whole matched substring). Return "
@@ -1220,7 +1220,7 @@ msgid ""
 "matched by group *g* (equivalent to ``m.group(g)``) is ::"
 msgstr "*group* とマッチした部分文字列の先頭と末尾のインデックスを返します。 *group* は、デフォルトでは(マッチした部分文字列全体を意味する）ゼロです。 *group* が存在してもマッチに寄与しなかった場合は、 ``-1`` を返します。マッチオブジェクト *m* および、マッチに寄与しなかったグループ *g* があって、グループ *g* とマッチしたサブ文字列 ( ``m.group(g)`` と同じ意味ですが ) は::"
 
-#: ../../library/re.rst:951
+#: ../../library/re.rst:962
 msgid ""
 "Note that ``m.start(group)`` will equal ``m.end(group)`` if *group* matched "
 "a null string.  For example, after ``m = re.search('b(c?)', 'cba')``, "
@@ -1228,32 +1228,32 @@ msgid ""
 "both 2, and ``m.start(2)`` raises an :exc:`IndexError` exception."
 msgstr "です。もし *group* が空文字列とマッチすれば、 ``m.start(group)`` が ``m.end(group)`` と等しくなることに注意して下さい。例えば、 ``m = re.search('b(c?)', 'cba')`` とすると、 ``m.start(0)`` は 1 で、 ``m.end(0)`` は 2 であり、 ``m.start(1)`` と ``m.end(1)`` はともに 2 であり、 ``m.start(2)`` は :exc:`IndexError` 例外を発生します。"
 
-#: ../../library/re.rst:956
+#: ../../library/re.rst:967
 msgid "An example that will remove *remove_this* from email addresses:"
 msgstr "例として、電子メールのアドレスから *remove_this* を取り除く場合を示します。"
 
-#: ../../library/re.rst:966
+#: ../../library/re.rst:977
 msgid ""
 "For :class:`MatchObject` *m*, return the 2-tuple ``(m.start(group), "
 "m.end(group))``. Note that if *group* did not contribute to the match, this "
 "is ``(-1, -1)``.  *group* defaults to zero, the entire match."
 msgstr ":class:`MatchObject` *m* について、大きさ2のタプル ``(m.start(group), m.end(group))`` を返します。もし *group* がマッチに寄与しなかったら、これは ``(-1, -1)`` です。また *group* はデフォルトでゼロです。"
 
-#: ../../library/re.rst:973
+#: ../../library/re.rst:984
 msgid ""
 "The value of *pos* which was passed to the :meth:`~RegexObject.search` or "
 ":meth:`~RegexObject.match` method of the :class:`RegexObject`.  This is the "
 "index into the string at which the RE engine started looking for a match."
 msgstr ":class:`RegexObject` の :meth:`~RegexObject.search` か :meth:`~RegexObject.match` に渡された *pos* の値です。これは RE エンジンがマッチを探し始める位置の文字列のインデックスです。"
 
-#: ../../library/re.rst:980
+#: ../../library/re.rst:991
 msgid ""
 "The value of *endpos* which was passed to the :meth:`~RegexObject.search` or"
 " :meth:`~RegexObject.match` method of the :class:`RegexObject`.  This is the"
 " index into the string beyond which the RE engine will not go."
 msgstr ":class:`RegexObject` の :meth:`~RegexObject.search` か :meth:`~RegexObject.match` に渡された *endpos* の値です。これは RE エンジンがそれ以上は進まない位置の文字列のインデックスです。"
 
-#: ../../library/re.rst:987
+#: ../../library/re.rst:998
 msgid ""
 "The integer index of the last matched capturing group, or ``None`` if no "
 "group was matched at all. For example, the expressions ``(a)b``, "
@@ -1262,40 +1262,40 @@ msgid ""
 "2``, if applied to the same string."
 msgstr "最後にマッチした取り込みグループの整数インデックスです。もしどのグループも全くマッチしなければ ``None`` です。例えば、 ``(a)b``, ``((a)(b))`` や ``((ab))`` といった表現が ``'ab'`` に適用された場合、 ``lastindex == 1`` となり、同じ文字列に ``(a)(b)`` が適用された場合には ``lastindex == 2`` となるでしょう。"
 
-#: ../../library/re.rst:996
+#: ../../library/re.rst:1007
 msgid ""
 "The name of the last matched capturing group, or ``None`` if the group "
 "didn't have a name, or if no group was matched at all."
 msgstr "最後にマッチした取り込みグループの名前です。もしグループに名前がないか、あるいはどのグループも全くマッチしなければ ``None`` です。"
 
-#: ../../library/re.rst:1002
+#: ../../library/re.rst:1013
 msgid ""
 "The regular expression object whose :meth:`~RegexObject.match` or "
 ":meth:`~RegexObject.search` method produced this :class:`MatchObject` "
 "instance."
 msgstr "この :class:`MatchObject` インスタンスを :meth:`~RegexObject.match` あるいは :meth:`~RegexObject.search` メソッドで生成した正規表現オブジェクトです。"
 
-#: ../../library/re.rst:1009
+#: ../../library/re.rst:1020
 msgid ""
 "The string passed to :meth:`~RegexObject.match` or "
 ":meth:`~RegexObject.search`."
 msgstr ":meth:`~RegexObject.match` あるいは :meth:`~RegexObject.search` に渡された文字列です。"
 
-#: ../../library/re.rst:1014
+#: ../../library/re.rst:1025
 msgid "Examples"
 msgstr "例"
 
-#: ../../library/re.rst:1018
+#: ../../library/re.rst:1029
 msgid "Checking For a Pair"
 msgstr "ペアの確認"
 
-#: ../../library/re.rst:1020
+#: ../../library/re.rst:1031
 msgid ""
 "In this example, we'll use the following helper function to display match "
 "objects a little more gracefully:"
 msgstr "この例では、マッチオブジェクトの表示を少し美しくするために、下記の補助関数を使用します :"
 
-#: ../../library/re.rst:1030
+#: ../../library/re.rst:1041
 msgid ""
 "Suppose you are writing a poker program where a player's hand is represented"
 " as a 5-character string with each character representing a card, \"a\" for "
@@ -1303,29 +1303,29 @@ msgid ""
 "\"2\" through \"9\" representing the card with that value."
 msgstr "あなたがポーカープログラムを書いているとします。プレイヤーの持ち札はそれぞれの文字が1枚のカードを意味する5文字の文字列によって表現されます。 \"a\" はエース、 \"k\" はキング、 \"q\" はクイーン、 \"j\" はジャック \"t\" は10、そして \"2\" から \"9\" はそれぞれの数字のカードを表します。"
 
-#: ../../library/re.rst:1035
+#: ../../library/re.rst:1046
 msgid "To see if a given string is a valid hand, one could do the following:"
 msgstr "与えられた文字列が、持ち札として有効かを確認するために、下記のようにするかも知れません。 :"
 
-#: ../../library/re.rst:1045
+#: ../../library/re.rst:1056
 msgid ""
 "That last hand, ``\"727ak\"``, contained a pair, or two of the same valued "
 "cards. To match this with a regular expression, one could use backreferences"
 " as such:"
 msgstr "最後の持ち札 ``\"727ak\"`` は、ペアを含んでいます。言い換えると同じ値のカードが2枚あります。これを正規表現にマッチさせるために、後方参照を使う場合もあります :"
 
-#: ../../library/re.rst:1055
+#: ../../library/re.rst:1066
 msgid ""
 "To find out what card the pair consists of, one could use the "
 ":meth:`~MatchObject.group` method of :class:`MatchObject` in the following "
 "manner:"
 msgstr "どのカードのペアになっているかを調べるため、下記のように :class:`MatchObject` の :meth:`~RegexObject.group` メソッドを使う場合があります。"
 
-#: ../../library/re.rst:1076
+#: ../../library/re.rst:1087
 msgid "Simulating scanf()"
 msgstr "scanf() をシミュレートする"
 
-#: ../../library/re.rst:1080
+#: ../../library/re.rst:1091
 msgid ""
 "Python does not currently have an equivalent to :c:func:`scanf`.  Regular "
 "expressions are generally more powerful, though also more verbose, than "
@@ -1334,103 +1334,103 @@ msgid ""
 "expressions."
 msgstr "Python には現在のところ、 :c:func:`scanf` に相当するものがありません。正規表現は、 :c:func:`scanf` のフォーマット文字列よりも、一般的により強力であり、また冗長でもあります。以下の表に、 :c:func:`scanf` のフォーマットトークンと正規表現の大体同等な対応付けを示します。"
 
-#: ../../library/re.rst:1087
+#: ../../library/re.rst:1098
 msgid ":c:func:`scanf` Token"
 msgstr ":c:func:`scanf` トークン"
 
-#: ../../library/re.rst:1087
+#: ../../library/re.rst:1098
 msgid "Regular Expression"
 msgstr "正規表現"
 
-#: ../../library/re.rst:1089
+#: ../../library/re.rst:1100
 msgid "``%c``"
 msgstr "``%c``"
 
-#: ../../library/re.rst:1089
+#: ../../library/re.rst:1100
 msgid "``.``"
 msgstr "``.``"
 
-#: ../../library/re.rst:1091
+#: ../../library/re.rst:1102
 msgid "``%5c``"
 msgstr "``%5c``"
 
-#: ../../library/re.rst:1091
+#: ../../library/re.rst:1102
 msgid "``.{5}``"
 msgstr "``.{5}``"
 
-#: ../../library/re.rst:1093
+#: ../../library/re.rst:1104
 msgid "``%d``"
 msgstr "``%d``"
 
-#: ../../library/re.rst:1093
+#: ../../library/re.rst:1104
 msgid "``[-+]?\\d+``"
 msgstr "``[-+]?\\d+``"
 
-#: ../../library/re.rst:1095
+#: ../../library/re.rst:1106
 msgid "``%e``, ``%E``, ``%f``, ``%g``"
 msgstr "``%e``, ``%E``, ``%f``, ``%g``"
 
-#: ../../library/re.rst:1095
+#: ../../library/re.rst:1106
 msgid "``[-+]?(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?``"
 msgstr "``[-+]?(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?``"
 
-#: ../../library/re.rst:1097
+#: ../../library/re.rst:1108
 msgid "``%i``"
 msgstr "``%i``"
 
-#: ../../library/re.rst:1097
+#: ../../library/re.rst:1108
 msgid "``[-+]?(0[xX][\\dA-Fa-f]+|0[0-7]*|\\d+)``"
 msgstr "``[-+]?(0[xX][\\dA-Fa-f]+|0[0-7]*|\\d+)``"
 
-#: ../../library/re.rst:1099
+#: ../../library/re.rst:1110
 msgid "``%o``"
 msgstr "``%o``"
 
-#: ../../library/re.rst:1099
+#: ../../library/re.rst:1110
 msgid "``[-+]?[0-7]+``"
 msgstr "``[-+]?[0-7]+``"
 
-#: ../../library/re.rst:1101
+#: ../../library/re.rst:1112
 msgid "``%s``"
 msgstr "``%s``"
 
-#: ../../library/re.rst:1101
+#: ../../library/re.rst:1112
 msgid "``\\S+``"
 msgstr "``\\S+``"
 
-#: ../../library/re.rst:1103
+#: ../../library/re.rst:1114
 msgid "``%u``"
 msgstr "``%u``"
 
-#: ../../library/re.rst:1103
+#: ../../library/re.rst:1114
 msgid "``\\d+``"
 msgstr "``\\d+``"
 
-#: ../../library/re.rst:1105
+#: ../../library/re.rst:1116
 msgid "``%x``, ``%X``"
 msgstr "``%x``, ``%X``"
 
-#: ../../library/re.rst:1105
+#: ../../library/re.rst:1116
 msgid "``[-+]?(0[xX])?[\\dA-Fa-f]+``"
 msgstr "``[-+]?(0[xX])?[\\dA-Fa-f]+``"
 
-#: ../../library/re.rst:1108
+#: ../../library/re.rst:1119
 msgid "To extract the filename and numbers from a string like ::"
 msgstr "以下のような文字列からファイル名と数値を抽出することを考えます ::"
 
-#: ../../library/re.rst:1112
+#: ../../library/re.rst:1123
 msgid "you would use a :c:func:`scanf` format like ::"
 msgstr "このように :c:func:`scanf` フォーマットを使うでしょう ::"
 
-#: ../../library/re.rst:1116
+#: ../../library/re.rst:1127
 msgid "The equivalent regular expression would be ::"
 msgstr "同等な正規表現はこのようなものとなります ::"
 
-#: ../../library/re.rst:1124
+#: ../../library/re.rst:1135
 msgid "search() vs. match()"
 msgstr "search() vs. match()"
 
-#: ../../library/re.rst:1128
+#: ../../library/re.rst:1139
 msgid ""
 "Python offers two different primitive operations based on regular "
 "expressions: :func:`re.match` checks for a match only at the beginning of "
@@ -1438,28 +1438,28 @@ msgid ""
 "string (this is what Perl does by default)."
 msgstr "Python は正規表現ベースの 2 個の基本的な関数、文字列の先頭でのみのマッチを確認する :func:`re.match` および、文字列内の位置にかかわらずマッチを確認する :func:`re.search` (Perl でのデフォルトの挙動) を提供しています。"
 
-#: ../../library/re.rst:1133
+#: ../../library/re.rst:1144
 msgid "For example::"
 msgstr "例えば::"
 
-#: ../../library/re.rst:1139
+#: ../../library/re.rst:1150
 msgid ""
 "Regular expressions beginning with ``'^'`` can be used with :func:`search` "
 "to restrict the match at the beginning of the string::"
 msgstr "``'^'`` で始まる正規表現は、 :func:`search` において、マッチを文字列の先頭からに制限するために使用します::"
 
-#: ../../library/re.rst:1147
+#: ../../library/re.rst:1158
 msgid ""
 "Note however that in :const:`MULTILINE` mode :func:`match` only matches at "
 "the beginning of the string, whereas using :func:`search` with a regular "
 "expression beginning with ``'^'`` will match at the beginning of each line."
 msgstr "ただし、 :const:`MULTILINE` モードの :func:`match` では文字列の先頭にのみマッチするのに対し、正規表現に ``'^'`` を使った :func:`search` では各行の先頭にもマッチします。"
 
-#: ../../library/re.rst:1157
+#: ../../library/re.rst:1168
 msgid "Making a Phonebook"
 msgstr "電話帳の作成"
 
-#: ../../library/re.rst:1159
+#: ../../library/re.rst:1170
 msgid ""
 ":func:`split` splits a string into a list delimited by the passed pattern.  "
 "The method is invaluable for converting textual data into data structures "
@@ -1467,37 +1467,37 @@ msgid ""
 "following example that creates a phonebook."
 msgstr ":func:`split` は文字列を与えられたパターンで分割し、リストにして返します。下記の、電話帳作成の例のように、このメソッドはテキストデータを読みやすくしたり、 Python で編集したりしやすくする際に、非常に役に立ちます。"
 
-#: ../../library/re.rst:1164
+#: ../../library/re.rst:1175
 msgid ""
 "First, here is the input.  Normally it may come from a file, here we are "
 "using triple-quoted string syntax:"
 msgstr "最初に、入力を示します。通常、これはファイルからの入力になるでしょう。ここでは、3重引用符の書式とします :"
 
-#: ../../library/re.rst:1175
+#: ../../library/re.rst:1186
 msgid ""
 "The entries are separated by one or more newlines. Now we convert the string"
 " into a list with each nonempty line having its own entry:"
 msgstr "個々の記録は、1つ以上の改行で区切られています。まずは、文字列から空行を除き、記録ごとのリストに変換しましょう。"
 
-#: ../../library/re.rst:1188
+#: ../../library/re.rst:1199
 msgid ""
 "Finally, split each entry into a list with first name, last name, telephone "
 "number, and address.  We use the ``maxsplit`` parameter of :func:`split` "
 "because the address has spaces, our splitting pattern, in it:"
 msgstr "そして、各記録を、名、姓、電話番号、そして、住所に分割してリストにします。分割のためのパターンに使っている空白文字が、住所には含まれるため、 :func:`split` の ``maxsplit`` 引数を使います。 :"
 
-#: ../../library/re.rst:1201
+#: ../../library/re.rst:1212
 msgid ""
 "The ``:?`` pattern matches the colon after the last name, so that it does "
 "not occur in the result list.  With a ``maxsplit`` of ``4``, we could "
 "separate the house number from the street name:"
 msgstr "パターン、 ``:?`` は姓に続くコロンにマッチします。そのため、コロンは分割結果のリストには現れません。 ``maxsplit`` を ``4`` にすれば、ハウスナンバーと、ストリート名を分割することができます。 :"
 
-#: ../../library/re.rst:1216
+#: ../../library/re.rst:1227
 msgid "Text Munging"
 msgstr "テキストの秘匿"
 
-#: ../../library/re.rst:1218
+#: ../../library/re.rst:1229
 msgid ""
 ":func:`sub` replaces every occurrence of a pattern with a string or the "
 "result of a function.  This example demonstrates using :func:`sub` with a "
@@ -1505,11 +1505,11 @@ msgid ""
 "each word of a sentence except for the first and last characters::"
 msgstr ":func:`sub` はパターンにマッチした部分を文字列や関数の返り値で置き換えます。この例では、\"秘匿\" する文字列に、関数と共に :func:`sub` を適用する例を示します。言い換えると、最初と最後の文字を除く、単語中の文字の位置をランダム化します。 ::"
 
-#: ../../library/re.rst:1235
+#: ../../library/re.rst:1246
 msgid "Finding all Adverbs"
 msgstr "全ての副詞を見つける"
 
-#: ../../library/re.rst:1237
+#: ../../library/re.rst:1248
 msgid ""
 ":func:`findall` matches *all* occurrences of a pattern, not just the first "
 "one as :func:`search` does.  For example, if one was a writer and wanted to "
@@ -1517,11 +1517,11 @@ msgid ""
 " the following manner:"
 msgstr ":func:`findall` はパターンにマッチする *全てに* マッチします。 :func:`search` がそうであるように、最初のものだけに、ではありません。例えば、なにかの文章の全ての副詞を見つけたいとき、下記のように :func:`findall` を使います。 :"
 
-#: ../../library/re.rst:1248
+#: ../../library/re.rst:1259
 msgid "Finding all Adverbs and their Positions"
 msgstr "全ての副詞と、その位置を見つける"
 
-#: ../../library/re.rst:1250
+#: ../../library/re.rst:1261
 msgid ""
 "If one wants more information about all matches of a pattern than the "
 "matched text, :func:`finditer` is useful as it provides instances of "
@@ -1531,11 +1531,11 @@ msgid ""
 "following manner:"
 msgstr "もし、パターンにマッチするものについて、マッチしたテキスト以上の情報を得たいと考えたとき、文字列ではなく :class:`MatchObject` のインスタンスを返す :func:`finditer` が便利です。以下に例を示すように、なにかの文章の全ての副詞と、 *その位置を* 調べたいと考えたとき、下記のように :func:`finditer` を使います。 :"
 
-#: ../../library/re.rst:1264
+#: ../../library/re.rst:1275
 msgid "Raw String Notation"
 msgstr "Raw String記法"
 
-#: ../../library/re.rst:1266
+#: ../../library/re.rst:1277
 msgid ""
 "Raw string notation (``r\"text\"``) keeps regular expressions sane.  Without"
 " it, every backslash (``'\\'``) in a regular expression would have to be "
@@ -1543,7 +1543,7 @@ msgid ""
 "lines of code are functionally identical:"
 msgstr "Raw string記法 (``r\"text\"``) により、バックスラッシュ (``'\\'``) を個々にバックスラッシュでエスケープすることなしに、正規表現を正常な状態に保ちます。例えば、下記の2つのコードは機能的に等価です。 :"
 
-#: ../../library/re.rst:1276
+#: ../../library/re.rst:1287
 msgid ""
 "When one wants to match a literal backslash, it must be escaped in the "
 "regular expression.  With raw string notation, this means ``r\"\\\\\"``.  "

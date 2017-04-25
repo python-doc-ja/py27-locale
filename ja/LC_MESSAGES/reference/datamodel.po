@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-03-12 14:59+0000\n"
+"PO-Revision-Date: 2017-04-25 03:24+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -2184,7 +2184,16 @@ msgid ""
 " zero is considered to be false in a Boolean context."
 msgstr "組み込み関数 :func:`len` を実現するために呼び出されます。オブジェクトの長さを ``>=`` 0 である整数で返さなければなりません。また、オブジェクトが :meth:`__nonzero__` メソッドを定義しておらず、 :meth:`__len__` メソッドがゼロを返す場合には、ブール演算コンテキストでは偽であるとみなされます。"
 
-#: ../../reference/datamodel.rst:1899
+#: ../../reference/datamodel.rst:1896
+msgid ""
+"In CPython, the length is required to be at most :attr:`sys.maxsize`. If the"
+" length is larger than :attr:`!sys.maxsize` some features (such as "
+":func:`len`) may raise :exc:`OverflowError`.  To prevent raising "
+":exc:`!OverflowError` by truth value testing, an object must define a "
+":meth:`__nonzero__` method."
+msgstr ""
+
+#: ../../reference/datamodel.rst:1907
 msgid ""
 "Called to implement evaluation of ``self[key]``. For sequence types, the "
 "accepted keys should be integers and slice objects.  Note that the special "
@@ -2196,19 +2205,19 @@ msgid ""
 "*key* is missing (not in the container), :exc:`KeyError` should be raised."
 msgstr "``self[key]`` の値評価 (evaluation) を実現するために呼び出されます。シーケンスの場合、キーとして整数とスライスオブジェクトを受理できなければなりません。 (シーケンス型をエミュレートする場合) 負のインデクスの解釈は :meth:`__getitem__` メソッド次第となります。 *key* が不適切な型であった場合、 :exc:`TypeError` を送出してもかまいません; (負のインデクス値に対して何らかの解釈を行った上で) *key* がシーケンスのインデクス集合外の値である場合、 :exc:`IndexError` を送出しなければなりません。マップ型の場合は、 *key* に誤りがある場合（コンテナに含まれていない場合）、 :exc:`KeyError` を送出しなければなりません。"
 
-#: ../../reference/datamodel.rst:1910
+#: ../../reference/datamodel.rst:1918
 msgid ""
 ":keyword:`for` loops expect that an :exc:`IndexError` will be raised for "
 "illegal indexes to allow proper detection of the end of the sequence."
 msgstr ":keyword:`for` ループでは、シーケンスの終端を正しく検出できるようにするために、不正なインデクスに対して :exc:`IndexError` が送出されるものと期待しています。"
 
-#: ../../reference/datamodel.rst:1916
+#: ../../reference/datamodel.rst:1924
 msgid ""
 "Called by :class:`dict`\\ .\\ :meth:`__getitem__` to implement ``self[key]``"
 " for dict subclasses when key is not in the dictionary."
 msgstr "``self[key]`` の実装において辞書内にキーが存在しなかった場合に、 dict のサブクラスのために :class:`dict`\\ .\\ :meth:`__getitem__` によって呼び出されます。"
 
-#: ../../reference/datamodel.rst:1922
+#: ../../reference/datamodel.rst:1930
 msgid ""
 "Called to implement assignment to ``self[key]``.  Same note as for "
 ":meth:`__getitem__`.  This should only be implemented for mappings if the "
@@ -2217,7 +2226,7 @@ msgid ""
 "be raised for improper *key* values as for the :meth:`__getitem__` method."
 msgstr "``self[key]`` に対する代入を実現するために呼び出されます。 :meth:`__getitem__` と同じ注意事項があてはまります。このメソッドを実装できるのは、あるキーに対する値の変更をサポートしているか、新たなキーを追加できるようなマップの場合と、ある要素を置き換えることができるシーケンスの場合だけです。不正な *key* に対しては、 :meth:`__getitem__` メソッドと同様の例外の送出を行わなければなりません。"
 
-#: ../../reference/datamodel.rst:1931
+#: ../../reference/datamodel.rst:1939
 msgid ""
 "Called to implement deletion of ``self[key]``.  Same note as for "
 ":meth:`__getitem__`.  This should only be implemented for mappings if the "
@@ -2226,7 +2235,7 @@ msgid ""
 " values as for the :meth:`__getitem__` method."
 msgstr "``self[key]`` の削除を実現するために呼び出されます。 :meth:`__getitem__` と同じ注意事項があてはまります。このメソッドを実装できるのは、キーの削除をサポートしているマップの場合と、要素を削除できるシーケンスの場合だけです。不正な *key* に対しては、 :meth:`__getitem__` メソッドと同様の例外の送出を行わなければなりません。"
 
-#: ../../reference/datamodel.rst:1940
+#: ../../reference/datamodel.rst:1948
 msgid ""
 "This method is called when an iterator is required for a container. This "
 "method should return a new iterator object that can iterate over all the "
@@ -2235,21 +2244,21 @@ msgid ""
 ":meth:`iterkeys`."
 msgstr "このメソッドは、コンテナに対してイテレータが要求された際に呼び出されます。このメソッドは、コンテナ内の全てのオブジェクトにわたる反復処理ができるような、新たなイテレータオブジェクトを返さなければなりません。マップの場合、コンテナ内のキーに渡る反復処理でなければならず、かつ :meth:`iterkeys` によって利用できなければなりません。"
 
-#: ../../reference/datamodel.rst:1945
+#: ../../reference/datamodel.rst:1953
 msgid ""
 "Iterator objects also need to implement this method; they are required to "
 "return themselves.  For more information on iterator objects, see "
 ":ref:`typeiter`."
 msgstr "イテレータオブジェクトでもこのメソッドを実装する必要があります; イテレータの場合、自分自身を返さなければなりません。イテレータオブジェクトに関するより詳細な情報は、 :ref:`typeiter` を参照してください。"
 
-#: ../../reference/datamodel.rst:1951
+#: ../../reference/datamodel.rst:1959
 msgid ""
 "Called (if present) by the :func:`reversed` built-in to implement reverse "
 "iteration.  It should return a new iterator object that iterates over all "
 "the objects in the container in reverse order."
 msgstr ":func:`reversed` 組み込み関数が逆方向イテレーションを実装するために、(存在すれば)呼び出します。コンテナ内の全要素を逆順にイテレートする、新しいイテレータを返すべきです。"
 
-#: ../../reference/datamodel.rst:1955
+#: ../../reference/datamodel.rst:1963
 msgid ""
 "If the :meth:`__reversed__` method is not provided, the :func:`reversed` "
 "built-in will fall back to using the sequence protocol (:meth:`__len__` and "
@@ -2258,7 +2267,7 @@ msgid ""
 " is more efficient than the one provided by :func:`reversed`."
 msgstr ":meth:`__reversed__` メソッドが定義されていない場合、 :func:`reversed` 組込み関数は sequence プロトコル (:meth:`__len__` と :meth:`__getitem__`) を使った方法にフォールバックします。 sequence プロトコルをサポートしたオブジェクトは、 :func:`reversed` よりも効率のいい実装を提供できる場合にのみ :meth:`__reversed__` を定義するべきです。"
 
-#: ../../reference/datamodel.rst:1964
+#: ../../reference/datamodel.rst:1972
 msgid ""
 "The membership test operators (:keyword:`in` and :keyword:`not in`) are "
 "normally implemented as an iteration through a sequence.  However, container"
@@ -2266,14 +2275,14 @@ msgid ""
 "implementation, which also does not require the object be a sequence."
 msgstr "メンバシップテスト演算子 (:keyword:`in` および :keyword:`not in`) は通常、シーケンスに渡る反復処理を使って実装されます。しかし、コンテナオブジェクトで以下の特殊メソッドを定義して、より効率的な実装を行ったり、オブジェクトがシーケンスでなくてもよいようにできます。"
 
-#: ../../reference/datamodel.rst:1971
+#: ../../reference/datamodel.rst:1979
 msgid ""
 "Called to implement membership test operators.  Should return true if *item*"
 " is in *self*, false otherwise.  For mapping objects, this should consider "
 "the keys of the mapping rather than the values or the key-item pairs."
 msgstr "メンバシップテスト演算を実現するために呼び出されます。 *item* が *self* 内に存在する場合には真を、そうでない場合には偽を返さなければなりません。マップオブジェクトの場合、値やキーと値の組ではなく、キーに対するメンバシップテストを考えなければなりません。"
 
-#: ../../reference/datamodel.rst:1975
+#: ../../reference/datamodel.rst:1983
 msgid ""
 "For objects that don't define :meth:`__contains__`, the membership test "
 "first tries iteration via :meth:`__iter__`, then the old sequence iteration "
@@ -2281,18 +2290,18 @@ msgid ""
 "reference <membership-test-details>`."
 msgstr ":meth:`__contains__` を定義しないオブジェクトに対しては、メンバシップテストはまず、 :meth:`__iter__` を使った反復を試みます、次に古いシーケンス反復プロトコル :meth:`__getitem__` を使います、 :ref:`言語レファレンスのこの節 <membership-test-details>` を参照して下さい。"
 
-#: ../../reference/datamodel.rst:1984
+#: ../../reference/datamodel.rst:1992
 msgid "Additional methods for emulation of sequence types"
 msgstr "シーケンス型エミュレーションで使われるその他のメソッド"
 
-#: ../../reference/datamodel.rst:1986
+#: ../../reference/datamodel.rst:1994
 msgid ""
 "The following optional methods can be defined to further emulate sequence "
 "objects.  Immutable sequences methods should at most only define "
 ":meth:`__getslice__`; mutable sequences might define all three methods."
 msgstr "以下のオプションとなるメソッドを定義して、シーケンスオブジェクトをより高度にエミュレーションできます。変更不能なシーケンスのメソッドでは、 :meth:`__getslice__` が定義できるだけです; 変更可能なシーケンスでは三つのメソッド全てを定義できます。"
 
-#: ../../reference/datamodel.rst:1993
+#: ../../reference/datamodel.rst:2001
 msgid ""
 "Support slice objects as parameters to the :meth:`__getitem__` method. "
 "(However, built-in types in CPython currently still implement "
@@ -2300,7 +2309,7 @@ msgid ""
 " when implementing slicing.)"
 msgstr "スライスオブジェクトは :meth:`__getitem__` メソッドのパラメタとしてサポートするようになりました。 (しかし、現在の CPython はいまだに :meth:`__getslice__` を実装しています。なので、派生クラスでスライスを実装する場合は、このメソッドをオーバーライドしなければなりません。)"
 
-#: ../../reference/datamodel.rst:1999
+#: ../../reference/datamodel.rst:2007
 msgid ""
 "Called to implement evaluation of ``self[i:j]``. The returned object should "
 "be of the same type as *self*.  Note that missing *i* or *j* in the slice "
@@ -2314,13 +2323,13 @@ msgid ""
 " to :meth:`__getitem__` instead."
 msgstr "``self[i:j]`` の値評価を実現するために呼び出されます。返されるオブジェクトは *self* と同じ型でなければなりません。スライス表記で *i* や *j* がない場合には、それぞれゼロや :attr:`sys.maxsize` に置き換えられるので注意してください。スライスに負のインデクスが用いられた場合、シーケンスの長さがインデクス値に加算されます。インスタンスが :meth:`__len__` メソッドを実装していない場合には、 :exc:`AttributeError` が送出されます。この計算の結果、インデクス値が負でなくなるという保証はありません。シーケンスの長さよりも大きなインデクス値は修正されません。 :meth:`__getslice__` が定義されていない場合、代わりにスライスオブジェクトが生成されて :meth:`__getitem__` に渡されます。"
 
-#: ../../reference/datamodel.rst:2012
+#: ../../reference/datamodel.rst:2020
 msgid ""
 "Called to implement assignment to ``self[i:j]``. Same notes for *i* and *j* "
 "as for :meth:`__getslice__`."
 msgstr "``self[i:j]`` への代入を実現するために呼び出されます。 *i* および *j* に関しては、 :meth:`__getslice__` と同じ注釈があてはまります。"
 
-#: ../../reference/datamodel.rst:2015
+#: ../../reference/datamodel.rst:2023
 msgid ""
 "This method is deprecated. If no :meth:`__setslice__` is found, or for "
 "extended slicing of the form ``self[i:j:k]``, a slice object is created, and"
@@ -2328,7 +2337,7 @@ msgid ""
 "called."
 msgstr "このメソッドは撤廃されています。 :meth:`__setslice__` がないか、 ``self[i:j:k]`` 形式の拡張スライスの場合には、 :meth:`__setslice__` が呼ばれる代わりにスライスオブジェクトが生成され、 :meth:`__setitem__` に渡されます。"
 
-#: ../../reference/datamodel.rst:2022
+#: ../../reference/datamodel.rst:2030
 msgid ""
 "Called to implement deletion of ``self[i:j]``. Same notes for *i* and *j* as"
 " for :meth:`__getslice__`. This method is deprecated. If no "
@@ -2337,7 +2346,7 @@ msgid ""
 ":meth:`__delitem__`, instead of :meth:`__delslice__` being called."
 msgstr "``self[i:j]`` の削除を実現するために呼び出されます。 *i* および *j* に関しては、 :meth:`__getslice__` と同じ注釈があてはまります。このメソッドは撤廃されています。 :meth:`__delslice__` がないか、 ``self[i:j:k]`` 形式の拡張スライスの場合には、 :meth:`__delslice__` が呼ばれる代わりにスライスオブジェクトが生成され、 :meth:`__delitem__` に渡されます。"
 
-#: ../../reference/datamodel.rst:2028
+#: ../../reference/datamodel.rst:2036
 msgid ""
 "Notice that these methods are only invoked when a single slice with a single"
 " colon is used, and the slice method is available.  For slice operations "
@@ -2346,7 +2355,7 @@ msgid ""
 "with a slice object as argument."
 msgstr "これらのメソッドは、単一のコロンを使った単一のスライスで、かつスライスメソッドが利用できるときにだけ呼び出されることに注意してください。拡張スライス表記を含んでいるスライス表記や、スライスメソッドがない場合、 :meth:`__getitem__` 、 :meth:`__setitem__` 、あるいは :meth:`__delitem__` がスライスオブジェクトを引数として呼び出されます。"
 
-#: ../../reference/datamodel.rst:2034
+#: ../../reference/datamodel.rst:2042
 msgid ""
 "The following example demonstrate how to make your program or module "
 "compatible with earlier versions of Python (assuming that methods "
@@ -2354,7 +2363,7 @@ msgid ""
 "slice objects as arguments)::"
 msgstr "以下の例は、プログラムやモジュールを以前のバージョンの Python に対して互換性を持たせる方法を示したものです (:meth:`__getitem__` 、 :meth:`__setitem__` 、および :meth:`__delitem__` は引数としてスライスオブジェクトをサポートするものと仮定します)::"
 
-#: ../../reference/datamodel.rst:2059
+#: ../../reference/datamodel.rst:2067
 msgid ""
 "Note the calls to :func:`max`; these are necessary because of the handling "
 "of negative indices before the :meth:`__\\*slice__` methods are called.  "
@@ -2370,11 +2379,11 @@ msgid ""
 "Calling ``max(0, i)`` conveniently returns the proper value."
 msgstr ":func:`max` を呼び出していることに注意してください; この呼び出し :meth:`__\\*slice__` メソッド呼び出される前に、負のインデクス値を処理しておくために必要です。負のインデクス値が使われた場合、 :meth:`__\\*item__` メソッドは与えられた値をそのまま使いますが、 :meth:`__\\*slice__` メソッドは \"調理済みの (cooked)\" 形式になったインデクス値を受け取ります。負のインデクス値が使われると、メソッドを呼び出す前に、常にシーケンスの長さをインデクス値に加算します (加算してもまだ負の値となっていてもかまいません); これは、組み込みシーケンス型における慣習的な負のインデクス処理方法で、 :meth:`__\\*item__` メソッドでも同様の処理を行うよう期待しています。しかし、ここではすでに負のインデクス値の処理を行っているので、負のインデクスを渡すべきではありません; インデクス値は、 :meth:`__\\*item__` メソッドに渡される前に、シーケンスのインデクス集合の境界に制限されていなければなりません。 ``max(0, i)`` を呼び出せば、適切な値を返すので便利です。"
 
-#: ../../reference/datamodel.rst:2076
+#: ../../reference/datamodel.rst:2084
 msgid "Emulating numeric types"
 msgstr "数値型をエミュレーションする"
 
-#: ../../reference/datamodel.rst:2078
+#: ../../reference/datamodel.rst:2086
 msgid ""
 "The following methods can be defined to emulate numeric objects. Methods "
 "corresponding to operations that are not supported by the particular kind of"
@@ -2382,7 +2391,7 @@ msgid ""
 "should be left undefined."
 msgstr "以下のメソッドを定義して、数値型オブジェクトをエミュレートすることができます。特定の種類の数値型ではサポートされていないような演算に対応するメソッド (非整数の数値に対するビット単位演算など) は、未定義のままにしておかなければなりません。"
 
-#: ../../reference/datamodel.rst:2102
+#: ../../reference/datamodel.rst:2110
 msgid ""
 "These methods are called to implement the binary arithmetic operations "
 "(``+``, ``-``, ``*``, ``//``, ``%``, :func:`divmod`, :func:`pow`, ``**``, "
@@ -2396,13 +2405,13 @@ msgid ""
 "is to be supported."
 msgstr "これらのメソッドは、二項算術演算 (``+``, ``-``, ``*``, ``//``, ``%``, :func:`divmod`, :func:`pow`, ``**``, ``<<``, ``>>``, ``&``, ``^``, ``|``) を実現するために呼び出されます。例えば、式 ``x + y`` の場合、 *x* が :meth:`__add__` メソッドをもつクラスのインスタンスであれば、 ``x.__add__(y)`` が呼び出されます。 :meth:`__divmod__` メソッドは、 :meth:`__floordiv__` と :meth:`__mod__` を使った場合と等価にならなければなりません; :meth:`__truediv__` (下記参照) と関連づける必要はありません。組み込みの三項演算子バージョンの関数 :func:`pow` をサポートする場合には、 :meth:`__pow__` は、オプションとなる第三の引数を受け取れなくてはなりません。"
 
-#: ../../reference/datamodel.rst:2112
+#: ../../reference/datamodel.rst:2120
 msgid ""
 "If one of those methods does not support the operation with the supplied "
 "arguments, it should return ``NotImplemented``."
 msgstr "こらのメソッドが渡された引き数に対する操作を提供していない場合には、 ``NotImplemented`` を送出しなければなりません。"
 
-#: ../../reference/datamodel.rst:2119
+#: ../../reference/datamodel.rst:2127
 msgid ""
 "The division operator (``/``) is implemented by these methods.  The "
 ":meth:`__truediv__` method is used when ``__future__.division`` is in "
@@ -2411,7 +2420,7 @@ msgid ""
 ":exc:`TypeError` will be raised instead."
 msgstr "除算演算 (``/``) は、これらのメソッドで実現されています。 :meth:`__truediv__` は、 ``__future__.division`` が有効であるときに使われます。それ以外の場合には :meth:`__div__` が使われますs。二つのメソッドのうち一方しか定義されていなければ、オブジェクトは他方の演算コンテキストをサポートしなくなります; このとき、 :exc:`TypeError` が送出されます。"
 
-#: ../../reference/datamodel.rst:2145
+#: ../../reference/datamodel.rst:2153
 msgid ""
 "These methods are called to implement the binary arithmetic operations "
 "(``+``, ``-``, ``*``, ``/``, ``%``, :func:`divmod`, :func:`pow`, ``**``, "
@@ -2423,13 +2432,13 @@ msgid ""
 "``x.__sub__(y)`` returns *NotImplemented*."
 msgstr "これらのメソッドは二項算術演算 (``+``, ``-``, ``*``, ``/``, ``%``, :func:`divmod`, :func:`pow`, ``**``, ``<<``, ``>>``, ``&``, ``^``, ``|``) を実現しますが、メソッド呼び出しが行われる被演算子が逆転して (reflected, swapped: 入れ替えられて) います。これらの関数は、左側の被演算子が対応する演算をサポートしておらずかつ両者の演算子が異なる場合にのみ呼び出されます。 [#]_ 例えば、 ``x - y`` の式を評価する場合、 *y* が :meth:`__rsub__` メソッドを持つクラスのインスタンスであって、しかも ``x.__sub__(y)`` が *NotImplemented* を返す場合には、 ``y.__rsub__(x)`` が呼び出されます。"
 
-#: ../../reference/datamodel.rst:2156
+#: ../../reference/datamodel.rst:2164
 msgid ""
 "Note that ternary :func:`pow` will not try calling :meth:`__rpow__` (the "
 "coercion rules would become too complicated)."
 msgstr "ただし、三項演算子 :func:`pow` が :meth:`__rpow__` を呼ぶことはないので注意してください (型強制の規則が非常に難解になるからです)。"
 
-#: ../../reference/datamodel.rst:2161
+#: ../../reference/datamodel.rst:2169
 msgid ""
 "If the right operand's type is a subclass of the left operand's type and "
 "that subclass provides the reflected method for the operation, this method "
@@ -2437,7 +2446,7 @@ msgid ""
 "behavior allows subclasses to override their ancestors' operations."
 msgstr "右側の被演算子の型が左側の被演算子の型のサブクラスであり、このサブクラスであるメソッドに対する逆転メソッドが定義されている場合には、左側の被演算子の非逆転メソッドが呼ばれる前に、このメソッドが呼ばれます。この振る舞いにより、サブクラスが親の操作をオーバーライドすることが可能になります。"
 
-#: ../../reference/datamodel.rst:2181
+#: ../../reference/datamodel.rst:2189
 msgid ""
 "These methods are called to implement the augmented arithmetic assignments "
 "(``+=``, ``-=``, ``*=``, ``/=``, ``//=``, ``%=``, ``**=``, ``<<=``, ``>>=``,"
@@ -2451,33 +2460,33 @@ msgid ""
 " and ``y.__radd__(x)`` are considered, as with the evaluation of ``x + y``."
 msgstr "これらのメソッドは、累算算術代入 (augmented arithmetic assignments, ``+=``, ``-=``, ``*=``, ``/=``, ``//=``, ``%=``, ``**=``, ``<<=``, ``>>=``, ``&=``, ``^=``, ``|=``) を実現するために呼び出されます。これらのメソッドは、演算をその場で(*self* を変更する形で) 行うよう試み、その結果(変更された *self* またはその代わりのもの)を返さなければなりません。特定のメソッドが定義されていない場合、その累算算術演算は通常のメソッドで代用されます。例えば、 ``x += y`` を評価する際、 *x* が :meth:`__iadd__` メソッドを持つクラスのインスタンスであれば、 ``x.__iadd__(y)`` が呼び出されます。逆に、 *x* が :meth:`__iadd` メソッドを持たないクラスのインスタンスであれば、 ``x + y`` の評価と同じように ``x.__add__(y)`` および ``y.__radd__(x)`` を考慮します。"
 
-#: ../../reference/datamodel.rst:2200
+#: ../../reference/datamodel.rst:2208
 msgid ""
 "Called to implement the unary arithmetic operations (``-``, ``+``, "
 ":func:`abs` and ``~``)."
 msgstr "単項算術演算 (``-``, ``+``, :func:`abs` および ``~``) を実現するために呼び出されます。"
 
-#: ../../reference/datamodel.rst:2215
+#: ../../reference/datamodel.rst:2223
 msgid ""
 "Called to implement the built-in functions :func:`complex`, :func:`int`, "
 ":func:`long`, and :func:`float`.  Should return a value of the appropriate "
 "type."
 msgstr "組み込み関数 :func:`complex`, :func:`int`, :func:`long`, および :func:`float` を実現するために呼び出されます。適切な型の値を返さなければなりません。"
 
-#: ../../reference/datamodel.rst:2226
+#: ../../reference/datamodel.rst:2234
 msgid ""
 "Called to implement the built-in functions :func:`oct` and :func:`hex`.  "
 "Should return a string value."
 msgstr "組み込み関数 :func:`oct` および :func:`hex` を実現するために呼び出されます。文字列型を返さなければなりません。"
 
-#: ../../reference/datamodel.rst:2232
+#: ../../reference/datamodel.rst:2240
 msgid ""
 "Called to implement :func:`operator.index`.  Also called whenever Python "
 "needs an integer object (such as in slicing).  Must return an integer (int "
 "or long)."
 msgstr ":func:`operator.index` を実装するために呼び出されます。また、（スライシング）のように Python が整数オブジェクトを必要とする場合には何処でも呼び出されます。整数（int もしくは long）を返す必要があります。"
 
-#: ../../reference/datamodel.rst:2240
+#: ../../reference/datamodel.rst:2248
 msgid ""
 "Called to implement \"mixed-mode\" numeric arithmetic.  Should either return"
 " a 2-tuple containing *self* and *other* converted to a common numeric type,"
@@ -2489,11 +2498,11 @@ msgid ""
 "``NotImplemented`` is equivalent to returning ``None``."
 msgstr "\"型混合モード (mixed-mode)\" での数値間の算術演算を実現するために呼び出されます。 *self* と *other* を共通の数値型に変換して、 2 要素のタプルにして返すか、不可能な場合には ``None`` を返さなければなりません。共通の型が ``other`` の型になる場合、 ``None`` を返すだけで十分です。この場合、インタプリタはもう一方のオブジェクトを調べて型強制を行おうとするからです (とはいえ、もう一方の値の型が実装上変更できない場合には、ここで *self* を *other* の型に変換しておいた方が便利です)。戻り値に ``NotImplemented`` を使うのは、 ``None`` を返すのと同じです。"
 
-#: ../../reference/datamodel.rst:2253
+#: ../../reference/datamodel.rst:2261
 msgid "Coercion rules"
 msgstr "型強制規則 (coercion rule)"
 
-#: ../../reference/datamodel.rst:2255
+#: ../../reference/datamodel.rst:2263
 msgid ""
 "This section used to document the rules for coercion.  As the language has "
 "evolved, the coercion rules have become hard to document precisely; "
@@ -2502,20 +2511,20 @@ msgid ""
 "  In Python 3, coercion will not be supported."
 msgstr "本節では、型強制 (coercion) に関する規則について記述します。プログラム言語が進化するにつれ、型強制規則について正確に記述するのは難しくなってゆきます; 従って、あるバージョンのある実装について記述するのは望ましくありません。その代わりに、型強制に関する非公式的なガイドラインを示しておきます。 Python 3 からは、型強制がサポートされなくなる予定です。"
 
-#: ../../reference/datamodel.rst:2263
+#: ../../reference/datamodel.rst:2271
 msgid ""
 "If the left operand of a % operator is a string or Unicode object, no "
 "coercion takes place and the string formatting operation is invoked instead."
 msgstr "% 演算子の左被演算子が文字列か Unicode オブジェクトの場合、型強制は起きず、文字列としての書式化操作が呼び出されます。"
 
-#: ../../reference/datamodel.rst:2268
+#: ../../reference/datamodel.rst:2276
 msgid ""
 "It is no longer recommended to define a coercion operation. Mixed-mode "
 "operations on types that don't define coercion pass the original arguments "
 "to the operation."
 msgstr "型強制演算の定義はもはや推奨されていません。型強制を定義していない混合型 (mixed-mode) 演算は、もとの引数をそのまま演算操作に渡すようになっています。"
 
-#: ../../reference/datamodel.rst:2274
+#: ../../reference/datamodel.rst:2282
 msgid ""
 "New-style classes (those derived from :class:`object`) never invoke the "
 ":meth:`__coerce__` method in response to a binary operator; the only time "
@@ -2523,13 +2532,13 @@ msgid ""
 "is called."
 msgstr "新しい形式のクラス (:class:`object` から派生したもの) が、二項演算子に対して :meth:`__coerce__` メソッドを呼び出すことはありません。; :meth:`__coerce__` が呼び出されるのは、組み込み関数 :func:`coerce` が呼び出されたときだけです。"
 
-#: ../../reference/datamodel.rst:2281
+#: ../../reference/datamodel.rst:2289
 msgid ""
 "For most intents and purposes, an operator that returns ``NotImplemented`` "
 "is treated the same as one that is not implemented at all."
 msgstr "事実上、 ``NotImplemented`` を返す演算子は、全く実装されていないものとして扱われます。"
 
-#: ../../reference/datamodel.rst:2286
+#: ../../reference/datamodel.rst:2294
 msgid ""
 "Below, :meth:`__op__` and :meth:`__rop__` are used to signify the generic "
 "method names corresponding to an operator; :meth:`__iop__` is used for the "
@@ -2538,7 +2547,7 @@ msgid ""
 " of the binary operator, and :meth:`__iadd__` for the in-place variant."
 msgstr "以下の説明では、 :meth:`__op__` および :meth:`__rop__` は、演算子に相当する一般的なメソッド名を表すために使われます; :meth:`__iop__` はインプレース演算子を表します。例えば、演算子 '``+``' の場合、 :meth:`__add__` および :meth:`__radd__` がそれぞれ左右の被演算子用の二項演算子として使われ、 :meth:`__iadd__` がインプレース演算用の演算子として使われる、といった具合です。"
 
-#: ../../reference/datamodel.rst:2294
+#: ../../reference/datamodel.rst:2302
 msgid ""
 "For objects *x* and *y*, first ``x.__op__(y)`` is tried.  If this is not "
 "implemented or returns ``NotImplemented``, ``y.__rop__(x)`` is tried.  If "
@@ -2546,7 +2555,7 @@ msgid ""
 ":exc:`TypeError` exception is raised.  But see the following exception:"
 msgstr "オブジェクト *x* および *y* に対して、まず ``x.__op__(y)`` が試されます。この演算が実装されていないか、 ``NotImplemented`` を返す場合、次に ``y.__rop__(x)`` が試されます。この演算も実装されていないか、 ``NotImplemented`` を返すなら、 :exc:`TypeError` 例外が送出されます。ただし、以下の例外があるので参照してください:"
 
-#: ../../reference/datamodel.rst:2301
+#: ../../reference/datamodel.rst:2309
 msgid ""
 "Exception to the previous item: if the left operand is an instance of a "
 "built-in type or a new-style class, and the right operand is an instance of "
@@ -2555,7 +2564,7 @@ msgid ""
 "*before* the left operand's :meth:`__op__` method."
 msgstr "前項に対する例外: 左被演算子が組み込み型や新スタイルクラスのインスタンスであり、かつ右被演算子が左被演算子と同じクラスか適切なサブクラスのインスタンスであり、さらに親クラスの :meth:`__rop__` メソッドをオーバライドしている場合、左被演算子の :meth:`__op__` メソッドを試す *前に* 右被演算子の :meth:`__rop__` が試されます。"
 
-#: ../../reference/datamodel.rst:2307
+#: ../../reference/datamodel.rst:2315
 msgid ""
 "This is done so that a subclass can completely override binary operators. "
 "Otherwise, the left operand's :meth:`__op__` method would always accept the "
@@ -2563,7 +2572,7 @@ msgid ""
 " a subclass of that class is always acceptable."
 msgstr "これは、サブクラス側で二項演算子を完全にオーバライドできるようにするためです。そうしなければ、常に左被演算子の :meth:`__op__` メソッドが右被演算子を受理してしまいます: あるクラスのインスタンスが被演算子になるとされている場合、そのサブクラスのインスタンスもまた受理可能だからです。"
 
-#: ../../reference/datamodel.rst:2314
+#: ../../reference/datamodel.rst:2322
 msgid ""
 "When either operand type defines a coercion, this coercion is called before "
 "that type's :meth:`__op__` or :meth:`__rop__` method is called, but no "
@@ -2572,7 +2581,7 @@ msgid ""
 "new object."
 msgstr "双方の被演算子が型強制を定義している場合、型強制は被演算子の型の :meth:`__op__` や :meth:`__rop__` メソッドが呼び出される前に呼び出され、それより早くなることはありません。型強制の結果、型強制を行うことになったいずれの被演算子とも異なる型が返された場合、返されたオブジェクトの新たな型を使って、この過程が部分的に再度行われます。"
 
-#: ../../reference/datamodel.rst:2321
+#: ../../reference/datamodel.rst:2329
 msgid ""
 "When an in-place operator (like '``+=``') is used, if the left operand "
 "implements :meth:`__iop__`, it is invoked without any coercion.  When the "
@@ -2580,27 +2589,27 @@ msgid ""
 "coercion rules apply."
 msgstr "('``+=``' のような) インプレース型の演算子を用いる際、左被演算子が :meth:`__iop__` を実装していれば、 :meth:`__iop__` が呼び出され、型強制は一切行われません。演算が :meth:`__op__` かつ/または :meth:`__rop__` に帰着した場合、通常の型強制規則が適用されます。"
 
-#: ../../reference/datamodel.rst:2328
+#: ../../reference/datamodel.rst:2336
 msgid ""
 "In ``x + y``, if *x* is a sequence that implements sequence concatenation, "
 "sequence concatenation is invoked."
 msgstr "``x + y`` において、 *x* が結合 (concatenation) 演算を実装しているシーケンスであれば、シーケンスの結合が実行されます。"
 
-#: ../../reference/datamodel.rst:2333
+#: ../../reference/datamodel.rst:2341
 msgid ""
 "In ``x * y``, if one operand is a sequence that implements sequence "
 "repetition, and the other is an integer (:class:`int` or :class:`long`), "
 "sequence repetition is invoked."
 msgstr "``x * y`` において、一方の演算子が繰り返し (repeat) 演算を実装しているシーケンスであり、かつ他方が整数 (:class:`int` または :class:`long`) である場合、シーケンスの繰り返しが実行されます。"
 
-#: ../../reference/datamodel.rst:2339
+#: ../../reference/datamodel.rst:2347
 msgid ""
 "Rich comparisons (implemented by methods :meth:`__eq__` and so on) never use"
 " coercion.  Three-way comparison (implemented by :meth:`__cmp__`) does use "
 "coercion under the same conditions as other binary operations use it."
 msgstr "(:meth:`__eq__` などのメソッドで実装されている) 拡張比較は、決して型強制を行いません。(:meth:`__cmp__` で実装されている) 三値比較 (three-way comparison) は、他の二項演算子で行われているのと同じ条件で型強制を受けます。"
 
-#: ../../reference/datamodel.rst:2345
+#: ../../reference/datamodel.rst:2353
 msgid ""
 "In the current implementation, the built-in numeric types :class:`int`, "
 ":class:`long`, :class:`float`, and :class:`complex` do not use coercion. All"
@@ -2608,17 +2617,17 @@ msgid ""
 ":func:`coerce` function."
 msgstr "現在の実装では、組み込み数値型 :class:`int`, :class:`long`, :class:`float` および :class:`complex` は型強制を行いません; これらの型は全て、関数 :func:`coerce` から利用するための :meth:`__coerce__` メソッドを実装しています。"
 
-#: ../../reference/datamodel.rst:2352
+#: ../../reference/datamodel.rst:2360
 msgid ""
 "The complex type no longer makes implicit calls to the :meth:`__coerce__` "
 "method for mixed-type binary arithmetic operations."
 msgstr "複素数型は、型混合の二項算術演算に :meth:`__coerce__` を暗示的に呼び出さなくなりました。"
 
-#: ../../reference/datamodel.rst:2359
+#: ../../reference/datamodel.rst:2367
 msgid "With Statement Context Managers"
 msgstr "with文とコンテキストマネージャ"
 
-#: ../../reference/datamodel.rst:2363
+#: ../../reference/datamodel.rst:2371
 msgid ""
 "A :dfn:`context manager` is an object that defines the runtime context to be"
 " established when executing a :keyword:`with` statement. The context manager"
@@ -2628,32 +2637,32 @@ msgid ""
 "can also be used by directly invoking their methods."
 msgstr "コンテキストマネージャ(:dfn:`context manager`) とは、 :keyword:`with` 文の実行時にランタイムコンテキストを定義するオブジェクトです。コンテキストマネージャは、コードブロックを実行するために必要な入り口および出口の処理を扱います。コンテキストマネージャは通常、 :keyword:`with` 文（ :ref:`with` の章を参照）により起動されますが、これらのメソッドを直接呼び出すことで起動することもできます。"
 
-#: ../../reference/datamodel.rst:2374
+#: ../../reference/datamodel.rst:2382
 msgid ""
 "Typical uses of context managers include saving and restoring various kinds "
 "of global state, locking and unlocking resources, closing opened files, etc."
 msgstr "コンテキストマネージャの代表的な使い方としては、様々なグローバル情報の保存および更新、リソースのロックとアンロック、ファイルのオープンとクローズなどが挙げられます。"
 
-#: ../../reference/datamodel.rst:2377
+#: ../../reference/datamodel.rst:2385
 msgid ""
 "For more information on context managers, see :ref:`typecontextmanager`."
 msgstr "コンテキストマネージャについてのさらなる情報については、 :ref:`typecontextmanager` を参照してください。"
 
-#: ../../reference/datamodel.rst:2382
+#: ../../reference/datamodel.rst:2390
 msgid ""
 "Enter the runtime context related to this object. The :keyword:`with` "
 "statement will bind this method's return value to the target(s) specified in"
 " the :keyword:`as` clause of the statement, if any."
 msgstr "コンテキストマネージャのの入り口で実行される処理です。 :keyword:`with` 文は、文の :keyword:`as` 節で規定された値を返すこのメソッドを呼び出します。"
 
-#: ../../reference/datamodel.rst:2389
+#: ../../reference/datamodel.rst:2397
 msgid ""
 "Exit the runtime context related to this object. The parameters describe the"
 " exception that caused the context to be exited. If the context was exited "
 "without an exception, all three arguments will be :const:`None`."
 msgstr "コンテキストマネージャの出口で実行される処理です。パラメータは、コンテキストが終了した原因となった例外について説明しています。コンテキストが例外を送出せず終了した場合は、全ての引き数に :const:`None` が設定されます。"
 
-#: ../../reference/datamodel.rst:2393
+#: ../../reference/datamodel.rst:2401
 msgid ""
 "If an exception is supplied, and the method wishes to suppress the exception"
 " (i.e., prevent it from being propagated), it should return a true value. "
@@ -2661,27 +2670,27 @@ msgid ""
 "method."
 msgstr "もし、例外が送出され、かつメソッドが例外を抑制したい場合（すなわち、例外が伝播されるのを防ぎたい場合）、このメソッドは True を返す必要があります。そうでなければ、このメソッドの終了後、例外は通常通り伝播することになります。"
 
-#: ../../reference/datamodel.rst:2397
+#: ../../reference/datamodel.rst:2405
 msgid ""
 "Note that :meth:`__exit__` methods should not reraise the passed-in "
 "exception; this is the caller's responsibility."
 msgstr ":meth:`__exit__` メソッドは受け取った例外を再度送出すべきではありません。これは、呼び出し側の責任でおこなってください。"
 
-#: ../../reference/datamodel.rst:2404
+#: ../../reference/datamodel.rst:2412
 msgid ":pep:`343` - The \"with\" statement"
 msgstr ":pep:`343` - \"with\" ステートメント"
 
-#: ../../reference/datamodel.rst:2404
+#: ../../reference/datamodel.rst:2412
 msgid ""
 "The specification, background, and examples for the Python :keyword:`with` "
 "statement."
 msgstr "Python の :keyword:`with` 文の仕様、背景、および例が記載されています。"
 
-#: ../../reference/datamodel.rst:2411
+#: ../../reference/datamodel.rst:2419
 msgid "Special method lookup for old-style classes"
 msgstr "旧スタイルクラスの特殊メソッド検索"
 
-#: ../../reference/datamodel.rst:2413
+#: ../../reference/datamodel.rst:2421
 msgid ""
 "For old-style classes, special methods are always looked up in exactly the "
 "same way as any other method or attribute. This is the case regardless of "
@@ -2689,18 +2698,18 @@ msgid ""
 "or implicitly as in ``x[i]``."
 msgstr "旧スタイルクラスにおいて、特殊メソッドは常に他のメソッドや属性と同じ方法で検索されます。これは、メソッドが ``x.__getitem__(i)`` のように明示的に検索された時も、 ``x[i]`` のように暗黙的に検索された時も同じです。"
 
-#: ../../reference/datamodel.rst:2418
+#: ../../reference/datamodel.rst:2426
 msgid ""
 "This behaviour means that special methods may exhibit different behaviour "
 "for different instances of a single old-style class if the appropriate "
 "special attributes are set differently::"
 msgstr "これにより、1つの旧スタイルクラスの異なるインスタンスが、それぞれ別の適切な特殊属性を持っている場合、異なる動作をすることになります。 ::"
 
-#: ../../reference/datamodel.rst:2438
+#: ../../reference/datamodel.rst:2446
 msgid "Special method lookup for new-style classes"
 msgstr "新スタイルクラスの特殊メソッド検索"
 
-#: ../../reference/datamodel.rst:2440
+#: ../../reference/datamodel.rst:2448
 msgid ""
 "For new-style classes, implicit invocations of special methods are only "
 "guaranteed to work correctly if defined on an object's type, not in the "
@@ -2709,7 +2718,7 @@ msgid ""
 "style classes)::"
 msgstr "新スタイルクラスでは、特殊メソッドの暗黙的な呼び出しは、オブジェクトインスタンスの辞書ではなく、 type の辞書で定義されているときにのみ正しく動作することが保証されます。この動作は、以下のコードが(旧スタイルクラスの同等な例と異なり)例外を発生させる理由です。 ::"
 
-#: ../../reference/datamodel.rst:2455
+#: ../../reference/datamodel.rst:2463
 msgid ""
 "The rationale behind this behaviour lies with a number of special methods "
 "such as :meth:`__hash__` and :meth:`__repr__` that are implemented by all "
@@ -2718,21 +2727,21 @@ msgid ""
 "type object itself::"
 msgstr "この動作の背景となる理由は、 :meth:`__hash__` と :meth:`__repr__` といった type オブジェクトを含むすべてのオブジェクトで定義されている特殊メソッドにあります。これらのメソッドの暗黙の検索が通常の検索プロセスを使った場合、 type オブジェクト自体に対して実行されたときに失敗してしまいます::"
 
-#: ../../reference/datamodel.rst:2468
+#: ../../reference/datamodel.rst:2476
 msgid ""
 "Incorrectly attempting to invoke an unbound method of a class in this way is"
 " sometimes referred to as 'metaclass confusion', and is avoided by bypassing"
 " the instance when looking up special methods::"
 msgstr "クラスの非結合メソッドをこのようにして実行しようとすることは、'metaclass confusion' と呼ばれることもあり、特殊メソッドを検索するときはインスタンスをバイパスすることで回避されます::"
 
-#: ../../reference/datamodel.rst:2477
+#: ../../reference/datamodel.rst:2485
 msgid ""
 "In addition to bypassing any instance attributes in the interest of "
 "correctness, implicit special method lookup generally also bypasses the "
 ":meth:`__getattribute__` method even of the object's metaclass::"
 msgstr "正確性のためにインスタンス属性をスキップするのに加えて、特殊メソッド検索はオブジェクトのメタクラスを含めて、 :meth:`__getattribute__` メソッドもバイパスします::"
 
-#: ../../reference/datamodel.rst:2504
+#: ../../reference/datamodel.rst:2512
 msgid ""
 "Bypassing the :meth:`__getattribute__` machinery in this fashion provides "
 "significant scope for speed optimisations within the interpreter, at the "
@@ -2741,18 +2750,18 @@ msgid ""
 "invoked by the interpreter)."
 msgstr "このように :meth:`__getattribute__` 機構をバイパスすることで、特殊メソッドの扱いに関するある程度の自由度と引き換えに (特殊メソッドはインタプリタから一貫して実行されるためにクラスオブジェクトに設定 *しなければならない*)、インタープリタを高速化するための大きな余地が手に入ります。"
 
-#: ../../reference/datamodel.rst:2512
+#: ../../reference/datamodel.rst:2520
 msgid "Footnotes"
 msgstr "注記"
 
-#: ../../reference/datamodel.rst:2513
+#: ../../reference/datamodel.rst:2521
 msgid ""
 "It *is* possible in some cases to change an object's type, under certain "
 "controlled conditions. It generally isn't a good idea though, since it can "
 "lead to some very strange behaviour if it is handled incorrectly."
 msgstr "特定の条件が満たされた場合、オブジェクトの type を変更することが *できます* 。これは、正しく扱われなかった場合にとても奇妙な動作を引き起こすので、一般的には良い考えではありません。"
 
-#: ../../reference/datamodel.rst:2517
+#: ../../reference/datamodel.rst:2525
 msgid ""
 "For operands of the same type, it is assumed that if the non-reflected "
 "method (such as :meth:`__add__`) fails the operation is not supported, which"

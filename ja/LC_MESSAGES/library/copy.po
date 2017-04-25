@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:48+0000\n"
+"PO-Revision-Date: 2017-04-25 02:11+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -79,9 +79,9 @@ msgstr "再帰的なオブジェクト (直接、間接に関わらず、自分�
 
 #: ../../library/copy.rst:46
 msgid ""
-"Because deep copy copies *everything* it may copy too much, e.g., even "
-"administrative data structures that should be shared even between copies."
-msgstr "深いコピーでは、*何もかも* をコピーするため、例えば複数のコピー間で共有されるべき管理データ構造までも、余分にコピーしてしまいます。"
+"Because deep copy copies everything it may copy too much, such as data which"
+" is intended to be shared between copies."
+msgstr ""
 
 #: ../../library/copy.rst:49
 msgid "The :func:`deepcopy` function avoids these problems by:"

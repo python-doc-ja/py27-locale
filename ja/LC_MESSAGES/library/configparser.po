@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 15:48+0000\n"
+"PO-Revision-Date: 2017-04-25 02:11+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -47,11 +47,11 @@ msgstr "このライブラリでは、Windowsのレジストリ用に拡張さ�
 msgid "Module :mod:`shlex`"
 msgstr ":mod:`shlex` モジュール"
 
-#: ../../library/configparser.rst:38 ../../library/configparser.rst:224
+#: ../../library/configparser.rst:38
 msgid ""
-"Support for a creating Unix shell-like mini-languages which can be used as "
-"an alternate format for application configuration files."
-msgstr "アプリケーション用の設定ファイルフォーマットとして使える、 Unix シェルライクなミニ言語の作成を支援します。"
+"Support for creating Unix shell-like mini-languages which can be used as an "
+"alternate format for application configuration files."
+msgstr ""
 
 #: ../../library/configparser.rst:42
 msgid "Module :mod:`json`"
@@ -239,6 +239,12 @@ msgid ""
 " parameter is false.  This is relevant only for the "
 ":class:`~ConfigParser.ConfigParser` class."
 msgstr ""
+
+#: ../../library/configparser.rst:224
+msgid ""
+"Support for a creating Unix shell-like mini-languages which can be used as "
+"an alternate format for application configuration files."
+msgstr "アプリケーション用の設定ファイルフォーマットとして使える、 Unix シェルライクなミニ言語の作成を支援します。"
 
 #: ../../library/configparser.rst:231
 msgid "RawConfigParser Objects"
