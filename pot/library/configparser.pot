@@ -37,8 +37,7 @@ msgid "Module :mod:`shlex`"
 msgstr ""
 
 #: ../../library/configparser.rst:38
-#: ../../library/configparser.rst:224
-msgid "Support for a creating Unix shell-like mini-languages which can be used as an alternate format for application configuration files."
+msgid "Support for creating Unix shell-like mini-languages which can be used as an alternate format for application configuration files."
 msgstr ""
 
 #: ../../library/configparser.rst:42
@@ -155,6 +154,10 @@ msgstr ""
 
 #: ../../library/configparser.rst:217
 msgid "The maximum depth for recursive interpolation for :meth:`get` when the *raw* parameter is false.  This is relevant only for the :class:`~ConfigParser.ConfigParser` class."
+msgstr ""
+
+#: ../../library/configparser.rst:224
+msgid "Support for a creating Unix shell-like mini-languages which can be used as an alternate format for application configuration files."
 msgstr ""
 
 #: ../../library/configparser.rst:231

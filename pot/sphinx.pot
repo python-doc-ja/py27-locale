@@ -288,8 +288,8 @@ msgstr ""
 
 #: ../../tools/templates/download.html:78
 msgid "HTML Help\n"
-"(<tt>.chm</tt>) files are made available in the \"Windows\" section\n"
-"on the <a href=%(download_page)s>Python download page</a>."
+"(<tt>.chm</tt>) files are made available in the \"Files\" section\n"
+"on the <a href=\"%(download_page)s\">Python download page</a>."
 msgstr ""
 
 #: ../../tools/templates/download.html:83

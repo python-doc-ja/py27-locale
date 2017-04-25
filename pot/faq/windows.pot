@@ -224,7 +224,7 @@ msgid "Under any editor, mixing tabs and spaces is a bad idea.  MSVC is no diffe
 msgstr ""
 
 #: ../../faq/windows.rst:297
-msgid "If you suspect mixed tabs and spaces are causing problems in leading whitespace, run Python with the :option:`-t` switch or run ``Tools/Scripts/tabnanny.py`` to check a directory tree in batch mode."
+msgid "If you suspect mixed tabs and spaces are causing problems in leading whitespace, run Python with the :option:`-t` switch or run the :mod:`tabnanny` module to check a directory tree in batch mode."
 msgstr ""
 
 #: ../../faq/windows.rst:303

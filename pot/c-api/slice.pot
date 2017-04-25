@@ -59,3 +59,11 @@ msgstr ""
 msgid "This function used an :c:type:`int` type for *length* and an :c:type:`int *` type for *start*, *stop*, *step*, and *slicelength*. This might require changes in your code for properly supporting 64-bit systems."
 msgstr ""
 
+#: ../../c-api/slice.rst:72
+msgid "Ellipsis Object"
+msgstr ""
+
+#: ../../c-api/slice.rst:77
+msgid "The Python ``Ellipsis`` object.  This object has no methods.  It needs to be treated just like any other object with respect to reference counts.  Like :c:data:`Py_None` it is a singleton object."
+msgstr ""
+

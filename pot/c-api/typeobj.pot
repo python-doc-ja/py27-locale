@@ -935,19 +935,19 @@ msgid "Structure used to hold the function pointers which define an implementati
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1380
-msgid "The first slot is :attr:`bf_getreadbuffer`, of type :c:type:`getreadbufferproc`. If this slot is *NULL*, then the object does not support reading from the internal data.  This is non-sensical, so implementors should fill this in, but callers should test that the slot contains a non-*NULL* value."
+msgid "The first slot is :attr:`bf_getreadbuffer`, of type :c:type:`readbufferproc`. If this slot is *NULL*, then the object does not support reading from the internal data.  This is non-sensical, so implementors should fill this in, but callers should test that the slot contains a non-*NULL* value."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1385
-msgid "The next slot is :attr:`bf_getwritebuffer` having type :c:type:`getwritebufferproc`.  This slot may be *NULL* if the object does not allow writing into its returned buffers."
+msgid "The next slot is :attr:`bf_getwritebuffer` having type :c:type:`writebufferproc`.  This slot may be *NULL* if the object does not allow writing into its returned buffers."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1389
-msgid "The third slot is :attr:`bf_getsegcount`, with type :c:type:`getsegcountproc`. This slot must not be *NULL* and is used to inform the caller how many segments the object contains.  Simple objects such as :c:type:`PyString_Type` and :c:type:`PyBuffer_Type` objects contain a single segment."
+msgid "The third slot is :attr:`bf_getsegcount`, with type :c:type:`segcountproc`. This slot must not be *NULL* and is used to inform the caller how many segments the object contains.  Simple objects such as :c:type:`PyString_Type` and :c:type:`PyBuffer_Type` objects contain a single segment."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1396
-msgid "The last slot is :attr:`bf_getcharbuffer`, of type :c:type:`getcharbufferproc`. This slot will only be present if the :const:`Py_TPFLAGS_HAVE_GETCHARBUFFER` flag is present in the :c:member:`~PyTypeObject.tp_flags` field of the object's :c:type:`PyTypeObject`. Before using this slot, the caller should test whether it is present by using the :c:func:`PyType_HasFeature` function.  If the flag is present, :attr:`bf_getcharbuffer` may be *NULL*, indicating that the object's contents cannot be used as *8-bit characters*. The slot function may also raise an error if the object's contents cannot be interpreted as 8-bit characters. For example, if the object is an array which is configured to hold floating point values, an exception may be raised if a caller attempts to use :attr:`bf_getcharbuffer` to fetch a sequence of 8-bit characters. This notion of exporting the internal buffers as \"text\" is used to distinguish between objects that are binary in nature, and those which have character-based content."
+msgid "The last slot is :attr:`bf_getcharbuffer`, of type :c:type:`charbufferproc`. This slot will only be present if the :const:`Py_TPFLAGS_HAVE_GETCHARBUFFER` flag is present in the :c:member:`~PyTypeObject.tp_flags` field of the object's :c:type:`PyTypeObject`. Before using this slot, the caller should test whether it is present by using the :c:func:`PyType_HasFeature` function.  If the flag is present, :attr:`bf_getcharbuffer` may be *NULL*, indicating that the object's contents cannot be used as *8-bit characters*. The slot function may also raise an error if the object's contents cannot be interpreted as 8-bit characters. For example, if the object is an array which is configured to hold floating point values, an exception may be raised if a caller attempts to use :attr:`bf_getcharbuffer` to fetch a sequence of 8-bit characters. This notion of exporting the internal buffers as \"text\" is used to distinguish between objects that are binary in nature, and those which have character-based content."
 msgstr ""
 
 #: ../../c-api/typeobj.rst:1412

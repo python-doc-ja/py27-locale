@@ -781,7 +781,7 @@ msgid "Set the debugging level (the amount of debugging output printed). The def
 msgstr ""
 
 #: ../../library/httplib.rst:475
-msgid "Set the host and the port for HTTP Connect Tunnelling. Normally used when it is required to do HTTPS Conection through a proxy server."
+msgid "Set the host and the port for HTTP Connect Tunnelling. Normally used when it is required to do HTTPS Connection through a proxy server."
 msgstr ""
 
 #: ../../library/httplib.rst:478

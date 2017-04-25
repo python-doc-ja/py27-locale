@@ -1186,303 +1186,307 @@ msgstr ""
 msgid "Called to implement the built-in function :func:`len`.  Should return the length of the object, an integer ``>=`` 0.  Also, an object that doesn't define a :meth:`__nonzero__` method and whose :meth:`__len__` method returns zero is considered to be false in a Boolean context."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1899
+#: ../../reference/datamodel.rst:1896
+msgid "In CPython, the length is required to be at most :attr:`sys.maxsize`. If the length is larger than :attr:`!sys.maxsize` some features (such as :func:`len`) may raise :exc:`OverflowError`.  To prevent raising :exc:`!OverflowError` by truth value testing, an object must define a :meth:`__nonzero__` method."
+msgstr ""
+
+#: ../../reference/datamodel.rst:1907
 msgid "Called to implement evaluation of ``self[key]``. For sequence types, the accepted keys should be integers and slice objects.  Note that the special interpretation of negative indexes (if the class wishes to emulate a sequence type) is up to the :meth:`__getitem__` method. If *key* is of an inappropriate type, :exc:`TypeError` may be raised; if of a value outside the set of indexes for the sequence (after any special interpretation of negative values), :exc:`IndexError` should be raised. For mapping types, if *key* is missing (not in the container), :exc:`KeyError` should be raised."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1910
+#: ../../reference/datamodel.rst:1918
 msgid ":keyword:`for` loops expect that an :exc:`IndexError` will be raised for illegal indexes to allow proper detection of the end of the sequence."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1916
+#: ../../reference/datamodel.rst:1924
 msgid "Called by :class:`dict`\\ .\\ :meth:`__getitem__` to implement ``self[key]`` for dict subclasses when key is not in the dictionary."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1922
+#: ../../reference/datamodel.rst:1930
 msgid "Called to implement assignment to ``self[key]``.  Same note as for :meth:`__getitem__`.  This should only be implemented for mappings if the objects support changes to the values for keys, or if new keys can be added, or for sequences if elements can be replaced.  The same exceptions should be raised for improper *key* values as for the :meth:`__getitem__` method."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1931
+#: ../../reference/datamodel.rst:1939
 msgid "Called to implement deletion of ``self[key]``.  Same note as for :meth:`__getitem__`.  This should only be implemented for mappings if the objects support removal of keys, or for sequences if elements can be removed from the sequence.  The same exceptions should be raised for improper *key* values as for the :meth:`__getitem__` method."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1940
+#: ../../reference/datamodel.rst:1948
 msgid "This method is called when an iterator is required for a container. This method should return a new iterator object that can iterate over all the objects in the container.  For mappings, it should iterate over the keys of the container, and should also be made available as the method :meth:`iterkeys`."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1945
+#: ../../reference/datamodel.rst:1953
 msgid "Iterator objects also need to implement this method; they are required to return themselves.  For more information on iterator objects, see :ref:`typeiter`."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1951
+#: ../../reference/datamodel.rst:1959
 msgid "Called (if present) by the :func:`reversed` built-in to implement reverse iteration.  It should return a new iterator object that iterates over all the objects in the container in reverse order."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1955
+#: ../../reference/datamodel.rst:1963
 msgid "If the :meth:`__reversed__` method is not provided, the :func:`reversed` built-in will fall back to using the sequence protocol (:meth:`__len__` and :meth:`__getitem__`).  Objects that support the sequence protocol should only provide :meth:`__reversed__` if they can provide an implementation that is more efficient than the one provided by :func:`reversed`."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1964
+#: ../../reference/datamodel.rst:1972
 msgid "The membership test operators (:keyword:`in` and :keyword:`not in`) are normally implemented as an iteration through a sequence.  However, container objects can supply the following special method with a more efficient implementation, which also does not require the object be a sequence."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1971
+#: ../../reference/datamodel.rst:1979
 msgid "Called to implement membership test operators.  Should return true if *item* is in *self*, false otherwise.  For mapping objects, this should consider the keys of the mapping rather than the values or the key-item pairs."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1975
+#: ../../reference/datamodel.rst:1983
 msgid "For objects that don't define :meth:`__contains__`, the membership test first tries iteration via :meth:`__iter__`, then the old sequence iteration protocol via :meth:`__getitem__`, see :ref:`this section in the language reference <membership-test-details>`."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1984
+#: ../../reference/datamodel.rst:1992
 msgid "Additional methods for emulation of sequence types"
 msgstr ""
 
-#: ../../reference/datamodel.rst:1986
+#: ../../reference/datamodel.rst:1994
 msgid "The following optional methods can be defined to further emulate sequence objects.  Immutable sequences methods should at most only define :meth:`__getslice__`; mutable sequences might define all three methods."
 msgstr ""
 
-#: ../../reference/datamodel.rst:1993
+#: ../../reference/datamodel.rst:2001
 msgid "Support slice objects as parameters to the :meth:`__getitem__` method. (However, built-in types in CPython currently still implement :meth:`__getslice__`.  Therefore, you have to override it in derived classes when implementing slicing.)"
 msgstr ""
 
-#: ../../reference/datamodel.rst:1999
+#: ../../reference/datamodel.rst:2007
 msgid "Called to implement evaluation of ``self[i:j]``. The returned object should be of the same type as *self*.  Note that missing *i* or *j* in the slice expression are replaced by zero or :attr:`sys.maxsize`, respectively.  If negative indexes are used in the slice, the length of the sequence is added to that index. If the instance does not implement the :meth:`__len__` method, an :exc:`AttributeError` is raised. No guarantee is made that indexes adjusted this way are not still negative.  Indexes which are greater than the length of the sequence are not modified. If no :meth:`__getslice__` is found, a slice object is created instead, and passed to :meth:`__getitem__` instead."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2012
+#: ../../reference/datamodel.rst:2020
 msgid "Called to implement assignment to ``self[i:j]``. Same notes for *i* and *j* as for :meth:`__getslice__`."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2015
+#: ../../reference/datamodel.rst:2023
 msgid "This method is deprecated. If no :meth:`__setslice__` is found, or for extended slicing of the form ``self[i:j:k]``, a slice object is created, and passed to :meth:`__setitem__`, instead of :meth:`__setslice__` being called."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2022
+#: ../../reference/datamodel.rst:2030
 msgid "Called to implement deletion of ``self[i:j]``. Same notes for *i* and *j* as for :meth:`__getslice__`. This method is deprecated. If no :meth:`__delslice__` is found, or for extended slicing of the form ``self[i:j:k]``, a slice object is created, and passed to :meth:`__delitem__`, instead of :meth:`__delslice__` being called."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2028
+#: ../../reference/datamodel.rst:2036
 msgid "Notice that these methods are only invoked when a single slice with a single colon is used, and the slice method is available.  For slice operations involving extended slice notation, or in absence of the slice methods, :meth:`__getitem__`, :meth:`__setitem__` or :meth:`__delitem__` is called with a slice object as argument."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2034
+#: ../../reference/datamodel.rst:2042
 msgid "The following example demonstrate how to make your program or module compatible with earlier versions of Python (assuming that methods :meth:`__getitem__`, :meth:`__setitem__` and :meth:`__delitem__` support slice objects as arguments)::"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2059
+#: ../../reference/datamodel.rst:2067
 msgid "Note the calls to :func:`max`; these are necessary because of the handling of negative indices before the :meth:`__\\*slice__` methods are called.  When negative indexes are used, the :meth:`__\\*item__` methods receive them as provided, but the :meth:`__\\*slice__` methods get a \"cooked\" form of the index values.  For each negative index value, the length of the sequence is added to the index before calling the method (which may still result in a negative index); this is the customary handling of negative indexes by the built-in sequence types, and the :meth:`__\\*item__` methods are expected to do this as well.  However, since they should already be doing that, negative indexes cannot be passed in; they must be constrained to the bounds of the sequence before being passed to the :meth:`__\\*item__` methods. Calling ``max(0, i)`` conveniently returns the proper value."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2076
+#: ../../reference/datamodel.rst:2084
 msgid "Emulating numeric types"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2078
+#: ../../reference/datamodel.rst:2086
 msgid "The following methods can be defined to emulate numeric objects. Methods corresponding to operations that are not supported by the particular kind of number implemented (e.g., bitwise operations for non-integral numbers) should be left undefined."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2102
+#: ../../reference/datamodel.rst:2110
 msgid "These methods are called to implement the binary arithmetic operations (``+``, ``-``, ``*``, ``//``, ``%``, :func:`divmod`, :func:`pow`, ``**``, ``<<``, ``>>``, ``&``, ``^``, ``|``).  For instance, to evaluate the expression ``x + y``, where *x* is an instance of a class that has an :meth:`__add__` method, ``x.__add__(y)`` is called.  The :meth:`__divmod__` method should be the equivalent to using :meth:`__floordiv__` and :meth:`__mod__`; it should not be related to :meth:`__truediv__` (described below).  Note that :meth:`__pow__` should be defined to accept an optional third argument if the ternary version of the built-in :func:`pow` function is to be supported."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2112
+#: ../../reference/datamodel.rst:2120
 msgid "If one of those methods does not support the operation with the supplied arguments, it should return ``NotImplemented``."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2119
+#: ../../reference/datamodel.rst:2127
 msgid "The division operator (``/``) is implemented by these methods.  The :meth:`__truediv__` method is used when ``__future__.division`` is in effect, otherwise :meth:`__div__` is used.  If only one of these two methods is defined, the object will not support division in the alternate context; :exc:`TypeError` will be raised instead."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2145
+#: ../../reference/datamodel.rst:2153
 msgid "These methods are called to implement the binary arithmetic operations (``+``, ``-``, ``*``, ``/``, ``%``, :func:`divmod`, :func:`pow`, ``**``, ``<<``, ``>>``, ``&``, ``^``, ``|``) with reflected (swapped) operands.  These functions are only called if the left operand does not support the corresponding operation and the operands are of different types. [#]_ For instance, to evaluate the expression ``x - y``, where *y* is an instance of a class that has an :meth:`__rsub__` method, ``y.__rsub__(x)`` is called if ``x.__sub__(y)`` returns *NotImplemented*."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2156
+#: ../../reference/datamodel.rst:2164
 msgid "Note that ternary :func:`pow` will not try calling :meth:`__rpow__` (the coercion rules would become too complicated)."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2161
+#: ../../reference/datamodel.rst:2169
 msgid "If the right operand's type is a subclass of the left operand's type and that subclass provides the reflected method for the operation, this method will be called before the left operand's non-reflected method.  This behavior allows subclasses to override their ancestors' operations."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2181
+#: ../../reference/datamodel.rst:2189
 msgid "These methods are called to implement the augmented arithmetic assignments (``+=``, ``-=``, ``*=``, ``/=``, ``//=``, ``%=``, ``**=``, ``<<=``, ``>>=``, ``&=``, ``^=``, ``|=``).  These methods should attempt to do the operation in-place (modifying *self*) and return the result (which could be, but does not have to be, *self*).  If a specific method is not defined, the augmented assignment falls back to the normal methods.  For instance, to execute the statement ``x += y``, where *x* is an instance of a class that has an :meth:`__iadd__` method, ``x.__iadd__(y)`` is called.  If *x* is an instance of a class that does not define a :meth:`__iadd__` method, ``x.__add__(y)`` and ``y.__radd__(x)`` are considered, as with the evaluation of ``x + y``."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2200
+#: ../../reference/datamodel.rst:2208
 msgid "Called to implement the unary arithmetic operations (``-``, ``+``, :func:`abs` and ``~``)."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2215
+#: ../../reference/datamodel.rst:2223
 msgid "Called to implement the built-in functions :func:`complex`, :func:`int`, :func:`long`, and :func:`float`.  Should return a value of the appropriate type."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2226
+#: ../../reference/datamodel.rst:2234
 msgid "Called to implement the built-in functions :func:`oct` and :func:`hex`.  Should return a string value."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2232
+#: ../../reference/datamodel.rst:2240
 msgid "Called to implement :func:`operator.index`.  Also called whenever Python needs an integer object (such as in slicing).  Must return an integer (int or long)."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2240
+#: ../../reference/datamodel.rst:2248
 msgid "Called to implement \"mixed-mode\" numeric arithmetic.  Should either return a 2-tuple containing *self* and *other* converted to a common numeric type, or ``None`` if conversion is impossible.  When the common type would be the type of ``other``, it is sufficient to return ``None``, since the interpreter will also ask the other object to attempt a coercion (but sometimes, if the implementation of the other type cannot be changed, it is useful to do the conversion to the other type here).  A return value of ``NotImplemented`` is equivalent to returning ``None``."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2253
+#: ../../reference/datamodel.rst:2261
 msgid "Coercion rules"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2255
+#: ../../reference/datamodel.rst:2263
 msgid "This section used to document the rules for coercion.  As the language has evolved, the coercion rules have become hard to document precisely; documenting what one version of one particular implementation does is undesirable.  Instead, here are some informal guidelines regarding coercion.  In Python 3, coercion will not be supported."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2263
+#: ../../reference/datamodel.rst:2271
 msgid "If the left operand of a % operator is a string or Unicode object, no coercion takes place and the string formatting operation is invoked instead."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2268
+#: ../../reference/datamodel.rst:2276
 msgid "It is no longer recommended to define a coercion operation. Mixed-mode operations on types that don't define coercion pass the original arguments to the operation."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2274
+#: ../../reference/datamodel.rst:2282
 msgid "New-style classes (those derived from :class:`object`) never invoke the :meth:`__coerce__` method in response to a binary operator; the only time :meth:`__coerce__` is invoked is when the built-in function :func:`coerce` is called."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2281
+#: ../../reference/datamodel.rst:2289
 msgid "For most intents and purposes, an operator that returns ``NotImplemented`` is treated the same as one that is not implemented at all."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2286
+#: ../../reference/datamodel.rst:2294
 msgid "Below, :meth:`__op__` and :meth:`__rop__` are used to signify the generic method names corresponding to an operator; :meth:`__iop__` is used for the corresponding in-place operator.  For example, for the operator '``+``', :meth:`__add__` and :meth:`__radd__` are used for the left and right variant of the binary operator, and :meth:`__iadd__` for the in-place variant."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2294
+#: ../../reference/datamodel.rst:2302
 msgid "For objects *x* and *y*, first ``x.__op__(y)`` is tried.  If this is not implemented or returns ``NotImplemented``, ``y.__rop__(x)`` is tried.  If this is also not implemented or returns ``NotImplemented``, a :exc:`TypeError` exception is raised.  But see the following exception:"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2301
+#: ../../reference/datamodel.rst:2309
 msgid "Exception to the previous item: if the left operand is an instance of a built-in type or a new-style class, and the right operand is an instance of a proper subclass of that type or class and overrides the base's :meth:`__rop__` method, the right operand's :meth:`__rop__` method is tried *before* the left operand's :meth:`__op__` method."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2307
+#: ../../reference/datamodel.rst:2315
 msgid "This is done so that a subclass can completely override binary operators. Otherwise, the left operand's :meth:`__op__` method would always accept the right operand: when an instance of a given class is expected, an instance of a subclass of that class is always acceptable."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2314
+#: ../../reference/datamodel.rst:2322
 msgid "When either operand type defines a coercion, this coercion is called before that type's :meth:`__op__` or :meth:`__rop__` method is called, but no sooner.  If the coercion returns an object of a different type for the operand whose coercion is invoked, part of the process is redone using the new object."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2321
+#: ../../reference/datamodel.rst:2329
 msgid "When an in-place operator (like '``+=``') is used, if the left operand implements :meth:`__iop__`, it is invoked without any coercion.  When the operation falls back to :meth:`__op__` and/or :meth:`__rop__`, the normal coercion rules apply."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2328
+#: ../../reference/datamodel.rst:2336
 msgid "In ``x + y``, if *x* is a sequence that implements sequence concatenation, sequence concatenation is invoked."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2333
+#: ../../reference/datamodel.rst:2341
 msgid "In ``x * y``, if one operand is a sequence that implements sequence repetition, and the other is an integer (:class:`int` or :class:`long`), sequence repetition is invoked."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2339
+#: ../../reference/datamodel.rst:2347
 msgid "Rich comparisons (implemented by methods :meth:`__eq__` and so on) never use coercion.  Three-way comparison (implemented by :meth:`__cmp__`) does use coercion under the same conditions as other binary operations use it."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2345
+#: ../../reference/datamodel.rst:2353
 msgid "In the current implementation, the built-in numeric types :class:`int`, :class:`long`, :class:`float`, and :class:`complex` do not use coercion. All these types implement a :meth:`__coerce__` method, for use by the built-in :func:`coerce` function."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2352
+#: ../../reference/datamodel.rst:2360
 msgid "The complex type no longer makes implicit calls to the :meth:`__coerce__` method for mixed-type binary arithmetic operations."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2359
+#: ../../reference/datamodel.rst:2367
 msgid "With Statement Context Managers"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2363
+#: ../../reference/datamodel.rst:2371
 msgid "A :dfn:`context manager` is an object that defines the runtime context to be established when executing a :keyword:`with` statement. The context manager handles the entry into, and the exit from, the desired runtime context for the execution of the block of code.  Context managers are normally invoked using the :keyword:`with` statement (described in section :ref:`with`), but can also be used by directly invoking their methods."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2374
+#: ../../reference/datamodel.rst:2382
 msgid "Typical uses of context managers include saving and restoring various kinds of global state, locking and unlocking resources, closing opened files, etc."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2377
+#: ../../reference/datamodel.rst:2385
 msgid "For more information on context managers, see :ref:`typecontextmanager`."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2382
+#: ../../reference/datamodel.rst:2390
 msgid "Enter the runtime context related to this object. The :keyword:`with` statement will bind this method's return value to the target(s) specified in the :keyword:`as` clause of the statement, if any."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2389
+#: ../../reference/datamodel.rst:2397
 msgid "Exit the runtime context related to this object. The parameters describe the exception that caused the context to be exited. If the context was exited without an exception, all three arguments will be :const:`None`."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2393
+#: ../../reference/datamodel.rst:2401
 msgid "If an exception is supplied, and the method wishes to suppress the exception (i.e., prevent it from being propagated), it should return a true value. Otherwise, the exception will be processed normally upon exit from this method."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2397
+#: ../../reference/datamodel.rst:2405
 msgid "Note that :meth:`__exit__` methods should not reraise the passed-in exception; this is the caller's responsibility."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2404
+#: ../../reference/datamodel.rst:2412
 msgid ":pep:`343` - The \"with\" statement"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2404
+#: ../../reference/datamodel.rst:2412
 msgid "The specification, background, and examples for the Python :keyword:`with` statement."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2411
+#: ../../reference/datamodel.rst:2419
 msgid "Special method lookup for old-style classes"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2413
+#: ../../reference/datamodel.rst:2421
 msgid "For old-style classes, special methods are always looked up in exactly the same way as any other method or attribute. This is the case regardless of whether the method is being looked up explicitly as in ``x.__getitem__(i)`` or implicitly as in ``x[i]``."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2418
+#: ../../reference/datamodel.rst:2426
 msgid "This behaviour means that special methods may exhibit different behaviour for different instances of a single old-style class if the appropriate special attributes are set differently::"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2438
+#: ../../reference/datamodel.rst:2446
 msgid "Special method lookup for new-style classes"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2440
+#: ../../reference/datamodel.rst:2448
 msgid "For new-style classes, implicit invocations of special methods are only guaranteed to work correctly if defined on an object's type, not in the object's instance dictionary.  That behaviour is the reason why the following code raises an exception (unlike the equivalent example with old-style classes)::"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2455
+#: ../../reference/datamodel.rst:2463
 msgid "The rationale behind this behaviour lies with a number of special methods such as :meth:`__hash__` and :meth:`__repr__` that are implemented by all objects, including type objects. If the implicit lookup of these methods used the conventional lookup process, they would fail when invoked on the type object itself::"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2468
+#: ../../reference/datamodel.rst:2476
 msgid "Incorrectly attempting to invoke an unbound method of a class in this way is sometimes referred to as 'metaclass confusion', and is avoided by bypassing the instance when looking up special methods::"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2477
+#: ../../reference/datamodel.rst:2485
 msgid "In addition to bypassing any instance attributes in the interest of correctness, implicit special method lookup generally also bypasses the :meth:`__getattribute__` method even of the object's metaclass::"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2504
+#: ../../reference/datamodel.rst:2512
 msgid "Bypassing the :meth:`__getattribute__` machinery in this fashion provides significant scope for speed optimisations within the interpreter, at the cost of some flexibility in the handling of special methods (the special method *must* be set on the class object itself in order to be consistently invoked by the interpreter)."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2512
+#: ../../reference/datamodel.rst:2520
 msgid "Footnotes"
 msgstr ""
 
-#: ../../reference/datamodel.rst:2513
+#: ../../reference/datamodel.rst:2521
 msgid "It *is* possible in some cases to change an object's type, under certain controlled conditions. It generally isn't a good idea though, since it can lead to some very strange behaviour if it is handled incorrectly."
 msgstr ""
 
-#: ../../reference/datamodel.rst:2517
+#: ../../reference/datamodel.rst:2525
 msgid "For operands of the same type, it is assumed that if the non-reflected method (such as :meth:`__add__`) fails the operation is not supported, which is why the reflected method is not called."
 msgstr ""
 
