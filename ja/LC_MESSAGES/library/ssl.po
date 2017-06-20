@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-02-19 16:04+0000\n"
+"PO-Revision-Date: 2017-06-20 00:34+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -409,11 +409,11 @@ msgstr "デフォルトの暗号設定から RC4 が除かれました。"
 
 #: ../../library/ssl.rst:285
 msgid "ChaCha20/Poly1305 was added to the default cipher string."
-msgstr ""
+msgstr "デフォルトの暗号化文字列に ChaCha20/Poly1305 が追加されました。"
 
 #: ../../library/ssl.rst:287
 msgid "3DES was dropped from the default cipher string."
-msgstr ""
+msgstr "デフォルトの暗号化文字列から 3DES が除かれました。"
 
 #: ../../library/ssl.rst:291
 msgid ""
@@ -480,7 +480,7 @@ msgstr "乱数生成"
 msgid ""
 "OpenSSL has deprecated :func:`ssl.RAND_pseudo_bytes`, use "
 ":func:`ssl.RAND_bytes` instead."
-msgstr ""
+msgstr "OpenSSL は :func:`ssl.RAND_pseudo_bytes` を廃止しました。代わりに :func:`ssl.RAND_bytes` を使用してください。"
 
 #: ../../library/ssl.rst:339
 msgid ""
@@ -507,7 +507,7 @@ msgstr "エントロピー収集デーモンについては、 http://egd.source
 
 #: ../../library/ssl.rst:355
 msgid "Availability: not available with LibreSSL and OpenSSL > 1.1.0"
-msgstr ""
+msgstr "利用出来る環境: LibreSSL および 1.1.0 を超えるバージョンの OpenSSL では利用できません。"
 
 #: ../../library/ssl.rst:359
 msgid ""
@@ -602,13 +602,13 @@ msgstr "OpenSSL デフォルトの cafile, capath を指すパスを名前付き
 msgid ""
 ":attr:`cafile` - resolved path to cafile or ``None`` if the file doesn't "
 "exist,"
-msgstr ""
+msgstr ":attr:`cafile` - cafile の解決済みパス、またはファイルが存在しない場合は ``None``"
 
 #: ../../library/ssl.rst:453
 msgid ""
 ":attr:`capath` - resolved path to capath or ``None`` if the directory "
 "doesn't exist,"
-msgstr ""
+msgstr ":attr:`capath` - capath の解決済みパス、またはディレクトリが存在しない場合は ``None``"
 
 #: ../../library/ssl.rst:454
 msgid ""
@@ -634,7 +634,7 @@ msgstr ":attr:`openssl_capath` - OpenSSL にハードコードされた capath �
 msgid ""
 "Availability: LibreSSL ignores the environment vars "
 ":attr:`openssl_cafile_env` and :attr:`openssl_capath_env`"
-msgstr ""
+msgstr "利用出来る環境: LibreSSL では環境変数 :attr:`openssl_cafile_env` と :attr:`openssl_capath_env` が無視されます"
 
 #: ../../library/ssl.rst:466
 msgid ""
