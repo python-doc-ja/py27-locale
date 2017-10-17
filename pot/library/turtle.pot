@@ -543,6 +543,57 @@ msgstr ""
 msgid "Most of the examples in this section refer to a Turtle instance called ``turtle``."
 msgstr ""
 
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+#: ../../library/turtle.rst:0
+msgid "パラメータ"
+msgstr ""
+
 #: ../../library/turtle.rst:227
 #: ../../library/turtle.rst:270
 #: ../../library/turtle.rst:293
@@ -1937,7 +1988,7 @@ msgid ":func:`clone`, :func:`undo`"
 msgstr ""
 
 #: ../../library/turtle.rst:2222
-msgid "yingyang"
+msgid "yinyang"
 msgstr ""
 
 #: ../../library/turtle.rst:2222

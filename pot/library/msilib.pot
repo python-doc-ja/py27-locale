@@ -224,7 +224,7 @@ msgid "Errors"
 msgstr ""
 
 #: ../../library/msilib.rst:314
-msgid "All wrappers around MSI functions raise :exc:`MsiError`; the string inside the exception will contain more detail."
+msgid "All wrappers around MSI functions raise :exc:`MSIError`; the string inside the exception will contain more detail."
 msgstr ""
 
 #: ../../library/msilib.rst:321

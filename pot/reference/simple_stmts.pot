@@ -529,7 +529,7 @@ msgid "The current implementation does not enforce the latter two restrictions, 
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:975
-msgid "**Programmer's note:** the :keyword:`global` is a directive to the parser.  It applies only to code parsed at the same time as the :keyword:`global` statement. In particular, a :keyword:`global` statement contained in an :keyword:`exec` statement does not affect the code block *containing* the :keyword:`exec` statement, and code contained in an :keyword:`exec` statement is unaffected by :keyword:`global` statements in the code containing the :keyword:`exec` statement.  The same applies to the :func:`eval`, :func:`execfile` and :func:`compile` functions."
+msgid "**Programmer's note:** :keyword:`global` is a directive to the parser.  It applies only to code parsed at the same time as the :keyword:`global` statement. In particular, a :keyword:`global` statement contained in an :keyword:`exec` statement does not affect the code block *containing* the :keyword:`exec` statement, and code contained in an :keyword:`exec` statement is unaffected by :keyword:`global` statements in the code containing the :keyword:`exec` statement.  The same applies to the :func:`eval`, :func:`execfile` and :func:`compile` functions."
 msgstr ""
 
 #: ../../reference/simple_stmts.rst:988

@@ -19,10 +19,6 @@ msgstr ""
 msgid ":mod:`logging` --- Logging facility for Python"
 msgstr ""
 
-#: ../../library/logging.rst:0
-msgid "Important"
-msgstr ""
-
 #: ../../library/logging.rst:16
 msgid "This page contains the API reference information. For tutorial information and discussion of more advanced topics, see"
 msgstr ""
@@ -446,6 +442,10 @@ msgstr ""
 
 #: ../../library/logging.rst:570
 msgid "The primary information is passed in :attr:`msg` and :attr:`args`, which are combined using ``msg % args`` to create the :attr:`message` field of the record."
+msgstr ""
+
+#: ../../library/logging.rst:0
+msgid "パラメータ"
 msgstr ""
 
 #: ../../library/logging.rst:574

@@ -19,16 +19,20 @@ msgstr ""
 msgid "Descriptor HowTo Guide"
 msgstr ""
 
+#: ../../howto/descriptor.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../howto/descriptor.rst:5
 msgid "Raymond Hettinger"
 msgstr ""
 
-#: ../../howto/descriptor.rst:6
-msgid "<python at rcn dot com>"
+#: ../../howto/descriptor.rst:0
+msgid "Contact"
 msgstr ""
 
-#: ../../howto/descriptor.rst:0
-msgid "Contents"
+#: ../../howto/descriptor.rst:6
+msgid "<python at rcn dot com>"
 msgstr ""
 
 #: ../../howto/descriptor.rst:11

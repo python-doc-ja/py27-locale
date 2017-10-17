@@ -19,8 +19,16 @@ msgstr ""
 msgid "Functional Programming HOWTO"
 msgstr ""
 
+#: ../../howto/functional.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../howto/functional.rst:5
 msgid "A. M. Kuchling"
+msgstr ""
+
+#: ../../howto/functional.rst:0
+msgid "Release"
 msgstr ""
 
 #: ../../howto/functional.rst:6

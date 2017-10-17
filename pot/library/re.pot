@@ -509,482 +509,482 @@ msgid "Display debug information about compiled expression."
 msgstr ""
 
 #: ../../library/re.rst:488
-msgid "Perform case-insensitive matching; expressions like ``[A-Z]`` will match lowercase letters, too.  This is not affected by the current locale."
+msgid "Perform case-insensitive matching; expressions like ``[A-Z]`` will match lowercase letters, too.  This is not affected by the current locale.  To get this effect on non-ASCII Unicode characters such as ``ü`` and ``Ü``, add the :const:`UNICODE` flag."
 msgstr ""
 
-#: ../../library/re.rst:495
+#: ../../library/re.rst:497
 msgid "Make ``\\w``, ``\\W``, ``\\b``, ``\\B``, ``\\s`` and ``\\S`` dependent on the current locale."
 msgstr ""
 
-#: ../../library/re.rst:502
+#: ../../library/re.rst:504
 msgid "When specified, the pattern character ``'^'`` matches at the beginning of the string and at the beginning of each line (immediately following each newline); and the pattern character ``'$'`` matches at the end of the string and at the end of each line (immediately preceding each newline).  By default, ``'^'`` matches only at the beginning of the string, and ``'$'`` only at the end of the string and immediately before the newline (if any) at the end of the string."
 msgstr ""
 
-#: ../../library/re.rst:513
+#: ../../library/re.rst:515
 msgid "Make the ``'.'`` special character match any character at all, including a newline; without this flag, ``'.'`` will match anything *except* a newline."
 msgstr ""
 
-#: ../../library/re.rst:520
-msgid "Make ``\\w``, ``\\W``, ``\\b``, ``\\B``, ``\\d``, ``\\D``, ``\\s`` and ``\\S`` dependent on the Unicode character properties database."
+#: ../../library/re.rst:522
+msgid "Make the ``\\w``, ``\\W``, ``\\b``, ``\\B``, ``\\d``, ``\\D``, ``\\s`` and ``\\S`` sequences dependent on the Unicode character properties database. Also enables non-ASCII matching for :const:`IGNORECASE`."
 msgstr ""
 
-#: ../../library/re.rst:529
+#: ../../library/re.rst:532
 msgid "This flag allows you to write regular expressions that look nicer and are more readable by allowing you to visually separate logical sections of the pattern and add comments. Whitespace within the pattern is ignored, except when in a character class or when preceded by an unescaped backslash. When a line contains a ``#`` that is not in a character class and is not preceded by an unescaped backslash, all characters from the leftmost such ``#`` through the end of the line are ignored."
 msgstr ""
 
-#: ../../library/re.rst:537
+#: ../../library/re.rst:540
 msgid "This means that the two following regular expression objects that match a decimal number are functionally equal::"
 msgstr ""
 
-#: ../../library/re.rst:548
+#: ../../library/re.rst:551
 msgid "Scan through *string* looking for the first location where the regular expression *pattern* produces a match, and return a corresponding :class:`MatchObject` instance. Return ``None`` if no position in the string matches the pattern; note that this is different from finding a zero-length match at some point in the string."
 msgstr ""
 
-#: ../../library/re.rst:557
+#: ../../library/re.rst:560
 msgid "If zero or more characters at the beginning of *string* match the regular expression *pattern*, return a corresponding :class:`MatchObject` instance. Return ``None`` if the string does not match the pattern; note that this is different from a zero-length match."
 msgstr ""
 
-#: ../../library/re.rst:562
+#: ../../library/re.rst:565
 msgid "Note that even in :const:`MULTILINE` mode, :func:`re.match` will only match at the beginning of the string and not at the beginning of each line."
 msgstr ""
 
-#: ../../library/re.rst:565
+#: ../../library/re.rst:568
 msgid "If you want to locate a match anywhere in *string*, use :func:`search` instead (see also :ref:`search-vs-match`)."
 msgstr ""
 
-#: ../../library/re.rst:571
+#: ../../library/re.rst:574
 msgid "Split *string* by the occurrences of *pattern*.  If capturing parentheses are used in *pattern*, then the text of all groups in the pattern are also returned as part of the resulting list. If *maxsplit* is nonzero, at most *maxsplit* splits occur, and the remainder of the string is returned as the final element of the list.  (Incompatibility note: in the original Python 1.5 release, *maxsplit* was ignored.  This has been fixed in later releases.)"
 msgstr ""
 
-#: ../../library/re.rst:587
+#: ../../library/re.rst:590
 msgid "If there are capturing groups in the separator and it matches at the start of the string, the result will start with an empty string.  The same holds for the end of the string:"
 msgstr ""
 
-#: ../../library/re.rst:594
+#: ../../library/re.rst:597
 msgid "That way, separator components are always found at the same relative indices within the result list (e.g., if there's one capturing group in the separator, the 0th, the 2nd and so forth)."
 msgstr ""
 
-#: ../../library/re.rst:598
+#: ../../library/re.rst:601
 msgid "Note that *split* will never split a string on an empty pattern match. For example:"
 msgstr ""
 
-#: ../../library/re.rst:606
-#: ../../library/re.rst:621
-#: ../../library/re.rst:635
-#: ../../library/re.rst:685
-#: ../../library/re.rst:694
+#: ../../library/re.rst:609
+#: ../../library/re.rst:624
+#: ../../library/re.rst:638
+#: ../../library/re.rst:688
+#: ../../library/re.rst:697
 msgid "Added the optional flags argument."
 msgstr ""
 
-#: ../../library/re.rst:612
+#: ../../library/re.rst:615
 msgid "Return all non-overlapping matches of *pattern* in *string*, as a list of strings.  The *string* is scanned left-to-right, and matches are returned in the order found.  If one or more groups are present in the pattern, return a list of groups; this will be a list of tuples if the pattern has more than one group.  Empty matches are included in the result unless they touch the beginning of another match."
 msgstr ""
 
-#: ../../library/re.rst:627
+#: ../../library/re.rst:630
 msgid "Return an :term:`iterator` yielding :class:`MatchObject` instances over all non-overlapping matches for the RE *pattern* in *string*.  The *string* is scanned left-to-right, and matches are returned in the order found.  Empty matches are included in the result unless they touch the beginning of another match."
 msgstr ""
 
-#: ../../library/re.rst:641
+#: ../../library/re.rst:644
 msgid "Return the string obtained by replacing the leftmost non-overlapping occurrences of *pattern* in *string* by the replacement *repl*.  If the pattern isn't found, *string* is returned unchanged.  *repl* can be a string or a function; if it is a string, any backslash escapes in it are processed.  That is, ``\\n`` is converted to a single newline character, ``\\r`` is converted to a carriage return, and so forth.  Unknown escapes such as ``\\j`` are left alone.  Backreferences, such as ``\\6``, are replaced with the substring matched by group 6 in the pattern. For example:"
 msgstr ""
 
-#: ../../library/re.rst:655
+#: ../../library/re.rst:658
 msgid "If *repl* is a function, it is called for every non-overlapping occurrence of *pattern*.  The function takes a single match object argument, and returns the replacement string.  For example:"
 msgstr ""
 
-#: ../../library/re.rst:667
+#: ../../library/re.rst:670
 msgid "The pattern may be a string or an RE object."
 msgstr ""
 
-#: ../../library/re.rst:669
+#: ../../library/re.rst:672
 msgid "The optional argument *count* is the maximum number of pattern occurrences to be replaced; *count* must be a non-negative integer.  If omitted or zero, all occurrences will be replaced. Empty matches for the pattern are replaced only when not adjacent to a previous match, so ``sub('x*', '-', 'abc')`` returns ``'-a-b-c-'``."
 msgstr ""
 
-#: ../../library/re.rst:675
+#: ../../library/re.rst:678
 msgid "In string-type *repl* arguments, in addition to the character escapes and backreferences described above, ``\\g<name>`` will use the substring matched by the group named ``name``, as defined by the ``(?P<name>...)`` syntax. ``\\g<number>`` uses the corresponding group number; ``\\g<2>`` is therefore equivalent to ``\\2``, but isn't ambiguous in a replacement such as ``\\g<2>0``.  ``\\20`` would be interpreted as a reference to group 20, not a reference to group 2 followed by the literal character ``'0'``.  The backreference ``\\g<0>`` substitutes in the entire substring matched by the RE."
 msgstr ""
 
-#: ../../library/re.rst:691
+#: ../../library/re.rst:694
 msgid "Perform the same operation as :func:`sub`, but return a tuple ``(new_string, number_of_subs_made)``."
 msgstr ""
 
-#: ../../library/re.rst:700
+#: ../../library/re.rst:703
 msgid "Escape all the characters in *pattern* except ASCII letters and numbers. This is useful if you want to match an arbitrary literal string that may have regular expression metacharacters in it.  For example::"
 msgstr ""
 
-#: ../../library/re.rst:718
+#: ../../library/re.rst:721
 msgid "Clear the regular expression cache."
 msgstr ""
 
-#: ../../library/re.rst:723
+#: ../../library/re.rst:726
 msgid "Exception raised when a string passed to one of the functions here is not a valid regular expression (for example, it might contain unmatched parentheses) or when some other error occurs during compilation or matching.  It is never an error if a string contains no match for a pattern."
 msgstr ""
 
-#: ../../library/re.rst:732
+#: ../../library/re.rst:735
 msgid "Regular Expression Objects"
 msgstr ""
 
-#: ../../library/re.rst:736
+#: ../../library/re.rst:739
 msgid "The :class:`RegexObject` class supports the following methods and attributes:"
 msgstr ""
 
-#: ../../library/re.rst:740
+#: ../../library/re.rst:743
 msgid "Scan through *string* looking for a location where this regular expression produces a match, and return a corresponding :class:`MatchObject` instance. Return ``None`` if no position in the string matches the pattern; note that this is different from finding a zero-length match at some point in the string."
 msgstr ""
 
-#: ../../library/re.rst:745
+#: ../../library/re.rst:748
 msgid "The optional second parameter *pos* gives an index in the string where the search is to start; it defaults to ``0``.  This is not completely equivalent to slicing the string; the ``'^'`` pattern character matches at the real beginning of the string and at positions just after a newline, but not necessarily at the index where the search is to start."
 msgstr ""
 
-#: ../../library/re.rst:751
+#: ../../library/re.rst:754
 msgid "The optional parameter *endpos* limits how far the string will be searched; it will be as if the string is *endpos* characters long, so only the characters from *pos* to ``endpos - 1`` will be searched for a match.  If *endpos* is less than *pos*, no match will be found, otherwise, if *rx* is a compiled regular expression object, ``rx.search(string, 0, 50)`` is equivalent to ``rx.search(string[:50], 0)``."
 msgstr ""
 
-#: ../../library/re.rst:766
+#: ../../library/re.rst:769
 msgid "If zero or more characters at the *beginning* of *string* match this regular expression, return a corresponding :class:`MatchObject` instance.  Return ``None`` if the string does not match the pattern; note that this is different from a zero-length match."
 msgstr ""
 
-#: ../../library/re.rst:771
+#: ../../library/re.rst:774
 msgid "The optional *pos* and *endpos* parameters have the same meaning as for the :meth:`~RegexObject.search` method."
 msgstr ""
 
-#: ../../library/re.rst:779
+#: ../../library/re.rst:782
 msgid "If you want to locate a match anywhere in *string*, use :meth:`~RegexObject.search` instead (see also :ref:`search-vs-match`)."
 msgstr ""
 
-#: ../../library/re.rst:785
+#: ../../library/re.rst:788
 msgid "Identical to the :func:`split` function, using the compiled pattern."
 msgstr ""
 
-#: ../../library/re.rst:790
+#: ../../library/re.rst:793
 msgid "Similar to the :func:`findall` function, using the compiled pattern, but also accepts optional *pos* and *endpos* parameters that limit the search region like for :meth:`match`."
 msgstr ""
 
-#: ../../library/re.rst:797
+#: ../../library/re.rst:800
 msgid "Similar to the :func:`finditer` function, using the compiled pattern, but also accepts optional *pos* and *endpos* parameters that limit the search region like for :meth:`match`."
 msgstr ""
 
-#: ../../library/re.rst:804
+#: ../../library/re.rst:807
 msgid "Identical to the :func:`sub` function, using the compiled pattern."
 msgstr ""
 
-#: ../../library/re.rst:809
+#: ../../library/re.rst:812
 msgid "Identical to the :func:`subn` function, using the compiled pattern."
 msgstr ""
 
-#: ../../library/re.rst:814
+#: ../../library/re.rst:817
 msgid "The regex matching flags.  This is a combination of the flags given to :func:`.compile` and any ``(?...)`` inline flags in the pattern."
 msgstr ""
 
-#: ../../library/re.rst:820
+#: ../../library/re.rst:823
 msgid "The number of capturing groups in the pattern."
 msgstr ""
 
-#: ../../library/re.rst:825
+#: ../../library/re.rst:828
 msgid "A dictionary mapping any symbolic group names defined by ``(?P<id>)`` to group numbers.  The dictionary is empty if no symbolic groups were used in the pattern."
 msgstr ""
 
-#: ../../library/re.rst:832
+#: ../../library/re.rst:835
 msgid "The pattern string from which the RE object was compiled."
 msgstr ""
 
-#: ../../library/re.rst:838
+#: ../../library/re.rst:841
 msgid "Match Objects"
 msgstr ""
 
-#: ../../library/re.rst:842
+#: ../../library/re.rst:845
 msgid "Match objects always have a boolean value of ``True``. Since :meth:`~regex.match` and :meth:`~regex.search` return ``None`` when there is no match, you can test whether there was a match with a simple ``if`` statement::"
 msgstr ""
 
-#: ../../library/re.rst:851
+#: ../../library/re.rst:854
 msgid "Match objects support the following methods and attributes:"
 msgstr ""
 
-#: ../../library/re.rst:856
+#: ../../library/re.rst:859
 msgid "Return the string obtained by doing backslash substitution on the template string *template*, as done by the :meth:`~RegexObject.sub` method.  Escapes such as ``\\n`` are converted to the appropriate characters, and numeric backreferences (``\\1``, ``\\2``) and named backreferences (``\\g<1>``, ``\\g<name>``) are replaced by the contents of the corresponding group."
 msgstr ""
 
-#: ../../library/re.rst:865
+#: ../../library/re.rst:868
 msgid "Returns one or more subgroups of the match.  If there is a single argument, the result is a single string; if there are multiple arguments, the result is a tuple with one item per argument. Without arguments, *group1* defaults to zero (the whole match is returned). If a *groupN* argument is zero, the corresponding return value is the entire matching string; if it is in the inclusive range [1..99], it is the string matching the corresponding parenthesized group.  If a group number is negative or larger than the number of groups defined in the pattern, an :exc:`IndexError` exception is raised. If a group is contained in a part of the pattern that did not match, the corresponding result is ``None``. If a group is contained in a part of the pattern that matched multiple times, the last match is returned."
 msgstr ""
 
-#: ../../library/re.rst:887
+#: ../../library/re.rst:890
 msgid "If the regular expression uses the ``(?P<name>...)`` syntax, the *groupN* arguments may also be strings identifying groups by their group name.  If a string argument is not used as a group name in the pattern, an :exc:`IndexError` exception is raised."
 msgstr ""
 
-#: ../../library/re.rst:892
+#: ../../library/re.rst:895
 msgid "A moderately complicated example:"
 msgstr ""
 
-#: ../../library/re.rst:900
+#: ../../library/re.rst:903
 msgid "Named groups can also be referred to by their index:"
 msgstr ""
 
-#: ../../library/re.rst:907
+#: ../../library/re.rst:910
 msgid "If a group matches multiple times, only the last match is accessible:"
 msgstr ""
 
-#: ../../library/re.rst:916
+#: ../../library/re.rst:919
 msgid "Return a tuple containing all the subgroups of the match, from 1 up to however many groups are in the pattern.  The *default* argument is used for groups that did not participate in the match; it defaults to ``None``.  (Incompatibility note: in the original Python 1.5 release, if the tuple was one element long, a string would be returned instead.  In later versions (from 1.5.1 on), a singleton tuple is returned in such cases.)"
 msgstr ""
 
-#: ../../library/re.rst:923
+#: ../../library/re.rst:926
 msgid "For example:"
 msgstr ""
 
-#: ../../library/re.rst:929
+#: ../../library/re.rst:932
 msgid "If we make the decimal place and everything after it optional, not all groups might participate in the match.  These groups will default to ``None`` unless the *default* argument is given:"
 msgstr ""
 
-#: ../../library/re.rst:942
+#: ../../library/re.rst:945
 msgid "Return a dictionary containing all the *named* subgroups of the match, keyed by the subgroup name.  The *default* argument is used for groups that did not participate in the match; it defaults to ``None``.  For example:"
 msgstr ""
 
-#: ../../library/re.rst:954
+#: ../../library/re.rst:957
 msgid "Return the indices of the start and end of the substring matched by *group*; *group* defaults to zero (meaning the whole matched substring). Return ``-1`` if *group* exists but did not contribute to the match.  For a match object *m*, and a group *g* that did contribute to the match, the substring matched by group *g* (equivalent to ``m.group(g)``) is ::"
 msgstr ""
 
-#: ../../library/re.rst:962
+#: ../../library/re.rst:965
 msgid "Note that ``m.start(group)`` will equal ``m.end(group)`` if *group* matched a null string.  For example, after ``m = re.search('b(c?)', 'cba')``, ``m.start(0)`` is 1, ``m.end(0)`` is 2, ``m.start(1)`` and ``m.end(1)`` are both 2, and ``m.start(2)`` raises an :exc:`IndexError` exception."
 msgstr ""
 
-#: ../../library/re.rst:967
+#: ../../library/re.rst:970
 msgid "An example that will remove *remove_this* from email addresses:"
 msgstr ""
 
-#: ../../library/re.rst:977
+#: ../../library/re.rst:980
 msgid "For :class:`MatchObject` *m*, return the 2-tuple ``(m.start(group), m.end(group))``. Note that if *group* did not contribute to the match, this is ``(-1, -1)``.  *group* defaults to zero, the entire match."
 msgstr ""
 
-#: ../../library/re.rst:984
+#: ../../library/re.rst:987
 msgid "The value of *pos* which was passed to the :meth:`~RegexObject.search` or :meth:`~RegexObject.match` method of the :class:`RegexObject`.  This is the index into the string at which the RE engine started looking for a match."
 msgstr ""
 
-#: ../../library/re.rst:991
+#: ../../library/re.rst:994
 msgid "The value of *endpos* which was passed to the :meth:`~RegexObject.search` or :meth:`~RegexObject.match` method of the :class:`RegexObject`.  This is the index into the string beyond which the RE engine will not go."
 msgstr ""
 
-#: ../../library/re.rst:998
+#: ../../library/re.rst:1001
 msgid "The integer index of the last matched capturing group, or ``None`` if no group was matched at all. For example, the expressions ``(a)b``, ``((a)(b))``, and ``((ab))`` will have ``lastindex == 1`` if applied to the string ``'ab'``, while the expression ``(a)(b)`` will have ``lastindex == 2``, if applied to the same string."
 msgstr ""
 
-#: ../../library/re.rst:1007
+#: ../../library/re.rst:1010
 msgid "The name of the last matched capturing group, or ``None`` if the group didn't have a name, or if no group was matched at all."
 msgstr ""
 
-#: ../../library/re.rst:1013
+#: ../../library/re.rst:1016
 msgid "The regular expression object whose :meth:`~RegexObject.match` or :meth:`~RegexObject.search` method produced this :class:`MatchObject` instance."
 msgstr ""
 
-#: ../../library/re.rst:1020
+#: ../../library/re.rst:1023
 msgid "The string passed to :meth:`~RegexObject.match` or :meth:`~RegexObject.search`."
 msgstr ""
 
-#: ../../library/re.rst:1025
+#: ../../library/re.rst:1028
 msgid "Examples"
 msgstr ""
 
-#: ../../library/re.rst:1029
+#: ../../library/re.rst:1032
 msgid "Checking For a Pair"
 msgstr ""
 
-#: ../../library/re.rst:1031
+#: ../../library/re.rst:1034
 msgid "In this example, we'll use the following helper function to display match objects a little more gracefully:"
 msgstr ""
 
-#: ../../library/re.rst:1041
+#: ../../library/re.rst:1044
 msgid "Suppose you are writing a poker program where a player's hand is represented as a 5-character string with each character representing a card, \"a\" for ace, \"k\" for king, \"q\" for queen, \"j\" for jack, \"t\" for 10, and \"2\" through \"9\" representing the card with that value."
 msgstr ""
 
-#: ../../library/re.rst:1046
+#: ../../library/re.rst:1049
 msgid "To see if a given string is a valid hand, one could do the following:"
 msgstr ""
 
-#: ../../library/re.rst:1056
+#: ../../library/re.rst:1059
 msgid "That last hand, ``\"727ak\"``, contained a pair, or two of the same valued cards. To match this with a regular expression, one could use backreferences as such:"
 msgstr ""
 
-#: ../../library/re.rst:1066
+#: ../../library/re.rst:1069
 msgid "To find out what card the pair consists of, one could use the :meth:`~MatchObject.group` method of :class:`MatchObject` in the following manner:"
 msgstr ""
 
-#: ../../library/re.rst:1087
+#: ../../library/re.rst:1090
 msgid "Simulating scanf()"
 msgstr ""
 
-#: ../../library/re.rst:1091
+#: ../../library/re.rst:1094
 msgid "Python does not currently have an equivalent to :c:func:`scanf`.  Regular expressions are generally more powerful, though also more verbose, than :c:func:`scanf` format strings.  The table below offers some more-or-less equivalent mappings between :c:func:`scanf` format tokens and regular expressions."
 msgstr ""
 
-#: ../../library/re.rst:1098
+#: ../../library/re.rst:1101
 msgid ":c:func:`scanf` Token"
 msgstr ""
 
-#: ../../library/re.rst:1098
+#: ../../library/re.rst:1101
 msgid "Regular Expression"
 msgstr ""
 
-#: ../../library/re.rst:1100
+#: ../../library/re.rst:1103
 msgid "``%c``"
 msgstr ""
 
-#: ../../library/re.rst:1100
+#: ../../library/re.rst:1103
 msgid "``.``"
 msgstr ""
 
-#: ../../library/re.rst:1102
+#: ../../library/re.rst:1105
 msgid "``%5c``"
 msgstr ""
 
-#: ../../library/re.rst:1102
+#: ../../library/re.rst:1105
 msgid "``.{5}``"
 msgstr ""
 
-#: ../../library/re.rst:1104
+#: ../../library/re.rst:1107
 msgid "``%d``"
 msgstr ""
 
-#: ../../library/re.rst:1104
+#: ../../library/re.rst:1107
 msgid "``[-+]?\\d+``"
 msgstr ""
 
-#: ../../library/re.rst:1106
+#: ../../library/re.rst:1109
 msgid "``%e``, ``%E``, ``%f``, ``%g``"
 msgstr ""
 
-#: ../../library/re.rst:1106
+#: ../../library/re.rst:1109
 msgid "``[-+]?(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?``"
 msgstr ""
 
-#: ../../library/re.rst:1108
+#: ../../library/re.rst:1111
 msgid "``%i``"
 msgstr ""
 
-#: ../../library/re.rst:1108
+#: ../../library/re.rst:1111
 msgid "``[-+]?(0[xX][\\dA-Fa-f]+|0[0-7]*|\\d+)``"
 msgstr ""
 
-#: ../../library/re.rst:1110
+#: ../../library/re.rst:1113
 msgid "``%o``"
 msgstr ""
 
-#: ../../library/re.rst:1110
+#: ../../library/re.rst:1113
 msgid "``[-+]?[0-7]+``"
 msgstr ""
 
-#: ../../library/re.rst:1112
+#: ../../library/re.rst:1115
 msgid "``%s``"
 msgstr ""
 
-#: ../../library/re.rst:1112
+#: ../../library/re.rst:1115
 msgid "``\\S+``"
 msgstr ""
 
-#: ../../library/re.rst:1114
+#: ../../library/re.rst:1117
 msgid "``%u``"
 msgstr ""
 
-#: ../../library/re.rst:1114
+#: ../../library/re.rst:1117
 msgid "``\\d+``"
 msgstr ""
 
-#: ../../library/re.rst:1116
+#: ../../library/re.rst:1119
 msgid "``%x``, ``%X``"
 msgstr ""
 
-#: ../../library/re.rst:1116
+#: ../../library/re.rst:1119
 msgid "``[-+]?(0[xX])?[\\dA-Fa-f]+``"
 msgstr ""
 
-#: ../../library/re.rst:1119
+#: ../../library/re.rst:1122
 msgid "To extract the filename and numbers from a string like ::"
 msgstr ""
 
-#: ../../library/re.rst:1123
+#: ../../library/re.rst:1126
 msgid "you would use a :c:func:`scanf` format like ::"
 msgstr ""
 
-#: ../../library/re.rst:1127
+#: ../../library/re.rst:1130
 msgid "The equivalent regular expression would be ::"
 msgstr ""
 
-#: ../../library/re.rst:1135
+#: ../../library/re.rst:1138
 msgid "search() vs. match()"
 msgstr ""
 
-#: ../../library/re.rst:1139
+#: ../../library/re.rst:1142
 msgid "Python offers two different primitive operations based on regular expressions: :func:`re.match` checks for a match only at the beginning of the string, while :func:`re.search` checks for a match anywhere in the string (this is what Perl does by default)."
 msgstr ""
 
-#: ../../library/re.rst:1144
+#: ../../library/re.rst:1147
 msgid "For example::"
 msgstr ""
 
-#: ../../library/re.rst:1150
+#: ../../library/re.rst:1153
 msgid "Regular expressions beginning with ``'^'`` can be used with :func:`search` to restrict the match at the beginning of the string::"
 msgstr ""
 
-#: ../../library/re.rst:1158
+#: ../../library/re.rst:1161
 msgid "Note however that in :const:`MULTILINE` mode :func:`match` only matches at the beginning of the string, whereas using :func:`search` with a regular expression beginning with ``'^'`` will match at the beginning of each line."
 msgstr ""
 
-#: ../../library/re.rst:1168
+#: ../../library/re.rst:1171
 msgid "Making a Phonebook"
 msgstr ""
 
-#: ../../library/re.rst:1170
+#: ../../library/re.rst:1173
 msgid ":func:`split` splits a string into a list delimited by the passed pattern.  The method is invaluable for converting textual data into data structures that can be easily read and modified by Python as demonstrated in the following example that creates a phonebook."
 msgstr ""
 
-#: ../../library/re.rst:1175
+#: ../../library/re.rst:1178
 msgid "First, here is the input.  Normally it may come from a file, here we are using triple-quoted string syntax:"
 msgstr ""
 
-#: ../../library/re.rst:1186
+#: ../../library/re.rst:1189
 msgid "The entries are separated by one or more newlines. Now we convert the string into a list with each nonempty line having its own entry:"
 msgstr ""
 
-#: ../../library/re.rst:1199
+#: ../../library/re.rst:1202
 msgid "Finally, split each entry into a list with first name, last name, telephone number, and address.  We use the ``maxsplit`` parameter of :func:`split` because the address has spaces, our splitting pattern, in it:"
 msgstr ""
 
-#: ../../library/re.rst:1212
+#: ../../library/re.rst:1215
 msgid "The ``:?`` pattern matches the colon after the last name, so that it does not occur in the result list.  With a ``maxsplit`` of ``4``, we could separate the house number from the street name:"
 msgstr ""
 
-#: ../../library/re.rst:1227
+#: ../../library/re.rst:1230
 msgid "Text Munging"
 msgstr ""
 
-#: ../../library/re.rst:1229
+#: ../../library/re.rst:1232
 msgid ":func:`sub` replaces every occurrence of a pattern with a string or the result of a function.  This example demonstrates using :func:`sub` with a function to \"munge\" text, or randomize the order of all the characters in each word of a sentence except for the first and last characters::"
 msgstr ""
 
-#: ../../library/re.rst:1246
+#: ../../library/re.rst:1249
 msgid "Finding all Adverbs"
 msgstr ""
 
-#: ../../library/re.rst:1248
+#: ../../library/re.rst:1251
 msgid ":func:`findall` matches *all* occurrences of a pattern, not just the first one as :func:`search` does.  For example, if one was a writer and wanted to find all of the adverbs in some text, he or she might use :func:`findall` in the following manner:"
 msgstr ""
 
-#: ../../library/re.rst:1259
+#: ../../library/re.rst:1262
 msgid "Finding all Adverbs and their Positions"
 msgstr ""
 
-#: ../../library/re.rst:1261
+#: ../../library/re.rst:1264
 msgid "If one wants more information about all matches of a pattern than the matched text, :func:`finditer` is useful as it provides instances of :class:`MatchObject` instead of strings.  Continuing with the previous example, if one was a writer who wanted to find all of the adverbs *and their positions* in some text, he or she would use :func:`finditer` in the following manner:"
 msgstr ""
 
-#: ../../library/re.rst:1275
+#: ../../library/re.rst:1278
 msgid "Raw String Notation"
 msgstr ""
 
-#: ../../library/re.rst:1277
+#: ../../library/re.rst:1280
 msgid "Raw string notation (``r\"text\"``) keeps regular expressions sane.  Without it, every backslash (``'\\'``) in a regular expression would have to be prefixed with another one to escape it.  For example, the two following lines of code are functionally identical:"
 msgstr ""
 
-#: ../../library/re.rst:1287
+#: ../../library/re.rst:1290
 msgid "When one wants to match a literal backslash, it must be escaped in the regular expression.  With raw string notation, this means ``r\"\\\\\"``.  Without raw string notation, one must use ``\"\\\\\\\\\"``, making the following lines of code functionally identical:"
 msgstr ""
 

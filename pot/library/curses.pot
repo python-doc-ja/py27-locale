@@ -871,1530 +871,1629 @@ msgid "A string representing the current version of the module.  Also available 
 msgstr ""
 
 #: ../../library/curses.rst:1237
-msgid "Several constants are available to specify character cell attributes:"
+msgid "Some constants are available to specify character cell attributes. The exact constants available are system dependent."
 msgstr ""
 
-#: ../../library/curses.rst:1240
+#: ../../library/curses.rst:1241
 msgid "Attribute"
 msgstr ""
 
-#: ../../library/curses.rst:1240
-#: ../../library/curses.rst:1492
+#: ../../library/curses.rst:1241
+#: ../../library/curses.rst:1284
+#: ../../library/curses.rst:1528
 msgid "Meaning"
 msgstr ""
 
-#: ../../library/curses.rst:1242
+#: ../../library/curses.rst:1243
 msgid "``A_ALTCHARSET``"
 msgstr ""
 
-#: ../../library/curses.rst:1242
-msgid "Alternate character set mode."
+#: ../../library/curses.rst:1243
+msgid "Alternate character set mode"
 msgstr ""
 
-#: ../../library/curses.rst:1244
+#: ../../library/curses.rst:1245
 msgid "``A_BLINK``"
 msgstr ""
 
-#: ../../library/curses.rst:1244
-msgid "Blink mode."
+#: ../../library/curses.rst:1245
+msgid "Blink mode"
 msgstr ""
 
-#: ../../library/curses.rst:1246
+#: ../../library/curses.rst:1247
 msgid "``A_BOLD``"
 msgstr ""
 
-#: ../../library/curses.rst:1246
-msgid "Bold mode."
+#: ../../library/curses.rst:1247
+msgid "Bold mode"
 msgstr ""
 
-#: ../../library/curses.rst:1248
+#: ../../library/curses.rst:1249
 msgid "``A_DIM``"
 msgstr ""
 
-#: ../../library/curses.rst:1248
-msgid "Dim mode."
+#: ../../library/curses.rst:1249
+msgid "Dim mode"
 msgstr ""
 
-#: ../../library/curses.rst:1250
+#: ../../library/curses.rst:1251
+msgid "``A_INVIS``"
+msgstr ""
+
+#: ../../library/curses.rst:1251
+msgid "Invisible or blank mode"
+msgstr ""
+
+#: ../../library/curses.rst:1253
 msgid "``A_NORMAL``"
 msgstr ""
 
-#: ../../library/curses.rst:1250
-msgid "Normal attribute."
+#: ../../library/curses.rst:1253
+msgid "Normal attribute"
 msgstr ""
 
-#: ../../library/curses.rst:1252
+#: ../../library/curses.rst:1255
+msgid "``A_PROTECT``"
+msgstr ""
+
+#: ../../library/curses.rst:1255
+msgid "Protected mode"
+msgstr ""
+
+#: ../../library/curses.rst:1257
 msgid "``A_REVERSE``"
 msgstr ""
 
-#: ../../library/curses.rst:1252
-msgid "Reverse background and foreground colors."
-msgstr ""
-
-#: ../../library/curses.rst:1255
-msgid "``A_STANDOUT``"
-msgstr ""
-
-#: ../../library/curses.rst:1255
-msgid "Standout mode."
-msgstr ""
-
 #: ../../library/curses.rst:1257
-msgid "``A_UNDERLINE``"
-msgstr ""
-
-#: ../../library/curses.rst:1257
-msgid "Underline mode."
+msgid "Reverse background and foreground colors"
 msgstr ""
 
 #: ../../library/curses.rst:1260
+msgid "``A_STANDOUT``"
+msgstr ""
+
+#: ../../library/curses.rst:1260
+msgid "Standout mode"
+msgstr ""
+
+#: ../../library/curses.rst:1262
+msgid "``A_UNDERLINE``"
+msgstr ""
+
+#: ../../library/curses.rst:1262
+msgid "Underline mode"
+msgstr ""
+
+#: ../../library/curses.rst:1264
+msgid "``A_HORIZONTAL``"
+msgstr ""
+
+#: ../../library/curses.rst:1264
+msgid "Horizontal highlight"
+msgstr ""
+
+#: ../../library/curses.rst:1266
+msgid "``A_LEFT``"
+msgstr ""
+
+#: ../../library/curses.rst:1266
+msgid "Left highlight"
+msgstr ""
+
+#: ../../library/curses.rst:1268
+msgid "``A_LOW``"
+msgstr ""
+
+#: ../../library/curses.rst:1268
+msgid "Low highlight"
+msgstr ""
+
+#: ../../library/curses.rst:1270
+msgid "``A_RIGHT``"
+msgstr ""
+
+#: ../../library/curses.rst:1270
+msgid "Right highlight"
+msgstr ""
+
+#: ../../library/curses.rst:1272
+msgid "``A_TOP``"
+msgstr ""
+
+#: ../../library/curses.rst:1272
+msgid "Top highlight"
+msgstr ""
+
+#: ../../library/curses.rst:1274
+msgid "``A_VERTICAL``"
+msgstr ""
+
+#: ../../library/curses.rst:1274
+msgid "Vertical highlight"
+msgstr ""
+
+#: ../../library/curses.rst:1276
+#: ../../library/curses.rst:1289
+msgid "``A_CHARTEXT``"
+msgstr ""
+
+#: ../../library/curses.rst:1276
+#: ../../library/curses.rst:1289
+msgid "Bit-mask to extract a character"
+msgstr ""
+
+#: ../../library/curses.rst:1280
+msgid "Several constants are available to extract corresponding attributes returned by some methods."
+msgstr ""
+
+#: ../../library/curses.rst:1284
+msgid "Bit-mask"
+msgstr ""
+
+#: ../../library/curses.rst:1286
+msgid "``A_ATTRIBUTES``"
+msgstr ""
+
+#: ../../library/curses.rst:1286
+msgid "Bit-mask to extract attributes"
+msgstr ""
+
+#: ../../library/curses.rst:1292
+msgid "``A_COLOR``"
+msgstr ""
+
+#: ../../library/curses.rst:1292
+msgid "Bit-mask to extract color-pair field information"
+msgstr ""
+
+#: ../../library/curses.rst:1296
 msgid "Keys are referred to by integer constants with names starting with  ``KEY_``. The exact keycaps available are system dependent."
 msgstr ""
 
-#: ../../library/curses.rst:1266
+#: ../../library/curses.rst:1302
 msgid "Key constant"
 msgstr ""
 
-#: ../../library/curses.rst:1266
+#: ../../library/curses.rst:1302
 msgid "Key"
 msgstr ""
 
-#: ../../library/curses.rst:1268
+#: ../../library/curses.rst:1304
 msgid "``KEY_MIN``"
 msgstr ""
 
-#: ../../library/curses.rst:1268
+#: ../../library/curses.rst:1304
 msgid "Minimum key value"
 msgstr ""
 
-#: ../../library/curses.rst:1270
+#: ../../library/curses.rst:1306
 msgid "``KEY_BREAK``"
 msgstr ""
 
-#: ../../library/curses.rst:1270
+#: ../../library/curses.rst:1306
 msgid "Break key (unreliable)"
 msgstr ""
 
-#: ../../library/curses.rst:1272
+#: ../../library/curses.rst:1308
 msgid "``KEY_DOWN``"
 msgstr ""
 
-#: ../../library/curses.rst:1272
+#: ../../library/curses.rst:1308
 msgid "Down-arrow"
 msgstr ""
 
-#: ../../library/curses.rst:1274
+#: ../../library/curses.rst:1310
 msgid "``KEY_UP``"
 msgstr ""
 
-#: ../../library/curses.rst:1274
+#: ../../library/curses.rst:1310
 msgid "Up-arrow"
 msgstr ""
 
-#: ../../library/curses.rst:1276
+#: ../../library/curses.rst:1312
 msgid "``KEY_LEFT``"
 msgstr ""
 
-#: ../../library/curses.rst:1276
+#: ../../library/curses.rst:1312
 msgid "Left-arrow"
 msgstr ""
 
-#: ../../library/curses.rst:1278
+#: ../../library/curses.rst:1314
 msgid "``KEY_RIGHT``"
 msgstr ""
 
-#: ../../library/curses.rst:1278
+#: ../../library/curses.rst:1314
 msgid "Right-arrow"
 msgstr ""
 
-#: ../../library/curses.rst:1280
+#: ../../library/curses.rst:1316
 msgid "``KEY_HOME``"
 msgstr ""
 
-#: ../../library/curses.rst:1280
+#: ../../library/curses.rst:1316
 msgid "Home key (upward+left arrow)"
 msgstr ""
 
-#: ../../library/curses.rst:1282
+#: ../../library/curses.rst:1318
 msgid "``KEY_BACKSPACE``"
 msgstr ""
 
-#: ../../library/curses.rst:1282
+#: ../../library/curses.rst:1318
 msgid "Backspace (unreliable)"
 msgstr ""
 
-#: ../../library/curses.rst:1284
+#: ../../library/curses.rst:1320
 msgid "``KEY_F0``"
 msgstr ""
 
-#: ../../library/curses.rst:1284
+#: ../../library/curses.rst:1320
 msgid "Function keys.  Up to 64 function keys are supported."
 msgstr ""
 
-#: ../../library/curses.rst:1287
+#: ../../library/curses.rst:1323
 msgid "``KEY_Fn``"
 msgstr ""
 
-#: ../../library/curses.rst:1287
+#: ../../library/curses.rst:1323
 msgid "Value of function key *n*"
 msgstr ""
 
-#: ../../library/curses.rst:1289
+#: ../../library/curses.rst:1325
 msgid "``KEY_DL``"
 msgstr ""
 
-#: ../../library/curses.rst:1289
+#: ../../library/curses.rst:1325
 msgid "Delete line"
 msgstr ""
 
-#: ../../library/curses.rst:1291
+#: ../../library/curses.rst:1327
 msgid "``KEY_IL``"
 msgstr ""
 
-#: ../../library/curses.rst:1291
+#: ../../library/curses.rst:1327
 msgid "Insert line"
 msgstr ""
 
-#: ../../library/curses.rst:1293
+#: ../../library/curses.rst:1329
 msgid "``KEY_DC``"
 msgstr ""
 
-#: ../../library/curses.rst:1293
+#: ../../library/curses.rst:1329
 msgid "Delete character"
 msgstr ""
 
-#: ../../library/curses.rst:1295
+#: ../../library/curses.rst:1331
 msgid "``KEY_IC``"
 msgstr ""
 
-#: ../../library/curses.rst:1295
+#: ../../library/curses.rst:1331
 msgid "Insert char or enter insert mode"
 msgstr ""
 
-#: ../../library/curses.rst:1297
+#: ../../library/curses.rst:1333
 msgid "``KEY_EIC``"
 msgstr ""
 
-#: ../../library/curses.rst:1297
+#: ../../library/curses.rst:1333
 msgid "Exit insert char mode"
 msgstr ""
 
-#: ../../library/curses.rst:1299
+#: ../../library/curses.rst:1335
 msgid "``KEY_CLEAR``"
 msgstr ""
 
-#: ../../library/curses.rst:1299
+#: ../../library/curses.rst:1335
 msgid "Clear screen"
 msgstr ""
 
-#: ../../library/curses.rst:1301
+#: ../../library/curses.rst:1337
 msgid "``KEY_EOS``"
 msgstr ""
 
-#: ../../library/curses.rst:1301
+#: ../../library/curses.rst:1337
 msgid "Clear to end of screen"
 msgstr ""
 
-#: ../../library/curses.rst:1303
+#: ../../library/curses.rst:1339
 msgid "``KEY_EOL``"
 msgstr ""
 
-#: ../../library/curses.rst:1303
+#: ../../library/curses.rst:1339
 msgid "Clear to end of line"
 msgstr ""
 
-#: ../../library/curses.rst:1305
+#: ../../library/curses.rst:1341
 msgid "``KEY_SF``"
 msgstr ""
 
-#: ../../library/curses.rst:1305
+#: ../../library/curses.rst:1341
 msgid "Scroll 1 line forward"
 msgstr ""
 
-#: ../../library/curses.rst:1307
+#: ../../library/curses.rst:1343
 msgid "``KEY_SR``"
 msgstr ""
 
-#: ../../library/curses.rst:1307
+#: ../../library/curses.rst:1343
 msgid "Scroll 1 line backward (reverse)"
 msgstr ""
 
-#: ../../library/curses.rst:1309
+#: ../../library/curses.rst:1345
 msgid "``KEY_NPAGE``"
 msgstr ""
 
-#: ../../library/curses.rst:1309
+#: ../../library/curses.rst:1345
 msgid "Next page"
 msgstr ""
 
-#: ../../library/curses.rst:1311
+#: ../../library/curses.rst:1347
 msgid "``KEY_PPAGE``"
 msgstr ""
 
-#: ../../library/curses.rst:1311
+#: ../../library/curses.rst:1347
 msgid "Previous page"
 msgstr ""
 
-#: ../../library/curses.rst:1313
+#: ../../library/curses.rst:1349
 msgid "``KEY_STAB``"
 msgstr ""
 
-#: ../../library/curses.rst:1313
+#: ../../library/curses.rst:1349
 msgid "Set tab"
 msgstr ""
 
-#: ../../library/curses.rst:1315
+#: ../../library/curses.rst:1351
 msgid "``KEY_CTAB``"
 msgstr ""
 
-#: ../../library/curses.rst:1315
+#: ../../library/curses.rst:1351
 msgid "Clear tab"
 msgstr ""
 
-#: ../../library/curses.rst:1317
+#: ../../library/curses.rst:1353
 msgid "``KEY_CATAB``"
 msgstr ""
 
-#: ../../library/curses.rst:1317
+#: ../../library/curses.rst:1353
 msgid "Clear all tabs"
 msgstr ""
 
-#: ../../library/curses.rst:1319
+#: ../../library/curses.rst:1355
 msgid "``KEY_ENTER``"
 msgstr ""
 
-#: ../../library/curses.rst:1319
+#: ../../library/curses.rst:1355
 msgid "Enter or send (unreliable)"
 msgstr ""
 
-#: ../../library/curses.rst:1321
+#: ../../library/curses.rst:1357
 msgid "``KEY_SRESET``"
 msgstr ""
 
-#: ../../library/curses.rst:1321
+#: ../../library/curses.rst:1357
 msgid "Soft (partial) reset (unreliable)"
 msgstr ""
 
-#: ../../library/curses.rst:1323
+#: ../../library/curses.rst:1359
 msgid "``KEY_RESET``"
 msgstr ""
 
-#: ../../library/curses.rst:1323
+#: ../../library/curses.rst:1359
 msgid "Reset or hard reset (unreliable)"
 msgstr ""
 
-#: ../../library/curses.rst:1325
+#: ../../library/curses.rst:1361
 msgid "``KEY_PRINT``"
 msgstr ""
 
-#: ../../library/curses.rst:1325
+#: ../../library/curses.rst:1361
 msgid "Print"
 msgstr ""
 
-#: ../../library/curses.rst:1327
+#: ../../library/curses.rst:1363
 msgid "``KEY_LL``"
 msgstr ""
 
-#: ../../library/curses.rst:1327
+#: ../../library/curses.rst:1363
 msgid "Home down or bottom (lower left)"
 msgstr ""
 
-#: ../../library/curses.rst:1329
+#: ../../library/curses.rst:1365
 msgid "``KEY_A1``"
 msgstr ""
 
-#: ../../library/curses.rst:1329
+#: ../../library/curses.rst:1365
 msgid "Upper left of keypad"
 msgstr ""
 
-#: ../../library/curses.rst:1331
+#: ../../library/curses.rst:1367
 msgid "``KEY_A3``"
 msgstr ""
 
-#: ../../library/curses.rst:1331
+#: ../../library/curses.rst:1367
 msgid "Upper right of keypad"
 msgstr ""
 
-#: ../../library/curses.rst:1333
+#: ../../library/curses.rst:1369
 msgid "``KEY_B2``"
 msgstr ""
 
-#: ../../library/curses.rst:1333
+#: ../../library/curses.rst:1369
 msgid "Center of keypad"
 msgstr ""
 
-#: ../../library/curses.rst:1335
+#: ../../library/curses.rst:1371
 msgid "``KEY_C1``"
 msgstr ""
 
-#: ../../library/curses.rst:1335
+#: ../../library/curses.rst:1371
 msgid "Lower left of keypad"
 msgstr ""
 
-#: ../../library/curses.rst:1337
+#: ../../library/curses.rst:1373
 msgid "``KEY_C3``"
 msgstr ""
 
-#: ../../library/curses.rst:1337
+#: ../../library/curses.rst:1373
 msgid "Lower right of keypad"
 msgstr ""
 
-#: ../../library/curses.rst:1339
+#: ../../library/curses.rst:1375
 msgid "``KEY_BTAB``"
 msgstr ""
 
-#: ../../library/curses.rst:1339
+#: ../../library/curses.rst:1375
 msgid "Back tab"
 msgstr ""
 
-#: ../../library/curses.rst:1341
+#: ../../library/curses.rst:1377
 msgid "``KEY_BEG``"
 msgstr ""
 
-#: ../../library/curses.rst:1341
+#: ../../library/curses.rst:1377
 msgid "Beg (beginning)"
 msgstr ""
 
-#: ../../library/curses.rst:1343
+#: ../../library/curses.rst:1379
 msgid "``KEY_CANCEL``"
 msgstr ""
 
-#: ../../library/curses.rst:1343
+#: ../../library/curses.rst:1379
 msgid "Cancel"
 msgstr ""
 
-#: ../../library/curses.rst:1345
+#: ../../library/curses.rst:1381
 msgid "``KEY_CLOSE``"
 msgstr ""
 
-#: ../../library/curses.rst:1345
+#: ../../library/curses.rst:1381
 msgid "Close"
 msgstr ""
 
-#: ../../library/curses.rst:1347
+#: ../../library/curses.rst:1383
 msgid "``KEY_COMMAND``"
 msgstr ""
 
-#: ../../library/curses.rst:1347
+#: ../../library/curses.rst:1383
 msgid "Cmd (command)"
 msgstr ""
 
-#: ../../library/curses.rst:1349
+#: ../../library/curses.rst:1385
 msgid "``KEY_COPY``"
 msgstr ""
 
-#: ../../library/curses.rst:1349
+#: ../../library/curses.rst:1385
 msgid "Copy"
 msgstr ""
 
-#: ../../library/curses.rst:1351
+#: ../../library/curses.rst:1387
 msgid "``KEY_CREATE``"
 msgstr ""
 
-#: ../../library/curses.rst:1351
+#: ../../library/curses.rst:1387
 msgid "Create"
 msgstr ""
 
-#: ../../library/curses.rst:1353
+#: ../../library/curses.rst:1389
 msgid "``KEY_END``"
 msgstr ""
 
-#: ../../library/curses.rst:1353
+#: ../../library/curses.rst:1389
 msgid "End"
 msgstr ""
 
-#: ../../library/curses.rst:1355
+#: ../../library/curses.rst:1391
 msgid "``KEY_EXIT``"
 msgstr ""
 
-#: ../../library/curses.rst:1355
+#: ../../library/curses.rst:1391
 msgid "Exit"
 msgstr ""
 
-#: ../../library/curses.rst:1357
+#: ../../library/curses.rst:1393
 msgid "``KEY_FIND``"
 msgstr ""
 
-#: ../../library/curses.rst:1357
+#: ../../library/curses.rst:1393
 msgid "Find"
 msgstr ""
 
-#: ../../library/curses.rst:1359
+#: ../../library/curses.rst:1395
 msgid "``KEY_HELP``"
 msgstr ""
 
-#: ../../library/curses.rst:1359
+#: ../../library/curses.rst:1395
 msgid "Help"
 msgstr ""
 
-#: ../../library/curses.rst:1361
+#: ../../library/curses.rst:1397
 msgid "``KEY_MARK``"
 msgstr ""
 
-#: ../../library/curses.rst:1361
+#: ../../library/curses.rst:1397
 msgid "Mark"
 msgstr ""
 
-#: ../../library/curses.rst:1363
+#: ../../library/curses.rst:1399
 msgid "``KEY_MESSAGE``"
 msgstr ""
 
-#: ../../library/curses.rst:1363
+#: ../../library/curses.rst:1399
 msgid "Message"
 msgstr ""
 
-#: ../../library/curses.rst:1365
+#: ../../library/curses.rst:1401
 msgid "``KEY_MOVE``"
 msgstr ""
 
-#: ../../library/curses.rst:1365
+#: ../../library/curses.rst:1401
 msgid "Move"
 msgstr ""
 
-#: ../../library/curses.rst:1367
+#: ../../library/curses.rst:1403
 msgid "``KEY_NEXT``"
 msgstr ""
 
-#: ../../library/curses.rst:1367
+#: ../../library/curses.rst:1403
 msgid "Next"
 msgstr ""
 
-#: ../../library/curses.rst:1369
+#: ../../library/curses.rst:1405
 msgid "``KEY_OPEN``"
 msgstr ""
 
-#: ../../library/curses.rst:1369
+#: ../../library/curses.rst:1405
 msgid "Open"
 msgstr ""
 
-#: ../../library/curses.rst:1371
+#: ../../library/curses.rst:1407
 msgid "``KEY_OPTIONS``"
 msgstr ""
 
-#: ../../library/curses.rst:1371
+#: ../../library/curses.rst:1407
 msgid "Options"
 msgstr ""
 
-#: ../../library/curses.rst:1373
+#: ../../library/curses.rst:1409
 msgid "``KEY_PREVIOUS``"
 msgstr ""
 
-#: ../../library/curses.rst:1373
+#: ../../library/curses.rst:1409
 msgid "Prev (previous)"
 msgstr ""
 
-#: ../../library/curses.rst:1375
+#: ../../library/curses.rst:1411
 msgid "``KEY_REDO``"
 msgstr ""
 
-#: ../../library/curses.rst:1375
+#: ../../library/curses.rst:1411
 msgid "Redo"
 msgstr ""
 
-#: ../../library/curses.rst:1377
+#: ../../library/curses.rst:1413
 msgid "``KEY_REFERENCE``"
 msgstr ""
 
-#: ../../library/curses.rst:1377
+#: ../../library/curses.rst:1413
 msgid "Ref (reference)"
 msgstr ""
 
-#: ../../library/curses.rst:1379
+#: ../../library/curses.rst:1415
 msgid "``KEY_REFRESH``"
 msgstr ""
 
-#: ../../library/curses.rst:1379
+#: ../../library/curses.rst:1415
 msgid "Refresh"
 msgstr ""
 
-#: ../../library/curses.rst:1381
+#: ../../library/curses.rst:1417
 msgid "``KEY_REPLACE``"
 msgstr ""
 
-#: ../../library/curses.rst:1381
+#: ../../library/curses.rst:1417
 msgid "Replace"
 msgstr ""
 
-#: ../../library/curses.rst:1383
+#: ../../library/curses.rst:1419
 msgid "``KEY_RESTART``"
 msgstr ""
 
-#: ../../library/curses.rst:1383
+#: ../../library/curses.rst:1419
 msgid "Restart"
 msgstr ""
 
-#: ../../library/curses.rst:1385
+#: ../../library/curses.rst:1421
 msgid "``KEY_RESUME``"
 msgstr ""
 
-#: ../../library/curses.rst:1385
+#: ../../library/curses.rst:1421
 msgid "Resume"
 msgstr ""
 
-#: ../../library/curses.rst:1387
+#: ../../library/curses.rst:1423
 msgid "``KEY_SAVE``"
 msgstr ""
 
-#: ../../library/curses.rst:1387
+#: ../../library/curses.rst:1423
 msgid "Save"
 msgstr ""
 
-#: ../../library/curses.rst:1389
+#: ../../library/curses.rst:1425
 msgid "``KEY_SBEG``"
 msgstr ""
 
-#: ../../library/curses.rst:1389
+#: ../../library/curses.rst:1425
 msgid "Shifted Beg (beginning)"
 msgstr ""
 
-#: ../../library/curses.rst:1391
+#: ../../library/curses.rst:1427
 msgid "``KEY_SCANCEL``"
 msgstr ""
 
-#: ../../library/curses.rst:1391
+#: ../../library/curses.rst:1427
 msgid "Shifted Cancel"
 msgstr ""
 
-#: ../../library/curses.rst:1393
+#: ../../library/curses.rst:1429
 msgid "``KEY_SCOMMAND``"
 msgstr ""
 
-#: ../../library/curses.rst:1393
+#: ../../library/curses.rst:1429
 msgid "Shifted Command"
 msgstr ""
 
-#: ../../library/curses.rst:1395
+#: ../../library/curses.rst:1431
 msgid "``KEY_SCOPY``"
 msgstr ""
 
-#: ../../library/curses.rst:1395
+#: ../../library/curses.rst:1431
 msgid "Shifted Copy"
 msgstr ""
 
-#: ../../library/curses.rst:1397
+#: ../../library/curses.rst:1433
 msgid "``KEY_SCREATE``"
 msgstr ""
 
-#: ../../library/curses.rst:1397
+#: ../../library/curses.rst:1433
 msgid "Shifted Create"
 msgstr ""
 
-#: ../../library/curses.rst:1399
+#: ../../library/curses.rst:1435
 msgid "``KEY_SDC``"
 msgstr ""
 
-#: ../../library/curses.rst:1399
+#: ../../library/curses.rst:1435
 msgid "Shifted Delete char"
 msgstr ""
 
-#: ../../library/curses.rst:1401
+#: ../../library/curses.rst:1437
 msgid "``KEY_SDL``"
 msgstr ""
 
-#: ../../library/curses.rst:1401
+#: ../../library/curses.rst:1437
 msgid "Shifted Delete line"
 msgstr ""
 
-#: ../../library/curses.rst:1403
+#: ../../library/curses.rst:1439
 msgid "``KEY_SELECT``"
 msgstr ""
 
-#: ../../library/curses.rst:1403
+#: ../../library/curses.rst:1439
 msgid "Select"
 msgstr ""
 
-#: ../../library/curses.rst:1405
+#: ../../library/curses.rst:1441
 msgid "``KEY_SEND``"
 msgstr ""
 
-#: ../../library/curses.rst:1405
+#: ../../library/curses.rst:1441
 msgid "Shifted End"
 msgstr ""
 
-#: ../../library/curses.rst:1407
+#: ../../library/curses.rst:1443
 msgid "``KEY_SEOL``"
 msgstr ""
 
-#: ../../library/curses.rst:1407
+#: ../../library/curses.rst:1443
 msgid "Shifted Clear line"
 msgstr ""
 
-#: ../../library/curses.rst:1409
+#: ../../library/curses.rst:1445
 msgid "``KEY_SEXIT``"
 msgstr ""
 
-#: ../../library/curses.rst:1409
+#: ../../library/curses.rst:1445
 msgid "Shifted Exit"
 msgstr ""
 
-#: ../../library/curses.rst:1411
+#: ../../library/curses.rst:1447
 msgid "``KEY_SFIND``"
 msgstr ""
 
-#: ../../library/curses.rst:1411
+#: ../../library/curses.rst:1447
 msgid "Shifted Find"
 msgstr ""
 
-#: ../../library/curses.rst:1413
+#: ../../library/curses.rst:1449
 msgid "``KEY_SHELP``"
 msgstr ""
 
-#: ../../library/curses.rst:1413
+#: ../../library/curses.rst:1449
 msgid "Shifted Help"
 msgstr ""
 
-#: ../../library/curses.rst:1415
+#: ../../library/curses.rst:1451
 msgid "``KEY_SHOME``"
 msgstr ""
 
-#: ../../library/curses.rst:1415
+#: ../../library/curses.rst:1451
 msgid "Shifted Home"
 msgstr ""
 
-#: ../../library/curses.rst:1417
+#: ../../library/curses.rst:1453
 msgid "``KEY_SIC``"
 msgstr ""
 
-#: ../../library/curses.rst:1417
+#: ../../library/curses.rst:1453
 msgid "Shifted Input"
 msgstr ""
 
-#: ../../library/curses.rst:1419
+#: ../../library/curses.rst:1455
 msgid "``KEY_SLEFT``"
 msgstr ""
 
-#: ../../library/curses.rst:1419
+#: ../../library/curses.rst:1455
 msgid "Shifted Left arrow"
 msgstr ""
 
-#: ../../library/curses.rst:1421
+#: ../../library/curses.rst:1457
 msgid "``KEY_SMESSAGE``"
 msgstr ""
 
-#: ../../library/curses.rst:1421
+#: ../../library/curses.rst:1457
 msgid "Shifted Message"
 msgstr ""
 
-#: ../../library/curses.rst:1423
+#: ../../library/curses.rst:1459
 msgid "``KEY_SMOVE``"
 msgstr ""
 
-#: ../../library/curses.rst:1423
+#: ../../library/curses.rst:1459
 msgid "Shifted Move"
 msgstr ""
 
-#: ../../library/curses.rst:1425
+#: ../../library/curses.rst:1461
 msgid "``KEY_SNEXT``"
 msgstr ""
 
-#: ../../library/curses.rst:1425
+#: ../../library/curses.rst:1461
 msgid "Shifted Next"
 msgstr ""
 
-#: ../../library/curses.rst:1427
+#: ../../library/curses.rst:1463
 msgid "``KEY_SOPTIONS``"
 msgstr ""
 
-#: ../../library/curses.rst:1427
+#: ../../library/curses.rst:1463
 msgid "Shifted Options"
 msgstr ""
 
-#: ../../library/curses.rst:1429
+#: ../../library/curses.rst:1465
 msgid "``KEY_SPREVIOUS``"
 msgstr ""
 
-#: ../../library/curses.rst:1429
+#: ../../library/curses.rst:1465
 msgid "Shifted Prev"
 msgstr ""
 
-#: ../../library/curses.rst:1431
+#: ../../library/curses.rst:1467
 msgid "``KEY_SPRINT``"
 msgstr ""
 
-#: ../../library/curses.rst:1431
+#: ../../library/curses.rst:1467
 msgid "Shifted Print"
 msgstr ""
 
-#: ../../library/curses.rst:1433
+#: ../../library/curses.rst:1469
 msgid "``KEY_SREDO``"
 msgstr ""
 
-#: ../../library/curses.rst:1433
+#: ../../library/curses.rst:1469
 msgid "Shifted Redo"
 msgstr ""
 
-#: ../../library/curses.rst:1435
+#: ../../library/curses.rst:1471
 msgid "``KEY_SREPLACE``"
 msgstr ""
 
-#: ../../library/curses.rst:1435
+#: ../../library/curses.rst:1471
 msgid "Shifted Replace"
 msgstr ""
 
-#: ../../library/curses.rst:1437
+#: ../../library/curses.rst:1473
 msgid "``KEY_SRIGHT``"
 msgstr ""
 
-#: ../../library/curses.rst:1437
+#: ../../library/curses.rst:1473
 msgid "Shifted Right arrow"
 msgstr ""
 
-#: ../../library/curses.rst:1439
+#: ../../library/curses.rst:1475
 msgid "``KEY_SRSUME``"
 msgstr ""
 
-#: ../../library/curses.rst:1439
+#: ../../library/curses.rst:1475
 msgid "Shifted Resume"
 msgstr ""
 
-#: ../../library/curses.rst:1441
+#: ../../library/curses.rst:1477
 msgid "``KEY_SSAVE``"
 msgstr ""
 
-#: ../../library/curses.rst:1441
+#: ../../library/curses.rst:1477
 msgid "Shifted Save"
 msgstr ""
 
-#: ../../library/curses.rst:1443
+#: ../../library/curses.rst:1479
 msgid "``KEY_SSUSPEND``"
 msgstr ""
 
-#: ../../library/curses.rst:1443
+#: ../../library/curses.rst:1479
 msgid "Shifted Suspend"
 msgstr ""
 
-#: ../../library/curses.rst:1445
+#: ../../library/curses.rst:1481
 msgid "``KEY_SUNDO``"
 msgstr ""
 
-#: ../../library/curses.rst:1445
+#: ../../library/curses.rst:1481
 msgid "Shifted Undo"
 msgstr ""
 
-#: ../../library/curses.rst:1447
+#: ../../library/curses.rst:1483
 msgid "``KEY_SUSPEND``"
 msgstr ""
 
-#: ../../library/curses.rst:1447
+#: ../../library/curses.rst:1483
 msgid "Suspend"
 msgstr ""
 
-#: ../../library/curses.rst:1449
+#: ../../library/curses.rst:1485
 msgid "``KEY_UNDO``"
 msgstr ""
 
-#: ../../library/curses.rst:1449
+#: ../../library/curses.rst:1485
 msgid "Undo"
 msgstr ""
 
-#: ../../library/curses.rst:1451
+#: ../../library/curses.rst:1487
 msgid "``KEY_MOUSE``"
 msgstr ""
 
-#: ../../library/curses.rst:1451
+#: ../../library/curses.rst:1487
 msgid "Mouse event has occurred"
 msgstr ""
 
-#: ../../library/curses.rst:1453
+#: ../../library/curses.rst:1489
 msgid "``KEY_RESIZE``"
 msgstr ""
 
-#: ../../library/curses.rst:1453
+#: ../../library/curses.rst:1489
 msgid "Terminal resize event"
 msgstr ""
 
-#: ../../library/curses.rst:1455
+#: ../../library/curses.rst:1491
 msgid "``KEY_MAX``"
 msgstr ""
 
-#: ../../library/curses.rst:1455
+#: ../../library/curses.rst:1491
 msgid "Maximum key value"
 msgstr ""
 
-#: ../../library/curses.rst:1458
+#: ../../library/curses.rst:1494
 msgid "On VT100s and their software emulations, such as X terminal emulators, there are normally at least four function keys (:const:`KEY_F1`, :const:`KEY_F2`, :const:`KEY_F3`, :const:`KEY_F4`) available, and the arrow keys mapped to :const:`KEY_UP`, :const:`KEY_DOWN`, :const:`KEY_LEFT` and :const:`KEY_RIGHT` in the obvious way.  If your machine has a PC keyboard, it is safe to expect arrow keys and twelve function keys (older PC keyboards may have only ten function keys); also, the following keypad mappings are standard:"
 msgstr ""
 
-#: ../../library/curses.rst:1467
+#: ../../library/curses.rst:1503
 msgid "Keycap"
 msgstr ""
 
-#: ../../library/curses.rst:1467
-#: ../../library/curses.rst:1584
-#: ../../library/curses.rst:1710
+#: ../../library/curses.rst:1503
+#: ../../library/curses.rst:1620
+#: ../../library/curses.rst:1746
 msgid "Constant"
 msgstr ""
 
-#: ../../library/curses.rst:1469
+#: ../../library/curses.rst:1505
 msgid ":kbd:`Insert`"
 msgstr ""
 
-#: ../../library/curses.rst:1469
+#: ../../library/curses.rst:1505
 msgid "KEY_IC"
 msgstr ""
 
-#: ../../library/curses.rst:1471
+#: ../../library/curses.rst:1507
 msgid ":kbd:`Delete`"
 msgstr ""
 
-#: ../../library/curses.rst:1471
+#: ../../library/curses.rst:1507
 msgid "KEY_DC"
 msgstr ""
 
-#: ../../library/curses.rst:1473
+#: ../../library/curses.rst:1509
 msgid ":kbd:`Home`"
 msgstr ""
 
-#: ../../library/curses.rst:1473
+#: ../../library/curses.rst:1509
 msgid "KEY_HOME"
 msgstr ""
 
-#: ../../library/curses.rst:1475
+#: ../../library/curses.rst:1511
 msgid ":kbd:`End`"
 msgstr ""
 
-#: ../../library/curses.rst:1475
+#: ../../library/curses.rst:1511
 msgid "KEY_END"
 msgstr ""
 
-#: ../../library/curses.rst:1477
+#: ../../library/curses.rst:1513
 msgid ":kbd:`Page Up`"
 msgstr ""
 
-#: ../../library/curses.rst:1477
+#: ../../library/curses.rst:1513
 msgid "KEY_PPAGE"
 msgstr ""
 
-#: ../../library/curses.rst:1479
+#: ../../library/curses.rst:1515
 msgid ":kbd:`Page Down`"
 msgstr ""
 
-#: ../../library/curses.rst:1479
+#: ../../library/curses.rst:1515
 msgid "KEY_NPAGE"
 msgstr ""
 
-#: ../../library/curses.rst:1482
+#: ../../library/curses.rst:1518
 msgid "The following table lists characters from the alternate character set. These are inherited from the VT100 terminal, and will generally be  available on software emulations such as X terminals.  When there is no graphic available, curses falls back on a crude printable ASCII approximation."
 msgstr ""
 
-#: ../../library/curses.rst:1489
+#: ../../library/curses.rst:1525
 msgid "These are available only after :func:`initscr` has  been called."
 msgstr ""
 
-#: ../../library/curses.rst:1492
+#: ../../library/curses.rst:1528
 msgid "ACS code"
 msgstr ""
 
-#: ../../library/curses.rst:1494
+#: ../../library/curses.rst:1530
 msgid "``ACS_BBSS``"
 msgstr ""
 
-#: ../../library/curses.rst:1494
+#: ../../library/curses.rst:1530
 msgid "alternate name for upper right corner"
 msgstr ""
 
-#: ../../library/curses.rst:1496
+#: ../../library/curses.rst:1532
 msgid "``ACS_BLOCK``"
 msgstr ""
 
-#: ../../library/curses.rst:1496
+#: ../../library/curses.rst:1532
 msgid "solid square block"
 msgstr ""
 
-#: ../../library/curses.rst:1498
+#: ../../library/curses.rst:1534
 msgid "``ACS_BOARD``"
 msgstr ""
 
-#: ../../library/curses.rst:1498
+#: ../../library/curses.rst:1534
 msgid "board of squares"
 msgstr ""
 
-#: ../../library/curses.rst:1500
+#: ../../library/curses.rst:1536
 msgid "``ACS_BSBS``"
 msgstr ""
 
-#: ../../library/curses.rst:1500
+#: ../../library/curses.rst:1536
 msgid "alternate name for horizontal line"
 msgstr ""
 
-#: ../../library/curses.rst:1502
+#: ../../library/curses.rst:1538
 msgid "``ACS_BSSB``"
 msgstr ""
 
-#: ../../library/curses.rst:1502
+#: ../../library/curses.rst:1538
 msgid "alternate name for upper left corner"
 msgstr ""
 
-#: ../../library/curses.rst:1504
+#: ../../library/curses.rst:1540
 msgid "``ACS_BSSS``"
 msgstr ""
 
-#: ../../library/curses.rst:1504
+#: ../../library/curses.rst:1540
 msgid "alternate name for top tee"
 msgstr ""
 
-#: ../../library/curses.rst:1506
+#: ../../library/curses.rst:1542
 msgid "``ACS_BTEE``"
 msgstr ""
 
-#: ../../library/curses.rst:1506
+#: ../../library/curses.rst:1542
 msgid "bottom tee"
 msgstr ""
 
-#: ../../library/curses.rst:1508
+#: ../../library/curses.rst:1544
 msgid "``ACS_BULLET``"
 msgstr ""
 
-#: ../../library/curses.rst:1508
+#: ../../library/curses.rst:1544
 msgid "bullet"
 msgstr ""
 
-#: ../../library/curses.rst:1510
+#: ../../library/curses.rst:1546
 msgid "``ACS_CKBOARD``"
 msgstr ""
 
-#: ../../library/curses.rst:1510
+#: ../../library/curses.rst:1546
 msgid "checker board (stipple)"
 msgstr ""
 
-#: ../../library/curses.rst:1512
+#: ../../library/curses.rst:1548
 msgid "``ACS_DARROW``"
 msgstr ""
 
-#: ../../library/curses.rst:1512
+#: ../../library/curses.rst:1548
 msgid "arrow pointing down"
 msgstr ""
 
-#: ../../library/curses.rst:1514
+#: ../../library/curses.rst:1550
 msgid "``ACS_DEGREE``"
 msgstr ""
 
-#: ../../library/curses.rst:1514
+#: ../../library/curses.rst:1550
 msgid "degree symbol"
 msgstr ""
 
-#: ../../library/curses.rst:1516
+#: ../../library/curses.rst:1552
 msgid "``ACS_DIAMOND``"
 msgstr ""
 
-#: ../../library/curses.rst:1516
+#: ../../library/curses.rst:1552
 msgid "diamond"
 msgstr ""
 
-#: ../../library/curses.rst:1518
+#: ../../library/curses.rst:1554
 msgid "``ACS_GEQUAL``"
 msgstr ""
 
-#: ../../library/curses.rst:1518
+#: ../../library/curses.rst:1554
 msgid "greater-than-or-equal-to"
 msgstr ""
 
-#: ../../library/curses.rst:1520
+#: ../../library/curses.rst:1556
 msgid "``ACS_HLINE``"
 msgstr ""
 
-#: ../../library/curses.rst:1520
+#: ../../library/curses.rst:1556
 msgid "horizontal line"
 msgstr ""
 
-#: ../../library/curses.rst:1522
+#: ../../library/curses.rst:1558
 msgid "``ACS_LANTERN``"
 msgstr ""
 
-#: ../../library/curses.rst:1522
+#: ../../library/curses.rst:1558
 msgid "lantern symbol"
 msgstr ""
 
-#: ../../library/curses.rst:1524
+#: ../../library/curses.rst:1560
 msgid "``ACS_LARROW``"
 msgstr ""
 
-#: ../../library/curses.rst:1524
+#: ../../library/curses.rst:1560
 msgid "left arrow"
 msgstr ""
 
-#: ../../library/curses.rst:1526
+#: ../../library/curses.rst:1562
 msgid "``ACS_LEQUAL``"
 msgstr ""
 
-#: ../../library/curses.rst:1526
+#: ../../library/curses.rst:1562
 msgid "less-than-or-equal-to"
 msgstr ""
 
-#: ../../library/curses.rst:1528
+#: ../../library/curses.rst:1564
 msgid "``ACS_LLCORNER``"
 msgstr ""
 
-#: ../../library/curses.rst:1528
+#: ../../library/curses.rst:1564
 msgid "lower left-hand corner"
 msgstr ""
 
-#: ../../library/curses.rst:1530
+#: ../../library/curses.rst:1566
 msgid "``ACS_LRCORNER``"
 msgstr ""
 
-#: ../../library/curses.rst:1530
+#: ../../library/curses.rst:1566
 msgid "lower right-hand corner"
 msgstr ""
 
-#: ../../library/curses.rst:1532
+#: ../../library/curses.rst:1568
 msgid "``ACS_LTEE``"
 msgstr ""
 
-#: ../../library/curses.rst:1532
+#: ../../library/curses.rst:1568
 msgid "left tee"
 msgstr ""
 
-#: ../../library/curses.rst:1534
+#: ../../library/curses.rst:1570
 msgid "``ACS_NEQUAL``"
 msgstr ""
 
-#: ../../library/curses.rst:1534
+#: ../../library/curses.rst:1570
 msgid "not-equal sign"
 msgstr ""
 
-#: ../../library/curses.rst:1536
+#: ../../library/curses.rst:1572
 msgid "``ACS_PI``"
 msgstr ""
 
-#: ../../library/curses.rst:1536
+#: ../../library/curses.rst:1572
 msgid "letter pi"
 msgstr ""
 
-#: ../../library/curses.rst:1538
+#: ../../library/curses.rst:1574
 msgid "``ACS_PLMINUS``"
 msgstr ""
 
-#: ../../library/curses.rst:1538
+#: ../../library/curses.rst:1574
 msgid "plus-or-minus sign"
 msgstr ""
 
-#: ../../library/curses.rst:1540
+#: ../../library/curses.rst:1576
 msgid "``ACS_PLUS``"
 msgstr ""
 
-#: ../../library/curses.rst:1540
+#: ../../library/curses.rst:1576
 msgid "big plus sign"
 msgstr ""
 
-#: ../../library/curses.rst:1542
+#: ../../library/curses.rst:1578
 msgid "``ACS_RARROW``"
 msgstr ""
 
-#: ../../library/curses.rst:1542
+#: ../../library/curses.rst:1578
 msgid "right arrow"
 msgstr ""
 
-#: ../../library/curses.rst:1544
+#: ../../library/curses.rst:1580
 msgid "``ACS_RTEE``"
 msgstr ""
 
-#: ../../library/curses.rst:1544
+#: ../../library/curses.rst:1580
 msgid "right tee"
 msgstr ""
 
-#: ../../library/curses.rst:1546
+#: ../../library/curses.rst:1582
 msgid "``ACS_S1``"
 msgstr ""
 
-#: ../../library/curses.rst:1546
+#: ../../library/curses.rst:1582
 msgid "scan line 1"
 msgstr ""
 
-#: ../../library/curses.rst:1548
+#: ../../library/curses.rst:1584
 msgid "``ACS_S3``"
 msgstr ""
 
-#: ../../library/curses.rst:1548
+#: ../../library/curses.rst:1584
 msgid "scan line 3"
 msgstr ""
 
-#: ../../library/curses.rst:1550
+#: ../../library/curses.rst:1586
 msgid "``ACS_S7``"
 msgstr ""
 
-#: ../../library/curses.rst:1550
+#: ../../library/curses.rst:1586
 msgid "scan line 7"
 msgstr ""
 
-#: ../../library/curses.rst:1552
+#: ../../library/curses.rst:1588
 msgid "``ACS_S9``"
 msgstr ""
 
-#: ../../library/curses.rst:1552
+#: ../../library/curses.rst:1588
 msgid "scan line 9"
 msgstr ""
 
-#: ../../library/curses.rst:1554
+#: ../../library/curses.rst:1590
 msgid "``ACS_SBBS``"
 msgstr ""
 
-#: ../../library/curses.rst:1554
+#: ../../library/curses.rst:1590
 msgid "alternate name for lower right corner"
 msgstr ""
 
-#: ../../library/curses.rst:1556
+#: ../../library/curses.rst:1592
 msgid "``ACS_SBSB``"
 msgstr ""
 
-#: ../../library/curses.rst:1556
+#: ../../library/curses.rst:1592
 msgid "alternate name for vertical line"
 msgstr ""
 
-#: ../../library/curses.rst:1558
+#: ../../library/curses.rst:1594
 msgid "``ACS_SBSS``"
 msgstr ""
 
-#: ../../library/curses.rst:1558
+#: ../../library/curses.rst:1594
 msgid "alternate name for right tee"
 msgstr ""
 
-#: ../../library/curses.rst:1560
+#: ../../library/curses.rst:1596
 msgid "``ACS_SSBB``"
 msgstr ""
 
-#: ../../library/curses.rst:1560
+#: ../../library/curses.rst:1596
 msgid "alternate name for lower left corner"
 msgstr ""
 
-#: ../../library/curses.rst:1562
+#: ../../library/curses.rst:1598
 msgid "``ACS_SSBS``"
 msgstr ""
 
-#: ../../library/curses.rst:1562
+#: ../../library/curses.rst:1598
 msgid "alternate name for bottom tee"
 msgstr ""
 
-#: ../../library/curses.rst:1564
+#: ../../library/curses.rst:1600
 msgid "``ACS_SSSB``"
 msgstr ""
 
-#: ../../library/curses.rst:1564
+#: ../../library/curses.rst:1600
 msgid "alternate name for left tee"
 msgstr ""
 
-#: ../../library/curses.rst:1566
+#: ../../library/curses.rst:1602
 msgid "``ACS_SSSS``"
 msgstr ""
 
-#: ../../library/curses.rst:1566
+#: ../../library/curses.rst:1602
 msgid "alternate name for crossover or big plus"
 msgstr ""
 
-#: ../../library/curses.rst:1568
+#: ../../library/curses.rst:1604
 msgid "``ACS_STERLING``"
 msgstr ""
 
-#: ../../library/curses.rst:1568
+#: ../../library/curses.rst:1604
 msgid "pound sterling"
 msgstr ""
 
-#: ../../library/curses.rst:1570
+#: ../../library/curses.rst:1606
 msgid "``ACS_TTEE``"
 msgstr ""
 
-#: ../../library/curses.rst:1570
+#: ../../library/curses.rst:1606
 msgid "top tee"
 msgstr ""
 
-#: ../../library/curses.rst:1572
+#: ../../library/curses.rst:1608
 msgid "``ACS_UARROW``"
 msgstr ""
 
-#: ../../library/curses.rst:1572
+#: ../../library/curses.rst:1608
 msgid "up arrow"
 msgstr ""
 
-#: ../../library/curses.rst:1574
+#: ../../library/curses.rst:1610
 msgid "``ACS_ULCORNER``"
 msgstr ""
 
-#: ../../library/curses.rst:1574
+#: ../../library/curses.rst:1610
 msgid "upper left corner"
 msgstr ""
 
-#: ../../library/curses.rst:1576
+#: ../../library/curses.rst:1612
 msgid "``ACS_URCORNER``"
 msgstr ""
 
-#: ../../library/curses.rst:1576
+#: ../../library/curses.rst:1612
 msgid "upper right corner"
 msgstr ""
 
-#: ../../library/curses.rst:1578
+#: ../../library/curses.rst:1614
 msgid "``ACS_VLINE``"
 msgstr ""
 
-#: ../../library/curses.rst:1578
+#: ../../library/curses.rst:1614
 msgid "vertical line"
 msgstr ""
 
-#: ../../library/curses.rst:1581
+#: ../../library/curses.rst:1617
 msgid "The following table lists the predefined colors:"
 msgstr ""
 
-#: ../../library/curses.rst:1584
+#: ../../library/curses.rst:1620
 msgid "Color"
 msgstr ""
 
-#: ../../library/curses.rst:1586
+#: ../../library/curses.rst:1622
 msgid "``COLOR_BLACK``"
 msgstr ""
 
-#: ../../library/curses.rst:1586
+#: ../../library/curses.rst:1622
 msgid "Black"
 msgstr ""
 
-#: ../../library/curses.rst:1588
+#: ../../library/curses.rst:1624
 msgid "``COLOR_BLUE``"
 msgstr ""
 
-#: ../../library/curses.rst:1588
+#: ../../library/curses.rst:1624
 msgid "Blue"
 msgstr ""
 
-#: ../../library/curses.rst:1590
+#: ../../library/curses.rst:1626
 msgid "``COLOR_CYAN``"
 msgstr ""
 
-#: ../../library/curses.rst:1590
+#: ../../library/curses.rst:1626
 msgid "Cyan (light greenish blue)"
 msgstr ""
 
-#: ../../library/curses.rst:1592
+#: ../../library/curses.rst:1628
 msgid "``COLOR_GREEN``"
 msgstr ""
 
-#: ../../library/curses.rst:1592
+#: ../../library/curses.rst:1628
 msgid "Green"
 msgstr ""
 
-#: ../../library/curses.rst:1594
+#: ../../library/curses.rst:1630
 msgid "``COLOR_MAGENTA``"
 msgstr ""
 
-#: ../../library/curses.rst:1594
+#: ../../library/curses.rst:1630
 msgid "Magenta (purplish red)"
 msgstr ""
 
-#: ../../library/curses.rst:1596
+#: ../../library/curses.rst:1632
 msgid "``COLOR_RED``"
 msgstr ""
 
-#: ../../library/curses.rst:1596
+#: ../../library/curses.rst:1632
 msgid "Red"
 msgstr ""
 
-#: ../../library/curses.rst:1598
+#: ../../library/curses.rst:1634
 msgid "``COLOR_WHITE``"
 msgstr ""
 
-#: ../../library/curses.rst:1598
+#: ../../library/curses.rst:1634
 msgid "White"
 msgstr ""
 
-#: ../../library/curses.rst:1600
+#: ../../library/curses.rst:1636
 msgid "``COLOR_YELLOW``"
 msgstr ""
 
-#: ../../library/curses.rst:1600
+#: ../../library/curses.rst:1636
 msgid "Yellow"
 msgstr ""
 
-#: ../../library/curses.rst:1605
+#: ../../library/curses.rst:1641
 msgid ":mod:`curses.textpad` --- Text input widget for curses programs"
 msgstr ""
 
-#: ../../library/curses.rst:1615
+#: ../../library/curses.rst:1651
 msgid "The :mod:`curses.textpad` module provides a :class:`Textbox` class that handles elementary text editing in a curses window, supporting a set of keybindings resembling those of Emacs (thus, also of Netscape Navigator, BBedit 6.x, FrameMaker, and many other programs).  The module also provides a rectangle-drawing function useful for framing text boxes or for other purposes."
 msgstr ""
 
-#: ../../library/curses.rst:1621
+#: ../../library/curses.rst:1657
 msgid "The module :mod:`curses.textpad` defines the following function:"
 msgstr ""
 
-#: ../../library/curses.rst:1626
+#: ../../library/curses.rst:1662
 msgid "Draw a rectangle.  The first argument must be a window object; the remaining arguments are coordinates relative to that window.  The second and third arguments are the y and x coordinates of the upper left hand corner of the rectangle to be drawn; the fourth and fifth arguments are the y and x coordinates of the lower right hand corner. The rectangle will be drawn using VT100/IBM PC forms characters on terminals that make this possible (including xterm and most other software terminal emulators).  Otherwise it will be drawn with ASCII  dashes, vertical bars, and plus signs."
 msgstr ""
 
-#: ../../library/curses.rst:1639
+#: ../../library/curses.rst:1675
 msgid "Textbox objects"
 msgstr ""
 
-#: ../../library/curses.rst:1641
+#: ../../library/curses.rst:1677
 msgid "You can instantiate a :class:`Textbox` object as follows:"
 msgstr ""
 
-#: ../../library/curses.rst:1646
+#: ../../library/curses.rst:1682
 msgid "Return a textbox widget object.  The *win* argument should be a curses :class:`WindowObject` in which the textbox is to be contained. The edit cursor of the textbox is initially located at the upper left hand corner of the containing window, with coordinates ``(0, 0)``. The instance's :attr:`stripspaces` flag is initially on."
 msgstr ""
 
-#: ../../library/curses.rst:1652
+#: ../../library/curses.rst:1688
 msgid ":class:`Textbox` objects have the following methods:"
 msgstr ""
 
-#: ../../library/curses.rst:1657
+#: ../../library/curses.rst:1693
 msgid "This is the entry point you will normally use.  It accepts editing keystrokes until one of the termination keystrokes is entered.  If *validator* is supplied, it must be a function.  It will be called for each keystroke entered with the keystroke as a parameter; command dispatch is done on the result. This method returns the window contents as a string; whether blanks in the window are included is affected by the :attr:`stripspaces` attribute."
 msgstr ""
 
-#: ../../library/curses.rst:1668
+#: ../../library/curses.rst:1704
 msgid "Process a single command keystroke.  Here are the supported special keystrokes:"
 msgstr ""
 
-#: ../../library/curses.rst:1672
-#: ../../library/curses.rst:1710
+#: ../../library/curses.rst:1708
+#: ../../library/curses.rst:1746
 msgid "Keystroke"
 msgstr ""
 
-#: ../../library/curses.rst:1672
+#: ../../library/curses.rst:1708
 msgid "Action"
 msgstr ""
 
-#: ../../library/curses.rst:1674
+#: ../../library/curses.rst:1710
 msgid ":kbd:`Control-A`"
 msgstr ""
 
-#: ../../library/curses.rst:1674
+#: ../../library/curses.rst:1710
 msgid "Go to left edge of window."
 msgstr ""
 
-#: ../../library/curses.rst:1676
 #: ../../library/curses.rst:1712
+#: ../../library/curses.rst:1748
 msgid ":kbd:`Control-B`"
 msgstr ""
 
-#: ../../library/curses.rst:1676
+#: ../../library/curses.rst:1712
 msgid "Cursor left, wrapping to previous line if appropriate."
 msgstr ""
 
-#: ../../library/curses.rst:1679
+#: ../../library/curses.rst:1715
 msgid ":kbd:`Control-D`"
 msgstr ""
 
-#: ../../library/curses.rst:1679
+#: ../../library/curses.rst:1715
 msgid "Delete character under cursor."
 msgstr ""
 
-#: ../../library/curses.rst:1681
+#: ../../library/curses.rst:1717
 msgid ":kbd:`Control-E`"
 msgstr ""
 
-#: ../../library/curses.rst:1681
+#: ../../library/curses.rst:1717
 msgid "Go to right edge (stripspaces off) or end of line (stripspaces on)."
 msgstr ""
 
-#: ../../library/curses.rst:1684
-#: ../../library/curses.rst:1714
+#: ../../library/curses.rst:1720
+#: ../../library/curses.rst:1750
 msgid ":kbd:`Control-F`"
 msgstr ""
 
-#: ../../library/curses.rst:1684
+#: ../../library/curses.rst:1720
 msgid "Cursor right, wrapping to next line when appropriate."
 msgstr ""
 
-#: ../../library/curses.rst:1687
+#: ../../library/curses.rst:1723
 msgid ":kbd:`Control-G`"
 msgstr ""
 
-#: ../../library/curses.rst:1687
+#: ../../library/curses.rst:1723
 msgid "Terminate, returning the window contents."
 msgstr ""
 
-#: ../../library/curses.rst:1689
+#: ../../library/curses.rst:1725
 msgid ":kbd:`Control-H`"
 msgstr ""
 
-#: ../../library/curses.rst:1689
+#: ../../library/curses.rst:1725
 msgid "Delete character backward."
 msgstr ""
 
-#: ../../library/curses.rst:1691
+#: ../../library/curses.rst:1727
 msgid ":kbd:`Control-J`"
 msgstr ""
 
-#: ../../library/curses.rst:1691
+#: ../../library/curses.rst:1727
 msgid "Terminate if the window is 1 line, otherwise insert newline."
 msgstr ""
 
-#: ../../library/curses.rst:1694
+#: ../../library/curses.rst:1730
 msgid ":kbd:`Control-K`"
 msgstr ""
 
-#: ../../library/curses.rst:1694
+#: ../../library/curses.rst:1730
 msgid "If line is blank, delete it, otherwise clear to end of line."
 msgstr ""
 
-#: ../../library/curses.rst:1697
+#: ../../library/curses.rst:1733
 msgid ":kbd:`Control-L`"
 msgstr ""
 
-#: ../../library/curses.rst:1697
+#: ../../library/curses.rst:1733
 msgid "Refresh screen."
 msgstr ""
 
-#: ../../library/curses.rst:1699
-#: ../../library/curses.rst:1718
+#: ../../library/curses.rst:1735
+#: ../../library/curses.rst:1754
 msgid ":kbd:`Control-N`"
 msgstr ""
 
-#: ../../library/curses.rst:1699
+#: ../../library/curses.rst:1735
 msgid "Cursor down; move down one line."
 msgstr ""
 
-#: ../../library/curses.rst:1701
+#: ../../library/curses.rst:1737
 msgid ":kbd:`Control-O`"
 msgstr ""
 
-#: ../../library/curses.rst:1701
+#: ../../library/curses.rst:1737
 msgid "Insert a blank line at cursor location."
 msgstr ""
 
-#: ../../library/curses.rst:1703
-#: ../../library/curses.rst:1716
+#: ../../library/curses.rst:1739
+#: ../../library/curses.rst:1752
 msgid ":kbd:`Control-P`"
 msgstr ""
 
-#: ../../library/curses.rst:1703
+#: ../../library/curses.rst:1739
 msgid "Cursor up; move up one line."
 msgstr ""
 
-#: ../../library/curses.rst:1706
+#: ../../library/curses.rst:1742
 msgid "Move operations do nothing if the cursor is at an edge where the movement is not possible.  The following synonyms are supported where possible:"
 msgstr ""
 
-#: ../../library/curses.rst:1712
+#: ../../library/curses.rst:1748
 msgid ":const:`KEY_LEFT`"
 msgstr ""
 
-#: ../../library/curses.rst:1714
+#: ../../library/curses.rst:1750
 msgid ":const:`KEY_RIGHT`"
 msgstr ""
 
-#: ../../library/curses.rst:1716
+#: ../../library/curses.rst:1752
 msgid ":const:`KEY_UP`"
 msgstr ""
 
-#: ../../library/curses.rst:1718
+#: ../../library/curses.rst:1754
 msgid ":const:`KEY_DOWN`"
 msgstr ""
 
-#: ../../library/curses.rst:1720
+#: ../../library/curses.rst:1756
 msgid ":const:`KEY_BACKSPACE`"
 msgstr ""
 
-#: ../../library/curses.rst:1720
+#: ../../library/curses.rst:1756
 msgid ":kbd:`Control-h`"
 msgstr ""
 
-#: ../../library/curses.rst:1723
+#: ../../library/curses.rst:1759
 msgid "All other keystrokes are treated as a command to insert the given character and move right (with line wrapping)."
 msgstr ""
 
-#: ../../library/curses.rst:1729
+#: ../../library/curses.rst:1765
 msgid "Return the window contents as a string; whether blanks in the window are included is affected by the :attr:`stripspaces` member."
 msgstr ""
 
-#: ../../library/curses.rst:1735
+#: ../../library/curses.rst:1771
 msgid "This attribute is a flag which controls the interpretation of blanks in the window.  When it is on, trailing blanks on each line are ignored; any cursor motion that would land the cursor on a trailing blank goes to the end of that line instead, and trailing blanks are stripped when the window contents are gathered."
 msgstr ""
 

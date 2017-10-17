@@ -19,6 +19,10 @@ msgstr ""
 msgid "Logging Cookbook"
 msgstr ""
 
+#: ../../howto/logging-cookbook.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../howto/logging-cookbook.rst:7
 msgid "Vinay Sajip <vinay_sajip at red-dove dot com>"
 msgstr ""
@@ -276,7 +280,7 @@ msgid "Implementing structured logging"
 msgstr ""
 
 #: ../../howto/logging-cookbook.rst:816
-msgid "Although most logging messages are intended for reading by humans, and thus not readily machine-parseable, there might be cirumstances where you want to output messages in a structured format which *is* capable of being parsed by a program (without needing complex regular expressions to parse the log message). This is straightforward to achieve using the logging package. There are a number of ways in which this could be achieved, but the following is a simple approach which uses JSON to serialise the event in a machine-parseable manner::"
+msgid "Although most logging messages are intended for reading by humans, and thus not readily machine-parseable, there might be circumstances where you want to output messages in a structured format which *is* capable of being parsed by a program (without needing complex regular expressions to parse the log message). This is straightforward to achieve using the logging package. There are a number of ways in which this could be achieved, but the following is a simple approach which uses JSON to serialise the event in a machine-parseable manner::"
 msgstr ""
 
 #: ../../howto/logging-cookbook.rst:840

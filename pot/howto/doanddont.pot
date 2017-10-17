@@ -19,16 +19,16 @@ msgstr ""
 msgid "Idioms and Anti-Idioms in Python"
 msgstr ""
 
+#: ../../howto/doanddont.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../howto/doanddont.rst:5
 msgid "Moshe Zadka"
 msgstr ""
 
 #: ../../howto/doanddont.rst:7
 msgid "This document is placed in the public domain."
-msgstr ""
-
-#: ../../howto/doanddont.rst:0
-msgid "Abstract"
 msgstr ""
 
 #: ../../howto/doanddont.rst:12

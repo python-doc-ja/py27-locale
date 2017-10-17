@@ -381,6 +381,10 @@ msgstr ""
 msgid "Return the value of the given socket option (see the Unix man page :manpage:`getsockopt(2)`).  The needed symbolic constants (:const:`SO_\\*` etc.) are defined in this module.  If *buflen* is absent, an integer option is assumed and its integer value is returned by the function.  If *buflen* is present, it specifies the maximum length of the buffer used to receive the option in, and this buffer is returned as a string.  It is up to the caller to decode the contents of the buffer (see the optional built-in module :mod:`struct` for a way to decode C structures encoded as strings)."
 msgstr ""
 
+#: ../../library/socket.rst:0
+msgid "platform"
+msgstr ""
+
 #: ../../library/socket.rst:641
 msgid "Windows"
 msgstr ""

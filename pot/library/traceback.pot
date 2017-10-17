@@ -52,7 +52,7 @@ msgid "This is a shorthand for ``print_exception(sys.last_type, sys.last_value, 
 msgstr ""
 
 #: ../../library/traceback.rst:68
-msgid "This function prints a stack trace from its invocation point. The optional *f* argument can be used to specify an alternate stack frame to start. The optional limit* and *file* arguments have the same meaning as for :func:`print_exception`."
+msgid "This function prints a stack trace from its invocation point. The optional *f* argument can be used to specify an alternate stack frame to start. The optional *limit* and *file* arguments have the same meaning as for :func:`print_exception`."
 msgstr ""
 
 #: ../../library/traceback.rst:76

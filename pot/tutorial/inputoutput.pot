@@ -207,23 +207,23 @@ msgstr ""
 msgid "If you have an object ``x``, you can view its JSON string representation with a simple line of code::"
 msgstr ""
 
-#: ../../tutorial/inputoutput.rst:396
+#: ../../tutorial/inputoutput.rst:397
 msgid "Another variant of the :func:`~json.dumps` function, called :func:`~json.dump`, simply serializes the object to a file.  So if ``f`` is a :term:`file object` opened for writing, we can do this::"
 msgstr ""
 
-#: ../../tutorial/inputoutput.rst:402
+#: ../../tutorial/inputoutput.rst:403
 msgid "To decode the object again, if ``f`` is a :term:`file object` which has been opened for reading::"
 msgstr ""
 
-#: ../../tutorial/inputoutput.rst:407
+#: ../../tutorial/inputoutput.rst:408
 msgid "This simple serialization technique can handle lists and dictionaries, but serializing arbitrary class instances in JSON requires a bit of extra effort. The reference for the :mod:`json` module contains an explanation of this."
 msgstr ""
 
-#: ../../tutorial/inputoutput.rst:413
+#: ../../tutorial/inputoutput.rst:414
 msgid ":mod:`pickle` - the pickle module"
 msgstr ""
 
-#: ../../tutorial/inputoutput.rst:415
+#: ../../tutorial/inputoutput.rst:416
 msgid "Contrary to :ref:`JSON <tut-json>`, *pickle* is a protocol which allows the serialization of arbitrarily complex Python objects.  As such, it is specific to Python and cannot be used to communicate with applications written in other languages.  It is also insecure by default: deserializing pickle data coming from an untrusted source can execute arbitrary code, if the data was crafted by a skilled attacker."
 msgstr ""
 

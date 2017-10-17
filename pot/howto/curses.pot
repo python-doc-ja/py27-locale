@@ -19,16 +19,20 @@ msgstr ""
 msgid "Curses Programming with Python"
 msgstr ""
 
+#: ../../howto/curses.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../howto/curses.rst:7
 msgid "A.M. Kuchling, Eric S. Raymond"
 msgstr ""
 
-#: ../../howto/curses.rst:8
-msgid "2.03"
+#: ../../howto/curses.rst:0
+msgid "Release"
 msgstr ""
 
-#: ../../howto/curses.rst:0
-msgid "Abstract"
+#: ../../howto/curses.rst:8
+msgid "2.03"
 msgstr ""
 
 #: ../../howto/curses.rst:13

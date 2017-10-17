@@ -19,12 +19,12 @@ msgstr ""
 msgid "HOWTO Use Python in the web"
 msgstr ""
 
-#: ../../howto/webservers.rst:5
-msgid "Marek Kubica"
+#: ../../howto/webservers.rst:0
+msgid "Author"
 msgstr ""
 
-#: ../../howto/webservers.rst:0
-msgid "Abstract"
+#: ../../howto/webservers.rst:5
+msgid "Marek Kubica"
 msgstr ""
 
 #: ../../howto/webservers.rst:9
