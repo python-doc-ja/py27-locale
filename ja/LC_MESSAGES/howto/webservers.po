@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-09-23 21:56+0000\n"
+"PO-Revision-Date: 2017-10-17 01:23+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -22,13 +22,13 @@ msgstr ""
 msgid "HOWTO Use Python in the web"
 msgstr "Python を Web 上で使うには"
 
+#: ../../howto/webservers.rst:0
+msgid "Author"
+msgstr ""
+
 #: ../../howto/webservers.rst:5
 msgid "Marek Kubica"
 msgstr "Marek Kubica"
-
-#: ../../howto/webservers.rst:0
-msgid "Abstract"
-msgstr "概要"
 
 #: ../../howto/webservers.rst:9
 msgid ""

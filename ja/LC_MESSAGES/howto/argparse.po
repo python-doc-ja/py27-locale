@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-09-22 17:57+0000\n"
+"PO-Revision-Date: 2017-10-17 01:22+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -19,6 +19,10 @@ msgstr ""
 #: ../../howto/argparse.rst:3
 msgid "Argparse Tutorial"
 msgstr "Argparse チュートリアル"
+
+#: ../../howto/argparse.rst:0
+msgid "author"
+msgstr ""
 
 #: ../../howto/argparse.rst:5
 msgid "Tshepang Lekhonkhobe"
