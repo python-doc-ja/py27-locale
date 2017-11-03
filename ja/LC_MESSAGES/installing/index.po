@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-10-17 01:24+0000\n"
+"PO-Revision-Date: 2017-11-03 12:19+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "Python モジュールのインストール"
 
 #: ../../installing/index.rst:0
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: ../../installing/index.rst:9
 msgid "distutils-sig@python.org"
