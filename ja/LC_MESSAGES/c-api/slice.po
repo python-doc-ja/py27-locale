@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-09-22 17:56+0000\n"
+"PO-Revision-Date: 2017-11-15 13:22+0000\n"
 "Last-Translator: cocoatomo\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -91,11 +91,11 @@ msgstr "この関数は以前は *length* の型に :c:type:`int` を、 *start*
 
 #: ../../c-api/slice.rst:72
 msgid "Ellipsis Object"
-msgstr ""
+msgstr "省略オブジェクト"
 
 #: ../../c-api/slice.rst:77
 msgid ""
 "The Python ``Ellipsis`` object.  This object has no methods.  It needs to be"
 " treated just like any other object with respect to reference counts.  Like "
 ":c:data:`Py_None` it is a singleton object."
-msgstr ""
+msgstr "Python ``省略`` オブジェクトにはメソッドがありません。カウントの参照についてちょうど他のオブジェクトと同様に扱われる必要があります。シングルトンオブジェクトの :c:data:`Py_None` のように。"
