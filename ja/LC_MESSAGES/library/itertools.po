@@ -1,16 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 1990-2017, Python Software Foundation (translated by Python ドキュメント日本語翻訳プロジェクト)
+# Copyright (C) 1990-2018, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # 
 # Translators:
-# cocoatomo, 2017
+# tomo🐧, 2017
 # 秘湯 <xwhhsprings@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 2.7\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2017-09-22 17:56+0000\n"
-"Last-Translator: cocoatomo\n"
+"POT-Creation-Date: 2018-04-03 12:56+0900\n"
+"PO-Revision-Date: 2018-07-29 01:58+0000\n"
+"Last-Translator: Atsuo Ishimoto <atsuoishimoto@gmail.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/python-doc/python-27/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -430,7 +431,7 @@ msgid ""
 msgstr "各要素は場所に基づいて一意に取り扱われ、値には依りません。入力された要素がバラバラならば、各組合せの中に重複した値は現れません。"
 
 #: ../../library/itertools.rst:132 ../../library/itertools.rst:183
-#: ../../library/itertools.rst:502
+#: ../../library/itertools.rst:514
 msgid "Roughly equivalent to::"
 msgstr "およそ次と等価です::"
 
@@ -589,17 +590,17 @@ msgid ""
 "name field on every third line).  Roughly equivalent to::"
 msgstr "iterable から要素を選択して返すイテレータを作成します。 *start* が0でない場合、iterable の要素は start に達するまでスキップされます。その後、\n要素が順に返されます。\n *step* が1以下なら連続した要素を返し、 1以上なら指定された値分の要素をスキップします。\n\n*stop* が ``None`` の場合、iterable が尽きるまでイテレーションは続きます。\nそれ以外の場合、指定された位置でイテレーションは停止します。\n通常のスライスとは異なり、:func:`islice` は負の *start*、*stop*、*step* をサポートしません。内部構造が平滑化されたデータから関連するフィールドを抽出するのにに使用できます (たとえば、三行ごとに名前フィールドを列挙している複数行のレポート)。およそ次と等価です::"
 
-#: ../../library/itertools.rst:421
+#: ../../library/itertools.rst:433
 msgid ""
 "If *start* is ``None``, then iteration starts at zero. If *step* is "
 "``None``, then the step defaults to one."
 msgstr "*start* が ``None`` ならば、繰返しは0から始まります。*step* が ``None`` ならば、ステップは1となります。"
 
-#: ../../library/itertools.rst:424
+#: ../../library/itertools.rst:436
 msgid "accept ``None`` values for default *start* and *step*."
 msgstr "*start* と *step* のデフォルト値として ``None`` を受け付けるようにしました。"
 
-#: ../../library/itertools.rst:430
+#: ../../library/itertools.rst:442
 msgid ""
 "Make an iterator that aggregates elements from each of the iterables. Like "
 ":func:`zip` except that it returns an iterator instead of a list.  Used for "
@@ -607,27 +608,27 @@ msgid ""
 "to::"
 msgstr "各 iterable の要素をまとめるイテレータを作成します。 :func:`zip` に似ていますが、リストではなくイテレータを返します。複数のイテレート可能オブジェクトに対して、一度に lock-step (横並び) イテレーションを行う場合に使用します。この関数はおよそ以下のスクリプトと同等です::"
 
-#: ../../library/itertools.rst:440
+#: ../../library/itertools.rst:452
 msgid ""
 "When no iterables are specified, returns a zero length iterator instead of "
 "raising a :exc:`TypeError` exception."
 msgstr "イテレート可能オブジェクトを指定しない場合、 :exc:`TypeError` 例外を送出する代わりに長さゼロのイテレータを返します。"
 
-#: ../../library/itertools.rst:444
+#: ../../library/itertools.rst:456
 msgid ""
 "The left-to-right evaluation order of the iterables is guaranteed. This "
 "makes possible an idiom for clustering a data series into n-length groups "
 "using ``izip(*[iter(s)]*n)``."
 msgstr "イテラブルの左から右への評価順序が保証されます。そのため ``izip(*[iter(s)]*n)`` を使ってデータ系列を n 長のグループにクラスタリングできます。"
 
-#: ../../library/itertools.rst:448
+#: ../../library/itertools.rst:460
 msgid ""
 ":func:`izip` should only be used with unequal length inputs when you don't "
 "care about trailing, unmatched values from the longer iterables.  If those "
 "values are important, use :func:`izip_longest` instead."
 msgstr ":func:`izip` は、等しくない長さの入力に対しては、長い方のイテラブルの、終端の対にならない値を気にしないのでなければ、使うべきではありません。そのような値が重要なら、かわりに :func:`izip_longest` を使ってください。"
 
-#: ../../library/itertools.rst:455
+#: ../../library/itertools.rst:467
 msgid ""
 "Make an iterator that aggregates elements from each of the iterables. If the"
 " iterables are of uneven length, missing values are filled-in with "
@@ -635,7 +636,7 @@ msgid ""
 "Roughly equivalent to::"
 msgstr "各 iterable の要素をまとめるイテレータを作成します。iterable の長さが違う場合、足りない値は *fillvalue* で埋められます。最も長い itarable が尽きるまでイテレーションします。およそ次と等価です::"
 
-#: ../../library/itertools.rst:479
+#: ../../library/itertools.rst:491
 msgid ""
 "If one of the iterables is potentially infinite, then the "
 ":func:`izip_longest` function should be wrapped with something that limits "
@@ -643,56 +644,56 @@ msgid ""
 "not specified, *fillvalue* defaults to ``None``."
 msgstr "iterables の1つが無限になりうる場合 :func:`izip_longest` は呼び出し回数を制限するような何かでラップしなければいけません(例えば :func:`islice` or :func:`takewhile`)。 *fillvalue* は指定しない場合のデフォルトは  ``None`` です。"
 
-#: ../../library/itertools.rst:488
+#: ../../library/itertools.rst:500
 msgid ""
 "Return successive *r* length permutations of elements in the *iterable*."
 msgstr "*iterable* の要素からなる長さ *r* の置換(permutation)を次々と返します。"
 
-#: ../../library/itertools.rst:490
+#: ../../library/itertools.rst:502
 msgid ""
 "If *r* is not specified or is ``None``, then *r* defaults to the length of "
 "the *iterable* and all possible full-length permutations are generated."
 msgstr "*r* が指定されないかまたは ``None`` であるならば、*r* のデフォルトは *iterable* の長さとなり全ての可能な最長の置換が生成されます。"
 
-#: ../../library/itertools.rst:494
+#: ../../library/itertools.rst:506
 msgid ""
 "Permutations are emitted in lexicographic sort order.  So, if the input "
 "*iterable* is sorted, the permutation tuples will be produced in sorted "
 "order."
 msgstr "置換は辞書式にソートされた順序で吐き出されます。したがって入力の *iterable* がソートされていたならば、置換のタプルはソートされた状態で出力されます。"
 
-#: ../../library/itertools.rst:498
+#: ../../library/itertools.rst:510
 msgid ""
 "Elements are treated as unique based on their position, not on their value."
 "  So if the input elements are unique, there will be no repeat values in "
 "each permutation."
 msgstr "要素は位置に基づいて一意的に扱われ、値に基づいてではありません。したがって入力された要素が全て異なっているならば、それぞれの置換に重複した要素が現れないことになります。"
 
-#: ../../library/itertools.rst:529
+#: ../../library/itertools.rst:541
 msgid ""
 "The code for :func:`permutations` can be also expressed as a subsequence of "
 ":func:`product`, filtered to exclude entries with repeated elements (those "
 "from the same position in the input pool)::"
 msgstr ":func:`permutations` のコードは :func:`product` の列から重複のあるもの (それらは入力プールの同じ位置から取られたものです) を除外するようにフィルタを掛けたものとしても表現できます::"
 
-#: ../../library/itertools.rst:541
+#: ../../library/itertools.rst:553
 msgid ""
 "The number of items returned is ``n! / (n-r)!`` when ``0 <= r <= n`` or zero"
 " when ``r > n``."
 msgstr "返される要素の数は、``0 <= r <= n`` の場合 ``n! / (n-r)!`` で、``r > n`` の場合は 0 です。"
 
-#: ../../library/itertools.rst:548
+#: ../../library/itertools.rst:560
 msgid "Cartesian product of input iterables."
 msgstr "入力イテラブルの直積(Cartesian product)です。"
 
-#: ../../library/itertools.rst:550
+#: ../../library/itertools.rst:562
 msgid ""
 "Roughly equivalent to nested for-loops in a generator expression. For "
 "example, ``product(A, B)`` returns the same as ``((x,y) for x in A for y in "
 "B)``."
 msgstr "ジェネレータ式の入れ子になった for ループとおよそ等価です。たとえば ``product(A, B)`` は ``((x,y) for x in A for y in B)`` と同じものを返します。"
 
-#: ../../library/itertools.rst:553
+#: ../../library/itertools.rst:565
 msgid ""
 "The nested loops cycle like an odometer with the rightmost element advancing"
 " on every iteration.  This pattern creates a lexicographic ordering so that "
@@ -700,20 +701,20 @@ msgid ""
 "sorted order."
 msgstr "入れ子ループは走行距離計と同じように右端の要素がイテレーションごとに更新されていきます。このパターンは辞書式順序を作り出し、入力のイテレート可能オブジェクトたちがソートされていれば、直積タプルもソートされた順に吐き出されます。"
 
-#: ../../library/itertools.rst:558
+#: ../../library/itertools.rst:570
 msgid ""
 "To compute the product of an iterable with itself, specify the number of "
 "repetitions with the optional *repeat* keyword argument.  For example, "
 "``product(A, repeat=4)`` means the same as ``product(A, A, A, A)``."
 msgstr "イテラブル自身との直積を計算するためには、オプションの *repeat* キーワード引数に繰り返し回数を指定します。たとえば ``product(A, repeat=4)`` は  ``product(A, A, A, A)`` と同じ意味です。"
 
-#: ../../library/itertools.rst:562
+#: ../../library/itertools.rst:574
 msgid ""
 "This function is roughly equivalent to the following code, except that the "
 "actual implementation does not build up intermediate results in memory::"
 msgstr "この関数は以下のコードとおよそ等価ですが、実際の実装ではメモリ中に中間結果を作りません::"
 
-#: ../../library/itertools.rst:579
+#: ../../library/itertools.rst:591
 msgid ""
 "Make an iterator that returns *object* over and over again. Runs "
 "indefinitely unless the *times* argument is specified. Used as argument to "
@@ -721,13 +722,13 @@ msgid ""
 " to create constant fields in a tuple record.  Roughly equivalent to::"
 msgstr "繰り返し *object* を返すイテレータを作成します。 *times* を指定しない場合、無限に値を返し続けます。 :func:`imap` で常に同じオブジェクトを関数の引数として指定する場合に使用します。また、 :func:`izip` で作成するタプルの定数部分を指定する場合にも使用することもできます。この関数はおよそ以下のスクリプトと同等です::"
 
-#: ../../library/itertools.rst:593
+#: ../../library/itertools.rst:605
 msgid ""
 "A common use for *repeat* is to supply a stream of constant values to *imap*"
 " or *zip*::"
 msgstr "*repeat* は *imap* や *zip* に定数のストリームを与えるためによく利用されます::"
 
-#: ../../library/itertools.rst:601
+#: ../../library/itertools.rst:613
 msgid ""
 "Make an iterator that computes the function using arguments obtained from "
 "the iterable.  Used instead of :func:`imap` when argument parameters are "
@@ -737,32 +738,32 @@ msgid ""
 "Roughly equivalent to::"
 msgstr "iterable の要素を引数として function を計算するイテレータを作成します。\nfunction の引数が一つの iterable からタプルに既にグループ化されている (データが \"zip済み\") 場合、:func:`imap` の代わりに使用します。\n:func:`imap` と :func:`starmap` の違いは ``function(a,b)`` と ``function(*c)`` の差に似ています。およそ次と等価です::"
 
-#: ../../library/itertools.rst:612
+#: ../../library/itertools.rst:624
 msgid ""
 "Previously, :func:`starmap` required the function arguments to be tuples. "
 "Now, any iterable is allowed."
 msgstr "以前のバージョンでは、 :func:`starmap` は関数の引数がタプルであることが必要でした。今では任意のイテレート可能オブジェクトを使えます。"
 
-#: ../../library/itertools.rst:618
+#: ../../library/itertools.rst:630
 msgid ""
 "Make an iterator that returns elements from the iterable as long as the "
 "predicate is true.  Roughly equivalent to::"
 msgstr "predicate が真である限り iterable から要素を返すイテレータを作成します。およそ次と等価です::"
 
-#: ../../library/itertools.rst:632
+#: ../../library/itertools.rst:644
 msgid ""
 "Return *n* independent iterators from a single iterable.  Roughly equivalent"
 " to::"
 msgstr "一つの *iterable* から *n* 個の独立したイテレータを生成して返します。以下のコードとおよそ等価になります::"
 
-#: ../../library/itertools.rst:646
+#: ../../library/itertools.rst:658
 msgid ""
 "Once :func:`tee` has made a split, the original *iterable* should not be "
 "used anywhere else; otherwise, the *iterable* could get advanced without the"
 " tee objects being informed."
 msgstr "一度 :func:`tee` でイテレータを分割すると、もとの *iterable* を他で使ってはいけません。さもなければ、 :func:`tee` オブジェクトの知らない間に *iterable* が先の要素に進んでしまうことになります。"
 
-#: ../../library/itertools.rst:650
+#: ../../library/itertools.rst:662
 msgid ""
 "This itertool may require significant auxiliary storage (depending on how "
 "much temporary data needs to be stored). In general, if one iterator uses "
@@ -770,17 +771,17 @@ msgid ""
 ":func:`list` instead of :func:`tee`."
 msgstr ":func:`tee` はかなり大きなメモリ領域を使用するかもしれません (使用するメモリ量はiterableの大きさに依存します)。一般には、一つのイテレータが他のイテレータよりも先にほとんどまたは全ての要素を消費するような場合には、 :func:`tee` よりも :func:`list` を使った方が高速です。"
 
-#: ../../library/itertools.rst:661
+#: ../../library/itertools.rst:673
 msgid "Recipes"
 msgstr "レシピ"
 
-#: ../../library/itertools.rst:663
+#: ../../library/itertools.rst:675
 msgid ""
 "This section shows recipes for creating an extended toolset using the "
 "existing itertools as building blocks."
 msgstr "この節では、既存の itertools を素材としてツールセットを拡張するためのレシピを示します。"
 
-#: ../../library/itertools.rst:666
+#: ../../library/itertools.rst:678
 msgid ""
 "The extended tools offer the same high performance as the underlying "
 "toolset. The superior memory performance is kept by processing elements one "
@@ -791,7 +792,7 @@ msgid ""
 ":term:`generator`\\s which incur interpreter overhead."
 msgstr "iterable 全体を一度にメモリ上に置くよりも、要素を一つづつ処理する方がメモリ効率上の有利さを保てます。関数形式のままツールをリンクしてゆくと、コードのサイズを減らし、一時変数を減らす助けになります。インタプリタのオーバヘッドをもたらす for ループやジェネレータ(:term:`generator`) を使わずに、 \"ベクトル化された\" ビルディングブロックを使うと、高速な処理を実現できます。"
 
-#: ../../library/itertools.rst:848
+#: ../../library/itertools.rst:860
 msgid ""
 "Note, many of the above recipes can be optimized by replacing global lookups"
 " with local variables defined as default values.  For example, the "
